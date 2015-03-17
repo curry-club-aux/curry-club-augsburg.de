@@ -12,5 +12,5 @@ cabal build
 ## TODO
 * Feed
 * Inhalt
-* Deployment mit gh-pages
+* Deployen mit Travis, wie [hier](http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html)
 * CSS-Liebe
