@@ -8,6 +8,8 @@ cabal build
 ./deploy.sh # generiert die website und schiebt sie in gh-pages
 ```
 
+Deployed wird aktuell [hierher](https://haskell-aux.github.io/haskell-augsburg.de/)
+
 ## TODO
 * Feed
 * Inhalt
