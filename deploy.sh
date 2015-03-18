@@ -19,6 +19,8 @@ git add --all | exit 1
 
 git commit -m "updated website output" || exit 1
 
-git checkout master
+git push origin gh-pages || exit 1
+
+git checkout master || exit 1
 
 rm -rf "$TMP" || exit 1
