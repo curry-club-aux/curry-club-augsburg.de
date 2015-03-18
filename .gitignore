@@ -1,0 +1,7 @@
+# hakyll
+_cache
+_site
+# cabal
+dist
+# nix
+result
