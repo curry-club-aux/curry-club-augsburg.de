@@ -11,6 +11,5 @@ cabal build
 ## TODO
 * Feed
 * Inhalt
-* Deployen mit Travis, wie [hier](http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html)
-  Script gibt es schon, fehlt noch das Travis Zeug, wenn man das will.
 * CSS-Liebe
+* `./deploy.sh` auf Travis CI laufen lassen
