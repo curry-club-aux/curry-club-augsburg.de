@@ -1,0 +1,15 @@
+language: haskell
+branches:
+  only:
+    - master
+env:
+  global:
+    - secure: "ShO1+CPmSyK5AkM6Ic3l5ngYYbpUjdFmtItL6zAS+trhPxWOC/uzMohbPLG90AF7ZJM/vgSZCFZVhAj/92cGcc9Z3bb3yp5SnLgQAJNhKjaVgLzyJ3616aIb7jPHQ9mfbY5HAL7aG6P+27ak2Fwv05Nqam0BJqf8WeUxSX63mnI="
+install:
+  - cabal install --only-dependencies
+  - ghc --make site.hs
+before_script:
+  - git config --global user.email "tim@timbaumann.info"
+  - git config --global user.name "Travis"
+script: ./deploy.sh "$REPO_URL"
+
