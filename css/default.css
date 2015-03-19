@@ -1,10 +1,25 @@
+/* Elements */
 body {
     color: black;
+    font-family: sans-serif;
     font-size: 16px;
     margin: 0px 0px 0px 0px;
     width: 100%;
 }
 
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color: #75f;
+}
+
+/* Layout */
 header, main, footer {
     width: 600px;
     margin: 0px auto 0px auto;
@@ -45,13 +60,6 @@ footer {
     text-align: right;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
 
 div.info {
     color: #555;
