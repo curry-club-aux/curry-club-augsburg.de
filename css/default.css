@@ -1,7 +1,8 @@
+@import(/css/ubuntu.css)
 /* Elements */
 body {
     color: black;
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 16px;
     margin: 0px 0px 0px 0px;
     width: 100%;

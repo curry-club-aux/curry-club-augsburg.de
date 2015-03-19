@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(/css/ubuntu/Ubuntu-R.ttf);
+    font-weight:400;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(/css/ubuntu/Ubuntu-B.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(/css/ubuntu/Ubuntu-I.ttf);
+    font-weight:400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(/css/ubuntu/Ubuntu-BI.ttf);
+    font-weight:bold;
+    font-style: italic;
+}
