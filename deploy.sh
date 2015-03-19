@@ -15,7 +15,7 @@ git checkout gh-pages || exit 1
 
 cp -R "$TMP/"* ./ || exit 1
 
-git add --all | exit 1
+git add --all || exit 1
 
 git commit -m "updated website output" || exit 1
 
