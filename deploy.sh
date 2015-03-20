@@ -14,14 +14,18 @@ cd $(dirname "$0")
 cp -R ./_site/* "$TMP"
 
 ./site clean
-echo "\ngit status:"
+
+echo "git status:"
 git status
 
 # test if branch 'gh-pages' exists; if not, create it
-if ! git rev-parse --verify gh-pages; then
-  git branch gh-pages
+if git rev-parse --verify gh-pages; then
+  git checkout gh-pages
+else
+  git checkout --orphan gh-pages
+  git rm -rf .
+  find . -not -name '.git' -delete
 fi
-git checkout gh-pages
 git pull "$ORIGIN" gh-pages
 
 cp -R "$TMP/"* ./
