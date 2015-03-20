@@ -7,7 +7,7 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "CNAME" $
+    match "CNAME" $ do
         route   idRoute
         compile copyFileCompiler
 
