@@ -24,7 +24,7 @@ if git rev-parse --verify gh-pages; then
 else
   git checkout --orphan gh-pages
   git rm -rf .
-  find . -not -name '.git' -delete
+  find . -not -name '.git' -maxdepth 1 -delete
 fi
 git pull "$ORIGIN" gh-pages
 
