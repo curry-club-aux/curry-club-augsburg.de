@@ -9,3 +9,12 @@ executable site
                   , hakyll == 4.6.*
   ghc-options:      -threaded
   default-language: Haskell2010
+
+executable css
+  main-is:          css.hs
+  build-depends:    base == 4.*
+                  , clay >= 0.9
+                  , text
+                  , directory
+  ghc-options:      -threaded
+  default-language: Haskell2010
