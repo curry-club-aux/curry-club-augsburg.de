@@ -6,7 +6,9 @@ ORIGIN=${1:origin}
 
 TMP=$(mktemp -d)
 
-cd $(dirname "$0")
+pushd $(dirname "$0")
+
+cabal run css
 
 ./site clean
 ./site build
@@ -39,3 +41,5 @@ git push "$ORIGIN" gh-pages
 git checkout master
 
 rm -rf "$TMP"
+
+popd

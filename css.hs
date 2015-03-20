@@ -7,12 +7,10 @@ import qualified Data.Text.Lazy    as L
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import           Control.Monad
--- import           System.FilePath
--- import           System.FilePath.Posix
 import           System.Directory
 
-defaultCss :: Css
-defaultCss = do
+bodyCss :: Css
+bodyCss = do
   body ? do
     color black
     fontSize (px 16)
@@ -24,7 +22,8 @@ defaultCss = do
   ((a # hover) <> (a # visited)) ? 
     color (other "#75f")
 
--- Header
+headerCss :: Css
+headerCss = do
   (header <> main_ <> footer) ? do
     width (px 600)
     margin (px 0) auto (px 0) auto;
@@ -33,7 +32,7 @@ defaultCss = do
     marginBottom (px 30)
     padding (px 12) (px 0) (px 12) (px 0)
     nav ? do
-      "text-align" -: "right"
+      textAlign (other "right")
       a ? do
         color black
         fontSize (px 18)
@@ -47,14 +46,15 @@ defaultCss = do
     fontWeight bold
     textDecoration none
 
--- Footer
+footerCss :: Css
+footerCss = do
   footer ? do
     borderTop solid (px 2) black
     color (other "#555")
     fontSize (px 12)
     marginTop (px 30)
     padding (px 12) (px 0) (px 12) (px 0)
-    "text-align" -: "right"
+    textAlign (other "right")
 
   div # "#info" ? do
     color (other "#555")
@@ -63,13 +63,18 @@ defaultCss = do
 
 main :: IO ()
 main = do
-  ex <- doesDirectoryExist "css"
-  unless ex (createDirectoryIfMissing True "css")
-  -- TODO: change name
-  L.writeFile "css/style.css" $
+  exD <- doesDirectoryExist "css"
+  unless exD (createDirectoryIfMissing False "css")
+  L.writeFile "css/default.css.tmp" $
 #if 0
-      renderWith compact [] $ defaultCss 
+    renderWith compact [] $ do
 #else
-      render                $ defaultCss 
+    render                $ do
 #endif
+    importUrl "/css/ubuntu.css"
+    bodyCss
+    headerCss
+    footerCss
+  copyFile "css/default.css" "css/default.css.bac"
+  renameFile "css/default.css.tmp" "css/default.css"
   print "css done"
