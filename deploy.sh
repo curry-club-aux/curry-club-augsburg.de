@@ -14,6 +14,8 @@ cd $(dirname "$0")
 cp -R ./_site/* "$TMP"
 
 ./site clean
+echo "\ngit status:"
+git status
 
 # test if branch 'gh-pages' exists; if not, create it
 if ! git rev-parse --verify gh-pages; then
