@@ -8,8 +8,6 @@ TMP=$(mktemp -d)
 
 pushd $(dirname "$0")
 
-cabal run css
-
 ./site clean
 ./site build
 
