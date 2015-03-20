@@ -15,6 +15,10 @@ cp -R ./_site/* "$TMP"
 
 ./site clean
 
+# test if branch 'gh-pages' exists; if not, create it
+if ! git rev-parse --verify gh-pages; then
+  git branch gh-pages
+fi
 git checkout gh-pages
 git pull "$ORIGIN" gh-pages
 
