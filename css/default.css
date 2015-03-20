@@ -1,69 +1,85 @@
-@import(/css/ubuntu.css)
-/* Elements */
-body {
-    color: black;
-    font-family: Ubuntu, sans-serif;
-    font-size: 16px;
-    margin: 0px 0px 0px 0px;
-    width: 100%;
+
+@import url(/css/ubuntu.css);
+body
+{
+  color       : rgb(0,0,0);
+  font-size   : 16px;
+  font-family : Ubuntu, sans-serif;
+  margin      : 0px 0px 0px 0px;
+  width       : 100%;
 }
 
-h1 {
-    font-size: 24px;
+body h1
+{
+  font-size : 24px;
 }
 
-h2 {
-    font-size: 20px;
+body h1
+{
+  font-size : 20px;
 }
 
-a:link, a:visited {
-    color: #75f;
+a:hover,
+a:visited
+{
+  color : #75f;
 }
 
-/* Layout */
-header, main, footer {
-    width: 600px;
-    margin: 0px auto 0px auto;
+header,
+main,
+footer
+{
+  width  : 600px;
+  margin : 0px auto 0px auto;
 }
 
-header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+header
+{
+  border-bottom : solid 2px rgb(0,0,0);
+  margin-bottom : 30px;
+  padding       : 12px 0px 12px 0px;
 }
 
-#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+header nav
+{
+  text-align : right;
 }
 
-header nav {
-    text-align: right;
-}
-
-header nav a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-}
-
-footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+header nav a
+{
+  color           : rgb(0,0,0);
+  font-size       : 18px;
+  font-weight     : bold;
+  margin-left     : 12px;
+  text-decoration : none;
 }
 
 
-div.info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
+div#logo a
+{
+  color           : rgb(0,0,0);
+  float           : left;
+  font-size       : 18px;
+  font-weight     : bold;
+  text-decoration : none;
 }
+
+footer
+{
+  border-top : solid 2px rgb(0,0,0);
+  color      : #555;
+  font-size  : 12px;
+  margin-top : 30px;
+  padding    : 12px 0px 12px 0px;
+  text-align : right;
+}
+
+div#info
+{
+  color      : #555;
+  font-size  : 14px;
+  font-style : italic;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
