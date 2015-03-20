@@ -31,7 +31,10 @@ git pull "$ORIGIN" gh-pages
 cp -R "$TMP/"* ./
 
 git add --all
-git commit -m "updated website output $(date '+%m/%d/%y %H:%M')"
+if ! git commit -m "updated website output $(date '+%m/%d/%y %H:%M')"; then
+  echo "No changes to generated website!"
+fi
+
 git push "$ORIGIN" gh-pages
 git checkout master
 
