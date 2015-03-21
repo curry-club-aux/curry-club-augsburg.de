@@ -75,6 +75,9 @@ main = do
     bodyCss
     headerCss
     footerCss
-  copyFile "css/default.css" "css/default.css.bac"
+
+  defaultCSSExists <- doesFileExist "css/default.css"
+  when defaultCSSExists $ copyFile "css/default.css" "css/default.css.bac"
+
   renameFile "css/default.css.tmp" "css/default.css"
   print "css done"
