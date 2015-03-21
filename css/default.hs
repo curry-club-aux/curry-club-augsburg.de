@@ -14,7 +14,7 @@ bodyCss = do
     width (other "100%")
     h1 ? fontSize (px 24)
     h1 ? fontSize (px 20)
-  ((a # hover) <> (a # visited)) ? 
+  ((a # link) <> (a # visited)) ? 
     color (other "#75f")
 
 headerCss :: Css
@@ -28,7 +28,7 @@ headerCss = do
     padding (px 12) (px 0) (px 12) (px 0)
     nav ? do
       textAlign (other "right")
-      a ? do
+      ((a # link) <> (a # visited)) ? do
         color black
         fontSize (px 18)
         fontWeight bold
