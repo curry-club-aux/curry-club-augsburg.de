@@ -1,4 +1,5 @@
 ---
 title: Hallo Welt!
 ---
-Test.
+	main :: IO ()
+	main = putStrLn "Hallo Welt!"
