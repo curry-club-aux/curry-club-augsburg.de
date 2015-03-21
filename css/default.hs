@@ -16,6 +16,7 @@ bodyCss = do
     h1 ? fontSize (px 20)
   ((a # link) <> (a # visited)) ? 
     color (other "#75f")
+  div # "#map" ? height (px 180)
 
 headerCss :: Css
 headerCss = do
