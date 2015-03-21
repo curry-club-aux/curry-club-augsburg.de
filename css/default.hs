@@ -1,13 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE CPP #-}
 import           Prelude hiding (div,(**))
-import qualified Prelude as P
 import           Data.Monoid
-import qualified Data.Text.Lazy    as L
 import qualified Data.Text.Lazy.IO as L
 import           Clay
-import           Control.Monad
-import           System.Directory
 
 bodyCss :: Css
 bodyCss = do
@@ -62,19 +57,8 @@ footerCss = do
     fontStyle italic
 
 main :: IO ()
-main = do
-  exD <- doesDirectoryExist "css"
-  unless exD (createDirectoryIfMissing False "css")
-  L.writeFile "css/default.css.tmp" $
-#if 0
-    renderWith compact [] $ do
-#else
-    render                $ do
-#endif
-    importUrl "/css/ubuntu.css"
-    bodyCss
-    headerCss
-    footerCss
-  copyFile "css/default.css" "css/default.css.bac"
-  renameFile "css/default.css.tmp" "css/default.css"
-  print "css done"
+main = L.putStr $ render $ do
+  importUrl "/css/ubuntu.css"
+  bodyCss
+  headerCss
+  footerCss
