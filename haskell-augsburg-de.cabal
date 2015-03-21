@@ -11,10 +11,11 @@ executable site
   default-language: Haskell2010
 
 executable css
-  main-is:          css.hs
+  main-is:          default.hs
   build-depends:    base == 4.*
                   , clay >= 0.9
                   , text
                   , directory
+  hs-source-dirs:   css
   ghc-options:      -threaded
   default-language: Haskell2010
