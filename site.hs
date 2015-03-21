@@ -97,7 +97,7 @@ feed = FeedConfiguration
     { feedTitle       = "Curry Club Augsburg"
     , feedDescription = "Neuigkeiten vom Curry Club Augsburg"
     , feedAuthorName  = "Curry Club Augsburg"
-    , feedAuthorEmail = "pseudo@pseudo.invalid"
+    , feedAuthorEmail = "post@curry-club-augsburg.de"
     , feedRoot        = "http://curry-club-augsburg.de"
     }
 
