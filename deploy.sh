@@ -1,43 +1,42 @@
 #!/bin/bash
 
-set -e
+cd $(dirname "$0")
+CURR_REPO=$(git rev-parse --show-toplevel)
+CURR_ORIGIN=$(git config --get remote.origin.url)
 
-ORIGIN=${1:origin}
+if [ "$1" == "-h" -o "$1" == "--help" -o $# -gt 1 ]; then
+  echo "Usage: ./deploy.sh [REMOTE-REPO-URL]"
+  echo ""
+  echo "By default, REMOTE-REPO-URL is '$CURR_ORIGIN',"
+  echo "the 'origin' of the git repository at '$CURR_REPO'."
+  exit 0
+fi
 
-TMP=$(mktemp -d sitebuild-XXXX)
+ORIGIN=${1:-$CURR_ORIGIN}
+BUILD_DIR=$(mktemp -d builddir-XXXX)
 
-pushd $(dirname "$0")
+function onerr() {
+  rm -rf "$BUILD_DIR"
+  exit 1
+}
+trap onerr ERR
+
+git clone -b gh-pages --single-branch "$CURR_REPO" "$BUILD_DIR"
+pushd "$BUILD_DIR"
+git pull "$ORIGIN" gh-pages
+popd
 
 ./site clean
 ./site build
-
-cp -R ./_site/* "$TMP"
-
+cp -R ./_site/* "$BUILD_DIR"
 ./site clean
 
-echo "git status:"
-git status
-
-# test if branch 'gh-pages' exists; if not, create it
-if git rev-parse --verify gh-pages; then
-  git checkout gh-pages
-else
-  git checkout --orphan gh-pages
-  git rm -rf .
-  find . -maxdepth 1 -not -name '.git' -not -name '.' | xargs rm -rf
-fi
-git pull "$ORIGIN" gh-pages
-
-cp -R "$TMP/"* ./
-
+cd "$BUILD_DIR"
 git add --all
-if ! git commit -m "updated website output $(date '+%m/%d/%y %H:%M')"; then
-  echo "No changes to generated website!"
+if git commit -m "Travis: updated website output $(date '+%m/%d/%y %H:%M')"; then
+  git push "$ORIGIN" gh-pages
+else
+  echo "No changes to generated website."
 fi
 
-git push "$ORIGIN" gh-pages
-git checkout master
-
-rm -rf "$TMP"
-
-popd
+rm -rf "$BUILD_DIR"
