@@ -6,7 +6,7 @@ import           Hakyll
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "CNAME" $ do
         route   idRoute
         compile copyFileCompiler
@@ -100,3 +100,7 @@ feed = FeedConfiguration
     , feedAuthorEmail = "pseudo@pseudo.invalid"
     , feedRoot        = "http://curry-club-augsburg.de"
     }
+
+config :: Configuration
+config = defaultConfiguration
+    { deployCommand = "./deploy.sh" }
