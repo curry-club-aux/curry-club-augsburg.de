@@ -7,7 +7,7 @@ executable site
   main-is:          site.hs
   build-depends:    base == 4.*
                   , hakyll == 4.6.*
-  ghc-options:      -threaded
+  ghc-options:      -threaded -Wall
   default-language: Haskell2010
 
 executable css
@@ -17,5 +17,5 @@ executable css
                   , text
                   , directory
   hs-source-dirs:   css
-  ghc-options:      -threaded
+  ghc-options:      -threaded -Wall
   default-language: Haskell2010
