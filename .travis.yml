@@ -11,6 +11,7 @@ install:
   - cabal install --only-dependencies
   - cabal configure
   - cabal build
+  - cabal exec runghc css/default.hs
 before_script:
   - git config --global user.email "tim@timbaumann.info"
   - git config --global user.name "Travis"
