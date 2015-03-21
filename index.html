@@ -5,6 +5,7 @@
         <title>Home :: Curry Club Augsburg</title>
         <link rel="stylesheet" type="text/css" href="./css/default.css" />
         <link rel="shortcut icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css" />
     </head>
     <body>
         <header>
@@ -34,11 +35,14 @@ Die Idee, einen funktionalen Stammtisch zu gründen, kam auf der <a href="https:
 <p>
 Wir treffen uns im tollen <a href="https://openlab-augsburg.de/kontakt/">OpenLab Augsburg</a>. Der Turnus und das erste Treffen stehen noch nicht fest.
 </p>
+
 <address>
-	OpenLab Augsburg e.V.<br />
-	Elisenstraße 1, Innenhof<br />
-	86159 Augsburg<br />
+  OpenLab Augsburg e.V.<br />
+  Elisenstraße 1, Innenhof<br />
+  86159 Augsburg<br />
 </address>
+
+<div id="map"></div>
 
 <h2>Kontakt</h2>
 <ul>
@@ -62,6 +66,20 @@ Sicher bald!
     
 </ul>
 
+
+<script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js"></script>
+
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoidGltamIiLCJhIjoiWG0taDVuRSJ9.5bxOxgAjrxAyaIcLzbV3ag';
+  var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/timjb.lh5m8dag/{z}/{x}/{y}.png?access_token=' + L.mapbox.accessToken, {
+      attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
+  });
+
+
+  var openLabCoords = [48.357684, 10.886725];
+  var map = L.map('map').setView(openLabCoords, 16).addLayer(mapboxTiles);
+  var marker = L.marker(openLabCoords).addTo(map);
+</script>
 
         </main>
 
