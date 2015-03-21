@@ -14,13 +14,13 @@ Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vorn
 
 ## Änderungen an `site.hs`
 
-Für Änderungen am Aufbau und der Generierung der Seite, empfielt es sich, lokal zu arbeiten, damit man schneller Änderungen ausprobieren kann. Wenn man das Repo geklont hat, muss man zuerst die Abhängigkeiten installieren und `site.hs` kompilieren.
+Für Änderungen am Aufbau und Design der Seite empfiehlt es sich, lokal zu arbeiten, damit man Änderungen schneller sieht. Wenn man das Repo geklont hat, muss man zuerst die Abhängigkeiten installieren und `site.hs` kompilieren.
 
 Mit Nix:
 
 ```bash
 $ nix-shell
-nix-shell $ cabal build
+[nix-shell] $ cabal build
 ```
 
 Ohne Nix:
@@ -35,7 +35,7 @@ Dann kann man `./site build` aufrufen. Das Programm generiert die Webseite neu u
 
 Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis Travis die Webseite neu generiert hat.
 
-Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `./deploy.sh` aufrufen. Das Skript baut die Webseite und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
+Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `./site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
 [wiki]: https://github.com/curry-club-aux/curry-club-augsburg.de/wiki
 [issues]: https://github.com/curry-club-aux/curry-club-augsburg.de/issues
