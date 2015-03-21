@@ -1,14 +1,14 @@
 with (import <nixpkgs> {}).pkgs;
 let pkg = haskellngPackages.callPackage
-            ({ mkDerivation, base, hakyll, stdenv }:
+            ({ mkDerivation, base, clay, directory, hakyll, stdenv, text }:
              mkDerivation {
-               pname = "haskell-augsburg-de";
+               pname = "curry-club-augsburg-de";
                version = "0.1.0.0";
                src = ./.;
                isLibrary = false;
                isExecutable = true;
-               buildDepends = [ base hakyll ];
-               license = stdenv.lib.licenses.cc-by-sa-30;
+               buildDepends = [ base clay directory hakyll text ];
+               license = "unknown";
              }) {};
 in
   pkg.env
