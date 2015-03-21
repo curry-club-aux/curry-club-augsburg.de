@@ -7,6 +7,7 @@ env:
   global:
     - secure: "ShO1+CPmSyK5AkM6Ic3l5ngYYbpUjdFmtItL6zAS+trhPxWOC/uzMohbPLG90AF7ZJM/vgSZCFZVhAj/92cGcc9Z3bb3yp5SnLgQAJNhKjaVgLzyJ3616aIb7jPHQ9mfbY5HAL7aG6P+27ak2Fwv05Nqam0BJqf8WeUxSX63mnI="
 install:
+  - cabal install cabal-install # upgrade to get 'cabal exec'
   - cabal sandbox init
   - cabal install --only-dependencies
   - cabal configure
