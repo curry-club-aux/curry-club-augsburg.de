@@ -1,4 +1,4 @@
-name:               haskell-augsburg-de
+name:               curry-club-augsburg-de
 version:            0.1.0.0
 build-type:         Simple
 cabal-version:      >= 1.10
