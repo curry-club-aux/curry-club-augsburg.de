@@ -21,10 +21,14 @@ function onerr() {
 }
 trap onerr ERR
 
-git clone -b gh-pages --single-branch "$CURR_REPO" "$BUILD_DIR"
-pushd "$BUILD_DIR"
-git pull "$ORIGIN" gh-pages
-popd
+# may fail if "$CURR_REPO" is a 'shallow' repository
+if git clone -b gh-pages --single-branch "$CURR_REPO" "$BUILD_DIR"; then
+  pushd "$BUILD_DIR"
+  git pull "$ORIGIN" gh-pages
+  popd
+else
+  git clone -b gh-pages --single-branch "$ORIGIN" "$BUILD_DIR"
+fi
 
 ./site clean
 ./site build
