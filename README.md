@@ -20,6 +20,7 @@ Mit Nix:
 
 ```bash
 $ nix-shell
+nix-shell $ cabal build
 ```
 
 Ohne Nix:
