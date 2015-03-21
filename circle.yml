@@ -1,3 +1,7 @@
 machine:
   ghc:
     version: 7.8.3
+general:
+  branches:
+    ignore:
+      - gh-pages
