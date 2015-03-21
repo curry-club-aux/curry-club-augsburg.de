@@ -37,12 +37,6 @@ Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `m
 
 Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `./deploy.sh` aufrufen. Das Skript baut die Webseite und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
-## TODO
-
-* Feed
-* Inhalt
-* CSS-Liebe
-
 [wiki]: https://github.com/curry-club-aux/curry-club-augsburg.de/wiki
 [issues]: https://github.com/curry-club-aux/curry-club-augsburg.de/issues
 [gh-pages]: https://pages.github.com/
