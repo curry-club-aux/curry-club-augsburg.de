@@ -70,9 +70,33 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
+    let feedPostCount = 10
+    create ["atom.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` constField "description" "This is the post description"
+            posts <- fmap (take feedPostCount) . recentFirst =<< loadAll "posts/*"
+            renderAtom feed feedCtx posts
+
+    create ["rss.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` constField "description" "This is the post description"
+            posts <- fmap (take feedPostCount) . recentFirst =<< loadAll "posts/*"
+            renderRss feed feedCtx posts
+
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+feed :: FeedConfiguration
+feed = FeedConfiguration
+    { feedTitle       = "Curry Club Augsburg"
+    , feedDescription = "Neuigkeiten vom Curry Club Augsburg"
+    , feedAuthorName  = "Curry Club Augsburg"
+    , feedAuthorEmail = "pseudo@pseudo.invalid"
+    , feedRoot        = "http://curry-club-augsburg.de"
+    }
