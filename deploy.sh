@@ -4,7 +4,7 @@ set -e
 
 ORIGIN=${1:origin}
 
-TMP=$(mktemp -d)
+TMP=$(mktemp -d sitebuild-XXXX)
 
 pushd $(dirname "$0")
 
