@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Curry Club Augsburg</title>
+        <link>http://curry-club-augsburg.de</link>
+        <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
+        <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>Tue, 17 Mar 2015 00:00:00 UT</lastBuildDate>
+        <item>
+    <title>Hallo Welt!</title>
+    <link>http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html</link>
+    <description><![CDATA[Erster Post.]]></description>
+    <pubDate>Tue, 17 Mar 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+
+    </channel>
+</rss>

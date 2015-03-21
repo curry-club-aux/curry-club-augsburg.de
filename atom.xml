@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Curry Club Augsburg</title>
+    <link href="http://curry-club-augsburg.de/atom.xml" rel="self" />
+    <link href="http://curry-club-augsburg.de" />
+    <id>http://curry-club-augsburg.de/atom.xml</id>
+    <author>
+        <name>Curry Club Augsburg</name>
+        <email>pseudo@pseudo.invalid</email>
+    </author>
+    <updated>2015-03-17T00:00:00Z</updated>
+    <entry>
+    <title>Hallo Welt!</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html</id>
+    <published>2015-03-17T00:00:00Z</published>
+    <updated>2015-03-17T00:00:00Z</updated>
+    <summary type="html"><![CDATA[Erster Post.]]></summary>
+</entry>
+
+</feed>
