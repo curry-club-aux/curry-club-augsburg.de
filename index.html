@@ -25,7 +25,7 @@ Wir treffen uns im tollen <a href="https://openlab-augsburg.de/kontakt/">OpenLab
 <h2>Kontakt</h2>
 <ul>
 	<li>Kontaktmailaddresse:
-        <a href="javascript:e()" id="emlToRepl">
+        <a href="javascript:e('post')" id="emlToRepl">
             post [at] curry-club-augsburg [punkt] de
         </a>
     </li>
@@ -44,10 +44,10 @@ $partial("templates/post-list.html")$
 <script type="text/javascript" charset="utf-8">
 // Skript, das die Mail Addresse mit '[at]' und ähnlichem durch @ ersetzt und
 // 'mailto:...' hinzufügt
-function e (){
-    var m = "post" + String.fromCharCode(64) + window.location.host;
+function e (n){
+    var m = n + String.fromCharCode(64) + window.location.host;
     document.getElementById("emlToRepl").innerHTML = m;
-    document.getElementById("emlToRepl").href = "mailto:" + m;
+    document.getElementById("emlToRepl").href = decodeURIComponent(atob("bWFpbHRvJTNB")) + m;
 }
 </script>
 
