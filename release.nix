@@ -23,7 +23,7 @@ in rec {
     installPhase = ''
       mv _site "$out"
       mkdir -p "$out/nix-support"
-      echo "website website $out index.html" \
+      echo "website website $out/index.html" \
         > "$out/nix-support/hydra-build-products"
     '';
   };
