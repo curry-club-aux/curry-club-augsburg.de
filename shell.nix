@@ -1,3 +1,2 @@
-with (import <nixpkgs> {}).pkgs;
-let pkg = haskellngPackages.callPackage (import ./default.nix) {};
-in pkg.env
+with (import <nixpkgs> {}).pkgs.haskellngPackages;
+(callPackage (import ./default.nix) { extraDeps = [ cabal-install ]; }).env
