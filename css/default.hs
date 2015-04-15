@@ -28,7 +28,7 @@ headerCss = do
     marginBottom (px 30)
     padding (px 12) (px 0) (px 12) (px 0)
     nav ? do
-      textAlign (other "right")
+      textAlign end
       ((a # link) <> (a # visited)) ? do
         color black
         fontSize (px 18)
@@ -50,7 +50,14 @@ footerCss = do
     fontSize (px 12)
     marginTop (px 30)
     padding (px 12) (px 0) (px 12) (px 0)
-    textAlign (other "right")
+    textAlign end
+
+  blockquote |> footer ? do
+    borderTopStyle none
+    marginTop (px 0)
+    paddingTop (px 10)
+    marginLeft (em 2)
+    textAlign start
 
   div # "#info" ? do
     color (other "#555")
