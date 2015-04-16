@@ -10,7 +10,7 @@ bodyCss = do
     color black
     fontSize (px 16)
     "font-family" -: "Ubuntu, sans-serif"
-    margin (px 0) (px 0) (px 0) (px 0)
+    margin nil nil nil nil
     width (other "100%")
     h1 ? fontSize (px 24)
     h1 ? fontSize (px 20)
@@ -22,11 +22,11 @@ headerCss :: Css
 headerCss = do
   (header <> main_ <> footer) ? do
     width (px 600)
-    margin (px 0) auto (px 0) auto;
+    margin nil auto nil auto;
   header ? do
     borderBottom solid (px 2) black
     marginBottom (px 30)
-    padding (px 12) (px 0) (px 12) (px 0)
+    padding (px 12) nil (px 12) nil
     nav ? do
       textAlign end
       ((a # link) <> (a # visited)) ? do
@@ -49,12 +49,12 @@ footerCss = do
     color (other "#555")
     fontSize (px 12)
     marginTop (px 30)
-    padding (px 12) (px 0) (px 12) (px 0)
+    padding (px 12) nil (px 12) nil
     textAlign end
 
   blockquote |> footer ? do
     borderTopStyle none
-    marginTop (px 0)
+    marginTop nil
     paddingTop (px 10)
     marginLeft (em 2)
     textAlign start
