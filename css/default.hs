@@ -12,11 +12,14 @@ bodyCss = do
     "font-family" -: "Ubuntu, sans-serif"
     sym margin nil
     width (other "100%")
+    h1 <> h2 <> h3 ? margin (em 1) nil (em 0.5) nil
     h1 ? fontSize (px 24)
     h1 ? fontSize (px 20)
   ((a # link) <> (a # visited)) ? 
     color (other "#75f")
-  div # "#map" ? height (px 180)
+  div # "#map" ? do
+    height (px 180)
+    sym margin (px 15)
 
 headerCss :: Css
 headerCss = do
