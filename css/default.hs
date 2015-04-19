@@ -6,6 +6,7 @@ import           Clay
 
 reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 reallyDarkPurple = other "#1e1420"
+darkererPurple = other "#170b1a"
 darkerPurple = other "#211024"
 darkPurple = other "#2d1630"
 ourPurple = other "#452d49"
@@ -35,6 +36,16 @@ layoutCss = do
   (header <> main_ <> (footer # ".footer")) ? do
     width (px 600)
     sym2 margin nil auto
+  main_ ? do
+    sym padding (px 30)
+    backgroundColor darkererPurple
+    div # ".spacer" ? do
+      display block
+      width (other "100%")
+      height (px 10)
+      padding 0 (px 30) 0 (px 30)
+      margin (px 20) 0 (px 20) (other "-30px")
+      background darkPurple
   header ? do
     marginTop (px 10)
     marginBottom (px 30)
