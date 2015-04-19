@@ -45,11 +45,11 @@ layoutCss = do
     paddingRight (px 30)
     paddingBottom (px 20)
     marginBottom (px 20)
-    backgroundColor (other "#dddddd")
-    color (other "#222")
-  div # ".block.dark" ? do
     background darkererPurple
     color white
+  div # ".block.bright" ? do
+    backgroundColor (other "#dddddd")
+    color (other "#222")
   header ? do
     marginTop (px 10)
     marginBottom (px 30)
@@ -86,7 +86,6 @@ layoutCss = do
     marginTop (px (-45))
     sym2 padding (px 10) nil
     textAlign end
-    ((a # link) <> (a # visited)) ? color inherit
 
 contentCss :: Css
 contentCss = do
@@ -95,7 +94,6 @@ contentCss = do
   h1 <> h2 <> h3 ? do
     margin (em 1) nil (em 0.5) nil
     fontWeight normal
-  --h1 ? fontSize (px 24)
   h2 ? do
     fontSize (px 20)
   "h2:before" ? do
@@ -104,10 +102,10 @@ contentCss = do
     paddingRight (px 10)
     color ourPurple
   ((a # link) <> (a # visited)) ?
-    color ourPurple
-  div # ".block.dark" ? do
+    color rose
+  div # ".block.bright" ? do
     ((a # link) <> (a # visited)) ?
-      color rose
+      color ourPurple
   p # "#next-meeting" ? do
     fontSize (px 18)
     textAlign (alignSide sideCenter)
