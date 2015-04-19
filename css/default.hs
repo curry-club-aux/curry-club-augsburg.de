@@ -86,6 +86,7 @@ layoutCss = do
     marginTop (px (-45))
     sym2 padding (px 10) nil
     textAlign end
+    ((a # link) <> (a # visited)) ? color inherit
 
 contentCss :: Css
 contentCss = do
