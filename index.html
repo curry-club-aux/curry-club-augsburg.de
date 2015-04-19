@@ -1,81 +1,99 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <title>Home :: Curry Club Augsburg</title>
-        <link rel="stylesheet" type="text/css" href="./css/default.css" />
-        <link rel="shortcut icon" href="./images/favicon.ico" />
-        <link rel="alternate" type="application/atom+xml" href="./atom.xml" />
-        <link rel="alternate" type="application/rss+xml" href="./rss.xml" />
-        <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css" />
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Home :: Curry Club Augsburg</title>
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml" href="./atom.xml" />
+    <link rel="alternate" type="application/rss+xml" href="./rss.xml" />
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="main">
         <header>
-            <div id="logo">
-                <a href="./">Curry Club Augsburg</a>
-            </div>
-            <nav>
-                <a href="./">Home</a>
-                <a href="./atom.xml">Feed</a>
-            </nav>
+          <div id="logo">
+            <a href="./">
+              <img src="./images/logo-dunkler-hintergrund.svg" alt="Curry Club Augsburg" />
+            </a>
+          </div>
+          <blockquote>
+            <p>Das wird heiß</p>
+            <footer>
+              &mdash; <cite class="author">Makarius</cite>
+            </footer>
+          </blockquote>
+          <div class="clear"></div>
         </header>
 
         <main id="content">
-            <blockquote>
-  <p>Das wird heiß</p>
-  <footer>
-    — <quote class="author">Makarius</quote>
-  </footer>
-</blockquote>
+          <div class="block">
+  <p>
+    Das Treffen für Haskellistas, Lambdroiden und andere funktionale, kohlenstoffbasierte Lebensformen in Augsburg!
+  </p>
+  <p>
+    Der Curry Club soll Treffpunkt sein, um Konzepte und Ansätze, Praktisches und Abstraktes, Purität und Effekte, Faulheit und Striktheit, Monaden und Monoide und sonst auch wirklich alles passende zu diskutieren.
+  </p>
+  <p>
+    Die Idee, einen funktionalen Stammtisch zu gründen, kam auf der <a href="https://openlab-augsburg.de/2015/03/augsburger-nerdnight-am-13-3-2015/">ersten Augsburger Nerdnacht</a> auf.
+  </p>
+</div>
 
-<h1>Curry Club Augsburg</h1>
+<div class="block">
+  <h2>Treffen</h2>
+  <p>
+    Wir treffen uns im tollen <a href="https://openlab-augsburg.de/kontakt/">OpenLab Augsburg</a>. Zum ersten Mal am
+  </p>
+  <p id="next-meeting">
+    Donnerstag, den 23.4.2015, 19:00 Uhr MEZ.
+  </p>
+  <p>
+    Danach im vierwöchigen Turnus, zweites Treffen ist also am 21.5.2015, 19:00 Uhr.
+  </p>
 
-<p>
-Das Treffen für Haskellistas, Lambdroiden und andere funktionale, kohlenstoffbasierte Lebensformen in Augsburg!
-</p>
-<p>
-Der Curry Club soll Treffpunkt sein, um Konzepte und Ansätze, Praktisches und Abstraktes, Purität und Effekte, Faulheit und Striktheit, Monaden und Monoide und sonst auch wirklich alles passende zu diskutieren.
-</p>
-<p>
-Die Idee, einen funktionalen Stammtisch zu gründen, kam auf der <a href="https://openlab-augsburg.de/2015/03/augsburger-nerdnight-am-13-3-2015/">ersten Augsburger Nerdnacht</a> auf.
-</p>
+  <div>
+    <address>
+      OpenLab Augsburg e.V.<br />
+      Elisenstraße 1, Innenhof<br />
+      86159 Augsburg<br />
+    </address>
 
-<h2>Treffen</h2>
-<p>
-Wir treffen uns im tollen <a href="https://openlab-augsburg.de/kontakt/">OpenLab Augsburg</a>. Zum ersten Mal am <strong>Donnerstag, den 23.4.2015, 19:00 Uhr MEZ</strong>. Danach im vierwöchigen Turnus, zweites Treffen ist also am 21.5.2015, 19:00 Uhr.
-</p>
+    <div id="map"></div>
+    <div class="clear"></div>
+  </div>
+</div>
 
-<address>
-  OpenLab Augsburg e.V.<br />
-  Elisenstraße 1, Innenhof<br />
-  86159 Augsburg<br />
-</address>
+<div class="block">
+  <h2>Kontakt</h2>
+  <ul>
+    <!--
+    <li>Kontaktmailaddresse:
+      <a href="javascript:twoClkEml('post','emlToRepl')" id="emlToRepl">
+          post [at] curry-club-augsburg [punkt] de
+      </a>
+    </li>
+    -->
+    <li>Feed: <a href="./atom.xml">Atom</a></li>
+    <li>Mailingliste: <a href="http://lists.curry-club-augsburg.de/listinfo/curry-talk">Curry-Talk</a></li>
+    <li>Github-Organisation: <a href="https://github.com/curry-club-aux">curry-club-aux</a></li>
+    <li>Für Zwischendurch IRC: #curry-club auf irc.freenode.net</li>
+  </ul>
+</div>
 
-<div id="map"></div>
-
-<h2>Kontakt</h2>
-<ul>
-  <!--
-	<li>Kontaktmailaddresse:
-    <a href="javascript:twoClkEml('post','emlToRepl')" id="emlToRepl">
-        post [at] curry-club-augsburg [punkt] de
-    </a>
-  </li>
-  -->
-  <li>Mailingliste: <a href="http://lists.curry-club-augsburg.de/listinfo/curry-talk">Curry-Talk</a></li>
-	<li>Github-Organisation: <a href="https://github.com/curry-club-aux">curry-club-aux</a></li>
-	<li>Für Zwischendurch IRC: #curry-club auf irc.freenode.net</li>
-</ul>
-
-<h2>Neuigkeiten</h2>
-<ul>
+<div class="block">
+  <div class="block">
+  <h2>Neuigkeiten</h2>
+  <ul>
     
-        <li>
-            <a href="./posts/2015-03-17-hallo-welt.html">Hallo Welt!</a> - March 17, 2015
-        </li>
+      <li>
+        <a href="./posts/2015-03-17-hallo-welt.html">Hallo Welt!</a> - March 17, 2015
+      </li>
     
-</ul>
+  </ul>
+</div>
 
+</div>
 
 <script type="text/javascript" charset="utf-8">
 // Skript, das die Mail Addresse mit '[at]' und ähnlichem durch @ ersetzt und
@@ -102,10 +120,12 @@ function twoClkEml (n,c){
 </script>
 
         </main>
+      </div>
+    </div>
 
-        <footer>
-            Mit <a href="http://jaspervdj.be/hakyll">Hakyll</a> erstellt.
-            Schau dir den <a href="https://github.com/curry-club-aux/curry-club-augsburg.de">Quellcode</a> an und verbessere ihn!
-        </footer>
-    </body>
+    <footer class="footer">
+      Mit viel <b>&lambda;</b> und mit Hilfe von <a href="http://jaspervdj.be/hakyll">Hakyll</a> erstellt.
+      Schau dir den <a href="https://github.com/curry-club-aux/curry-club-augsburg.de">Quellcode</a> an und verbessere ihn!
+    </footer>
+  </body>
 </html>
