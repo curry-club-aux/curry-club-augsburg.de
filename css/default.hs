@@ -39,13 +39,17 @@ layoutCss = do
   main_ ? do
     sym padding (px 30)
     --backgroundColor darkererPurple
-    div # ".block" ? do
-      paddingTop (px 10)
-      paddingLeft (px 30)
-      paddingRight (px 30)
-      paddingBottom (px 20)
-      marginBottom (px 20)
-      background darkererPurple
+  div # ".block" ? do
+    paddingTop (px 10)
+    paddingLeft (px 30)
+    paddingRight (px 30)
+    paddingBottom (px 20)
+    marginBottom (px 20)
+    backgroundColor (other "#dddddd")
+    color (other "#222")
+  div # ".block.dark" ? do
+    background darkererPurple
+    color white
   header ? do
     marginTop (px 10)
     marginBottom (px 30)
@@ -99,7 +103,10 @@ contentCss = do
     paddingRight (px 10)
     color ourPurple
   ((a # link) <> (a # visited)) ?
-    color rose
+    color ourPurple
+  div # ".block.dark" ? do
+    ((a # link) <> (a # visited)) ?
+      color rose
   p # "#next-meeting" ? do
     fontSize (px 18)
     textAlign (alignSide sideCenter)
