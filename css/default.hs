@@ -4,13 +4,13 @@ import           Data.Monoid
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 
-reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
+reallyDarkPurple, darkererPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 reallyDarkPurple = other "#1e1420"
-darkererPurple = other "#170b1a"
-darkerPurple = other "#211024"
-darkPurple = other "#2d1630"
-ourPurple = other "#452d49"
-rose = other "#be83c6"
+darkererPurple   = other "#170b1a"
+darkerPurple     = other "#211024"
+darkPurple       = other "#2d1630"
+ourPurple        = other "#452d49"
+rose             = other "#be83c6"
 
 bodyCss :: Css
 bodyCss = do
@@ -34,18 +34,18 @@ bodyCss = do
 layoutCss :: Css
 layoutCss = do
   (header <> main_ <> (footer # ".footer")) ? do
-    width (px 600)
+    width (px 660)
     sym2 margin nil auto
   main_ ? do
     sym padding (px 30)
-    backgroundColor darkererPurple
-    div # ".spacer" ? do
-      display block
-      width (other "100%")
-      height (px 10)
-      padding 0 (px 30) 0 (px 30)
-      margin (px 20) 0 (px 20) (other "-30px")
-      background darkPurple
+    --backgroundColor darkererPurple
+    div # ".block" ? do
+      paddingTop (px 10)
+      paddingLeft (px 30)
+      paddingRight (px 30)
+      paddingBottom (px 20)
+      marginBottom (px 20)
+      background darkererPurple
   header ? do
     marginTop (px 10)
     marginBottom (px 30)
@@ -72,7 +72,7 @@ layoutCss = do
     minHeight (other "100%")
   div # ".main" ? do
     overflow auto
-    paddingBottom (px 60)
+    paddingBottom (px 50)
   html <> body ? height (other "100%")
   footer # ".footer" ? do
     borderTop dashed (px 1) rose
@@ -115,6 +115,7 @@ contentCss = do
     color (other "#555")
     fontSize (px 14)
     fontStyle italic
+
 main :: IO ()
 main = L.putStr $ render $ do
   importUrl "/css/ubuntu.css"
