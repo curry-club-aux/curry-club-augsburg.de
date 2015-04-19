@@ -37,6 +37,14 @@ Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `m
 
 Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `./site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
+Wenn man den Anderen die Änderungen erst einmal zeigen möchte, kann man folgenden Workflow verwenden:
+
+* Forke dieses Repository.
+* Mache lokal deine Änderungen.
+* Rufe `./deploy.sh git@github.com:deingithubname/curry-club-augsburg.de.git` auf. (Das baut die Seite und pusht das Ergebnis in den `gh-pages`-Branch von deinem Fork.)
+* Committe deine Änderungen in einem speziellen Feature-Branch und push die Commits zu Github.
+* Starte einen Pull-Request, in dem du auf `http://deingithubname.github.io/curry-club-augsburg.de/` verlinkst.
+
 [wiki]: https://github.com/curry-club-aux/curry-club-augsburg.de/wiki
 [issues]: https://github.com/curry-club-aux/curry-club-augsburg.de/issues
 [gh-pages]: https://pages.github.com/
