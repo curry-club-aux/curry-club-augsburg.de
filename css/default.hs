@@ -96,7 +96,7 @@ layoutCss = do
 
 contentCss :: Css
 contentCss = do
-  div # ".clear" ? do
+  star # ".clear" ? do
     clear both
   h1 <> h2 <> h3 ? do
     margin (em 1) nil (em 0.5) nil
@@ -125,6 +125,7 @@ contentCss = do
     height (px 220)
     width (px 400)
     border solid (px 5) ourPurple
+    marginBottom (px 15)
     --sym2 margin (px 15) nil
   div # "#info" ? do
     color (other "#555")
