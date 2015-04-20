@@ -3,6 +3,7 @@ import           Prelude hiding (div,(**))
 import           Data.Monoid
 import qualified Data.Text.Lazy.IO as L
 import           Clay
+import qualified Clay.Display
 
 reallyDarkPurple, darkererPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 reallyDarkPurple = other "#1e1420"
@@ -47,6 +48,12 @@ layoutCss = do
     marginBottom (px 20)
     background darkererPurple
     color white
+    -- http://nicolasgallagher.com/micro-clearfix-hack/
+    ":after" <> ":before" ? do
+      content (stringContent " ")
+      display Clay.Display.table
+    ":after" ? do
+      clear both
   div # ".block.bright" ? do
     backgroundColor (other "#dddddd")
     color (other "#222")
