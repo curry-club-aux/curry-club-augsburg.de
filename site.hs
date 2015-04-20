@@ -68,6 +68,11 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
+    match "404.html" $ do
+        route idRoute
+        compile $
+          getResourceBody >>= loadAndApplyTemplate "templates/default.html" defaultContext
+
     match "templates/*" $ compile templateCompiler
 
     let feedPostCount = 10

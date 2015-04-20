@@ -130,6 +130,10 @@ contentCss = do
     color (other "#555")
     fontSize (px 14)
     fontStyle italic
+  pre # ".error-404" ? do
+    fontFamily ["Ubuntu Mono"] [monospace,sansSerif]
+    fontSize (px 40)
+    lineHeight (px 64)
 
 main :: IO ()
 main = L.putStr $ render $ do
