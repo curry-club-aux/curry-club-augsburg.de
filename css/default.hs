@@ -6,53 +6,53 @@ import           Clay
 import qualified Clay.Display
 
 reallyDarkPurple, darkererPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
-reallyDarkPurple = other "#1e1420"
-darkererPurple   = other "#170b1a"
+reallyDarkPurple = other "#170b1a"
+darkererPurple   = other "#1e1420"
 darkerPurple     = other "#211024"
 darkPurple       = other "#2d1630"
 ourPurple        = other "#452d49"
 rose             = other "#be83c6"
 
 bodyCss :: Css
-bodyCss = do
-  body ? do
-    color white
-    backgroundColor darkPurple
-    background $ linearGradient (angular $ deg 180)
-      [ (reallyDarkPurple, 0)
-      , (darkerPurple, 5)
-      , (darkPurple, 30)
-      ]
-    --backgroundRepeat noRepeat
-    backgroundAttachment attachFixed
-    fontSize (px 15)
-    lineHeight (px 24)
-    fontWeight lighter
-    "font-family" -: "Ubuntu, sans-serif"
-    sym margin nil
-    width (other "100%")
+bodyCss = body ? do
+  color white
+  backgroundColor darkPurple
+  background $ linearGradient (angular $ deg 180)
+    [ (reallyDarkPurple, 0)
+    , (darkerPurple, 5)
+    , (darkPurple, 30)
+    ]
+  --backgroundRepeat noRepeat
+  backgroundAttachment attachFixed
+  fontSize (px 15)
+  lineHeight (px 24)
+  fontWeight lighter
+  "font-family" -: "Ubuntu, sans-serif"
+  sym margin nil
+  width (other "100%")
 
 layoutCss :: Css
 layoutCss = do
   (header <> main_ <> (footer # ".footer")) ? do
     width (px 660)
     sym2 margin nil auto
-  main_ ? do
+  main_ ?
     sym padding (px 30)
     --backgroundColor darkererPurple
   div # ".block" ? do
-    paddingTop (px 10)
-    paddingLeft (px 30)
-    paddingRight (px 30)
-    paddingBottom (px 20)
+    paddingTop (px 0)
+    paddingLeft (px 20)
+    paddingRight (px 20)
+    paddingBottom (px 10)
+    border solid (px 10) darkererPurple
     marginBottom (px 20)
-    background darkererPurple
+    background reallyDarkPurple
     color white
     -- http://nicolasgallagher.com/micro-clearfix-hack/
     ":after" <> ":before" ? do
       content (stringContent " ")
       display Clay.Display.table
-    ":after" ? do
+    ":after" ?
       clear both
   div # ".block.bright" ? do
     backgroundColor (other "#dddddd")
@@ -79,7 +79,7 @@ layoutCss = do
         paddingTop (px 6)
         marginLeft (em 2)
   -- based on http://www.cssstickyfooter.com
-  div # ".wrap" ? do
+  div # ".wrap" ?
     minHeight (other "100%")
   div # ".main" ? do
     overflow auto
@@ -96,12 +96,12 @@ layoutCss = do
 
 contentCss :: Css
 contentCss = do
-  star # ".clear" ? do
+  star # ".clear" ?
     clear both
   h1 <> h2 <> h3 ? do
     margin (em 1) nil (em 0.5) nil
     fontWeight normal
-  h2 ? do
+  h2 ?
     fontSize (px 20)
   "h2:before" ? do
     fontWeight bold
@@ -110,13 +110,13 @@ contentCss = do
     color ourPurple
   ((a # link) <> (a # visited)) ?
     color rose
-  div # ".block.bright" ? do
+  div # ".block.bright" ?
     ((a # link) <> (a # visited)) ?
       color ourPurple
   p # "#next-meeting" ? do
     fontSize (px 18)
     textAlign (alignSide sideCenter)
-  div # ".abstract" ? do
+  div # ".abstract" ?
     fontStyle italic
   address ?
     float floatLeft
