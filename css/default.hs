@@ -116,6 +116,8 @@ contentCss = do
   p # "#next-meeting" ? do
     fontSize (px 18)
     textAlign (alignSide sideCenter)
+  div # ".abstract" ? do
+    fontStyle italic
   address ?
     float floatLeft
   div # "#map" ? do
