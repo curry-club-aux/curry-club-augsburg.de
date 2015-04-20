@@ -19,3 +19,7 @@ executable css
   hs-source-dirs:   css
   ghc-options:      -threaded -Wall
   default-language: Haskell2010
+
+-- Achtung! Das erzeugte Programm site benötigt zur korrekten Ausführung
+-- eine aktuelle Installation von cabal-install. Sonst funktioniert nämlich
+-- "cabal exec runghc" nicht.
