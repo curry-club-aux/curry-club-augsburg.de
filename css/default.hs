@@ -40,11 +40,10 @@ layoutCss = do
     sym padding (px 30)
     --backgroundColor darkererPurple
   div # ".block" ? do
-    paddingTop (px 0)
-    paddingLeft (px 20)
-    paddingRight (px 20)
-    paddingBottom (px 10)
-    border solid (px 10) darkererPurple
+    paddingTop (px 10)
+    paddingLeft (px 30)
+    paddingRight (px 30)
+    paddingBottom (px 20)
     marginBottom (px 20)
     background reallyDarkPurple
     color white
