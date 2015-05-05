@@ -3,13 +3,12 @@ nixpkgs = import <nixpkgs> {};
 haskellNg = nixpkgs.pkgs.haskell-ng;
 # hopefully temporary, but ghc 7.8 fails because of non-deterministic builds (of GHC)
 ghc710 = haskellNg.packages.ghc7101;
-# Fix for unnecessary patches 7.10 wants to apply see https://github.com/NixOS/nixpkgs/commit/f65fed20deea43096528f87cc94ef6943adc0b37
-ownHakyll = with nixpkgs.pkgs.haskellPackages; callPackage (import ./hakyll-tmp.nix) {};
-pkg = with ghc710; callPackage ./. { hakyll = ownHakyll; };
-ghc = ghc710.ghcWithPackages (pkgs: with pkgs; [ base clay directory ownHakyll text system-filepath ]);
+fixedHakyll = ghc710.hakyll.override { inherit (ghc710) mkDerivation; };
+pkg = ghc710.callPackage ./. {
+  hakyll = haskellNg.lib.dontCheck fixedHakyll;
+};
 
 in
-with nixpkgs.lib;
-overrideDerivation pkg (super: {
-  buildInputs = super.buildInputs ++ [ ghc ghc710.cabal-install];
+nixpkgs.lib.overrideDerivation pkg.env (old: {
+  buildInputs = old.buildInputs ++ [ ghc710.cabal-install ];
 })
