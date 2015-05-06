@@ -47,7 +47,8 @@
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>, a)
 
 <span class="co">-- oder mit newtype Wrapper:</span>
-<span class="kw">newtype</span> <span class="dt">Parser</span> a <span class="fu">=</span> <span class="dt">MkParser</span> {<span class="ot"> runParser ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>,a) }</code></pre></div>
+<span class="kw">newtype</span> <span class="dt">Parser</span> a <span class="fu">=</span> <span class="dt">MkParser</span>
+    {<span class="ot"> runParser ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>,a) }</code></pre></div>
 <p>So kann man jetzt zum Beispiel einen Char parsen:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">char ::</span> <span class="dt">Char</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">Char</span>
 char c <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span>
