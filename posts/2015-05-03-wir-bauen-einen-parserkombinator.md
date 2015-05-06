@@ -11,7 +11,8 @@ Ein Parser ist eine Funktion von einem String zu einem eventuellen Tupel aus Res
 String -> Maybe (String, a)
 
 -- oder mit newtype Wrapper:
-newtype Parser a = MkParser { runParser :: String -> Maybe (String,a) }
+newtype Parser a = MkParser
+    { runParser :: String -> Maybe (String,a) }
 ```
 
 So kann man jetzt zum Beispiel einen Char parsen:
