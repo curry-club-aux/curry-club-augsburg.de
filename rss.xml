@@ -7,8 +7,24 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 17 Mar 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 03 May 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Wir bauen einen Parserkombinator</title>
+    <link>http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Sun, 03 May 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
+    <title>Erstes Treffen des Curry Clubs</title>
+    <link>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Tue, 28 Apr 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Hallo Welt!</title>
     <link>http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html</link>
     <description><![CDATA[Erster Post.]]></description>

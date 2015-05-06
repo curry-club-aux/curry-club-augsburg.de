@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wir bauen einen Parserkombinator :: Curry Club Augsburg</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml" href="../atom.xml" />
+    <link rel="alternate" type="application/rss+xml" href="../rss.xml" />
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="main">
+        <header>
+          <div id="logo">
+            <a href="../">
+              <img src="../images/logo-dunkler-hintergrund.svg" alt="Curry Club Augsburg" />
+            </a>
+          </div>
+          <blockquote>
+            <p>Das wird heiß</p>
+            <footer>
+              &mdash; <cite class="author">Makarius</cite>
+            </footer>
+          </blockquote>
+          <div class="clear"></div>
+        </header>
+
+        <main id="content">
+          <article>
+  <header>
+    <h2>Wir bauen einen Parserkombinator</h2>
+    <div class="info">
+        Posted on May  3, 2015
+        
+            by Profpatsch
+        
+    </div>
+    
+    <img src="../images/monadic-parser-combinators.jpg" alt="I don’t always parse Text, but when I do I use Monadic Parser Combinators" />
+    
+    
+  </header>
+
+  <p>Ein Parser ist eine Funktion von einem String zu einem eventuellen Tupel aus Resttext und geparsten Daten,</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>, a)
+
+<span class="co">-- oder mit newtype Wrapper:</span>
+<span class="kw">newtype</span> <span class="dt">Parser</span> a <span class="fu">=</span> <span class="dt">MkParser</span> {<span class="ot"> runParser ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>,a) }</code></pre></div>
+<p>So kann man jetzt zum Beispiel einen Char parsen:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">char ::</span> <span class="dt">Char</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">Char</span>
+char c <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span>
+    <span class="kw">case</span> s <span class="kw">of</span>
+	(d<span class="fu">:</span>cs) <span class="fu">|</span> c <span class="fu">==</span> d <span class="ot">-&gt;</span> <span class="dt">Just</span> (cs, c)
+	otherwise       <span class="ot">-&gt;</span> <span class="dt">Nothing</span></code></pre></div>
+<p>Diese Funktion nimmt einen Char und gibt einen Parser zurück, der wiederum zur Ausführung einen String nimmt und prüft, ob dessen Anfangschar gleich dem Char <code>c</code> ist. Wenn das nicht so ist (<code>otherwise</code>), schlägt der Parser fehl.</p>
+<p>Schnell definierten wir auch eine mysteriöse Funktion <code>bind</code>, die einen Parser nimmt, diesen ausführt, und das Ergebnis an eine zweite Funktion übergibt, die wiederum einen Parser zurückgibt.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">bind ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b) <span class="ot">-&gt;</span> <span class="dt">Parser</span> b
+bind m f <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span>
+    <span class="kw">case</span> runParser m s <span class="kw">of</span>
+	<span class="dt">Just</span> (s', x) <span class="ot">-&gt;</span> runParser (f x) s'
+	<span class="dt">Nothing</span>      <span class="ot">-&gt;</span> <span class="dt">Nothing</span></code></pre></div>
+<p>Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten, wo dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.</p>
+<p>Natürlich darf dann auch der Kumpan von <code>bind/&gt;&gt;=</code>, <code>pure/return</code> nicht fehlen:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">pure ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
+pure x <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> <span class="dt">Just</span> (s, x)</code></pre></div>
+<p>Das macht einfach einen beliebigen Wert zu einem Parser (damit man ihn auch mit anderen Parsern verketten kann).</p>
+<p>Diese Definitionen kombiniert man dann (Parser<em>kombinatioren</em>) zu höherleveligen Hilfsfunktionen, wie z.B.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">andThen ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
+andThen m n <span class="fu">=</span> bind m (\x <span class="ot">-&gt;</span> bind n (\y <span class="ot">-&gt;</span> pure x))</code></pre></div>
+<p>was ein Stück Eingabe parst und dann wegschmeißt. Das wird dann von dem S-Expr-Parser wieder benutzt, um Tokens zu definieren:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">token ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">String</span>
+token s <span class="fu">=</span> string s <span class="ot">`andThen`</span> spaces</code></pre></div>
+<p>Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. <code>foo</code> der gleiche Token wie <code>foo</code>.</p>
+<p>Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und wie sie als Text dargestellt werden.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Exp</span> <span class="fu">=</span> <span class="dt">Atom</span> <span class="dt">String</span> <span class="fu">|</span> <span class="dt">List</span> [<span class="dt">Exp</span>]
+    <span class="kw">deriving</span> (<span class="dt">Show</span>,<span class="dt">Eq</span>)
+
+<span class="co">-- Das sind Beispiele für S-Exprs:</span>
+<span class="co">-- hallo</span>
+<span class="co">-- (foo bar baz (...))</span>
+
+<span class="ot">parseExp ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span>
+parseExp <span class="fu">=</span> choice [ parseAtom, parseList ]
+
+<span class="ot">parseAtom ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span>
+parseAtom <span class="fu">=</span> <span class="kw">do</span>
+    x <span class="ot">&lt;-</span> many1 alphaNum
+    spaces
+    return (<span class="dt">Atom</span> x)
+
+<span class="ot">parseList ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span>
+parseList <span class="fu">=</span> <span class="kw">do</span>
+    token <span class="st">&quot;(&quot;</span>
+    xs <span class="ot">&lt;-</span> many parseExp
+    token <span class="st">&quot;)&quot;</span>
+    return <span class="fu">$</span> <span class="dt">List</span> xs</code></pre></div>
+<p>TODO: Voller Code?</p>
+<p>TODO: Dateien Mirrorn, Syntax Hilighting</p>
+<p>Das Ergebnis kann <a href="https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs">hier</a> bestaunt werden.</p>
+</article>
+
+        </main>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Mit viel <b>&lambda;</b> und mit Hilfe von <a href="http://jaspervdj.be/hakyll">Hakyll</a> erstellt.
+      Schau dir den <a href="https://github.com/curry-club-aux/curry-club-augsburg.de">Quellcode</a> an und verbessere ihn!
+    </footer>
+  </body>
+</html>
