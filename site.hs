@@ -1,8 +1,7 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
+import           Data.Monoid ((<>))
 import           Hakyll
-
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -44,8 +43,8 @@ main = hakyllWith config $ do
 --        compile $ do
 --            posts <- recentFirst =<< loadAll "posts/*"
 --            let archiveCtx =
---                    listField "posts" postCtx (return posts) `mappend`
---                    constField "title" "Archives"            `mappend`
+--                    listField "posts" postCtx (return posts) <>
+--                    constField "title" "Archives"            <>
 --                    defaultContext
 --
 --            makeItem ""
@@ -59,9 +58,9 @@ main = hakyllWith config $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    defaultContext
+                    listField "posts" postCtx (return posts)
+                    <> constField "title" "Home"              
+                    <> defaultContext
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
@@ -79,14 +78,14 @@ main = hakyllWith config $ do
     create ["atom.xml"] $ do
         route idRoute
         compile $ do
-            let feedCtx = postCtx `mappend` constField "description" "This is the post description"
+            let feedCtx = postCtx <> constField "description" "This is the post description"
             posts <- fmap (take feedPostCount) . recentFirst =<< loadAll "posts/*"
             renderAtom feed feedCtx posts
 
     create ["rss.xml"] $ do
         route idRoute
         compile $ do
-            let feedCtx = postCtx `mappend` constField "description" "This is the post description"
+            let feedCtx = postCtx <> constField "description" "This is the post description"
             posts <- fmap (take feedPostCount) . recentFirst =<< loadAll "posts/*"
             renderRss feed feedCtx posts
 
@@ -94,8 +93,10 @@ main = hakyllWith config $ do
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+    <> dateField "date" "%B %e, %Y"
+    <> constField "images" "/images"
+      where
 
 feed :: FeedConfiguration
 feed = FeedConfiguration

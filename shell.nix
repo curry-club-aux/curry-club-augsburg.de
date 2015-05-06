@@ -10,5 +10,5 @@ pkg = ghc710.callPackage ./. {
 
 in
 nixpkgs.lib.overrideDerivation pkg.env (old: {
-  buildInputs = old.buildInputs ++ [ ghc710.cabal-install ];
+  buildInputs = old.buildInputs ++ [ ghc710.cabal-install ghc710.ghcid];
 })
