@@ -33,32 +33,19 @@ bodyCss = body ? do
 
 layoutCss :: Css
 layoutCss = do
-  (header <> main_ <> (footer # ".footer")) ? do
+
+  ".main" |> (header <> main_ <> (footer # ".footer")) ? do
     width (px 660)
     sym2 margin nil auto
   main_ ?
-    sym padding (px 30)
+    padding nil nil (px 30) nil
     --backgroundColor darkererPurple
-  div # ".block" ? do
-    paddingTop (px 10)
-    paddingLeft (px 30)
-    paddingRight (px 30)
-    paddingBottom (px 20)
-    marginBottom (px 20)
-    background reallyDarkPurple
-    color white
-    -- http://nicolasgallagher.com/micro-clearfix-hack/
-    ":after" <> ":before" ? do
-      content (stringContent " ")
-      display Clay.Display.table
-    ":after" ?
-      clear both
   div # ".block.bright" ? do
     backgroundColor (other "#dddddd")
     color (other "#222")
-  header ? do
-    marginTop (px 10)
-    marginBottom (px 30)
+  ".main" |> header ? do
+    marginTop (px 20)
+    marginBottom (px 10)
     sym2 padding (px 12) nil
     position relative
     div # "#logo" ? do
@@ -93,6 +80,39 @@ layoutCss = do
     sym2 padding (px 10) nil
     textAlign end
 
+postCss :: Css
+postCss = do
+  article <? do
+    header <? do
+      h2 <? do
+        marginBottom (em 0.2)
+      div # ".info" ? do
+        color rose
+        fontSize (px 14)
+        fontStyle italic
+        marginBottom (em 1.5)
+      img ? do
+        maxWidth (px 400)
+        display block
+        sym2 margin auto auto
+      div # ".attribution" ? do
+        color ourPurple
+        textAlign end
+        p ? sym2 margin (em 0.5) nil
+        ((a # link) <> (a # visited)) ?
+          color ourPurple
+    padding (px 10) (px 30) (px 10) (px 30)
+    marginBottom (em 1)
+    background reallyDarkPurple
+    color white
+    -- http://nicolasgallagher.com/micro-clearfix-hack/
+    ":after" <> ":before" ? do
+      content (stringContent " ")
+      display Clay.Display.table
+    ":after" ?
+      clear both
+    
+
 contentCss :: Css
 contentCss = do
   star # ".clear" ?
@@ -126,10 +146,6 @@ contentCss = do
     border solid (px 5) ourPurple
     marginBottom (px 15)
     --sym2 margin (px 15) nil
-  div # "#info" ? do
-    color (other "#555")
-    fontSize (px 14)
-    fontStyle italic
   pre # ".error-404" ? do
     fontFamily ["Ubuntu Mono"] [monospace,sansSerif]
     fontSize (px 40)
@@ -141,3 +157,4 @@ main = L.putStr $ render $ do
   bodyCss
   layoutCss
   contentCss
+  postCss
