@@ -86,7 +86,7 @@ postCss = do
     header <? do
       h2 <? do
         marginBottom (em 0.2)
-      div # "#info" ? do
+      div # ".info" ? do
         color rose
         fontSize (px 14)
         fontStyle italic
@@ -95,6 +95,12 @@ postCss = do
         maxWidth (px 400)
         display block
         sym2 margin auto auto
+      div # ".attribution" ? do
+        color ourPurple
+        textAlign end
+        p ? sym2 margin (em 0.5) nil
+        ((a # link) <> (a # visited)) ?
+          color ourPurple
     padding (px 10) (px 30) (px 10) (px 30)
     marginBottom (em 1)
     background reallyDarkPurple

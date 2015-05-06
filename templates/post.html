@@ -1,7 +1,7 @@
 <article>
   <header>
     <h2>$title$</h2>
-    <div id="info">
+    <div class="info">
         Posted on $date$
         $if(author)$
             by $author$
@@ -9,6 +9,9 @@
     </div>
     $if(image)$
     <img src="$images$/$image$" alt="$image-alt$" />
+    $endif$
+    $if(image-attr)$
+    <div class="attribution"><p>$image-attr$</p></div>
     $endif$
   </header>
 

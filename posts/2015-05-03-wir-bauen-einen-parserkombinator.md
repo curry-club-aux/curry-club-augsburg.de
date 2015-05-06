@@ -5,8 +5,6 @@ image: monadic-parser-combinators.jpg
 image-alt: I don’t always parse Text, but when I do I use Monadic Parser Combinators
 ---
 
-TODO: Bild von hier: https://github.com/iblech/vortrag-haskell/blob/master/images/monadic-parser-combinators.jpeg
-
 Ein Parser ist eine Funktion von einem String zu einem eventuellen Tupel aus Resttext und geparsten Daten,
 
 ``` haskell

@@ -1,6 +1,9 @@
 ---
 title: Erstes Treffen des Curry Clubs
 author: Profpatsch
+image: learn-you-a-haskell-for-great-good.png
+image-alt: Learn you a Haskell for great good
+image-attr: <a href="http://learnyouahaskell.com/">LearnYouAHaskell</a> (CC BY-NC-SA)
 ---
 
 Am vergangenen Donnerstag hatten wir unser erstes Treffen im [OpenLab Augsburg][ola]. Es waren fast 20 Personen anwesend.
@@ -36,7 +39,7 @@ Zum Schluss ließ ein Teil der Anwesenden den Abend bei einem leckeren Curry im 
 
 
 [ola]: https://openlab-augsburg.de/
-[curry-parser]: 2015-05-02-wir-bauen-einen-parserkombinator
+[curry-parser]: 2015-05-03-wir-bauen-einen-parserkombinator.html
 [msm]: https://github.com/maximilianhuber/mySortMaildir
 [spock]: http://www.spock.li/
 [tsrblog]: http://www.spock.li/2015/04/19/type-safe_routing.html
