@@ -111,7 +111,31 @@ postCss = do
       display Clay.Display.table
     ":after" ?
       clear both
-    
+
+syntaxCss :: Css
+syntaxCss = do
+  -- Colors taken from theme "Tomorrow Night"
+  -- https://github.com/chriskempson/tomorrow-theme
+  div # ".sourceCode" ? do
+    overflowX auto
+  pre # ".sourceCode" ? do
+    borderLeft solid (px 2) ourPurple
+    paddingLeft (px 18)
+    color (other "#c5c8c6")
+    ".kw" ? color (other "#de935f") -- KeyWordTok
+    ".dt" ? color (other "#f0c674") -- DataTypeTok
+    -- DecValTok (decimal value), BaseNTok, FloatTok
+    ".dv" <> ".bn" <> ".fl" ? color (other "#D33682")
+    ".ch" ? color (other "#b5bd68") -- CharTok
+    ".st" ? color (other "#b5bd68") -- StringTok
+    ".co" ? color (other "#b294bb") -- CommentTok
+    ".ot" ? color (other "#8abeb7") -- OtherTok
+    ".al" ? color (other "#cc6666") -- AlertTok
+    ".fu" ? color (other "#81a2be") -- FunctionTok
+    -- ErrorTok
+    ".er" ? do
+      fontWeight bold
+      color (other "#D30102")
 
 contentCss :: Css
 contentCss = do
@@ -158,3 +182,4 @@ main = L.putStr $ render $ do
   layoutCss
   contentCss
   postCss
+  syntaxCss
