@@ -27,7 +27,7 @@ char c = MkParser $ \s ->
 
 Diese Funktion nimmt einen Char und gibt einen Parser zurück, der wiederum zur Ausführung einen String nimmt und prüft, ob dessen Anfangschar gleich dem Char `c` ist. Wenn das nicht so ist (`otherwise`), schlägt der Parser fehl.
 
-Schnell definierten wir auch eine mysteriöse Funktion `bind`, die einen Parser nimmt, diesen ausführt, und das Ergebnis an eine zweite Funktion übergibt, die wiederum einen Parser zurückgibt.
+Schnell definieren wir auch eine mysteriöse Funktion `bind`, die einen Parser nimmt, diesen ausführt, und das Ergebnis an eine zweite Funktion übergibt, die wiederum einen Parser zurückgibt.
 
 ``` haskell
 bind :: Parser a -> (a -> Parser b) -> Parser b
@@ -37,7 +37,7 @@ bind m f = MkParser $ \s ->
 	Nothing      -> Nothing
 ```
 
-Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten, wo dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.
+Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.
 
 Natürlich darf dann auch der Kumpan von `bind/>>=`, `pure/return` nicht fehlen:
 
@@ -62,9 +62,9 @@ token :: String -> Parser String
 token s = string s `andThen` spaces
 ```
 
-Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. `foo` der gleiche Token wie `foo        `.
+Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. `foo` der gleiche Token wie `foo        `.
 
-Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und wie sie als Text dargestellt werden.
+Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und den Parser, der definiert, wie sie als Text dargestellt werden.
 
 ``` haskell
 data Exp = Atom String | List [Exp]
@@ -93,7 +93,7 @@ parseList = do
 
 TODO: Voller Code?
 
-TODO: Dateien Mirrorn, Syntax Hilighting
+TODO: Dateien Mirrorn
 
 Das Ergebnis kann [hier][parserc] bestaunt werden.
 
