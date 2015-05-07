@@ -15,7 +15,7 @@ rose             = other "#be83c6"
 
 bodyCss :: Css
 bodyCss = body ? do
-  color white
+  color (other "#FFFDDE")
   backgroundColor darkPurple
   background $ linearGradient (angular $ deg 180)
     [ (reallyDarkPurple, 0)
@@ -104,7 +104,6 @@ postCss = do
     padding (px 10) (px 30) (px 10) (px 30)
     marginBottom (em 1)
     background reallyDarkPurple
-    color white
     -- http://nicolasgallagher.com/micro-clearfix-hack/
     ":after" <> ":before" ? do
       content (stringContent " ")
