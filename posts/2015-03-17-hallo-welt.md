@@ -2,5 +2,8 @@
 title: Hallo Welt!
 description: Erster Post.
 ---
-	main :: IO ()
-	main = putStrLn "Hallo "
+
+```haskell
+main :: IO ()
+main = putStrLn "Hallo "
+```
