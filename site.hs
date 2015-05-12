@@ -95,8 +95,6 @@ postCtx :: Context String
 postCtx =
     defaultContext
     <> dateField "date" "%B %e, %Y"
-    <> constField "images" "/images"
-      where
 
 feed :: FeedConfiguration
 feed = FeedConfiguration

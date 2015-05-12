@@ -1,7 +1,7 @@
 ---
 title: Erstes Treffen des Curry Clubs
 author: Profpatsch
-image: learn-you-a-haskell-for-great-good.png
+image: /images/learn-you-a-haskell-for-great-good.png
 image-alt: Learn you a Haskell for great good
 image-attr: <a href="http://learnyouahaskell.com/">LearnYouAHaskell</a> (CC BY-NC-SA)
 ---

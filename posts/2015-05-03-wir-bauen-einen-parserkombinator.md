@@ -1,7 +1,7 @@
 ---
 title: Wir bauen einen Parserkombinator
 author: Profpatsch
-image: monadic-parser-combinators.jpg
+image: /images/monadic-parser-combinators.jpg
 image-alt: I don’t always parse Text, but when I do I use Monadic Parser Combinators
 ---
 
