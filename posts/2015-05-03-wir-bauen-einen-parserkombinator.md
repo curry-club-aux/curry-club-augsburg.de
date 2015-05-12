@@ -91,6 +91,17 @@ parseList = do
     return $ List xs
 ```
 
+## Was fehlt noch?
+
+- Unsere naive Bibliothek leckt Speicher
+- Wir geben keine guten Parse-Fehlermeldungen aus
+- Wir haben keine Kombinatoren zum Parsen von Termen mit Operatoren
+
+![xkcd about regular expressions](/images/regular_expressions.png)
+<div class="attribution"><p><a href="https://xkcd.com/208/">xkcd</a></p></div>
+
+Danke [Ingo Blechschmidt][ingo] für den tollen Vortrag.
+
 TODO: Voller Code?
 
 TODO: Dateien Mirrorn
@@ -98,3 +109,4 @@ TODO: Dateien Mirrorn
 Das Ergebnis kann [hier][parserc] bestaunt werden.
 
 [parserc]: https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs
+[ingo]: http://speicherleck.de/iblech/
