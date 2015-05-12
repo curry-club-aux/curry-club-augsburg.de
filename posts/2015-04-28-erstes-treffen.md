@@ -19,7 +19,7 @@ Tim ging im dritten Talk auf die Typebene und beschrieb das von ihm implementier
 Zum Schluss ließ ein Teil der Anwesenden den Abend bei einem leckeren Curry im [Sangam][sg] ausklingen.
 
 
-## Beim Essen haben wir unter anderem gelernt
+# Beim Essen haben wir unter anderem gelernt
 
 * Der Code von [Isabelle][isabelle] war die letzten 20 Jahre über sehr gut wartbar und konnte mehrmals tiefgreifend umstrukturiert werden. Es gibt aber auch eine Funktion, die zusätzlich zu mehreren anderen Parametern fünf boolsche Flags nimmt und die sich niemand anzufassen traut. :-)
 * Isabelle besitzt auch einen Kern für minimale Logik.

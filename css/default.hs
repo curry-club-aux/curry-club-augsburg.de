@@ -83,9 +83,11 @@ layoutCss = do
 postCss :: Css
 postCss = do
   article <? do
+    "h1:first-child:first-of-type" ? lambdify
     header <? do
-      h2 <? do
+      h1 <? do
         marginBottom (em 0.2)
+        lambdify
       div # ".info" ? do
         color rose
         fontSize (px 14)
@@ -143,13 +145,10 @@ contentCss = do
   h1 <> h2 <> h3 ? do
     margin (em 1) nil (em 0.5) nil
     fontWeight normal
-  h2 ?
+  h1 ?
     fontSize (px 20)
-  "h2:before" ? do
-    fontWeight bold
-    content (stringContent "λ")
-    paddingRight (px 10)
-    color ourPurple
+  h2 ?
+    fontSize (px 18)
   ((a # link) <> (a # visited)) ?
     color rose
   div # ".block.bright" ?
@@ -173,6 +172,13 @@ contentCss = do
     fontFamily ["Ubuntu Mono"] [monospace,sansSerif]
     fontSize (px 40)
     lineHeight (px 64)
+
+lambdify :: Css
+lambdify = before & do
+  fontWeight bold
+  content (stringContent "λ")
+  paddingRight (px 10)
+  color ourPurple
 
 main :: IO ()
 main = L.putStr $ render $ do
