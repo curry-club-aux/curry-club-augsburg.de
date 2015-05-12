@@ -30,7 +30,7 @@
         <main id="content">
           <article>
   <header>
-    <h2>Wir bauen einen Parserkombinator</h2>
+    <h1>Wir bauen einen Parserkombinator</h1>
     <div class="info">
         Posted on May  3, 2015
         
@@ -97,6 +97,19 @@ parseList <span class="fu">=</span> <span class="kw">do</span>
     xs <span class="ot">&lt;-</span> many parseExp
     token <span class="st">&quot;)&quot;</span>
     return <span class="fu">$</span> <span class="dt">List</span> xs</code></pre></div>
+<h1 id="was-fehlt-noch">Was fehlt noch?</h1>
+<ul>
+<li>Unsere naive Bibliothek leckt Speicher</li>
+<li>Wir geben keine guten Parse-Fehlermeldungen aus</li>
+<li>Wir haben keine Kombinatoren zum Parsen von Termen mit Operatoren</li>
+</ul>
+<img src="../images/regular_expressions.png" alt="xkcd about regular expressions" />
+<div class="attribution">
+<p>
+<a href="https://xkcd.com/208/">xkcd</a>
+</p>
+</div>
+<p>Danke <a href="http://speicherleck.de/iblech/">Ingo Blechschmidt</a> für den tollen Vortrag.</p>
 <p>TODO: Voller Code?</p>
 <p>TODO: Dateien Mirrorn</p>
 <p>Das Ergebnis kann <a href="https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs">hier</a> bestaunt werden.</p>
