@@ -6,6 +6,28 @@ Der `master`-Branch enthält den Inhalt der Webseite. Das Haskell-Programm `site
 
 Der Continous-Integration-Dienst [Travis.CI][travis] wird dazu verwendet, die Seite bei Änderungen im `master`-Branch neu zu bauen und das Ergebnis in `gh-pages` zu veröffentlichen. Das Schild neben der Überschrift zeigt an, ob der letzte Buildvorgang erfolgreich war. Die Vorgehensweise ist in [diesem Artikel](http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html) beschrieben.
 
+## Neuer Blogeintrag
+
+Einträge schreiben wir mit [Markdown][md]. Ein Beispiel ist `posts/2015-03-17-hallo-welt.md`.
+
+Links innerhalb der Seite müssen vom „root“ aus angegeben werden, also z.B. für Bilder `/images/foobar.png`.
+
+Metadaten werden mit `---` eingeschlossen, am Anfang der Datei. Mögliche Felder sind:
+
+- `title`: Titel
+- `author`: Autor
+- `image`: Bild am Anfang
+- `image-alt`: Alt-Text für das Bild. Bitte bei Verwendung eines Bilds immer angeben
+- `image-attr`: Bildquelle (Attribution)
+
+Teilüberschriften starten mit `#` und dann für jede Ebene ein `#` mehr.
+
+Bis eine bessere Lösung gefunden wird, kann eine Bildquelle im Text mit
+
+    <div class="attribution"><p><a href="https://xkcd.com/208/">xkcd</a></p></div>
+
+angegeben werden.
+
 
 ## Änderungen am Inhalt
 
@@ -54,3 +76,4 @@ Wenn man den Anderen die Änderungen erst einmal zeigen möchte, kann man folgen
 [gh-webinterface]: https://help.github.com/articles/github-flow-in-the-browser/
 [hakyll]: http://jaspervdj.be/hakyll/
 [gh-pages-branch]: https://github.com/curry-club-aux/curry-club-augsburg.de/tree/gh-pages
+[md]: https://daringfireball.net/projects/markdown/dingus
