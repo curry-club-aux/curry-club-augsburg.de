@@ -23,8 +23,8 @@ Zum Schluss ließ ein Teil der Anwesenden den Abend bei einem leckeren Curry im 
 
 * Der Code von [Isabelle][isabelle] war die letzten 20 Jahre über sehr gut wartbar und konnte mehrmals tiefgreifend umstrukturiert werden. Es gibt aber auch eine Funktion, die zusätzlich zu mehreren anderen Parametern fünf boolsche Flags nimmt und die sich niemand anzufassen traut. :-)
 * Isabelle besitzt auch einen Kern für minimale Logik.
-* Beweist man etwas [konstruktiv][konstr], so gilt die Behauptung in allen Topoi.
-* ghcid ist die beste Erfindung seit geschnitten Brot. (Zur Einführung in die Konstruktive Mathematik gibt es ein [Skript von Ingo][pizza-konstr].)
+* Beweist man etwas [konstruktiv][konstr], so gilt die Behauptung in allen Topoi. (Zur Einführung in die Konstruktive Mathematik gibt es ein [Skript von Ingo][pizza-konstr].)
+* ghcid ist die beste Erfindung seit geschnitten Brot.
 * In jeder Kategorie kann man formulieren, was ein Monoid-Objekt sein soll. In der Kategorie der Mengen sind Monoid-Objekte gewöhnliche Monoide. In der Kategorie Hask sind Monoide solche Typen, denen man eine Instanz der Monoid-Typklasse spendieren kann. In Kategorien von Endofunktoren sind Monoide Monaden.
 * Manchen Menschen macht es Spaß, Pi auswendig zu lernen.
 * OCaml wird nicht nur von Jane Street Capital, sondern auch in Routern eingesetzt; es ist eine Art "Higher-Order C".
