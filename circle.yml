@@ -12,3 +12,11 @@ general:
   branches:
     ignore:
       - gh-pages
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git config --global user.email "tim@timbaumann.info"
+      - git config --global user.name "CircleCI"
+      - "./deploy.sh https://github.com/curry-club-aux/curry-club-augsburg.de.git"
