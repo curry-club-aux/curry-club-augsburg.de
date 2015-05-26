@@ -8,8 +8,24 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2015-05-03T00:00:00Z</updated>
+    <updated>2015-05-26T00:00:00Z</updated>
     <entry>
+    <title>Programm für das dritte Treffen am 18. Juni 2015</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</id>
+    <published>2015-05-26T00:00:00Z</published>
+    <updated>2015-05-26T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Programm für das zweite Treffen am 21. Mai 2015</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-05-15-ankuendigung-zweites-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-05-15-ankuendigung-zweites-treffen.html</id>
+    <published>2015-05-15T00:00:00Z</published>
+    <updated>2015-05-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>Wir bauen einen Parserkombinator</title>
     <link href="http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html" />
     <id>http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html</id>
@@ -23,6 +39,14 @@
     <id>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</id>
     <published>2015-04-28T00:00:00Z</published>
     <updated>2015-04-28T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
+    <title>Programm für das erste Treffen am 23. April 2015</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-04-20-ankuendigung-erstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-04-20-ankuendigung-erstes-treffen.html</id>
+    <published>2015-04-20T00:00:00Z</published>
+    <updated>2015-04-20T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
 </entry>
 <entry>

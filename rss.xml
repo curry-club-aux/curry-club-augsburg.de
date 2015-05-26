@@ -7,8 +7,24 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sun, 03 May 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Tue, 26 May 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das dritte Treffen am 18. Juni 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Tue, 26 May 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
+    <title>Programm für das zweite Treffen am 21. Mai 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-05-15-ankuendigung-zweites-treffen.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Fri, 15 May 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-05-15-ankuendigung-zweites-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Wir bauen einen Parserkombinator</title>
     <link>http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html</link>
     <description><![CDATA[This is the post description]]></description>
@@ -22,6 +38,14 @@
     <description><![CDATA[This is the post description]]></description>
     <pubDate>Tue, 28 Apr 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
+    <title>Programm für das erste Treffen am 23. April 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-04-20-ankuendigung-erstes-treffen.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Mon, 20 Apr 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-04-20-ankuendigung-erstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 <item>
