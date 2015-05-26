@@ -16,10 +16,10 @@ Metadaten werden mit `---` eingeschlossen, am Anfang der Datei. Mögliche Felder
 
 - `title`: Titel
 - `author`: Autor
-- `image`: Bild am Anfang
-- `image-alt`: Alt-Text für das Bild. Bitte bei Verwendung eines Bilds immer angeben
-- `image-attr`: Bildquelle (Attribution)
-- `meetup-announcement`: Datum des Treffens, für das der Post die Ankündigung ist
+- `image`: Bild am Anfang (optional)
+- `image-alt`: Alt-Text für das Bild. Bitte bei Verwendung eines Bilds immer angeben (optional)
+- `image-attr`: Bildquelle (optional)
+- `meetup-announcement`: Datum des Treffens, für das der Post die Ankündigung ist (optional, muss nur gesetzt werden, wenn der Post eine Ankündigung ist)
 
 Teilüberschriften starten mit `#` und dann für jede Ebene ein `#` mehr.
 
