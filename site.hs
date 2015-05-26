@@ -1,5 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+import           Control.Applicative ((<$>))
 import           Control.Monad
 import qualified Data.Map as M
 import           Data.Maybe
