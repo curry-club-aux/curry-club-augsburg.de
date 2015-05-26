@@ -2,6 +2,8 @@
 # cf. https://github.com/jaspervdj/hakyll/issues/340#issuecomment-96101869
 dependencies:
   override:
+    - cabal update
+    - cabal install cabal-install
     - cabal install --dependencies-only --avoid-reinstalls
 
 machine:
