@@ -37,7 +37,7 @@ cp -R ./_site/* "$BUILD_DIR"
 
 cd "$BUILD_DIR"
 git add --all
-if git commit -m "Travis: updated website output $(date '+%m/%d/%y %H:%M')"; then
+if git commit -m "Updated website output $(date '+%m/%d/%y %H:%M')"; then
   git push "$ORIGIN" gh-pages
 else
   echo "No changes to generated website."
