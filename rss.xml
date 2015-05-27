@@ -7,8 +7,24 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 26 May 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 28 May 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das fünfte Treffen am 13. August 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-05-28-ankuendigung-fuenftes-treffen.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Thu, 28 May 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-05-28-ankuendigung-fuenftes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
+    <title>Programm für das vierte Treffen am 16. Juli 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-05-27-ankuendigung-viertes-treffen.html</link>
+    <description><![CDATA[This is the post description]]></description>
+    <pubDate>Wed, 27 May 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-05-27-ankuendigung-viertes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das dritte Treffen am 18. Juni 2015</title>
     <link>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</link>
     <description><![CDATA[This is the post description]]></description>
