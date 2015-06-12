@@ -4,4 +4,7 @@ meetup-announcement: 2015-06-18
 author: Tim Baumann
 ---
 
-Für das dritte Treffen gibt es bislang noch keine Vortrags-Ankündigungen!
+[Lars](https://larsrh.github.io/) stellt [Leon](https://github.com/epfl-lara/leon) vor, ein Tool zur Programmverifikation und -synthese speziell für Scala. „Leon ist interessant, weil es interaktiv ist, d.h. es gibt schnell Feedback, und man braucht nicht viel über Logik zu wissen.“
+
+[Ingo](http://speicherleck.de/iblech/) macht eine Einführung in die Kategorientheorie. Abstract folgt.
+
