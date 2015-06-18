@@ -11,7 +11,7 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = do
-  currTime <- getCurrentTime
+  currDay <- localDay . utcToLocalTime mesz <$> getCurrentTime
   hakyllWith config $ do
     match "CNAME" $ do
       route   idRoute
@@ -53,8 +53,9 @@ main = do
         meetups <- fmap catMaybes $ forM posts $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
           return $ flip (,) post <$> time
-        let (nextMeetupDate, nextMeetupItem) =
-              last $ filter ((>= currTime) . fst) meetups
+        let isUpcoming = (>= currDay) . localDay . utcToLocalTime mesz
+            (nextMeetupDate, nextMeetupItem) =
+              last $ filter (isUpcoming . fst) meetups
         nextMeetupBody <- loadSnapshotBody (itemIdentifier nextMeetupItem) "html-post"
         let indexCtx =
               listField "posts" postCtx (return posts)
