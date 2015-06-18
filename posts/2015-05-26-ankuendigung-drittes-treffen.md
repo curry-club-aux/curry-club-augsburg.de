@@ -22,7 +22,7 @@ author: Tim Baumann
   Sprachen zu beschreiben. Außerdem benötigt man Kategorientheorie
   natürlich um Edward Kmetts Arbeiten zu Kan-Erweiterungen und anderen
   kategoriellen Konzepten in Haskell zu würdigen; aufgrund einer
-  wunderbaren Fügung sind diese Abhängigkeiten von so profanen Dingen
+  wunderbaren Fügung sind seine Pakete Abhängigkeiten von so profanen Dingen
   wie Web-Frameworks.
   
   Der Vortrag wird in die erste Stufe von Kategorientheorie
