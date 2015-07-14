@@ -12,3 +12,8 @@ fort.
 Isabelle: Das schließt sich im weitesten Sinne auch an die Kategorientheorie
 an, das heißt man geht mit Pfeilen, Produkten, Koprodukten etc. formal und
 spielerisch um.
+
+## Weitere TOPs:
+
+- Prozess für Themenfindung überlegen
+- Über Projekte & alles andere ratschen (in Gruppen?)
