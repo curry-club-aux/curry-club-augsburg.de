@@ -4,4 +4,4 @@ meetup-announcement: 2015-08-13
 author: Tim Baumann
 ---
 
-Für das fünfte Treffen gibt es bislang noch keine Vortrags-Ankündigungen!
+[Matthias](https://github.com/mgudemann) stellt Mercury vor.
