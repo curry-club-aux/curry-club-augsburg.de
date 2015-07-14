@@ -28,9 +28,7 @@ Nächstes Mal gibt es die Fortsetzung.
 
 ## Zusammenfassung
 
-Alles in allem war es ein sehr gelungener Abend und auch die Gespräche im [Sangam][san] hinterher sehr erhellend.
-
-TODO Yolomorphismus
+Alles in allem war es ein sehr gelungener Abend und auch die Gespräche im [Sangam][san] hinterher sehr erhellend. Zum Beispiel haben wir gelernt, dass man nicht-totale Funktionen wie `head`, `tail` und `(!!)` *Yolomorphismen* nennen sollte. Zu den Yolomorphismen sollte man auch `unsafePerformIO :: IO a -> a`, sowie die Mutter aller Yolomorphismen, die Funktion `unsafeCoerce :: a -> b`, zählen.
 
 [leon]: http://leon.epfl.ch/
 [pro]: https://en.wikipedia.org/wiki/Prolog
