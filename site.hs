@@ -21,6 +21,10 @@ main = do
       route   idRoute
       compile copyFileCompiler
 
+    match "files/*" $ do
+      route   idRoute
+      compile copyFileCompiler
+
     match "css/ubuntu/*" $ do
       route   idRoute
       compile copyFileCompiler
