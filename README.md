@@ -56,6 +56,12 @@ $ cabal install --only-dependencies # installiert hakyll
 $ cabal build
 ```
 
+Oder mit Stack:
+
+```bash
+$ stack build
+```
+
 Dann kann man `./site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`.
 
 Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis CircleCI die Webseite neu generiert hat.

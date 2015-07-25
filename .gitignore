@@ -8,3 +8,4 @@ cabal.sandbox.config
 # nix
 result
 /site.o
+.stack-work
