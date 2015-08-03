@@ -10,8 +10,7 @@ image-attr: <a href="http://github.com/timjb/diagrams-rubiks-cube.com/">Tim Baum
 [Matthias](https://github.com/mgudemann) stellt Mercury vor.
 
 [Tim](https://github.com/timjb) stellt Lenses vor, anschaulich erklärt mit
-seinem [https://github.com/timjb/diagrams-rubiks-cube](Haskell-Paket für
-Zauberwürfel-Diagramme).
+seinem [Haskell-Paket für Zauberwürfel-Diagramme](https://github.com/timjb/diagrams-rubiks-cube).
 
 Schließlich gibt es auch noch einen Kurzvortrag von
 [Maximilian](https://github.com/maximilianhuber): Wie kann man in Haskell
