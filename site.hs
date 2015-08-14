@@ -7,12 +7,18 @@ import           Data.Maybe
 import           Data.Monoid ((<>))
 import           Data.Time
 import           Hakyll
+import           System.Environment
 
 --------------------------------------------------------------------------------
 main :: IO ()
 main = do
   currDay <- localDay . utcToLocalTime mesz <$> getCurrentTime
-  hakyllWith config $ do
+  args <- getArgs
+  let useStack = "--use-stack" `elem` args
+      args'    = filter (/= "--use-stack") args
+  when ("-h" `elem` args || "--help" `elem` args) $
+    putStrLn "--use-stack     use 'stack exec runghc' instead of 'stack exec runghc' to compile css/default.hs\n\n"
+  withArgs args' $ hakyllWith config $ do
     match "CNAME" $ do
       route   idRoute
       compile copyFileCompiler
@@ -33,8 +39,9 @@ main = do
       compile compressCssCompiler
     match "css/*.hs" $ do
       route   $ setExtension "css"
+      let program = if useStack then "stack" else "cabal"
       compile $ fmap (fmap compressCss) $ getResourceString
-        >>= withItemBody (unixFilter "cabal" ["exec", "runghc"])
+        >>= withItemBody (unixFilter program ["exec", "runghc"])
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
