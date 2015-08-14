@@ -1,9 +1,12 @@
 <article>
   <h1>Neuigkeiten</h1>
-  <ul>
+  <ul class="post-list">
     $for(posts)$
       <li>
-        <a href="$url$">$title$</a> - $date$
+        <span class="post-date">
+          $date$
+        </span>
+        <a href="$url$">$title$</a>
       </li>
     $endfor$
   </ul>

@@ -5,9 +5,8 @@ import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
 
-reallyDarkPurple, darkererPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
+reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 reallyDarkPurple = other "#170b1a"
-darkererPurple   = other "#1e1420"
 darkerPurple     = other "#211024"
 darkPurple       = other "#2d1630"
 ourPurple        = other "#452d49"
@@ -22,7 +21,6 @@ bodyCss = body ? do
     , (darkerPurple, 5)
     , (darkPurple, 30)
     ]
-  --backgroundRepeat noRepeat
   backgroundAttachment attachFixed
   fontSize (px 15)
   lineHeight (px 24)
@@ -39,7 +37,6 @@ layoutCss = do
     sym2 margin nil auto
   main_ ?
     padding nil nil (px 30) nil
-    --backgroundColor darkererPurple
   div # ".block.bright" ? do
     backgroundColor (other "#dddddd")
     color (other "#222")
@@ -78,7 +75,7 @@ layoutCss = do
     position relative
     marginTop (px (-45))
     sym2 padding (px 10) nil
-    textAlign end
+    textAlign (alignSide sideCenter)
 
 postCss :: Css
 postCss = do
@@ -172,6 +169,15 @@ contentCss = do
     fontFamily ["Ubuntu Mono"] [monospace,sansSerif]
     fontSize (px 40)
     lineHeight (px 64)
+  ul # ".post-list" ? do
+    listStyleType none
+    paddingLeft (px 0)
+    Clay.span # ".post-date" ? do
+      color ourPurple
+      display inlineBlock
+      minWidth (px 140)
+      paddingRight (px 10)
+      textAlign end
 
 lambdify :: Css
 lambdify = before & do
