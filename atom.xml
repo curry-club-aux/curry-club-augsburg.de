@@ -8,8 +8,16 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2015-07-25T00:00:00Z</updated>
+    <updated>2015-08-14T00:00:00Z</updated>
     <entry>
+    <title>Programm für das siebte Treffen am 8. Oktober 2015</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-08-14-ankuendigung-siebtes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-08-14-ankuendigung-siebtes-treffen.html</id>
+    <published>2015-08-14T00:00:00Z</published>
+    <updated>2015-08-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[This is the post description]]></summary>
+</entry>
+<entry>
     <title>Programm für das sechste Treffen am 10. September 2015</title>
     <link href="http://curry-club-augsburg.de/posts/2015-07-25-ankuendigung-sechstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2015-07-25-ankuendigung-sechstes-treffen.html</id>
@@ -80,14 +88,6 @@
     <published>2015-04-20T00:00:00Z</published>
     <updated>2015-04-20T00:00:00Z</updated>
     <summary type="html"><![CDATA[This is the post description]]></summary>
-</entry>
-<entry>
-    <title>Hallo Welt!</title>
-    <link href="http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html" />
-    <id>http://curry-club-augsburg.de/posts/2015-03-17-hallo-welt.html</id>
-    <published>2015-03-17T00:00:00Z</published>
-    <updated>2015-03-17T00:00:00Z</updated>
-    <summary type="html"><![CDATA[Erster Post.]]></summary>
 </entry>
 
 </feed>
