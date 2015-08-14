@@ -4,4 +4,4 @@ meetup-announcement: 2015-09-10
 author: Tim Baumann
 ---
 
-Für das sechste Treffen gibt es noch keine Pläne.
+Tim wird seinen Vortrag über Lens vom letzten Mal fortsetzen.
