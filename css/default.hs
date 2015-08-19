@@ -16,12 +16,17 @@ bodyCss :: Css
 bodyCss = body ? do
   color (other "#FFFDDE")
   backgroundColor darkPurple
-  background $ linearGradient (angular $ deg 180)
-    [ (reallyDarkPurple, 0)
-    , (darkerPurple, 5)
-    , (darkPurple, 30)
+  backgroundImages
+    [ url "../images/zirbelnuss.png"
+    , linearGradient (angular $ deg 180)
+      [ (reallyDarkPurple, 0)
+      , (darkerPurple, 5)
+      , (darkPurple, 30)
+      ]
     ]
   backgroundAttachment attachFixed
+  backgroundRepeat noRepeat
+  backgroundPosition $ placed sideRight sideBottom
   fontSize (px 15)
   lineHeight (px 24)
   fontWeight lighter
