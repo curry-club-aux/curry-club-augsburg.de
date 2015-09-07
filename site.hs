@@ -54,6 +54,7 @@ main = do
       compile $ pandocCompiler
         >>= saveSnapshot "html-post"
         >>= loadAndApplyTemplate "templates/post.html"    postCtx
+        >>= saveSnapshot "content"
         >>= loadAndApplyTemplate "templates/default.html" postCtx
         >>= relativizeUrls
 
@@ -89,18 +90,19 @@ main = do
 
     let feedPostCount = 10
     create ["atom.xml"] $ do
-      route idRoute
-      compile $ do
-        let feedCtx = postCtx <> constField "description" "This is the post description"
-        posts <- fmap (take feedPostCount) . recentFirst =<< loadAll "posts/*"
-        renderAtom feed feedCtx posts
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` bodyField "description"
+            posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
+            renderAtom feed feedCtx posts
 
     create ["rss.xml"] $ do
-      route idRoute
-      compile $ do
-        let feedCtx = postCtx <> constField "description" "This is the post description"
-        posts <- fmap (take feedPostCount) . recentFirst =<< loadAll "posts/*"
-        renderRss feed feedCtx posts
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` bodyField "description"
+            posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
+            renderRss feed feedCtx posts
+
 
 
 --------------------------------------------------------------------------------
