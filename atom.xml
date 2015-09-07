@@ -15,7 +15,22 @@
     <id>http://curry-club-augsburg.de/posts/2015-08-14-ankuendigung-siebtes-treffen.html</id>
     <published>2015-08-14T00:00:00Z</published>
     <updated>2015-08-14T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das siebte Treffen am 8. Oktober 2015</h1>
+    <div class="info">
+      Gepostet am 14. August 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Für das siebte Treffen gibt es noch keine Pläne.</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Programm für das sechste Treffen am 10. September 2015</title>
@@ -23,7 +38,22 @@
     <id>http://curry-club-augsburg.de/posts/2015-07-25-ankuendigung-sechstes-treffen.html</id>
     <published>2015-07-25T00:00:00Z</published>
     <updated>2015-07-25T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das sechste Treffen am 10. September 2015</h1>
+    <div class="info">
+      Gepostet am 25. Juli 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Tim wird seinen Vortrag über Lens vom letzten Mal fortsetzen.</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Drittes Treffen des Curry Clubs</title>
@@ -31,7 +61,37 @@
     <id>http://curry-club-augsburg.de/posts/2015-07-02-drittes-treffen.html</id>
     <published>2015-07-02T00:00:00Z</published>
     <updated>2015-07-02T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Drittes Treffen des Curry Clubs</h1>
+    <div class="info">
+      Gepostet am  2. Juli 2015
+      
+          von Profpatsch
+      
+    </div>
+    
+    <img src="/images/curry-club-03.jpg" alt="Bild vom Treffen" />
+    
+    
+    <div class="attribution"><p>CC BY-NC-ND 4.0</p></div>
+    
+  </header>
+
+  <h1 id="über-scala-logik-kategorien-und-yolomorphismen">Über Scala, Logik, Kategorien und Yolomorphismen</h1>
+<p>Das dritte Treffen war wieder ein sehr lehrreicher Abend gespickt mit funktionalem Witz und vielen Einblicken in tolle Themen.</p>
+<h2 id="leon">Leon</h2>
+<p>Mit <a href="http://leon.epfl.ch/">Leon</a> wurde uns ein System vorgestellt, dass den Scala-Compiler um einige interessante Möglichkeiten erweitert; So kann man direkt Pre- und Postconditions einfügen, die dann vom Compiler mittels eines automatischen Theorembeweisers überprüft werden. Am Ende zeigte er uns dann noch, dass man sogar den Code generieren lassen kann.</p>
+<h2 id="prolog">Prolog</h2>
+<p>Eine Einführung in <a href="https://en.wikipedia.org/wiki/Prolog">Prolog</a> anhand eines praktischen Beispiels brachte uns die Vorteile und Grenzen der Sprache nahe. Das Resümee war dann, dass man Prolog sehr gut als domainspezifische Sprache über das C-Interface einbinden kann, aber es nicht als Allzweckprogrammiersprache („general Purpose“) verwenden will.</p>
+<p>Weite Zustimmung fand die Alternative, das Logikproblem (soweit möglich) in aussagenlogische Ausdrücke zu transformieren und dann in einen <a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#Algorithms_for_solving_SAT">SAT-Solver</a> zu stecken. Diese sind mittlerweile sehr schnell geworden.</p>
+<h2 id="kategorientheorie">Kategorientheorie</h2>
+<p>Am Ende ging es dann nochmal in die Mathematik und Ingo gab uns eine Einführung in die Kategorientheorie. Der Vortrag war sehr gut nachvollziehbar, was unter anderem auch an den <a href="/files/was-sollen-kategorien.pdf">Folien</a> lag. Aber um es wirklich nachvollziehen zu können, muss man natürlich das Treffen besuchen. :)</p>
+<p>Nächstes Mal gibt es die Fortsetzung.</p>
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+<p>Alles in allem war es ein sehr gelungener Abend und auch die Gespräche im <a href="http://www.sangam-augsburg.de/">Sangam</a> hinterher sehr erhellend. Zum Beispiel haben wir gelernt, dass man nicht-totale Funktionen wie <code>head</code>, <code>tail</code> und <code>(!!)</code> <em>Yolomorphismen</em> nennen sollte. Zu den Yolomorphismen sollte man auch <code>unsafePerformIO :: IO a -&gt; a</code>, sowie die Mutter aller Yolomorphismen, die Funktion <code>unsafeCoerce :: a -&gt; b</code>, zählen.</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Programm für das fünfte Treffen am 13. August 2015</title>
@@ -39,7 +99,28 @@
     <id>http://curry-club-augsburg.de/posts/2015-05-28-ankuendigung-fuenftes-treffen.html</id>
     <published>2015-05-28T00:00:00Z</published>
     <updated>2015-05-28T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das fünfte Treffen am 13. August 2015</h1>
+    <div class="info">
+      Gepostet am 28. Mai 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    <img src="/images/diagrams-rubiks-cube.svg" alt="Mit Haskell erstellte Skizzen des Zauberwürfels" />
+    
+    
+    <div class="attribution"><p><a href="http://github.com/timjb/diagrams-rubiks-cube.com/">Tim Baumann</a> (MIT)</p></div>
+    
+  </header>
+
+  <p><a href="https://github.com/mgudemann">Matthias</a> stellt Mercury vor.</p>
+<p><a href="https://github.com/timjb">Tim</a> stellt Lenses vor, anschaulich erklärt mit seinem <a href="https://github.com/timjb/diagrams-rubiks-cube">Haskell-Paket für Zauberwürfel-Diagramme</a>.</p>
+<p>Schließlich gibt es auch noch einen Kurzvortrag von <a href="https://github.com/maximilianhuber">Maximilian</a>: Wie kann man in Haskell ansprechende Textmodus-Oberflächen zaubern?</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Programm für das vierte Treffen am 16. Juli 2015</title>
@@ -47,7 +128,28 @@
     <id>http://curry-club-augsburg.de/posts/2015-05-27-ankuendigung-viertes-treffen.html</id>
     <published>2015-05-27T00:00:00Z</published>
     <updated>2015-05-27T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das vierte Treffen am 16. Juli 2015</h1>
+    <div class="info">
+      Gepostet am 27. Mai 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p><a href="https://github.com/iblech">Ingo</a> setzt die <a href="/posts/2015-05-26-ankuendigung-drittes-treffen.html">Einführung in Kategorientheorie</a> fort.</p>
+<p><a href="http://sketis.net/">Makarius</a> spielt mit ein paar Variationen von Currying in Isabelle: Das schließt sich im weitesten Sinne auch an die Kategorientheorie an, das heißt man geht mit Pfeilen, Produkten, Koprodukten etc. formal und spielerisch um.</p>
+<h2 id="weitere-tops">Weitere TOPs:</h2>
+<ul>
+<li>Prozess für Themenfindung überlegen</li>
+<li>Über Projekte &amp; alles andere ratschen (in Gruppen?)</li>
+</ul>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Programm für das dritte Treffen am 18. Juni 2015</title>
@@ -55,7 +157,33 @@
     <id>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</id>
     <published>2015-05-26T00:00:00Z</published>
     <updated>2015-05-26T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das dritte Treffen am 18. Juni 2015</h1>
+    <div class="info">
+      Gepostet am 26. Mai 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p><a href="https://larsrh.github.io/">Lars</a> stellt <a href="https://github.com/epfl-lara/leon">Leon</a> vor, ein Tool zur Programmverifikation und -synthese speziell für Scala. „Leon ist interessant, weil es interaktiv ist, d.h. es gibt schnell Feedback, und man braucht nicht viel über Logik zu wissen.“</p>
+<p><a href="http://github.com/iblech/">Ingo</a> macht eine Einführung in die Kategorientheorie:</p>
+<div class="abstract">
+<p>Die Sprache der Kategorien hat sich in mehreren Teilgebieten der Mathematik, Informatik und Physik als Lingua franca etabliert. Sowohl von Fans als auch von Spöttern wird Kategorientheorie als “verallgemeinerter abstrakter Nonsens” tituliert; kategorielle Konzepte und konkrete Ausprägungen allgemeiner kategorieller Beobachtungen finden sich überall.</p>
+<p>Für (nicht nur) funktionale Programmierung hilft Kategorientheorie um wiederkehrende Muster zu erkennen und auszunutzen, um elegante Theorien von Datentypen zu entwickeln und um die Semantik von Sprachen zu beschreiben. Außerdem benötigt man Kategorientheorie natürlich um Edward Kmetts Arbeiten zu Kan-Erweiterungen und anderen kategoriellen Konzepten in Haskell zu würdigen; aufgrund einer wunderbaren Fügung sind seine Pakete Abhängigkeiten von so profanen Dingen wie Web-Frameworks.</p>
+<p>Der Vortrag wird in die erste Stufe von Kategorientheorie einführen: Kategorien, universelle Eigenschaften und Dualität. Wenn die Stimmung gut ist, sprechen wir auch noch über Funktoren. Bei diesem ersten Vortrag werden wir aber – wenn nicht explizit anders gewünscht – nicht über natürliche Transformation oder weiterführende Konzepte wie Limiten, Kolimiten, adjungierte Funktoren, Kan-Erweiterungen oder das Yoneda-Lemma sprechen.</p>
+</div>
+<p class="materials">
+[<a href="http://pizzaseminar.speicherleck.de/was-sollen-kategorien/was-sollen-kategorien-curry-club.pdf">Vortragsfolien</a>]
+</p>
+<p><a href="http://weltraumpflege.org/">Richard</a> hält einen Vortrag über Logikprogrammierung im Allgemeinen und insbesondere die Umsetzung dieses Konzeptes in der Programmiersprache Prolog. Dabei werden folgende Fragen beantwortet: Was ist Logikprogrammierung überhaupt und warum will man das machen? Kann man damit auch seriöse Anwendungsentwicklung betreiben?</p>
+<p>Es gibt den Plan, danach im <a href="http://www.sangam-augsburg.de/">Sangam</a> gemeinsam Essen zu gehen.</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Programm für das zweite Treffen am 21. Mai 2015</title>
@@ -63,7 +191,25 @@
     <id>http://curry-club-augsburg.de/posts/2015-05-15-ankuendigung-zweites-treffen.html</id>
     <published>2015-05-15T00:00:00Z</published>
     <updated>2015-05-15T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das zweite Treffen am 21. Mai 2015</h1>
+    <div class="info">
+      Gepostet am 15. Mai 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Tim wird seinen <a href="/posts/2015-04-28-erstes-treffen.html">Vortrag vom ersten Treffen über typsicheres Routing in Haskell</a> durch Programmierung auf Typ-Ebene fortsetzen.</p>
+<p>Profpatsch stellt die Technik hinter unserer Webseite vor.</p>
+<p>Lars hält einen Vortrag zu monadischer Ein-/Ausgabe. Damit beginnen wir die Serie <em>What the Kmett is a monad?</em>.</p>
+<p>Makarius gibt uns eine kurze Einführung in Isabelle (mit einigen Anklängen an den Zusammenhang von funktionaler Programmierung und Logik, z.B. mit einem formalen Beweis der Aussage im Logo des Curry Club).</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Wir bauen einen Parserkombinator</title>
@@ -71,7 +217,93 @@
     <id>http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html</id>
     <published>2015-05-03T00:00:00Z</published>
     <updated>2015-05-03T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Wir bauen einen Parserkombinator</h1>
+    <div class="info">
+      Gepostet am  3. Mai 2015
+      
+          von Profpatsch
+      
+    </div>
+    
+    <img src="/images/monadic-parser-combinators.jpg" alt="I don’t always parse Text, but when I do I use Monadic Parser Combinators" />
+    
+    
+  </header>
+
+  <p>Ein Parser ist eine Funktion von einem String zu einem eventuellen Tupel aus Resttext und geparsten Daten,</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>, a)
+
+<span class="co">-- oder mit newtype Wrapper:</span>
+<span class="kw">newtype</span> <span class="dt">Parser</span> a <span class="fu">=</span> <span class="dt">MkParser</span>
+    {<span class="ot"> runParser ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>,a) }</code></pre></div>
+<p>So kann man jetzt zum Beispiel einen Char parsen:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">char ::</span> <span class="dt">Char</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">Char</span>
+char c <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span>
+    <span class="kw">case</span> s <span class="kw">of</span>
+	(d<span class="fu">:</span>cs) <span class="fu">|</span> c <span class="fu">==</span> d <span class="ot">-&gt;</span> <span class="dt">Just</span> (cs, c)
+	otherwise       <span class="ot">-&gt;</span> <span class="dt">Nothing</span></code></pre></div>
+<p>Diese Funktion nimmt einen Char und gibt einen Parser zurück, der wiederum zur Ausführung einen String nimmt und prüft, ob dessen Anfangschar gleich dem Char <code>c</code> ist. Wenn das nicht so ist (<code>otherwise</code>), schlägt der Parser fehl.</p>
+<p>Schnell definieren wir auch eine mysteriöse Funktion <code>bind</code>, die einen Parser nimmt, diesen ausführt, und das Ergebnis an eine zweite Funktion übergibt, die wiederum einen Parser zurückgibt.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">bind ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b) <span class="ot">-&gt;</span> <span class="dt">Parser</span> b
+bind m f <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span>
+    <span class="kw">case</span> runParser m s <span class="kw">of</span>
+	<span class="dt">Just</span> (s&#39;, x) <span class="ot">-&gt;</span> runParser (f x) s&#39;
+	<span class="dt">Nothing</span>      <span class="ot">-&gt;</span> <span class="dt">Nothing</span></code></pre></div>
+<p>Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.</p>
+<p>Natürlich darf dann auch der Kumpan von <code>bind/&gt;&gt;=</code>, <code>pure/return</code> nicht fehlen:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">pure ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
+pure x <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> <span class="dt">Just</span> (s, x)</code></pre></div>
+<p>Das macht einfach einen beliebigen Wert zu einem Parser (damit man ihn auch mit anderen Parsern verketten kann).</p>
+<p>Diese Definitionen kombiniert man dann (Parser<em>kombinatioren</em>) zu höherleveligen Hilfsfunktionen, wie z.B.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">andThen ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
+andThen m n <span class="fu">=</span> bind m (\x <span class="ot">-&gt;</span> bind n (\y <span class="ot">-&gt;</span> pure x))</code></pre></div>
+<p>was ein Stück Eingabe parst und dann wegschmeißt. Das wird dann von dem S-Expr-Parser wieder benutzt, um Tokens zu definieren:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">token ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">String</span>
+token s <span class="fu">=</span> string s <span class="ot">`andThen`</span> spaces</code></pre></div>
+<p>Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. <code>foo</code> der gleiche Token wie <code>foo        </code>.</p>
+<p>Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und den Parser, der definiert, wie sie als Text dargestellt werden.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Exp</span> <span class="fu">=</span> <span class="dt">Atom</span> <span class="dt">String</span> <span class="fu">|</span> <span class="dt">List</span> [<span class="dt">Exp</span>]
+    <span class="kw">deriving</span> (<span class="dt">Show</span>,<span class="dt">Eq</span>)
+
+<span class="co">-- Das sind Beispiele für S-Exprs:</span>
+<span class="co">-- hallo</span>
+<span class="co">-- (foo bar baz (...))</span>
+
+<span class="ot">parseExp ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span>
+parseExp <span class="fu">=</span> choice [ parseAtom, parseList ]
+
+<span class="ot">parseAtom ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span>
+parseAtom <span class="fu">=</span> <span class="kw">do</span>
+    x <span class="ot">&lt;-</span> many1 alphaNum
+    spaces
+    return (<span class="dt">Atom</span> x)
+
+<span class="ot">parseList ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span>
+parseList <span class="fu">=</span> <span class="kw">do</span>
+    token <span class="st">&quot;(&quot;</span>
+    xs <span class="ot">&lt;-</span> many parseExp
+    token <span class="st">&quot;)&quot;</span>
+    return <span class="fu">$</span> <span class="dt">List</span> xs</code></pre></div>
+<h1 id="was-fehlt-noch">Was fehlt noch?</h1>
+<ul>
+<li>Unsere naive Bibliothek leckt Speicher</li>
+<li>Wir geben keine guten Parse-Fehlermeldungen aus</li>
+<li>Wir haben keine Kombinatoren zum Parsen von Termen mit Operatoren</li>
+</ul>
+<img src="/images/regular_expressions.png" alt="xkcd about regular expressions" />
+<div class="attribution">
+<p>
+<a href="https://xkcd.com/208/">xkcd</a>
+</p>
+</div>
+<p>Danke <a href="http://speicherleck.de/iblech/">Ingo Blechschmidt</a> für den tollen Vortrag.</p>
+<p>TODO: Voller Code?</p>
+<p>TODO: Dateien Mirrorn</p>
+<p>Das Ergebnis kann <a href="https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs">hier</a> bestaunt werden.</p>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Erstes Treffen des Curry Clubs</title>
@@ -79,7 +311,55 @@
     <id>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</id>
     <published>2015-04-28T00:00:00Z</published>
     <updated>2015-04-28T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Erstes Treffen des Curry Clubs</h1>
+    <div class="info">
+      Gepostet am 28. April 2015
+      
+          von Profpatsch
+      
+    </div>
+    
+    <img src="/images/learn-you-a-haskell-for-great-good.png" alt="Learn you a Haskell for great good" />
+    
+    
+    <div class="attribution"><p><a href="http://learnyouahaskell.com/">LearnYouAHaskell</a> (CC BY-NC-SA)</p></div>
+    
+  </header>
+
+  <p>Am vergangenen Donnerstag hatten wir unser erstes Treffen im <a href="https://openlab-augsburg.de/">OpenLab Augsburg</a>. Es waren fast 20 Personen anwesend.</p>
+<p>Nach einer kurzen Vorstellungsrunde ging es gleich richtig zur Sache, Ingo schrieb und beschrieb in einer Stunde einen funktionierenden Parserkombinator, der dann auch gleich auf S-Expressions losgelassen wurde. Dem Talk ist ein <a href="2015-05-03-wir-bauen-einen-parserkombinator.html">eigener Blogeintrag</a> gewidmet.</p>
+<p>Viele Zwischenfragen – auch zu esoterischeren und theoretischeren Themen – sorgten dafür, dass auch Fortgeschrittene auf ihre Kosten kamen.</p>
+<p>Maximilian stellte seine Anwendung <a href="https://github.com/maximilianhuber/mySortMaildir">mySortMaildir</a> vor, ein Tool in Haskell, das für ihn Mails filtert und sortiert.</p>
+<p>Tim ging im dritten Talk auf die Typebene und beschrieb das von ihm implementierte typsichere Parsing von Routen im Webframework <a href="http://www.spock.li/">Spock</a>. Er schaffte nur den ersten Teil und wird beim nächsten Treffen den Rest halten. Die Folien sind <a href="https://github.com/timjb/reroute-talk">auf Github zu finden</a> und eine zusammenfassende Beschreibung <a href="http://www.spock.li/2015/04/19/type-safe_routing.html">im Blog des Projekts</a>.</p>
+<p>Zum Schluss ließ ein Teil der Anwesenden den Abend bei einem leckeren Curry im <a href="http://www.sangam-augsburg.de/">Sangam</a> ausklingen.</p>
+<h1 id="beim-essen-haben-wir-unter-anderem-gelernt">Beim Essen haben wir unter anderem gelernt</h1>
+<ul>
+<li>Der Code von <a href="https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)">Isabelle</a> war die letzten 20 Jahre über sehr gut wartbar und konnte mehrmals tiefgreifend umstrukturiert werden. Es gibt aber auch eine Funktion, die zusätzlich zu mehreren anderen Parametern fünf boolsche Flags nimmt und die sich niemand anzufassen traut. :-)</li>
+<li>Isabelle besitzt auch einen Kern für minimale Logik.</li>
+<li>Beweist man etwas <a href="https://de.wikipedia.org/wiki/Konstruktive_Mathematik">konstruktiv</a>, so gilt die Behauptung in allen Topoi. (Zur Einführung in die Konstruktive Mathematik gibt es ein <a href="http://pizzaseminar.speicherleck.de/skript2/konstruktive-mathematik.pdf">Skript von Ingo</a>.)</li>
+<li>ghcid ist die beste Erfindung seit geschnitten Brot.</li>
+<li>In jeder Kategorie kann man formulieren, was ein Monoid-Objekt sein soll. In der Kategorie der Mengen sind Monoid-Objekte gewöhnliche Monoide. In der Kategorie Hask sind Monoide solche Typen, denen man eine Instanz der Monoid-Typklasse spendieren kann. In Kategorien von Endofunktoren sind Monoide Monaden.</li>
+<li>Manchen Menschen macht es Spaß, Pi auswendig zu lernen.</li>
+<li>OCaml wird nicht nur von Jane Street Capital, sondern auch in Routern eingesetzt; es ist eine Art “Higher-Order C”.</li>
+<li>Etwas Wesentliches, was OCaml fehlt, ist Multithreading, so wie auch im Falle von Emacs LISP.</li>
+<li>Es gibt Punkte, die sowohl für ein Informatikstudium an der Uni Augsburg sprechen als auch für ein Studium an der TU München. Eine Auswahl:
+<ul>
+<li>Uni Augsburg
+<ul>
+<li>Pro: Übersichtlich, man kennt fast jeden, Fächer sind relativ leicht zu bestehen, das <a href="https://openlab-augsburg.de/">OpenLab</a></li>
+<li>Con: Es wird hauptsächlich Java gelehrt, Windows überall</li>
+</ul></li>
+<li>TU München
+<ul>
+<li>Pro: Viel Auswahl (mehr Lehrstühle), funktionale Programmierung wird gelehrt, anerkanntere Uni</li>
+<li>Con: Entfernung (oder hohe Mietpreise), teils schwer in gute Übungen zu kommen</li>
+</ul></li>
+</ul></li>
+</ul>
+</article>
+]]></summary>
 </entry>
 <entry>
     <title>Programm für das erste Treffen am 23. April 2015</title>
@@ -87,7 +367,38 @@
     <id>http://curry-club-augsburg.de/posts/2015-04-20-ankuendigung-erstes-treffen.html</id>
     <published>2015-04-20T00:00:00Z</published>
     <updated>2015-04-20T00:00:00Z</updated>
-    <summary type="html"><![CDATA[This is the post description]]></summary>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das erste Treffen am 23. April 2015</h1>
+    <div class="info">
+      Gepostet am 20. April 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <h1 id="monadische-parserkombinatoren-ingo-blechschmidt">Monadische Parserkombinatoren (Ingo Blechschmidt)</h1>
+<div class="abstract">
+<p>Parserkombinatoren sind ein beliebter Ansatz zur Programmierung von Parsern in funktionalen Sprachen. Anstatt Grammatiken in speziellen eingeschränkten Sprachen beschreiben zu müssen, steht dabei die volle Ausdrucksfähigkeit einer funktionalen Hochsprache zur Verfügung. Ausgehend von einigen Grundbausteinen kann man mit Kombinatoren beliebig komplexe Parser zusammenstellen. Dabei ergibt sich auf natürliche Art und Weise eine Monade.</p>
+<p>Beim Treffen werden wir unsere eigene kleine naive Kombinatorenbibliothek implementieren, Beispiele für ihren Einsatz durchspielen und diskutieren, was zu professionellen Lösungen noch fehlt. Wer Haskell einsetzt, kann danach zum Beispiel das beliebte Parsec verwenden.</p>
+<p class="materials">
+[<a href="https://github.com/iblech/vortrag-haskell">Folien und Code auf Github</a>]
+</p>
+<p><strong>Vorkenntnisse</strong>: grundlegende Vertrautheit in funktionaler Programmierung. Monaden muss man noch nicht kennen.</p>
+</div>
+<h1 id="typsicheres-routing-in-haskell-tim-baumann">Typsicheres Routing in Haskell (Tim Baumann)</h1>
+<div class="abstract">
+<p>Routing ist die große Fallunterscheidung über die URL, die in einer Webapplikation dafür sorgt, dass jede Anfrage eine passende Antwort erhält. Eine Forderung an gute Webframeworks ist, dass sie sichergestellen, dass Links immer aktuell bleiben. Das heißt, (interne) Links sollen immer auf eine Adresse verweisen, die vom Routing-Code erkannt wird. Ich werde einen Überblick über verschiedene Lösungsansätze geben und und dann das <a href="http://www.spock.li/2015/04/19/type-safe_routing.html">Routing-System von Spock</a> genauer erklären. Dabei werden wir sehen, warum Listen auf Typlevel ein sehr nützliches Werkzeug sind.</p>
+<p class="materials">
+[<a href="https://github.com/timjb/reroute-talk">Beispielwebseite und Code auf Github</a>]
+</p>
+<p><strong>Voraussetzungen</strong>: Oranger Gürtel in Haskell, insbesondere sind Kenntnisse des Kindsystems nützlich. Monaden werden nur am Rande vorkommen.</p>
+</div>
+</article>
+]]></summary>
 </entry>
 
 </feed>
