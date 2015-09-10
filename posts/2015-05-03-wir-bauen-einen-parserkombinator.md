@@ -100,13 +100,7 @@ parseList = do
 ![xkcd about regular expressions](/images/regular_expressions.png)
 <div class="attribution"><p><a href="https://xkcd.com/208/">xkcd</a></p></div>
 
-Danke [Ingo Blechschmidt][ingo] für den tollen Vortrag.
-
-TODO: Voller Code?
-
-TODO: Dateien Mirrorn
-
-Das Ergebnis kann [hier][parserc] bestaunt werden.
+Danke [Ingo Blechschmidt][ingo] für den tollen Vortrag! Das Ergebnis kann [hier][parserc] bestaunt werden.
 
 [parserc]: https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs
 [ingo]: http://speicherleck.de/iblech/
