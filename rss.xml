@@ -298,10 +298,7 @@ parseList <span class="fu">=</span> <span class="kw">do</span>
 <a href="https://xkcd.com/208/">xkcd</a>
 </p>
 </div>
-<p>Danke <a href="http://speicherleck.de/iblech/">Ingo Blechschmidt</a> für den tollen Vortrag.</p>
-<p>TODO: Voller Code?</p>
-<p>TODO: Dateien Mirrorn</p>
-<p>Das Ergebnis kann <a href="https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs">hier</a> bestaunt werden.</p>
+<p>Danke <a href="http://speicherleck.de/iblech/">Ingo Blechschmidt</a> für den tollen Vortrag! Das Ergebnis kann <a href="https://github.com/iblech/vortrag-haskell/blob/master/monadic-parsing-snapshot-der-live-version.hs">hier</a> bestaunt werden.</p>
 </article>
 ]]></description>
     <pubDate>Sun, 03 May 2015 00:00:00 UT</pubDate>
