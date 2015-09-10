@@ -17,6 +17,10 @@ Kmett is a monad?*. Beim nächsten Treffen dann wird es einen darauf
 aufbauenden Vortrag über Effektsysteme und den neuesten [Aufsatz von
 Oleg](http://okmij.org/ftp/Haskell/extensible/more.pdf) geben.
 
+[Makarius](http://sketis.net/) führt die Reihe *SML ist die beste unbekannte
+Programmiersprache der Welt* durch eine Kurzpräsentation des source-level
+Debuggers in der Prover-IDE fort.
+
 Als dreiminütigen Lückenfüller gibt es eine Erklärung, welchen einfachen
 Zaubertrick man mit Münzen und dem Haskell-Programm `length . group` vorführen
 kann.
