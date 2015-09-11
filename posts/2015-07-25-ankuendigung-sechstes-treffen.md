@@ -5,8 +5,8 @@ author: Tim Baumann
 ---
 
 [Tim](https://github.com/timjb) wird seinen Vortrag über Lens vom letzten Mal
-fortsetzen. [Die Vortragsfolien zum ersten Teil sind
-online.](/files/lens-teil1.pdf)
+fortsetzen. [Vollständige Vortragsfolien sind
+online.](/files/lens.pdf)
 
 [Ingo](https://github.com/iblech) lädt zum großen monadischen Abend ein und
 wird daher über [Monoide, freie Monoide und Monaden als

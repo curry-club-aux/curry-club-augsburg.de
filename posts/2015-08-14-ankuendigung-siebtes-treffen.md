@@ -5,7 +5,7 @@ author: Tim Baumann
 ---
 
 [Tim](https://github.com/timjb) wird seinen Dreiteiler über Lens abschließen.
-[Die Vortragsfolien zum ersten Teil sind online.](/files/lens-teil1.pdf)
+[Vollständige Vortragsfolien sind online.](/files/lens.pdf)
 
 [Ingo](https://github.com/iblech) wird seinen Vortrag über [Monoide, freie
 Monoide und Monaden als Monoide](/files/freie-monaden-teil1.pdf) abschließen.
