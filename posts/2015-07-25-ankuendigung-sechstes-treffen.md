@@ -9,7 +9,8 @@ fortsetzen. [Die Vortragsfolien zum ersten Teil sind
 online.](/files/lens-teil1.pdf)
 
 [Ingo](https://github.com/iblech) lädt zum großen monadischen Abend ein und
-wird daher über Monoide, freie Monoide und Monaden als Monoide berichten. Ziel
+wird daher über [Monoide, freie Monoide und Monaden als
+Monoide](/files/freie-monaden-teil1.pdf) berichten. Ziel
 wird sein, das schöne Motto *Monaden sind nichts anderes als Monoide in einer
 Kategorie von Endofunktoren* zu verstehen. Wenn noch Zeit ist, werden wir auch
 auf freie Monaden eingehen. Dies ist der zweite Vortrag in der Reihe *What the
