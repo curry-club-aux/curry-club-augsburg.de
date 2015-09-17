@@ -40,7 +40,7 @@ Edward Kmett](https://www.youtube.com/watch?v=T88TDS7L5DY)
 
 * [Stack](https://www.youtube.com/watch?v=RRmb2RtU0hU)
   Über die neue "cabal"-Alternative. Ich habe sehr gute Erfahrungen mit
-  Stack gemacht. Das Tool tut einfach zuverlässig das, was es soll ohne
+  Stack gemacht. Das Tool tut einfach zuverlässig das, was es soll, ohne
   große Dependency-Schwierigkeiten, wobei es aber auf ältere Pakete setzt, also auf Hackage verfügbar.
 
 * [Which simple Types have a unique Inhabitant? von Gabriel Scherer](https://www.youtube.com/watch?v=lNSfVpKEnnI)
