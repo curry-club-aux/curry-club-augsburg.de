@@ -11,6 +11,9 @@ image-attr: <a href="http://github.com/timjb/diagrams-rubiks-cube.com/">Tim Baum
 
 [Tim](https://github.com/timjb) stellt Lenses vor, anschaulich erklärt mit
 seinem [Haskell-Paket für Zauberwürfel-Diagramme](https://github.com/timjb/diagrams-rubiks-cube).
+Die Vortragsfolien gibt es [hier](/files/lens.pdf) und die Codebeispiele [auf Github](https://github.com/timjb/presentations/tree/gh-pages/lens).
+
+<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 Schließlich gibt es auch noch einen Kurzvortrag von
 [Maximilian](https://github.com/maximilianhuber): Wie kann man in Haskell

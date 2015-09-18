@@ -5,8 +5,10 @@ author: Tim Baumann
 ---
 
 [Tim](https://github.com/timjb) wird seinen Vortrag über Lens vom letzten Mal
-fortsetzen. [Vollständige Vortragsfolien sind
-online.](/files/lens.pdf)
+fortsetzen.
+Die Vortragsfolien gibt es [hier](/files/lens.pdf) und die Codebeispiele [auf Github](https://github.com/timjb/presentations/tree/gh-pages/lens).
+
+<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 [Ingo](https://github.com/iblech) lädt zum großen monadischen Abend ein und
 wird daher über [Monoide, freie Monoide und Monaden als
