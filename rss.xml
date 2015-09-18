@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 16 Sep 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Sep 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das achte Treffen am 5. November 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-09-19-ankuendigung-achtes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das achte Treffen am 5. November 2015</h1>
+    <div class="info">
+      Gepostet am 19. September 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Für das achte Treffen gibt es noch keine Pläne!</p>
+</article>
+]]></description>
+    <pubDate>Sat, 19 Sep 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-09-19-ankuendigung-achtes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Hitliste der Talks von der ICFP</title>
     <link>http://curry-club-augsburg.de/posts/2015-09-16-hitliste-der-ICFP-talks.html</link>
     <description><![CDATA[<article>
@@ -69,7 +92,8 @@
     
   </header>
 
-  <p><a href="https://github.com/timjb">Tim</a> wird seinen Dreiteiler über Lens abschließen. <a href="/files/lens.pdf">Vollständige Vortragsfolien sind online.</a></p>
+  <p><a href="https://github.com/timjb">Tim</a> wird seinen Dreiteiler über Lens abschließen. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>. Das letzte Mal sind wir bis zu Folie 91 gekommen.</p>
+<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 <p><a href="https://github.com/iblech">Ingo</a> wird seinen Vortrag über <a href="/files/freie-monaden-teil1.pdf">Monoide, freie Monoide und Monaden als Monoide</a> abschließen.</p>
 <p>Vielleicht wird es außerdem Vorträge über Effektsysteme, den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> und Functional Reactive Programming geben.</p>
 </article>
@@ -94,7 +118,8 @@
     
   </header>
 
-  <p><a href="https://github.com/timjb">Tim</a> wird seinen Vortrag über Lens vom letzten Mal fortsetzen. <a href="/files/lens.pdf">Vollständige Vortragsfolien sind online.</a></p>
+  <p><a href="https://github.com/timjb">Tim</a> wird seinen Vortrag über Lens vom letzten Mal fortsetzen. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>.</p>
+<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 <p><a href="https://github.com/iblech">Ingo</a> lädt zum großen monadischen Abend ein und wird daher über <a href="/files/freie-monaden-teil1.pdf">Monoide, freie Monoide und Monaden als Monoide</a> berichten. Ziel wird sein, das schöne Motto <em>Monaden sind nichts anderes als Monoide in einer Kategorie von Endofunktoren</em> zu verstehen. Wenn noch Zeit ist, werden wir auch auf freie Monaden eingehen. Dies ist der zweite Vortrag in der Reihe <em>What the Kmett is a monad?</em>. Beim nächsten Treffen dann wird es einen darauf aufbauenden Vortrag über Effektsysteme und den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> geben.</p>
 <p><a href="http://sketis.net/">Makarius</a> führt die Reihe <em>SML ist die beste unbekannte Programmiersprache der Welt</em> durch eine Kurzpräsentation des source-level Debuggers in der Prover-IDE fort.</p>
 <p>Als dreiminütigen Lückenfüller gibt es eine Erklärung, welchen einfachen Zaubertrick man mit Münzen und dem Haskell-Programm <code>length . group</code> vorführen kann.</p>
@@ -164,7 +189,8 @@
   </header>
 
   <p><a href="https://github.com/mgudemann">Matthias</a> stellt Mercury vor.</p>
-<p><a href="https://github.com/timjb">Tim</a> stellt Lenses vor, anschaulich erklärt mit seinem <a href="https://github.com/timjb/diagrams-rubiks-cube">Haskell-Paket für Zauberwürfel-Diagramme</a>.</p>
+<p><a href="https://github.com/timjb">Tim</a> stellt Lenses vor, anschaulich erklärt mit seinem <a href="https://github.com/timjb/diagrams-rubiks-cube">Haskell-Paket für Zauberwürfel-Diagramme</a>. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>.</p>
+<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 <p>Schließlich gibt es auch noch einen Kurzvortrag von <a href="https://github.com/maximilianhuber">Maximilian</a>: Wie kann man in Haskell ansprechende Textmodus-Oberflächen zaubern?</p>
 </article>
 ]]></description>
@@ -350,62 +376,6 @@ parseList <span class="fu">=</span> <span class="kw">do</span>
 ]]></description>
     <pubDate>Sun, 03 May 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-05-03-wir-bauen-einen-parserkombinator.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Erstes Treffen des Curry Clubs</title>
-    <link>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Erstes Treffen des Curry Clubs</h1>
-    <div class="info">
-      Gepostet am 28. April 2015
-      
-          von Profpatsch
-      
-    </div>
-    
-    <img src="/images/learn-you-a-haskell-for-great-good.png" alt="Learn you a Haskell for great good" />
-    
-    
-    <div class="attribution"><p><a href="http://learnyouahaskell.com/">LearnYouAHaskell</a> (CC BY-NC-SA)</p></div>
-    
-  </header>
-
-  <p>Am vergangenen Donnerstag hatten wir unser erstes Treffen im <a href="https://openlab-augsburg.de/">OpenLab Augsburg</a>. Es waren fast 20 Personen anwesend.</p>
-<p>Nach einer kurzen Vorstellungsrunde ging es gleich richtig zur Sache, Ingo schrieb und beschrieb in einer Stunde einen funktionierenden Parserkombinator, der dann auch gleich auf S-Expressions losgelassen wurde. Dem Talk ist ein <a href="2015-05-03-wir-bauen-einen-parserkombinator.html">eigener Blogeintrag</a> gewidmet.</p>
-<p>Viele Zwischenfragen – auch zu esoterischeren und theoretischeren Themen – sorgten dafür, dass auch Fortgeschrittene auf ihre Kosten kamen.</p>
-<p>Maximilian stellte seine Anwendung <a href="https://github.com/maximilianhuber/mySortMaildir">mySortMaildir</a> vor, ein Tool in Haskell, das für ihn Mails filtert und sortiert.</p>
-<p>Tim ging im dritten Talk auf die Typebene und beschrieb das von ihm implementierte typsichere Parsing von Routen im Webframework <a href="http://www.spock.li/">Spock</a>. Er schaffte nur den ersten Teil und wird beim nächsten Treffen den Rest halten. Die Folien sind <a href="https://github.com/timjb/reroute-talk">auf Github zu finden</a> und eine zusammenfassende Beschreibung <a href="http://www.spock.li/2015/04/19/type-safe_routing.html">im Blog des Projekts</a>.</p>
-<p>Zum Schluss ließ ein Teil der Anwesenden den Abend bei einem leckeren Curry im <a href="http://www.sangam-augsburg.de/">Sangam</a> ausklingen.</p>
-<h1 id="beim-essen-haben-wir-unter-anderem-gelernt">Beim Essen haben wir unter anderem gelernt</h1>
-<ul>
-<li>Der Code von <a href="https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)">Isabelle</a> war die letzten 20 Jahre über sehr gut wartbar und konnte mehrmals tiefgreifend umstrukturiert werden. Es gibt aber auch eine Funktion, die zusätzlich zu mehreren anderen Parametern fünf boolsche Flags nimmt und die sich niemand anzufassen traut. :-)</li>
-<li>Isabelle besitzt auch einen Kern für minimale Logik.</li>
-<li>Beweist man etwas <a href="https://de.wikipedia.org/wiki/Konstruktive_Mathematik">konstruktiv</a>, so gilt die Behauptung in allen Topoi. (Zur Einführung in die Konstruktive Mathematik gibt es ein <a href="http://pizzaseminar.speicherleck.de/skript2/konstruktive-mathematik.pdf">Skript von Ingo</a>.)</li>
-<li>ghcid ist die beste Erfindung seit geschnitten Brot.</li>
-<li>In jeder Kategorie kann man formulieren, was ein Monoid-Objekt sein soll. In der Kategorie der Mengen sind Monoid-Objekte gewöhnliche Monoide. In der Kategorie Hask sind Monoide solche Typen, denen man eine Instanz der Monoid-Typklasse spendieren kann. In Kategorien von Endofunktoren sind Monoide Monaden.</li>
-<li>Manchen Menschen macht es Spaß, Pi auswendig zu lernen.</li>
-<li>OCaml wird nicht nur von Jane Street Capital, sondern auch in Routern eingesetzt; es ist eine Art “Higher-Order C”.</li>
-<li>Etwas Wesentliches, was OCaml fehlt, ist Multithreading, so wie auch im Falle von Emacs LISP.</li>
-<li>Es gibt Punkte, die sowohl für ein Informatikstudium an der Uni Augsburg sprechen als auch für ein Studium an der TU München. Eine Auswahl:
-<ul>
-<li>Uni Augsburg
-<ul>
-<li>Pro: Übersichtlich, man kennt fast jeden, Fächer sind relativ leicht zu bestehen, das <a href="https://openlab-augsburg.de/">OpenLab</a></li>
-<li>Con: Es wird hauptsächlich Java gelehrt, Windows überall</li>
-</ul></li>
-<li>TU München
-<ul>
-<li>Pro: Viel Auswahl (mehr Lehrstühle), funktionale Programmierung wird gelehrt, anerkanntere Uni</li>
-<li>Con: Entfernung (oder hohe Mietpreise), teils schwer in gute Übungen zu kommen</li>
-</ul></li>
-</ul></li>
-</ul>
-</article>
-]]></description>
-    <pubDate>Tue, 28 Apr 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-04-28-erstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
