@@ -114,11 +114,7 @@ title: Hitliste der Talks von der ICFP
   Wie man ein GHC-Typsystem-Plugin schreibt, das Haskell beibringt, mit
   physikalischen Einheiten umzugehen. So etwas ist auch in [Idris](http://www.idris-lang.org/) ohne weiteres möglich und darum gibt es eine [Idris Bibliothek von Tim](https://github.com/timjb/quantities), die genau das tut.
 
-* [Improving Haskell Types with SMT](https://www.youtube.com/watch?v=UoPoBQRGuZM) von Iavor S. Diatchki  
-  Vektoren sind Listen, die mit ihrer Länge indiziert sind. Zum Beispiel ist `v :: Vect (S (S Z)) Int` eine Liste der Länge zwei bestehend aus `Int`s.
-  Beim Programmieren mit Vektoren ergeben sich häufig Situation wie die folgende: Man hat Vektoren `v :: Vect n a`, `w :: Vect m a` und einen Wert `x :: a`. Man möchte die Vektoren `v` und `w` zusammenhängen mit `x` als Seperator dazwischen, also `v ++ (x : w) :: Vect (S (n + m)) a`. Aber dieses Type Judgement ist für GHC nicht nachvollziehbar! Denn `v ++ (x : w)` hat zunächst den Typ `Vect (n + S m) a`. Dass `n + S m ~ S (n + m)` gilt, weiß GHC nicht. Aber man kann es ihm beibringen, indem man ein Typsystemplugin schreibt, welches solche Gleichheiten mit Hilfe eines SMT-Solvers löst.
-
-* [Two can keep a Secret if one of them uses Haskell](https://www.youtube.com/watch?v=K6Uf61U0fvo) von Alejandro Russo  
-  Wie man mithilfe des Typsystems das Leaken von sensiblen Daten verhindern kann. Der Programmierer schreibt seinen Code in einer Monade, welche nur Daten von bestimmter Vertraulichkeit lesen oder schreiben kann. Daten sind mit der Vertraulichkeitsebene getaggt. Mit SafeHaskell wird ein Ausbrechen aus diesem Regime verhindert.
+* [Type Level Web APIs](https://www.youtube.com/watch?v=vXRIXkbjLbU) von Andres Löh  
+  Ein Vortrag über das Webframework [Servant](https://hackage.haskell.org/package/servant). In Servant schreibt man zunächst eine Art Sitemap der Webseite, in der Routen, Parameter und HTTP-Methoden und Rückgabewerte der Seite beschrieben sind. Diese Sitemap schreibt man in einer Art DSL auf Typebene. Man kann diese Sitemap dann für verschiedene Zwecke nutzen, zum Beispiel um die Seite auch tatsächlich zu implementieren (dabei muss man sich dann nicht um das Routing oder das Formatieren des Outputs kümmern), um Dokumentation zu erzeugen, um eine Client-Library in JavaScript zu generieren oder um Funktionen zu erhalten, mit denen sich die Webseite als Client ansprechen lässt. Ein interessanter Ansatz, den sich jeder mal anschauen sollte!
 
 Viel Spaß beim Ansehen!
