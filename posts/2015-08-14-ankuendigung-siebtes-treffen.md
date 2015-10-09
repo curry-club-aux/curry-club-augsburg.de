@@ -2,6 +2,9 @@
 title: Programm für das siebte Treffen am 8. Oktober 2015
 meetup-announcement: 2015-10-08
 author: Tim Baumann
+image: /images/hacker-barbie.png
+image-alt: Hacker Barbie
+image-attr: Nach der Schule trifft Barbie Paul und Peter in der Bibliothek. "Funktionale Programmierung ist fantastisch!", freut sich Barbie. "Ich weiß nicht", sagt Paul, "was zum Teufel ist eine Monade noch mal?". "Eine Monade ist einfach ein Monoid in einer Kategorie von Endofunktoren – wo liegt das Problem?", antwortet Barbie.
 ---
 
 [Tim](https://github.com/timjb) wird seinen Dreiteiler über Lens abschließen.
