@@ -29,6 +29,8 @@
   </header>
 
   <p><a href="https://github.com/larsrh">Lars</a> wird eine kurze Einführung in Scala geben und die Sprache mit Haskell und ML vergleichen. Der Vortrag ist angelehnt an “What Haskell can learn from Scala” vom <a href="https://skillsmatter.com/conferences/7069-haskell-exchange-2015#program">diesjährigen Haskell eXchange</a>.</p>
+<p>Ziemlich sicher wird <a href="https://github.com/iblech">Ingo</a> einen Vortrag über Effektsysteme und den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> halten.</p>
+<p>Vielleicht gibt es auch einen Vortrag zu Functional Reactive Programming.</p>
 </article>
 ]]></summary>
 </entry>
@@ -121,7 +123,7 @@
 
   <p><a href="https://github.com/timjb">Tim</a> wird seinen Dreiteiler über Lens abschließen. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>. Das letzte Mal sind wir bis zu Folie 91 gekommen.</p>
 <script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-<p><a href="https://github.com/iblech">Ingo</a> wird seinen Vortrag über <a href="/files/freie-monaden-teil1.pdf">Monoide, freie Monoide und Monaden als Monoide</a> abschließen.</p>
+<p><a href="https://github.com/iblech">Ingo</a> wird seinen Vortrag über <a href="/files/freie-monaden.pdf">Monoide, freie Monoide und Monaden als Monoide</a> abschließen. <a href="/files/freie-monaden.pdf">Folien</a>, <a href="https://github.com/iblech/vortrag-haskell/blob/master/freie-monaden.txt">Transcript</a>, <a href="https://github.com/iblech/vortrag-haskell/blob/master/freie-monaden.hs">Code</a>.</p>
 <p>Vielleicht wird es außerdem Vorträge über Effektsysteme, den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> und Functional Reactive Programming geben.</p>
 </article>
 ]]></summary>
@@ -147,7 +149,7 @@
 
   <p><a href="https://github.com/timjb">Tim</a> wird seinen Vortrag über Lens vom letzten Mal fortsetzen. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>.</p>
 <script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-<p><a href="https://github.com/iblech">Ingo</a> lädt zum großen monadischen Abend ein und wird daher über <a href="/files/freie-monaden-teil1.pdf">Monoide, freie Monoide und Monaden als Monoide</a> berichten. Ziel wird sein, das schöne Motto <em>Monaden sind nichts anderes als Monoide in einer Kategorie von Endofunktoren</em> zu verstehen. Wenn noch Zeit ist, werden wir auch auf freie Monaden eingehen. Dies ist der zweite Vortrag in der Reihe <em>What the Kmett is a monad?</em>. Beim nächsten Treffen dann wird es einen darauf aufbauenden Vortrag über Effektsysteme und den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> geben.</p>
+<p><a href="https://github.com/iblech">Ingo</a> lädt zum großen monadischen Abend ein und wird daher über <a href="/files/freie-monaden.pdf">Monoide, freie Monoide und Monaden als Monoide</a> berichten. Ziel wird sein, das schöne Motto <em>Monaden sind nichts anderes als Monoide in einer Kategorie von Endofunktoren</em> zu verstehen. Wenn noch Zeit ist, werden wir auch auf freie Monaden eingehen. Dies ist der zweite Vortrag in der Reihe <em>What the Kmett is a monad?</em>. Beim nächsten Treffen dann wird es einen darauf aufbauenden Vortrag über Effektsysteme und den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> geben.</p>
 <p><a href="http://sketis.net/">Makarius</a> führt die Reihe <em>SML ist die beste unbekannte Programmiersprache der Welt</em> durch eine Kurzpräsentation des source-level Debuggers in der Prover-IDE fort.</p>
 <p>Als dreiminütigen Lückenfüller gibt es eine Erklärung, welchen einfachen Zaubertrick man mit Münzen und dem Haskell-Programm <code>length . group</code> vorführen kann.</p>
 <p><em>Um den Abend gemütlich ausklingen zu lassen, wird es selbstgekochtes Curry geben.</em> Wer eine Portion haben möchte, schickt an <code>tim@timbaumann.info</code> eine Mail mit Betreff <code>(+1)</code> (oder einem semantisch identischen Haskell-Programm).</p>
