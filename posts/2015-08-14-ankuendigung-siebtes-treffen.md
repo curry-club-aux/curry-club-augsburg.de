@@ -10,7 +10,10 @@ Die Vortragsfolien gibt es [hier](/files/lens.pdf) und die Codebeispiele [auf Gi
 <script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 [Ingo](https://github.com/iblech) wird seinen Vortrag über [Monoide, freie
-Monoide und Monaden als Monoide](/files/freie-monaden-teil1.pdf) abschließen.
+Monoide und Monaden als Monoide](/files/freie-monaden.pdf) abschließen.
+[Folien](/files/freie-monaden.pdf),
+[Transcript](https://github.com/iblech/vortrag-haskell/blob/master/freie-monaden.txt),
+[Code](https://github.com/iblech/vortrag-haskell/blob/master/freie-monaden.hs).
 
 Vielleicht wird es außerdem Vorträge über Effektsysteme, den neuesten [Aufsatz
 von Oleg](http://okmij.org/ftp/Haskell/extensible/more.pdf) und Functional
