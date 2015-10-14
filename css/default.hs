@@ -42,7 +42,7 @@ layoutCss = do
     sym2 margin nil auto
   main_ ?
     padding nil nil (px 30) nil
-  div # ".block.bright" ? do
+  article # ".bright" ? do
     backgroundColor (other "#dddddd")
     color (other "#222")
   ".main" |> header ? do
@@ -90,6 +90,7 @@ postCss = do
       h1 <? do
         marginBottom (em 0.2)
         lambdify
+        lineHeight (em 2)
       div # ".info" ? do
         color rose
         fontSize (px 14)
@@ -153,7 +154,7 @@ contentCss = do
     fontSize (px 18)
   ((a # link) <> (a # visited)) ?
     color rose
-  div # ".block.bright" ?
+  article # ".bright" ?
     ((a # link) <> (a # visited)) ?
       color ourPurple
   p # "#next-meeting" ? do
