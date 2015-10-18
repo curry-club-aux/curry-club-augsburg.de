@@ -1,0 +1,127 @@
+@media screen {
+  /* for preview purposes */
+  body { background: #555; }
+  #page {
+    background: #fff;
+    border: 1px solid #000;
+    /* Din A5: 
+    width: 148mm;
+    height: 210mm;*/
+    /* Din A4: */
+    width: 210mm;
+    height: 297mm;
+    margin: 0.5cm auto;
+  }
+}
+
+* { margin: 0; padding: 0; }
+
+body {
+  font-family: Ubuntu, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5em;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #702979;
+}
+
+#poster {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  height: 290mm;
+  padding: 1cm 1.2cm 0;
+  background-image: url(bg-code.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe98b), color-stop(80%, #fff), color-stop(100%, #fff));
+  background-image: url(bg-code.png), linear-gradient(to bottom, #ffe98b 0%, #fff 80%, #fff 100%);
+  background-repeat: no-repeat;
+}
+
+h1, h2 {
+  text-align: center;
+}
+h1, h2, h3 {
+  font-weight: 500;
+  color: #702979;
+}
+
+h1 {
+  font-size: 0.7cm;
+  line-height: 1.5cm;
+}
+
+#haskell-logo {
+  height: 1.5cm;
+  vertical-align: baseline;
+}
+
+#haskell {
+  font-size: 1.9cm;
+  font-weight: 800;
+  color: #000;
+}
+
+h2 {
+  font-size: 0.5cm;
+}
+
+#main {
+  margin: 1cm 0 0.6cm;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+#main img {
+  width: 80%;
+  display: block;
+  margin: 0.4cm auto;
+}
+
+.column {
+  width: 48%;
+}
+
+#left-column { float: left; }
+#right-column { float: right; }
+
+.clear { clear: both; }
+
+h3 { margin: 0.5cm 0 0.25cm; }
+
+p, ul, .highlight {
+  margin: 0 0 0.2cm;
+}
+
+ul {
+  margin-left: 0.5cm;
+}
+
+.highlight {
+  padding: 0.2cm 0.3cm;
+	background: #3d1841 !important;
+}
+
+#cc-logo {
+  display: block;
+  position: absolute;
+  bottom: 1.25cm; right: 1cm;
+  width: 6cm;
+}
+
+tr {
+  padding: 2pt 0;
+}
+
+th {
+  font-size: 9pt;
+  padding-right: 0.5cm;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: right;
+  vertical-align: top;
+  color: #777;
+}
