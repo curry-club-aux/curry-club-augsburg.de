@@ -73,6 +73,7 @@ h2 {
   hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
 }
 
 #main img {
