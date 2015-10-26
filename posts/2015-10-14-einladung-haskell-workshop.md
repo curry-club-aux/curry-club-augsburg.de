@@ -38,6 +38,8 @@ Wir freuen uns auf euch!
 
 Euer Team vom Curry Club
 
+**Update:** [Die Übungsaufgaben vom Workshop sind online.][uebung]
+
 > Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python,
 > flexibler als Ruby, typisierter als C#, robuster als Java und hat
 > absolut nichts mit PHP gemeinsam? Es ist Haskell!
@@ -74,3 +76,4 @@ Euer Team vom Curry Club
 
 [pad]: https://ola.pads.ccc.de/haskell-workshop-2015
 [hs-platform]: https://www.haskell.org/platform/
+[uebung]: https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf
