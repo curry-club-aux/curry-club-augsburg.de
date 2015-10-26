@@ -39,6 +39,7 @@
 <p>Wer vorhat, am Workshop teilzunehmen, kann sich in ein <a href="https://ola.pads.ccc.de/haskell-workshop-2015">Organisationspad</a> eintragen und dann am 25. Oktober mit dem eigenen Laptop ins OpenLab kommen. Bitte vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren, um auf dem Workshop Zeit zu sparen.</p>
 <p>Wir freuen uns auf euch!</p>
 <p>Euer Team vom Curry Club</p>
+<p><strong>Update:</strong> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">Die Übungsaufgaben vom Workshop sind online.</a></p>
 <blockquote>
 <p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
 <p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
