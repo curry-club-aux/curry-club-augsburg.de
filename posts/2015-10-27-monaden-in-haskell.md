@@ -80,7 +80,7 @@ main = do
     putStrLn $ reverse name
 ```
 
-Die beteiligten Typen sind `getLine :: IO String`` und `putStr :: String -> IO ()`.
+Die beteiligten Typen sind `getLine :: IO String` und `putStr :: String -> IO ()`.
 Die Konstante `main` hat den Typ `main :: IO ()`.
 
 Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine
