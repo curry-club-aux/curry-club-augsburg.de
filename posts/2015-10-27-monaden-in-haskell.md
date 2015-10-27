@@ -3,6 +3,7 @@ title: Monaden in Haskell (Nachtrag zum Haskell-Workshop)
 author: Ingo Blechschmidt
 image: /images/a-monad-is-just.jpeg
 image-alt: Eine Monade ist nichts anderes als ein Monoidobjekt in einer Kategorie von Endofunktoren
+image-attr: <a href="http://wadler.blogspot.de/2012/12/tech-mesh-2012.html">Bodil Stokke und Philip Wadler auf der Tech Mesh 2012</a>
 ---
 
 Dieser kurze Artikel soll als Nachtrag zum Haskell-Workshop kurz umreißen, wie
@@ -31,7 +32,7 @@ Das Problem: Unverträglichkeit mit referenzieller Transparenz
 
 In vielen Programmiersprachen gibt es eine Funktion wie `readFile :: FilePath
 -> String`, die eine Datei einliest und ihren Inhalt zurückgibt. *Eine solche
-Funktion kann es in Haskell nicht geben.* Denn in Haskell gilt das Prinzip der
+Funktion kann es in Haskell nicht geben,* denn in Haskell gilt das Prinzip der
 *referenziellen Transparenz*: Wie in der Mathematik müssen Funktionen bei
 gleichen Eingaben gleiche Ausgaben produzieren. Der Rückgabewert von `readFile
 "foo.txt"` hängt aber vom aktuellen Inhalt der Datei `foo.txt` ab.
@@ -58,8 +59,8 @@ statt zwei Male ausgeführt werden (zum Beispiel, etwas auf Twitter zu
 posten), oder auf veränderlichem Zustand basieren (zum Beispiel der Anzahl
 Nanosekunden seit Programmstart).
 
-Wie also kann der Wunsch nach referenzieller Transparenz mit der Notwendigkeit,
-Ein- und Ausgabe zu betreiben, XXX?
+Wie also kann man den Wunsch nach referenzieller Transparenz mit der Notwendigkeit,
+Ein- und Ausgabe zu betreiben, vereinbaren?
 
 
 Die Lösung: Monadische Ein- und Ausgabe
@@ -68,8 +69,8 @@ Die Lösung: Monadische Ein- und Ausgabe
 In Haskell ist man – nach einigen suboptimalen Lösungen und Irrwegen – auf das
 Konzept der *monadischen Ein- und Ausgabe* gestoßen, das das Problem
 vollumfänglich löst. Dieses hat elegante mathematische Hintergründe, die man
-für die Anwendung allerdings nicht kennen muss. So sieht ein Programm aus, das
-den ausführenden Lambroiden freundlich grüßt:
+für die Anwendung nicht kennen muss. So sieht ein Programm aus, das
+den ausführenden Lambdroiden freundlich grüßt:
 
 ``` haskell
 main = do
@@ -79,7 +80,7 @@ main = do
     putStrLn $ reverse name
 ```
 
-Die beteiligten Typen sind ``getLine :: IO String`` und ``putStr :: String -> IO ()`.
+Die beteiligten Typen sind `getLine :: IO String`` und `putStr :: String -> IO ()`.
 Die Konstante `main` hat den Typ `main :: IO ()`.
 
 Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine
@@ -90,7 +91,7 @@ beschreiben – die mit dem Namen `main`. Diese wird dann vom Laufzeitsystem
 ausgeführt.
 
 Genau wie ein Wert vom Typ `Tree a` ein Baum ist, dessen Blätter vom Typ `a`
-sind, ist `IO a` eine Beschreibung einer IO-Aktion, die prinzipiell vom
+sind, ist ein Wert vom Typ `IO a` eine Beschreibung einer IO-Aktion, die prinzipiell vom
 Laufzeitsystem ausgeführt werden könnte, dabei irgendwelche Nebenwirkungen
 verursachen und schließlich einen Wert vom Typ `a` produzieren würde.
 Solche Beschreibungen sind "first class values", sie können manipuliert und
@@ -106,8 +107,8 @@ main = seq (putStrLn "abc") (putStrLn "def")
 
 Die Funktion `seq` erzwingt die Auswertung ihres ersten Arguments – sobald `seq
 x y` ausgewertet wird, wird zunächst `x` ausgewertet und dann `y`
-zurückgegeben. Beispielsweise ist `seq (fib 10000) "hallo"` semantisch völlig
-identisch zur Konstante `"hallo"`, aber langsamer in der Ausführung.
+zurückgegeben. Beispielsweise ist `seq (fib 10000) "Curry"` semantisch völlig
+identisch zur Konstante `"Curry"`, aber langsamer in der Ausführung.
 
 Jedenfalls passiert beim Ablauf dieses Programms folgendes: Zunächst wird
 `putStrLn "abc"` ausgewertet. Das produziert eine Beschreibung einer IO-Aktion,
@@ -141,7 +142,7 @@ Dazu gibt es in der Tat mehrere Möglichkeiten.
   an die Funktion `f` übergeben, welche eine weitere Aktionsbeschreibung `f x`
   errechnet. Diese wird dann als zweites ausgeführt.
 
-Außerdem gibt es eine triviale Möglichkeit, eine Aktionsbeschreibung zu
+Außerdem gibt es noch eine triviale Möglichkeit, eine Aktionsbeschreibung zu
 produzieren: Mit der Funktion `return :: a -> IO a`, die (Achtung!) nichts mit
 dem gleichnamigen Schlüsselwort in vielen anderen Sprachen (zum vorzeitigen
 Verlassen einer Subroutine) zu tun hat. Vielmehr ist `return x` eine
@@ -236,7 +237,7 @@ noch zwei Male ausgeführt.
 Eigene Kontrollstrukturen
 =========================
 
-Dadurch, dass Aktionsbeschreibungen "first class" values sind, kann man leicht
+Dadurch, dass Aktionsbeschreibungen "first class values" sind, kann man leicht
 eigene Kontrollstrukturen definieren. Das Modul `Control.Monad` exportiert etwa
 folgende:
 
@@ -245,9 +246,9 @@ folgende:
 forever :: IO a -> IO ()
 forever m = m >> forever m
 
--- `replicateM i m` beschreibt eine Aktion, die wenn ausgeführt die
--- gegebene Beschreibung `m` `i` Mal ausführt und die dabei produzierten
--- Ergebnisse in einer Liste sammelt.
+-- `replicateM i m` beschreibt eine Aktion, die wenn ausgeführt
+-- die gegebene Beschreibung `m` `i` Mal ausführt und die dabei
+-- produzierten Ergebnisse in einer Liste sammelt.
 replicateM :: Int -> IO a -> IO [a]
 replicateM 0 _ = return []
 replicateM i m = do
@@ -255,6 +256,7 @@ replicateM i m = do
     xs <- replicate (i-1) m
     return (x:xs)
 
+-- Was macht wohl diese Funktion?
 forM :: [a] -> (a -> IO b) -> IO [b]
 forM []     _ = return []
 forM (x:xs) f = ...
@@ -355,20 +357,26 @@ Das ist ein Unterschied zur IO-Monade: Nur das Laufzeitsystem ist in der Lage,
 eine Beschreibung einer IO-Aktion auszuführen. State-Aktionen können dagegen
 Haskell-intern ausgeführt werden.
 
+Übrigens kommt es in der täglichen Praxis mit Haskell nicht besonders häufig
+vor, dass man veränderliche Variablen benötigen würde. Fast immer ist eine
+Alternativlösung ohne veränderliche Variablen eleganter und wartbarer. Falls
+man imperativ geprägt ist, lohnt es sich daher trotzdem, etwas Mühe zu
+investieren, um zustandslose Implementierungen zu finden.
+
 
 Weitere Monaden
 ===============
 
 Aus der Not wurde eine Tugend: Nachdem die Nützlichkeit des monadischen Ansatzes
 für Ein- und Ausgabe erkannt wurde, hat man viele weitere nützliche Monaden
-entdeckt und entworfen:
+entdeckt und entworfen.
 
 * State (veränderlicher Zustand)
 * Parser (Parsen von Text)
-* Maybe (Behandlung von Fehlerfällen)
+* Maybe (Behandlung von Fehlerfällen, Vermeidung von "or else"-Kaskaden)
 * Reader (vererbende Umgebung)
 * Writer (Logging)
-* Listen für Nichtdeterminismus und Logikprogrammierung
+* Listen (Nichtdeterminismus und Logikprogrammierung)
 * Cont (Continuations)
 
 Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren `>>=` und
@@ -401,7 +409,8 @@ Sobald man Monaden verstanden hat, verliert man instantan die Fähigkeit, sie
 verständlich zu erklären.
 
 Wer fortgeschritten ist und verstehen möchte, was Monaden mit Monoiden zu tun
-haben, sei ein [Foliensatz](/files/freie-monaden.pdf) empfohlen. Für alle
-lesenswert aber auf jeden Fall ein Artikel des großartigen Dan "sigfpe" Piponi:
+haben, sei ein [Foliensatz](/files/freie-monaden.pdf) von einem der Treffen des
+Curry Clubs empfohlen. Für alle
+lesenswert ist aber auf jeden Fall ein Artikel des großartigen Dan "sigfpe" Piponi:
 [You could have invented monads! (And maybe you already
 have.)](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html)
