@@ -24,6 +24,8 @@
     <img src="/images/a-monad-is-just.jpeg" alt="Eine Monade ist nichts anderes als ein Monoidobjekt in einer Kategorie von Endofunktoren" />
     
     
+    <div class="attribution"><p><a href="http://wadler.blogspot.de/2012/12/tech-mesh-2012.html">Bodil Stokke und Philip Wadler auf der Tech Mesh 2012</a></p></div>
+    
   </header>
 
   <p>Dieser kurze Artikel soll als Nachtrag zum Haskell-Workshop kurz umreißen, wie <em>monadische Ein- und Ausgabe</em> in Haskell funktioniert. TL;DR:</p>
@@ -34,7 +36,7 @@
 <li><p>Wenn man nur veränderlichen Zustand möchte, benötigt man nicht die IO-Monade. Man muss nur Zustand per Hand durchfädeln – oder die praktische Abstraktion durch die State-Monade nutzen.</p></li>
 </ul>
 <h1 id="das-problem-unverträglichkeit-mit-referenzieller-transparenz">Das Problem: Unverträglichkeit mit referenzieller Transparenz</h1>
-<p>In vielen Programmiersprachen gibt es eine Funktion wie <code>readFile :: FilePath -&gt; String</code>, die eine Datei einliest und ihren Inhalt zurückgibt. <em>Eine solche Funktion kann es in Haskell nicht geben.</em> Denn in Haskell gilt das Prinzip der <em>referenziellen Transparenz</em>: Wie in der Mathematik müssen Funktionen bei gleichen Eingaben gleiche Ausgaben produzieren. Der Rückgabewert von <code>readFile &quot;foo.txt&quot;</code> hängt aber vom aktuellen Inhalt der Datei <code>foo.txt</code> ab.</p>
+<p>In vielen Programmiersprachen gibt es eine Funktion wie <code>readFile :: FilePath -&gt; String</code>, die eine Datei einliest und ihren Inhalt zurückgibt. <em>Eine solche Funktion kann es in Haskell nicht geben,</em> denn in Haskell gilt das Prinzip der <em>referenziellen Transparenz</em>: Wie in der Mathematik müssen Funktionen bei gleichen Eingaben gleiche Ausgaben produzieren. Der Rückgabewert von <code>readFile &quot;foo.txt&quot;</code> hängt aber vom aktuellen Inhalt der Datei <code>foo.txt</code> ab.</p>
 <p>In Haskell schätzt man das Prinzip der referenziellen Transparenz sehr. Denn es ermöglicht es, Code rein lokal zu verstehen und leicht umzustrukturieren. Immer, wenn man irgendwo im Code an zwei Stellen denselben Teilausdruck erspäht, kann man diesen durch eine mit <code>let ... in ...</code> oder <code>where ...</code> eingeführte Variable ersetzen. Ohne referenzielle Transparenz geht das nicht:</p>
 <div class="sourceCode"><pre class="sourceCode perl"><code class="sourceCode perl"><span class="co"># Folgender Code ...</span>
 say foo();
@@ -45,20 +47,20 @@ say foo();
 say <span class="dt">$x</span>;
 say <span class="dt">$x</span>;</code></pre></div>
 <p>Denn <code>foo()</code> könnte Nebenwirkungen auslösen, die dann nur ein einziges Mal statt zwei Male ausgeführt werden (zum Beispiel, etwas auf Twitter zu posten), oder auf veränderlichem Zustand basieren (zum Beispiel der Anzahl Nanosekunden seit Programmstart).</p>
-<p>Wie also kann der Wunsch nach referenzieller Transparenz mit der Notwendigkeit, Ein- und Ausgabe zu betreiben, XXX?</p>
+<p>Wie also kann man den Wunsch nach referenzieller Transparenz mit der Notwendigkeit, Ein- und Ausgabe zu betreiben, vereinbaren?</p>
 <h1 id="die-lösung-monadische-ein--und-ausgabe">Die Lösung: Monadische Ein- und Ausgabe</h1>
-<p>In Haskell ist man – nach einigen suboptimalen Lösungen und Irrwegen – auf das Konzept der <em>monadischen Ein- und Ausgabe</em> gestoßen, das das Problem vollumfänglich löst. Dieses hat elegante mathematische Hintergründe, die man für die Anwendung allerdings nicht kennen muss. So sieht ein Programm aus, das den ausführenden Lambroiden freundlich grüßt:</p>
+<p>In Haskell ist man – nach einigen suboptimalen Lösungen und Irrwegen – auf das Konzept der <em>monadischen Ein- und Ausgabe</em> gestoßen, das das Problem vollumfänglich löst. Dieses hat elegante mathematische Hintergründe, die man für die Anwendung nicht kennen muss. So sieht ein Programm aus, das den ausführenden Lambdroiden freundlich grüßt:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> <span class="kw">do</span>
     putStr <span class="st">&quot;Hallo! Was ist dein Name? &quot;</span>
     name <span class="ot">&lt;-</span> getLine
     putStr <span class="st">&quot;Das ist ein schöner Name. So lautet er rückwärts: &quot;</span>
     putStrLn <span class="fu">$</span> reverse name</code></pre></div>
-<p>Die beteiligten Typen sind <code>getLine :: IO String</code> und `<code>putStr :: String -&gt; IO ()</code>. Die Konstante <code>main</code> hat den Typ <code>main :: IO ()</code>.</p>
+<p>Die beteiligten Typen sind <code>getLine :: IO String`` und</code>putStr :: String -&gt; IO ()<code>. Die Konstante</code>main<code>hat den Typ</code>main :: IO ()`.</p>
 <p>Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine Nebenwirkungen wie Interaktion mit dem Terminal verursachen können. Man kann allerdings durchaus IO-Aktionen <em>theoretisch beschreiben</em>. Der Sinn eines Haskell-Programms besteht in diesem Bild darin, eine bestimmte IO-Aktion zu beschreiben – die mit dem Namen <code>main</code>. Diese wird dann vom Laufzeitsystem ausgeführt.</p>
-<p>Genau wie ein Wert vom Typ <code>Tree a</code> ein Baum ist, dessen Blätter vom Typ <code>a</code> sind, ist <code>IO a</code> eine Beschreibung einer IO-Aktion, die prinzipiell vom Laufzeitsystem ausgeführt werden könnte, dabei irgendwelche Nebenwirkungen verursachen und schließlich einen Wert vom Typ <code>a</code> produzieren würde. Solche Beschreibungen sind “first class values”, sie können manipuliert und in Datenstrukturen abgelegt werden, ohne dass sie bei Ablauf des Programms sofort ausgeführt werden würden. Nur eine einzige Beschreibung wird tatsächlich ausgeführt: Die, die den Namen <code>main</code> trägt.</p>
+<p>Genau wie ein Wert vom Typ <code>Tree a</code> ein Baum ist, dessen Blätter vom Typ <code>a</code> sind, ist ein Wert vom Typ <code>IO a</code> eine Beschreibung einer IO-Aktion, die prinzipiell vom Laufzeitsystem ausgeführt werden könnte, dabei irgendwelche Nebenwirkungen verursachen und schließlich einen Wert vom Typ <code>a</code> produzieren würde. Solche Beschreibungen sind “first class values”, sie können manipuliert und in Datenstrukturen abgelegt werden, ohne dass sie bei Ablauf des Programms sofort ausgeführt werden würden. Nur eine einzige Beschreibung wird tatsächlich ausgeführt: Die, die den Namen <code>main</code> trägt.</p>
 <p>Das folgende Code-Beispiel soll diesen Punkt unterstreichen.</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> seq (putStrLn <span class="st">&quot;abc&quot;</span>) (putStrLn <span class="st">&quot;def&quot;</span>)</code></pre></div>
-<p>Die Funktion <code>seq</code> erzwingt die Auswertung ihres ersten Arguments – sobald <code>seq x y</code> ausgewertet wird, wird zunächst <code>x</code> ausgewertet und dann <code>y</code> zurückgegeben. Beispielsweise ist <code>seq (fib 10000) &quot;hallo&quot;</code> semantisch völlig identisch zur Konstante <code>&quot;hallo&quot;</code>, aber langsamer in der Ausführung.</p>
+<p>Die Funktion <code>seq</code> erzwingt die Auswertung ihres ersten Arguments – sobald <code>seq x y</code> ausgewertet wird, wird zunächst <code>x</code> ausgewertet und dann <code>y</code> zurückgegeben. Beispielsweise ist <code>seq (fib 10000) &quot;Curry&quot;</code> semantisch völlig identisch zur Konstante <code>&quot;Curry&quot;</code>, aber langsamer in der Ausführung.</p>
 <p>Jedenfalls passiert beim Ablauf dieses Programms folgendes: Zunächst wird <code>putStrLn &quot;abc&quot;</code> ausgewertet. Das produziert eine Beschreibung einer IO-Aktion, die wenn ausgeführt <code>abc</code> auf dem Terminal ausgeben würde. Diese Beschreibung wird dann jedoch sofort verworfen. Schließlich produziert <code>putStrLn &quot;def&quot;</code> eine Beschreibung, die <code>def</code> ausgeben würde. Diese Beschreibung ist letztendlich der Wert von <code>main</code>, und diese Beschreibung wird vom Laufzeitsystem ausgeführt.</p>
 <h1 id="konstruktion-komplexer-aktionsbeschreibungen">Konstruktion komplexer Aktionsbeschreibungen</h1>
 <p>Vorimplementierte Funktionen wie <code>putStrLn :: String -&gt; IO ()</code> oder <code>readFile :: FilePath -&gt; IO String</code> produzieren gewisse primitive Beschreibungen von IO-Aktionen. Die allermeisten Programme werden sich aber mehrerer solcher primitiver Aktionen bedienen müssen. Es muss also eine Möglichkeit geben, mehrere Aktionsbeschreibungen zu einer komplexeren Beschreibung zu kombinieren – ganz so, wie etwa der Konstruktor <code>Fork</code> zwei Teilbäume zu einem großen zusammensetzt.</p>
@@ -67,7 +69,7 @@ say <span class="dt">$x</span>;</code></pre></div>
 <li><p>Der Operator <code>(&gt;&gt;) :: IO a -&gt; IO b -&gt; IO b</code> nimmt zwei Aktionsbeschreibungen. Wird die resultierende Beschreibung <code>m &gt;&gt; n</code> ausgeführt, so wird zunächst <code>m</code> ausgeführt (und ihr Ergebnis vom Typ <code>a</code> verworfen) und dann <code>n</code> ausgeführt.</p></li>
 <li><p>In vielen Fällen möchte man die als zweites auszuführende Aktion vom Ergebnis der ersten abhängig machen. Dazu gibt es den Operator <code>(&gt;&gt;=) :: IO a -&gt; (a -&gt;   IO b) -&gt; IO b</code>. Die Aktionsbeschreibung <code>m &gt;&gt;= f</code> führt bei ihrer Ausführung dazu, dass zunächst <code>m</code> ausgeführt wird. Der dabei produzierte Wert <code>x</code> wird an die Funktion <code>f</code> übergeben, welche eine weitere Aktionsbeschreibung <code>f x</code> errechnet. Diese wird dann als zweites ausgeführt.</p></li>
 </ul>
-<p>Außerdem gibt es eine triviale Möglichkeit, eine Aktionsbeschreibung zu produzieren: Mit der Funktion <code>return :: a -&gt; IO a</code>, die (Achtung!) nichts mit dem gleichnamigen Schlüsselwort in vielen anderen Sprachen (zum vorzeitigen Verlassen einer Subroutine) zu tun hat. Vielmehr ist <code>return x</code> eine Aktionsbeschreibung, die bei ihrer Ausführung keinerlei Nebenwirkungen verursacht und dann den Wert <code>x</code> produziert.</p>
+<p>Außerdem gibt es noch eine triviale Möglichkeit, eine Aktionsbeschreibung zu produzieren: Mit der Funktion <code>return :: a -&gt; IO a</code>, die (Achtung!) nichts mit dem gleichnamigen Schlüsselwort in vielen anderen Sprachen (zum vorzeitigen Verlassen einer Subroutine) zu tun hat. Vielmehr ist <code>return x</code> eine Aktionsbeschreibung, die bei ihrer Ausführung keinerlei Nebenwirkungen verursacht und dann den Wert <code>x</code> produziert.</p>
 <p>Etwa kann man den Ausdruck <code>return x &gt;&gt; m</code> zu <code>m</code> vereinfachen. Beide Ausdrücke beschreiben genau dieselbe Aktion. Auch ist <code>return x &gt;&gt;= f</code> identisch zu <code>f x</code>.</p>
 <p>Schließlich sei noch die <em>Funktorialität</em> von Aktionsbeschreibungen erwähnt. Ist <code>m :: IO a</code> eine Aktionsbeschreibung, die bei Ausführung einen Wert <code>x</code> vom Typ <code>a</code> produziert, und ist <code>g :: a -&gt; b</code> eine beliebige Funktion, so beschreibt <code>fmap g m :: IO b</code> diejenige Aktion, die die Beschreibung <code>m</code> ausführt, deren Ergebnis <code>x</code> an die Funktion <code>g</code> übergibt und so den Wert <code>g x :: b</code> produziert.</p>
 <p>Aus historischen Gründen kann man statt <code>fmap g m</code> auch <code>liftM g m</code> schreiben. Die beiden Ausdrücke beschreiben genau dieselbe IO-Aktion.</p>
@@ -108,14 +110,14 @@ say <span class="dt">$x</span>;</code></pre></div>
 main <span class="fu">=</span> m <span class="fu">&gt;&gt;</span> m <span class="kw">where</span> m <span class="fu">=</span> putStrLn <span class="fu">$</span> show <span class="fu">$</span> fib <span class="dv">42</span></code></pre></div>
 <p>Hier wird die Aktionsbeschreibung nur noch einmal berechnet, allerdings immer noch zwei Male ausgeführt.</p>
 <h1 id="eigene-kontrollstrukturen">Eigene Kontrollstrukturen</h1>
-<p>Dadurch, dass Aktionsbeschreibungen “first class” values sind, kann man leicht eigene Kontrollstrukturen definieren. Das Modul <code>Control.Monad</code> exportiert etwa folgende:</p>
+<p>Dadurch, dass Aktionsbeschreibungen “first class values” sind, kann man leicht eigene Kontrollstrukturen definieren. Das Modul <code>Control.Monad</code> exportiert etwa folgende:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- `forever m` beschreibt eine unendliche Wiederholung von `m`.</span>
 <span class="ot">forever ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> <span class="dt">IO</span> ()
 forever m <span class="fu">=</span> m <span class="fu">&gt;&gt;</span> forever m
 
-<span class="co">-- `replicateM i m` beschreibt eine Aktion, die wenn ausgeführt die</span>
-<span class="co">-- gegebene Beschreibung `m` `i` Mal ausführt und die dabei produzierten</span>
-<span class="co">-- Ergebnisse in einer Liste sammelt.</span>
+<span class="co">-- `replicateM i m` beschreibt eine Aktion, die wenn ausgeführt</span>
+<span class="co">-- die gegebene Beschreibung `m` `i` Mal ausführt und die dabei</span>
+<span class="co">-- produzierten Ergebnisse in einer Liste sammelt.</span>
 <span class="ot">replicateM ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> <span class="dt">IO</span> [a]
 replicateM <span class="dv">0</span> _ <span class="fu">=</span> return []
 replicateM i m <span class="fu">=</span> <span class="kw">do</span>
@@ -123,6 +125,7 @@ replicateM i m <span class="fu">=</span> <span class="kw">do</span>
     xs <span class="ot">&lt;-</span> replicate (i<span class="fu">-</span><span class="dv">1</span>) m
     return (x<span class="fu">:</span>xs)
 
+<span class="co">-- Was macht wohl diese Funktion?</span>
 <span class="ot">forM ::</span> [a] <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">IO</span> b) <span class="ot">-&gt;</span> <span class="dt">IO</span> [b]
 forM []     _ <span class="fu">=</span> return []
 forM (x<span class="fu">:</span>xs) f <span class="fu">=</span> <span class="fu">...</span></code></pre></div>
@@ -173,15 +176,16 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <span class="co">-- oder kürzer: f = f1 &gt;&gt;= f2 &gt;&gt;= f3</span></code></pre></div>
 <p>Einen Wert vom Typ <code>State s a</code> kann man sich analog zum IO-Fall als eine Beschreibung einer Aktion vorstellen: eine, die unter Zugriff und potenzieller Veränderung eines Zustands vom Typ <code>s</code> einen Wert vom Typ <code>a</code> produziert.</p>
 <p>Mit der Funktion <code>runState :: State s a -&gt; s -&gt; (a,s)</code> kann man eine solche Beschreibung ausführen, wenn man einen initialen Wert des Zustands vorgibt. Das ist ein Unterschied zur IO-Monade: Nur das Laufzeitsystem ist in der Lage, eine Beschreibung einer IO-Aktion auszuführen. State-Aktionen können dagegen Haskell-intern ausgeführt werden.</p>
+<p>Übrigens kommt es in der täglichen Praxis mit Haskell nicht besonders häufig vor, dass man veränderliche Variablen benötigen würde. Fast immer ist eine Alternativlösung ohne veränderliche Variablen eleganter und wartbarer. Falls man imperativ geprägt ist, lohnt es sich daher trotzdem, etwas Mühe zu investieren, um zustandslose Implementierungen zu finden.</p>
 <h1 id="weitere-monaden">Weitere Monaden</h1>
-<p>Aus der Not wurde eine Tugend: Nachdem die Nützlichkeit des monadischen Ansatzes für Ein- und Ausgabe erkannt wurde, hat man viele weitere nützliche Monaden entdeckt und entworfen:</p>
+<p>Aus der Not wurde eine Tugend: Nachdem die Nützlichkeit des monadischen Ansatzes für Ein- und Ausgabe erkannt wurde, hat man viele weitere nützliche Monaden entdeckt und entworfen.</p>
 <ul>
 <li>State (veränderlicher Zustand)</li>
 <li>Parser (Parsen von Text)</li>
-<li>Maybe (Behandlung von Fehlerfällen)</li>
+<li>Maybe (Behandlung von Fehlerfällen, Vermeidung von “or else”-Kaskaden)</li>
 <li>Reader (vererbende Umgebung)</li>
 <li>Writer (Logging)</li>
-<li>Listen für Nichtdeterminismus und Logikprogrammierung</li>
+<li>Listen (Nichtdeterminismus und Logikprogrammierung)</li>
 <li>Cont (Continuations)</li>
 </ul>
 <p>Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren <code>&gt;&gt;=</code> und <code>return</code> sowie <code>fmap</code> verfügen. Es gibt eine Typklasse <code>Monad</code>, der alle Monaden angehören. Ihre Definition lautet:</p>
@@ -194,7 +198,7 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <p>Gelegentlich kann man sogar <em>polymorph in der Monade</em> programmieren. Etwa ergeben die oben erwähnten Kontrollstrukturen <code>forever</code>, <code>replicateM</code> und <code>forM</code> nicht nur im Spezialfall der IO-Monade Sinn, sondern auch bei jeder anderen Monade.</p>
 <h1 id="wie-gehts-weiter">Wie geht’s weiter?</h1>
 <p>Im Internet gibt es <a href="https://wiki.haskell.org/Monad_tutorials_timeline">zahlreiche Einführungen</a> in die Welt der Monaden. Außerdem gibt es Artikel über die <a href="https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/">Monad Tutorial Fallacy</a>. Sobald man Monaden verstanden hat, verliert man instantan die Fähigkeit, sie verständlich zu erklären.</p>
-<p>Wer fortgeschritten ist und verstehen möchte, was Monaden mit Monoiden zu tun haben, sei ein <a href="/files/freie-monaden.pdf">Foliensatz</a> empfohlen. Für alle lesenswert aber auf jeden Fall ein Artikel des großartigen Dan “sigfpe” Piponi: <a href="http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html">You could have invented monads! (And maybe you already have.)</a></p>
+<p>Wer fortgeschritten ist und verstehen möchte, was Monaden mit Monoiden zu tun haben, sei ein <a href="/files/freie-monaden.pdf">Foliensatz</a> von einem der Treffen des Curry Clubs empfohlen. Für alle lesenswert ist aber auf jeden Fall ein Artikel des großartigen Dan “sigfpe” Piponi: <a href="http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html">You could have invented monads! (And maybe you already have.)</a></p>
 </article>
 ]]></description>
     <pubDate>Tue, 27 Oct 2015 00:00:00 UT</pubDate>
