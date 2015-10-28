@@ -77,7 +77,7 @@ main = do
     putStr "Hallo! Was ist dein Name? "
     name <- getLine
     putStr "Das ist ein schöner Name. So lautet er rückwärts: "
-    putStrLn $ reverse name
+    putStrLn (reverse name)
 ```
 
 Die beteiligten Typen sind `getLine :: IO String` und `putStr :: String -> IO ()`.
@@ -199,8 +199,8 @@ main = do
     let radius = read antwort
         umfang = 2 * pi * radius
         n      = fib 42
-    putStrLn $ "Dann ist der Umfang: " ++ show umfang
-    putStrLn $ "Und die 42-te Fibonacci-Zahl ist: " ++ show n
+    putStrLn ("Dann ist der Umfang: " ++ show umfang)
+    putStrLn ("Und die 42-te Fibonacci-Zahl ist: " ++ show n)
 ```
 
 Das sonst bei `let` benötigte Schlüsselwort `in` kann man bei der `do`-Notation
@@ -214,17 +214,17 @@ Der folgende Code gibt zwei Ausgaben aus:
 
 ``` haskell
 main = do
-    putStrLn $ show $ fib 42
-    putStrLn $ show $ fib 42
+    putStrLn (show (fib 42))
+    putStrLn (show (fib 42))
 ```
 
 Wenn man von Optimierungen des Compilers absieht, wird dabei die
-Aktionsbeschreibung `putStrLn $ show $ fib 42` zwei Mal berechnet. Wenn man
+Aktionsbeschreibung `putStrLn (show (fib 42))` zwei Mal berechnet. Wenn man
 möchte, kann man den Code wie folgt umstrukturieren.
 
 ``` haskell
 main = do
-    let m = putStrLn $ show $ fib 42
+    let m = putStrLn (show (fib 42))
     m
     m
 
@@ -294,7 +294,7 @@ main = do
 
 revertierer = do
     name <- getLine
-    return $ reverse name
+    return (reverse name)
 ```
 
 Idiomatischer würde man das Programm übrigens wie folgt schreiben.
