@@ -152,7 +152,8 @@ verursacht und dann den Wert `x` produziert.
 Etwa kann man den Ausdruck `return x >> m` zu `m` vereinfachen. Beide Ausdrücke
 beschreiben genau dieselbe Aktion. Auch ist `return x >>= f` identisch zu `f x`.
 
-Schließlich sei noch die *Funktorialität* von Aktionsbeschreibungen erwähnt.
+Schließlich sei noch die *Funktorialität* von Aktionsbeschreibungen erwähnt,
+vermittelt durch die Funktion `fmap :: (a -> b) -> (IO a -> IO b)`.
 Ist `m :: IO a` eine Aktionsbeschreibung und ist `g :: a -> b` eine beliebige Funktion, so
 beschreibt `fmap g m :: IO b` diejenige Aktion, die die Beschreibung `m`
 ausführt, deren Ergebnis `x :: a` an die Funktion `g` übergibt und schließlich den Wert `g x
@@ -380,11 +381,11 @@ entdeckt und entworfen.
 * Parser (Parsen von Text, [Beispiel:
   S-Ausdrücke](/posts/2015-05-03-wir-bauen-einen-parserkombinator.html#beispiel-parsen-von-s-expressions))
 * Maybe (Behandlung von Fehlerfällen, Vermeidung von "or else"-Kaskaden)
-* Reader (vererbende Umgebung)
+* Reader (vererbende Umgebung, globale Konfigurationswerte)
 * Writer (Logging)
 * Listen (Nichtdeterminismus und Logikprogrammierung, [Beispiel: magische
   Quadrate](https://github.com/iblech/mathezirkel-kurs/blob/master/thema17-haskell/magic.hs))
-* Cont (Continuations)
+* Cont (Continuations, Beeinflussung des Kontrollflusses)
 
 Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren `>>=` und
 `return` sowie `fmap` verfügen. Es gibt eine Typklasse `Monad`, der alle
