@@ -184,6 +184,17 @@ contentCss = do
       minWidth (px 140)
       paddingRight (px 10)
       textAlign end
+  code ? do
+    --display inlineBlock
+    background ourPurple
+    sym2 padding (px 1) (px 4)
+    sym2 margin nil (px 4)
+    fontSize (px 12)
+  div # ".sourceCode" ? code ? do
+    background transparent
+    sym padding nil
+    sym margin nil
+    fontSize inherit
 
 lambdify :: Css
 lambdify = before & do
