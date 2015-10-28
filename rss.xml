@@ -54,7 +54,7 @@ say <span class="dt">$x</span>;</code></pre></div>
     putStr <span class="st">&quot;Hallo! Was ist dein Name? &quot;</span>
     name <span class="ot">&lt;-</span> getLine
     putStr <span class="st">&quot;Das ist ein schöner Name. So lautet er rückwärts: &quot;</span>
-    putStrLn <span class="fu">$</span> reverse name</code></pre></div>
+    putStrLn (reverse name)</code></pre></div>
 <p>Die beteiligten Typen sind <code>getLine :: IO String</code> und <code>putStr :: String -&gt; IO ()</code>. Die Konstante <code>main</code> hat den Typ <code>main :: IO ()</code>.</p>
 <p>Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine Nebenwirkungen wie Interaktion mit dem Terminal verursachen können. Haskell-Funktionen können allerdings durchaus IO-Aktionen <em>theoretisch beschreiben</em>. Der Sinn eines Haskell-Programms besteht in diesem Bild darin, eine bestimmte IO-Aktion zu beschreiben – die mit dem Namen <code>main</code>. Diese wird dann vom Laufzeitsystem ausgeführt.</p>
 <p>Genau wie ein Wert vom Typ <code>Tree a</code> ein Baum ist, dessen Blätter vom Typ <code>a</code> sind, ist ein Wert vom Typ <code>IO a</code> eine Beschreibung einer IO-Aktion, die prinzipiell vom Laufzeitsystem ausgeführt werden könnte, dabei irgendwelche Nebenwirkungen verursachen und schließlich einen Wert vom Typ <code>a</code> produzieren würde. Solche Beschreibungen sind “first class values”, sie können manipuliert und in Datenstrukturen abgelegt werden, ohne dass sie bei Ablauf des Programms sofort ausgeführt werden würden. Nur eine einzige Beschreibung wird tatsächlich ausgeführt: die, die den Namen <code>main</code> trägt.</p>
@@ -93,17 +93,17 @@ say <span class="dt">$x</span>;</code></pre></div>
     <span class="kw">let</span> radius <span class="fu">=</span> read antwort
         umfang <span class="fu">=</span> <span class="dv">2</span> <span class="fu">*</span> pi <span class="fu">*</span> radius
         n      <span class="fu">=</span> fib <span class="dv">42</span>
-    putStrLn <span class="fu">$</span> <span class="st">&quot;Dann ist der Umfang: &quot;</span> <span class="fu">++</span> show umfang
-    putStrLn <span class="fu">$</span> <span class="st">&quot;Und die 42-te Fibonacci-Zahl ist: &quot;</span> <span class="fu">++</span> show n</code></pre></div>
+    putStrLn (<span class="st">&quot;Dann ist der Umfang: &quot;</span> <span class="fu">++</span> show umfang)
+    putStrLn (<span class="st">&quot;Und die 42-te Fibonacci-Zahl ist: &quot;</span> <span class="fu">++</span> show n)</code></pre></div>
 <p>Das sonst bei <code>let</code> benötigte Schlüsselwort <code>in</code> kann man bei der <code>do</code>-Notation weglassen.</p>
 <h1 id="referenzielle-transparenz-ist-bewahrt">Referenzielle Transparenz ist bewahrt</h1>
 <p>Der folgende Code gibt zwei Ausgaben aus:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> <span class="kw">do</span>
-    putStrLn <span class="fu">$</span> show <span class="fu">$</span> fib <span class="dv">42</span>
-    putStrLn <span class="fu">$</span> show <span class="fu">$</span> fib <span class="dv">42</span></code></pre></div>
-<p>Wenn man von Optimierungen des Compilers absieht, wird dabei die Aktionsbeschreibung <code>putStrLn $ show $ fib 42</code> zwei Mal berechnet. Wenn man möchte, kann man den Code wie folgt umstrukturieren.</p>
+    putStrLn (show (fib <span class="dv">42</span>))
+    putStrLn (show (fib <span class="dv">42</span>))</code></pre></div>
+<p>Wenn man von Optimierungen des Compilers absieht, wird dabei die Aktionsbeschreibung <code>putStrLn (show (fib 42))</code> zwei Mal berechnet. Wenn man möchte, kann man den Code wie folgt umstrukturieren.</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> <span class="kw">do</span>
-    <span class="kw">let</span> m <span class="fu">=</span> putStrLn <span class="fu">$</span> show <span class="fu">$</span> fib <span class="dv">42</span>
+    <span class="kw">let</span> m <span class="fu">=</span> putStrLn (show (fib <span class="dv">42</span>))
     m
     m
 
@@ -146,7 +146,7 @@ revertierer <span class="fu">=</span> <span class="kw">do</span>
 
 revertierer <span class="fu">=</span> <span class="kw">do</span>
     name <span class="ot">&lt;-</span> getLine
-    return <span class="fu">$</span> reverse name</code></pre></div>
+    return (reverse name)</code></pre></div>
 <p>Idiomatischer würde man das Programm übrigens wie folgt schreiben.</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main        <span class="fu">=</span> revertierer <span class="fu">&gt;&gt;=</span> putStrLn
 revertierer <span class="fu">=</span> fmap reverse getLine</code></pre></div>
