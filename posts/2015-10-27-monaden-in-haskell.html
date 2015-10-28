@@ -88,7 +88,7 @@ say <span class="dt">$x</span>;</code></pre></div>
 </ul>
 <p>Außerdem gibt es noch eine triviale Möglichkeit, eine Aktionsbeschreibung zu produzieren: Mit der Funktion <code>return :: a -&gt; IO a</code>, die (Achtung!) nichts mit dem gleichnamigen Schlüsselwort in vielen anderen Sprachen (zum vorzeitigen Verlassen einer Subroutine) zu tun hat. Vielmehr ist <code>return x</code> eine Aktionsbeschreibung, die bei ihrer Ausführung keinerlei Nebenwirkungen verursacht und dann den Wert <code>x</code> produziert.</p>
 <p>Etwa kann man den Ausdruck <code>return x &gt;&gt; m</code> zu <code>m</code> vereinfachen. Beide Ausdrücke beschreiben genau dieselbe Aktion. Auch ist <code>return x &gt;&gt;= f</code> identisch zu <code>f x</code>.</p>
-<p>Schließlich sei noch die <em>Funktorialität</em> von Aktionsbeschreibungen erwähnt. Ist <code>m :: IO a</code> eine Aktionsbeschreibung und ist <code>g :: a -&gt; b</code> eine beliebige Funktion, so beschreibt <code>fmap g m :: IO b</code> diejenige Aktion, die die Beschreibung <code>m</code> ausführt, deren Ergebnis <code>x :: a</code> an die Funktion <code>g</code> übergibt und schließlich den Wert <code>g x :: b</code> produziert.</p>
+<p>Schließlich sei noch die <em>Funktorialität</em> von Aktionsbeschreibungen erwähnt, vermittelt durch die Funktion <code>fmap :: (a -&gt; b) -&gt; (IO a -&gt; IO b)</code>. Ist <code>m :: IO a</code> eine Aktionsbeschreibung und ist <code>g :: a -&gt; b</code> eine beliebige Funktion, so beschreibt <code>fmap g m :: IO b</code> diejenige Aktion, die die Beschreibung <code>m</code> ausführt, deren Ergebnis <code>x :: a</code> an die Funktion <code>g</code> übergibt und schließlich den Wert <code>g x :: b</code> produziert.</p>
 <p>Aus historischen Gründen kann man statt <code>fmap g m</code> auch <code>liftM g m</code> schreiben. Die beiden Ausdrücke beschreiben genau dieselbe IO-Aktion. Vielleicht hilft zum Verständnis die Identität <code>fmap g m == (m &gt;&gt;= (return . g))</code> (vielleicht aber auch nicht).</p>
 <h1 id="die-do-notation">Die do-Notation</h1>
 <p>Haskell erleichtert mit der <em>do-Notation</em> den Umgang mit Aktionsbeschreibungen ungemein. Sie ist angenehmer syntaktischer Zucker für die Operatoren <code>&gt;&gt;</code> und <code>&gt;&gt;=</code>. Das Eingangsbeispiel schreibt sich ohne do-Notation wie folgt:</p>
@@ -202,10 +202,10 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <li>State (veränderlicher Zustand)</li>
 <li>Parser (Parsen von Text, <a href="../posts/2015-05-03-wir-bauen-einen-parserkombinator.html#beispiel-parsen-von-s-expressions">Beispiel: S-Ausdrücke</a>)</li>
 <li>Maybe (Behandlung von Fehlerfällen, Vermeidung von “or else”-Kaskaden)</li>
-<li>Reader (vererbende Umgebung)</li>
+<li>Reader (vererbende Umgebung, globale Konfigurationswerte)</li>
 <li>Writer (Logging)</li>
 <li>Listen (Nichtdeterminismus und Logikprogrammierung, <a href="https://github.com/iblech/mathezirkel-kurs/blob/master/thema17-haskell/magic.hs">Beispiel: magische Quadrate</a>)</li>
-<li>Cont (Continuations)</li>
+<li>Cont (Continuations, Beeinflussung des Kontrollflusses)</li>
 </ul>
 <p>Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren <code>&gt;&gt;=</code> und <code>return</code> sowie <code>fmap</code> verfügen. Es gibt eine Typklasse <code>Monad</code>, der alle Monaden angehören. Ihre Definition lautet:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">class</span> <span class="dt">Functor</span> f <span class="kw">where</span>
