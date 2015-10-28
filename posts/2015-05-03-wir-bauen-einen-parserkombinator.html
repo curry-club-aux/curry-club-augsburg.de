@@ -74,6 +74,7 @@ andThen m n <span class="fu">=</span> bind m (\x <span class="ot">-&gt;</span> b
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">token ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">String</span>
 token s <span class="fu">=</span> string s <span class="ot">`andThen`</span> spaces</code></pre></div>
 <p>Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. <code>foo</code> der gleiche Token wie <code>foo        </code>.</p>
+<h1 id="beispiel-parsen-von-s-expressions">Beispiel: Parsen von S-Expressions</h1>
 <p>Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und den Parser, der definiert, wie sie als Text dargestellt werden.</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Exp</span> <span class="fu">=</span> <span class="dt">Atom</span> <span class="dt">String</span> <span class="fu">|</span> <span class="dt">List</span> [<span class="dt">Exp</span>]
     <span class="kw">deriving</span> (<span class="dt">Show</span>,<span class="dt">Eq</span>)
