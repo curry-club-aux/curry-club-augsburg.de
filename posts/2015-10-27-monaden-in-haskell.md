@@ -153,14 +153,15 @@ Etwa kann man den Ausdruck `return x >> m` zu `m` vereinfachen. Beide Ausdrücke
 beschreiben genau dieselbe Aktion. Auch ist `return x >>= f` identisch zu `f x`.
 
 Schließlich sei noch die *Funktorialität* von Aktionsbeschreibungen erwähnt.
-Ist `m :: IO a` eine Aktionsbeschreibung, die bei Ausführung einen Wert `x` vom
-Typ `a` produziert, und ist `g :: a -> b` eine beliebige Funktion, so
+Ist `m :: IO a` eine Aktionsbeschreibung und ist `g :: a -> b` eine beliebige Funktion, so
 beschreibt `fmap g m :: IO b` diejenige Aktion, die die Beschreibung `m`
-ausführt, deren Ergebnis `x` an die Funktion `g` übergibt und so den Wert `g x
+ausführt, deren Ergebnis `x :: a` an die Funktion `g` übergibt und schließlich den Wert `g x
 :: b` produziert.
 
 Aus historischen Gründen kann man statt `fmap g m` auch `liftM g m` schreiben.
-Die beiden Ausdrücke beschreiben genau dieselbe IO-Aktion.
+Die beiden Ausdrücke beschreiben genau dieselbe IO-Aktion. Vielleicht hilft
+zum Verständnis die Identität `fmap g m == (m >>= (return . g))` (vielleicht aber
+auch nicht).
 
 
 Die do-Notation
