@@ -172,10 +172,11 @@ ungemein. Sie ist angenehmer syntaktischer Zucker für die Operatoren `>>` und
 
 ``` haskell
 main =
-    putStr "Hallo! Was ist dein Name? " >>=
-        (\name ->
-            putStr "Das ist ein schöner Name. So lautet er rückwärts: " >>
-                putStrLn (reverse name))
+    putStr "Hallo! Was ist dein Name? " >>
+        getLine >>=
+            (\name ->
+                putStr "Das ist ein schöner Name. So lautet er rückwärts: " >>
+                    putStrLn (reverse name))
 ```
 
 Die Übersetzungsregeln lauten also:
