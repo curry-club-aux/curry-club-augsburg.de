@@ -84,7 +84,7 @@ Die beteiligten Typen sind `getLine :: IO String` und `putStr :: String -> IO ()
 Die Konstante `main` hat den Typ `main :: IO ()`.
 
 Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine
-Nebenwirkungen wie Interaktion mit dem Terminal verursachen können. Man kann
+Nebenwirkungen wie Interaktion mit dem Terminal verursachen können. Haskell-Funktionen können
 allerdings durchaus IO-Aktionen *theoretisch beschreiben*. Der Sinn eines
 Haskell-Programms besteht in diesem Bild darin, eine bestimmte IO-Aktion zu
 beschreiben – die mit dem Namen `main`. Diese wird dann vom Laufzeitsystem
@@ -97,7 +97,7 @@ verursachen und schließlich einen Wert vom Typ `a` produzieren würde.
 Solche Beschreibungen sind "first class values", sie können manipuliert und
 in Datenstrukturen abgelegt werden, ohne dass sie bei Ablauf des Programms
 sofort ausgeführt werden würden. Nur eine einzige Beschreibung wird tatsächlich
-ausgeführt: Die, die den Namen `main` trägt.
+ausgeführt: die, die den Namen `main` trägt.
 
 Das folgende Code-Beispiel soll diesen Punkt unterstreichen.
 
@@ -105,7 +105,7 @@ Das folgende Code-Beispiel soll diesen Punkt unterstreichen.
 main = seq (putStrLn "abc") (putStrLn "def")
 ```
 
-Die Funktion `seq` erzwingt die Auswertung ihres ersten Arguments – sobald `seq
+Die Funktion `seq` erzwingt die Auswertung ihres ersten Arguments – wenn `seq
 x y` ausgewertet wird, wird zunächst `x` ausgewertet und dann `y`
 zurückgegeben. Beispielsweise ist `seq (fib 10000) "Curry"` semantisch völlig
 identisch zur Konstante `"Curry"`, aber langsamer in der Ausführung.
@@ -113,7 +113,7 @@ identisch zur Konstante `"Curry"`, aber langsamer in der Ausführung.
 Jedenfalls passiert beim Ablauf dieses Programms folgendes: Zunächst wird
 `putStrLn "abc"` ausgewertet. Das produziert eine Beschreibung einer IO-Aktion,
 die wenn ausgeführt `abc` auf dem Terminal ausgeben würde. Diese Beschreibung
-wird dann jedoch sofort verworfen. Schließlich produziert `putStrLn "def"` eine
+wird dann jedoch wieder verworfen. Schließlich produziert `putStrLn "def"` eine
 Beschreibung, die `def` ausgeben würde. Diese Beschreibung ist letztendlich der
 Wert von `main`, und diese Beschreibung wird vom Laufzeitsystem ausgeführt.
 
@@ -352,7 +352,10 @@ Einen Wert vom Typ `State s a` kann man sich analog zum IO-Fall als eine
 Beschreibung einer Aktion vorstellen: eine, die unter Zugriff und potenzieller
 Veränderung eines Zustands vom Typ `s` einen Wert vom Typ `a` produziert.
 
-Mit der Funktion ``runState :: State s a -> s -> (a,s)`` kann man eine solche
+Primitive State-Aktionsbeschreibungen sind `put :: s -> State s ()` zum Setzen
+des Zustands und `get :: State s s` zum Auslesen.
+
+Mit der Funktion `runState :: State s a -> s -> (a,s)` kann man eine solche
 Beschreibung ausführen, wenn man einen initialen Wert des Zustands vorgibt.
 Das ist ein Unterschied zur IO-Monade: Nur das Laufzeitsystem ist in der Lage,
 eine Beschreibung einer IO-Aktion auszuführen. State-Aktionen können dagegen
@@ -361,7 +364,7 @@ Haskell-intern ausgeführt werden.
 Übrigens kommt es in der täglichen Praxis mit Haskell nicht besonders häufig
 vor, dass man veränderliche Variablen benötigen würde. Fast immer ist eine
 Alternativlösung ohne veränderliche Variablen eleganter und wartbarer. Falls
-man imperativ geprägt ist, lohnt es sich daher trotzdem, etwas Mühe zu
+man imperativ geprägt ist, lohnt es sich daher, etwas Mühe zu
 investieren, um zustandslose Implementierungen zu finden.
 
 
@@ -373,11 +376,13 @@ für Ein- und Ausgabe erkannt wurde, hat man viele weitere nützliche Monaden
 entdeckt und entworfen.
 
 * State (veränderlicher Zustand)
-* Parser (Parsen von Text)
+* Parser (Parsen von Text, [Beispiel:
+  S-Ausdrücke](/posts/2015-05-03-wir-bauen-einen-parserkombinator.html#beispiel-parsen-von-s-expressions))
 * Maybe (Behandlung von Fehlerfällen, Vermeidung von "or else"-Kaskaden)
 * Reader (vererbende Umgebung)
 * Writer (Logging)
-* Listen (Nichtdeterminismus und Logikprogrammierung)
+* Listen (Nichtdeterminismus und Logikprogrammierung, [Beispiel: magische
+  Quadrate](https://github.com/iblech/mathezirkel-kurs/blob/master/thema17-haskell/magic.hs))
 * Cont (Continuations)
 
 Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren `>>=` und
@@ -402,7 +407,8 @@ anderen Monade.
 Wie geht's weiter?
 ==================
 
-Im Internet gibt es [zahlreiche
+Zunächst gibt es [unsere Übungsaufgaben vom Workshop](https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf) zu Monaden.
+Ferner gibt es im Internet [zahlreiche
 Einführungen](https://wiki.haskell.org/Monad_tutorials_timeline) in die Welt
 der Monaden. Außerdem gibt es Artikel über die [Monad Tutorial
 Fallacy](https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/).

@@ -64,6 +64,10 @@ token s = string s `andThen` spaces
 
 Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. `foo` der gleiche Token wie `foo        `.
 
+[//]: # Falls sich die folgende Überschrift ändert, dann auch in posts/2015-10-27-monaden-in-haskell.md anpassen
+
+# Beispiel: Parsen von S-Expressions
+
 Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und den Parser, der definiert, wie sie als Text dargestellt werden.
 
 ``` haskell
