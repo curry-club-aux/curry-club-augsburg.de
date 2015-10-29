@@ -77,10 +77,10 @@ say <span class="dt">$x</span>;</code></pre></div>
 <p>Haskell erleichtert mit der <em>do-Notation</em> den Umgang mit Aktionsbeschreibungen ungemein. Sie ist angenehmer syntaktischer Zucker für die Operatoren <code>&gt;&gt;</code> und <code>&gt;&gt;=</code>. Das Eingangsbeispiel schreibt sich ohne do-Notation wie folgt:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span>
     putStr <span class="st">&quot;Hallo! Was ist dein Name? &quot;</span> <span class="fu">&gt;&gt;</span>
-        getLine <span class="fu">&gt;&gt;=</span>
+        (getLine <span class="fu">&gt;&gt;=</span>
             (\name <span class="ot">-&gt;</span>
                 putStr <span class="st">&quot;Das ist ein schöner Name. So lautet er rückwärts: &quot;</span> <span class="fu">&gt;&gt;</span>
-                    putStrLn (reverse name))</code></pre></div>
+                    putStrLn (reverse name)))</code></pre></div>
 <p>Die Übersetzungsregeln lauten also:</p>
 <ul>
 <li><p>Zwei aufeinanderfolgende Anweisungen werden implizit mit <code>&gt;&gt;</code> miteinander verbunden.</p></li>
