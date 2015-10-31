@@ -269,7 +269,7 @@ f <span class="fu">=</span> <span class="kw">do</span>
   </header>
 
   <div class="portrait">
-<p><img src="images/lars_hupel.jpg" title="Lars Hupel Porträt" alt="" /> <a href="https://github.com/larsrh">Lars Hupel</a> gibt eine Einführung in Scala und vergleicht die Sprache mit Haskell und ML. Der Vortrag ist angelehnt an seine Präsentation “What Haskell can learn from Scala” vom <a href="https://skillsmatter.com/conferences/7069-haskell-exchange-2015#program">diesjährigen Haskell eXchange</a>.</p>
+<p><img src="/images/lars_hupel.jpg" title="Lars Hupel Porträt" alt="" /> <a href="https://github.com/larsrh">Lars Hupel</a> gibt eine Einführung in Scala und vergleicht die Sprache mit Haskell und ML. Der Vortrag ist angelehnt an seine Präsentation “What Haskell can learn from Scala” vom <a href="https://skillsmatter.com/conferences/7069-haskell-exchange-2015#program">diesjährigen Haskell eXchange</a>.</p>
 </div>
 <p>Sternenseeman erzählt uns von Gopher und seiner Serverimplementation in Haskell, „Spacecookie“.</p>
 <p>Ziemlich sicher wird <a href="https://github.com/iblech">Ingo</a> einen Vortrag über Effektsysteme und den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> halten.</p>
