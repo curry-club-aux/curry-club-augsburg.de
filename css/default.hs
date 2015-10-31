@@ -156,6 +156,8 @@ contentCss = do
     fontSize (px 20)
   h2 ?
     fontSize (px 18)
+  a ? textDecoration none
+  a # hover ? textDecoration underline
   ((a # link) <> (a # visited)) ?
     color rose
   article # ".bright" ?
