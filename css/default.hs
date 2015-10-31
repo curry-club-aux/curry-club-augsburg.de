@@ -11,6 +11,7 @@ darkerPurple     = other "#211024"
 darkPurple       = other "#2d1630"
 ourPurple        = other "#452d49"
 rose             = other "#be83c6"
+lightRose        = other "#DFB3E6"
 
 bodyCss :: Css
 bodyCss = body ? do
@@ -170,6 +171,7 @@ contentCss = do
     fontStyle italic
   address ?
     float floatLeft
+  ".deemph" ? color lightRose
   div # "#map" ? do
     float floatRight
     height (px 220)
