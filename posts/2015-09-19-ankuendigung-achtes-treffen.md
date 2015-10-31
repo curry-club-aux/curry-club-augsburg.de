@@ -4,7 +4,7 @@ meetup-announcement: 2015-11-05
 author: Tim Baumann, Profpatsch
 ---
 
-<div class="portrait">![](images/lars_hupel.jpg "Lars Hupel Porträt")
+<div class="portrait">![](/images/lars_hupel.jpg "Lars Hupel Porträt")
 [Lars Hupel](https://github.com/larsrh) gibt eine Einführung in Scala und vergleicht die Sprache mit Haskell und ML. Der Vortrag ist angelehnt an seine Präsentation "What Haskell can learn from Scala" vom [diesjährigen Haskell eXchange](https://skillsmatter.com/conferences/7069-haskell-exchange-2015#program).
 </div>
 
