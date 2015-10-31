@@ -1,14 +1,30 @@
-let 
-nixpkgs = import <nixpkgs> {};
-haskellNg = nixpkgs.pkgs.haskell-ng;
-# hopefully temporary, but ghc 7.8 fails because of non-deterministic builds (of GHC)
-ghc710 = haskellNg.packages.ghc7101;
-fixedHakyll = ghc710.hakyll.override { inherit (ghc710) mkDerivation; };
-pkg = ghc710.callPackage ./. {
-  hakyll = haskellNg.lib.dontCheck fixedHakyll;
-};
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "default" }:
+
+let
+
+  inherit (nixpkgs) pkgs;
+
+  f = { mkDerivation, base, clay, containers, hakyll, stdenv, text
+      , time
+      }:
+      mkDerivation {
+        pname = "curry-club-augsburg-de";
+        version = "0.1.0.0";
+        src = ./.;
+        isLibrary = false;
+        isExecutable = true;
+        executableHaskellDepends = [
+          base clay containers hakyll text time
+        ];
+        license = "unknown";
+      };
+
+  haskellPackages = if compiler == "default"
+                       then pkgs.haskellPackages
+                       else pkgs.haskell.packages.${compiler};
+
+  drv = haskellPackages.callPackage f {};
 
 in
-nixpkgs.lib.overrideDerivation pkg.env (old: {
-  buildInputs = old.buildInputs ++ [ ghc710.cabal-install ghc710.ghcid];
-})
+
+  if pkgs.lib.inNixShell then drv.env else drv

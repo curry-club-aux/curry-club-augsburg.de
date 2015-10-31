@@ -106,6 +106,10 @@ postCss = do
       p ? sym2 margin (em 0.5) nil
       ((a # link) <> (a # visited)) ?
         color ourPurple
+    ".portrait" ** img ? do
+      maxWidth (em 4)
+      float floatLeft
+      sym margin (em 0.5)
     padding (px 10) (px 30) (px 10) (px 30)
     marginBottom (em 1)
     background reallyDarkPurple
