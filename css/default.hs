@@ -180,16 +180,17 @@ contentCss = do
     fontSize (px 40)
     lineHeight (px 64)
   ul # ".post-list" ? do
+    display Clay.Display.table
     listStyleType none
     paddingLeft (px 0)
+    li ? display tableRow
+    Clay.span ? display tableCell
     Clay.span # ".post-date" ? do
       color ourPurple
-      display inlineBlock
       minWidth (px 140)
       paddingRight (px 10)
       textAlign end
   code ? do
-    --display inlineBlock
     background ourPurple
     sym2 padding (px 1) (px 4)
     sym2 margin nil (px 4)
