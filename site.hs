@@ -68,15 +68,18 @@ main = do
               bimap headMay lastMay
                 $ partition (\x -> localMeszDay (_date x) >= currDay) meetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
-            meetupField (Meetup day post) = do
+            meetupField key (Meetup day post) = do
               body <- postBody post
-              pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
-                <> constField "next-meetup-body" body
+              pure $ constField (key ++ "-date") (formatTime curryClubLocale "%d.%m.%Y" day)
+                <> constField (key ++ "-body") body
+            mayField = maybe (pure mempty) . meetupField
 
-        nextMField <- maybe (pure mempty) meetupField nextM
+        nextMField <- mayField "next-meetup" nextM
+        lastMField <- mayField "last-meetup" lastM
         let indexCtx =
               listField "posts" postCtx (return $ reverse posts)
               <> nextMField
+              <> lastMField
               <> constField "title" "Home"
               <> defaultContext
 
