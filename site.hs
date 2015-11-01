@@ -1,42 +1,41 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Control.Applicative ((<$>))
 import           Control.Monad
+import           Data.Bifunctor (bimap)
+import           Data.List (partition)
 import qualified Data.Map as M
 import           Data.Maybe
 import           Data.Monoid ((<>))
 import           Data.Time
 import           Hakyll
+import           Safe
 import           System.Environment
 
+
 --------------------------------------------------------------------------------
+
+data Meetup a = Meetup { _date :: UTCTime, _post :: Item a } deriving Show
+
 main :: IO ()
 main = do
-  currDay <- localDay . utcToLocalTime mesz <$> getCurrentTime
+  currDay <- localMeszDay <$> getCurrentTime
   args <- getArgs
   let useStack = "--use-stack" `elem` args
       args'    = filter (/= "--use-stack") args
   when ("-h" `elem` args || "--help" `elem` args) $
     putStrLn "--use-stack     use 'stack exec runghc' instead of 'stack exec runghc' to compile css/default.hs\n\n"
   withArgs args' $ hakyllWith config $ do
-    match "CNAME" $ do
-      route   idRoute
-      compile copyFileCompiler
+    let idCopyFile = route idRoute >> compile copyFileCompiler
 
-    match "images/*" $ do
-      route   idRoute
-      compile copyFileCompiler
+    match "CNAME" idCopyFile
+    match "images/*" idCopyFile
+    match "files/*" idCopyFile
+    match "css/ubuntu/*" idCopyFile
 
-    match "files/*" $ do
-      route   idRoute
-      compile copyFileCompiler
-
-    match "css/ubuntu/*" $ do
-      route   idRoute
-      compile copyFileCompiler
     match "css/*.css" $ do
       route   idRoute
       compile compressCssCompiler
+
     match "css/*.hs" $ do
       route   $ setExtension "css"
       let program = if useStack then "stack" else "cabal"
@@ -61,18 +60,23 @@ main = do
     match "index.html" $ do
       route idRoute
       compile $ do
-        posts <- recentFirst =<< loadAll "posts/*"
+        posts <- chronological =<< loadAll "posts/*"
         meetups <- fmap catMaybes $ forM posts $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
-          return $ flip (,) post <$> time
-        let isUpcoming = (>= currDay) . localDay . utcToLocalTime mesz
-            (nextMeetupDate, nextMeetupItem) =
-              last $ filter (isUpcoming . fst) meetups
-        nextMeetupBody <- loadSnapshotBody (itemIdentifier nextMeetupItem) "html-post"
+          return $ flip Meetup post <$> time
+        let (nextM, lastM) =
+              bimap headMay lastMay
+                $ partition (\x -> localMeszDay (_date x) >= currDay) meetups
+            postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
+            meetupField (Meetup day post) = do
+              body <- postBody post
+              pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
+                <> constField "next-meetup-body" body
+
+        nextMField <- maybe (pure mempty) meetupField nextM
         let indexCtx =
-              listField "posts" postCtx (return posts)
-              <> constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" nextMeetupDate)
-              <> constField "next-meetup-body" nextMeetupBody
+              listField "posts" postCtx (return $ reverse posts)
+              <> nextMField
               <> constField "title" "Home"
               <> defaultContext
 
@@ -87,22 +91,18 @@ main = do
         getResourceBody >>= loadAndApplyTemplate "templates/default.html" defaultContext
 
     match "templates/*" $ compile templateCompiler
+    createFeed renderAtom "atom.xml"
+    createFeed renderRss  "rss.xml"
 
-    let feedPostCount = 10
-    create ["atom.xml"] $ do
-        route idRoute
-        compile $ do
-            let feedCtx = postCtx `mappend` bodyField "description"
-            posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
-            renderAtom feed feedCtx posts
-
-    create ["rss.xml"] $ do
-        route idRoute
-        compile $ do
-            let feedCtx = postCtx `mappend` bodyField "description"
-            posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
-            renderRss feed feedCtx posts
-
+    where
+      feedPostCount = 10
+      createFeed kind file =
+        create [file] $ do
+           route idRoute
+           compile $ do
+               let feedCtx = postCtx `mappend` bodyField "description"
+               posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
+               kind feed feedCtx posts
 
 
 --------------------------------------------------------------------------------
@@ -149,3 +149,6 @@ feed = FeedConfiguration
 
 config :: Configuration
 config = defaultConfiguration { deployCommand = "./deploy.sh" }
+
+localMeszDay :: UTCTime -> Day
+localMeszDay = localDay . utcToLocalTime mesz

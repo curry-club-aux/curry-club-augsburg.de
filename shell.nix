@@ -4,8 +4,8 @@ let
 
   inherit (nixpkgs) pkgs;
 
-  f = { mkDerivation, base, clay, containers, hakyll, stdenv, text
-      , time
+  f = { mkDerivation, base, clay, containers, hakyll, safe, stdenv
+      , text, time
       }:
       mkDerivation {
         pname = "curry-club-augsburg-de";
@@ -14,7 +14,7 @@ let
         isLibrary = false;
         isExecutable = true;
         executableHaskellDepends = [
-          base clay containers hakyll text time
+          base clay containers hakyll safe text time
         ];
         license = "unknown";
       };
