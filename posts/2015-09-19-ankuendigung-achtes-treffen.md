@@ -10,6 +10,12 @@ author: Tim Baumann, Profpatsch
 
 Sternenseeman erzählt uns von Gopher und seiner Serverimplementation in Haskell, „Spacecookie“.
 
-Ziemlich sicher wird [Ingo](https://github.com/iblech) einen Vortrag über
-Effektsysteme und den neuesten [Aufsatz von
-Oleg](http://okmij.org/ftp/Haskell/extensible/more.pdf) halten.
+[Ingo](https://github.com/iblech) gibt eine Nano-Einführung in *Effektsysteme*
+über *freie Funktoren* und *freie Monaden*. Dabei streifen wir das
+[operational-Paket](http://apfelmus.nfshost.com/articles/operational-monad.html)
+von Heinrich Apfelmus und den [neuesten Aufsatz von Oleg](http://okmij.org/ftp/Haskell/extensible/more.pdf).
+Das setzt die Reihe *What the Kmett is a monad?* fort. Themenbezogene
+Fragestellungen sind: Wie kann man die spezifischen Fähigkeiten zweier Monaden
+miteinander kombinieren?  Wie kann man eine Monade durch Angabe einer
+gewünschten operationellen Semantik konstruieren? Grundlagen aus dem [früheren
+Vortrag](/files/freie-monaden.pdf) sind dafür hilfreich, aber nicht notwendig.
