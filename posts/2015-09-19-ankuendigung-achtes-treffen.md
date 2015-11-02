@@ -19,3 +19,7 @@ Fragestellungen sind: Wie kann man die spezifischen Fähigkeiten zweier Monaden
 miteinander kombinieren?  Wie kann man eine Monade durch Angabe einer
 gewünschten operationellen Semantik konstruieren? Grundlagen aus dem [früheren
 Vortrag](/files/freie-monaden.pdf) sind dafür hilfreich, aber nicht notwendig.
+
+Außerdem: Es werden coole Sticker für euer Notebook verschenkt!
+
+![](/images/sticker-ausgedruckt.jpg "Frisch gedruckte Sticker")
