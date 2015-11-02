@@ -18,7 +18,7 @@ data Meetup a = Meetup { _date :: UTCTime, _post :: Item a } deriving Show
 
 main :: IO ()
 main = do
-  currDay <- localMeszDay <$> getCurrentTime
+  currDay <- localDay <$> getCurrentTime
   args <- getArgs
   let useStack = "--use-stack" `elem` args
       args'    = filter (/= "--use-stack") args
@@ -66,7 +66,7 @@ main = do
           return $ flip Meetup post <$> time
         let (nextM, lastM) =
               bimap headMay lastMay
-                $ partition (\x -> localMeszDay (_date x) >= currDay) meetups
+                $ partition (\x -> localDay (_date x) >= currDay) meetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
             meetupField (Meetup day post) = do
               body <- postBody post
@@ -109,6 +109,12 @@ main = do
 mesz :: TimeZone
 mesz = TimeZone 120 True "MESZ"
 
+mez :: TimeZone
+mez = TimeZone 60 True "MEZ"
+
+currentTimeZone :: TimeZone
+currentTimeZone = mez
+
 curryClubLocale :: TimeLocale
 curryClubLocale =
   TimeLocale
@@ -119,7 +125,7 @@ curryClubLocale =
     , dateFmt = "%d.%m.%Y"
     , timeFmt = "%H:%M"
     , time12Fmt = "%I:%M %p"
-    , knownTimeZones = [mesz]
+    , knownTimeZones = [currentTimeZone]
     }
 
 getMeetupTime
@@ -150,5 +156,5 @@ feed = FeedConfiguration
 config :: Configuration
 config = defaultConfiguration { deployCommand = "./deploy.sh" }
 
-localMeszDay :: UTCTime -> Day
-localMeszDay = localDay . utcToLocalTime mesz
+localDay :: UTCTime -> Day
+localDay = localDay . utcToLocalTime currentTimeZone
