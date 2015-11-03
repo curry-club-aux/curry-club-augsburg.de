@@ -18,7 +18,7 @@ data Meetup a = Meetup { _date :: UTCTime, _post :: Item a } deriving Show
 
 main :: IO ()
 main = do
-  currDay <- localDay <$> getCurrentTime
+  currDay <- utcToLocalDay <$> getCurrentTime
   args <- getArgs
   let useStack = "--use-stack" `elem` args
       args'    = filter (/= "--use-stack") args
@@ -66,11 +66,12 @@ main = do
           return $ flip Meetup post <$> time
         let (nextM, lastM) =
               bimap headMay lastMay
-                $ partition (\x -> localDay (_date x) >= currDay) meetups
+                $ partition (\x -> utcToLocalDay (_date x) >= currDay) meetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
             meetupField (Meetup day post) = do
               body <- postBody post
               pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
+                <> constField "timezone" (timeZoneName currentTimeZone)
                 <> constField "next-meetup-body" body
 
         nextMField <- maybe (pure mempty) meetupField nextM
@@ -156,5 +157,5 @@ feed = FeedConfiguration
 config :: Configuration
 config = defaultConfiguration { deployCommand = "./deploy.sh" }
 
-localDay :: UTCTime -> Day
-localDay = localDay . utcToLocalTime currentTimeZone
+utcToLocalDay :: UTCTime -> Day
+utcToLocalDay = localDay . utcToLocalTime currentTimeZone
