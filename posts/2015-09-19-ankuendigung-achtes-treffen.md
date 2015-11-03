@@ -8,7 +8,7 @@ author: Tim Baumann, Profpatsch
 [Lars Hupel](https://github.com/larsrh) gibt eine Einführung in Scala und vergleicht die Sprache mit Haskell und ML. Der Vortrag ist angelehnt an seine Präsentation "What Haskell can learn from Scala" vom [diesjährigen Haskell eXchange](https://skillsmatter.com/conferences/7069-haskell-exchange-2015#program).
 </div>
 
-Sternenseeman erzählt uns von Gopher und seiner Serverimplementation in Haskell, „Spacecookie“.
+Sternenseemann erzählt uns von Gopher und seiner Serverimplementation in Haskell, „Spacecookie“.
 
 [Ingo](https://github.com/iblech) gibt eine Nano-Einführung in *Effektsysteme*
 über *freie Funktoren* und *freie Monaden*. Dabei streifen wir das
