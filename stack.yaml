@@ -3,4 +3,4 @@ packages:
 - '.'
 extra-deps:
 - hfsevents-0.1.5
-resolver: nightly-2015-07-21
+resolver: lts-3.12
