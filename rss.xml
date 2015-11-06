@@ -7,8 +7,33 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 27 Oct 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das neunte Treffen am</title>
+    <link>http://curry-club-augsburg.de/posts/2015-11-06-ankuendigung-neuntes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das neunte Treffen am</h1>
+    <div class="info">
+      Gepostet am  6. November 2015
+      
+          von Lukas Epple
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Das Programm für das achte Treffen steht noch nicht fest. Daher bist Du jetzt gefragt!</p>
+<p>Du schreibst ein cooles Haskell-Projekt, hast eine tolle neue funktionale Programmiersprache entdeckt, oder kannst uns Erleuchtendes über verallgemeinerten abstrakten Nonsense erzählen? Dann halte einen Vortrag! Die Organisation geht über unsere <a href="http://lists.curry-club-augsburg.de/listinfo/curry-talk">Mailingliste</a>.</p>
+<p>Kurzvorträge (&lt; 10 min) können auch unangekündigt gehalten werden, in Absprache mit dem jeweiligen Organisator.</p>
+</article>
+]]></description>
+    <pubDate>Fri, 06 Nov 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-11-06-ankuendigung-neuntes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Monaden in Haskell (Nachtrag zum Haskell-Workshop)</title>
     <link>http://curry-club-augsburg.de/posts/2015-10-27-monaden-in-haskell.html</link>
     <description><![CDATA[<article>
@@ -267,7 +292,7 @@ f <span class="fu">=</span> <span class="kw">do</span>
   <div class="portrait">
 <p><img src="/images/lars_hupel.jpg" title="Lars Hupel Porträt" alt="" /> <a href="https://github.com/larsrh">Lars Hupel</a> gibt eine Einführung in Scala und vergleicht die Sprache mit Haskell und ML. Der Vortrag ist angelehnt an seine Präsentation “What Haskell can learn from Scala” vom <a href="https://skillsmatter.com/conferences/7069-haskell-exchange-2015#program">diesjährigen Haskell eXchange</a>.</p>
 </div>
-<p>Sternenseemann erzählt uns von Gopher und seiner Serverimplementation in Haskell, „Spacecookie“.</p>
+<p><a href="https://github.com/lukasepple">Sternenseemann</a> erzählt uns von Gopher und seiner <a href="https://github.com/lukasepple/spacecookie">Serverimplementation in Haskell, „Spacecookie“</a>. Die Folien sind <a href="/files/gopher-server.pdf">hier zu finden</a>.</p>
 <p><a href="https://github.com/iblech">Ingo</a> gibt eine Nano-Einführung in <em>Effektsysteme</em> über <em>freie Funktoren</em> und <em>freie Monaden</em>. Dabei streifen wir das <a href="http://apfelmus.nfshost.com/articles/operational-monad.html">operational-Paket</a> von Heinrich Apfelmus und den <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">neuesten Aufsatz von Oleg</a>. Das setzt die Reihe <em>What the Kmett is a monad?</em> fort. Themenbezogene Fragestellungen sind: Wie kann man die spezifischen Fähigkeiten zweier Monaden miteinander kombinieren? Wie kann man eine Monade durch Angabe einer gewünschten operationellen Semantik konstruieren? Grundlagen aus dem <a href="/files/freie-monaden.pdf">früheren Vortrag</a> sind dafür hilfreich, aber nicht notwendig.</p>
 <p>Außerdem: Es werden coole Sticker für euer Notebook verschenkt!</p>
 <div class="figure">
@@ -501,40 +526,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 ]]></description>
     <pubDate>Wed, 27 May 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-05-27-ankuendigung-viertes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das dritte Treffen am 18. Juni 2015</title>
-    <link>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das dritte Treffen am 18. Juni 2015</h1>
-    <div class="info">
-      Gepostet am 26. Mai 2015
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p><a href="https://larsrh.github.io/">Lars</a> stellt <a href="https://github.com/epfl-lara/leon">Leon</a> vor, ein Tool zur Programmverifikation und -synthese speziell für Scala. „Leon ist interessant, weil es interaktiv ist, d.h. es gibt schnell Feedback, und man braucht nicht viel über Logik zu wissen.“</p>
-<p><a href="http://github.com/iblech/">Ingo</a> macht eine Einführung in die Kategorientheorie:</p>
-<div class="abstract">
-<p>Die Sprache der Kategorien hat sich in mehreren Teilgebieten der Mathematik, Informatik und Physik als Lingua franca etabliert. Sowohl von Fans als auch von Spöttern wird Kategorientheorie als “verallgemeinerter abstrakter Nonsens” tituliert; kategorielle Konzepte und konkrete Ausprägungen allgemeiner kategorieller Beobachtungen finden sich überall.</p>
-<p>Für (nicht nur) funktionale Programmierung hilft Kategorientheorie um wiederkehrende Muster zu erkennen und auszunutzen, um elegante Theorien von Datentypen zu entwickeln und um die Semantik von Sprachen zu beschreiben. Außerdem benötigt man Kategorientheorie natürlich um Edward Kmetts Arbeiten zu Kan-Erweiterungen und anderen kategoriellen Konzepten in Haskell zu würdigen; aufgrund einer wunderbaren Fügung sind seine Pakete Abhängigkeiten von so profanen Dingen wie Web-Frameworks.</p>
-<p>Der Vortrag wird in die erste Stufe von Kategorientheorie einführen: Kategorien, universelle Eigenschaften und Dualität. Wenn die Stimmung gut ist, sprechen wir auch noch über Funktoren. Bei diesem ersten Vortrag werden wir aber – wenn nicht explizit anders gewünscht – nicht über natürliche Transformation oder weiterführende Konzepte wie Limiten, Kolimiten, adjungierte Funktoren, Kan-Erweiterungen oder das Yoneda-Lemma sprechen.</p>
-</div>
-<p class="materials">
-[<a href="http://pizzaseminar.speicherleck.de/was-sollen-kategorien/was-sollen-kategorien-curry-club.pdf">Vortragsfolien</a>]
-</p>
-<p><a href="http://weltraumpflege.org/">Richard</a> hält einen Vortrag über Logikprogrammierung im Allgemeinen und insbesondere die Umsetzung dieses Konzeptes in der Programmiersprache Prolog. Dabei werden folgende Fragen beantwortet: Was ist Logikprogrammierung überhaupt und warum will man das machen? Kann man damit auch seriöse Anwendungsentwicklung betreiben?</p>
-<p>Es gibt den Plan, danach im <a href="http://www.sangam-augsburg.de/">Sangam</a> gemeinsam Essen zu gehen.</p>
-</article>
-]]></description>
-    <pubDate>Tue, 26 May 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-05-26-ankuendigung-drittes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
