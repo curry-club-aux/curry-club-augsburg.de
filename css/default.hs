@@ -12,10 +12,11 @@ darkPurple       = other "#2d1630"
 ourPurple        = other "#452d49"
 rose             = other "#be83c6"
 lightRose        = other "#DFB3E6"
+almostWhite      = other "#FFFDDE"
 
 bodyCss :: Css
 bodyCss = body ? do
-  color (other "#FFFDDE")
+  color almostWhite
   backgroundColor darkPurple
   backgroundImages
     [ url "../images/zirbelnuss.png"
@@ -188,12 +189,17 @@ contentCss = do
     listStyleType none
     paddingLeft (px 0)
     li ? display tableRow
-    Clay.span ? display tableCell
+    li |> Clay.span ? display tableCell
     Clay.span # ".post-date" ? do
-      color ourPurple
+      color darkPurple
       minWidth (px 140)
       paddingRight (px 10)
       textAlign end
+    a # ".post-title" ? do
+      color almostWhite
+      fontSize (px 15)
+    Clay.span # ".post-subtitle" ? do
+      color ourPurple
   code ? do
     background ourPurple
     sym2 padding (px 1) (px 4)

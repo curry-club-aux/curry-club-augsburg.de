@@ -1,5 +1,6 @@
 ---
 title: Programm für das zweite Treffen am 21. Mai 2015
+subtitle: IO-Aktionen als Kochrezepte und Beweise mit Isabelle
 meetup-announcement: 2015-05-21
 author: Tim Baumann
 ---

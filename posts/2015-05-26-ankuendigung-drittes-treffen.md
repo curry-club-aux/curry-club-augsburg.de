@@ -1,5 +1,6 @@
 ---
 title: Programm für das dritte Treffen am 18. Juni 2015
+subtitle: Kategorientheorie (1) und Logikprogrammierung
 meetup-announcement: 2015-06-18
 author: Tim Baumann
 ---

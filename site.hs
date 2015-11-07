@@ -64,7 +64,7 @@ main = do
         meetups <- fmap catMaybes $ forM posts $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
           return $ flip Meetup post <$> time
-        let (nextM, lastM) =
+        let (nextM, _lastM) =
               bimap headMay lastMay
                 $ partition (\x -> utcToLocalDay (_date x) >= currDay) meetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
@@ -143,6 +143,7 @@ getMeetupTime locale id' = parseMeetupTime <$> getMetadata id'
 postCtx :: Context String
 postCtx =
   defaultContext
+  <> constField "subtitle" ""
   <> dateFieldWith curryClubLocale "date" "%e. %B %Y"
 
 feed :: FeedConfiguration

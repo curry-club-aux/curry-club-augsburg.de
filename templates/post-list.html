@@ -7,7 +7,11 @@
           $date$
         </span>
         <span>
-          <a href="$url$">$title$</a>
+          <a class="post-title" href="$url$">$title$</a>
+          $if(subtitle)$
+            <br />
+            <span class="post-subtitle">$subtitle$</span>
+          $endif$
         </span>
       </li>
     $endfor$
