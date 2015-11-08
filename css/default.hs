@@ -13,6 +13,7 @@ ourPurple        = other "#452d49"
 rose             = other "#be83c6"
 lightRose        = other "#DFB3E6"
 almostWhite      = other "#FFFDDE"
+lightYellow      = other "#FFFFB0"
 
 bodyCss :: Css
 bodyCss = body ? do
@@ -189,17 +190,21 @@ contentCss = do
     listStyleType none
     paddingLeft (px 0)
     li ? display tableRow
-    li |> Clay.span ? display tableCell
+    li |> Clay.span ? do
+      sym2 padding (px 2) nil
+      display tableCell
     Clay.span # ".post-date" ? do
-      color darkPurple
-      minWidth (px 140)
-      paddingRight (px 10)
+      color ourPurple
+      minWidth (px 150)
+      paddingRight (px 15)
       textAlign end
     a # ".post-title" ? do
-      color almostWhite
+      color lightYellow
       fontSize (px 15)
     Clay.span # ".post-subtitle" ? do
-      color ourPurple
+      fontStyle italic
+      --color lightRose
+      fontSize (px 14)
   code ? do
     background ourPurple
     sym2 padding (px 1) (px 4)
