@@ -8,16 +8,49 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2015-11-06T00:00:00Z</updated>
+    <updated>2015-11-08T00:00:00Z</updated>
     <entry>
-    <title>Programm für das neunte Treffen am</title>
+    <title>Achtes Treffen des Curry Clubs</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-11-08-achtes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-11-08-achtes-treffen.html</id>
+    <published>2015-11-08T00:00:00Z</published>
+    <updated>2015-11-08T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Achtes Treffen des Curry Clubs</h1>
+    <div class="info">
+      Gepostet am  8. November 2015
+      
+          von Lars
+      
+    </div>
+    
+    <img src="/images/yes-we-kan.jpg" alt="Yes We Kan" />
+    
+    
+  </header>
+
+  <h1 id="über-scala-effekte-und-gopher">Über Scala, Effekte und Gopher</h1>
+<p>Wie schon beim <a href="/posts/2015-07-02-drittes-treffen.html">dritten Treffen</a> war wieder Scala mit von der Partie.</p>
+<h2 id="vorträge">Vorträge</h2>
+<p>Lars verglich Scala mit Haskell und ML und zeigte, dass Scala nicht ein “schlechteres Haskell” oder ein “besseres ML” sei, sondern eine eigene Sprache mit eigenen Konzepten. Hauptpunkt war hier, dass in Scala viele Konzepte “first class” sind, wie z.B. Typklassen und Instanzen aus Haskell oder Module und Funktoren aus ML. Trotzdem erhält man dann einige Komplexität, mit der es dann – als Programmierer – diszipliniert umzugehen gilt. Der Vergleich von Programmiersprachen führt oft zu hintersinnigem Humor, aber auch Verzweiflung. Im Vortrag besonders erwähnt wurden: <a href="https://twitter.com/tihomirb/status/577624701767319552">Scala vs. Haskell</a> und <a href="https://twitter.com/srpablo/status/342341342694883329">Haskell vs. SML</a> – wobei bei “SML” viele Leute nur an das tatsächlich seit über 15 Jahren untote SML/NJ denken, nicht aber an das wesentlich frischere Poly/ML oder gar die Isabelle/ML-Umgebung. Teile des Vortrags können von einer vorherigen Iteration <a href="https://speakerdeck.com/larsrh/what-haskell-can-learn-from-scala">nachgelesen</a> bzw. <a href="https://skillsmatter.com/skillscasts/6592-what-haskell-can-learn-from-scala">nachgehört</a> werden.</p>
+<p>Ingo gab eine kleine Einführung in Effektsysteme über freie Funktoren und freie Monaden. In diesem Vortrag der Reihe “What the Kmett is a Monad” zeigte Ingo, wie man aus beliebigen Typen einen (freien) Funktor und aus beliebigen Funktoren eine (freie) Monade machen kann. Als Anwendungszweck stellte er vor, wie man Effekte als einfachen Datentyp modelliert und diesen dann “für lau” eine passende Monade erhält, welches ein Programm mit diesem Effekt darstellt. Anschließend kann man dann dieses Programm interpretieren und so z.B. in IO, aber auch in andere Monaden überführen. Schließlich zeigte er noch das aktuelle Werk von Oleg Kiselyov, womit man zum Einen bessere Performance bekommt, zum Anderen aber auch auf einfache Art und Weise verschiedene Effekte kombinieren und modular interpretieren kann.</p>
+<p>Sternenseemann erzählte uns zunächst vom Gopher-Protokoll, was 3 Jahre vor HTTP/1.0 standardisiert worden ist. Tatsächlich gibt es anscheinend auch noch aktive Gopher-Server, die allerdings verschiedene Erweiterungen des Protokolls benutzen. Das Protokoll selbst ist relativ einfach strukturiert. Als krönenden Abschluss zeigte er uns seine Serverimplementation in Haskell names “Spacecookie”. Eine entsprechende Spacecookie-Monade durfte natürlich nicht fehlen.</p>
+<h2 id="diskussionen-sonstiges">Diskussionen &amp; Sonstiges</h2>
+<p>Tim hat Curry-Club-Sticker mitgebracht. Auf einen vorherigen Twitter-Beitrag hin hat sich ein Programmierer aus Barcelona gemeldet, der auch gerne welche hätte. Freundlicherweise hat Tim ihm ein paar Exemplare geschickt. Der Curry Club Augsburg ist demzufolge <a href="https://twitter.com/jordi_aranda/status/662695479021555713">international bekannt</a>!</p>
+<p>Lars wies während Ingos Vortrag, da auch dort Kan-Erweiterungen vorkommen, auf den obligatorischen “Yes We Kan”-Witz hin, der auch <a href="https://skillsmatter.com/skillscasts/6733-transformers-handlers-in-disguise">während der Haskell eXchange fiel</a>.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Programm für das neunte Treffen am 3. Dezember 2015</title>
     <link href="http://curry-club-augsburg.de/posts/2015-11-06-ankuendigung-neuntes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2015-11-06-ankuendigung-neuntes-treffen.html</id>
     <published>2015-11-06T00:00:00Z</published>
     <updated>2015-11-06T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
-    <h1>Programm für das neunte Treffen am</h1>
+    <h1>Programm für das neunte Treffen am 3. Dezember 2015</h1>
     <div class="info">
       Gepostet am  6. November 2015
       
@@ -495,35 +528,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <p><a href="https://github.com/timjb">Tim</a> stellt Lenses vor, anschaulich erklärt mit seinem <a href="https://github.com/timjb/diagrams-rubiks-cube">Haskell-Paket für Zauberwürfel-Diagramme</a>. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>.</p>
 <script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 <p>Schließlich gibt es auch noch einen Kurzvortrag von <a href="https://github.com/maximilianhuber">Maximilian</a>: Wie kann man in Haskell ansprechende Textmodus-Oberflächen zaubern?</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das vierte Treffen am 16. Juli 2015</title>
-    <link href="http://curry-club-augsburg.de/posts/2015-05-27-ankuendigung-viertes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2015-05-27-ankuendigung-viertes-treffen.html</id>
-    <published>2015-05-27T00:00:00Z</published>
-    <updated>2015-05-27T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierte Treffen am 16. Juli 2015</h1>
-    <div class="info">
-      Gepostet am 27. Mai 2015
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p><a href="https://github.com/iblech">Ingo</a> setzt die <a href="/posts/2015-05-26-ankuendigung-drittes-treffen.html">Einführung in Kategorientheorie</a> fort.</p>
-<p><a href="http://sketis.net/">Makarius</a> spielt mit ein paar Variationen von Currying in Isabelle: Das schließt sich im weitesten Sinne auch an die Kategorientheorie an, das heißt man geht mit Pfeilen, Produkten, Koprodukten etc. formal und spielerisch um.</p>
-<h2 id="weitere-tops">Weitere TOPs:</h2>
-<ul>
-<li>Prozess für Themenfindung überlegen</li>
-<li>Über Projekte &amp; alles andere ratschen (in Gruppen?)</li>
-</ul>
 </article>
 ]]></summary>
 </entry>
