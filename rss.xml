@@ -112,7 +112,7 @@ say <span class="dt">$x</span>;</code></pre></div>
     name <span class="ot">&lt;-</span> getLine
     putStr <span class="st">&quot;Das ist ein schöner Name. So lautet er rückwärts: &quot;</span>
     putStrLn (reverse name)</code></pre></div>
-<p>Die beteiligten Typen sind <code>getLine :: IO String</code> und <code>putStr :: String -&gt; IO ()</code>. Die Konstante <code>main</code> hat den Typ <code>main :: IO ()</code>.</p>
+<p>Die beteiligten Typen sind <code>getLine :: IO String</code>, <code>putStr :: String -&gt; IO ()</code> und <code>putStrLn :: String -&gt; IO ()</code>. Die Konstante <code>main</code> hat den Typ <code>main :: IO ()</code>.</p>
 <p>Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine Nebenwirkungen wie Interaktion mit dem Terminal verursachen können. Haskell-Funktionen können allerdings durchaus IO-Aktionen <em>theoretisch beschreiben</em>. Der Sinn eines Haskell-Programms besteht in diesem Bild darin, eine bestimmte IO-Aktion zu beschreiben – die mit dem Namen <code>main</code>. Diese wird dann vom Laufzeitsystem ausgeführt.</p>
 <p>Genau wie ein Wert vom Typ <code>Tree a</code> ein Baum ist, dessen Blätter vom Typ <code>a</code> sind, ist ein Wert vom Typ <code>IO a</code> eine Beschreibung einer IO-Aktion, die prinzipiell vom Laufzeitsystem ausgeführt werden könnte, dabei irgendwelche Nebenwirkungen verursachen und schließlich einen Wert vom Typ <code>a</code> produzieren würde. Solche Beschreibungen sind “first class values”, sie können manipuliert und in Datenstrukturen abgelegt werden, ohne dass sie bei Ablauf des Programms sofort ausgeführt werden würden. Nur eine einzige Beschreibung wird tatsächlich ausgeführt: die, die den Namen <code>main</code> trägt.</p>
 <p>Das folgende Code-Beispiel soll diesen Punkt unterstreichen.</p>
@@ -165,7 +165,7 @@ say <span class="dt">$x</span>;</code></pre></div>
     m
 
 <span class="co">-- Alternativ ohne do-Notation:</span>
-main <span class="fu">=</span> m <span class="fu">&gt;&gt;</span> m <span class="kw">where</span> m <span class="fu">=</span> putStrLn <span class="fu">$</span> show <span class="fu">$</span> fib <span class="dv">42</span></code></pre></div>
+main <span class="fu">=</span> m <span class="fu">&gt;&gt;</span> m <span class="kw">where</span> m <span class="fu">=</span> putStrLn (show (fib <span class="dv">42</span>))</code></pre></div>
 <p>Hier wird die Aktionsbeschreibung nur noch einmal berechnet, allerdings immer noch zwei Male ausgeführt.</p>
 <h1 id="eigene-kontrollstrukturen">Eigene Kontrollstrukturen</h1>
 <p>Dadurch, dass Aktionsbeschreibungen “first class values” sind, kann man leicht eigene Kontrollstrukturen definieren. Das Modul <code>Control.Monad</code> exportiert etwa folgende:</p>
