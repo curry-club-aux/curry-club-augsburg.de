@@ -80,7 +80,8 @@ main = do
     putStrLn (reverse name)
 ```
 
-Die beteiligten Typen sind `getLine :: IO String` und `putStr :: String -> IO ()`.
+Die beteiligten Typen sind `getLine :: IO String`, `putStr :: String -> IO ()`
+und `putStrLn :: String -> IO ()`.
 Die Konstante `main` hat den Typ `main :: IO ()`.
 
 Was passiert hier? Es bleibt dabei, dass Haskell-Funktionen keine
@@ -230,7 +231,7 @@ main = do
     m
 
 -- Alternativ ohne do-Notation:
-main = m >> m where m = putStrLn $ show $ fib 42
+main = m >> m where m = putStrLn (show (fib 42))
 ```
 
 Hier wird die Aktionsbeschreibung nur noch einmal berechnet, allerdings immer
