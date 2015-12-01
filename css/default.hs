@@ -88,6 +88,7 @@ layoutCss = do
 postCss :: Css
 postCss = do
   article <? do
+    position relative
     "h1:first-child:first-of-type" ? lambdify
     header <? do
       h1 <? do
@@ -215,6 +216,10 @@ contentCss = do
     sym padding nil
     sym margin nil
     fontSize inherit
+  a # ".yoneda-inside" ? do
+    position absolute
+    right (px 30)
+    top (px 30)
 
 lambdify :: Css
 lambdify = before & do
