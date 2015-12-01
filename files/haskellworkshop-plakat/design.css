@@ -68,6 +68,27 @@ h2 {
   font-size: 0.5cm;
 }
 
+.workshop-2 h1, .workshop-2 h2 {
+  position: relative;
+  left: -40px;
+  top: -20px;
+}
+.workshop-2 h2 {
+  margin-bottom: -30px;
+}
+
+#tag {
+  color: #fff;
+  background: #1a6daa;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px; /*font-weight: bold;*/
+  line-height: 22px;
+  position: absolute; right: 50px; top: 60px;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
 #main {
   margin: 1cm 0 0.6cm;
   hyphens: auto;
