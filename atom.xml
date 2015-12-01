@@ -62,7 +62,9 @@
     
   </header>
 
-  <p>Das Programm für das achte Treffen steht noch nicht fest. Daher bist Du jetzt gefragt!</p>
+  <p>Bis jetzt gibt es nur zwei kurze Beiträge. Daher bist Du jetzt gefragt!</p>
+<p>Profpatsch wird einen Einblick in die Haskell-Bibliothek <a href="https://hackage.haskell.org/package/brick">brick</a> geben, und in das Design-Schema, auf dem sie basiert und dem einige andere Bibliotheken folgen.</p>
+<p>Ingo wird die von Martín Escardó publizierten <a href="http://math.andrej.com/2007/09/28/seemingly-impossible-functional-programs/">scheinbar unmöglichen funktionalen Programme</a> vorstellen: Wie kann man in endlicher Zeit unendliche, ja sogar überabzählbar unendliche, Datenstrukturen absuchen?</p>
 </article>
 ]]></summary>
 </entry>
