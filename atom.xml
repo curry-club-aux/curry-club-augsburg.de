@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2015-11-08T00:00:00Z</updated>
+    <updated>2015-12-04T00:00:00Z</updated>
     <entry>
+    <title>Programm für das zehnte Treffen am 21. Januar 2016</title>
+    <link href="http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html</id>
+    <published>2015-12-04T00:00:00Z</published>
+    <updated>2015-12-04T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das zehnte Treffen am 21. Januar 2016</h1>
+    <div class="info">
+      Gepostet am  4. Dezember 2015
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Tim wird die Reihe über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a> mit einem Vortrag über Banker’s Queues einleiten.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Achtes Treffen des Curry Clubs</title>
     <link href="http://curry-club-augsburg.de/posts/2015-11-08-achtes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2015-11-08-achtes-treffen.html</id>
@@ -501,36 +524,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <p>Nächstes Mal gibt es die Fortsetzung.</p>
 <h2 id="zusammenfassung">Zusammenfassung</h2>
 <p>Alles in allem war es ein sehr gelungener Abend und auch die Gespräche im <a href="http://www.sangam-augsburg.de/">Sangam</a> hinterher sehr erhellend. Zum Beispiel haben wir gelernt, dass man nicht-totale Funktionen wie <code>head</code>, <code>tail</code> und <code>(!!)</code> <em>Yolomorphismen</em> nennen sollte. Zu den Yolomorphismen sollte man auch <code>unsafePerformIO :: IO a -&gt; a</code>, sowie die Mutter aller Yolomorphismen, die Funktion <code>unsafeCoerce :: a -&gt; b</code>, zählen.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das fünfte Treffen am 13. August 2015</title>
-    <link href="http://curry-club-augsburg.de/posts/2015-05-28-ankuendigung-fuenftes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2015-05-28-ankuendigung-fuenftes-treffen.html</id>
-    <published>2015-05-28T00:00:00Z</published>
-    <updated>2015-05-28T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das fünfte Treffen am 13. August 2015</h1>
-    <div class="info">
-      Gepostet am 28. Mai 2015
-      
-          von Tim Baumann
-      
-    </div>
-    
-    <img src="/images/diagrams-rubiks-cube.svg" alt="Mit Haskell erstellte Skizzen des Zauberwürfels" />
-    
-    
-    <div class="attribution"><p><a href="http://github.com/timjb/diagrams-rubiks-cube.com/">Tim Baumann</a> (MIT)</p></div>
-    
-  </header>
-
-  <p><a href="https://github.com/mgudemann">Matthias</a> stellt Mercury vor.</p>
-<p><a href="https://github.com/timjb">Tim</a> stellt Lenses vor, anschaulich erklärt mit seinem <a href="https://github.com/timjb/diagrams-rubiks-cube">Haskell-Paket für Zauberwürfel-Diagramme</a>. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>.</p>
-<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-<p>Schließlich gibt es auch noch einen Kurzvortrag von <a href="https://github.com/maximilianhuber">Maximilian</a>: Wie kann man in Haskell ansprechende Textmodus-Oberflächen zaubern?</p>
 </article>
 ]]></summary>
 </entry>
