@@ -66,11 +66,11 @@
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 <item>
-    <title>Programm für das neunte Treffen am 3. Dezember 2015</title>
+    <title>Neuntes Treffen am 3. Dezember 2015</title>
     <link>http://curry-club-augsburg.de/posts/2015-11-06-ankuendigung-neuntes-treffen.html</link>
     <description><![CDATA[<article>
   <header>
-    <h1>Programm für das neunte Treffen am 3. Dezember 2015</h1>
+    <h1>Neuntes Treffen am 3. Dezember 2015</h1>
     <div class="info">
       Gepostet am  6. November 2015
       
@@ -81,9 +81,11 @@
     
   </header>
 
-  <p>Bis jetzt gibt es nur zwei kurze Beiträge. Daher bist Du jetzt gefragt!</p>
-<p>Profpatsch wird einen Einblick in die Haskell-Bibliothek <a href="https://hackage.haskell.org/package/brick">brick</a> geben, und in das Design-Schema, auf dem sie basiert und dem einige andere Bibliotheken folgen.</p>
-<p>Ingo wird die von Martín Escardó publizierten <a href="http://math.andrej.com/2007/09/28/seemingly-impossible-functional-programs/">scheinbar unmöglichen funktionalen Programme</a> vorstellen: Wie kann man in endlicher Zeit unendliche, ja sogar überabzählbar unendliche, Datenstrukturen absuchen?</p>
+  <p>Ingo stellte die von Martín Escardó publizierten <a href="http://math.andrej.com/2007/09/28/seemingly-impossible-functional-programs/">scheinbar unmöglichen funktionalen Programme</a> vor: Wie kann man in endlicher Zeit unendliche, ja sogar überabzählbar unendliche, Datenstrukturen absuchen?</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F53aOAW9PBo" frameborder="0" allowfullscreen>
+</iframe>
+<p>Der Code vom Vortrag ist <a href="https://github.com/iblech/vortrag-haskell/blob/master/impossible-programs.lhs">auf Github</a>.</p>
+<p>Profpatsch gab einen Einblick in die Haskell-Bibliothek <a href="https://hackage.haskell.org/package/brick">brick</a> geben, und in das Design-Schema, auf dem sie basiert und dem einige andere Bibliotheken folgen.</p>
 </article>
 ]]></description>
     <pubDate>Fri, 06 Nov 2015 00:00:00 UT</pubDate>
