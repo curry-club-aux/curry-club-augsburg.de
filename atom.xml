@@ -86,10 +86,12 @@
   </header>
 
   <p>Ingo stellte die von Martín Escardó publizierten <a href="http://math.andrej.com/2007/09/28/seemingly-impossible-functional-programs/">scheinbar unmöglichen funktionalen Programme</a> vor: Wie kann man in endlicher Zeit unendliche, ja sogar überabzählbar unendliche, Datenstrukturen absuchen?</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F53aOAW9PBo" frameborder="0" allowfullscreen>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/F53aOAW9PBo" frameborder="0" allowfullscreen>
 </iframe>
 <p>Der Code vom Vortrag ist <a href="https://github.com/iblech/vortrag-haskell/blob/master/impossible-programs.lhs">auf Github</a>.</p>
 <p>Profpatsch gab einen Einblick in die Haskell-Bibliothek <a href="https://hackage.haskell.org/package/brick">brick</a> geben, und in das Design-Schema, auf dem sie basiert und dem einige andere Bibliotheken folgen.</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/52UDaZDQ2to" frameborder="0" allowfullscreen>
+</iframe>
 </article>
 ]]></summary>
 </entry>
