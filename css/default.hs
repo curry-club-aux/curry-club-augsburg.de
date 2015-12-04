@@ -41,7 +41,7 @@ layoutCss :: Css
 layoutCss = do
 
   ".main" |> (header <> main_ <> (footer # ".footer")) ? do
-    width (px 660)
+    width (px 700)
     sym2 margin nil auto
   main_ ?
     padding nil nil (px 30) nil
