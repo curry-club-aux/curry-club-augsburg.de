@@ -1,6 +1,5 @@
 ---
 title: Programm für das zehnte Treffen am 21. Januar 2016
-meetup-announcement: 2016-01-21
 author: Tim Baumann
 ---
 
