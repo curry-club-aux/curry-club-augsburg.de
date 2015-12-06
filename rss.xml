@@ -7,8 +7,167 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Fri, 04 Dec 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Dec 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Scheinbar unmögliche Programme</title>
+    <link>http://curry-club-augsburg.de/posts/2015-12-06-impossible-programs.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Scheinbar unmögliche Programme</h1>
+    <div class="info">
+      Gepostet am  6. Dezember 2015
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="ot">{-# LANGUAGE FlexibleInstances #-}</span>
+<span class="ot">&gt;</span> <span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span>
+<span class="ot">&gt;</span> 
+<span class="ot">&gt;</span> <span class="kw">import </span><span class="dt">Data.Maybe</span></code></pre></div>
+<p>Mit <code>[Bool]</code> meinen wir den Typ der unendlichen 0/1-Folgen.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> p1, p2,<span class="ot"> p3 ::</span> [<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+<span class="ot">&gt;</span> p1 xs <span class="fu">=</span> xs<span class="fu">!!</span><span class="dv">3</span>
+<span class="ot">&gt;</span> p2 xs <span class="fu">=</span> xs<span class="fu">!!</span><span class="dv">4</span>
+<span class="ot">&gt;</span> p3 xs <span class="fu">=</span> xs<span class="fu">!!</span>(<span class="dv">2</span><span class="fu">+</span><span class="dv">1</span>) <span class="fu">&amp;&amp;</span> (xs<span class="fu">!!</span><span class="dv">8</span> <span class="fu">||</span> not (xs<span class="fu">!!</span><span class="dv">8</span>))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> test1 <span class="fu">=</span> p1 <span class="fu">==</span> p2
+<span class="ot">&gt;</span> test2 <span class="fu">=</span> p1 <span class="fu">==</span> p3</code></pre></div>
+<p>Das liefert einen Fehler über eine fehlende <code>Eq</code>-Instanz, oder? Weit gefehlt! Beide Programme terminieren. <code>test1</code> hat den Wert <code>False</code>, <code>test2</code> hat den Wert <code>True</code>.</p>
+<p>Das ist umso erstaunlicher, wenn man bedenkt, dass <code>[Bool]</code> <em>überabzahlbar unendlich groß ist</em>.</p>
+<p><strong>Hintergrund: Abzählbarkeit und Überabzählbarkeit</strong></p>
+<p>Eine Menge heißt genau dann <em>abzählbar</em>, wenn es eine unendliche Liste gibt, in der alle Elemente der Menge vorkommen.</p>
+<p>Prototypbeispiel: Die Menge N der natürlichen Zahlen ist abzählbar.</p>
+<pre><code>0, 1, 2, 3, 4, ...</code></pre>
+<p>Die Menge Z der ganzen Zahlen ist ebenfalls abzählbar, insbesondere also genau so groß wie die Menge der natürlichen Zahlen:</p>
+<pre><code>0, 1, -1, 2, -2, 3, -3, 4, -4, 5, -5, ...</code></pre>
+<p>Übungsaufgabe: Zeige, dass auch die Menge Q der rationalen Zahlen abzählbar ist.</p>
+<p>Eine Menge heißt genau dann <em>überabzählbar</em>, wenn sie nicht abzählbar ist.</p>
+<p>Beispiel (Cantor): Die Menge R der reellen Zahlen ist überabzählbar.</p>
+<p>Oder: Die Menge [Bool] aller unendlichen 0/1-Folgen ist überabzählbar.</p>
+<p>Beweis durch das Cantorsche Diagonalargument:</p>
+<p>Keine Liste von 0/1-Folgen kann <em>alle</em> 0/1-Folgen enthalten. Denn wenn zum Beispiel folgende Liste gegeben ist:</p>
+<pre>
+01000101011011011...
+11101011111101111...
+10101010101010101...
+11100011100010010...
+10010101100100000...
+11010101100100000...
+.
+.
+.
+</pre>
+<p>Wenn man nun die Diagonale (von oben links nach unten rechts) durchgeht, und jeweils die Gegenziffer wählt, erhält man eine 0/1-Folge, die sicher nicht in der Liste vorkommt. Im Beispiel wäre das</p>
+<pre>100110...</pre>
+<p>Diese 0/1-Folge kann nicht das erste Element der Liste sein, denn sie unterscheidet sich vom ersten Element ja an der vordersten Stelle. Sie kann auch nicht das zweite Element der Liste sein, denn sie unterscheidet sich vom zweiten Element ja an der zweitvordersten Stelle. Und so weiter!</p>
+<p><strong>Epsilon</strong></p>
+<p>Sei <code>p :: [Bool] -&gt; Bool</code> ein beliebiges Prädikat.</p>
+<p>Falls <code>p</code> erfüllbar ist, d.h. falls es eine 0/1-Folge <code>xs</code> gibt, sodass <code>p xs</code>, dann soll <code>epsilon p</code> irgendeine 0/1-Folge sein, sodass <code>p (epsilon p)</code>.</p>
+<p>Falls <code>p</code> nicht erfüllbar ist, dann kann <code>epsilon p</code> sein, was es möchte.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt; epsilon ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [<span class="dt">Bool</span>]
+<span class="ot">&gt;</span> epsilon p <span class="fu">=</span> <span class="kw">if</span> p (<span class="dt">False</span> <span class="fu">:</span> xs)
+<span class="ot">&gt;</span>     <span class="kw">then</span> <span class="dt">False</span> <span class="fu">:</span> xs
+<span class="ot">&gt;</span>     <span class="kw">else</span> <span class="dt">True</span>  <span class="fu">:</span> epsilon (p <span class="fu">.</span> (<span class="dt">True</span><span class="fu">:</span>))
+<span class="ot">&gt;</span>     <span class="kw">where</span> xs <span class="fu">=</span> epsilon (p <span class="fu">.</span> (<span class="dt">False</span><span class="fu">:</span>))</code></pre></div>
+<p>Etwas schneller geht es dank Lazyness so:</p>
+<pre><code>epsilon :: ([Bool] -&gt; Bool) -&gt; [Bool]
+epsilon p = h : epsilon (p . (h:))
+    where
+    h = not $ p (False : epsilon (p . (False:)))</code></pre>
+<p>Wer es noch schneller möchte – sodass auch Code wie <code>epsilon $ \xs -&gt; xs !! (10^10)</code> funktioniert, kann sich den Code von Martín Escardó ansehen.</p>
+<p><strong>exists</strong></p>
+<p>Sei <code>p :: [Bool] -&gt; Bool</code> ein beliebiges Prädikat.</p>
+<p>Falls <code>p</code> erfüllbar ist, dann soll <code>exists p</code> ein Zeuge dieser Erfüllbarkeit sein (in einem Maybe verpackt), also eine 0/1-Folge <code>xs</code>, sodass <code>p xs</code>.</p>
+<p>Falls <code>p</code> nicht erfüllbar ist, soll <code>exists p</code> <code>Nothing</code> sein.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt; exists ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Maybe</span> [<span class="dt">Bool</span>]
+<span class="ot">&gt;</span> exists p <span class="fu">=</span> <span class="kw">if</span> p xs <span class="kw">then</span> <span class="dt">Just</span> xs <span class="kw">else</span> <span class="dt">Nothing</span>
+<span class="ot">&gt;</span>     <span class="kw">where</span> xs <span class="fu">=</span> epsilon p</code></pre></div>
+<p><strong>forall</strong></p>
+<p>Sei <code>p :: [Bool] -&gt; Bool</code> ein beliebiges Prädikat.</p>
+<p><code>forall p</code> soll dann und nur dann True sein, falls `<code>p auf jeder 0/1-Folge konstant</code>True` ist.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt; forall ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+<span class="ot">&gt;</span> forall p <span class="fu">=</span> isNothing <span class="fu">$</span> exists (not <span class="fu">.</span> p)</code></pre></div>
+<p>Punktfrei geht es auch:</p>
+<p><code>forall = not . isJust . exists . (not .)</code></p>
+<p><strong>Eq-Instanz für Funktionen [Bool] -&gt; Bool</strong></p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="kw">instance</span> <span class="dt">Eq</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="kw">where</span>
+<span class="ot">&gt;</span>     f <span class="fu">==</span> g <span class="fu">=</span> forall <span class="fu">$</span> \xs <span class="ot">-&gt;</span> f xs <span class="fu">==</span> g xs
+<span class="ot">&gt;</span>     <span class="co">-- &quot;zwei Prädikate sind genau dann gleich, wenn sie auf jedem Argument</span>
+<span class="ot">&gt;</span>     <span class="co">-- gleich sind&quot;</span></code></pre></div>
+<p><strong>Exkurs: Beispiel für eine unstetige Funktion</strong></p>
+<p>Eine Funktion von R nach R ist genau dann stetig, wenn man ihren Graph zeichnen kann, ohne den Stift abzusetzen. Eine stetige Funktion darf also keine Sprungstellen besitzen.</p>
+<pre>
+f : R --> R
+
+x |-> if x < 0 then -1 else if x == 0 then 0 else 1
+
+</pre>
+<p>Die Signumfunktion!</p>
+<p>Sie ist aber nur definiert auf der Teilmenge</p>
+<pre>{ x in R | x < 0 oder x = 0 oder x > 0 }.</pre>
+<p>Konstruktiv kann man nicht zeigen, dass diese Teilmenge ganz R ist. Die Funktion ist also nicht als total nachweisbar.</p>
+<p><strong>Wieso funktionieren die “scheinbar unmöglichen Programme”?</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>In Haskell kann man nur stetige Funktionen implementieren. (Wie in manchen Schulen konstruktiver Mathematik auch.) Jede Funktion vom Typ <code>[Bool] -&gt; Bool</code> ist stetig.</p></li>
+<li><p>In der Topologie gibt es folgenden Satz: Jede stetige Funktion, deren Definitionsmenge kompakt ist, ist schon gleichmäßig stetig.</p></li>
+</ol>
+<p>Die Menge <code>[Bool]</code> ist kompakt. (Eigentlich sollte man “Raum” statt “Menge” sagen. Für Topologie-Fans: Das folgt sofort aus dem Satz von Tychonoff.)</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Im Spezialfall von Funktionen <code>[Bool] -&gt; Bool</code> bedeutet gleichmäßig stetig: Eine solche Funktion ist genau dann gleichmäßig stetig, wenn es eine Schranke <code>m</code> gibt, sodass die Funktion zur Berechnung ihres Ergebnisses nur die ersten <code>m</code> Bits der Folge benötigt (unabhängig von der speziellen Eingabefolge).</p></li>
+<li><p><code>epsilon</code> ruft sich selbst rekursiv auf. Wenn <code>p</code> als Schranke <code>m</code> hat, dann hat das im rekursiven Aufruf verwendete Prädikat <code>(p . (False:))</code> als Schranke <code>m-1</code>. Also terminiert nach <code>m</code> rekursiven Aufrufen das Verfahren.</p></li>
+</ol>
+<p><strong>Und die Moral von der Geschicht</strong></p>
+<p>In der Frage, ob Gleichheit von Funktionen vom Typ <code>A -&gt; Bool</code> entscheidbar ist, ist es nicht relevant, ob <code>A</code> endlich ist oder nicht. Tatsächlich entscheidend ist, ob <code>A</code> <em>kompakt</em> ist oder nicht.</p>
+<ul>
+<li>Endliche Typen sind kompakt.</li>
+<li><code>[Bool]</code> ist kompakt.</li>
+<li>Sind <code>A</code> und <code>B</code> kompakt, so auch der Produkttyp <code>(A,B)</code>.</li>
+<li><code>Nat</code> und <code>Integer</code> sind nicht kompakt.</li>
+<li>Der Datentyp der “lazy naturals”, welche auch <code>+infty</code> enthalten, ist kompakt.</li>
+</ul>
+<p><strong>Übungsaufgaben:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Übertrage die Funktion <code>epsilon</code> – und damit auch <code>exists</code> und <code>forall</code>, auf den Fall von Funktionen <code>NAT -&gt; Bool</code> (statt <code>[Bool] -&gt; Bool</code>). Dabei soll <code>NAT</code> der Typ der “lazy naturals” sein, zum Beispiel definiert durch:</li>
+</ol>
+<p><code>data NAT = Zero | Succ NAT</code></p>
+<p><code>infty = Succ infty</code></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Definiere eine Typklasse <code>Compact</code> und implementiere Instanzen für <code>[Bool]</code> und <code>NAT</code> sowie eine generische Instanz <code>(Compact a, Compact b) =&gt;    Compact (a,b)</code>.</li>
+</ol>
+<p><strong>Diesen Text gibt es auch als <a href="https://github.com/iblech/vortrag-haskell/blob/master/impossible-programs.lhs">kompilierbares Literate Haskell</a>!</strong></p>
+</article>
+]]></description>
+    <pubDate>Sun, 06 Dec 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-12-06-impossible-programs.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
+    <title>Der Curry Club auf dem 32c3</title>
+    <link>http://curry-club-augsburg.de/posts/2015-12-05-ankuendigung-curry-club-auf-dem-32c3.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Der Curry Club auf dem 32c3</h1>
+    <div class="info">
+      Gepostet am  5. Dezember 2015
+      
+          von Lukas Epple
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Der Curry Club wird auf dem 32. Chaos Communication Congress in Form <a href="https://events.ccc.de/congress/2015/wiki/Assembly:Curry_Club_Augsburg">einer Assembly</a> sein! Wir haben schon begonnen, uns ein bisschen Programm für die vier Tage zu überlegen, die Planung läuft aktuell über die Mailingliste.</p>
+</article>
+]]></description>
+    <pubDate>Sat, 05 Dec 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-12-05-ankuendigung-curry-club-auf-dem-32c3.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das zehnte Treffen am 21. Januar 2016</title>
     <link>http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html</link>
     <description><![CDATA[<article>
@@ -462,72 +621,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 ]]></description>
     <pubDate>Fri, 14 Aug 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-08-14-ankuendigung-siebtes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das sechste Treffen am 10. September 2015</title>
-    <link>http://curry-club-augsburg.de/posts/2015-07-25-ankuendigung-sechstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das sechste Treffen am 10. September 2015</h1>
-    <div class="info">
-      Gepostet am 25. Juli 2015
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p><a href="https://github.com/timjb">Tim</a> wird seinen Vortrag über Lens vom letzten Mal fortsetzen. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>.</p>
-<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-<p><a href="https://github.com/iblech">Ingo</a> lädt zum großen monadischen Abend ein und wird daher über <a href="/files/freie-monaden.pdf">Monoide, freie Monoide und Monaden als Monoide</a> berichten. Ziel wird sein, das schöne Motto <em>Monaden sind nichts anderes als Monoide in einer Kategorie von Endofunktoren</em> zu verstehen. Wenn noch Zeit ist, werden wir auch auf freie Monaden eingehen. Dies ist der zweite Vortrag in der Reihe <em>What the Kmett is a monad?</em>. Beim nächsten Treffen dann wird es einen darauf aufbauenden Vortrag über Effektsysteme und den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> geben.</p>
-<p><a href="http://sketis.net/">Makarius</a> führt die Reihe <em>SML ist die beste unbekannte Programmiersprache der Welt</em> durch eine Kurzpräsentation des source-level Debuggers in der Prover-IDE fort.</p>
-<p>Als dreiminütigen Lückenfüller gibt es eine Erklärung, welchen einfachen Zaubertrick man mit Münzen und dem Haskell-Programm <code>length . group</code> vorführen kann.</p>
-<p><em>Um den Abend gemütlich ausklingen zu lassen, wird es selbstgekochtes Curry geben.</em> Wer eine Portion haben möchte, schickt an <code>tim@timbaumann.info</code> eine Mail mit Betreff <code>(+1)</code> (oder einem semantisch identischen Haskell-Programm).</p>
-</article>
-]]></description>
-    <pubDate>Sat, 25 Jul 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-07-25-ankuendigung-sechstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Drittes Treffen des Curry Clubs</title>
-    <link>http://curry-club-augsburg.de/posts/2015-07-02-drittes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Drittes Treffen des Curry Clubs</h1>
-    <div class="info">
-      Gepostet am  2. Juli 2015
-      
-          von Profpatsch
-      
-    </div>
-    
-    <img src="/images/curry-club-03.jpg" alt="Bild vom Treffen" />
-    
-    
-    <div class="attribution"><p>CC BY-NC-ND 4.0</p></div>
-    
-  </header>
-
-  <h1 id="über-scala-logik-kategorien-und-yolomorphismen">Über Scala, Logik, Kategorien und Yolomorphismen</h1>
-<p>Das dritte Treffen war wieder ein sehr lehrreicher Abend gespickt mit funktionalem Witz und vielen Einblicken in tolle Themen.</p>
-<h2 id="leon">Leon</h2>
-<p>Mit <a href="http://leon.epfl.ch/">Leon</a> wurde uns ein System vorgestellt, dass den Scala-Compiler um einige interessante Möglichkeiten erweitert; So kann man direkt Pre- und Postconditions einfügen, die dann vom Compiler mittels eines automatischen Theorembeweisers überprüft werden. Am Ende zeigte er uns dann noch, dass man sogar den Code generieren lassen kann.</p>
-<h2 id="prolog">Prolog</h2>
-<p>Eine Einführung in <a href="https://en.wikipedia.org/wiki/Prolog">Prolog</a> anhand eines praktischen Beispiels brachte uns die Vorteile und Grenzen der Sprache nahe. Das Resümee war dann, dass man Prolog sehr gut als domainspezifische Sprache über das C-Interface einbinden kann, aber es nicht als Allzweckprogrammiersprache („general Purpose“) verwenden will.</p>
-<p>Weite Zustimmung fand die Alternative, das Logikproblem (soweit möglich) in aussagenlogische Ausdrücke zu transformieren und dann in einen <a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#Algorithms_for_solving_SAT">SAT-Solver</a> zu stecken. Diese sind mittlerweile sehr schnell geworden.</p>
-<h2 id="kategorientheorie">Kategorientheorie</h2>
-<p>Am Ende ging es dann nochmal in die Mathematik und Ingo gab uns eine Einführung in die Kategorientheorie. Der Vortrag war sehr gut nachvollziehbar, was unter anderem auch an den <a href="/files/was-sollen-kategorien.pdf">Folien</a> lag. Aber um es wirklich nachvollziehen zu können, muss man natürlich das Treffen besuchen. :)</p>
-<p>Nächstes Mal gibt es die Fortsetzung.</p>
-<h2 id="zusammenfassung">Zusammenfassung</h2>
-<p>Alles in allem war es ein sehr gelungener Abend und auch die Gespräche im <a href="http://www.sangam-augsburg.de/">Sangam</a> hinterher sehr erhellend. Zum Beispiel haben wir gelernt, dass man nicht-totale Funktionen wie <code>head</code>, <code>tail</code> und <code>(!!)</code> <em>Yolomorphismen</em> nennen sollte. Zu den Yolomorphismen sollte man auch <code>unsafePerformIO :: IO a -&gt; a</code>, sowie die Mutter aller Yolomorphismen, die Funktion <code>unsafeCoerce :: a -&gt; b</code>, zählen.</p>
-</article>
-]]></description>
-    <pubDate>Thu, 02 Jul 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-07-02-drittes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
