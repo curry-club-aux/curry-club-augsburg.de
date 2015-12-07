@@ -191,14 +191,19 @@ contentCss = do
     listStyleType none
     paddingLeft (px 0)
     li ? display tableRow
+    li # ".meetup-upcoming" ?
+      background darkPurple
     li |> Clay.span ? do
       sym2 padding (px 2) nil
       display tableCell
-    Clay.span # ".post-date" ? do
-      color ourPurple
-      minWidth (px 150)
+    Clay.span # ".post-date" <> Clay.span # ".meetup-date" ? do
       paddingRight (px 15)
       textAlign end
+      minWidth (px 100)
+    Clay.span # ".post-date" ? do
+      color ourPurple
+    Clay.span # ".meetup-date" ? do
+      color rose
     a # ".post-title" ? do
       color lightYellow
       fontSize (px 15)

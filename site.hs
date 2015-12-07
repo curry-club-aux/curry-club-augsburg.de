@@ -14,7 +14,12 @@ import           System.Environment
 
 --------------------------------------------------------------------------------
 
-data Meetup a = Meetup { meetupDate :: UTCTime, meetupPost :: a } deriving Show
+data Meetup a =
+  Meetup
+  { meetupDate :: UTCTime
+  , meetupUpcoming :: Bool
+  , meetupPost :: a
+  } deriving Show
 
 main :: IO ()
 main = do
@@ -61,12 +66,12 @@ main = do
       route idRoute
       compile $ do
         allArticles <- chronological =<< loadAll "posts/*"
+        let isUpcoming time = utcToLocalDay time >= currDay
+            createMeetup time = fmap $ Meetup time (isUpcoming time)
         (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
-          return $ maybe (Right post) (\t -> Left (Meetup t <$> post)) time
-        let (nextM, _lastM) =
-              bimap headMay lastMay
-                $ partition (\x -> utcToLocalDay (meetupDate (itemBody x)) >= currDay) meetups
+          return $ maybe (Right post) (\t -> Left (createMeetup t post)) time
+        let (nextM, _lastM) = bimap headMay lastMay $ partition (meetupUpcoming . itemBody) meetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
             meetupField item = do
               let day = meetupDate $ itemBody item
@@ -151,10 +156,14 @@ postCtx :: Context String
 postCtx =
   defaultContext
   <> constField "subtitle" ""
-  <> dateFieldWith curryClubLocale "date" "%e. %B %Y"
+  <> dateFieldWith curryClubLocale "date" "%e. %b %y"
 
 meetupCtx :: Context (Meetup String)
-meetupCtx = contramapContext meetupPost postCtx
+meetupCtx =
+  contramapContext meetupPost postCtx
+  <> boolField "meetup-upcoming" (meetupUpcoming . itemBody)
+  <> field "meetup-date" (pure . formatTime curryClubLocale "%e. %b %y"
+                               . meetupDate . itemBody)
 
 feed :: FeedConfiguration
 feed = FeedConfiguration

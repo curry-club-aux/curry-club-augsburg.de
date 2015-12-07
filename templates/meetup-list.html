@@ -2,9 +2,13 @@
   <h1>Treffen &amp; Veranstaltungen</h1>
   <ul class="post-list">
     $for(meetups)$
+      $if(meetup-upcoming)$
+      <li class="meetup-upcoming">
+      $else$
       <li>
-        <span class="post-date">
-          $date$
+      $endif$
+        <span class="meetup-date">
+          $meetup-date$
         </span>
         <span>
           <a class="post-title" href="$url$">$title$</a>
