@@ -2,9 +2,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Control.Monad
 import           Data.Bifunctor (bimap)
+import           Data.Either (partitionEithers)
 import           Data.List (partition)
 import qualified Data.Map as M
-import           Data.Maybe
 import           Data.Monoid ((<>))
 import           Data.Time
 import           Hakyll
@@ -14,7 +14,7 @@ import           System.Environment
 
 --------------------------------------------------------------------------------
 
-data Meetup a = Meetup { _date :: UTCTime, _post :: Item a } deriving Show
+data Meetup a = Meetup { meetupDate :: UTCTime, meetupPost :: a } deriving Show
 
 main :: IO ()
 main = do
@@ -60,15 +60,17 @@ main = do
     match "index.html" $ do
       route idRoute
       compile $ do
-        posts <- chronological =<< loadAll "posts/*"
-        meetups <- fmap catMaybes $ forM posts $ \post -> do
+        allArticles <- chronological =<< loadAll "posts/*"
+        (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
-          return $ flip Meetup post <$> time
+          return $ maybe (Right post) (\t -> Left (Meetup t <$> post)) time
         let (nextM, _lastM) =
               bimap headMay lastMay
-                $ partition (\x -> utcToLocalDay (_date x) >= currDay) meetups
+                $ partition (\x -> utcToLocalDay (meetupDate (itemBody x)) >= currDay) meetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
-            meetupField (Meetup day post) = do
+            meetupField item = do
+              let day = meetupDate $ itemBody item
+                  post = meetupPost <$> item
               body <- postBody post
               pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
                 <> constField "timezone" (timeZoneName currentTimeZone)
@@ -77,6 +79,7 @@ main = do
         nextMField <- maybe (pure mempty) meetupField nextM
         let indexCtx =
               listField "posts" postCtx (return $ reverse posts)
+              <> listField "meetups" meetupCtx (return $ reverse meetups)
               <> nextMField
               <> constField "title" "Home"
               <> defaultContext
@@ -140,11 +143,18 @@ getMeetupTime locale id' = parseMeetupTime <$> getMetadata id'
       M.lookup "meetup-announcement" metadata >>=
       parseTimeM True locale "%Y-%m-%d"
 
+-- this should be part of Hakyll
+contramapContext :: (a -> b) -> Context b -> Context a
+contramapContext f (Context g) = Context $ \s ss item -> g s ss (f <$> item)
+
 postCtx :: Context String
 postCtx =
   defaultContext
   <> constField "subtitle" ""
   <> dateFieldWith curryClubLocale "date" "%e. %B %Y"
+
+meetupCtx :: Context (Meetup String)
+meetupCtx = contramapContext meetupPost postCtx
 
 feed :: FeedConfiguration
 feed = FeedConfiguration
