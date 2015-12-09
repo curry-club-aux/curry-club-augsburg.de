@@ -4,6 +4,7 @@ subtitle: Scala, Gopher und Effektsysteme
 subsubtitle: Wir haben jetzt Sticker!
 meetup-announcement: 2015-11-05
 meetup-counter: 8
+meetup-time: 19:00
 author: Tim Baumann, Profpatsch
 ---
 

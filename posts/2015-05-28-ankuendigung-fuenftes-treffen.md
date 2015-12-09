@@ -3,6 +3,7 @@ title: Programm für das fünfte Treffen am 13. August 2015
 subtitle: Mercury, Textinterfaces in Haskell und Lenses (Teil 1)
 meetup-announcement: 2015-08-13
 meetup-counter: 5
+meetup-time: 19:00
 author: Tim Baumann
 image: /images/diagrams-rubiks-cube.svg
 image-alt: Mit Haskell erstellte Skizzen des Zauberwürfels

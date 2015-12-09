@@ -3,6 +3,7 @@ title: Programm für das erste Treffen am 23. April 2015
 subtitle: Parserkombinatoren und typsicheres Routing
 meetup-announcement: 2015-04-23
 meetup-counter: 1
+meetup-time: 19:00
 author: Tim Baumann
 ---
 

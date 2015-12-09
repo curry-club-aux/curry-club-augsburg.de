@@ -208,6 +208,8 @@ contentCss = do
       paddingRight (px 15)
       textAlign end
       minWidth (px 100)
+    ".meetup-time" ?
+      color ourPurple
     Clay.span # ".post-date" ? do
       color ourPurple
     Clay.span # ".meetup-date" ? do

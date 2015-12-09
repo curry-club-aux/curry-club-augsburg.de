@@ -4,6 +4,7 @@ subtitle: Kategorientheorie (Teil 2) und Currying in Isabelle
 subsubtitle: Makarius beweist die Aussage unseres Logos
 meetup-announcement: 2015-07-16
 meetup-counter: 4
+meetup-time: 19:00
 author: Tim Baumann
 ---
 

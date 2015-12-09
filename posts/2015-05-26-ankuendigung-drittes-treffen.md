@@ -3,6 +3,7 @@ title: Programm für das dritte Treffen am 18. Juni 2015
 subtitle: Verallgemeinerter abstrakter Nonsense
 subsubtitle: Teil 1 der Kategorientheorie-Reihe und Logikprogrammierung
 meetup-announcement: 2015-06-18
+meetup-time: 19:00
 meetup-counter: 3
 author: Tim Baumann
 ---

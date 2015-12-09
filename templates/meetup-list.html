@@ -8,7 +8,12 @@
       <li>
       $endif$
         <span class="meetup-date">
-          $meetup-date$
+          $meetup-date$<br />
+          $if(meetup-time)$
+            <span class="meetup-time">
+              $meetup-time$
+            </span>
+          $endif$
         </span>
         <span class="meetup-counter">
           $if(meetup-counter)$
