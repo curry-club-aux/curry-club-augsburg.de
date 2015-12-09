@@ -67,7 +67,6 @@ main = do
       route idRoute
       compile $ do
         allArticles <- chronological =<< loadAllSnapshots "posts/*" "html-post"
-        --posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
         let isUpcoming time = utcToLocalDay time >= currDay
             createMeetup time = fmap $ Meetup time (isUpcoming time)
         (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
@@ -76,14 +75,10 @@ main = do
         let sortedMeetups = sortBy (compare `on` meetupDate . itemBody) meetups
             (upcomingMeetups, _lastM) = bimap id lastMay $ partition (meetupUpcoming . itemBody) sortedMeetups
             nextM = headMay upcomingMeetups
-            --postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
             meetupField item = do
               let day = meetupDate $ itemBody item
-                  --post = meetupPost <$> item
-              --body <- postBody post
               pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
                 <> constField "timezone" (timeZoneName currentTimeZone)
-                -- <> constField "next-meetup-body" body
 
         nextMField <- maybe (pure mempty) meetupField nextM
         let indexCtx =
@@ -160,7 +155,7 @@ contramapContext f (Context g) = Context $ \s ss item -> g s ss (f <$> item)
 postCtx :: Context String
 postCtx =
   defaultContext
-  <> constField "subtitle" ""
+  <> teaserField "teaser" "html-post"
   <> dateFieldWith curryClubLocale "date" "%e. %b %y"
 
 meetupCtx :: Context (Meetup String)

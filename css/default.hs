@@ -180,6 +180,10 @@ contentCss = do
   address ?
     float floatLeft
   ".deemph" ? color lightRose
+  ".right" ? do
+    float floatRight
+    paddingLeft (px 15)
+    paddingBottom (px 15)
   div # "#map" ? do
     float floatRight
     height (px 220)
@@ -227,6 +231,8 @@ contentCss = do
       marginBottom (px 4)
       verticalAlign textTop
       textAlign (alignSide sideCenter)
+    ".meetup-upcoming" ? div # ".meetup-counter-square" ?
+      background darkerPurple
     a # ".post-title" ? do
       color lightYellow
       fontSize (px 15)

@@ -4,7 +4,11 @@ $for(upcoming-meetups)$
       <h1>$title$</h1>
     </header>
 
-    $body$
+    $if(teaser)$
+      $teaser$
+    $else$
+      $body$
+    $endif$
   </article>
 $endfor$
 
