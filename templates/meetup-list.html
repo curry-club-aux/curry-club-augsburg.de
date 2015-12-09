@@ -10,6 +10,13 @@
         <span class="meetup-date">
           $meetup-date$
         </span>
+        <span class="meetup-counter">
+          $if(meetup-counter)$
+            <div class="meetup-counter-square">
+              $meetup-counter$
+            </div>
+          $endif$
+        </span>
         <span>
           <a class="post-title" href="$url$">$title$</a>
           $if(subtitle)$

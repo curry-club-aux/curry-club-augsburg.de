@@ -204,6 +204,20 @@ contentCss = do
       color ourPurple
     Clay.span # ".meetup-date" ? do
       color rose
+    Clay.span # ".meetup-counter" ? do
+      --sym2 padding (px 10) (px 5)
+      --sym2 margin nil (px 10)
+      paddingRight (px 15)
+    div # ".meetup-counter-square" ? do
+      display inlineBlock
+      fontSize (px 24)
+      lineHeight (px 40)
+      backgroundColor darkPurple
+      color rose
+      width (px 40)
+      height (px 40)
+      verticalAlign textTop
+      textAlign (alignSide sideCenter)
     a # ".post-title" ? do
       color lightYellow
       fontSize (px 15)

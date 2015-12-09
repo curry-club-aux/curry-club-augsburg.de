@@ -2,6 +2,7 @@
 title: Programm für das sechste Treffen am 10. September 2015
 subtitle: Monaden als Monoide in einer Kategorie von Endofunktoren, Lenses (2) und selbstgekochtes Curry
 meetup-announcement: 2015-09-10
+meetup-counter: 6
 author: Tim Baumann
 ---
 

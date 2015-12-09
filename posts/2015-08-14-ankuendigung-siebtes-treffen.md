@@ -2,6 +2,7 @@
 title: Programm für das siebte Treffen am 8. Oktober 2015
 subtitle: Freie Monaden und Lenses (3)
 meetup-announcement: 2015-10-08
+meetup-counter: 7
 author: Tim Baumann
 image: /images/hacker-barbie.png
 image-alt: Hacker Barbie
