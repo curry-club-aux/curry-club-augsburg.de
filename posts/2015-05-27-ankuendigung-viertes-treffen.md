@@ -1,6 +1,7 @@
 ---
 title: Programm für das vierte Treffen am 16. Juli 2015
-subtitle: Kategorientheorie (2) und Currying in Isabelle
+subtitle: Kategorientheorie (Teil 2) und Currying in Isabelle
+subsubtitle: Makarius beweist die Aussage unseres Logos
 meetup-announcement: 2015-07-16
 meetup-counter: 4
 author: Tim Baumann

@@ -1,6 +1,6 @@
 ---
 title: Programm für das fünfte Treffen am 13. August 2015
-subtitle: Mercury, Textinterfaces in Haskell und Lenses (1)
+subtitle: Mercury, Textinterfaces in Haskell und Lenses (Teil 1)
 meetup-announcement: 2015-08-13
 meetup-counter: 5
 author: Tim Baumann

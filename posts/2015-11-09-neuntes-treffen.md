@@ -3,7 +3,8 @@ title: Neuntes Treffen am 3. Dezember 2015
 meetup-announcement: 2015-12-03
 meetup-counter: 9
 author: Lukas Epple
-subtitle: Jetzt neu mit Video!
+subtitle: Scheinbar unmögliche funktionale Programme
+subsubtitle: Jetzt neu mit Video!
 ---
 
 Ingo stellte die von Martín Escardó publizierten [scheinbar unmöglichen

@@ -1,5 +1,6 @@
 ---
 title: Der Curry Club auf dem 32c3
+subtitle: Der Curry Club auf dem 32c3
 meetup-announcement: 2015-12-27
 author: Lukas Epple
 ---

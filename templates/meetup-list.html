@@ -18,10 +18,16 @@
           $endif$
         </span>
         <span>
-          <a class="post-title" href="$url$">$title$</a>
-          $if(subtitle)$
+          <a class="post-title" href="$url$">
+            $if(subtitle)$
+              $subtitle$
+            $else$
+              $title$
+            $endif$
+          </a>
+          $if(subsubtitle)$
             <br />
-            <span class="post-subtitle">$subtitle$</span>
+            <span class="post-subtitle">$subsubtitle$</span>
           $endif$
         </span>
       </li>

@@ -1,6 +1,7 @@
 ---
 title: Programm für das achte Treffen am 5. November 2015
 subtitle: Scala, Gopher und Effektsysteme
+subsubtitle: Wir haben jetzt Sticker!
 meetup-announcement: 2015-11-05
 meetup-counter: 8
 author: Tim Baumann, Profpatsch
