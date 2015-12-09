@@ -4,6 +4,11 @@ import           Data.Monoid
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
+import qualified Clay.Stylesheet
+
+-- this is in the github version of clay, but not released yet
+borderSpacing :: Size a -> Size a -> Css
+borderSpacing v h = Clay.Stylesheet.key "border-spacing" (v ! h)
 
 reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 reallyDarkPurple = other "#170b1a"
@@ -188,14 +193,17 @@ contentCss = do
     lineHeight (px 64)
   ul # ".post-list" ? do
     display Clay.Display.table
+    borderSpacing nil (px 4)
     listStyleType none
     paddingLeft (px 0)
-    li ? display tableRow
+    li ? do
+      display tableRow
+      --sym2 padding (px 2) nil
     li # ".meetup-upcoming" ?
       background darkPurple
     li |> Clay.span ? do
-      sym2 padding (px 2) nil
       display tableCell
+      lineHeight (px 22)
     Clay.span # ".post-date" <> Clay.span # ".meetup-date" ? do
       paddingRight (px 15)
       textAlign end
@@ -205,8 +213,6 @@ contentCss = do
     Clay.span # ".meetup-date" ? do
       color rose
     Clay.span # ".meetup-counter" ? do
-      --sym2 padding (px 10) (px 5)
-      --sym2 margin nil (px 10)
       paddingRight (px 15)
     div # ".meetup-counter-square" ? do
       display inlineBlock
@@ -216,6 +222,7 @@ contentCss = do
       color rose
       width (px 40)
       height (px 40)
+      marginBottom (px 4)
       verticalAlign textTop
       textAlign (alignSide sideCenter)
     a # ".post-title" ? do

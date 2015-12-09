@@ -3,7 +3,8 @@
 import           Control.Monad
 import           Data.Bifunctor (bimap)
 import           Data.Either (partitionEithers)
-import           Data.List (partition)
+import           Data.Function (on)
+import           Data.List (partition, sortBy)
 import qualified Data.Map as M
 import           Data.Monoid ((<>))
 import           Data.Time
@@ -71,7 +72,8 @@ main = do
         (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
           return $ maybe (Right post) (\t -> Left (createMeetup t post)) time
-        let (nextM, _lastM) = bimap headMay lastMay $ partition (meetupUpcoming . itemBody) meetups
+        let sortedMeetups = sortBy (compare `on` meetupDate . itemBody) meetups
+            (nextM, _lastM) = bimap headMay lastMay $ partition (meetupUpcoming . itemBody) sortedMeetups
             postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
             meetupField item = do
               let day = meetupDate $ itemBody item
@@ -84,7 +86,7 @@ main = do
         nextMField <- maybe (pure mempty) meetupField nextM
         let indexCtx =
               listField "posts" postCtx (return $ reverse posts)
-              <> listField "meetups" meetupCtx (return $ reverse meetups)
+              <> listField "meetups" meetupCtx (return $ reverse sortedMeetups)
               <> nextMField
               <> constField "title" "Home"
               <> defaultContext
