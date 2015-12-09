@@ -7,8 +7,56 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sun, 06 Dec 2015 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Dec 2015 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Zweiter großer Haskell-Workshop des Curry Clubs Augsburg am 20. Dezember 2015</title>
+    <link>http://curry-club-augsburg.de/posts/2015-12-09-zweiter-workshop.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Zweiter großer Haskell-Workshop des Curry Clubs Augsburg am 20. Dezember 2015</h1>
+    <div class="info">
+      Gepostet am  9. Dez 15
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <div class="right">
+<p><a href="files/haskellworkshop-plakat2.pdf"> <img width="300" src="files/haskellworkshop-plakat2.png" /> </a></p>
+</div>
+<p>Liebe Freundinnen und Freunde der Sonne!</p>
+<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu der Fortsetzung unseres <strong>Haskell-Workshops</strong> ein. Diese findet am <strong>20. Dezember 2015</strong>, einem Sonntag, von 9:00 Uhr bis 17:00 Uhr im <strong>OpenLab Augsburg</strong> statt. Wie beim ersten Mal ist die Teilnahme kostenlos.</p>
+<p>Zielgruppe des Workshops sind alle Teilnehmer des ersten Workshops sowie Einsteiger auf allen Fortschrittslevels.</p>
+<p>Mit den Teilnehmenden vom letzten Mal werden wir dort weitermachen, wo wir das letzte Mal aufgehört haben. Während es damals darum ging die Basics zu lernen, wollen wir dieses Mal auf folgende Fragen eingehen:</p>
+<ul>
+<li>Welche verwendungsfertige Funktionen gibt es in der Standardbibliothek und auf <a href="http://hackage.haskell.org/">Hackage</a>?</li>
+<li>Wie strukturiere ich größere Haskell-Programme?</li>
+<li>Wie kann ich sicherstellen, dass mein Code das tut, was er soll?</li>
+<li>Ich programmiere liebend gerne Parser / Webseiten / numerische Simulationen / Benutzeroberflächen / 3D-Spiele / XYZ. Wie mache ich das in Haskell?</li>
+</ul>
+<p>Am Anfang werden wir Monaden wiederholen. Ingo hat dazu auch einen <a href="/posts/2015-10-27-monaden-in-haskell.html">eigenen Blog-Post</a> geschrieben. Ihr tut euch mit Monaden erheblich leichter, wenn ihr diesen Artikel vor dem Workshop liest! Falls ihr das letzte Mal nicht fertig geworden seid, dann ist das kein Problem. Dann könnt ihr einfach das <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">Übungsblatt</a> weiter bearbeiten und wir helfen euch dabei.</p>
+<p>Für Neueinsteiger wird es eine eigene Gruppe geben. Teilnahmevoraussetzung für Neueinsteiger ist entweder Erfahrung mit einer beliebigen anderen Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken.</p>
+<p>Wer vorhat, am Workshop teilzunehmen, kann sich in ein <a href="https://ola.pads.ccc.de/haskell-workshop-2015b">Organisationspad</a> eintragen und dann am 20. Dezember mit dem eigenen Laptop ins OpenLab kommen. Bitte vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren, um auf dem Workshop Zeit zu sparen.</p>
+<p>Wir freuen uns auf euch!</p>
+<p>Euer Team vom Curry Club</p>
+<!--more-->
+<blockquote>
+<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
+<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
+<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
+<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
+<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
+</blockquote>
+</article>
+]]></description>
+    <pubDate>Wed, 09 Dec 2015 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2015-12-09-zweiter-workshop.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Scheinbar unmögliche Programme</title>
     <link>http://curry-club-augsburg.de/posts/2015-12-06-impossible-programs.html</link>
     <description><![CDATA[<article>
@@ -591,36 +639,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 ]]></description>
     <pubDate>Wed, 16 Sep 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-09-16-hitliste-der-ICFP-talks.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das siebte Treffen am 8. Oktober 2015</title>
-    <link>http://curry-club-augsburg.de/posts/2015-08-14-ankuendigung-siebtes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das siebte Treffen am 8. Oktober 2015</h1>
-    <div class="info">
-      Gepostet am 14. Aug 15
-      
-          von Tim Baumann
-      
-    </div>
-    
-    <img src="/images/hacker-barbie.png" alt="Hacker Barbie" />
-    
-    
-    <div class="attribution"><p>Nach der Schule trifft Barbie Paul und Peter in der Bibliothek. "Funktionale Programmierung ist fantastisch!", freut sich Barbie. "Ich weiß nicht", sagt Paul, "was zum Teufel ist eine Monade noch mal?". "Eine Monade ist einfach ein Monoid in einer Kategorie von Endofunktoren – wo liegt das Problem?", antwortet Barbie.</p></div>
-    
-  </header>
-
-  <p><a href="https://github.com/timjb">Tim</a> wird seinen Dreiteiler über Lens abschließen. Die Vortragsfolien gibt es <a href="/files/lens.pdf">hier</a> und die Codebeispiele <a href="https://github.com/timjb/presentations/tree/gh-pages/lens">auf Github</a>. Das letzte Mal sind wir bis zu Folie 91 gekommen.</p>
-<script async class="speakerdeck-embed" data-id="4e2df73019d74b28beec25cb2b08e348" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-<p><a href="https://github.com/iblech">Ingo</a> wird seinen Vortrag über <a href="/files/freie-monaden.pdf">Monoide, freie Monoide und Monaden als Monoide</a> abschließen. <a href="/files/freie-monaden.pdf">Folien</a>, <a href="https://github.com/iblech/vortrag-haskell/blob/master/freie-monaden.txt">Transcript</a>, <a href="https://github.com/iblech/vortrag-haskell/blob/master/freie-monaden.hs">Code</a>.</p>
-<p>Vielleicht wird es außerdem Vorträge über Effektsysteme, den neuesten <a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Aufsatz von Oleg</a> und Functional Reactive Programming geben.</p>
-</article>
-]]></description>
-    <pubDate>Fri, 14 Aug 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-08-14-ankuendigung-siebtes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
