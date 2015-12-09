@@ -66,26 +66,29 @@ main = do
     match "index.html" $ do
       route idRoute
       compile $ do
-        allArticles <- chronological =<< loadAll "posts/*"
+        allArticles <- chronological =<< loadAllSnapshots "posts/*" "html-post"
+        --posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
         let isUpcoming time = utcToLocalDay time >= currDay
             createMeetup time = fmap $ Meetup time (isUpcoming time)
         (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
           time <- getMeetupTime curryClubLocale $ itemIdentifier post
           return $ maybe (Right post) (\t -> Left (createMeetup t post)) time
         let sortedMeetups = sortBy (compare `on` meetupDate . itemBody) meetups
-            (nextM, _lastM) = bimap headMay lastMay $ partition (meetupUpcoming . itemBody) sortedMeetups
-            postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
+            (upcomingMeetups, _lastM) = bimap id lastMay $ partition (meetupUpcoming . itemBody) sortedMeetups
+            nextM = headMay upcomingMeetups
+            --postBody p = loadSnapshotBody (itemIdentifier p) "html-post"
             meetupField item = do
               let day = meetupDate $ itemBody item
-                  post = meetupPost <$> item
-              body <- postBody post
+                  --post = meetupPost <$> item
+              --body <- postBody post
               pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
                 <> constField "timezone" (timeZoneName currentTimeZone)
-                <> constField "next-meetup-body" body
+                -- <> constField "next-meetup-body" body
 
         nextMField <- maybe (pure mempty) meetupField nextM
         let indexCtx =
               listField "posts" postCtx (return $ reverse posts)
+              <> listField "upcoming-meetups" meetupCtx (return upcomingMeetups)
               <> listField "meetups" meetupCtx (return $ reverse sortedMeetups)
               <> nextMField
               <> constField "title" "Home"
