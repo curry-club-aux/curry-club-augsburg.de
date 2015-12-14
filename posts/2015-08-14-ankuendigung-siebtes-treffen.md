@@ -1,6 +1,7 @@
 ---
 title: Programm für das siebte Treffen am 8. Oktober 2015
 subtitle: Freie Monaden und Lenses (Teil 3)
+subsubtitle: Frei wie in <del>Freibier</del> <del>Pressefreiheit</del> linksadjungiert &check;
 meetup-announcement: 2015-10-08
 meetup-counter: 7
 meetup-time: 19:00
