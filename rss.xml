@@ -236,6 +236,7 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 </div>
 <p>Tim wird die Reihe über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a> mit einem Vortrag über Banker’s Queues einleiten.</p>
 <p>Makarius wird die Reihe <em>Beweise in Isabelle</em> fortsetzen.</p>
+<p>Manuel wird einen Vortrag zum Thema <em>Was ist die Quadratwurzel eines Baums?</em> halten. Darin geht es um ein paar unausgegorene, aber interessante Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und Parametrizität.</p>
 </article>
 ]]></description>
     <pubDate>Fri, 04 Dec 2015 00:00:00 UT</pubDate>
