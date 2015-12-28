@@ -9,3 +9,10 @@ cabal.sandbox.config
 result
 /site.o
 .stack-work
+# LaTeX
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc

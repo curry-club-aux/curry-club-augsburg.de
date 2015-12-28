@@ -1,0 +1,108 @@
+\documentclass[12pt,compress,english,utf8,t]{beamer}
+
+\usepackage{etex}
+
+\usepackage[english]{babel}
+
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage{mathtools}
+\usepackage[cmtip,all]{xy}
+\newcommand{\longsquiggly}{\xymatrix{{}\ar@{~>}[r]&{}}}
+
+\usetikzlibrary{calc,shapes.callouts,shapes.arrows}
+\definecolor{darkred}{RGB}{220,0,0}
+\newcommand{\hcancel}[5]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[darkred, line width=1mm] ($(tocancel.south west)+(#2,#3)$) -- ($(tocancel.north east)+(#4,#5)$);
+    }%
+}%
+
+\usepackage[protrusion=true,expansion=true]{microtype}
+
+\title[10 modern programming concepts]{10 modern programming concepts \\ which
+your favourite programming language is missing\footnote{unless your favorite
+language is Haskell, Idris or one of the ML-style languages (XXX)}}
+\author{Curry Club Augsburg}
+\institute{32th Chaos Communication Congress}
+\date{December 29th, 2015}
+
+\usetheme{Warsaw}
+\usecolortheme{seahorse}
+\definecolor{mypurple}{RGB}{150,0,255}
+\setbeamercolor{structure}{fg=mypurple}
+\usefonttheme{serif}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\useinnertheme{rectangles}
+\setbeamercovered{invisible}
+
+\setbeamertemplate{title page}[default][colsep=-1bp,rounded=false,shadow=false]
+\setbeamertemplate{frametitle}[default][colsep=-2bp,rounded=false,shadow=false,center]
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+  \oldmacro\hfill\insertframenumber\,/\,\inserttotalframenumber\hfill}
+
+\newcommand{\defeq}{\vcentcolon=}
+
+\newcommand{\hil}[1]{{\usebeamercolor[fg]{item}{\textbf{#1}}}}
+
+\newcommand{\atpos}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]%
+    \node[anchor=south east] at (current page.south east) {#1};
+  \end{tikzpicture}%
+}
+
+\newcommand{\centeredpar}[2]{%
+  \begin{center}
+    \colorbox{white}{\parbox{#1\textwidth}{%
+      #2%
+    }}%
+  \end{center}%
+}
+
+\newcommand{\icfrac}[4]{#1 + \dfrac{1}{#2 + \dfrac{1}{#3 + \dfrac{1}{#4 + \ddots}}}}
+\newcommand{\icfracc}[3]{\dfrac{1}{#1 + \dfrac{1}{#2 + \dfrac{1}{#3 + \ddots}}}}
+\newcommand{\icfraccc}[2]{\dfrac{1}{#1 + \dfrac{1}{#2 + \ddots}}}
+\newcommand{\icfracccc}[5]{#1 + \dfrac{1}{#2 + \dfrac{1}{#3 + \dfrac{1}{#4 + \dfrac{1}{#5 + \ddots}}}}}
+
+% Gonzalo Medina, http://tex.stackexchange.com/a/228198
+\makeatletter
+\def\Mdescription#1{%
+  \advance\beamer@descdefault by \labelsep%
+  \list
+  {}
+  {\labelwidth\beamer@descdefault%
+  \leftmargin\beamer@descdefault%
+  \let\makelabel\beamer@descriptionitem
+  \settowidth\labelwidth{\beamer@descriptionitem{#1}}%
+  \setlength\leftmargin{\labelwidth}% 
+  \addtolength\leftmargin{\labelsep}%
+  }%
+  \beamer@cramped%
+  \raggedright
+  \beamer@firstlineitemizeunskip%
+}
+\def\endMdescription{\ifhmode\unskip\fi\endlist}
+\long\def\beamer@descriptionitem#1{%
+  \def\insertdescriptionitem{#1}%
+  {\usebeamertemplate**{description item}}\hfil}
+\makeatother
+
+\setbeameroption{show notes}
+\setbeamertemplate{note page}[plain]
+
+\begin{document}
+
+\frame{
+  \titlepage
+}
+
+\end{document}
