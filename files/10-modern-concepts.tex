@@ -1,4 +1,4 @@
-\documentclass[12pt,compress,english,utf8,t]{beamer}
+\documentclass[14pt,compress,english,utf8,t]{beamer}
 
 \usepackage{etex}
 
@@ -8,8 +8,10 @@
 \usepackage{booktabs}
 \usepackage{ragged2e}
 \usepackage{mathtools}
-\usepackage[cmtip,all]{xy}
-\newcommand{\longsquiggly}{\xymatrix{{}\ar@{~>}[r]&{}}}
+
+\usepackage{minted}
+\usemintedstyle{tango}
+
 
 \usetikzlibrary{calc,shapes.callouts,shapes.arrows}
 \definecolor{darkred}{RGB}{220,0,0}
@@ -105,6 +107,117 @@ language is Haskell, Idris or one of the ML-style languages (XXX)}}
   \titlepage
 }
 
+
+\section{Overloaded semicolon}
+
+\begin{frame}[fragile]\frametitle{Overloaded semicolon}
+  \vspace*{-1.5em}
+  \begin{center}
+    \Huge \textbf{Callback hell ;-(}
+  \end{center}
+
+  \begin{minted}{javascript}
+getData(function(a) {
+    getMoreData(a, function(b) {
+        getYetMoreData(b, function(c) {
+            getMoreFoo(c, function(d) {
+                ...
+            });
+        });
+    });
+});
+  \end{minted}
+
+  \pause
+  And this is even without error handling!
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Overloaded semicolon}
+  \vspace*{-1.5em}
+  \begin{center}
+    \Huge \textbf{Overloaded semicolon :-)}
+  \end{center}
+
+  \begin{minted}{haskell}
+a <- getData
+b <- getMoreData    a
+c <- getYetMoreData b
+d <- getMoreFoo     c
+  \end{minted}
+
+  Simple \& easy. You can pretend that you're using blocking I/O.
+  \medskip
+
+  \pause
+  NB: This is called ``monads''. There are also monads for non-determinism,
+  parsing, \ldots
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Option types}
+  \vspace*{-1.5em}
+  \begin{center}
+    \huge Quiz time! Spot the error.
+  \end{center}
+
+  \begin{minted}{c}
+#include <stdlib.h>
+int main(int argc, char *argv[]) {
+    ...;
+    user_input = ...;
+    if(abs(user_input) > ...) {
+        exit(1);
+    }
+    ...;
+}
+  \end{minted}
+  \pause
+
+  Also: Million Dollar Mistake by XXX.
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Option types}
+  Solution: Option types.
+  \medskip
+  \pause
+
+  A value of type \mintinline{haskell}{Maybe Int} is
+  \begin{enumerate}
+    \item either \mintinline{haskell}{Nothing}
+    \item or a value of the form \mintinline{haskell}{Just x}, where~\mintinline{haskell}{x} is
+    an~\mintinline{haskell}{Int}.
+  \end{enumerate}
+  \medskip
+
+  Type signature of \texttt{abs}:
+  \mintinline{haskell}{Int -> Maybe Int}
+  \medskip
+
+  Use option types when you cannot return a meaningful result and don't want to
+  raise a proper exception.
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Pattern matching}
+  \begin{center}
+    \scalebox{0.5}{\input{baum.pspdftex}}
+  \end{center}
+
+  \small
+  \begin{minted}{haskell}
+data Tree = Leaf Int | Fork Tree Tree
+
+ex = Fork
+    (Fork (Leaf 17) (Leaf 37))
+    (Fork (Fork (Leaf 42) (Leaf 0)) (Leaf 41))
+
+inorder :: Tree -> [Int]
+inorder (Leaf x)   = [x]
+inorder (Fork l r) = inorder l ++ inorder r
+  \end{minted}
+
+  Declare custom datatypes in just one line of code and write functions using
+  them with pattern matching.
+\end{frame}
+
 \end{document}
 
 Brainstorm:
@@ -122,6 +235,8 @@ Brainstorm:
 * STM
 
 
+* DSLs
+* meta programming
 * Purity
 * REPL with tab completion
 * Regions von Rust?
