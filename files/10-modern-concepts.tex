@@ -27,8 +27,8 @@
 
 \title[10 modern programming concepts]{10 modern programming concepts \\ which
 your favourite programming language is missing\footnote{unless your favorite
-language is Haskell, Idris or one of the ML-style languages (XXX)}}
-\author{Curry Club Augsburg}
+language is \ldots}}
+\author[Curry Club Augsburg]{\includegraphics[scale=0.6]{../images/logo-heller-hintergrund}}
 \institute{32th Chaos Communication Congress}
 \date{December 29th, 2015}
 
@@ -154,6 +154,12 @@ do a <- getData
   parsing, \ldots
 \end{frame}
 
+\begin{frame}[c]
+  \centering
+  \includegraphics[height=\textheight]{hell-yeah}
+  \par
+\end{frame}
+
 \begin{frame}[fragile]
   \vspace*{-1.5em}
   \begin{center}
@@ -202,6 +208,12 @@ int main(int argc, char *argv[]) {
   raise a proper exception.
 \end{frame}
 
+\begin{frame}[c]
+  \centering
+  \includegraphics[height=\textheight]{haskell_call_me_maybe}
+  \par
+\end{frame}
+
 \begin{frame}[fragile]
   \begin{center}
     \vspace*{-1em}
@@ -243,6 +255,8 @@ BufferedReader in =
 
   \begin{center}
     \scalebox{3}{\Huge \frownie}
+    
+    \includegraphics[scale=0.2]{EnterpriseReady_trans}
   \end{center}
 \end{frame}
 
@@ -263,6 +277,12 @@ BufferedReader in =
   \end{itemize}
 
   Great for prototyping and refactoring!
+\end{frame}
+
+\begin{frame}[c]
+  \centering
+  \includegraphics[height=\textheight]{doge_enterprise_wow}
+  \par
 \end{frame}
 
 \begin{frame}%\frametitle{Units of Measure}
@@ -286,7 +306,7 @@ BufferedReader in =
   \begin{center}
     \vspace*{-1em}\Huge\hil{Units of Measure Types \smiley}
   \end{center}
-  \begin{minted}[fontsize=\small]{fsharp}
+  \begin{minted}{text}
 [<measure>] type N = (kg * m) / sec^2
 
 fireThrusters (x:float<N * sec>) = ...
@@ -303,6 +323,41 @@ let diag (x:float<'u>) (y:float<'u>)
 \begin{frame}%\frametitle{Units of Measure}
   \begin{center}
     \includegraphics[width=11cm]{population_explosion.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{center}
+    \vspace*{-1em}\Huge\hil{QuickCheck}
+  \end{center}
+
+  \begin{minted}{perl}
+is(sqrt(4),  2, "sqrt(4) is working");
+is(sqrt(16), 4, "sqrt(16) is working");
+# ...
+  \end{minted}
+
+  This does not scale! Better:
+
+  \begin{minted}{haskell}
+> quickCheck $ \x -> sqrt(x*x) == x
+*** Failed! Falsifiable (after 2 tests):
+-0.269864
+
+> quickCheck $ \x -> sqrt(x*x) == abs x
++++ OK, passend 100 tests.
+  \end{minted}
+
+  Automatic test case generation.
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \vspace*{-1em}\Huge\hil{Time-traveling debugger}
+    \medskip
+
+    \includegraphics[scale=0.7]{time-travel}
+    % http://blogs.discovermagazine.com/crux/files/2014/01/time-travel-300x202.jpg
   \end{center}
 \end{frame}
 
