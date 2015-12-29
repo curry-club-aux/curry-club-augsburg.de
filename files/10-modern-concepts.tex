@@ -265,6 +265,47 @@ BufferedReader in =
   Great for prototyping and refactoring!
 \end{frame}
 
+\begin{frame}%\frametitle{Units of Measure}
+  \begin{minipage}{0.45 \textwidth}
+    \includegraphics[width=0.9 \textwidth]{Mars_Climate_Orbiter_2.jpg}
+  \end{minipage}
+  \begin{minipage}{0.53 \textwidth}
+    Mars Climate Orbiter (1998) \\[0.4cm]
+    Cost of the mission: \\
+    \$327 million \\[0.4cm]
+    Failed due to a unit error \\
+    {\small (newton-secs vs. pound-secs)}
+  \end{minipage}
+
+  \begin{center}
+    \scalebox{3}{\Huge \frownie}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]%\frametitle{Units of Measure}
+  \begin{center}
+    \vspace*{-1em}\Huge\hil{Units of Measure Types \smiley}
+  \end{center}
+  \begin{minted}[fontsize=\small]{fsharp}
+[<measure>] type N = (kg * m) / sec^2
+
+fireThrusters (x:float<N * sec>) = ...
+
+let duration = 2<sec>
+let force = 1000<N>
+fireThrusters (duration * force)
+
+let diag (x:float<'u>) (y:float<'u>)
+      = sqrt (x*x + y*y) // Pythagoras
+  \end{minted}
+\end{frame}
+
+\begin{frame}%\frametitle{Units of Measure}
+  \begin{center}
+    \includegraphics[width=11cm]{population_explosion.jpg}
+  \end{center}
+\end{frame}
+
 \end{document}
 
 Brainstorm:
