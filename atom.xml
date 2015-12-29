@@ -215,7 +215,8 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
   <div class="right">
 <p><img width="300" src="/images/32C3_knot_lambda.png" /></p>
 </div>
-<p>Der Curry Club wird auf dem 32. Chaos Communication Congress in Form <a href="https://events.ccc.de/congress/2015/wiki/Assembly:Curry_Club_Augsburg">einer Assembly</a> sein! Wir haben schon begonnen, uns ein bisschen Programm für die vier Tage zu überlegen, die Planung läuft aktuell über die Mailingliste.</p>
+<p>Der Curry Club ist auf dem 32. Chaos Communication Congress in Form <a href="https://events.ccc.de/congress/2015/wiki/Assembly:Curry_Club_Augsburg">einer Assembly</a> anwesend!</p>
+<p>Die Folien unseres Vortrags “10 modern programming concepts which your favourite programming language is missing” (Tag 3, 15:00) sind nun <a href="/files/10-modern-concepts.pdf">online</a>.</p>
 </article>
 ]]></summary>
 </entry>
