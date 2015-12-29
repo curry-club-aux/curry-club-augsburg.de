@@ -110,10 +110,10 @@ language is Haskell, Idris or one of the ML-style languages (XXX)}}
 
 \section{Overloaded semicolon}
 
-\begin{frame}[fragile]\frametitle{Overloaded semicolon}
+\begin{frame}[fragile]
   \vspace*{-1.5em}
   \begin{center}
-    \Huge \textbf{Callback hell ;-(}
+    \Huge \hil{Callback hell ;-(}
   \end{center}
 
   \begin{minted}{javascript}
@@ -132,10 +132,10 @@ getData(function(a) {
   And this is even without error handling!
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Overloaded semicolon}
+\begin{frame}[fragile]
   \vspace*{-1.5em}
   \begin{center}
-    \Huge \textbf{Overloaded semicolon :-)}
+    \Huge \hil{Overloaded semicolon :-)}
   \end{center}
 
   \begin{minted}{haskell}
@@ -153,7 +153,7 @@ d <- getMoreFoo     c
   parsing, \ldots
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Option types}
+\begin{frame}[fragile]
   \vspace*{-1.5em}
   \begin{center}
     \huge Quiz time! Spot the error.
@@ -172,15 +172,20 @@ int main(int argc, char *argv[]) {
   \end{minted}
   \pause
 
-  Also: Million Dollar Mistake by XXX.
+  Also: Million Dollar Mistake by Tony Hoare.
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Option types}
-  Solution: Option types.
+\begin{frame}[fragile]
+  \begin{center}
+    \huge
+    \hil{Solution: Option types.}
+  \end{center}
   \medskip
   \pause
 
   A value of type \mintinline{haskell}{Maybe Int} is
+  \medskip
+
   \begin{enumerate}
     \item either \mintinline{haskell}{Nothing}
     \item or a value of the form \mintinline{haskell}{Just x}, where~\mintinline{haskell}{x} is
@@ -196,8 +201,11 @@ int main(int argc, char *argv[]) {
   raise a proper exception.
 \end{frame}
 
-\begin{frame}[fragile]\frametitle{Pattern matching}
+\begin{frame}[fragile]
   \begin{center}
+    \vspace*{-1em}
+    \huge\hil{Pattern matching}
+
     \scalebox{0.5}{\input{baum.pspdftex}}
   \end{center}
 
@@ -214,8 +222,46 @@ inorder (Leaf x)   = [x]
 inorder (Fork l r) = inorder l ++ inorder r
   \end{minted}
 
-  Declare custom datatypes in just one line of code and write functions using
-  them with pattern matching.
+% Declare custom datatypes in just one line of code and write functions using
+% them with pattern matching.
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{center}
+    \vspace*{-1em}
+    \Huge
+    \hil{Typing}
+  \end{center}
+
+  \begin{minted}{java}
+BufferedReader in =
+    new BufferedReader(
+        new InputStreamReader(System.in)
+    );
+  \end{minted}
+
+  \begin{center}
+    \scalebox{3}{\Huge ;-(}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{center}
+    \vspace*{-1em}\Huge\hil{Types :-)}
+  \end{center}
+
+  A good type system provides:
+  \medskip
+
+  \begin{itemize}
+    \item inference: you don't have to type those types!
+    \item safety: no NullPointerException
+    \item ``algebraic data types'' and function types
+    \item parametricity: generics on steroids
+    \item higher-kinded types
+  \end{itemize}
+
+  Great for prototyping and refactoring!
 \end{frame}
 
 \end{document}
@@ -225,7 +271,7 @@ Brainstorm:
 * "overloaded semicolon" to avoid callback hell (and mention monads) (Ingo)
 * Maybe (Ingo)
 * data structures & pattern matching (Ingo)
-* Type system with type inference
+* Type system with type inference (Ingo)
 * QuickCheck (Tim)
 * time traveling debugger (Tim)
 * Units of measure types (Tim)
