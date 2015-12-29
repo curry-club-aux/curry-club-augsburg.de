@@ -8,6 +8,7 @@
 \usepackage{booktabs}
 \usepackage{ragged2e}
 \usepackage{mathtools}
+\usepackage{wasysym}
 
 \usepackage{minted}
 \usemintedstyle{tango}
@@ -113,18 +114,18 @@ language is Haskell, Idris or one of the ML-style languages (XXX)}}
 \begin{frame}[fragile]
   \vspace*{-1.5em}
   \begin{center}
-    \Huge \hil{Callback hell ;-(}
+    \Huge \hil{Callback hell \frownie}
   \end{center}
 
   \begin{minted}{javascript}
 getData(function(a) {
-    getMoreData(a, function(b) {
-        getYetMoreData(b, function(c) {
-            getMoreFoo(c, function(d) {
-                ...
-            });
-        });
+  getMoreData(a, function(b) {
+    getYetMoreData(b, function(c) {
+      getMoreFoo(c, function(d) {
+        ...
+      });
     });
+  });
 });
   \end{minted}
 
@@ -135,14 +136,14 @@ getData(function(a) {
 \begin{frame}[fragile]
   \vspace*{-1.5em}
   \begin{center}
-    \Huge \hil{Overloaded semicolon :-)}
+    \Huge \hil{Overloaded semicolon \smiley}
   \end{center}
 
   \begin{minted}{haskell}
-a <- getData
-b <- getMoreData    a
-c <- getYetMoreData b
-d <- getMoreFoo     c
+do a <- getData
+   b <- getMoreData    a
+   c <- getYetMoreData b
+   d <- getMoreFoo     c
   \end{minted}
 
   Simple \& easy. You can pretend that you're using blocking I/O.
@@ -162,12 +163,12 @@ d <- getMoreFoo     c
   \begin{minted}{c}
 #include <stdlib.h>
 int main(int argc, char *argv[]) {
-    ...;
-    user_input = ...;
-    if(abs(user_input) > ...) {
-        exit(1);
-    }
-    ...;
+  ...;
+  user_input = ...;
+  if(abs(user_input) > ...) {
+      exit(1);
+  }
+  ...;
 }
   \end{minted}
   \pause
@@ -210,7 +211,7 @@ int main(int argc, char *argv[]) {
   \end{center}
 
   \small
-  \begin{minted}{haskell}
+  \begin{minted}[fontsize=\footnotesize]{haskell}
 data Tree = Leaf Int | Fork Tree Tree
 
 ex = Fork
@@ -233,21 +234,21 @@ inorder (Fork l r) = inorder l ++ inorder r
     \hil{Typing}
   \end{center}
 
-  \begin{minted}{java}
+  \begin{minted}[fontsize=\small]{java}
 BufferedReader in =
-    new BufferedReader(
-        new InputStreamReader(System.in)
-    );
+  new BufferedReader(
+    new InputStreamReader(System.in)
+  );
   \end{minted}
 
   \begin{center}
-    \scalebox{3}{\Huge ;-(}
+    \scalebox{3}{\Huge \frownie}
   \end{center}
 \end{frame}
 
 \begin{frame}[fragile]
   \begin{center}
-    \vspace*{-1em}\Huge\hil{Types :-)}
+    \vspace*{-1em}\Huge\hil{Types \smiley}
   \end{center}
 
   A good type system provides:
