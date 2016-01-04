@@ -243,7 +243,7 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 <p><img width="150" src="/images/pfds.jpg" /></p>
 </div>
 <p>Tim wird die Reihe über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a> mit einem Vortrag über Banker’s Queues einleiten.</p>
-<p>Makarius wird die Reihe <em>Beweise in Isabelle</em> fortsetzen.</p>
+<p>Makarius wird die Reihe <em>Programme und Beweise in Isabelle/HOL</em> fortsetzen. Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik zu <a href="https://www.youtube.com/watch?v=F53aOAW9PBo">scheinbar unmöglichen funktionalen Programmen</a> sowie eine Nacharbeit zu den beiden Haskell-Workshops (<a href="https://curry-club-aux.github.io/haskell-workshop/uebung.pdf">erstes Übungsblatt</a>, <a href="https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf">zweites Übungsblatt</a>) sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht wird.</p>
 <p>Manuel wird einen Vortrag zum Thema <em>Was ist die Quadratwurzel eines Baums?</em> halten. Darin geht es um ein paar unausgegorene, aber interessante Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und Parametrizität.</p>
 </article>
 ]]></summary>
