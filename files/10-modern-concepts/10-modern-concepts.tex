@@ -28,7 +28,7 @@
 \title[10 modern programming concepts]{10 modern programming concepts \\ which
 your favourite programming language is missing\footnote{unless your favorite
 language is \ldots}}
-\author[Curry Club Augsburg]{\includegraphics[scale=0.6]{../images/logo-heller-hintergrund}}
+\author[Curry Club Augsburg]{\includegraphics[scale=0.6]{logo-heller-hintergrund}}
 \institute{32th Chaos Communication Congress}
 \date{December 29th, 2015}
 
@@ -171,18 +171,17 @@ is(sqrt(16), 4, "sqrt(16) is working");
 # ...
   \end{minted}
 
-  This does not scale! Better:
+  This does not scale! Property-checking is a useful addition:
 
   \begin{minted}{haskell}
 > quickCheck $ \x -> sqrt(x*x) == x
 *** Failed! Falsifiable (after 2 tests):
 -0.269864
-
 > quickCheck $ \x -> sqrt(x*x) == abs x
 +++ OK, passend 100 tests.
   \end{minted}
 
-  Automatic test case generation.
+  Automatic test case generation and counterexample simplification.
 \end{frame}
 
 
@@ -205,7 +204,8 @@ int main(int argc, char *argv[]) {
   \end{minted}
   \pause
 
-  Also: Million Dollar Mistake by Tony Hoare.
+  Also: Billion Dollar Mistake by Tony Hoare.
+  \url{http://lambda-the-ultimate.org/node/3186}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -231,7 +231,8 @@ int main(int argc, char *argv[]) {
   \medskip
 
   Use option types when you cannot return a meaningful result and don't want to
-  raise a proper exception.
+  raise a proper exception, when you have optional arguments, or when you have
+  optional entries in data structures.
 \end{frame}
 
 \begin{frame}[c]
@@ -274,9 +275,9 @@ inorder (Fork l r) = inorder l ++ inorder r
 
   \begin{minted}[fontsize=\small]{java}
 BufferedReader in =
-  new BufferedReader(
-    new InputStreamReader(System.in)
-  );
+    new BufferedReader(
+        new InputStreamReader(System.in)
+    );
   \end{minted}
 
   \begin{center}
@@ -330,7 +331,7 @@ BufferedReader in =
 
 \begin{frame}[fragile]%\frametitle{Units of Measure}
   \begin{center}
-    \vspace*{-1em}\Huge\hil{Units of Measure Types \smiley}
+    \vspace*{-1em}\Large\hil{Units of Measure Types \smiley}
   \end{center}
   \begin{minted}{text}
 [<measure>] type N = (kg * m) / sec^2
@@ -362,6 +363,12 @@ let diag (x:float<'u>) (y:float<'u>)
   \end{center}
 \end{frame}
 
+\begin{frame}
+  \begin{center}
+    \vspace*{-1em}\Huge\hil{Dependent types}
+    \medskip
+  \end{center}
+\end{frame}
 \end{document}
 
 Brainstorm:
