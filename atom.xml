@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2015-12-09T00:00:00Z</updated>
+    <updated>2016-01-05T00:00:00Z</updated>
     <entry>
+    <title>Programm für das zehnte Treffen am 18. Februar 2016</title>
+    <link href="http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html</id>
+    <published>2016-01-05T00:00:00Z</published>
+    <updated>2016-01-05T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das zehnte Treffen am 18. Februar 2016</h1>
+    <div class="info">
+      Gepostet am  5. Jan 16
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Zweiter großer Haskell-Workshop des Curry Clubs Augsburg am 20. Dezember 2015</title>
     <link href="http://curry-club-augsburg.de/posts/2015-12-09-zweiter-workshop.html" />
     <id>http://curry-club-augsburg.de/posts/2015-12-09-zweiter-workshop.html</id>
@@ -580,74 +603,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <img src="/images/sticker-ausgedruckt.jpg" title="Frisch gedruckte Sticker" alt="" />
 
 </div>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Hitliste der Talks von der ICFP</title>
-    <link href="http://curry-club-augsburg.de/posts/2015-09-16-hitliste-der-ICFP-talks.html" />
-    <id>http://curry-club-augsburg.de/posts/2015-09-16-hitliste-der-ICFP-talks.html</id>
-    <published>2015-09-16T00:00:00Z</published>
-    <updated>2015-09-16T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Hitliste der Talks von der ICFP</h1>
-    <div class="info">
-      Gepostet am 16. Sep 15
-      
-    </div>
-    
-    
-  </header>
-
-  <p><a href="https://github.com/timjb">Tim</a> hat die offizielle Empfehlungsliste des Curry Clubs für Talks von der diesjährigen <a href="http://www.icfpconference.org/">ICFP</a> erstellt. Wir wünschen angenehme Stunden der funktionalen Weiterbildung!</p>
-<ul>
-<li><p><a href="https://www.youtube.com/watch?v=ga83zOo95bs">The State of GHC</a> von Simon Peyton Jones<br />
- Ein Ausblick auf GHC 8.0. Pflichtvideo. (Achtung: Comic Sans in gelb auf blau.)</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=ZEUTndOzrvw">The State of GHCJS</a> von Luite Stegeman<br />
- Kurzzusammenfassung: GHCJS ist mit GHC 7.10.2 endlich einfach zu installieren. Es gibt eine neue Version der GHCJS-Standardbibliothek. Es steht einem Praxiseinsatz von GHCJS nichts mehr im Wege!</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=hI0ajVy2xEk">Practical Probabilistic Programming with Monads</a> von Adam Scibior<br />
- Eine DSL, mit der man bayesische Inferenz betreiben kann. (sehr interessant)</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=AFSLMTgoClI">GADTs Meet Their Match</a> von George Karachalias<br />
- Wenn man in Haskell eine Funktion “a -&gt; b” definiert, dann überprüft GHC, ob man mit der Definition jede mögliche Eingabe abgedeckt hat. Das funktioniert aber noch nicht so gut, wenn a ein GADT ist. Der Vortrag beschreibt einen Algorithmus, der dieses Problem löst.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=PrDSxnO29d0">Look Ma, No Signatures!</a> von Edward Z. Yang<br />
- Wie bringt man GHC bei, rekursiv voneinander abhängige Module zu kompilieren? (sehr unterhaltsam)</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=T88TDS7L5DY">The Unreasonable Effectiveness of Lenses for Business Applications</a> von Edward Kmett<br />
- Ein Lens-Vortrag vom geliebten Propheten höchstpersönlich. Außerdem: Sonderpreis für den besten Vortragstitel</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=WajfYdqCeAM">Practical Principled FRP</a> von Atze van der Ploeg<br />
- Untertitel: Forget the past, change the future! FRPNow! Ein neuer Ansatz für Functional Reactive Programming.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=NVEgyJCTee4">The History of Standard ML: Ideas, Principles, Culture</a> von David MacQueen<br />
- Von Makarius empfohlen.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=RRmb2RtU0hU">Stack</a> von Emanual Borsboom<br />
- Über die neue <code>cabal</code>-Alternative. Ich habe sehr gute Erfahrungen mit Stack gemacht. Im Gegensatz zu Cabal hatte ich mit Stack noch nie Probleme damit, dass verschiedene Pakete unterschiedliche Versionen von Dependencies vorausgesetzt haben. Es verwendet dazu eine kuratierte Datenbank von Paketen und Schnappschüssen von miteinander verträglichen Versionen von diesen.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=lNSfVpKEnnI">Which simple Types have a unique Inhabitant?</a> von Gabriel Scherer<br />
- Es wird ein Algorithmus skizziert, der diese Frage wird im Setting des einfach typisierten Lambda-Kalküls beantwortet. In komplexeren Typsystemen ist diese Frage unentscheidbar. Ein Algorithmus, der diese Frage in vielen Fällen beantwortet kann aber trotzdem hilfreich für Programmierer sein.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=W6a36RoFeNw">Future of Haskell: Dependent types</a> von Richard Eisenberg<br />
- Es gibt den Plan, GHC abhängige Typen beizubringen. Dieser Vortrag stellt kurz (in ca 5min) vor, was damit möglich sein wird. Danach gibt es eine lange Diskussion.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=guMLPr6eBLo">The Remote Monad Design Pattern</a> von Andy Gill<br />
- Wie man durch Bündeln von Kommandos mit möglichst wenigen Netzwerkzugriffen andere Geräte, wie z.B. Toaster steuert.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=oAz8AEf7WDA">Diagrams: A Functional EDSL for Vector Graphics</a> von Ryan Yates und Brent Yorgey<br />
- Über die supercoole Bibliothek <a href="http://projects.haskell.org/diagrams/"><code>diagrams</code></a>, mit der man Vektorgraphiken mit Haskell zeichnen kann.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=D1rm5SnvmKE">Guilt Free Ivory</a> von Galois<br />
- Design einer Haskell-DSL, die sicheren C-Code für eingebettete Systeme erzeugt.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=NBBQoX1EWCY">Monadic Effects</a> von Niki Vazou und Daan Leijen<br />
- Beschreibt die Sprache Koka, die nach JavaScript kompiliert und ein Effektsystem besitzt. Es ist dabei möglich, eigene Effekte zu implementieren, indem man einfach eine Monadeninstanz schreibt.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=nBaRKI5q-DI">Dependent Types for Real time Constraints</a> von William Blair<br />
- Für Real-Time-Systeme (z.B. der Flugkontrolle in einem Flugzeug) gibt es synchrone Programmiersprachen: Diese besitzen einen globalen Taktgeber. Zu jedem Takt werden Daten von Sensoren ausgelesen, Berechnungen ausgeführt oder Anweisungen an andere Systeme geschickt. Nun möchte man in so einem System vielleicht auch Berechnungen haben, die länger dauern als einen Takt, z.B. 10 Takte. Diese müssen mit anderen Berechnungen synchronisiert werden. Um zu überprüfen, dass alle Prozesse aufeinander abgestimmt sind (z.B. ein Prozess erwartet einen Input von einem anderem Prozess genau zu dem Takt wo der andere Prozess fertig ist), kann man abhängige Typen verwenden.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=3Ltgkjpme-Y">Freer Monads, More Extensible Effects</a> von Oleg Kiselyov (<a href="http://okmij.org/ftp/Haskell/extensible/more.pdf">Paper</a>)<br />
- Dieses Thema werden wir noch genauer im Curry Club besprechen. Der Vortrag baut auf den Ideen zur performanten Implementierung von freien Monaden des Papers <a href="http://okmij.org/ftp/Haskell/zseq.pdf">Reflection without remorse</a> von der letztjährigen ICFP (<a href="https://youtube.com/watch?v=_XoI65Rxmss">Video des Vortrags</a>) auf.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=bEJKKquyngk">Dependent Types and Effects in F*</a> von Nik Swamy und Catalin Hritcu<br />
- F* ist ein ML-Dialekt, welcher abhängige Typen, Refinement Types und ein Effektsystem kombiniert. Dank Einbinding eines SMT-Solvers können Beweise automatisiert werden. Falls der SMT-Solver scheitert, kann man per Hand einen Beweisterm angeben. Es kann ML-Code extrahiert werden. (Leider auch ein Beispiel dafür, warum man Text auf Folien auf keinen Fall grau machen sollte!)</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=_1_3wi_sLKo">Meta Programming and Auto Tuning in the Search for High Performance GPU Code</a> von Michael Vollmer<br />
- Stellt eine DSL vor, mit der man performanten Code für die GPU schreiben kann, vor. Zur Performanceoptimierung des Codes wird eine automatisierte Suche verwendet. Der Programmierer kann die Suchparameter einstellen.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=s0wkCKZU3WI">Injective Type Families for Haskell</a> von Jan Stolarek<br />
- Wenn man Haskell programmiert, ist man manchmal gezwungen, Phantom-Parameter einzuführen, deren einziger Zweck es ist, einen Typ eindeutig festzulegen. In vielen Fällen liegt das daran, dass Typfamilien nicht injektiv sind. Das bedeutet, dass wenn TF eine Typfamilie vom Kind * -&gt; * ist, man nicht vom Typ <code>TF a</code> auf den Typ <code>a</code> schließen kann. Deswegen kann man nicht einfach die Typsignatur <code>TF a -&gt; Int</code> verwenden, sondern muss noch einen Phantomtyp einführen: <code>phantom a -&gt; TF a -&gt; Int</code>. (Ich hab leider kein Beispiel aus dem echten Leben zur Hand.) Dieser Vortrag beschreibt, wie man in Zukunft bestimmte Typfamilien in GHC als injektiv kennzeichnen kann.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=UizO7fZSkPY">A Typechecker Plugin for Units of Measure</a> von Adam Gundry<br />
- Wie man ein GHC-Typsystem-Plugin schreibt, das Haskell beibringt, mit physikalischen Einheiten umzugehen. So etwas ist auch in <a href="http://www.idris-lang.org/">Idris</a> ohne weiteres möglich und darum gibt es eine <a href="https://github.com/timjb/quantities">Idris Bibliothek von Tim</a>, die genau das tut.</p></li>
-<li><p><a href="https://www.youtube.com/watch?v=vXRIXkbjLbU">Type Level Web APIs</a> von Andres Löh<br />
- Ein Vortrag über das Webframework <a href="https://hackage.haskell.org/package/servant">Servant</a>. In Servant schreibt man zunächst eine Art Sitemap der Webseite, in der Routen, Parameter und HTTP-Methoden und Rückgabewerte der Seite beschrieben sind. Diese Sitemap schreibt man in einer Art DSL auf Typebene. Man kann diese Sitemap dann für verschiedene Zwecke nutzen, zum Beispiel um die Seite auch tatsächlich zu implementieren (dabei muss man sich dann nicht um das Routing oder das Formatieren des Outputs kümmern), um Dokumentation zu erzeugen, um eine Client-Library in JavaScript zu generieren oder um Funktionen zu erhalten, mit denen sich die Webseite als Client ansprechen lässt. Ein interessanter Ansatz, den sich jeder mal anschauen sollte!</p></li>
-</ul>
-<p>Viel Spaß beim Ansehen!</p>
 </article>
 ]]></summary>
 </entry>
