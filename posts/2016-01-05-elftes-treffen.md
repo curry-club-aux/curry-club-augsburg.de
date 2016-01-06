@@ -1,5 +1,5 @@
 ---
-title: Programm für das zehnte Treffen am 18. Februar 2016
+title: Programm für das elfte Treffen am 18. Februar 2016
 subtitle: GHC.Generics
 meetup-announcement: 2016-02-18
 meetup-counter: 11
