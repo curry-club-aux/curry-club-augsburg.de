@@ -10,14 +10,14 @@
     </author>
     <updated>2016-01-05T00:00:00Z</updated>
     <entry>
-    <title>Programm für das zehnte Treffen am 18. Februar 2016</title>
+    <title>Programm für das elfte Treffen am 18. Februar 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html</id>
     <published>2016-01-05T00:00:00Z</published>
     <updated>2016-01-05T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
-    <h1>Programm für das zehnte Treffen am 18. Februar 2016</h1>
+    <h1>Programm für das elfte Treffen am 18. Februar 2016</h1>
     <div class="info">
       Gepostet am  5. Jan 16
       
@@ -238,8 +238,8 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
   <div class="right">
 <p><img width="300" src="/images/32C3_knot_lambda.png" /></p>
 </div>
-<p>Der Curry Club ist auf dem 32. Chaos Communication Congress in Form <a href="https://events.ccc.de/congress/2015/wiki/Assembly:Curry_Club_Augsburg">einer Assembly</a> anwesend!</p>
-<p>Die Folien unseres Vortrags “10 modern programming concepts which your favourite programming language is missing” (Tag 3, 15:00) sind nun <a href="/files/10-modern-concepts.pdf">online</a>.</p>
+<p>Der Curry Club war auf dem 32. Chaos Communication Congress in Form <a href="https://events.ccc.de/congress/2015/wiki/Assembly:Curry_Club_Augsburg">einer Assembly</a> anwesend!</p>
+<p>Die Folien unseres Vortrags “10 modern programming concepts which your favourite programming language is missing” (Tag 3, 15:00) sind <a href="/files/10-modern-concepts.pdf">online</a>.</p>
 </article>
 ]]></summary>
 </entry>
