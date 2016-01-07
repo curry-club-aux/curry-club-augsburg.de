@@ -28,7 +28,7 @@
     
   </header>
 
-  <p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor.</p>
+  <p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält vielleicht einen Vortrag über das Scala-Äquivalent shapeless.</p>
 <p>Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.</p>
 </article>
 ]]></summary>
