@@ -8,3 +8,5 @@ author: Ingo Blechschmidt
 ---
 
 Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
+
+Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.
