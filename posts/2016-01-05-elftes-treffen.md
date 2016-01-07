@@ -7,6 +7,7 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
+Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält
+vielleicht einen Vortrag über das Scala-Äquivalent shapeless.
 
 Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.
