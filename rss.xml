@@ -25,6 +25,7 @@
   </header>
 
   <p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor.</p>
+<p>Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.</p>
 </article>
 ]]></description>
     <pubDate>Tue, 05 Jan 2016 00:00:00 UT</pubDate>
