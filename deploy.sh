@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# configuration
+TARGET_BRANCH=gh-pages
+SITE=./site
+
 cd $(dirname "$0")
 CURR_REPO=$(git rev-parse --show-toplevel)
 CURR_ORIGIN=$(git config --get remote.origin.url)
@@ -22,23 +26,23 @@ function onerr() {
 trap onerr ERR
 
 # may fail if "$CURR_REPO" is a 'shallow' repository
-if git clone -b gh-pages --single-branch "$CURR_REPO" "$BUILD_DIR"; then
+if git clone -b "$TARGET_BRANCH" --single-branch "$CURR_REPO" "$BUILD_DIR"; then
   pushd "$BUILD_DIR"
-  git pull "$ORIGIN" gh-pages
+  git pull "$ORIGIN" "$TARGET_BRANCH"
   popd
 else
-  git clone -b gh-pages --single-branch "$ORIGIN" "$BUILD_DIR"
+  git clone -b "$TARGET_BRANCH" --single-branch "$ORIGIN" "$BUILD_DIR"
 fi
 
-./site clean
-./site build
+$SITE clean
+$SITE build
 cp -R ./_site/* "$BUILD_DIR"
-./site clean
+$SITE clean
 
 cd "$BUILD_DIR"
 git add --all
 if git commit -m "Updated website output $(date '+%m/%d/%y %H:%M')"; then
-  git push "$ORIGIN" gh-pages
+  git push "$ORIGIN" "$TARGET_BRANCH"
 else
   echo "No changes to generated website."
 fi
