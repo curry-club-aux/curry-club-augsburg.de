@@ -1,7 +1,7 @@
 ---
 title: Programm für das zehnte Treffen am 21. Januar 2016
 subtitle: Rein funktionale Datenstrukturen, Programme und Beweise in Isabelle/HOL, Quadratwurzeln von Bäumen
-meetup-announcement: 2016-01-21
+meetup-announcement: 2016-01-28
 meetup-counter: 10
 meetup-time: 19:00
 author: Tim Baumann

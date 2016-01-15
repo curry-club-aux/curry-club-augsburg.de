@@ -1,7 +1,7 @@
 ---
 title: Programm für das elfte Treffen am 18. Februar 2016
 subtitle: Generics in Haskell und vielleicht auch in Scala
-meetup-announcement: 2016-02-18
+meetup-announcement: 2016-02-25
 meetup-counter: 11
 meetup-time: 19:00
 author: Ingo Blechschmidt
