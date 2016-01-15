@@ -1,5 +1,5 @@
 ---
-title: Programm für das zehnte Treffen am 21. Januar 2016
+title: Programm für das zehnte Treffen am 28. Januar 2016
 subtitle: Rein funktionale Datenstrukturen, Programme und Beweise in Isabelle/HOL, Quadratwurzeln von Bäumen
 meetup-announcement: 2016-01-28
 meetup-counter: 10
