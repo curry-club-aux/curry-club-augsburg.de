@@ -12,15 +12,15 @@ author: Tim Baumann
   </a>
 </div>
 
-Liebe Freundinnen und Freunde der Sonne!
+Liebe Freundinnen der Sonne!
 
 Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu der Fortsetzung unseres
 **Haskell-Workshops** ein. Diese findet am **20. Dezember 2015**,
 einem Sonntag, von 9:00 Uhr bis 17:00 Uhr im **OpenLab Augsburg** statt. Wie beim ersten Mal ist die Teilnahme kostenlos.
 
-Zielgruppe des Workshops sind alle Teilnehmenden des ersten Workshops sowie Einsteigerinnen und Einsteiger auf allen Fortschrittslevels.
+Zielgruppe des Workshops sind alle Teilnehmerinnen des ersten Workshops sowie Einsteigerinnen auf allen Fortschrittslevels.
 
-Mit den Teilnehmenden vom letzten Mal werden wir dort weitermachen, wo wir das letzte Mal aufgehört haben.
+Mit den Teilnehmerinnen vom letzten Mal werden wir dort weitermachen, wo wir das letzte Mal aufgehört haben.
 Während es damals darum ging die Basics zu lernen, wollen wir dieses Mal auf folgende Fragen eingehen:
 
 * Welche verwendungsfertige Funktionen gibt es in der Standardbibliothek und auf [Hackage][hackage]?
@@ -31,7 +31,7 @@ Während es damals darum ging die Basics zu lernen, wollen wir dieses Mal auf fo
 Am Anfang werden wir Monaden wiederholen. Ingo hat dazu auch einen [eigenen Blog-Post][monad-tutorial] geschrieben. Ihr tut euch mit Monaden erheblich leichter, wenn ihr diesen Artikel vor dem Workshop liest!
 Falls ihr das letzte Mal nicht fertig geworden seid, dann ist das kein Problem. Dann könnt ihr einfach das [Übungsblatt][uebung] weiter bearbeiten und wir helfen euch dabei.
 
-Für Neueinsteigerinnen und Neueinsteiger wird es eine eigene Gruppe geben.
+Für Neueinsteigerinnen wird es eine eigene Gruppe geben.
 Teilnahmevoraussetzung für Neulinge ist entweder Erfahrung mit einer beliebigen anderen
 Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken.
 
