@@ -30,3 +30,5 @@ Manuel wird einen Vortrag zum Thema *Was ist die Quadratwurzel eines Baums?*
 halten. Darin geht es um ein paar unausgegorene, aber interessante
 Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und
 Parametrizität.
+
+Dr. Stefan Wehr von [factis research](http://www.factisresearch.com/) wird kurz etwas über den praktischen Einsatz von Haskell in der Entwicklung von [Checkpad Med](http://cp-med.com/) erzählen.
