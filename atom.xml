@@ -28,7 +28,8 @@
     
   </header>
 
-  <p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält vielleicht einen Vortrag über das Scala-Äquivalent shapeless.</p>
+  <p>Makarius wird die Reihe <em>Programme und Beweise in Isabelle/HOL</em> fortsetzen. Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik zu <a href="https://www.youtube.com/watch?v=F53aOAW9PBo">scheinbar unmöglichen funktionalen Programmen</a> sowie eine Nacharbeit zu den beiden Haskell-Workshops (<a href="https://curry-club-aux.github.io/haskell-workshop/uebung.pdf">erstes Übungsblatt</a>, <a href="https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf">zweites Übungsblatt</a>) sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht wird.</p>
+<p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält vielleicht einen Vortrag über das Scala-Äquivalent <a href="https://github.com/milessabin/shapeless">shapeless</a>.</p>
 <p>Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.</p>
 </article>
 ]]></summary>
@@ -263,13 +264,17 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
     
   </header>
 
-  <div class="right">
+  <p>Manuel Eberl hielt einen Vortrag zum Thema <em>Was ist die Quadratwurzel eines Baums?</em>. Darin ging es um ein paar unausgegorene, aber interessante Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und Parametrizität.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/flD8Vh2Ghko" frameborder="0" allowfullscreen>
+</iframe>
+<p>Dr. Stefan Wehr erzählte von <a href="http://www.factisresearch.com/">factis research</a> vom praktischen Einsatz von Haskell in der Entwicklung von <a href="http://cp-med.com/">Checkpad Med</a>.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XLJQQLKvGF0" frameborder="0" allowfullscreen>
+</iframe>
+<div class="right">
 <p><img width="150" src="/images/pfds.jpg" /></p>
 </div>
-<p>Tim wird die Reihe über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a> mit einem Vortrag über Banker’s Queues einleiten.</p>
-<p>Makarius wird die Reihe <em>Programme und Beweise in Isabelle/HOL</em> fortsetzen. Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik zu <a href="https://www.youtube.com/watch?v=F53aOAW9PBo">scheinbar unmöglichen funktionalen Programmen</a> sowie eine Nacharbeit zu den beiden Haskell-Workshops (<a href="https://curry-club-aux.github.io/haskell-workshop/uebung.pdf">erstes Übungsblatt</a>, <a href="https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf">zweites Übungsblatt</a>) sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht wird.</p>
-<p>Manuel wird einen Vortrag zum Thema <em>Was ist die Quadratwurzel eines Baums?</em> halten. Darin geht es um ein paar unausgegorene, aber interessante Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und Parametrizität.</p>
-<p>Dr. Stefan Wehr von <a href="http://www.factisresearch.com/">factis research</a> wird kurz etwas über den praktischen Einsatz von Haskell in der Entwicklung von <a href="http://cp-med.com/">Checkpad Med</a> erzählen.</p>
+<p>Tim hielt einen Vortrag über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a>, genauer über Banker’s Queues. Das Video folgt in Kürze.</p>
+<p>Makarius’ Vortrag wurde aufgrund der fortgeschrittenen Uhrzeit auf das nächste Treffen verschoben.</p>
 </article>
 ]]></summary>
 </entry>
