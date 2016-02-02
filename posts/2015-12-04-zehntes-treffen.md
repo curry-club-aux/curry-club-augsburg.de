@@ -7,28 +7,20 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
+Manuel Eberl hielt einen Vortrag zum Thema *Was ist die Quadratwurzel eines Baums?*. Darin ging es um ein paar unausgegorene, aber interessante
+Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und
+Parametrizität.
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/flD8Vh2Ghko" frameborder="0" allowfullscreen></iframe>
+
+Dr. Stefan Wehr erzählte von [factis research](http://www.factisresearch.com/) vom praktischen Einsatz von Haskell in der Entwicklung von [Checkpad Med](http://cp-med.com/).
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XLJQQLKvGF0" frameborder="0" allowfullscreen></iframe>
+
 <div class="right">
   <img width="150" src="/images/pfds.jpg" />
 </div>
 
-Tim wird die Reihe über [Purely Functional Data Structures](https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf) mit einem Vortrag über Banker's Queues einleiten.
+Tim hielt einen Vortrag über [Purely Functional Data Structures](https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf), genauer über Banker's Queues. Das Video folgt in Kürze.
 
-Makarius wird die Reihe *Programme und Beweise in Isabelle/HOL* fortsetzen.
-Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik
-zu [scheinbar unmöglichen funktionalen
-Programmen](https://www.youtube.com/watch?v=F53aOAW9PBo)
-sowie eine Nacharbeit zu
-den beiden Haskell-Workshops ([erstes
-Übungsblatt](https://curry-club-aux.github.io/haskell-workshop/uebung.pdf),
-[zweites
-Übungsblatt](https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf))
-sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von
-Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht
-wird.
-
-Manuel wird einen Vortrag zum Thema *Was ist die Quadratwurzel eines Baums?*
-halten. Darin geht es um ein paar unausgegorene, aber interessante
-Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und
-Parametrizität.
-
-Dr. Stefan Wehr von [factis research](http://www.factisresearch.com/) wird kurz etwas über den praktischen Einsatz von Haskell in der Entwicklung von [Checkpad Med](http://cp-med.com/) erzählen.
+Makarius' Vortrag wurde aufgrund der fortgeschrittenen Uhrzeit auf das nächste Treffen verschoben.
