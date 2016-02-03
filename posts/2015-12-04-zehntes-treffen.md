@@ -21,6 +21,8 @@ Dr. Stefan Wehr erzählte von [factis research](http://www.factisresearch.com/) 
   <img width="150" src="/images/pfds.jpg" />
 </div>
 
-Tim hielt einen Vortrag über [Purely Functional Data Structures](https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf), genauer über Banker's Queues. Das Video folgt in Kürze.
+Tim hielt einen Vortrag über [Purely Functional Data Structures](https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf), genauer über Banker's Queues.
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/u14K7z365mY" frameborder="0" allowfullscreen></iframe>
 
 Makarius' Vortrag wurde aufgrund der fortgeschrittenen Uhrzeit auf das nächste Treffen verschoben.
