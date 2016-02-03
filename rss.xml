@@ -269,7 +269,9 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 <div class="right">
 <p><img width="150" src="/images/pfds.jpg" /></p>
 </div>
-<p>Tim hielt einen Vortrag über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a>, genauer über Banker’s Queues. Das Video folgt in Kürze.</p>
+<p>Tim hielt einen Vortrag über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a>, genauer über Banker’s Queues.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/u14K7z365mY" frameborder="0" allowfullscreen>
+</iframe>
 <p>Makarius’ Vortrag wurde aufgrund der fortgeschrittenen Uhrzeit auf das nächste Treffen verschoben.</p>
 </article>
 ]]></description>
