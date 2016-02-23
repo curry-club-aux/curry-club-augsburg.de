@@ -7,6 +7,13 @@ dependencies:
     - cabal install --dependencies-only --avoid-reinstalls
 
 machine:
+  pre:
+    # see http://stackoverflow.com/a/34811594/767120
+    # and https://github.com/Yuras/Hate/commit/f9e63b9144fb6589f3658a01e905ba600e6671bc
+    - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 10
+    - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.6 10
+    - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 20
+    - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 20
   ghc:
     version: 7.10.2
 
