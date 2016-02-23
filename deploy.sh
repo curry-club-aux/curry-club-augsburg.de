@@ -35,7 +35,11 @@ else
 fi
 
 $SITE clean
-$SITE build
+if hash stack 2>/dev/null; then
+  $SITE build --use-stack
+else
+  $SITE build
+fi
 cp -R ./_site/* "$BUILD_DIR"
 $SITE clean
 
