@@ -79,12 +79,12 @@ install:
 - |
   case "$BUILD" in
     stack)
-      stack --no-terminal --install-ghc $ARGS install --only-dependencies
+      stack --no-terminal --install-ghc $ARGS install
       ;;
     cabal)
       cabal --version
       travis_retry cabal update
-      cabal install --only-dependencies --force-reinstalls --ghc-options=-O0 --reorder-goals --max-backjumps=-1 $CABALARGS
+      cabal install --force-reinstalls --ghc-options=-O0 --reorder-goals --max-backjumps=-1 $CABALARGS
       ;;
   esac
 
