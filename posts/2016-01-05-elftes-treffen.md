@@ -7,7 +7,7 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Makarius wird die Reihe *Programme und Beweise in Isabelle/HOL* fortsetzen.
+Makarius gibt (diesmal wirklich) eine Einführung in *Programme und Beweise in Isabelle/HOL*.
 Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik
 zu [scheinbar unmöglichen funktionalen
 Programmen](https://www.youtube.com/watch?v=F53aOAW9PBo)
