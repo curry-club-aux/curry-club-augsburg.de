@@ -2,7 +2,11 @@
 
 # configuration
 TARGET_BRANCH=gh-pages
-SITE=./site
+if hash site 2>/dev/null; then
+  SITE=site
+else
+  SITE=./site
+fi
 
 cd $(dirname "$0")
 CURR_REPO=$(git rev-parse --show-toplevel)
