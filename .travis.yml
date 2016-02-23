@@ -93,8 +93,4 @@ before_script:
   - git config --global user.name "Travis"
 
 script:
-- stack path --local-bin-path
-- stack path
-- ls $HOME/.local/bin
-- stack exec runghc css/default.hs
 - ./deploy.sh "$REPO_URL"
