@@ -1,10 +1,10 @@
-# Webseite des Curry Club Augsburg [![Build Status][circleci-img]][circleci-url]
+# Webseite des Curry Club Augsburg [![Build Status][travisci-img]][travisci-url]
 
 Siehe auch: [Wiki][wiki], [Liste von Issues][issues]
 
 Der `master`-Branch enthält den Inhalt der Webseite. Das Haskell-Programm `site.hs` erzeugt aus den Inhalten eine statische Webseite. Es benutzt dafür die Haskell-Bibliothek [Hakyll][hakyll]. Die generierten statischen Dateien werden im [`gh-pages`][gh-pages-branch]-Branch hochgeladen und von [GitHub Pages][gh-pages] unter der URL [curry-club-augsburg.de](http://curry-club-augsburg.de/) verfügbar gemacht.
 
-Der Continuous-Integration-Dienst [CircleCI][circleci] wird dazu verwendet, die Seite bei Änderungen im `master`-Branch neu zu bauen und das Ergebnis in `gh-pages` zu veröffentlichen. Das Schild neben der Überschrift zeigt an, ob der letzte Buildvorgang erfolgreich war. Die Vorgehensweise ist in [diesem Artikel](http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html) beschrieben.
+Der Continuous-Integration-Dienst [TravisCI][travisci] wird dazu verwendet, die Seite bei Änderungen im `master`-Branch neu zu bauen und das Ergebnis in `gh-pages` zu veröffentlichen. Das Schild neben der Überschrift zeigt an, ob der letzte Buildvorgang erfolgreich war. Die Vorgehensweise ist in [diesem Artikel](http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html) beschrieben.
 
 ## Neuer Blogeintrag
 
@@ -34,7 +34,7 @@ Der Post, dessen `meetup-announcement`-Datum am nähesten in der Zukunft liegt, 
 
 ## Änderungen am Inhalt
 
-Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vornehmen. Es vergehen ca. 2 Minuten, bis CircleCi die Seite neu gebaut hat.
+Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vornehmen. Es vergehen ca. 2 Minuten, bis TravisCI die Seite neu gebaut hat.
 
 
 ## Änderungen an `site.hs`
@@ -64,7 +64,7 @@ $ stack build
 
 Dann kann man `./site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`.
 
-Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis CircleCI die Webseite neu generiert hat.
+Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis TravisCI die Webseite neu generiert hat.
 
 Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `./site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
@@ -84,6 +84,9 @@ Wenn man den Anderen die Änderungen erst einmal zeigen möchte, kann man folgen
 [circleci]: https://circleci.com/
 [circleci-img]: https://img.shields.io/circleci/project/curry-club-aux/curry-club-augsburg.de/master.svg
 [circleci-url]: https://circleci.com/gh/curry-club-aux/curry-club-augsburg.de/tree/master
+[travisci]: https://travis-ci.org/
+[travisci-img]: https://travis-ci.org/curry-club-aux/curry-club-augsburg.de.svg?branch=master
+[travisci-url]: https://travis-ci.org/curry-club-aux/curry-club-augsburg.de
 [gh-webinterface]: https://help.github.com/articles/github-flow-in-the-browser/
 [hakyll]: http://jaspervdj.be/hakyll/
 [gh-pages-branch]: https://github.com/curry-club-aux/curry-club-augsburg.de/tree/gh-pages
