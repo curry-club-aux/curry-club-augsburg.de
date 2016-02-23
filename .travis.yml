@@ -93,4 +93,7 @@ before_script:
   - git config --global user.name "Travis"
 
 script:
+- stack path --local-bin-path
+- stack path
+- ls $HOME/.local/bin
 - ./deploy.sh "$REPO_URL"
