@@ -22,11 +22,14 @@ wird. *Update:* Der Vortrag muss leider krankheitsbedingt entfallen. Er wird
 beim nächsten Treffen nachgeholt.
 
 Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
+*Update:* Entfällt wegen Krankheit und wird nachgeholt.
 <!-- Lars hält
 vielleicht einen Vortrag über das Scala-Äquivalent
 [shapeless](https://github.com/milessabin/shapeless). -->
 
 Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.
+
+Cornelius spricht über *Verified Firewall Ruleset Analysis*.
 
 Ingo stellt kombinatorische Spieltheorie mit surrealen Zahlen und Haskell vor:
 
