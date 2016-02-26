@@ -10,7 +10,7 @@ image-alt: Mit Haskell erstellte Skizzen des Zauberwürfels
 image-attr: <a href="http://github.com/timjb/diagrams-rubiks-cube.com/">Tim Baumann</a> (MIT)
 ---
 
-[Matthias](https://github.com/mgudemann) stellt Mercury vor.
+[Matthias](https://github.com/mgudemann) stellt Mercury vor ([Folien](http://guedemann.org/articles/August-13-2015.html), mehr zu [Typen](http://mercurylang.org/information/doc-release/mercury_ref/Types.html#Types), [Typklassen](http://mercurylang.org/information/doc-release/mercury_ref/Type-classes.html#Type-classes), [Existentiellen Typen](http://mercurylang.org/information/doc-release/mercury_ref/Existential-types.html#Existential-types)).
 
 [Tim](https://github.com/timjb) stellt Lenses vor, anschaulich erklärt mit
 seinem [Haskell-Paket für Zauberwürfel-Diagramme](https://github.com/timjb/diagrams-rubiks-cube).
