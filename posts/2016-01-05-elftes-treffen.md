@@ -7,32 +7,18 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Makarius gibt (diesmal wirklich) eine Einführung in *Programme und Beweise in Isabelle/HOL*.
-Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik
-zu [scheinbar unmöglichen funktionalen
-Programmen](https://www.youtube.com/watch?v=F53aOAW9PBo)
-sowie eine Nacharbeit zu
-den beiden Haskell-Workshops ([erstes
-Übungsblatt](https://curry-club-aux.github.io/haskell-workshop/uebung.pdf),
-[zweites
-Übungsblatt](https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf))
-sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von
-Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht
-wird. **Update:** Der Vortrag muss leider krankheitsbedingt entfallen. Er wird
-beim nächsten Treffen nachgeholt.
+Ingo stellte kombinatorische Spieltheorie mit surrealen Zahlen und Haskell vor.
 
-Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
-**Update:** Entfällt wegen Krankheit und wird nachgeholt.
-<!-- Lars hält
-vielleicht einen Vortrag über das Scala-Äquivalent
-[shapeless](https://github.com/milessabin/shapeless). -->
+(Video folgt.)
 
-Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.
-**Update:** Entfällt und wird nachgeholt.
+Cornelius sprach über *Verified Firewall Ruleset Analysis*. Diesen Vortrag hat
+er schon auf dem Kongress gehalten.
 
-Cornelius spricht über *Verified Firewall Ruleset Analysis*. Diesen Vortrag hat
-er schon auf dem Kongress gehalten; im Curry Club gibt's Details.
-Ingo stellt kombinatorische Spieltheorie mit surrealen Zahlen und Haskell vor.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/fKeGfbY5AyM" frameborder="0" allowfullscreen></iframe>
+
+Beim nächsten Treffen wird er seinen Vortrag fortsetzen.
+
+Makarius und Lukas mussten ihre Vorträge leider absagen. Auch Profpatsch' Kurvvortrag fand nicht statt. Die Vorträge werden beim nächsten oder übernächsten Treffen nachgeholt.
 
 <!--more-->
 
