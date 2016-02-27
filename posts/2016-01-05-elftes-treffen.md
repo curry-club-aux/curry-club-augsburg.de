@@ -9,7 +9,7 @@ author: Ingo Blechschmidt
 
 Ingo stellte kombinatorische Spieltheorie mit surrealen Zahlen und Haskell vor.
 
-(Video folgt.)
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Xm-CvksUxT0" frameborder="0" allowfullscreen></iframe>
 
 Cornelius sprach über *Verified Firewall Ruleset Analysis*. Diesen Vortrag hat
 er schon auf dem Kongress gehalten.
@@ -64,3 +64,6 @@ Makarius und Lukas mussten ihre Vorträge leider absagen. Auch Profpatsch' Kurvv
 > 
 > TL;DR: Math is cool again, we now have the tools for "executable math". Also:
 > iptables!
+>
+> [Folien](http://www.net.in.tum.de/pub/diekmann/32c3.pdf),
+> [Quellcode](https://github.com/diekmann/Iptables_Semantics)
