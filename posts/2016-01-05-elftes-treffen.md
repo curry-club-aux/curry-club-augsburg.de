@@ -9,7 +9,7 @@ author: Ingo Blechschmidt
 
 Ingo stellte kombinatorische Spieltheorie mit surrealen Zahlen und Haskell vor.
 
-(Video folgt.)
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Xm-CvksUxT0" frameborder="0" allowfullscreen></iframe>
 
 Cornelius sprach über *Verified Firewall Ruleset Analysis*. Diesen Vortrag hat
 er schon auf dem Kongress gehalten.
