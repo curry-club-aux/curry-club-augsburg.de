@@ -64,3 +64,6 @@ Makarius und Lukas mussten ihre Vorträge leider absagen. Auch Profpatsch' Kurvv
 > 
 > TL;DR: Math is cool again, we now have the tools for "executable math". Also:
 > iptables!
+>
+> [Folien](http://www.net.in.tum.de/pub/diekmann/32c3.pdf),
+> [Quellcode](https://github.com/diekmann/Iptables_Semantics)
