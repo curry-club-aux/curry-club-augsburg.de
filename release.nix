@@ -1,9 +1,13 @@
 with import <nixpkgs> {}; let
 
-  srcFilter = path: type: baseNameOf path != "git" && type != "symlink";
+  srcFilter = path: type: baseNameOf path != ".git" && type != "symlink";
   src = builtins.filterSource srcFilter ./.;
 
-  unpatchedSiteGen = haskellPackages.callPackage (import ./default.nix) {};
+  unpatchedSiteGen = haskellPackages.callPackage (import pkg) {};
+
+  pkg = pkgs.runCommand "curry-club-default.nix" { src = ./.; } ''
+    ${pkgs.cabal2nix}/bin/cabal2nix $src > $out
+  '';
 
 in rec {
   siteGen = haskell.lib.overrideCabal unpatchedSiteGen (drv: {

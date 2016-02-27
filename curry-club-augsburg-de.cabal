@@ -23,6 +23,6 @@ executable css
   ghc-options:      -threaded -Wall
   default-language: Haskell2010
 
--- Achtung! Das erzeugte Programm site benötigt zur korrekten Ausführung
--- eine aktuelle Installation von cabal-install. Sonst funktioniert nämlich
+-- Achtung! Das erzeugte Programm site benoetigt zur korrekten Ausfuehrung
+-- eine aktuelle Installation von cabal-install. Sonst funktioniert naemlich
 -- "cabal exec runghc" nicht.

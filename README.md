@@ -41,9 +41,10 @@ Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vorn
 
 Für Änderungen am Aufbau und Design der Seite empfiehlt es sich, lokal zu arbeiten, damit man Änderungen schneller sieht. Wenn man das Repo geklont hat, muss man zuerst die Abhängigkeiten installieren und `site.hs` kompilieren.
 
-Mit Nix:
+Mit Nix (bitte `default.nix` nicht einchecken):
 
 ```bash
+$ cabal2nix . > default.nix
 $ nix-shell
 [nix-shell] $ cabal build
 ```
