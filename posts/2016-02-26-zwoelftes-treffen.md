@@ -1,7 +1,7 @@
 ---
 title: Programm für das zwölfte Treffen am 24. März 2016
 subtitle: Isabelle sowie Generics in Haskell und vielleicht auch in Scala
-meetup-announcement: 2016-03-24
+meetup-announcement: 2016-03-17
 meetup-counter: 12
 meetup-time: 19:00
 author: Ingo Blechschmidt

@@ -50,6 +50,12 @@ layoutCss = do
     sym2 margin nil auto
   main_ ?
     padding nil nil (px 30) nil
+  article # ".important" ? do
+    backgroundColor rose
+    color reallyDarkPurple
+    p ? do
+      fontSize (px 20)
+      lambdify
   article # ".bright" ? do
     backgroundColor (other "#dddddd")
     color (other "#222")
