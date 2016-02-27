@@ -8,8 +8,56 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2016-02-26T00:00:00Z</updated>
+    <updated>2016-02-27T00:00:00Z</updated>
     <entry>
+    <title>Yolomorphismus</title>
+    <link href="http://curry-club-augsburg.de/posts/2016-02-27-yolomorphismus.html" />
+    <id>http://curry-club-augsburg.de/posts/2016-02-27-yolomorphismus.html</id>
+    <published>2016-02-27T00:00:00Z</published>
+    <updated>2016-02-27T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Yolomorphismus</h1>
+    <div class="info">
+      Gepostet am 27. Feb 16
+      
+          von Profpatsch
+      
+    </div>
+    
+    <img src="/images/yolo-cat.jpg" alt="Yolo-Katze" />
+    
+    
+  </header>
+
+  <p>Im Zuge unserer Unterhaltungen sind wir auf die Begrifflichkeit des „Yolomorphismus“ gekommen, welche Lars folgendermaßen definiert:</p>
+<dl>
+<dt>
+<dfn>Yolomorphisums</dfn>, n.
+</dt>
+<dd>
+partielle, nicht-injektive Funktion
+</dd>
+</dl>
+<p>Beispiele sind die allseits gefüchteten <code>head</code> und <code>tail</code>, sowie <code>(!!)</code>.</p>
+<p>Ingo ergänzte um Beispiele im weiteren Sinn (YOLO ernst genommen):</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">unsafePerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a
+
+<span class="ot">unsafeCoerce ::</span> a <span class="ot">-&gt;</span> b  <span class="co">-- mehr YOLO geht nicht</span></code></pre></div>
+<p>Lukas merkte noch an, dass man das alles wunderbar in ein Language-Feature umwandeln kann:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Yolomorphism</span> <span class="kw">where</span>
+
+<span class="fu">--|</span> <span class="dt">Yolomorphism</span> typeclass
+<span class="kw">class</span> <span class="dt">Yolomorphable</span> a <span class="kw">where</span>
+  <span class="fu">--|</span> because <span class="dt">YOLO</span>
+<span class="ot">  yoloPerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a
+  <span class="fu">--|</span> because even more <span class="dt">YOLO</span>
+<span class="ot">  yoloCoerce    ::</span> a <span class="ot">-&gt;</span> b</code></pre></div>
+<p>Wir sollten das mal dem Haskell’-Team zur Einführung in die <code>base</code>-Library vorschlagen.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das zwölfte Treffen am 24. März 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-02-26-zwoelftes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-02-26-zwoelftes-treffen.html</id>
@@ -584,47 +632,6 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <h1 id="wie-gehts-weiter">Wie geht’s weiter?</h1>
 <p>Zunächst gibt es <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">unsere Übungsaufgaben vom Workshop</a> zu Monaden. Ferner gibt es im Internet <a href="https://wiki.haskell.org/Monad_tutorials_timeline">zahlreiche Einführungen</a> in die Welt der Monaden. Außerdem gibt es Artikel über die <a href="https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/">Monad Tutorial Fallacy</a>. Sobald man Monaden verstanden hat, verliert man instantan die Fähigkeit, sie verständlich zu erklären.</p>
 <p>Wer fortgeschritten ist und verstehen möchte, was Monaden mit Monoiden zu tun haben, sei ein <a href="/files/freie-monaden.pdf">Foliensatz</a> von einem der Treffen des Curry Clubs empfohlen. Für alle lesenswert ist aber auf jeden Fall ein Artikel des großartigen Dan “sigfpe” Piponi: <a href="http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html">You could have invented monads! (And maybe you already have.)</a></p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Einladung zum großen Haskell-Workshop des Curry Clubs Augsburg am 25. Oktober 2015</title>
-    <link href="http://curry-club-augsburg.de/posts/2015-10-14-einladung-haskell-workshop.html" />
-    <id>http://curry-club-augsburg.de/posts/2015-10-14-einladung-haskell-workshop.html</id>
-    <published>2015-10-14T00:00:00Z</published>
-    <updated>2015-10-14T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Einladung zum großen Haskell-Workshop des Curry Clubs Augsburg am 25. Oktober 2015</h1>
-    <div class="info">
-      Gepostet am 14. Okt 15
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    <img src="/images/learn-you-a-haskell-for-great-good.png" alt="Learn you a Haskell for great good" />
-    
-    
-    <div class="attribution"><p><a href="http://learnyouahaskell.com/">LearnYouAHaskell</a> (CC BY-NC-SA)</p></div>
-    
-  </header>
-
-  <p>Liebe Freundinnen und Freunde von verallgemeinertem abstrakten Nonsens!</p>
-<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu einem <strong>Haskell-Workshop für Neulinge</strong> ein. Dieser findet am <strong>25. Oktober 2015</strong>, einem Sonntag, von 9:00 Uhr bis 17:00 Uhr im <strong>OpenLab Augsburg</strong> statt. Die Teilnahme ist kostenlos.</p>
-<p>Haskell ist eine wunderschöne Sprache, in der man nicht das “wie” spezifiziert, sondern das “was”. Ein Haskell-Programm besteht – anders als bei allen gewöhnlichen Programmiersprachen – nicht aus einer Folge von Anweisungen, welche von oben nach unten ausgeführt (und nur durch Kontrollstrukturen oder Subroutinen aufgelockert) werden. Haskell-Code kann man fast beliebig in seiner Reihenfolge permutieren, ohne die Bedeutung zu verändern. Ein ausführlicher Werbetext steht unten.</p>
-<p>Zielgruppe des Workshops sind in erster Linie völlige Haskell-Neulinge. Teilnahmevoraussetzung ist entweder Erfahrung mit einer beliebigen anderen Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken. Wer Haskell schon etwas besser kennt, wird auch auf seine Kosten kommen: Dann gibt es parallel zum Hauptprogramm eine Einführung und Übungsaufgaben zur Standardbibliothek. Haskell-Profis sollten keinesfalls als Teilnehmende mitmachen, sondern lieber das Betreuendenteam verstärken.</p>
-<p>Wer vorhat, am Workshop teilzunehmen, kann sich in ein <a href="https://ola.pads.ccc.de/haskell-workshop-2015">Organisationspad</a> eintragen und dann am 25. Oktober mit dem eigenen Laptop ins OpenLab kommen. Bitte vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren, um auf dem Workshop Zeit zu sparen.</p>
-<p>Wir freuen uns auf euch!</p>
-<p>Euer Team vom Curry Club</p>
-<p><strong>Update:</strong> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">Die Übungsaufgaben vom Workshop sind online.</a></p>
-<blockquote>
-<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
-<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
-<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
-<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
-<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
-</blockquote>
 </article>
 ]]></summary>
 </entry>
