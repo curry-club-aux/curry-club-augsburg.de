@@ -3,10 +3,10 @@ with import <nixpkgs> {}; let
   srcFilter = path: type: baseNameOf path != "git" && type != "symlink";
   src = builtins.filterSource srcFilter ./.;
 
-  unpatchedSiteGen = haskellngPackages.callPackage (import ./default.nix) {};
+  unpatchedSiteGen = haskellPackages.callPackage (import ./default.nix) {};
 
 in rec {
-  siteGen = haskell-ng.lib.overrideCabal unpatchedSiteGen (drv: {
+  siteGen = haskell.lib.overrideCabal unpatchedSiteGen (drv: {
     inherit src;
     postPatch = (drv.postPatch or "") + ''
       sed -i \
