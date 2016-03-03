@@ -39,7 +39,7 @@
 partielle, nicht-injektive Funktion
 </dd>
 </dl>
-<p>Beispiele sind die allseits gefüchteten <code>head</code> und <code>tail</code>, sowie <code>(!!)</code>.</p>
+<p>Beispiele sind die allseits gefürchteten <code>head</code> und <code>tail</code>, sowie <code>(!!)</code>.</p>
 <p>Ingo ergänzte um Beispiele im weiteren Sinn (YOLO ernst genommen):</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">unsafePerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a
 
