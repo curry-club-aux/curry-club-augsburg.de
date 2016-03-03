@@ -12,7 +12,7 @@ Im Zuge unserer Unterhaltungen sind wir auf die Begrifflichkeit des „Yolomorph
   <dd>partielle, nicht-injektive Funktion</dd>
 </dl>
 
-Beispiele sind die allseits gefüchteten `head` und `tail`, sowie `(!!)`.
+Beispiele sind die allseits gefürchteten `head` und `tail`, sowie `(!!)`.
 
 Ingo ergänzte um Beispiele im weiteren Sinn (YOLO ernst genommen):
 
