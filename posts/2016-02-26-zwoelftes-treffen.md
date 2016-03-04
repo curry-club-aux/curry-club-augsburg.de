@@ -1,5 +1,5 @@
 ---
-title: Programm für das zwölfte Treffen am 24. März 2016
+title: Programm für das zwölfte Treffen am 17. März 2016
 subtitle: Isabelle sowie Generics in Haskell und vielleicht auch in Scala
 meetup-announcement: 2016-03-17
 meetup-counter: 12
@@ -25,4 +25,4 @@ Cornelius setzt seinen Vortrag über *Verified Firewall Ruleset Analysis* fort.
 Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
 Lars hält vielleicht einen Vortrag über das Scala-Äquivalent
 [shapeless](https://github.com/milessabin/shapeless).
-Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.
+Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
