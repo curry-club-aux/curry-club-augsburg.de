@@ -58,14 +58,14 @@ partielle, nicht-injektive Funktion
 ]]></summary>
 </entry>
 <entry>
-    <title>Programm für das zwölfte Treffen am 24. März 2016</title>
+    <title>Programm für das zwölfte Treffen am 17. März 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-02-26-zwoelftes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-02-26-zwoelftes-treffen.html</id>
     <published>2016-02-26T00:00:00Z</published>
     <updated>2016-02-26T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
-    <h1>Programm für das zwölfte Treffen am 24. März 2016</h1>
+    <h1>Programm für das zwölfte Treffen am 17. März 2016</h1>
     <div class="info">
       Gepostet am 26. Feb 16
       
@@ -78,7 +78,7 @@ partielle, nicht-injektive Funktion
 
   <p>Makarius gibt (diesmal wirklich) eine Einführung in <em>Programme und Beweise in Isabelle/HOL</em>. Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik zu <a href="https://www.youtube.com/watch?v=F53aOAW9PBo">scheinbar unmöglichen funktionalen Programmen</a> sowie eine Nacharbeit zu den beiden Haskell-Workshops (<a href="https://curry-club-aux.github.io/haskell-workshop/uebung.pdf">erstes Übungsblatt</a>, <a href="https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf">zweites Übungsblatt</a>) sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht wird.</p>
 <p>Cornelius setzt seinen Vortrag über <em>Verified Firewall Ruleset Analysis</em> fort.</p>
-<p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält vielleicht einen Vortrag über das Scala-Äquivalent <a href="https://github.com/milessabin/shapeless">shapeless</a>. Profpatsch zeigt einen Trick, der Lens und Generics verbindet, um sehr fragwürdige Dinge zu erreichen.</p>
+<p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält vielleicht einen Vortrag über das Scala-Äquivalent <a href="https://github.com/milessabin/shapeless">shapeless</a>. Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.</p>
 </article>
 ]]></summary>
 </entry>
