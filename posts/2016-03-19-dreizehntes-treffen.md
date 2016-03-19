@@ -7,9 +7,9 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
-Lars hält einen Vortrag über das Scala-Äquivalent
-[shapeless](https://github.com/milessabin/shapeless).
+Sternenseemann und Lars stellen **diesmal wirklich** generische Programmierung jeweils
+in Haskell mit [GHC.Generics](https://hackage.haskell.org/package/base-4.8.2.0/docs/GHC-Generics.html)
+und in Scala mit [shapeless](https://github.com/milessabin/shapeless) vor.
 
 Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
 
