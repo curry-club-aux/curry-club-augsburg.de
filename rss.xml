@@ -24,7 +24,7 @@
     
   </header>
 
-  <p>Sternenseemann stellt generische Programmierung mit GHC.Generics vor. Lars hält einen Vortrag über das Scala-Äquivalent <a href="https://github.com/milessabin/shapeless">shapeless</a>.</p>
+  <p>Sternenseemann und Lars stellen <strong>diesmal wirklich</strong> generische Programmierung jeweils in Haskell mit <a href="https://hackage.haskell.org/package/base-4.8.2.0/docs/GHC-Generics.html">GHC.Generics</a> und in Scala mit <a href="https://github.com/milessabin/shapeless">shapeless</a> vor.</p>
 <p>Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.</p>
 <p>Außerdem setzt Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort.</p>
 </article>
