@@ -8,7 +8,7 @@ author: Ingo Blechschmidt
 ---
 
 Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
-Lars hält vielleicht einen Vortrag über das Scala-Äquivalent
+Lars hält einen Vortrag über das Scala-Äquivalent
 [shapeless](https://github.com/milessabin/shapeless).
 
 Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
