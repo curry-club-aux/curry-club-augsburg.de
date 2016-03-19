@@ -7,6 +7,8 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
+Cornelius setzt seinen Vortrag über *Verified Firewall Ruleset Analysis* fort.
+
 Makarius gibt (diesmal wirklich) eine Einführung in *Programme und Beweise in Isabelle/HOL*.
 Inhaltlich werden das einige formale Fußnoten in klassicher Mathematik
 zu [scheinbar unmöglichen funktionalen
@@ -19,10 +21,3 @@ den beiden Haskell-Workshops ([erstes
 sein. Bei der Gelegenheit können wir auch den ersten Release Candidate von
 Isabelle2016 feiern, der am Tag des Treffens wahrscheinlich veröffentlicht
 wird.
-
-Cornelius setzt seinen Vortrag über *Verified Firewall Ruleset Analysis* fort.
-
-Sternenseemann stellt generische Programmierung mit GHC.Generics vor.
-Lars hält vielleicht einen Vortrag über das Scala-Äquivalent
-[shapeless](https://github.com/milessabin/shapeless).
-Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
