@@ -13,5 +13,4 @@ und in Scala mit [shapeless](https://github.com/milessabin/shapeless) vor.
 
 Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
 
-Außerdem setzt Makarius die Reihe *Schönheit und Kunst* mit weiterer Arbeit in
-Isabelle fort.
+Außerdem setzt Makarius die Reihe *Schönheit und Kunst* mit weiterer Arbeit in Isabelle fort.
