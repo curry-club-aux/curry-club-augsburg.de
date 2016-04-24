@@ -13,6 +13,6 @@ Außerdem setzt Makarius die Reihe *Schönheit und Kunst* mit weiterer Arbeit in
 Er löst Aufgabe 12 der
 [beiden](https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf)
 [Workshops](https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung2.pdf)
-(Run-Length-Encoding), und zwar erstens "diemsal wirklich" und zweitens absolut
+(Run-Length-Encoding), und zwar erstens "diesmal wirklich" und zweitens absolut
 vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung
 in Isabelle beweist.
