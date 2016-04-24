@@ -46,6 +46,8 @@ main = do
       route   $ setExtension "css"
       compile $ fmap (fmap compressCss) $ getResourceString
         >>= withItemBody (unixFilter "css" [])
+      -- Wir nehmen hier an, dass sich unser Programm css (aus css/default.hs)
+      -- im Pfad befindet.
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
