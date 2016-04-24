@@ -44,9 +44,8 @@ main = do
 
     match "css/*.hs" $ do
       route   $ setExtension "css"
-      let program = if useStack then "stack" else "cabal"
       compile $ fmap (fmap compressCss) $ getResourceString
-        >>= withItemBody (unixFilter program ["exec", "runghc"])
+        >>= withItemBody (unixFilter "css" [])
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
