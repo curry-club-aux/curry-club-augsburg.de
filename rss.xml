@@ -7,8 +7,32 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sat, 19 Mar 2016 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Apr 2016 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das dreizehnte Treffen am 19. Mai 2016</title>
+    <link>http://curry-club-augsburg.de/posts/2016-04-24-vierzehntes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das dreizehnte Treffen am 19. Mai 2016</h1>
+    <div class="info">
+      Gepostet am 24. Apr 16
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p><a href="https://github.com/mnieper">Marc</a> spricht über Scheme; Details folgen.</p>
+<p>Außerdem setzt Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort: Er löst Aufgabe 12 der <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">beiden</a> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung2.pdf">Workshops</a> (Run-Length-Encoding), und zwar erstens “diemsal wirklich” und zweitens absolut vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung in Isabelle beweist.</p>
+</article>
+]]></description>
+    <pubDate>Sun, 24 Apr 2016 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2016-04-24-vierzehntes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das dreizehnte Treffen am 21. April 2016</title>
     <link>http://curry-club-augsburg.de/posts/2016-03-19-dreizehntes-treffen.html</link>
     <description><![CDATA[<article>
@@ -429,40 +453,6 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 ]]></description>
     <pubDate>Mon, 09 Nov 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-11-09-neuntes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Achtes Treffen des Curry Clubs</title>
-    <link>http://curry-club-augsburg.de/posts/2015-11-08-achtes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Achtes Treffen des Curry Clubs</h1>
-    <div class="info">
-      Gepostet am  8. Nov 15
-      
-          von Lars
-      
-    </div>
-    
-    <img src="/images/yes-we-kan.jpg" alt="Yes We Kan" />
-    
-    
-  </header>
-
-  <h1 id="über-scala-effekte-und-gopher">Über Scala, Effekte und Gopher</h1>
-<p>Wie schon beim <a href="/posts/2015-07-02-drittes-treffen.html">dritten Treffen</a> war wieder Scala mit von der Partie.</p>
-<h2 id="vorträge">Vorträge</h2>
-<p>Lars verglich Scala mit Haskell und ML und zeigte, dass Scala nicht ein “schlechteres Haskell” oder ein “besseres ML” sei, sondern eine eigene Sprache mit eigenen Konzepten. Hauptpunkt war hier, dass in Scala viele Konzepte “first class” sind, wie z.B. Typklassen und Instanzen aus Haskell oder Module und Funktoren aus ML. Trotzdem erhält man dann einige Komplexität, mit der es dann – als Programmierer – diszipliniert umzugehen gilt. Der Vergleich von Programmiersprachen führt oft zu hintersinnigem Humor, aber auch Verzweiflung. Im Vortrag besonders erwähnt wurden: <a href="https://twitter.com/tihomirb/status/577624701767319552">Scala vs. Haskell</a> und <a href="https://twitter.com/srpablo/status/342341342694883329">Haskell vs. SML</a> – wobei bei “SML” viele Leute nur an das tatsächlich seit über 15 Jahren untote SML/NJ denken, nicht aber an das wesentlich frischere Poly/ML oder gar die Isabelle/ML-Umgebung. Teile des Vortrags können von einer vorherigen Iteration <a href="https://speakerdeck.com/larsrh/what-haskell-can-learn-from-scala">nachgelesen</a> bzw. <a href="https://skillsmatter.com/skillscasts/6592-what-haskell-can-learn-from-scala">nachgehört</a> werden.</p>
-<p>Ingo gab eine kleine Einführung in Effektsysteme über freie Funktoren und freie Monaden. In diesem Vortrag der Reihe “What the Kmett is a Monad” zeigte Ingo, wie man aus beliebigen Typkonstruktoren einen (freien) Funktor und aus beliebigen Funktoren eine (freie) Monade machen kann. Als Anwendungszweck stellte er vor, wie man Effekte als einfachen Datentyp modelliert und aus diesem dann “für lau” eine passende Monade erhält, welche Programm mit diesen Effekten modellieren kann. Anschließend kann man dann dieses Programm interpretieren und so zum Beispiel nach IO, aber auch nach andere Monaden, überführen. Schließlich zeigte er noch das aktuelle Werk von Oleg Kiselyov, womit man zum Einen bessere Performance bekommt, zum Anderen aber auch auf einfache Art und Weise verschiedene Effekte kombinieren und modular interpretieren kann.</p>
-<p>Sternenseemann erzählte uns zunächst vom Gopher-Protokoll, was drei Jahre vor HTTP/1.0 standardisiert worden ist. Tatsächlich gibt es anscheinend auch noch aktive Gopher-Server, die allerdings verschiedene Erweiterungen des Protokolls benutzen. Das Protokoll selbst ist relativ einfach strukturiert. Als krönenden Abschluss zeigte er uns seine Serverimplementation in Haskell names “Spacecookie”. Eine entsprechende Spacecookie-Monade durfte natürlich nicht fehlen.</p>
-<h2 id="diskussionen-sonstiges">Diskussionen &amp; Sonstiges</h2>
-<p>Tim hat Curry-Club-Sticker mitgebracht. Auf einen vorherigen Twitter-Beitrag hin hat sich ein Programmierer aus Barcelona gemeldet, der auch gerne welche hätte. Freundlicherweise hat Tim ihm ein paar Exemplare geschickt. Der Curry Club Augsburg ist demzufolge <a href="https://twitter.com/jordi_aranda/status/662695479021555713">international bekannt</a>!</p>
-<p>Lars wies während Ingos Vortrag, bei dem Kan-Erweiterungen vorkamen, auf den obligatorischen “Yes We Kan”-Witz hin, der auch <a href="https://skillsmatter.com/skillscasts/6733-transformers-handlers-in-disguise">während der Haskell eXchange fiel</a>.</p>
-<p>Ingo setzte eine Belohnung aus: auf einen Beweis der Tatsache, dass die Listenmonade keine freie Monade ist.</p>
-</article>
-]]></description>
-    <pubDate>Sun, 08 Nov 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-11-08-achtes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
