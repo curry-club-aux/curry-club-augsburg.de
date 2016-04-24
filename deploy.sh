@@ -24,10 +24,8 @@ ORIGIN=${1:-$CURR_ORIGIN}
 BUILD_DIR=$(mktemp -d builddir-XXXX)
 
 function onerr() {
-  ls -lR
-  ls -lR "$BUILD_DIR"
-  hash stack
-  stack exec runghc css/default.hs
+  ls -laR /home/travis
+  css
   rm -rf "$BUILD_DIR"
   exit 1
 }
