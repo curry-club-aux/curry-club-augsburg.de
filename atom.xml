@@ -52,9 +52,12 @@
     
   </header>
 
-  <p>Sternenseemann und Lars stellen <strong>diesmal wirklich</strong> generische Programmierung jeweils in Haskell mit <a href="https://hackage.haskell.org/package/base-4.8.2.0/docs/GHC-Generics.html">GHC.Generics</a> und in Scala mit <a href="https://github.com/milessabin/shapeless">shapeless</a> vor.</p>
+  <p>Sternenseemann und Lars stellten <strong>diesmal wirklich</strong> generische Programmierung jeweils in Haskell mit <a href="https://hackage.haskell.org/package/base-4.8.2.0/docs/GHC-Generics.html">GHC.Generics</a> und in Scala mit <a href="https://github.com/milessabin/shapeless">shapeless</a> vor.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Zj4P7FoHef0" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Egmf1hKxhmg" frameborder="0" allowfullscreen>
+</iframe>
 <p>Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.</p>
-<p>Außerdem setzt Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort.</p>
 </article>
 ]]></summary>
 </entry>
