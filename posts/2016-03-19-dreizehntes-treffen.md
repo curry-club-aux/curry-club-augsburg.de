@@ -15,4 +15,6 @@ und in Scala mit [shapeless](https://github.com/milessabin/shapeless) vor.
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Egmf1hKxhmg" frameborder="0" allowfullscreen></iframe>
 
-Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
+Profpatsch zeigte, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/mVrhYneg2Kk" frameborder="0" allowfullscreen></iframe>
