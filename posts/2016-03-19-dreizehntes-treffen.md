@@ -7,10 +7,12 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Sternenseemann und Lars stellen **diesmal wirklich** generische Programmierung jeweils
+Sternenseemann und Lars stellten **diesmal wirklich** generische Programmierung jeweils
 in Haskell mit [GHC.Generics](https://hackage.haskell.org/package/base-4.8.2.0/docs/GHC-Generics.html)
 und in Scala mit [shapeless](https://github.com/milessabin/shapeless) vor.
 
-Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Zj4P7FoHef0" frameborder="0" allowfullscreen></iframe>
 
-Außerdem setzt Makarius die Reihe *Schönheit und Kunst* mit weiterer Arbeit in Isabelle fort.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Egmf1hKxhmg" frameborder="0" allowfullscreen></iframe>
+
+Profpatsch zeigt, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.
