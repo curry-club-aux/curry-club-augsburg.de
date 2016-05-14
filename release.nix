@@ -7,7 +7,9 @@ with import <nixpkgs> {}; let
     ${pkgs.cabal2nix}/bin/cabal2nix $src > $out
   '';
 
-  unpatchedSiteGen = haskell.packages.lts-5_4.callPackage (import pkg) {};
+  haskellPackages = haskell.packages.lts-5_4;
+
+  unpatchedSiteGen = haskellPackages.callPackage (import pkg) {};
 
 in rec {
   siteGen = haskell.lib.overrideCabal unpatchedSiteGen (drv: {
@@ -18,6 +20,7 @@ in rec {
         site.hs
     '';
   });
+  hoogleEnv = haskellPackages.ghcWithHoogle (_: [ siteGen ]);
 
   site = with import <nixpkgs> {}; stdenv.mkDerivation {
     name = "curry-club-augsburg.de";
@@ -32,5 +35,4 @@ in rec {
     '';
   };
 
-  siteGenEnv = siteGen.env;
 }
