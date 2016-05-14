@@ -31,4 +31,6 @@ in rec {
         > "$out/nix-support/hydra-build-products"
     '';
   };
+
+  siteGenEnv = siteGen.env;
 }
