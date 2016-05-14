@@ -16,7 +16,7 @@ in rec {
     inherit src;
     postPatch = (drv.postPatch or "") + ''
       sed -i \
-        -re 's!(unixFilter *")cabal(" *\[)[^]]*(\])!\1'"$out/bin/css"'\2\3!' \
+        -e "/unixFilter .*css.*/ s!css!$out/bin/css!" \
         site.hs
     '';
   });
