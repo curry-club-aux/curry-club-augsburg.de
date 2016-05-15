@@ -7,7 +7,7 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-[Marc](https://github.com/mnieper) spricht über Scheme; Details folgen.
+[Marc](https://github.com/mnieper) setzt die Reihe über *funktionale Datenstrukturen* mit einem Vortrag über Maps in Scheme fort.
 
 Außerdem setzt Makarius die Reihe *Schönheit und Kunst* mit weiterer Arbeit in Isabelle fort:
 Er löst Aufgabe 12 der
