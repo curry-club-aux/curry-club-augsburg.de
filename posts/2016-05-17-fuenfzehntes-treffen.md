@@ -1,6 +1,6 @@
 ---
 title: Programm für das fünfzehnte Treffen am 19. Mai 2016
-subtitle: 
+subtitle: Fünfzehntes Treffen
 meetup-announcement: 2016-06-16
 meetup-counter: 15
 meetup-time: 19:00
