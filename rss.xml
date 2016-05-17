@@ -24,8 +24,9 @@
     
   </header>
 
-  <p><a href="https://github.com/mnieper">Marc</a> setzt die Reihe über <em>funktionale Datenstrukturen</em> mit einem Vortrag über Maps in Scheme fort.</p>
+  <p><a href="https://github.com/mnieper">Marc</a> setzt die Reihe über <em>rein funktionale Datenstrukturen</em> (begonnen durch <a href="/posts/2015-12-04-zehntes-treffen.html">Tims Vortrag zu Warteschlangen</a> mit einem Vortrag über Maps in Scheme fort. Wir können uns auf viele verschiedene Arten von Bäumen freuen.</p>
 <p>Außerdem setzt Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort: Er löst Aufgabe 12 der <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">beiden</a> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung2.pdf">Workshops</a> (Run-Length-Encoding), und zwar erstens “diesmal wirklich” und zweitens absolut vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung in Isabelle beweist.</p>
+<p>Nach diesen zwei Vorträgen wird es entweder noch Zeit für einen weiteren Vortrag geben oder nicht. Ingo könnte Minimalwissen zu initialen Algebren und terminalen Koalgebren bereitstellen. Diese verwendet man (unter anderem), um Datentypen mathematisch zu modellieren. In Form von Cata- und Anamorphismen haben sie aber auch eine ganz praktische Bedeutung in der Abstraktion von bekannten Rekursionsmustern.</p>
 </article>
 ]]></description>
     <pubDate>Sun, 24 Apr 2016 00:00:00 UT</pubDate>
