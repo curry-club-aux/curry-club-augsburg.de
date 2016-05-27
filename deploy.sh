@@ -50,7 +50,9 @@ $SITE clean
 cd "$BUILD_DIR"
 git add --all
 if git commit -m "Updated website output $(date '+%m/%d/%y %H:%M')"; then
-  git push "$ORIGIN" "$TARGET_BRANCH"
+  # `grep -v` filters login information like
+  # https://user:password@github.com/user/repo.git
+  git push "$ORIGIN" "$TARGET_BRANCH" | grep -v ".*:.*@"
 else
   echo "No changes to generated website."
 fi
