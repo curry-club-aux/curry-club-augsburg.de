@@ -18,7 +18,7 @@ branches:
 
 env:
   global:
-    - secure: "ShO1+CPmSyK5AkM6Ic3l5ngYYbpUjdFmtItL6zAS+trhPxWOC/uzMohbPLG90AF7ZJM/vgSZCFZVhAj/92cGcc9Z3bb3yp5SnLgQAJNhKjaVgLzyJ3616aIb7jPHQ9mfbY5HAL7aG6P+27ak2Fwv05Nqam0BJqf8WeUxSX63mnI="
+    - secure: "PbES0ea9XF+M0xX00oCzRnEzH7D1skRk4ub65ybTdHkIHkfitM23yzLVcWOX+Zh5zCAivne1PlM/4q/ufQyYbVGkqFh/YN5LiTcbUP4YLJEt3HFJNeRiaowOk7+PZJ/aok5KQ/omV5QVGCkPBR50aa7XM99ss+pVanUpbr0Chfw="
 
 # The different configurations we want to test. We have BUILD=cabal which uses
 # cabal-install, and BUILD=stack which uses Stack. More documentation on each
