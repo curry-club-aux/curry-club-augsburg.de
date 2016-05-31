@@ -91,6 +91,11 @@ install:
 before_script:
   - git config --global user.email "tim@timbaumann.info"
   - git config --global user.name "Travis"
+  - mkdir -m 700 -p $HOME/.ssh
+  - echo "$SSH_DEPLOY_KEY" | base64 -d > $HOME/.ssh/id_rsa
+  - chmod 600 $HOME/.ssh/id_rsa
+  - echo "|1|QUKQi0hqb2IQIg53Hztk2sa8Ae4=|dWGPqBKSkj8OA3c2+RhP3otk4hs= ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> $HOME/.ssh/known_hosts
+  - echo "|1|HWtB6v5G3xm6GVUAbUN/B7hphM8=|1Mpu47AyndKZ9YAsFMF2T26cSQo= ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> $HOME/.ssh/known_hosts
 
 script:
-- ./deploy.sh "$REPO_URL"
+- ./deploy.sh git@github.com:curry-club-aux/curry-club-augsburg.de.git
