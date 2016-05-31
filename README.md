@@ -2,7 +2,7 @@
 
 Siehe auch: [Wiki][wiki], [Liste von Issues][issues]
 
-Der `master`-Branch enthält den Inhalt der Webseite. Das Haskell-Programm `site.hs` erzeugt aus den Inhalten eine statische Webseite. Es benutzt dafür die Haskell-Bibliothek [Hakyll][hakyll]. Die generierten statischen Dateien werden im [`gh-pages`][gh-pages-branch]-Branch hochgeladen und von [GitHub Pages][gh-pages] unter der URL [curry-club-augsburg.de](http://curry-club-augsburg.de/) verfügbar gemacht.
+Der `master`-Branch enthält den Inhalt der Webseite. Das Haskell-Programm `curry-site.hs` erzeugt aus den Inhalten eine statische Webseite. Es benutzt dafür die Haskell-Bibliothek [Hakyll][hakyll]. Die generierten statischen Dateien werden im [`gh-pages`][gh-pages-branch]-Branch hochgeladen und von [GitHub Pages][gh-pages] unter der URL [curry-club-augsburg.de](http://curry-club-augsburg.de/) verfügbar gemacht.
 
 Der Continuous-Integration-Dienst [TravisCI][travisci] wird dazu verwendet, die Seite bei Änderungen im `master`-Branch neu zu bauen und das Ergebnis in `gh-pages` zu veröffentlichen. Das Schild neben der Überschrift zeigt an, ob der letzte Buildvorgang erfolgreich war. Die Vorgehensweise ist in [diesem Artikel](http://timbaumann.info/posts/2013-08-04-hakyll-github-and-travis.html) beschrieben.
 
@@ -37,9 +37,9 @@ Der Post, dessen `meetup-announcement`-Datum am nähesten in der Zukunft liegt, 
 Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vornehmen. Es vergehen ca. zwei Minuten, bis TravisCI die Seite neu gebaut hat.
 
 
-## Änderungen an `site.hs`
+## Änderungen an `curry-site.hs`
 
-Für Änderungen am Aufbau und Design der Seite empfiehlt es sich, lokal zu arbeiten, damit man Änderungen schneller sieht. Wenn man das Repo geklont hat, muss man zuerst die Abhängigkeiten installieren und `site.hs` kompilieren.
+Für Änderungen am Aufbau und Design der Seite empfiehlt es sich, lokal zu arbeiten, damit man Änderungen schneller sieht. Wenn man das Repo geklont hat, muss man zuerst die Abhängigkeiten installieren und `curry-site.hs` kompilieren.
 
 Mit Stack:
 
@@ -57,11 +57,11 @@ $ nix-shell
 
 (Achtung: Zum Kompilieren des Stylesheets muss `stack` im Pfad sein und `clay` muss installiert sein.)
 
-Dann kann man `site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`. Zum Debuggen kann man `site build -v` verwenden.
+Dann kann man `curry-site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`. Zum Debuggen kann man `curry-site build -v` verwenden.
 
 Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis TravisCI die Webseite neu generiert hat.
 
-Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
+Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `curry-site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
 Wenn man die TravisCI-Konfiguration debuggen möchte, kann man auch einen Pull Request erstellen und diesem Test-Commits hinzufügen. So stört man nicht den `master`-Branch.
 

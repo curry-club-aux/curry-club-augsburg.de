@@ -2,10 +2,10 @@
 
 # configuration
 TARGET_BRANCH=gh-pages
-if hash site 2>/dev/null; then
-  SITE=site
+if hash curry-site 2>/dev/null; then
+  SITE=curry-site
 else
-  SITE=./site
+  SITE=./curry-site
 fi
 
 cd $(dirname "$0")
