@@ -11,14 +11,9 @@ cache:
   - $HOME/.cabal
   - $HOME/.stack
 
-
 branches:
   only:
     - master
-
-env:
-  global:
-    - secure: "PbES0ea9XF+M0xX00oCzRnEzH7D1skRk4ub65ybTdHkIHkfitM23yzLVcWOX+Zh5zCAivne1PlM/4q/ufQyYbVGkqFh/YN5LiTcbUP4YLJEt3HFJNeRiaowOk7+PZJ/aok5KQ/omV5QVGCkPBR50aa7XM99ss+pVanUpbr0Chfw="
 
 # The different configurations we want to test. We have BUILD=cabal which uses
 # cabal-install, and BUILD=stack which uses Stack. More documentation on each
