@@ -10,7 +10,6 @@ import           Data.Time
 import           Data.Yaml (parseMaybe, (.:))
 import           Hakyll
 import           Safe
-import           System.Environment
 
 
 --------------------------------------------------------------------------------
@@ -25,12 +24,7 @@ data Meetup a =
 main :: IO ()
 main = do
   currDay <- utcToLocalDay <$> getCurrentTime
-  args <- getArgs
-  let useStack = "--use-stack" `elem` args
-      args'    = filter (/= "--use-stack") args
-  when ("-h" `elem` args || "--help" `elem` args) $
-    putStrLn "--use-stack     use 'stack exec runghc' instead of 'stack exec runghc' to compile css/default.hs\n\n"
-  withArgs args' $ hakyllWith config $ do
+  hakyllWith config $ do
     let idCopyFile = route idRoute >> compile copyFileCompiler
 
     match "CNAME" idCopyFile
@@ -44,10 +38,8 @@ main = do
 
     match "css/*.hs" $ do
       route   $ setExtension "css"
-      compile $ fmap (fmap compressCss) $ getResourceString
-        >>= withItemBody (unixFilter "css" [])
-      -- Wir nehmen hier an, dass sich unser Programm css (aus css/default.hs)
-      -- im Pfad befindet.
+      compile $ fmap (fmap compressCss) $
+        getResourceString >>= withItemBody evalProgramFilter
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
@@ -114,6 +106,8 @@ main = do
                posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
                kind feed feedCtx posts
 
+evalProgramFilter :: String -> Compiler String
+evalProgramFilter = unixFilter "stack" ["exec", "--ghc-package-path", "runghc"]
 
 --------------------------------------------------------------------------------
 mesz :: TimeZone

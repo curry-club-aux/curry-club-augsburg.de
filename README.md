@@ -41,7 +41,13 @@ Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vorn
 
 Für Änderungen am Aufbau und Design der Seite empfiehlt es sich, lokal zu arbeiten, damit man Änderungen schneller sieht. Wenn man das Repo geklont hat, muss man zuerst die Abhängigkeiten installieren und `site.hs` kompilieren.
 
-Mit Nix (bitte `default.nix` nicht einchecken):
+Mit Stack:
+
+```bash
+$ stack install
+```
+
+Oder mit Nix (bitte `default.nix` nicht einchecken):
 
 ```bash
 $ cabal2nix . > default.nix
@@ -49,25 +55,13 @@ $ nix-shell
 [nix-shell] $ cabal build
 ```
 
-Ohne Nix:
+(Achtung: Zum Kompilieren des Stylesheets muss `stack` im Pfad sein und `clay` muss installiert sein.)
 
-```bash
-$ cabal sandbox init
-$ cabal install --only-dependencies # installiert hakyll
-$ cabal build
-```
-
-Oder mit Stack:
-
-```bash
-$ stack build
-```
-
-Dann kann man `./site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`.
+Dann kann man `site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`. Zum Debuggen kann man `site build -v` verwenden.
 
 Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis TravisCI die Webseite neu generiert hat.
 
-Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `./site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
+Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
 Wenn man die TravisCI-Konfiguration debuggen möchte, kann man auch einen Pull Request erstellen und diesem Test-Commits hinzufügen. So stört man nicht den `master`-Branch.
 
