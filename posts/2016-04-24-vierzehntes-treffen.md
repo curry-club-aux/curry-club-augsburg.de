@@ -20,10 +20,3 @@ Er löst Aufgabe 12 der
 (Run-Length-Encoding), und zwar erstens "diesmal wirklich" und zweitens absolut
 vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung
 in Isabelle beweist.
-
-Nach diesen zwei Vorträgen wird es entweder noch Zeit für einen weiteren
-Vortrag geben oder nicht. Ingo könnte Minimalwissen zu initialen Algebren
-und terminalen Koalgebren bereitstellen. Diese verwendet man (unter 
-anderem), um Datentypen mathematisch zu modellieren. In Form von Cata- 
-und Anamorphismen haben sie aber auch eine ganz praktische Bedeutung in
-der Abstraktion von bekannten Rekursionsmustern.
