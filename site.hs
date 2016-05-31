@@ -119,11 +119,11 @@ main = do
 mesz :: TimeZone
 mesz = TimeZone 120 True "MESZ"
 
-mez :: TimeZone
-mez = TimeZone 60 True "MEZ"
+_mez :: TimeZone
+_mez = TimeZone 60 True "MEZ"
 
 currentTimeZone :: TimeZone
-currentTimeZone = mez
+currentTimeZone = mesz
 
 curryClubLocale :: TimeLocale
 curryClubLocale =
