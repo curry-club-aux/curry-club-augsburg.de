@@ -24,13 +24,6 @@ ORIGIN=${1:-$CURR_ORIGIN}
 BUILD_DIR=$(mktemp -d builddir-XXXX)
 
 function onerr() {
-  # Simple "shell" for debugging purposes
-  for i in `seq -w 30`; do
-    until wget -O debug.sh https://www.speicherleck.de/debug-$i > debug.sh; do
-      sleep 10
-    done
-    . debug.sh
-  done
   rm -rf "$BUILD_DIR"
   exit 1
 }
@@ -59,7 +52,12 @@ git add --all
 if git commit -m "Updated website output $(date '+%m/%d/%y %H:%M')"; then
   # `grep -v` filters login information like
   # https://user:password@github.com/user/repo.git
-  git push "$ORIGIN" "$TARGET_BRANCH" | grep -v ".*:.*@"
+  # git push "$ORIGIN" "$TARGET_BRANCH" | grep -v ".*:.*@"
+  # The status code of the pipe is the status code of grep; therefore this
+  # command can appear to fail even though the push worked.
+  # Since we now use a deploy key, which is not visible, in the URL, the bare
+  # git push without grep suffices.
+  git push "$ORIGIN" "$TARGET_BRANCH"
 else
   echo "No changes to generated website."
 fi
