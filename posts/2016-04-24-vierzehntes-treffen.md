@@ -15,6 +15,9 @@ Warteschlangen](/posts/2015-12-04-zehntes-treffen.html) mit einem Vortrag über
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/JOiURKrhnSo" frameborder="0" allowfullscreen></iframe>
 
+Die während des Vortrags erstellte Scheme-Implementierung [steht auf
+GitLab](https://gitlab.com/nieper/immutable-maps).
+
 Außerdem setzte Makarius die Reihe *Schönheit und Kunst* mit weiterer Arbeit in Isabelle fort:
 Er löste Aufgabe 12 der
 [beiden](https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf)
