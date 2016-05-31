@@ -3,7 +3,7 @@ title: Programm für das zwölfte Treffen am 17. März 2016
 subtitle: Isabelle/LOL
 subsubtitle: Cornelius &amp; Makarius über Programme &amp; Beweise in Isabelle/HOL
 meetup-announcement: 2016-03-17
-meetup-counter: 12
+meetup-counter: "12"
 meetup-time: 19:00
 author: Ingo Blechschmidt
 ---

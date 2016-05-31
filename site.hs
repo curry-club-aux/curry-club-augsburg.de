@@ -5,9 +5,9 @@ import           Data.Bifunctor (bimap)
 import           Data.Either (partitionEithers)
 import           Data.Function (on)
 import           Data.List (partition, sortBy)
-import qualified Data.Map as M
 import           Data.Monoid ((<>))
 import           Data.Time
+import           Data.Yaml (parseMaybe, (.:))
 import           Hakyll
 import           Safe
 import           System.Environment
@@ -145,8 +145,8 @@ getMeetupTime
   -> m (Maybe UTCTime)
 getMeetupTime locale id' = parseMeetupTime <$> getMetadata id'
   where
-    parseMeetupTime metadata =
-      M.lookup "meetup-announcement" metadata >>=
+    parseMeetupTime =
+      parseMaybe (\o -> o .: "meetup-announcement") >=>
       parseTimeM True locale "%Y-%m-%d"
 
 -- this should be part of Hakyll

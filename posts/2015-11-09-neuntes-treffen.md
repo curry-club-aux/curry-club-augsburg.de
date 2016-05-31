@@ -1,7 +1,7 @@
 ---
 title: Neuntes Treffen am 3. Dezember 2015
 meetup-announcement: 2015-12-03
-meetup-counter: 9
+meetup-counter: "9"
 meetup-time: 19:00
 author: Lukas Epple
 subtitle: Scheinbar unmögliche funktionale Programme

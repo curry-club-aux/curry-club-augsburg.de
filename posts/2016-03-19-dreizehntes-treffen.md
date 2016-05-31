@@ -2,7 +2,7 @@
 title: Programm für das dreizehnte Treffen am 21. April 2016
 subtitle: Generics in Haskell und in Scala, „Shellskripte“, Schönheit und Kunst mit Isabelle
 meetup-announcement: 2016-04-21
-meetup-counter: 13
+meetup-counter: "13"
 meetup-time: 19:00
 author: Ingo Blechschmidt
 ---

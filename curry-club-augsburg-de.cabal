@@ -7,8 +7,8 @@ license:            OtherLicense
 executable site
   main-is:          site.hs
   build-depends:    base == 4.*
-                  , hakyll >= 4.6 && < 4.8
-                  , containers
+                  , hakyll >= 4.8 && < 4.9
+                  , yaml
                   , safe
                   , time >= 1.5.0.1
   ghc-options:      -threaded -Wall

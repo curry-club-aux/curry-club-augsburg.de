@@ -1,9 +1,9 @@
 ---
 title: Programm für das sechste Treffen am 10. September 2015
 subtitle: Monaden sind Monoide in einer Kategorie von Endofunktoren
-subsubtitle: Wo liegt das Problem? Außerdem: Lenses (Teil 2) und selbstgekochtes Curry
+subsubtitle: "Wo liegt das Problem? Außerdem: Lenses (Teil 2) und selbstgekochtes Curry"
 meetup-announcement: 2015-09-10
-meetup-counter: 6
+meetup-counter: "6"
 meetup-time: 19:00
 author: Tim Baumann
 ---

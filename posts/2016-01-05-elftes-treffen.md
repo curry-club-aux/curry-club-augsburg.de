@@ -2,7 +2,7 @@
 title: Programm für das elfte Treffen am 25. Februar 2016
 subtitle: Kombinatorische Spieltheorie und verifizierte Analyse von Firewall-Regeln
 meetup-announcement: 2016-02-25
-meetup-counter: 11
+meetup-counter: "11"
 meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
