@@ -16,6 +16,8 @@ Makarius stellt [Cobra](http://www.flatmap.net/cobra) vor, ein modernes
 Framework, um Code und Beweise zu präsentieren. Cobra unterstützt
 Isabelle-Beweise sowie Scala- und Haskell-Code.
 
+Tim stellt seine WIP-Haskell-Bibliothek [ftypes](https://github.com/timjb/ftypes) vor. In FTypes werden die bekannten Typklassen `Functor`, `Applicative` und `Traversable` auf Typen vom Kind `(k -> *) -> *` übertragen. Dies hat Anwendungen etwa beim Schreiben von bidirektionalen Parsern für Produkttypen.
+
 Ingo beginnt eine Einführung in Homotopietyptheorie. Was hat es damit auf sich?
 Wie werden in Homotopietyptheorie Objekte und Aussagen miteinander vereint, auf
 eine Stufe gestellt? (Im krassen Gegensatz zu allen klassischen Zugängen, bei
