@@ -25,7 +25,8 @@ folgender Fixpunktgleichung:
 
 Die Struktur der endlichen Listen mit Einträgen aus A ist eine Lösung von
 
-    L = 1 + A x N.
+    L = 1 + A x L.
+    -- in Haskell: data L = Nil | Cons A L
 
 Nun sind das aber nicht wirklich Gleichungen. Es sind aber auch nicht
 einfach nur "Isomorphiebeziehungen". Es ist etwas dazwischen -- es sind
