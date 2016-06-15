@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2016-05-17T00:00:00Z</updated>
+    <updated>2016-06-15T00:00:00Z</updated>
     <entry>
+    <title>Programm für das sechzehnte Treffen am 14. Juli 2016</title>
+    <link href="http://curry-club-augsburg.de/posts/2016-06-15-sechzehntes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2016-06-15-sechzehntes-treffen.html</id>
+    <published>2016-06-15T00:00:00Z</published>
+    <updated>2016-06-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das sechzehnte Treffen am 14. Juli 2016</h1>
+    <div class="info">
+      Gepostet am 15. Jun 16
+      
+          von Matthias Hutzler
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Profpatsch teilt seine Beobachtung, dass <a href="https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf">Zipper</a> zu den coolsten Datenstrukturen gehören, und wird damit die Reihe über funktionale Datenstrukturen fortsetzen.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das fünfzehnte Treffen am 16. Juni 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-05-17-fuenfzehntes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-05-17-fuenfzehntes-treffen.html</id>
@@ -29,6 +52,8 @@
   </header>
 
   <p>Ingo stellt Minimalwissen zu initialen Algebren und terminalen Koalgebren bereit. Diese verwendet man (unter anderem), um Datentypen mathematisch zu modellieren. In Form von Cata- und Anamorphismen haben sie aber auch eine ganz praktische Bedeutung in der Abstraktion von bekannten Rekursionsmustern.</p>
+<p>Makarius stellt <a href="http://www.flatmap.net/cobra">Cobra</a> vor, ein modernes Framework, um Code und Beweise zu präsentieren. Cobra unterstützt Isabelle-Beweise sowie Scala- und Haskell-Code.</p>
+<p>Ingo beginnt eine Einführung in Homotopietyptheorie. Was hat es damit auf sich? Wie werden in Homotopietyptheorie Objekte und Aussagen miteinander vereint, auf eine Stufe gestellt? (Im krassen Gegensatz zu allen klassischen Zugängen, bei denen Aussagen <em>über</em> Objekte (wie zum Beispiel Mengen oder natürliche Zahlen) sprechen, aber nicht selbst Objekte dieser Art sind.) Wozu ist Homotopietyptheorie gut? Wieso ist sie und für wen ist sie interessant?</p>
 </article>
 ]]></summary>
 </entry>
@@ -422,41 +447,6 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 </div>
 <p>Der Curry Club war auf dem 32. Chaos Communication Congress in Form <a href="https://events.ccc.de/congress/2015/wiki/Assembly:Curry_Club_Augsburg">einer Assembly</a> anwesend!</p>
 <p>Die Folien unseres Vortrags “10 modern programming concepts which your favourite programming language is missing” (Tag 3, 15:00) sind <a href="/files/10-modern-concepts.pdf">online</a>.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das zehnte Treffen am 28. Januar 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html</id>
-    <published>2015-12-04T00:00:00Z</published>
-    <updated>2015-12-04T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das zehnte Treffen am 28. Januar 2016</h1>
-    <div class="info">
-      Gepostet am  4. Dez 15
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Manuel Eberl hielt einen Vortrag zum Thema <em>Was ist die Quadratwurzel eines Baums?</em>. Darin ging es um ein paar unausgegorene, aber interessante Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und Parametrizität.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/flD8Vh2Ghko" frameborder="0" allowfullscreen>
-</iframe>
-<p>Dr. Stefan Wehr erzählte von <a href="http://www.factisresearch.com/">factis research</a> vom praktischen Einsatz von Haskell in der Entwicklung von <a href="http://cp-med.com/">Checkpad Med</a>.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XLJQQLKvGF0" frameborder="0" allowfullscreen>
-</iframe>
-<div class="right">
-<p><img width="150" src="/images/pfds.jpg" /></p>
-</div>
-<p>Tim hielt einen Vortrag über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a>, genauer über Banker’s Queues.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/u14K7z365mY" frameborder="0" allowfullscreen>
-</iframe>
-<p>Makarius’ Vortrag wurde aufgrund der fortgeschrittenen Uhrzeit auf das nächste Treffen verschoben.</p>
 </article>
 ]]></summary>
 </entry>
