@@ -11,8 +11,3 @@ Ingo stellt Minimalwissen zu initialen Algebren und terminalen Koalgebren
 bereit. Diese verwendet man (unter anderem), um Datentypen mathematisch zu
 modellieren. In Form von Cata- und Anamorphismen haben sie aber auch eine ganz
 praktische Bedeutung in der Abstraktion von bekannten Rekursionsmustern.
-
-Profpatsch teilt seine Beobachtung, dass
-[Zipper](https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf)
-zu den coolsten Datenstrukturen gehören, und wird damit die Reihe
-über funktionale Datenstrukturen fortsetzen.
