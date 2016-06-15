@@ -1,6 +1,6 @@
 ---
 title: Programm für das sechzehnte Treffen am 14. Juli 2016
-subtitle: Sechzehntes Treffen
+subtitle: Zipper und kategorielle Patch-Theorie
 meetup-announcement: 2016-07-14
 meetup-counter: "16"
 meetup-time: 19:00
