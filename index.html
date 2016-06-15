@@ -79,7 +79,8 @@
 -- mit der rechten Seite ist gemeint: {*} disjunkt-vereinigt-mit N
 -- in Haskell würde man schreiben: data N = Zero | Succ N</code></pre>
 <p>Die Struktur der endlichen Listen mit Einträgen aus A ist eine Lösung von</p>
-<pre><code>L = 1 + A x N.</code></pre>
+<pre><code>L = 1 + A x L.
+-- in Haskell: data L = Nil | Cons A L</code></pre>
 <p>Nun sind das aber nicht wirklich Gleichungen. Es sind aber auch nicht einfach nur “Isomorphiebeziehungen”. Es ist etwas dazwischen – es sind initiale Algebren. Jede initiale Algebra bringt jeweils ein eigenes Konzept mit, um Funktionen aus der so definierten Struktur rekursiv definieren zu können. Im Falle der natürlichen Zahlen ist das im Wesentlichen das bekannte Rekursionsprinzip (definiere für 0 und definiere für n+1).</p>
 <p>Der Vortrag wird erklären, was initiale Algebren sind, welche Vorstellung sie fassen und wozu man sie in der Informatik verwendet. Das Thema ist für manche Teile der theoretischen Informatik absolut grundlegend, man kann kaum über die Semantik von Programmiersprachen (welche benutzerdefinierte Datentypen erlauben) sprechen, ohne Minimalwissen von initialen Algebren zu haben. Auch für den praktischen Umgang mit Rekursion sind sie interessant, da sie manche Dinge mit einer konzeptionellen, abstrakten Interpretation versehen.</p>
 <p>Wir werden auch auf das Gegenstück zu initialen Algebren eingehen, nämlich terminale Koalgebren. Und es wird einen “witzigen” Wettbewerb geben.</p>
