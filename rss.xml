@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 17 May 2016 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jun 2016 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das sechzehnte Treffen am 14. Juli 2016</title>
+    <link>http://curry-club-augsburg.de/posts/2016-06-15-sechzehntes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das sechzehnte Treffen am 14. Juli 2016</h1>
+    <div class="info">
+      Gepostet am 15. Jun 16
+      
+          von Matthias Hutzler
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Profpatsch teilt seine Beobachtung, dass <a href="https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf">Zipper</a> zu den coolsten Datenstrukturen gehören, und wird damit die Reihe über funktionale Datenstrukturen fortsetzen.</p>
+</article>
+]]></description>
+    <pubDate>Wed, 15 Jun 2016 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2016-06-15-sechzehntes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das fünfzehnte Treffen am 16. Juni 2016</title>
     <link>http://curry-club-augsburg.de/posts/2016-05-17-fuenfzehntes-treffen.html</link>
     <description><![CDATA[<article>
@@ -25,7 +48,6 @@
   </header>
 
   <p>Ingo stellt Minimalwissen zu initialen Algebren und terminalen Koalgebren bereit. Diese verwendet man (unter anderem), um Datentypen mathematisch zu modellieren. In Form von Cata- und Anamorphismen haben sie aber auch eine ganz praktische Bedeutung in der Abstraktion von bekannten Rekursionsmustern.</p>
-<p>Profpatsch teilt seine Beobachtung, dass <a href="https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf">Zipper</a> zu den coolsten Datenstrukturen gehören, und wird damit die Reihe über funktionale Datenstrukturen fortsetzen.</p>
 </article>
 ]]></description>
     <pubDate>Tue, 17 May 2016 00:00:00 UT</pubDate>
@@ -423,41 +445,6 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 ]]></description>
     <pubDate>Sat, 05 Dec 2015 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2015-12-05-ankuendigung-curry-club-auf-dem-32c3.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das zehnte Treffen am 28. Januar 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das zehnte Treffen am 28. Januar 2016</h1>
-    <div class="info">
-      Gepostet am  4. Dez 15
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Manuel Eberl hielt einen Vortrag zum Thema <em>Was ist die Quadratwurzel eines Baums?</em>. Darin ging es um ein paar unausgegorene, aber interessante Beobachtungen zu algebraischen Datentypen, analytischer Kombinatorik und Parametrizität.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/flD8Vh2Ghko" frameborder="0" allowfullscreen>
-</iframe>
-<p>Dr. Stefan Wehr erzählte von <a href="http://www.factisresearch.com/">factis research</a> vom praktischen Einsatz von Haskell in der Entwicklung von <a href="http://cp-med.com/">Checkpad Med</a>.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XLJQQLKvGF0" frameborder="0" allowfullscreen>
-</iframe>
-<div class="right">
-<p><img width="150" src="/images/pfds.jpg" /></p>
-</div>
-<p>Tim hielt einen Vortrag über <a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structures</a>, genauer über Banker’s Queues.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/u14K7z365mY" frameborder="0" allowfullscreen>
-</iframe>
-<p>Makarius’ Vortrag wurde aufgrund der fortgeschrittenen Uhrzeit auf das nächste Treffen verschoben.</p>
-</article>
-]]></description>
-    <pubDate>Fri, 04 Dec 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-12-04-zehntes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
