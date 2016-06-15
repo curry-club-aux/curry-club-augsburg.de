@@ -53,6 +53,7 @@
 
   <p>Ingo stellt Minimalwissen zu initialen Algebren und terminalen Koalgebren bereit. Diese verwendet man (unter anderem), um Datentypen mathematisch zu modellieren. In Form von Cata- und Anamorphismen haben sie aber auch eine ganz praktische Bedeutung in der Abstraktion von bekannten Rekursionsmustern.</p>
 <p>Makarius stellt <a href="http://www.flatmap.net/cobra">Cobra</a> vor, ein modernes Framework, um Code und Beweise zu präsentieren. Cobra unterstützt Isabelle-Beweise sowie Scala- und Haskell-Code.</p>
+<p>Tim stellt seine WIP-Haskell-Bibliothek <a href="https://github.com/timjb/ftypes">ftypes</a> vor. In FTypes werden die bekannten Typklassen <code>Functor</code>, <code>Applicative</code> und <code>Traversable</code> auf Typen vom Kind <code>(k -&gt; *) -&gt; *</code> übertragen. Dies hat Anwendungen etwa beim Schreiben von bidirektionalen Parsern für Produkttypen.</p>
 <p>Ingo beginnt eine Einführung in Homotopietyptheorie. Was hat es damit auf sich? Wie werden in Homotopietyptheorie Objekte und Aussagen miteinander vereint, auf eine Stufe gestellt? (Im krassen Gegensatz zu allen klassischen Zugängen, bei denen Aussagen <em>über</em> Objekte (wie zum Beispiel Mengen oder natürliche Zahlen) sprechen, aber nicht selbst Objekte dieser Art sind.) Wozu ist Homotopietyptheorie gut? Wieso ist sie und für wen ist sie interessant?</p>
 </article>
 ]]></summary>
