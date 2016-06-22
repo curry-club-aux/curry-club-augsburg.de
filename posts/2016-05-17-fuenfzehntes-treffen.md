@@ -1,6 +1,6 @@
 ---
 title: Programm für das fünfzehnte Treffen am 16. Juni 2016
-subtitle: Initiale Algebren, Cobra, Homotopietyptheorie
+subtitle: Initiale Algebren, Homotopietyptheorie
 meetup-announcement: 2016-06-16
 meetup-counter: "15"
 meetup-time: 19:00
