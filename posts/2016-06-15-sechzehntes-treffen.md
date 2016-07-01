@@ -11,7 +11,7 @@ Makarius stellt [Cobra](http://www.flatmap.net/cobra) vor, ein modernes
 Framework, um Code und Beweise zu präsentieren. Cobra unterstützt
 Isabelle-Beweise sowie Scala- und Haskell-Code.
 
-Profpatsch teilt seine Beobachtung, dass
+Profpatsch teilt seine Beobachtung mit, dass
 [Zipper](https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf)
 zu den coolsten Datenstrukturen gehören, und wird damit die Reihe
 über funktionale Datenstrukturen fortsetzen.
