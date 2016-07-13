@@ -1,6 +1,6 @@
 ---
 title: Programm für das sechzehnte Treffen am 14. Juli 2016
-subtitle: Zipper, Cobra, kategorielle Patch-Theorie, Typtheorie
+subtitle: Zipper, Cobra, Typtheorie
 meetup-announcement: 2016-07-14
 meetup-counter: "16"
 meetup-time: 19:00
