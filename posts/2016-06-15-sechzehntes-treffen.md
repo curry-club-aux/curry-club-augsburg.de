@@ -1,6 +1,6 @@
 ---
 title: Programm für das sechzehnte Treffen am 14. Juli 2016
-subtitle: Zipper, Cobra, Typtheorie
+subtitle: Cobra, Typtheorie
 meetup-announcement: 2016-07-14
 meetup-counter: "16"
 meetup-time: 19:00
@@ -10,11 +10,6 @@ author: Matthias Hutzler
 Makarius stellt [Cobra](http://www.flatmap.net/cobra) vor, ein modernes
 Framework, um Code und Beweise zu präsentieren. Cobra unterstützt
 Isabelle-Beweise sowie Scala- und Haskell-Code.
-
-Profpatsch teilt seine Beobachtung mit, dass
-[Zipper](https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf)
-zu den coolsten Datenstrukturen gehören, und wird damit die Reihe
-über funktionale Datenstrukturen fortsetzen.
 
 Ingo beginnt unter dem Titel *Was sind und was sollen die Typen?* eine
 Einführung in Typtheorie unter besonderer Beachtung von

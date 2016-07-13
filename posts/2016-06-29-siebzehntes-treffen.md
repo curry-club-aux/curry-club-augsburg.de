@@ -1,11 +1,16 @@
 ---
 title: Programm für das siebzehnte Treffen am 11. August 2016
-subtitle: 
+subtitle: Zipper, Patches
 meetup-announcement: 2016-08-11
 meetup-counter: "17"
 meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
+
+Profpatsch teilt seine Beobachtung mit, dass
+[Zipper](https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf)
+zu den coolsten Datenstrukturen gehören, und wird damit die Reihe
+über funktionale Datenstrukturen fortsetzen.
 
 Tim wird einen Vortrag zu
 Versionskontrollsystemen und Patch-Theorie halten. Er wird darin die
