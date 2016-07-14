@@ -32,3 +32,6 @@ nach einem Folklore-Theorem explizit als volle Unterkategorie der
 Kategorie der Prägarben auf der Kategorie der linearen Dokumente
 beschreiben. Im Hauptteil des Papers leiten die Autoren eine viel
 konkretere, graphentheoretische Beschreibung dieser Kategorie her.]
+
+uwap wird Idris als "general purpose"-Sprache vorstellen, in der man abhängige
+Typen praktisch verwenden kann.
