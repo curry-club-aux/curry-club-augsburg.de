@@ -7,11 +7,17 @@ meetup-time: 19:00
 author: Matthias Hutzler
 ---
 
-Makarius stellt [Cobra](http://www.flatmap.net/cobra) vor, ein modernes
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/tfEQzR9-hlQ?list=PLwpepnYDFK9Mtt1iy8zRVjNLVV50dDgiO" frameborder="0" allowfullscreen></iframe>
+
+Makarius stellte [Cobra](http://www.flatmap.net/cobra) vor, ein modernes
 Framework, um Code und Beweise zu präsentieren. Cobra unterstützt
 Isabelle-Beweise sowie Scala- und Haskell-Code.
 
-Ingo beginnt unter dem Titel *Was sind und was sollen die Typen?* eine
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/CratUcZGFuI?list=PLwpepnYDFK9Mtt1iy8zRVjNLVV50dDgiO" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/m6k-ag8o0rI?list=PLwpepnYDFK9Mtt1iy8zRVjNLVV50dDgiO" frameborder="0" allowfullscreen></iframe>
+
+Ingo begann unter dem Titel *Was sind und was sollen die Typen?* eine
 Einführung in Typtheorie unter besonderer Beachtung von
 Homotopietyptheorie. Die grundlegende Motivation aus der Informatik und der
 Programmierpraxis sind natürlich bekannt: Man möchte zur Compilezeit
@@ -23,9 +29,9 @@ Aber es ist vielleicht weniger bekannt, wie Typtheorie entstanden ist
 ursprünglich lösen sollte (und auch tatsächlich löst), und wie ein
 Typsystem aufgebaut ist.
 
-Ziel des ersten Teils wird auch sein, ein Grundverständnis im Lesen von
-Typsystemspezifikationen zu vermitteln. Wir werden extensionale und
-intensionale Martin-Löf-Typtheorie behandeln.
+Ziel des ersten Teils war, ein Grundverständnis im Lesen von
+Typsystemspezifikationen zu vermitteln. Es wurde extensionale und
+intensionale Martin-Löf-Typtheorie behandelt.
 
 Homotopietyptheorie ist ein neuer Zweig der Mathematik,
 der Aspekte von verschiedenen anderen Teilgebieten der Mathematik auf
@@ -45,7 +51,7 @@ selbstverständlich auch keine aus Homotopietheorie voraus. Der Vortrag ist für
 Leute konzipiert, die sich für diese neue Bewegung in der Logik interessieren,
 aber nicht praktizierende Mathematikerinnen sind.
 
-Er wird folgende Fragen klären: Was hat es mit Homotopietyptheorie auf sich?
+Er klärt folgende Fragen: Was hat es mit Homotopietyptheorie auf sich?
 Wie werden in Homotopietyptheorie Objekte und Aussagen miteinander vereint, auf
 eine Stufe gestellt? Wozu ist Homotopietyptheorie gut? Wieso und für wen ist
 sie interessant?
