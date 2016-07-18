@@ -34,6 +34,8 @@ if [ $# -gt 0 ]; then
 else
   ORIGIN="$CURR_ORIGIN"
 fi
+BUILD_ARGS="$@"
+
 BUILD_DIR=$(mktemp -d builddir-XXXX)
 
 function cleanup_build_dir() {
@@ -62,7 +64,7 @@ function compile_static_site_in_build_dir() {
   echo "\$ $SITE clean"
   $SITE clean
   echo "\$ $SITE build $@"
-  $SITE build $@
+  $SITE build $BUILD_ARGS
   cp -R ./_site/* "$BUILD_DIR"
   echo "\$ $SITE clean"
   $SITE clean
