@@ -1,4 +1,8 @@
+#!/usr/bin/env stack
+-- stack --resolver lts-6.7 --install-ghc runghc --package clay --package text
+
 {-# LANGUAGE OverloadedStrings #-}
+
 import           Prelude hiding (div,(**))
 import           Data.Monoid
 import qualified Data.Text.Lazy.IO as L
