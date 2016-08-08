@@ -27,7 +27,7 @@ Kategorie der "normalen", linearen Dokumente aus und wollen dann
 können, sollte die Kategorie endlich kovollständig sein, damit alle
 Pushouts existieren. Deshalb gehen die Autoren zur freien konservativen
 (schon existierende Kolimiten bleiben erhalten) Kovervollständigung der
-Kategorie der linearen Dokumente über. Diese Kovervollständigung man
+Kategorie der linearen Dokumente über. Diese Kovervollständigung kann man
 nach einem Folklore-Theorem explizit als volle Unterkategorie der
 Kategorie der Prägarben auf der Kategorie der linearen Dokumente
 beschreiben. Im Hauptteil des Papers leiten die Autoren eine viel
