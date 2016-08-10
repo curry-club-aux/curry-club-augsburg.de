@@ -7,10 +7,8 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Profpatsch teilt seine Beobachtung mit, dass
-[Zipper](https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf)
-zu den coolsten Datenstrukturen gehören, und wird damit die Reihe
-über funktionale Datenstrukturen fortsetzen.
+uwap wird Idris als "general purpose"-Sprache vorstellen, in der man abhängige
+Typen praktisch verwenden kann.
 
 Tim wird einen Vortrag zu
 Versionskontrollsystemen und Patch-Theorie halten. Er wird darin die
@@ -33,5 +31,6 @@ Kategorie der Prägarben auf der Kategorie der linearen Dokumente
 beschreiben. Im Hauptteil des Papers leiten die Autoren eine viel
 konkretere, graphentheoretische Beschreibung dieser Kategorie her.]
 
-uwap wird Idris als "general purpose"-Sprache vorstellen, in der man abhängige
-Typen praktisch verwenden kann.
+
+Profpatsch stellt eine pragmatische Implementierung von Internationalisierung (i18n) in Haskell vor.
+Der ursprünglich geplante Vortrag über [Zipper](https://www.st.cs.uni-saarland.de/edu/seminare/2005/advanced-fp/docs/huet-zipper.pdf) wird auf einen späteren Termin verschoben.
