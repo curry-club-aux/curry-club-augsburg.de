@@ -9,3 +9,5 @@ author: Ingo Blechschmidt
 
 Marc wird voraussichtlich über *Hygienische Makros: Praxis, Theorie und
 Implementierung am Beispiel von Scheme* sprechen.
+
+Profpatsch stellt eine pragmatische Implementierung von Internationalisierung (i18n) in Haskell vor.
