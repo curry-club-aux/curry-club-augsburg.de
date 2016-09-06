@@ -1,5 +1,5 @@
 ---
-title: Programm für das achtzehnte Treffen am 6. Oktober 2016
+title: Programm für das neunzehnte Treffen am 6. Oktober 2016
 subtitle: Superturingmaschinen
 meetup-announcement: 2016-10-06
 meetup-counter: "19"
