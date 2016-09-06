@@ -7,8 +7,43 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 29 Jun 2016 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Sep 2016 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das achtzehnte Treffen am 6. Oktober 2016</title>
+    <link>http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das achtzehnte Treffen am 6. Oktober 2016</h1>
+    <div class="info">
+      Gepostet am  6. Sep 16
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Ingo wird Superturingmaschinen vorstellen. Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
+<p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
+<p>Superturingmaschinen können aber trotzdem längst nicht “alles”. Es gibt Probleme, die auch Superturingmaschinen bewiesenermaßen nicht lösen können.</p>
+<p>Der Vortrag wird in die Theorie der Superturingmaschinen einführen, welche in mancherlei Hinsicht parallel zur klassischen Theorie verläuft, sich in manchen Punkten aber auch deutlich von ihr unterscheidet. Wir werden unter anderem folgende Facetten diskutieren:</p>
+<ul>
+<li><p>Wie geht man präzise mit mehr als unendlich vielen Zeitschritten um? Wie kann man sich Superturingmaschinen physikalisch vorstellen? (Kurzer Crashkurs in Ordinalzahlen.)</p></li>
+<li><p>Nach der kleinsten unendlich großen Ordinalzahl gibt es eine echte Klasse weiterer unendlich großer Ordinalzahlen. Gibt es zu jeder solchen Zahl eine Superturingmaschine, die nach genau so vielen Schritten hält?</p></li>
+<li><p>Man schreibt Superturingmaschinen keine Maximalzahl zu verwendender Zeitschritte vor. Erstaunlicherweise gibt es trotzdem einen gewissen transfiniten Zeitpunkt, ab dem sich eine Superturingmaschine in ihrem Verhalten endlos wiederholen wird.</p></li>
+<li><p>Wo liegen die Grenzen des Möglichen für Superturingmaschinen?</p></li>
+<li><p>Manchmal kann man zwar ein gewisses Lied erkennen, wenn man es hört, es aber nicht vorsingen. Bei Superturingmaschinen gibt es dieses <em>Lost-Melody-Phänomen</em> ebenfalls: Sie können entscheiden, ob auf dem Band ein gewisser vorgegebener Inhalt steht, sind aber nicht in der Lage, diesen Inhalt selbst zu produzieren. Wieso?</p></li>
+<li><p>Jedes Berechenbarkeitskonzept – wie etwa das von realen Computern in der realen Welt, das von idealisierten Turingmaschinen und das von Superturingmaschinen – zieht ein mathematisches Alternativuniversum mit jeweils eigenen Gesetzen der Logik mit sich, einen “effektiven Topos”. Insbesondere das Universum, welches zu Superturingmaschinen gehört, hat faszinierende Eigenschaften.</p></li>
+</ul>
+<p>Originalquellen zum Thema sind der wegweisende Artikel von Joel Hamkins und Andy Lewis <a href="http://arxiv.org/abs/math/9808093">Infinite Time Turing Machines</a> (Vorsicht Spoiler!) und zwei schöne Aufsätze von Andrej Bauer: <a href="http://math.andrej.com/wp-content/uploads/2014/03/real-world-realizability.pdf%5D">Intuitionistic Mathematics and Realizability in the Physical World</a> und <a href="http://math.andrej.com/data/c2c.pdf">Realizability as the Connection between Computable and Constructive Mathematics</a>. Um den Vortrag genießen zu können, sollte man nur in seinem Leben irgendwann einmal gelernt haben, was eine Turingmaschine ist (das erste Drittel des Wikipedia-Eintrags genügt dazu völlig). Weitere Vorkenntnisse werden nicht vorausgesetzt.</p>
+</article>
+]]></description>
+    <pubDate>Tue, 06 Sep 2016 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das siebzehnte Treffen am 11. August 2016</title>
     <link>http://curry-club-augsburg.de/posts/2016-06-29-siebzehntes-treffen.html</link>
     <description><![CDATA[<article>
@@ -54,7 +89,7 @@
 
   <p>Marc wird über <em>Hygienische Makros: Praxis, Theorie und Implementierung am Beispiel von Scheme</em> sprechen.</p>
 <p>Profpatsch stellt eine pragmatische Implementierung von Internationalisierung (i18n) in Haskell vor.</p>
-<p>corny wird über <em>Praktische Firewalltheorie</em> sprechen. Dabei verlassen wir kurzzeitig unseren Elfenbeinturm und schauen uns die wahre Schönheit von <em>iptables</em> an. Sobald wir diesen Realitätsschock überwunden haben, kommen wir aber wieder schnell in unsere heile Isabelle-Welt zurück. Oh nein, etwas stimmt nicht in unseren heilen Welt! Was kann das sein?</p>
+<p>corny wird über <em>praktische Firewalltheorie</em> sprechen. Dabei verlassen wir kurzzeitig unseren Elfenbeinturm und schauen uns die wahre Schönheit von <em>iptables</em> an. Sobald wir diesen Realitätsschock überwunden haben, kommen wir aber wieder schnell in unsere heile Isabelle-Welt zurück. Oh nein, etwas stimmt nicht in unseren heilen Welt! Was kann das sein?</p>
 </article>
 ]]></description>
     <pubDate>Wed, 29 Jun 2016 00:00:00 UT</pubDate>
@@ -318,54 +353,6 @@ partielle, nicht-injektive Funktion
 ]]></description>
     <pubDate>Tue, 05 Jan 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Zweiter großer Haskell-Workshop des Curry Clubs Augsburg am 20. Dezember 2015</title>
-    <link>http://curry-club-augsburg.de/posts/2015-12-09-zweiter-workshop.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Zweiter großer Haskell-Workshop des Curry Clubs Augsburg am 20. Dezember 2015</h1>
-    <div class="info">
-      Gepostet am  9. Dez 15
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <div class="right">
-<p><a href="/files/haskellworkshop-plakat2.pdf"> <img width="300" src="/files/haskellworkshop-plakat2.png" /> </a></p>
-</div>
-<p>Liebe Freundinnen der Sonne!</p>
-<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu der Fortsetzung unseres <strong>Haskell-Workshops</strong> ein. Diese findet am <strong>20. Dezember 2015</strong>, einem Sonntag, von 9:00 Uhr bis 17:00 Uhr im <strong>OpenLab Augsburg</strong> statt. Wie beim ersten Mal ist die Teilnahme kostenlos.</p>
-<p>Zielgruppe des Workshops sind alle Teilnehmerinnen des ersten Workshops sowie Einsteigerinnen auf allen Fortschrittslevels.</p>
-<p>Mit den Teilnehmerinnen vom letzten Mal werden wir dort weitermachen, wo wir das letzte Mal aufgehört haben. Während es damals darum ging die Basics zu lernen, wollen wir dieses Mal auf folgende Fragen eingehen:</p>
-<ul>
-<li>Welche verwendungsfertige Funktionen gibt es in der Standardbibliothek und auf <a href="http://hackage.haskell.org/">Hackage</a>?</li>
-<li>Wie strukturiere ich größere Haskell-Programme?</li>
-<li>Wie kann ich sicherstellen, dass mein Code das tut, was er soll?</li>
-<li>Ich programmiere liebend gerne Parser / Webseiten / numerische Simulationen / Benutzeroberflächen / 3D-Spiele / XYZ. Wie mache ich das in Haskell?</li>
-</ul>
-<p>Am Anfang werden wir Monaden wiederholen. Ingo hat dazu auch einen <a href="/posts/2015-10-27-monaden-in-haskell.html">eigenen Blog-Post</a> geschrieben. Ihr tut euch mit Monaden erheblich leichter, wenn ihr diesen Artikel vor dem Workshop liest! Falls ihr das letzte Mal nicht fertig geworden seid, dann ist das kein Problem. Dann könnt ihr einfach das <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">Übungsblatt</a> weiter bearbeiten und wir helfen euch dabei.</p>
-<p>Für Neueinsteigerinnen wird es eine eigene Gruppe geben. Teilnahmevoraussetzung für Neulinge ist entweder Erfahrung mit einer beliebigen anderen Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken.</p>
-<p>Wer vorhat, am Workshop teilzunehmen, kann sich in ein <a href="https://ola.pads.ccc.de/haskell-workshop-2015b">Organisationspad</a> eintragen und dann am 20. Dezember mit dem eigenen Laptop ins OpenLab kommen. Bitte vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren, um auf dem Workshop Zeit zu sparen.</p>
-<p>Wir freuen uns auf euch!</p>
-<p>Euer Team vom Curry Club</p>
-<!--more-->
-<blockquote>
-<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
-<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
-<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
-<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
-<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
-</blockquote>
-</article>
-]]></description>
-    <pubDate>Wed, 09 Dec 2015 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2015-12-09-zweiter-workshop.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
