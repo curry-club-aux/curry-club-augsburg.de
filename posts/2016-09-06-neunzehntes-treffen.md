@@ -61,7 +61,7 @@ Originalquellen zum Thema sind der wegweisende Artikel von Joel Hamkins und
 Andy Lewis [Infinite Time Turing Machines](http://arxiv.org/abs/math/9808093)
 (Vorsicht Spoiler!) und zwei schöne Aufsätze von Andrej Bauer:
 [Intuitionistic Mathematics and Realizability in the Physical
-World](http://math.andrej.com/wp-content/uploads/2014/03/real-world-realizability.pdf])
+World](http://math.andrej.com/wp-content/uploads/2014/03/real-world-realizability.pdf)
 und [Realizability as the Connection between Computable and Constructive
 Mathematics](http://math.andrej.com/data/c2c.pdf). Um den Vortrag genießen zu
 können, sollte man nur in seinem Leben irgendwann einmal gelernt haben, was
