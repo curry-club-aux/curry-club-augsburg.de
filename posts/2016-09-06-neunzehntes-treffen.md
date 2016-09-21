@@ -1,11 +1,14 @@
 ---
 title: Programm für das neunzehnte Treffen am 6. Oktober 2016
-subtitle: Superturingmaschinen
+subtitle: Internationalisierung, Superturingmaschinen
 meetup-announcement: 2016-10-06
 meetup-counter: "19"
 meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
+
+Profpatsch setzt seine Vorstellung einer pragmatischen Implementierung von
+Internationalisierung (i18n) in Haskell fort.
 
 Ingo wird Superturingmaschinen vorstellen. Superturingmaschinen können anders
 als ihre bekannten Verwandten "länger als unendlich lange" laufen. Das drückt
