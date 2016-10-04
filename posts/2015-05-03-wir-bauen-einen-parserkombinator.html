@@ -64,7 +64,7 @@ bind m f <span class="fu">=</span> <span class="dt">MkParser</span> <span class=
 	<span class="dt">Nothing</span>      <span class="ot">-&gt;</span> <span class="dt">Nothing</span></code></pre></div>
 <p>Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.</p>
 <p>Natürlich darf dann auch der Kumpan von <code>bind/&gt;&gt;=</code>, <code>pure/return</code> nicht fehlen:</p>
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">pure ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">pure<span class="ot"> ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
 pure x <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> <span class="dt">Just</span> (s, x)</code></pre></div>
 <p>Das macht einfach einen beliebigen Wert zu einem Parser (damit man ihn auch mit anderen Parsern verketten kann).</p>
 <p>Diese Definitionen kombiniert man dann (Parser<em>kombinatioren</em>) zu höherleveligen Hilfsfunktionen, wie z.B.</p>
