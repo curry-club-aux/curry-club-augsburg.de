@@ -7,10 +7,16 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Profpatsch setzt seine Vorstellung einer pragmatischen Implementierung von
+Profpatsch setzte seine Vorstellung einer pragmatischen Implementierung von
 Internationalisierung (i18n) in Haskell fort.
 
-Ingo wird Superturingmaschinen vorstellen. Superturingmaschinen können anders
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/0N5fiDPMA7Q" frameborder="0" allowfullscreen></iframe>
+
+Ingo begann seine Einführung in Superturingmaschinen. Da er nicht fertig geworden ist, wird der Vortrag beim nächsten Treffen fortgesetzt.
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/sUqwFbbwHQo" frameborder="0" allowfullscreen></iframe>
+
+Superturingmaschinen können anders
 als ihre bekannten Verwandten "länger als unendlich lange" laufen. Das drückt
 sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht
 mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …),
