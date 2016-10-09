@@ -1,5 +1,5 @@
 ---
-title: Programm für das neunzehnte Treffen am 6. Oktober 2016
+title: Programm für das zwanzigste Treffen am 3. November 2016
 subtitle: Mehr über die Superheit von Superturingmaschinen
 meetup-announcement: 2016-11-03
 meetup-counter: "20"
