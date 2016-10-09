@@ -7,7 +7,7 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Ingo wird seine Vorstellung von Superturingmaschinen [vom letzten Treffen](2016-09-06-neunzehntes-treffen.html) fortsetzen ([Folien](http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf)).
+Ingo wird seine Vorstellung von Superturingmaschinen [vom letzten Treffen](/posts/2016-09-06-neunzehntes-treffen.html) fortsetzen ([Folien](http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf)).
 
 Superturingmaschinen können anders
 als ihre bekannten Verwandten "länger als unendlich lange" laufen. Das drückt
