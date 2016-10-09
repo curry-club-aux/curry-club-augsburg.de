@@ -38,8 +38,8 @@ main = do
 
     match "css/*.hs" $ do
       route   $ setExtension "css"
-      compile $ fmap (fmap compressCss) $
-        getResourceString >>= withItemBody evalProgramFilter
+      compile $
+        fmap compressCss <$> execProgramFilter
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
@@ -106,8 +106,12 @@ main = do
                posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
                kind feed feedCtx posts
 
-evalProgramFilter :: String -> Compiler String
-evalProgramFilter = unixFilter "stack" ["exec", "--ghc-package-path", "runghc"]
+execProgramFilter :: Compiler (Item String)
+execProgramFilter = do
+  id' <- getUnderlying
+  path <- getResourceFilePath
+  output <- unixFilter path [] ""
+  pure $ Item id' output
 
 --------------------------------------------------------------------------------
 mesz :: TimeZone
