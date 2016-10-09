@@ -8,8 +8,44 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2016-09-06T00:00:00Z</updated>
+    <updated>2016-10-07T00:00:00Z</updated>
     <entry>
+    <title>Programm für das neunzehnte Treffen am 6. Oktober 2016</title>
+    <link href="http://curry-club-augsburg.de/posts/2016-10-07-zwanzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2016-10-07-zwanzigstes-treffen.html</id>
+    <published>2016-10-07T00:00:00Z</published>
+    <updated>2016-10-07T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das neunzehnte Treffen am 6. Oktober 2016</h1>
+    <div class="info">
+      Gepostet am  7. Okt 16
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Ingo wird seine Vorstellung von Superturingmaschinen <a href="2016-09-06-neunzehntes-treffen.html">vom letzten Treffen</a> fortsetzen (<a href="http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf">Folien</a>).</p>
+<p>Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
+<p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
+<p>Superturingmaschinen können aber trotzdem längst nicht “alles”. Es gibt Probleme, die auch Superturingmaschinen bewiesenermaßen nicht lösen können.</p>
+<p>Der Vortrag wird in die Theorie der Superturingmaschinen einführen, welche in mancherlei Hinsicht parallel zur klassischen Theorie verläuft, sich in manchen Punkten aber auch deutlich von ihr unterscheidet. Wir werden unter anderem folgende Facetten diskutieren:</p>
+<ul>
+<li><p>Wie geht man präzise mit mehr als unendlich vielen Zeitschritten um? Wie kann man sich Superturingmaschinen physikalisch vorstellen? (Kurzer Crashkurs in Ordinalzahlen.)</p></li>
+<li><p>Nach der kleinsten unendlich großen Ordinalzahl gibt es eine echte Klasse weiterer unendlich großer Ordinalzahlen. Gibt es zu jeder solchen Zahl eine Superturingmaschine, die nach genau so vielen Schritten hält?</p></li>
+<li><p>Man schreibt Superturingmaschinen keine Maximalzahl zu verwendender Zeitschritte vor. Erstaunlicherweise gibt es trotzdem einen gewissen transfiniten Zeitpunkt, ab dem sich eine Superturingmaschine in ihrem Verhalten endlos wiederholen wird.</p></li>
+<li><p>Wo liegen die Grenzen des Möglichen für Superturingmaschinen?</p></li>
+<li><p>Manchmal kann man zwar ein gewisses Lied erkennen, wenn man es hört, es aber nicht vorsingen. Bei Superturingmaschinen gibt es dieses <em>Lost-Melody-Phänomen</em> ebenfalls: Sie können entscheiden, ob auf dem Band ein gewisser vorgegebener Inhalt steht, sind aber nicht in der Lage, diesen Inhalt selbst zu produzieren. Wieso?</p></li>
+<li><p>Jedes Berechenbarkeitskonzept – wie etwa das von realen Computern in der realen Welt, das von idealisierten Turingmaschinen und das von Superturingmaschinen – zieht ein mathematisches Alternativuniversum mit jeweils eigenen Gesetzen der Logik mit sich, einen “effektiven Topos”. Insbesondere das Universum, welches zu Superturingmaschinen gehört, hat faszinierende Eigenschaften.</p></li>
+</ul>
+<p>Originalquellen zum Thema sind der wegweisende Artikel von Joel Hamkins und Andy Lewis <a href="http://arxiv.org/abs/math/9808093">Infinite Time Turing Machines</a> (Vorsicht Spoiler!) und zwei schöne Aufsätze von Andrej Bauer: <a href="http://math.andrej.com/wp-content/uploads/2014/03/real-world-realizability.pdf">Intuitionistic Mathematics and Realizability in the Physical World</a> und <a href="http://math.andrej.com/data/c2c.pdf">Realizability as the Connection between Computable and Constructive Mathematics</a>. Um den Vortrag genießen zu können, sollte man nur in seinem Leben irgendwann einmal gelernt haben, was eine Turingmaschine ist (das erste Drittel des Wikipedia-Eintrags genügt dazu völlig). Weitere Vorkenntnisse werden nicht vorausgesetzt.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das neunzehnte Treffen am 6. Oktober 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html</id>
@@ -28,8 +64,13 @@
     
   </header>
 
-  <p>Profpatsch setzt seine Vorstellung einer pragmatischen Implementierung von Internationalisierung (i18n) in Haskell fort.</p>
-<p>Ingo wird Superturingmaschinen vorstellen. Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
+  <p>Profpatsch setzte seine Vorstellung einer pragmatischen Implementierung von Internationalisierung (i18n) in Haskell fort.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/0N5fiDPMA7Q" frameborder="0" allowfullscreen>
+</iframe>
+<p>Ingo begann seine Einführung in Superturingmaschinen. Da er nicht fertig geworden ist, wird der Vortrag beim nächsten Treffen fortgesetzt.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/sUqwFbbwHQo" frameborder="0" allowfullscreen>
+</iframe>
+<p>Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
 <p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
 <p>Superturingmaschinen können aber trotzdem längst nicht “alles”. Es gibt Probleme, die auch Superturingmaschinen bewiesenermaßen nicht lösen können.</p>
 <p>Der Vortrag wird in die Theorie der Superturingmaschinen einführen, welche in mancherlei Hinsicht parallel zur klassischen Theorie verläuft, sich in manchen Punkten aber auch deutlich von ihr unterscheidet. Wir werden unter anderem folgende Facetten diskutieren:</p>
@@ -307,53 +348,6 @@ partielle, nicht-injektive Funktion
 <p>Makarius gab (diesmal wirklich) eine Einführung in <em>Programme und Beweise in Isabelle/HOL</em>. Inhaltlich wurden das einige formale Fußnoten in klassischer Mathematik zu <a href="https://www.youtube.com/watch?v=F53aOAW9PBo">scheinbar unmöglichen funktionalen Programmen</a> sowie eine Nacharbeit zu den beiden Haskell-Workshops (<a href="https://curry-club-aux.github.io/haskell-workshop/uebung.pdf">erstes Übungsblatt</a>, <a href="https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf">zweites Übungsblatt</a>) sein. Bei der Gelegenheit haben wir auch das Release von Isabelle2016 gefeiert.</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/dIwZSoZlUfw" frameborder="0" allowfullscreen>
 </iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das elfte Treffen am 25. Februar 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-01-05-elftes-treffen.html</id>
-    <published>2016-01-05T00:00:00Z</published>
-    <updated>2016-01-05T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das elfte Treffen am 25. Februar 2016</h1>
-    <div class="info">
-      Gepostet am  5. Jan 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Ingo stellte kombinatorische Spieltheorie mit surrealen Zahlen und Haskell vor.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Xm-CvksUxT0" frameborder="0" allowfullscreen>
-</iframe>
-<p>Cornelius sprach über <em>Verified Firewall Ruleset Analysis</em>. Diesen Vortrag hat er schon auf dem Kongress gehalten.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/fKeGfbY5AyM" frameborder="0" allowfullscreen>
-</iframe>
-<p>Beim nächsten Treffen wird er seinen Vortrag fortsetzen.</p>
-<p>Makarius und Lukas mussten ihre Vorträge leider absagen. Auch Profpatsch’ Kurvvortrag fand nicht statt. Die Vorträge werden beim nächsten oder übernächsten Treffen nachgeholt.</p>
-<!--more-->
-<blockquote>
-<p><strong>Kombinatorische Spieltheorie mit surrealen Zahlen und Haskell</strong></p>
-<p>Rundenbasierte Zwei-Personen-Spiele, die keinerlei Zufallselemente enthalten und nicht mit verborgenen Informationen arbeiten, lassen sich mit einer wunderschönen mathematischen Theorie beschreiben. (“Schach”, nicht “Fußball”.)</p>
-<p>Dabei ordnet man jeder Spielsituation einen gewissen Wert zu. Ist dieser positiv, gewinnt der eine Spieler; ist sie negativ, gewinnt der andere. Wenn eine Situation in zwei unabhängige Teile zerfällt, ist der zugeordnete Wert die Summe der Einzelwerte.</p>
-<p>Gewöhnliche Zahlen genügen dafür aber nicht! Man verwendet stattdessen surreale Zahlen (und eine leichte Variante), eine elegante Neuschöpfung und weitreichende Verallgemeinerung der gewöhnlichen bekannten Zahlen. In den surrealen Zahlen haben Ausdrücke wie “unendlich”, “unendlich plus 1” und “unendlich minus 37” eine sinnvolle Bedeutung und werden in der Spielanalyse anschaulich.</p>
-<p>Die grundlegenden Operationen mit surrealen Zahlen kann man elegant in Haskell implementieren. Mathematische Vorkenntnisse benötigt man dafür nicht, da man alles an grafischen Spielen ablesen kann. Damit können wir dann Gewinnstrategien für diverse Spiele berechnen lassen.</p>
-<p><a href="http://rawgit.com/iblech/vortrag-haskell/master/surreal.pdf">“Folien”</a>, <a href="https://github.com/iblech/vortrag-haskell/blob/master/surreal.hs">Quellcode</a></p>
-</blockquote>
-<blockquote>
-<p><strong>Verified Firewall Ruleset Analysis</strong></p>
-<p>We develop a tool to verify Linux netfilter/iptables firewalls rulesets. Then, we verify the verification tool itself.</p>
-<p>Warning: involves math!</p>
-<p>This talk is also an introduction to interactive theorem proving and programming in Isabelle/HOL. We strongly suggest that audience members have some familiarity with functional programming. A strong mathematical background is NOT required.</p>
-<p>TL;DR: Math is cool again, we now have the tools for “executable math”. Also: iptables!</p>
-<p><a href="http://www.net.in.tum.de/pub/diekmann/32c3.pdf">Folien</a>, <a href="https://github.com/diekmann/Iptables_Semantics">Quellcode</a></p>
-</blockquote>
 </article>
 ]]></summary>
 </entry>
