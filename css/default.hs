@@ -182,6 +182,9 @@ contentCss = do
   article # ".bright" ?
     ((a # link) <> (a # visited)) ?
       color ourPurple
+  article # ".important" ?
+    ((a # link) <> (a # visited)) ?
+      color ourPurple
   p # "#next-meeting" ? do
     fontSize (px 18)
     textAlign (alignSide sideCenter)
