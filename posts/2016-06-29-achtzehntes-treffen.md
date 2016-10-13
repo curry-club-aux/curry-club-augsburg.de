@@ -10,6 +10,13 @@ author: Ingo Blechschmidt
 Marc wird über *Hygienische Makros: Praxis, Theorie und
 Implementierung am Beispiel von Scheme* sprechen.
 
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XS6P4aK6rWY" frameborder="0" allowfullscreen></iframe>
+
 Profpatsch stellt eine pragmatische Implementierung von Internationalisierung (i18n) in Haskell vor.
 
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/zBEgbSuuLwU" frameborder="0" allowfullscreen></iframe>
+
 corny wird über *praktische Firewalltheorie* sprechen. Dabei verlassen wir kurzzeitig unseren Elfenbeinturm und schauen uns die wahre Schönheit von *iptables* an. Sobald wir diesen Realitätsschock überwunden haben, kommen wir aber wieder schnell in unsere heile Isabelle-Welt zurück. Oh nein, etwas stimmt nicht in unseren heilen Welt! Was kann das sein?
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Yrpp8ZKWcbY" frameborder="0" allowfullscreen></iframe>
