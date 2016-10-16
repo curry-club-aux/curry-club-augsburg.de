@@ -1,20 +1,18 @@
 #!/usr/bin/env stack
 -- stack --resolver lts-6.20 --install-ghc runghc --package clay --package text
-
 {-# LANGUAGE OverloadedStrings #-}
+module CurryClub.Css (
+  css
+) where
 
 import           Prelude hiding (div,(**))
+import           Data.Text.Lazy (Text)
 import           Data.Monoid
-import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
-import qualified Clay.Stylesheet
 
--- this is in the github version of clay, but not released yet
-borderSpacing :: Size a -> Size a -> Css
-borderSpacing v h = Clay.Stylesheet.key "border-spacing" (v ! h)
-
-reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
+reallyDarkPurple, darkerPurple, darkPurple, ourPurple :: Color
+rose, lightRose, almostWhite, lightYellow             :: Color
 reallyDarkPurple = other "#170b1a"
 darkerPurple     = other "#211024"
 darkPurple       = other "#2d1630"
@@ -132,12 +130,6 @@ postCss = do
     padding (px 10) (px 30) (px 10) (px 30)
     marginBottom (em 1)
     background reallyDarkPurple
-    -- http://nicolasgallagher.com/micro-clearfix-hack/
-    ":after" <> ":before" ? do
-      content (stringContent " ")
-      display Clay.Display.table
-    ":after" ?
-      clear both
 
 syntaxCss :: Css
 syntaxCss = do
@@ -210,7 +202,7 @@ contentCss = do
     lineHeight (px 64)
   ul # ".post-list" ? do
     display Clay.Display.table
-    borderSpacing nil (px 4)
+    borderSpacing2 nil (px 4)
     listStyleType none
     paddingLeft (px 0)
     li ? do
@@ -275,8 +267,8 @@ lambdify = before & do
   paddingRight (px 10)
   color ourPurple
 
-main :: IO ()
-main = L.putStr $ render $ do
+css :: Text
+css = render $ do
   importUrl "/css/ubuntu.css"
   bodyCss
   layoutCss
