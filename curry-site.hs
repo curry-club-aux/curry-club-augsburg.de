@@ -1,16 +1,19 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+module Main where
+--------------------------------------------------------------------------------
 import           Control.Monad
 import           Data.Bifunctor (bimap)
 import           Data.Either (partitionEithers)
 import           Data.Function (on)
 import           Data.List (partition, sortBy)
 import           Data.Monoid ((<>))
+import qualified Data.Text.Lazy as Text
 import           Data.Time
 import           Data.Yaml (parseMaybe, (.:))
 import           Hakyll
 import           Safe
 
+import qualified CurryClub.Css as Css
 
 --------------------------------------------------------------------------------
 
@@ -30,16 +33,14 @@ main = do
     match "CNAME" idCopyFile
     match "images/*" idCopyFile
     match "files/*" idCopyFile
-    match "css/ubuntu/*" idCopyFile
 
+    match "css/ubuntu/*" idCopyFile
     match "css/*.css" $ do
       route   idRoute
       compile compressCssCompiler
-
-    match "css/*.hs" $ do
-      route   $ setExtension "css"
-      compile $
-        fmap compressCss <$> execProgramFilter
+    create ["css/default.css"] $ do
+      route   idRoute
+      compile $ makeItem $ Text.unpack Css.css
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
@@ -105,13 +106,6 @@ main = do
                let feedCtx = postCtx `mappend` bodyField "description"
                posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
                kind feed feedCtx posts
-
-execProgramFilter :: Compiler (Item String)
-execProgramFilter = do
-  id' <- getUnderlying
-  path <- getResourceFilePath
-  output <- unixFilter path [] ""
-  pure $ Item id' output
 
 --------------------------------------------------------------------------------
 mesz :: TimeZone
