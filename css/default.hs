@@ -10,10 +10,6 @@ import           Clay
 import qualified Clay.Display
 import qualified Clay.Stylesheet
 
--- this is in the github version of clay, but not released yet
-borderSpacing :: Size a -> Size a -> Css
-borderSpacing v h = Clay.Stylesheet.key "border-spacing" (v ! h)
-
 reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 reallyDarkPurple = other "#170b1a"
 darkerPurple     = other "#211024"
@@ -210,7 +206,7 @@ contentCss = do
     lineHeight (px 64)
   ul # ".post-list" ? do
     display Clay.Display.table
-    borderSpacing nil (px 4)
+    borderSpacing2 nil (px 4)
     listStyleType none
     paddingLeft (px 0)
     li ? do

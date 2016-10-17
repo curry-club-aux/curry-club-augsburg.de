@@ -17,7 +17,7 @@ executable curry-site
 executable css
   main-is:          default.hs
   build-depends:    base == 4.*
-                  , clay >= 0.9
+                  , clay >= 0.11
                   , text
   hs-source-dirs:   css
   ghc-options:      -threaded -Wall
