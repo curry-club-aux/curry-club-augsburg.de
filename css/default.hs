@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver lts-6.20 --install-ghc runghc --package clay --package text
+-- stack --resolver lts-7.4 --install-ghc runghc --package clay --package text
 
 {-# LANGUAGE OverloadedStrings #-}
 
