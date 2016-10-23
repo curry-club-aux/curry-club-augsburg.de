@@ -12,6 +12,10 @@ Typen praktisch verwenden kann.
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/DhznnY59Lu4" frameborder="0" allowfullscreen></iframe>
 
+Tim hielt spontan einen Vortrag über [quantities](https://github.com/timjb/quantities), eine von ihm geschriebene Idris-Bibliothek zum Rechnen mit physikalischen Einheiten.
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/PrNVF2tWaVs" frameborder="0" allowfullscreen></iframe>
+
 Tim hielt einen Vortrag zu
 Versionskontrollsystemen und Patch-Theorie. Er stellte die
 unterschiedlichen Modelle von git und darcs vor. Eigentlich wollte er noch insbesondere auf das neue
