@@ -1,6 +1,3 @@
-#!/usr/bin/env stack
--- stack --resolver lts-6.22 --install-ghc runghc --package clay --package text
-
 {-# LANGUAGE OverloadedStrings #-}
 
 import           Prelude hiding (div,(**))
