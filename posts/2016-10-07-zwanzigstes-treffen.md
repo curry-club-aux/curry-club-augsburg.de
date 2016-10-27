@@ -9,6 +9,8 @@ author: Tim Baumann
 
 Ingo wird seine Vorstellung von Superturingmaschinen [vom letzten Treffen](/posts/2016-09-06-neunzehntes-treffen.html) fortsetzen ([Folien](http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf)).
 
+Richard wird eine kurze Einführung in die Programmiersprache Julia geben.
+
 Superturingmaschinen können anders
 als ihre bekannten Verwandten "länger als unendlich lange" laufen. Das drückt
 sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht
