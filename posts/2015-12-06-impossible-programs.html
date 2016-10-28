@@ -89,7 +89,7 @@
 <span class="ot">&gt;</span>     <span class="kw">then</span> <span class="dt">False</span> <span class="fu">:</span> xs
 <span class="ot">&gt;</span>     <span class="kw">else</span> <span class="dt">True</span>  <span class="fu">:</span> epsilon (p <span class="fu">.</span> (<span class="dt">True</span><span class="fu">:</span>))
 <span class="ot">&gt;</span>     <span class="kw">where</span> xs <span class="fu">=</span> epsilon (p <span class="fu">.</span> (<span class="dt">False</span><span class="fu">:</span>))</code></pre></div>
-<p>Etwas schneller geht es dank Lazyness so:</p>
+<p>Etwas schneller geht es dank Laziness so:</p>
 <pre><code>epsilon :: ([Bool] -&gt; Bool) -&gt; [Bool]
 epsilon p = h : epsilon (p . (h:))
     where
@@ -152,7 +152,8 @@ x |-> if x < 0 then -1 else if x == 0 then 0 else 1
 <p><code>data NAT = Zero | Succ NAT</code></p>
 <p><code>infty = Succ infty</code></p>
 <ol start="2" style="list-style-type: decimal">
-<li>Definiere eine Typklasse <code>Compact</code> und implementiere Instanzen für <code>[Bool]</code> und <code>NAT</code> sowie eine generische Instanz <code>(Compact a, Compact b) =&gt;    Compact (a,b)</code>.</li>
+<li><p>Definiere eine Typklasse <code>Compact</code> und implementiere Instanzen für <code>[Bool]</code> und <code>NAT</code> sowie eine generische Instanz <code>(Compact a, Compact b) =&gt;    Compact (a,b)</code>.</p></li>
+<li><p>Schreibe eine Funktion, die den größten Funktionswert einer gegebenen Funktion <code>[Bool] -&gt; Nat</code> bestimmt.</p></li>
 </ol>
 <p><strong>Diesen Text gibt es auch als <a href="https://github.com/iblech/vortrag-haskell/blob/master/impossible-programs.lhs">kompilierbares Literate Haskell</a>!</strong></p>
 </article>
