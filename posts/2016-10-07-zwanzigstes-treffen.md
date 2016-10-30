@@ -11,6 +11,10 @@ Ingo wird seine Vorstellung von Superturingmaschinen [vom letzten Treffen](/post
 
 Richard wird eine kurze Einführung in die Programmiersprache Julia geben.
 
+Profpatsch wird, anlässlich des am Wochenende stattfindenden NixOS-Hackathons,
+einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers
+geben.
+
 Superturingmaschinen können anders
 als ihre bekannten Verwandten "länger als unendlich lange" laufen. Das drückt
 sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht
