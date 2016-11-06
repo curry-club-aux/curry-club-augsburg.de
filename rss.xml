@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Fri, 07 Oct 2016 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Nov 2016 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das einundzwanzigste Treffen am 1. Dezember 2016</title>
+    <link>http://curry-club-augsburg.de/posts/2016-11-06-einundzwanzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das einundzwanzigste Treffen am 1. Dezember 2016</h1>
+    <div class="info">
+      Gepostet am  6. Nov 16
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Für das einundzwanzigste Treffen gibt es noch keine Vortragsankündigungen.</p>
+</article>
+]]></description>
+    <pubDate>Sun, 06 Nov 2016 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2016-11-06-einundzwanzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das zwanzigste Treffen am 3. November 2016</title>
     <link>http://curry-club-augsburg.de/posts/2016-10-07-zwanzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -24,9 +47,14 @@
     
   </header>
 
-  <p>Ingo wird seine Vorstellung von Superturingmaschinen <a href="/posts/2016-09-06-neunzehntes-treffen.html">vom letzten Treffen</a> fortsetzen (<a href="http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf">Folien</a>).</p>
-<p>Richard wird eine kurze Einführung in die Programmiersprache Julia geben.</p>
-<p>Profpatsch wird, anlässlich des am Wochenende stattfindenden NixOS-Hackathons, einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers geben.</p>
+  <p>Ingo setzte seine Vorstellung von Superturingmaschinen und deren effektiven Topos <a href="/posts/2016-09-06-neunzehntes-treffen.html">vom letzten Treffen</a> fort (<a href="http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf">Folien</a>).</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/7QQ4Z8QwXUc" frameborder="0" allowfullscreen>
+</iframe>
+<p>Richard gab eine kurze Einführung in die Programmiersprache <a href="http://julialang.org/">Julia</a>.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/KUtNGWBt3hc" frameborder="0" allowfullscreen>
+</iframe>
+<p>Profpatsch gab, anlässlich des am folgenden Wochenende stattfindenden NixOS-Hackathons, einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers geben.</p>
+<hr />
 <p>Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
 <p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
 <p>Superturingmaschinen können aber trotzdem längst nicht “alles”. Es gibt Probleme, die auch Superturingmaschinen bewiesenermaßen nicht lösen können.</p>
@@ -331,34 +359,6 @@ partielle, nicht-injektive Funktion
 ]]></description>
     <pubDate>Sat, 27 Feb 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-02-27-yolomorphismus.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das zwölfte Treffen am 17. März 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2016-02-26-zwoelftes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das zwölfte Treffen am 17. März 2016</h1>
-    <div class="info">
-      Gepostet am 26. Feb 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Cornelius setzte seinen Vortrag über <em>Verified Firewall Ruleset Analysis</em> fort.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/EpotR359Oto" frameborder="0" allowfullscreen>
-</iframe>
-<p>Makarius gab (diesmal wirklich) eine Einführung in <em>Programme und Beweise in Isabelle/HOL</em>. Inhaltlich wurden das einige formale Fußnoten in klassischer Mathematik zu <a href="https://www.youtube.com/watch?v=F53aOAW9PBo">scheinbar unmöglichen funktionalen Programmen</a> sowie eine Nacharbeit zu den beiden Haskell-Workshops (<a href="https://curry-club-aux.github.io/haskell-workshop/uebung.pdf">erstes Übungsblatt</a>, <a href="https://curry-club-aux.github.io/haskell-workshop/uebung2.pdf">zweites Übungsblatt</a>) sein. Bei der Gelegenheit haben wir auch das Release von Isabelle2016 gefeiert.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/dIwZSoZlUfw" frameborder="0" allowfullscreen>
-</iframe>
-</article>
-]]></description>
-    <pubDate>Fri, 26 Feb 2016 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2016-02-26-zwoelftes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
