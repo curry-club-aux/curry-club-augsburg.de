@@ -7,13 +7,19 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Ingo wird seine Vorstellung von Superturingmaschinen [vom letzten Treffen](/posts/2016-09-06-neunzehntes-treffen.html) fortsetzen ([Folien](http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf)).
+Ingo setzte seine Vorstellung von Superturingmaschinen und deren effektiven Topos [vom letzten Treffen](/posts/2016-09-06-neunzehntes-treffen.html) fort ([Folien](http://rawgit.com/iblech/mathezirkel-kurs/master/superturingmaschinen/slides.pdf)).
 
-Richard wird eine kurze Einführung in die Programmiersprache Julia geben.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/7QQ4Z8QwXUc" frameborder="0" allowfullscreen></iframe>
 
-Profpatsch wird, anlässlich des am Wochenende stattfindenden NixOS-Hackathons,
+Richard gab eine kurze Einführung in die Programmiersprache [Julia](http://julialang.org/).
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/KUtNGWBt3hc" frameborder="0" allowfullscreen></iframe>
+
+Profpatsch gab, anlässlich des am folgenden Wochenende stattfindenden NixOS-Hackathons,
 einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers
 geben.
+
+<hr />
 
 Superturingmaschinen können anders
 als ihre bekannten Verwandten "länger als unendlich lange" laufen. Das drückt
