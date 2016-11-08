@@ -1,5 +1,5 @@
---------------------------------------------------------------------------------
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings, LambdaCase #-}
+
 import           Control.Monad
 import           Data.Bifunctor (bimap)
 import           Data.Either (partitionEithers)
@@ -10,6 +10,7 @@ import           Data.Time
 import           Data.Yaml (parseMaybe, (.:))
 import           Hakyll
 import           Safe
+import           System.Posix.Env (getEnv)
 
 
 --------------------------------------------------------------------------------
@@ -21,8 +22,19 @@ data Meetup a =
   , meetupPost :: a
   } deriving Show
 
+data Backend = Stack | Cabal
+readBackend :: IO (Maybe Backend)
+readBackend = do
+  be <- getEnv "backend"
+  pure $ be >>= \case
+    "stack" -> Just Stack
+    "cabal" -> Just Cabal
+    _       -> Nothing
+
 main :: IO ()
 main = do
+  -- the default backend is stack; this is used for building the css
+  backend <- maybe Stack id <$> readBackend
   currDay <- utcToLocalDay <$> getCurrentTime
   hakyllWith config $ do
     let idCopyFile = route idRoute >> compile copyFileCompiler
@@ -38,8 +50,13 @@ main = do
 
     match "css/*.hs" $ do
       route   $ setExtension "css"
-      compile $
-        fmap compressCss <$> execProgramFilter
+      compile $ do
+        css <- compressCss <$> case backend of
+          Cabal -> unixFilter "cabal" ["run", "-v0", "css"] ""
+          -- TODO: stack should be invoked like cabal, so that it uses the .cabal css section
+          Stack -> unixFilter "stack" ["--resolver", "lts-6.20", "--install-ghc", "runghc"
+                           ,"--package", "clay", "--package", "text"] ""
+        makeItem css
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
       route   $ setExtension "html"
@@ -105,13 +122,6 @@ main = do
                let feedCtx = postCtx `mappend` bodyField "description"
                posts <- fmap (take feedPostCount) . recentFirst =<< loadAllSnapshots "posts/*" "content"
                kind feed feedCtx posts
-
-execProgramFilter :: Compiler (Item String)
-execProgramFilter = do
-  id' <- getUnderlying
-  path <- getResourceFilePath
-  output <- unixFilter path [] ""
-  pure $ Item id' output
 
 --------------------------------------------------------------------------------
 mesz :: TimeZone

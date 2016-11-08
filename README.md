@@ -55,11 +55,11 @@ $ nix-shell
 [nix-shell] $ cabal build
 ```
 
-(Achtung: Zum Kompilieren des Stylesheets muss `stack` im Pfad sein und `clay` muss installiert sein.)
-
 Dann kann man `curry-site build` aufrufen. Das Programm generiert die Webseite neu und legt die statischen Dateien in den Ordner `_site`. Zum Debuggen kann man `curry-site build -v` verwenden.
 
-Wenn man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis TravisCI die Webseite neu generiert hat.
+Das benutzt standardmäßig `stack` zum Generieren des CSS, wenn `cabal` bevorzugt wird (z.B. weil `stack` durch nix überflüssig ist), kann das mittels Env-Variable festgelegt werden: `env backend=cabal curry-site build`.
+
+Sobald man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis TravisCI die Webseite neu generiert hat.
 
 Wenn einem das zu langsam geht, kann man auch manuell die Webseite deployen: Dazu muss man nur `curry-site deploy` aufrufen. Das Programm baut die Webseite neu und pusht die Änderungen in den `gh-pages`-Branch auf GitHub.
 
