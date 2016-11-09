@@ -50,7 +50,7 @@ $ stack install
 Oder mit Nix (bitte `default.nix` nicht einchecken):
 
 ```bash
-$ cabal2nix . > default.nix
+$ cabal2nix . > site.nix
 $ nix-shell
 [nix-shell] $ cabal build
 ```

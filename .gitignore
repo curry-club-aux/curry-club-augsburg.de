@@ -20,3 +20,4 @@ result
 /shell.nix
 # Build directories created by ./deploy.sh
 builddir-*
+/site.nix
