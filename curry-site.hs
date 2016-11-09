@@ -51,11 +51,12 @@ main = do
     match "css/*.hs" $ do
       route   $ setExtension "css"
       compile $ do
+        fp <- toFilePath <$> getUnderlying
         css <- compressCss <$> case backend of
           Cabal -> unixFilter "cabal" ["run", "-v0", "css"] ""
           -- TODO: stack should be invoked like cabal, so that it uses the .cabal css section
           Stack -> unixFilter "stack" ["--resolver", "lts-6.20", "--install-ghc", "runghc"
-                           ,"--package", "clay", "--package", "text"] ""
+                           ,"--package", "clay", "--package", "text", fp] ""
         makeItem css
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
