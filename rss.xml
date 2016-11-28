@@ -53,7 +53,7 @@
 <p>Richard gab eine kurze Einführung in die Programmiersprache <a href="http://julialang.org/">Julia</a>.</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/KUtNGWBt3hc" frameborder="0" allowfullscreen>
 </iframe>
-<p>Profpatsch gab, anlässlich des am folgenden Wochenende stattfindenden NixOS-Hackathons, einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers geben.</p>
+<p>Profpatsch gab, anlässlich des am folgenden Wochenende stattfindenden NixOS-Hackathons, einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers.</p>
 <hr />
 <p>Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
 <p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
