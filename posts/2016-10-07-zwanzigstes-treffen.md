@@ -16,8 +16,7 @@ Richard gab eine kurze Einführung in die Programmiersprache [Julia](http://juli
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/KUtNGWBt3hc" frameborder="0" allowfullscreen></iframe>
 
 Profpatsch gab, anlässlich des am folgenden Wochenende stattfindenden NixOS-Hackathons,
-einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers
-geben.
+einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers.
 
 <hr />
 
