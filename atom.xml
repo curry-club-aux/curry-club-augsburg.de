@@ -8,8 +8,49 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2016-11-06T00:00:00Z</updated>
+    <updated>2016-12-06T00:00:00Z</updated>
     <entry>
+    <title>Dritter großer Haskell-Workshop des Curry Clubs Augsburg am 17. Dezember 2016</title>
+    <link href="http://curry-club-augsburg.de/posts/2016-12-06-dritter-workshop.html" />
+    <id>http://curry-club-augsburg.de/posts/2016-12-06-dritter-workshop.html</id>
+    <published>2016-12-06T00:00:00Z</published>
+    <updated>2016-12-06T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Dritter großer Haskell-Workshop des Curry Clubs Augsburg am 17. Dezember 2016</h1>
+    <div class="info">
+      Gepostet am  6. Dez 16
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <div class="right">
+<p><a href="/files/haskellworkshop-plakat2.pdf"> <img width="300" src="/files/haskellworkshop-plakat2.png" /> </a></p>
+</div>
+<p>Liebe Freundinnen der Sonne!</p>
+<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu der Fortsetzung unseres <strong>Haskell-Workshops</strong> ein. Diese findet am <strong>17. Dezember 2016</strong>, einem Samstag, von 9:00 Uhr bis 17:00 Uhr im <strong>OpenLab Augsburg</strong> statt. Wie bei den vorherigen Malen ist die Teilnahme kostenlos.</p>
+<p>Zielgruppe des Workshops sind alle Teilnehmerinnen der ersten beiden Workshops sowie ganz besonders Einsteigerinnen auf allen Fortschrittslevels.</p>
+<p>Mit den Teilnehmerinnen vom letzten Mal werden wir dort weitermachen, wo wir das letzte Mal aufgehört haben.</p>
+<p>Für Neueinsteigerinnen wird es eine eigene Gruppe geben. Teilnahmevoraussetzung für Neulinge ist entweder Erfahrung mit einer beliebigen anderen Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken.</p>
+<p>Wer vorhat, am Workshop teilzunehmen, kann sich in ein <a href="https://ola.pads.ccc.de/haskell-workshop-2016">Organisationspad</a> eintragen und dann am 17. Dezember mit dem eigenen Laptop ins OpenLab kommen. Bitte vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren, um auf dem Workshop Zeit zu sparen.</p>
+<p>Wir freuen uns auf euch!</p>
+<p>Euer Team vom Curry Club</p>
+<!--more-->
+<blockquote>
+<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
+<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
+<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
+<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
+<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
+</blockquote>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das einundzwanzigste Treffen am 1. Dezember 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-11-06-einundzwanzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-11-06-einundzwanzigstes-treffen.html</id>
@@ -319,54 +360,6 @@
 <p>Profpatsch zeigte, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/mVrhYneg2Kk" frameborder="0" allowfullscreen>
 </iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Yolomorphismus</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-02-27-yolomorphismus.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-02-27-yolomorphismus.html</id>
-    <published>2016-02-27T00:00:00Z</published>
-    <updated>2016-02-27T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Yolomorphismus</h1>
-    <div class="info">
-      Gepostet am 27. Feb 16
-      
-          von Profpatsch
-      
-    </div>
-    
-    <img src="/images/yolo-cat.jpg" alt="Yolo-Katze" />
-    
-    
-  </header>
-
-  <p>Im Zuge unserer Unterhaltungen sind wir auf die Begrifflichkeit des „Yolomorphismus“ gekommen, welche Lars folgendermaßen definiert:</p>
-<dl>
-<dt>
-<dfn>Yolomorphisums</dfn>, n.
-</dt>
-<dd>
-partielle, nicht-injektive Funktion
-</dd>
-</dl>
-<p>Beispiele sind die allseits gefürchteten <code>head</code> und <code>tail</code>, sowie <code>(!!)</code>.</p>
-<p>Ingo ergänzte um Beispiele im weiteren Sinn (YOLO ernst genommen):</p>
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">unsafePerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a
-
-<span class="ot">unsafeCoerce ::</span> a <span class="ot">-&gt;</span> b  <span class="co">-- mehr YOLO geht nicht</span></code></pre></div>
-<p>Lukas merkte noch an, dass man das alles wunderbar in ein Language-Feature umwandeln kann:</p>
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Yolomorphism</span> <span class="kw">where</span>
-
-<span class="fu">--|</span> <span class="dt">Yolomorphism</span> typeclass
-<span class="kw">class</span> <span class="dt">Yolomorphable</span> a <span class="kw">where</span>
-  <span class="fu">--|</span> because <span class="dt">YOLO</span>
-<span class="ot">  yoloPerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a
-  <span class="fu">--|</span> because even more <span class="dt">YOLO</span>
-<span class="ot">  yoloCoerce    ::</span> a <span class="ot">-&gt;</span> b</code></pre></div>
-<p>Wir sollten das mal dem Haskell’-Team zur Einführung in die <code>base</code>-Library vorschlagen.</p>
 </article>
 ]]></summary>
 </entry>
