@@ -1,6 +1,6 @@
 @media screen {
   /* for preview purposes */
-  body { background: #555; }
+  body { background: #fff; }
   #page {
     background: #fff;
     border: 1px solid #000;
@@ -10,7 +10,6 @@
     /* Din A4: */
     width: 210mm;
     height: 297mm;
-    margin: 0.5cm auto;
   }
 }
 
