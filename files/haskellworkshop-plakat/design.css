@@ -77,6 +77,17 @@ h2 {
   margin-bottom: -30px;
 }
 
+.workshop-3 h1, .workshop-3 h2 {
+  position: relative;
+  left: -40px;
+  top: -20px;
+}
+.workshop-3 h2 {
+  margin-bottom: -30px;
+}
+.workshop-3 { text-align: justify; }
+.workshop-3 #tag { font-size: 14px; line-height: 17px; }
+
 #tag {
   color: #fff;
   background: #1a6daa;

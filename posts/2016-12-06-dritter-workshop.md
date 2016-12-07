@@ -7,8 +7,8 @@ author: Ingo Blechschmidt
 ---
 
 <div class="right">
-  <a href="/files/haskellworkshop-plakat2.pdf">
-    <img width="300" src="/files/haskellworkshop-plakat2.png" />
+  <a href="/files/haskellworkshop-plakat3.pdf">
+    <img width="300" src="/files/haskellworkshop-plakat3.png" />
   </a>
 </div>
 
