@@ -28,10 +28,9 @@ Für Neueinsteigerinnen wird es eine eigene Gruppe geben.
 Teilnahmevoraussetzung für Neulinge ist entweder Erfahrung mit einer beliebigen anderen
 Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken.
 
-Wer vorhat, am Workshop teilzunehmen, kann sich in ein [Organisationspad][pad]
-eintragen und dann am 17. Dezember mit dem eigenen Laptop ins OpenLab kommen.
-Bitte vorab die [Haskell Platform][hs-platform] installieren, um auf dem
-Workshop Zeit zu sparen.
+Damit wir unsere Kapazität überblicken können, ist zur Teilnahme eine
+unverbindliche [vorherige Anmeldung][pad] nötig. Zum Zeitpunkt des Schreibens
+sind nur noch drei Plätze frei.
 
 Wir freuen uns auf euch!
 
