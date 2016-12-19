@@ -66,8 +66,8 @@ Ein- und Ausgabe zu betreiben, vereinbaren?
 Die Lösung: Monadische Ein- und Ausgabe
 =======================================
 
-In Haskell ist man – nach einigen suboptimalen Lösungen und Irrwegen – auf das
-Konzept der *monadischen Ein- und Ausgabe* gestoßen, das das Problem
+In Haskell stieß man – nach einigen suboptimalen Lösungen und Irrwegen – auf das
+Konzept der *monadischen Ein- und Ausgabe*, das das Problem
 vollumfänglich löst. Dieses hat elegante mathematische Hintergründe, die man
 für die Anwendung nicht kennen muss. So sieht ein Programm aus, das
 den ausführenden Lambdroiden freundlich grüßt:
@@ -304,6 +304,7 @@ Idiomatischer würde man das Programm übrigens wie folgt schreiben.
 ``` haskell
 main        = revertierer >>= putStrLn
 revertierer = fmap reverse getLine
+-- oder sogar so: revertierer = reverse <$> getLine
 ```
 
 
@@ -375,8 +376,7 @@ Weitere Monaden
 ===============
 
 Aus der Not wurde eine Tugend: Nachdem die Nützlichkeit des monadischen Ansatzes
-für Ein- und Ausgabe erkannt wurde, hat man viele weitere nützliche Monaden
-entdeckt und entworfen.
+für Ein- und Ausgabe erkannt wurde, entdeckte und entwarf man viele weitere nützliche Monaden.
 
 * State (veränderlicher Zustand)
 * Parser (Parsen von Text, [Beispiel:
@@ -387,6 +387,9 @@ entdeckt und entworfen.
 * Listen (Nichtdeterminismus und Logikprogrammierung, [Beispiel: magische
   Quadrate](https://github.com/iblech/mathezirkel-kurs/blob/master/thema17-haskell/magic.hs))
 * Cont (Continuations, Beeinflussung des Kontrollflusses)
+
+Dank Monaden gibt es in Haskell auch keine
+[Callback-](https://www.fpcomplete.com/blog/2016/12/concurrency-and-node)[Hölle](http://www.haskellforall.com/2012/12/the-continuation-monad.html).
 
 Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren `>>=` und
 `return` sowie `fmap` verfügen. Es gibt eine Typklasse `Monad`, der alle
