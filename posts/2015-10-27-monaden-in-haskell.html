@@ -66,7 +66,7 @@ say <span class="dt">$x</span>;</code></pre></div>
 <p>Denn <code>foo()</code> könnte Nebenwirkungen auslösen, die dann nur ein einziges Mal statt zwei Male ausgeführt werden (zum Beispiel, etwas auf Twitter zu posten), oder auf veränderlichem Zustand basieren (zum Beispiel der Anzahl Nanosekunden seit Programmstart).</p>
 <p>Wie also kann man den Wunsch nach referenzieller Transparenz mit der Notwendigkeit, Ein- und Ausgabe zu betreiben, vereinbaren?</p>
 <h1 id="die-lösung-monadische-ein--und-ausgabe">Die Lösung: Monadische Ein- und Ausgabe</h1>
-<p>In Haskell ist man – nach einigen suboptimalen Lösungen und Irrwegen – auf das Konzept der <em>monadischen Ein- und Ausgabe</em> gestoßen, das das Problem vollumfänglich löst. Dieses hat elegante mathematische Hintergründe, die man für die Anwendung nicht kennen muss. So sieht ein Programm aus, das den ausführenden Lambdroiden freundlich grüßt:</p>
+<p>In Haskell stieß man – nach einigen suboptimalen Lösungen und Irrwegen – auf das Konzept der <em>monadischen Ein- und Ausgabe</em>, das das Problem vollumfänglich löst. Dieses hat elegante mathematische Hintergründe, die man für die Anwendung nicht kennen muss. So sieht ein Programm aus, das den ausführenden Lambdroiden freundlich grüßt:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> <span class="kw">do</span>
     putStr <span class="st">&quot;Hallo! Was ist dein Name? &quot;</span>
     name <span class="ot">&lt;-</span> getLine
@@ -166,7 +166,8 @@ revertierer <span class="fu">=</span> <span class="kw">do</span>
     return (reverse name)</code></pre></div>
 <p>Idiomatischer würde man das Programm übrigens wie folgt schreiben.</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main        <span class="fu">=</span> revertierer <span class="fu">&gt;&gt;=</span> putStrLn
-revertierer <span class="fu">=</span> fmap reverse getLine</code></pre></div>
+revertierer <span class="fu">=</span> fmap reverse getLine
+<span class="co">-- oder sogar so: revertierer = reverse &lt;$&gt; getLine</span></code></pre></div>
 <h1 id="die-state-monade">Die State-Monade</h1>
 <p>In Haskell gibt es keine veränderlichen Variablen. Man kann sie allerdings emulieren: Eine Funktion, die eigentlich eine gewisse Variable verändern möchte, kann den neuen Wert einfach an den Aufrufer zurückgeben. Dieser muss den neuen Wert dann bei weiteren Funktionsaufrufen berücksichtigen. Konkret kann das zum Beispiel so aussehen:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">f1 ::</span> <span class="dt">S</span> <span class="ot">-&gt;</span> (<span class="dt">A</span>,<span class="dt">S</span>)
@@ -197,7 +198,7 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <p>Mit der Funktion <code>runState :: State s a -&gt; s -&gt; (a,s)</code> kann man eine solche Beschreibung ausführen, wenn man einen initialen Wert des Zustands vorgibt. Das ist ein Unterschied zur IO-Monade: Nur das Laufzeitsystem ist in der Lage, eine Beschreibung einer IO-Aktion auszuführen. State-Aktionen können dagegen Haskell-intern ausgeführt werden.</p>
 <p>Übrigens kommt es in der täglichen Praxis mit Haskell nicht besonders häufig vor, dass man veränderliche Variablen benötigen würde. Fast immer ist eine Alternativlösung ohne veränderliche Variablen eleganter und wartbarer. Falls man imperativ geprägt ist, lohnt es sich daher, etwas Mühe zu investieren, um zustandslose Implementierungen zu finden.</p>
 <h1 id="weitere-monaden">Weitere Monaden</h1>
-<p>Aus der Not wurde eine Tugend: Nachdem die Nützlichkeit des monadischen Ansatzes für Ein- und Ausgabe erkannt wurde, hat man viele weitere nützliche Monaden entdeckt und entworfen.</p>
+<p>Aus der Not wurde eine Tugend: Nachdem die Nützlichkeit des monadischen Ansatzes für Ein- und Ausgabe erkannt wurde, entdeckte und entwarf man viele weitere nützliche Monaden.</p>
 <ul>
 <li>State (veränderlicher Zustand)</li>
 <li>Parser (Parsen von Text, <a href="../posts/2015-05-03-wir-bauen-einen-parserkombinator.html#beispiel-parsen-von-s-expressions">Beispiel: S-Ausdrücke</a>)</li>
@@ -207,6 +208,7 @@ f <span class="fu">=</span> <span class="kw">do</span>
 <li>Listen (Nichtdeterminismus und Logikprogrammierung, <a href="https://github.com/iblech/mathezirkel-kurs/blob/master/thema17-haskell/magic.hs">Beispiel: magische Quadrate</a>)</li>
 <li>Cont (Continuations, Beeinflussung des Kontrollflusses)</li>
 </ul>
+<p>Dank Monaden gibt es in Haskell auch keine <a href="https://www.fpcomplete.com/blog/2016/12/concurrency-and-node">Callback-</a><a href="http://www.haskellforall.com/2012/12/the-continuation-monad.html">Hölle</a>.</p>
 <p>Alle Monaden zeichnen sich dadurch aus, dass sie über Operatoren <code>&gt;&gt;=</code> und <code>return</code> sowie <code>fmap</code> verfügen. Es gibt eine Typklasse <code>Monad</code>, der alle Monaden angehören. Ihre Definition lautet:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">class</span> <span class="dt">Functor</span> f <span class="kw">where</span>
 <span class="ot">    fmap ::</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> (f a <span class="ot">-&gt;</span> f b)
