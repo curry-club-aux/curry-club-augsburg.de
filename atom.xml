@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2016-12-06T00:00:00Z</updated>
+    <updated>2016-12-19T00:00:00Z</updated>
     <entry>
+    <title>Programm für das einundzwanzigste Treffen am 26. Januar 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2016-12-19-zweiundzwanzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2016-12-19-zweiundzwanzigstes-treffen.html</id>
+    <published>2016-12-19T00:00:00Z</published>
+    <updated>2016-12-19T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das einundzwanzigste Treffen am 26. Januar 2017</h1>
+    <div class="info">
+      Gepostet am 19. Dez 16
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Daniel gibt eine Einführung in Rust, Marc erklärt die Curry–Howard-Korrespondenz (vermöge der Beweisen und Programmieren dasselbe sind) und anschließend leitet Profpatsch eine gemeinsame Programmiersitzung an.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Dritter großer Haskell-Workshop des Curry Clubs Augsburg am 17. Dezember 2016</title>
     <link href="http://curry-club-augsburg.de/posts/2016-12-06-dritter-workshop.html" />
     <id>http://curry-club-augsburg.de/posts/2016-12-06-dritter-workshop.html</id>
@@ -329,36 +352,6 @@
 <p>Die während des Vortrags erstellte Scheme-Implementierung <a href="https://gitlab.com/nieper/immutable-maps">steht auf GitLab</a>.</p>
 <p>Außerdem setzte Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort: Er löste Aufgabe 12 der <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">beiden</a> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung2.pdf">Workshops</a> (Run-Length-Encoding), und zwar erstens “diesmal wirklich” und zweitens absolut vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung in Isabelle bewies. Außerdem stellte er einen Geschwindigkeitsrekord für die Implementierung der Übungsaufgabe in mehreren Programmiersprachen auf.</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/pNp6zwj-sTs?list=PLwpepnYDFK9MlOdZaWfhnRVt5PHGasrFr" frameborder="0" allowfullscreen>
-</iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das dreizehnte Treffen am 21. April 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-03-19-dreizehntes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-03-19-dreizehntes-treffen.html</id>
-    <published>2016-03-19T00:00:00Z</published>
-    <updated>2016-03-19T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das dreizehnte Treffen am 21. April 2016</h1>
-    <div class="info">
-      Gepostet am 19. Mär 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Sternenseemann und Lars stellten <strong>diesmal wirklich</strong> generische Programmierung jeweils in Haskell mit <a href="https://hackage.haskell.org/package/base-4.8.2.0/docs/GHC-Generics.html">GHC.Generics</a> und in Scala mit <a href="https://github.com/milessabin/shapeless">shapeless</a> vor.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Zj4P7FoHef0" frameborder="0" allowfullscreen>
-</iframe>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Egmf1hKxhmg" frameborder="0" allowfullscreen>
-</iframe>
-<p>Profpatsch zeigte, wie man mit Haskell und Nix „Shellskripte“ schreiben kann.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/mVrhYneg2Kk" frameborder="0" allowfullscreen>
 </iframe>
 </article>
 ]]></summary>
