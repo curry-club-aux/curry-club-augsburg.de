@@ -11,5 +11,8 @@ Daniel gibt eine Einführung in Rust, Marc erklärt die
 Curry–Howard-Korrespondenz (vermöge der Beweisen und Programmieren dasselbe
 sind) und anschließend leitet Profpatsch eine gemeinsame Programmiersitzung an.
 
+[quchen](https://github.com/quchen/) wird einen Vortrag über STG halten und so
+erklären, wie Haskell eigentlich ausgeführt wird.
+
 Manuel hält (vielleicht auch erst beim 23. Treffen) einen Vortrag mit dem Titel
 *Kenn dein Limit*.
