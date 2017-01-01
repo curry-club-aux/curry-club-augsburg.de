@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2016-12-19T00:00:00Z</updated>
+    <updated>2017-01-01T00:00:00Z</updated>
     <entry>
+    <title>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html</id>
+    <published>2017-01-01T00:00:00Z</published>
+    <updated>2017-01-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</h1>
+    <div class="info">
+      Gepostet am  1. Jan 17
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Uwap wird eine Einführung in Lineare Logik und lineare Typsysteme geben.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das zweiundzwanzigste Treffen am 26. Januar 2017</title>
     <link href="http://curry-club-augsburg.de/posts/2016-12-19-zweiundzwanzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2016-12-19-zweiundzwanzigstes-treffen.html</id>
@@ -326,35 +349,6 @@
 </iframe>
 <p>Tim stellt seine WIP-Haskell-Bibliothek <a href="https://github.com/timjb/ftypes">ftypes</a> vor. In FTypes werden die bekannten Typklassen <code>Functor</code>, <code>Applicative</code> und <code>Traversable</code> auf Typen vom Kind <code>(k -&gt; *) -&gt; *</code> übertragen. Dies hat Anwendungen etwa beim Schreiben von bidirektionalen Parsern für Produkttypen.</p>
 <p>Tim hat vergessen, ein paar Sachen zu erwähnen, die er sich eigentlich vorgenommen hatte. Darum hat er sie <a href="https://gist.github.com/timjb/275f78e9dd449671c4b76dbdbeec574c">hier aufgeschrieben</a>.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das vierzehnte Treffen am 19. Mai 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-04-24-vierzehntes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-04-24-vierzehntes-treffen.html</id>
-    <published>2016-04-24T00:00:00Z</published>
-    <updated>2016-04-24T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierzehnte Treffen am 19. Mai 2016</h1>
-    <div class="info">
-      Gepostet am 24. Apr 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p><a href="https://github.com/mnieper">Marc</a> setzte die Reihe über <em>rein funktionale Datenstrukturen</em> (begonnen durch <a href="/posts/2015-12-04-zehntes-treffen.html">Tims Vortrag zu Warteschlangen</a> mit einem Vortrag über <a href="https://de.wikipedia.org/wiki/Rot-Schwarz-Baum">Rot-Schwarz-Bäume</a> in Scheme fort.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/JOiURKrhnSo" frameborder="0" allowfullscreen>
-</iframe>
-<p>Die während des Vortrags erstellte Scheme-Implementierung <a href="https://gitlab.com/nieper/immutable-maps">steht auf GitLab</a>.</p>
-<p>Außerdem setzte Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort: Er löste Aufgabe 12 der <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">beiden</a> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung2.pdf">Workshops</a> (Run-Length-Encoding), und zwar erstens “diesmal wirklich” und zweitens absolut vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung in Isabelle bewies. Außerdem stellte er einen Geschwindigkeitsrekord für die Implementierung der Übungsaufgabe in mehreren Programmiersprachen auf.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/pNp6zwj-sTs?list=PLwpepnYDFK9MlOdZaWfhnRVt5PHGasrFr" frameborder="0" allowfullscreen>
-</iframe>
 </article>
 ]]></summary>
 </entry>

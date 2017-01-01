@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Mon, 19 Dec 2016 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Jan 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</title>
+    <link>http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</h1>
+    <div class="info">
+      Gepostet am  1. Jan 17
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Uwap wird eine Einführung in Lineare Logik und lineare Typsysteme geben.</p>
+</article>
+]]></description>
+    <pubDate>Sun, 01 Jan 2017 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das zweiundzwanzigste Treffen am 26. Januar 2017</title>
     <link>http://curry-club-augsburg.de/posts/2016-12-19-zweiundzwanzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -326,35 +349,6 @@
 ]]></description>
     <pubDate>Tue, 17 May 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-05-17-fuenfzehntes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das vierzehnte Treffen am 19. Mai 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2016-04-24-vierzehntes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierzehnte Treffen am 19. Mai 2016</h1>
-    <div class="info">
-      Gepostet am 24. Apr 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p><a href="https://github.com/mnieper">Marc</a> setzte die Reihe über <em>rein funktionale Datenstrukturen</em> (begonnen durch <a href="/posts/2015-12-04-zehntes-treffen.html">Tims Vortrag zu Warteschlangen</a> mit einem Vortrag über <a href="https://de.wikipedia.org/wiki/Rot-Schwarz-Baum">Rot-Schwarz-Bäume</a> in Scheme fort.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/JOiURKrhnSo" frameborder="0" allowfullscreen>
-</iframe>
-<p>Die während des Vortrags erstellte Scheme-Implementierung <a href="https://gitlab.com/nieper/immutable-maps">steht auf GitLab</a>.</p>
-<p>Außerdem setzte Makarius die Reihe <em>Schönheit und Kunst</em> mit weiterer Arbeit in Isabelle fort: Er löste Aufgabe 12 der <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung.pdf">beiden</a> <a href="https://github.com/curry-club-aux/haskell-workshop/raw/gh-pages/uebung2.pdf">Workshops</a> (Run-Length-Encoding), und zwar erstens “diesmal wirklich” und zweitens absolut vollständig. Damit ist natürlich gemeint, dass er die Korrektheit seiner Lösung in Isabelle bewies. Außerdem stellte er einen Geschwindigkeitsrekord für die Implementierung der Übungsaufgabe in mehreren Programmiersprachen auf.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/pNp6zwj-sTs?list=PLwpepnYDFK9MlOdZaWfhnRVt5PHGasrFr" frameborder="0" allowfullscreen>
-</iframe>
-</article>
-]]></description>
-    <pubDate>Sun, 24 Apr 2016 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2016-04-24-vierzehntes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
