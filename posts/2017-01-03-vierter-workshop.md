@@ -27,6 +27,14 @@ Expertin muss man aber noch lange nicht sein. Ganz besonders möchten wir die
 Teilnehmenden des dritten Workshops vom 17. Dezember 2016 ermuntern, an diesem
 Folgeworkshop teilzunehmen.
 
+Wichtigster Programmpunkt beim Folgeworkshop sind Monaden (griechisch
+für "putzige flauschige Dinge"). Damit könnt ihr Ein- und Ausgabe
+betreiben, den Programmfluss pervers verbiegen, veränderliche Variablen
+bedienen (wenn es unbedingt sein muss), Dateiformate parsen, Logikrätsel
+lösen und Spiele programmieren. Außerdem werden wir über QuickCheck 
+sprechen, einer sehr beliebten Möglichkeit, um die paar 
+Programmierfehler, die das Typsystem nicht findet, zu fangen.
+
 Damit wir unsere Kapazität überblicken können, ist zur Teilnahme eine
 verpflichtende aber unverbindliche [vorherige Anmeldung][pad] nötig.
 
