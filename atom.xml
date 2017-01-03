@@ -8,8 +8,47 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2017-01-01T00:00:00Z</updated>
+    <updated>2017-01-03T00:00:00Z</updated>
     <entry>
+    <title>Vierter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Januar 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2017-01-03-vierter-workshop.html" />
+    <id>http://curry-club-augsburg.de/posts/2017-01-03-vierter-workshop.html</id>
+    <published>2017-01-03T00:00:00Z</published>
+    <updated>2017-01-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Vierter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Januar 2017</h1>
+    <div class="info">
+      Gepostet am  3. Jan 17
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <div class="right">
+<p><a href="/files/haskellworkshop-plakat3.pdf"> <img width="300" src="/files/haskellworkshop-plakat3.png" /> </a></p>
+</div>
+<p>Liebe Freundinnen der Sonne!</p>
+<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu der Fortsetzung unseres <strong>Haskell-Workshops</strong> ein. Diese findet am <strong>21. Januar 2017</strong>, einem Samstag, von 9:00 Uhr bis 17:00 Uhr im <strong>OpenLab Augsburg</strong> statt. Wie bei den vorherigen Malen ist die Teilnahme kostenlos.</p>
+<p>Zielgruppe des Workshops sind alle Teilnehmerinnen der ersten drei Workshops. Etwas genauer: Man sollte in der Lage sein, ein Haskell-Programm zu schreiben, dass die Anzahl Blätter eines binären Baums zählt. Diese Aufgabe darf ruhig ein wenig dauern! Der Workshop richtet sich an alle, die keine Neulinge mehr sind; Expertin muss man aber noch lange nicht sein. Ganz besonders möchten wir die Teilnehmenden des dritten Workshops vom 17. Dezember 2016 ermuntern, an diesem Folgeworkshop teilzunehmen.</p>
+<p>Damit wir unsere Kapazität überblicken können, ist zur Teilnahme eine verpflichtende aber unverbindliche <a href="https://ola.pads.ccc.de/haskell-workshop-2017a">vorherige Anmeldung</a> nötig.</p>
+<p>Wir freuen uns auf euch!</p>
+<p>Euer Team vom Curry Club</p>
+<!--more-->
+<blockquote>
+<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
+<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
+<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
+<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
+<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
+</blockquote>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</title>
     <link href="http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html</id>
@@ -309,46 +348,6 @@
 <p>Der Vortrag setzt keine Vorkenntnisse aus Logik und Typtheorie und selbstverständlich auch keine aus Homotopietheorie voraus. Der Vortrag ist für Leute konzipiert, die sich für diese neue Bewegung in der Logik interessieren, aber nicht praktizierende Mathematikerinnen sind.</p>
 <p>Er klärt folgende Fragen: Was hat es mit Homotopietyptheorie auf sich? Wie werden in Homotopietyptheorie Objekte und Aussagen miteinander vereint, auf eine Stufe gestellt? Wozu ist Homotopietyptheorie gut? Wieso und für wen ist sie interessant?</p>
 <p>Ein Teil der Antwort auf die letzte Frage lautet: Homotopietyptheorie ist für Leute interessant, die computergestützt Beweise führen möchten.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das fünfzehnte Treffen am 16. Juni 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-05-17-fuenfzehntes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-05-17-fuenfzehntes-treffen.html</id>
-    <published>2016-05-17T00:00:00Z</published>
-    <updated>2016-05-17T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das fünfzehnte Treffen am 16. Juni 2016</h1>
-    <div class="info">
-      Gepostet am 17. Mai 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/wSaGjm4qqNc?list=PLwpepnYDFK9NTzNM7VTw2OoDuhKtWS6KB" frameborder="0" allowfullscreen>
-</iframe>
-<p>Ingo stellte <a href="/files/initiale-algebren.pdf">Minimalwissen zu initialen Algebren und terminalen Koalgebren</a> bereit. Diese verwendet man (unter anderem), um Datentypen mathematisch zu modellieren. In Form von Cata- und Anamorphismen haben sie aber auch eine ganz praktische Bedeutung in der Abstraktion von bekannten Rekursionsmustern.</p>
-<p>Initiale Algebren und terminale Koalgebren untersucht man deswegen, weil sie einen geeigneten Rahmen geben, um Fixpunktgleichungen für <em>Strukturen</em> (statt <em>Zahlen</em> oder <em>Elemente</em> von Datentypen) zu verstehen.</p>
-<p>Zum Beispiel ist die Struktur der natürlichen Zahlen eine Lösung von folgender Fixpunktgleichung:</p>
-<pre><code>N = 1 + N
--- mit der rechten Seite ist gemeint: {*} disjunkt-vereinigt-mit N
--- in Haskell würde man schreiben: data N = Zero | Succ N</code></pre>
-<p>Die Struktur der endlichen Listen mit Einträgen aus A ist eine Lösung von</p>
-<pre><code>L = 1 + A x L.
--- in Haskell: data L = Nil | Cons A L</code></pre>
-<p>Nun sind das aber nicht wirklich Gleichungen. Es sind aber auch nicht einfach nur “Isomorphiebeziehungen”. Es ist etwas dazwischen – es sind initiale Algebren. Jede initiale Algebra bringt jeweils ein eigenes Konzept mit, um Funktionen aus der so definierten Struktur rekursiv definieren zu können. Im Falle der natürlichen Zahlen ist das im Wesentlichen das bekannte Rekursionsprinzip (definiere für 0 und definiere für n+1).</p>
-<p>Der Vortrag erklärte, was initiale Algebren sind, welche Vorstellung sie fassen und wozu man sie in der Informatik verwendet. Das Thema ist für manche Teile der theoretischen Informatik absolut grundlegend, man kann kaum über die Semantik von Programmiersprachen (welche benutzerdefinierte Datentypen erlauben) sprechen, ohne Minimalwissen von initialen Algebren zu haben. Auch für den praktischen Umgang mit Rekursion sind sie interessant, da sie manche Dinge mit einer konzeptionellen, abstrakten Interpretation versehen.</p>
-<p>Wir gingen auch auf das Gegenstück zu initialen Algebren ein, nämlich terminale Koalgebren. Und es gab einen “witzigen” Wettbewerb.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/CeJoWI7maMU?list=PLwpepnYDFK9NTzNM7VTw2OoDuhKtWS6KB" frameborder="0" allowfullscreen>
-</iframe>
-<p>Tim stellt seine WIP-Haskell-Bibliothek <a href="https://github.com/timjb/ftypes">ftypes</a> vor. In FTypes werden die bekannten Typklassen <code>Functor</code>, <code>Applicative</code> und <code>Traversable</code> auf Typen vom Kind <code>(k -&gt; *) -&gt; *</code> übertragen. Dies hat Anwendungen etwa beim Schreiben von bidirektionalen Parsern für Produkttypen.</p>
-<p>Tim hat vergessen, ein paar Sachen zu erwähnen, die er sich eigentlich vorgenommen hatte. Darum hat er sie <a href="https://gist.github.com/timjb/275f78e9dd449671c4b76dbdbeec574c">hier aufgeschrieben</a>.</p>
 </article>
 ]]></summary>
 </entry>
