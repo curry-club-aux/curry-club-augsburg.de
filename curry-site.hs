@@ -5,9 +5,10 @@ import           Data.Bifunctor (bimap)
 import           Data.Either (partitionEithers)
 import           Data.Function (on)
 import           Data.List (partition, sortBy)
+import           Data.Maybe (isJust)
 import           Data.Monoid ((<>))
 import           Data.Time
-import           Data.Yaml (parseMaybe, (.:))
+import           Data.Yaml (parseMaybe, (.:), (.:?), Value)
 import           Hakyll
 import           Safe
 import           System.Posix.Env (getEnv)
@@ -19,6 +20,7 @@ data Meetup a =
   Meetup
   { meetupDate :: UTCTime
   , meetupUpcoming :: Bool
+  , meetupCounter :: Maybe Value
   , meetupPost :: a
   } deriving Show
 
@@ -78,14 +80,12 @@ main = do
       route idRoute
       compile $ do
         allArticles <- chronological =<< loadAllSnapshots "posts/*" "html-post"
-        let isUpcoming time = utcToLocalDay time >= currDay
-            createMeetup time = fmap $ Meetup time (isUpcoming time)
         (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
-          time <- getMeetupTime curryClubLocale $ itemIdentifier post
-          return $ maybe (Right post) (\t -> Left (createMeetup t post)) time
+          maybe (Right post) Left <$> parseMeetup curryClubLocale currDay post
         let sortedMeetups = sortBy (compare `on` meetupDate . itemBody) meetups
             (upcomingMeetups, _lastM) = bimap id lastMay $ partition (meetupUpcoming . itemBody) sortedMeetups
-            nextM = headMay upcomingMeetups
+            isRegularMeetup = isJust . meetupCounter
+            nextM = headMay $ filter (isRegularMeetup . itemBody) upcomingMeetups
             meetupField item = do
               let day = meetupDate $ itemBody item
               pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
@@ -147,16 +147,28 @@ curryClubLocale =
     , knownTimeZones = [currentTimeZone]
     }
 
-getMeetupTime
+parseMeetup
   :: MonadMetadata m
   => TimeLocale
-  -> Identifier
-  -> m (Maybe UTCTime)
-getMeetupTime locale id' = parseMeetupTime <$> getMetadata id'
+  -> Day
+  -> Item a
+  -> m (Maybe (Item (Meetup a)))
+parseMeetup locale currDay post = do
+  meta <- getMetadata (itemIdentifier post)
+  pure $ do
+    meetupTimeString <- parseMaybe (\o -> o .: "meetup-announcement") meta
+    meetupTime <- parseTimeM True locale "%Y-%m-%d" meetupTimeString
+    counter <- parseMaybe (\o -> o .:? "meetup-counter") meta
+    pure $ flip fmap post $ \contents ->
+      Meetup
+      { meetupDate = meetupTime
+      , meetupUpcoming = isUpcoming meetupTime
+      , meetupCounter = counter
+      , meetupPost = contents
+      }
   where
-    parseMeetupTime =
-      parseMaybe (\o -> o .: "meetup-announcement") >=>
-      parseTimeM True locale "%Y-%m-%d"
+    isUpcoming time = utcToLocalDay time >= currDay
+    
 
 -- this should be part of Hakyll
 contramapContext :: (a -> b) -> Context b -> Context a
