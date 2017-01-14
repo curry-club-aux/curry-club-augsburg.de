@@ -7,8 +7,7 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-Daniel gibt eine Einführung in Rust, Marc erklärt die
-Curry–Howard-Korrespondenz (vermöge der Beweisen und Programmieren dasselbe
+Marc erklärt die Curry–Howard-Korrespondenz (vermöge der Beweisen und Programmieren dasselbe
 sind) und anschließend leitet Profpatsch eine gemeinsame Programmiersitzung an.
 
 [quchen](https://github.com/quchen/) wird einen Vortrag über STG halten und so
