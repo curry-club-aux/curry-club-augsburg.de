@@ -87,7 +87,7 @@
     
   </header>
 
-  <p>Daniel gibt eine Einführung in Rust, Marc erklärt die Curry–Howard-Korrespondenz (vermöge der Beweisen und Programmieren dasselbe sind) und anschließend leitet Profpatsch eine gemeinsame Programmiersitzung an.</p>
+  <p>Marc erklärt die Curry–Howard-Korrespondenz (vermöge der Beweisen und Programmieren dasselbe sind) und anschließend leitet Profpatsch eine gemeinsame Programmiersitzung an.</p>
 <p><a href="https://github.com/quchen/">quchen</a> wird einen Vortrag über STG halten und so erklären, wie Haskell eigentlich ausgeführt wird.</p>
 <p>Manuel hält (vielleicht auch erst beim 23. Treffen) einen Vortrag mit dem Titel <em>Kenn dein Limit</em>.</p>
 </article>
