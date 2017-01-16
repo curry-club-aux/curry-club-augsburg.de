@@ -8,7 +8,11 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Uwap wird eine Einführung in Lineare Logik und lineare Typsysteme geben.
+Uwap wird eine Einführung in lineare Logik und lineare Typsysteme geben.
+
+Manuel hält einen Vortrag mit dem Titel *Kenn dein Limit*.
+
+Möglicherweise stellt Daniel Rust vor.
 
 Tim wird die experimentelle Programmiersprache Frank ([Paper](https://arxiv.org/pdf/1611.09259.pdf), [Implementierung](https://github.com/cmcl/frankjnr)) vorstellen.
 In Frank gibt es Werte und Berechnungen. Jede Berechnung ist dabei getaggt mit den Effekten, die sie ausführen möchte. Berechnungen können an Funktionen übergeben werden. Beim Aufruf einer Berechnung müssen entweder Handler für ihre benötigten Effekte angegeben werden oder diese Effekte werden im Typsystem weiter nach außen propagiert (damit müssen sie weiter außen gehandhabt werden).
