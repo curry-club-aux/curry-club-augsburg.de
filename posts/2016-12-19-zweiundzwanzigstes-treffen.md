@@ -7,15 +7,14 @@ meetup-time: 19:00
 author: Ingo Blechschmidt
 ---
 
-[quchen](https://github.com/quchen/) wird einen Vortrag über STG halten und so
-erklären, wie Haskell eigentlich ausgeführt wird. Wenn man Haskell
+[quchen](https://github.com/quchen/) hielt einen Vortrag über STG und erklärte so, wie Haskell eigentlich ausgeführt wird. Wenn man Haskell
 programmiert, arbeitet man ja in einem platonischen Ideenhimmel, in dem auch
 unendliche und zirkuläre Datenstrukturen möglich und sinnvoll sind. Wie zum
 Tautomorphismus schafft es der Haskell-Compiler, aus einem abstrakten
 Haskell-Programm Maschinencode zu erzeugen, die der Computer tatsächlich
 ausführen kann?
 
-Marc stellt die gefeierte Curry–Howard-Korrespondenz vor. Dernach sind Beweisen
+Marc stellte die gefeierte Curry–Howard-Korrespondenz vor. Dernach sind Beweisen
 in der Mathematik und Programmieren in der Informatik zwei Seiten einer
 Medaille. Aus jedem Beweis kann man ein Programm extrahieren und jedes Programm
 beweist eine Behauptung.
@@ -28,10 +27,8 @@ nicht nur Beweisen und Programmieren, sondern auch noch Morphismen von
 Kategorien. Programme, Beweise und Morphismen in Kategorien sind alles
 verschiedene Seiten der selben (dreiseitigen) Medaille.
 
-Im Rahmen des Vortrags wird es oder wird es nicht ein kurzes einstudiertes
+Im Rahmen des Vortrags gab es oder gab es nicht ein kurzes einstudiertes
 Schauspiel geben.
 
-Außerdem werden wir verstehen, inwieweit die Benutzung von klassischer Logik
-Zeitreisen ähnelt. (Der Fachbegriff dazu ist "Continuations", und wer Lust hat,
-kann sich vorab den [Wikipedia-Artikel zum
-Thema](https://en.wikipedia.org/wiki/Continuation) anschauen.)
+Außerdem haben wir nun verstanden, inwieweit die Benutzung von klassischer Logik
+Zeitreisen ähnelt. (Der Fachbegriff dazu ist ["Continuations"](https://en.wikipedia.org/wiki/Continuation).)
