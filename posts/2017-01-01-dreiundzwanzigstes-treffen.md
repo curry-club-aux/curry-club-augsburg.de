@@ -8,8 +8,6 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Uwap wird eine Einführung in lineare Logik und lineare Typsysteme geben.
-
 Manuel hält einen Vortrag mit dem Titel *Kenn dein Limit*.
 
 Möglicherweise stellt Daniel Rust vor.
