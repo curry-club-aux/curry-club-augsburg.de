@@ -68,9 +68,7 @@
     
   </header>
 
-  <p>Manuel hält einen Vortrag mit dem Titel <em>Kenn dein Limit</em>.</p>
-<p>Möglicherweise stellt Daniel Rust vor.</p>
-<p>Tim wird die experimentelle Programmiersprache Frank (<a href="https://arxiv.org/pdf/1611.09259.pdf">Paper</a>, <a href="https://github.com/cmcl/frankjnr">Implementierung</a>) vorstellen. In Frank gibt es Werte und Berechnungen. Jede Berechnung ist dabei getaggt mit den Effekten, die sie ausführen möchte. Berechnungen können an Funktionen übergeben werden. Beim Aufruf einer Berechnung müssen entweder Handler für ihre benötigten Effekte angegeben werden oder diese Effekte werden im Typsystem weiter nach außen propagiert (damit müssen sie weiter außen gehandhabt werden).</p>
+  <p>Tim wird die experimentelle Programmiersprache Frank (<a href="https://arxiv.org/pdf/1611.09259.pdf">Paper</a>, <a href="https://github.com/cmcl/frankjnr">Implementierung</a>) vorstellen. In Frank gibt es Werte und Berechnungen. Jede Berechnung ist dabei getaggt mit den Effekten, die sie ausführen möchte. Berechnungen können an Funktionen übergeben werden. Beim Aufruf einer Berechnung müssen entweder Handler für ihre benötigten Effekte angegeben werden oder diese Effekte werden im Typsystem weiter nach außen propagiert (damit müssen sie weiter außen gehandhabt werden).</p>
 <p>Vorteile von Frank sind:</p>
 <ul>
 <li>Es ist sehr einfach und natürlich, Code mit Nebeneffekten so abstrakt zu schreiben, dass man ihn in verschiedenen Kontexten verwenden kann und auch gut testen kann.</li>
