@@ -7,8 +7,33 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 03 Jan 2017 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Feb 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das vierundzwanzigste Treffen am 23. März 2017</title>
+    <link>http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das vierundzwanzigste Treffen am 23. März 2017</h1>
+    <div class="info">
+      Gepostet am 23. Feb 17
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Uwap wird eine Einführung in lineare Logik und lineare Typsysteme geben.</p>
+<p>Manuel hält einen Vortrag mit dem Titel <em>Kenn dein Limit</em>.</p>
+<p>Daniel stellt Rust vor.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 23 Feb 2017 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Vierter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Januar 2017</title>
     <link>http://curry-club-augsburg.de/posts/2017-01-03-vierter-workshop.html</link>
     <description><![CDATA[<article>
@@ -70,6 +95,13 @@
 <li>Es ist sehr einfach und natürlich, Code mit Nebeneffekten so abstrakt zu schreiben, dass man ihn in verschiedenen Kontexten verwenden kann und auch gut testen kann.</li>
 <li>Man kann rein funktionalen und effektbehafteten Code sehr gut kombinieren: In Haskell ruft man ja rein funktionalen Code aus IO-Actions auf, aber man kann nicht andersrum eine IO-Action in rein funktionalem Code verwenden. Dies führt dazu, dass viele Funktionen in einer rein funktionalen und in einer IO/monadischen Variante existieren, wie z.B. <code>map</code> und <code>mapM</code> (beide wenden eine Funktion auf jedes Element einer Liste an). In Frank hat man stattdessen eine Funktion <code>map : {X -&gt; Y} -&gt; List X -&gt; List Y</code>, die man sowohl auf effektfreie Funktionen, als auch auf effektbehaftete Berechnungen anwenden kann.</li>
 </ul>
+<p>Ingo wird etwa über Continuations erzählen. Worauf der Schwerpunkt gesetzt werden sollen, entscheiden die Anwesenden. Möglichkeiten umfassen:</p>
+<ul>
+<li><p>Tutorial zum Umgang mit Continuations: Was sind Continuations? Wie geht man mit ihnen um? Welche Vorteile haben Sprache, die Continuations eingebaut haben (wie etwa Schema) oder die in einer angenehmen Syntax mit Continuations nachgerüstet werden können (wie etwa Haskell mit der Continuation-Monade)? Was hat es mit der CPS-Transformation auf sich? Wie kann man dank Continuations OpenGL-Grafikprogrammierung so aussehen lassen, als ob man in QBASIC der 90er Jahre programmiert? Sind Continuations auch gefährlich? Wieso sagt alle Welt, dass die Continuation-Monade die Mutter aller Monaden sei?</p></li>
+<li><p>Konstruktive Mathematik ist nicht nur ein Teil von klassischer Mathematik (das ist klar: alles, was man konstruktiv beweisen kann, gilt auch klassisch), sondern umgekehrt ist vermöge der “Doppelnegationsübersetzung” auch klassische Mathematik ein Teil von konstruktiver Mathematik. Mit der richtigen Brille (der Curry–Howard-Brille) betrachtet, ist die Doppelnegationsübersetzung genau dasselbe wie die CPS-Transformation.</p></li>
+</ul>
+<p>Die Doppelnegationsübersetzung wurde in den 30ern entdeckt, die CPS-Transformation in den 70ern. In den 90ern wurde offenbar, dass es sich um dieselbe Entdeckung handelte.</p>
+<p>Christine leitet anschließend eine Diskussionsrunde nach dem OpenSpace- oder LeanCoffee-Format an.</p>
 </article>
 ]]></description>
     <pubDate>Sun, 01 Jan 2017 00:00:00 UT</pubDate>
@@ -319,43 +351,6 @@
 ]]></description>
     <pubDate>Wed, 29 Jun 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-06-29-achtzehntes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das sechzehnte Treffen am 14. Juli 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2016-06-15-sechzehntes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das sechzehnte Treffen am 14. Juli 2016</h1>
-    <div class="info">
-      Gepostet am 15. Jun 16
-      
-          von Matthias Hutzler
-      
-    </div>
-    
-    
-  </header>
-
-  <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/tfEQzR9-hlQ?list=PLwpepnYDFK9Mtt1iy8zRVjNLVV50dDgiO" frameborder="0" allowfullscreen>
-</iframe>
-<p>Makarius stellte <a href="http://www.flatmap.net/cobra">Cobra</a> vor, ein modernes Framework, um Code und Beweise zu präsentieren. Cobra unterstützt Isabelle-Beweise sowie Scala- und Haskell-Code.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/CratUcZGFuI?list=PLwpepnYDFK9Mtt1iy8zRVjNLVV50dDgiO" frameborder="0" allowfullscreen>
-</iframe>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/m6k-ag8o0rI?list=PLwpepnYDFK9Mtt1iy8zRVjNLVV50dDgiO" frameborder="0" allowfullscreen>
-</iframe>
-<p>Ingo begann unter dem Titel <em>Was sind und was sollen die Typen?</em> eine Einführung in Typtheorie unter besonderer Beachtung von Homotopietyptheorie. Die grundlegende Motivation aus der Informatik und der Programmierpraxis sind natürlich bekannt: Man möchte zur Compilezeit Informationen über das Programmverhalten gewinnen, um fehlerhafte Programme noch vor ihrer Ausführung erkennen und ablehnen zu können.</p>
-<p>Aber es ist vielleicht weniger bekannt, wie Typtheorie entstanden ist (das war nämlich lange vor den Programmiersprachen), welches Problem sie ursprünglich lösen sollte (und auch tatsächlich löst), und wie ein Typsystem aufgebaut ist.</p>
-<p>Ziel des ersten Teils war, ein Grundverständnis im Lesen von Typsystemspezifikationen zu vermitteln. Es wurde extensionale und intensionale Martin-Löf-Typtheorie behandelt.</p>
-<p>Homotopietyptheorie ist ein neuer Zweig der Mathematik, der Aspekte von verschiedenen anderen Teilgebieten der Mathematik auf verblüffende Art und Weise kombiniert. Es ist Teil von Voevoedskys Programm zu einer <em>univalenten Grundlegung</em> der Mathematik und basiert auf einer kürzlich entdeckten Verbindung zwischen Homotopietheorie aus der Mathematik und Typtheorie aus der Logik und theoretischen Informatik.</p>
-<p>In gewöhnlichen Zugängen zu einer Grundlegung der Mathematik unterscheidet man zwischen Objekten (wie zum Beispiel natürlichen Zahlen und Mengen) und Aussagen über diese Objekte. In Homotopietyptheorie gibt es diese Unterscheidung nicht. Objekte und Aussagen über Objekte werden auf eine gemeinsame Stufe gestellt. Beweisen und Konstruieren werden miteinander identifiziert.</p>
-<p>Der Vortrag setzt keine Vorkenntnisse aus Logik und Typtheorie und selbstverständlich auch keine aus Homotopietheorie voraus. Der Vortrag ist für Leute konzipiert, die sich für diese neue Bewegung in der Logik interessieren, aber nicht praktizierende Mathematikerinnen sind.</p>
-<p>Er klärt folgende Fragen: Was hat es mit Homotopietyptheorie auf sich? Wie werden in Homotopietyptheorie Objekte und Aussagen miteinander vereint, auf eine Stufe gestellt? Wozu ist Homotopietyptheorie gut? Wieso und für wen ist sie interessant?</p>
-<p>Ein Teil der Antwort auf die letzte Frage lautet: Homotopietyptheorie ist für Leute interessant, die computergestützt Beweise führen möchten.</p>
-</article>
-]]></description>
-    <pubDate>Wed, 15 Jun 2016 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2016-06-15-sechzehntes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
