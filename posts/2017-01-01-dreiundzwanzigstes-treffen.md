@@ -19,8 +19,8 @@ Ingo wird etwa über Continuations erzählen. Worauf der Schwerpunkt gesetzt
 werden sollen, entscheiden die Anwesenden. Möglichkeiten umfassen:
 
 * Tutorial zum Umgang mit Continuations: Was sind Continuations? Wie geht man
-  mit ihnen um? Welche Vorteile haben Sprache, die Continuations eingebaut
-  haben (wie etwa Schema) oder die in einer angenehmen Syntax mit Continuations
+  mit ihnen um? Welche Vorteile haben Sprachen, die Continuations eingebaut
+  haben (wie etwa Scheme) oder die in einer angenehmen Syntax mit Continuations
   nachgerüstet werden können (wie etwa Haskell mit der Continuation-Monade)?
   Was hat es mit der CPS-Transformation auf sich? Wie kann man dank
   Continuations OpenGL-Grafikprogrammierung so aussehen lassen, als ob man in
