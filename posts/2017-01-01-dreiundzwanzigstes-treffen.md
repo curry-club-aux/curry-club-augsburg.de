@@ -7,7 +7,7 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Tim wird die experimentelle Programmiersprache Frank ([Paper](https://arxiv.org/pdf/1611.09259.pdf), [Implementierung](https://github.com/cmcl/frankjnr)) vorstellen.
+Tim stellte die experimentelle Programmiersprache Frank ([Paper](https://arxiv.org/pdf/1611.09259.pdf), [Implementierung](https://github.com/cmcl/frankjnr)) vor.
 In Frank gibt es Werte und Berechnungen. Jede Berechnung ist dabei getaggt mit den Effekten, die sie ausführen möchte. Berechnungen können an Funktionen übergeben werden. Beim Aufruf einer Berechnung müssen entweder Handler für ihre benötigten Effekte angegeben werden oder diese Effekte werden im Typsystem weiter nach außen propagiert (damit müssen sie weiter außen gehandhabt werden).
 
 Vorteile von Frank sind:
@@ -15,8 +15,9 @@ Vorteile von Frank sind:
 * Es ist sehr einfach und natürlich, Code mit Nebeneffekten so abstrakt zu schreiben, dass man ihn in verschiedenen Kontexten verwenden kann und auch gut testen kann.
 * Man kann rein funktionalen und effektbehafteten Code sehr gut kombinieren: In Haskell ruft man ja rein funktionalen Code aus IO-Actions auf, aber man kann nicht andersrum eine IO-Action in rein funktionalem Code verwenden. Dies führt dazu, dass viele Funktionen in einer rein funktionalen und in einer IO/monadischen Variante existieren, wie z.B. `map` und `mapM` (beide wenden eine Funktion auf jedes Element einer Liste an). In Frank hat man stattdessen eine Funktion `map : {X -> Y} -> List X -> List Y`, die man sowohl auf effektfreie Funktionen, als auch auf effektbehaftete Berechnungen anwenden kann.
 
-Ingo wird etwa über Continuations erzählen. Worauf der Schwerpunkt gesetzt
-werden sollen, entscheiden die Anwesenden. Möglichkeiten umfassen:
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/llrmAQ09EtQ?list=PLwpepnYDFK9MmWxIhryXFeMLyjAB9zFEP" frameborder="0" allowfullscreen></iframe>
+
+Ingo erzählte über Continuations.
 
 * Tutorial zum Umgang mit Continuations: Was sind Continuations? Wie geht man
   mit ihnen um? Welche Vorteile haben Sprachen, die Continuations eingebaut
@@ -38,5 +39,4 @@ werden sollen, entscheiden die Anwesenden. Möglichkeiten umfassen:
   CPS-Transformation in den 70ern. In den 90ern wurde offenbar, dass es sich um
   dieselbe Entdeckung handelte.
 
-Christine leitet anschließend eine Diskussionsrunde nach dem
-OpenSpace- oder LeanCoffee-Format an.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLwpepnYDFK9MmWxIhryXFeMLyjAB9zFEP" frameborder="0" allowfullscreen></iframe>
