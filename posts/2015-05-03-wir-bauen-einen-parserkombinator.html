@@ -62,12 +62,12 @@ bind m f <span class="fu">=</span> <span class="dt">MkParser</span> <span class=
     <span class="kw">case</span> runParser m s <span class="kw">of</span>
 	<span class="dt">Just</span> (s', x) <span class="ot">-&gt;</span> runParser (f x) s'
 	<span class="dt">Nothing</span>      <span class="ot">-&gt;</span> <span class="dt">Nothing</span></code></pre></div>
-<p>Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.</p>
+<p>Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im Allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.</p>
 <p>Natürlich darf dann auch der Kumpan von <code>bind/&gt;&gt;=</code>, <code>pure/return</code> nicht fehlen:</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">pure<span class="ot"> ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
 pure x <span class="fu">=</span> <span class="dt">MkParser</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> <span class="dt">Just</span> (s, x)</code></pre></div>
 <p>Das macht einfach einen beliebigen Wert zu einem Parser (damit man ihn auch mit anderen Parsern verketten kann).</p>
-<p>Diese Definitionen kombiniert man dann (Parser<em>kombinatioren</em>) zu höherleveligen Hilfsfunktionen, wie z.B.</p>
+<p>Diese Definitionen kombiniert man dann (Parser<em>kombinatoren</em>) zu höherleveligen Hilfsfunktionen, wie z.B.</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">andThen ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b <span class="ot">-&gt;</span> <span class="dt">Parser</span> a
 andThen m n <span class="fu">=</span> bind m (\x <span class="ot">-&gt;</span> bind n (\y <span class="ot">-&gt;</span> pure x))</code></pre></div>
 <p>was ein Stück Eingabe parst und dann wegschmeißt. Das wird dann von dem S-Expr-Parser wieder benutzt, um Tokens zu definieren:</p>
