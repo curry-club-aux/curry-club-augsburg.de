@@ -37,7 +37,7 @@ bind m f = MkParser $ \s ->
 	Nothing      -> Nothing
 ```
 
-Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen sind, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.
+Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im Allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.
 
 Natürlich darf dann auch der Kumpan von `bind/>>=`, `pure/return` nicht fehlen:
 
@@ -48,7 +48,7 @@ pure x = MkParser $ \s -> Just (s, x)
 
 Das macht einfach einen beliebigen Wert zu einem Parser (damit man ihn auch mit anderen Parsern verketten kann).
 
-Diese Definitionen kombiniert man dann (Parser*kombinatioren*) zu höherleveligen Hilfsfunktionen, wie z.B.
+Diese Definitionen kombiniert man dann (Parser*kombinatoren*) zu höherleveligen Hilfsfunktionen, wie z.B.
 
 ``` haskell
 andThen :: Parser a -> Parser b -> Parser a
