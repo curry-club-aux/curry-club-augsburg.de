@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 23 Feb 2017 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Mar 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das fünfundzwanzigste Treffen am 20. April 2017</title>
+    <link>http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das fünfundzwanzigste Treffen am 20. April 2017</h1>
+    <div class="info">
+      Gepostet am 23. Mär 17
+      
+          von Matthias Hutzler
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Manuel hält einen Vortrag mit dem Titel <em>Kenn dein Limit</em>.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 23 Mar 2017 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das vierundzwanzigste Treffen am 23. März 2017</title>
     <link>http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -322,37 +345,6 @@
 ]]></description>
     <pubDate>Wed, 29 Jun 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-06-29-siebzehntes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das achtzehnte Treffen am 8. September 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2016-06-29-achtzehntes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das achtzehnte Treffen am 8. September 2016</h1>
-    <div class="info">
-      Gepostet am 29. Jun 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Marc wird über <em>Hygienische Makros: Praxis, Theorie und Implementierung am Beispiel von Scheme</em> sprechen.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XS6P4aK6rWY" frameborder="0" allowfullscreen>
-</iframe>
-<p>Profpatsch stellt eine pragmatische Implementierung von Internationalisierung (i18n) in Haskell vor.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/zBEgbSuuLwU" frameborder="0" allowfullscreen>
-</iframe>
-<p>corny wird über <em>praktische Firewalltheorie</em> sprechen. Dabei verlassen wir kurzzeitig unseren Elfenbeinturm und schauen uns die wahre Schönheit von <em>iptables</em> an. Sobald wir diesen Realitätsschock überwunden haben, kommen wir aber wieder schnell in unsere heile Isabelle-Welt zurück. Oh nein, etwas stimmt nicht in unseren heilen Welt! Was kann das sein?</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Yrpp8ZKWcbY" frameborder="0" allowfullscreen>
-</iframe>
-</article>
-]]></description>
-    <pubDate>Wed, 29 Jun 2016 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2016-06-29-achtzehntes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 

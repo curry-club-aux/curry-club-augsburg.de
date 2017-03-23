@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2017-02-23T00:00:00Z</updated>
+    <updated>2017-03-23T00:00:00Z</updated>
     <entry>
+    <title>Programm für das fünfundzwanzigste Treffen am 20. April 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html</id>
+    <published>2017-03-23T00:00:00Z</published>
+    <updated>2017-03-23T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das fünfundzwanzigste Treffen am 20. April 2017</h1>
+    <div class="info">
+      Gepostet am 23. Mär 17
+      
+          von Matthias Hutzler
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Manuel hält einen Vortrag mit dem Titel <em>Kenn dein Limit</em>.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das vierundzwanzigste Treffen am 23. März 2017</title>
     <link href="http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html</id>
@@ -322,37 +345,6 @@
 <p>Tim hielt einen Vortrag zu Versionskontrollsystemen und Patch-Theorie. Er stellte die unterschiedlichen Modelle von git und darcs vor. Eigentlich wollte er noch insbesondere auf das neue Versionskontrollsystem <a href="http://pijul.org/">Pijul</a> eingehen, welches aufgebaut ist auf (oder ist laut Webseite “inspiriert ist von”) einer kategorientheoretischen <a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram/docs/mimram_ctp.pdf">Theorie von</a> <a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram/docs/mimram_ctp_slides.pdf">Patches</a> von Samuel Mimram und Cinzia Di Giusto. Tim musste aber leider kurz vor dem Vortrag feststellen, dass das Paper fehlerhaft ist und die aktuelle Version von Pijul nicht funktioniert.</p>
 <p>[Kurze Werbepause: Das Idee des Papers ist richtig cool! Die Autoren gehen von der Kategorie der “normalen”, linearen Dokumente aus und wollen dann “mergen” als Pushout modellieren. Damit Patches immer gemergt werden können, sollte die Kategorie endlich kovollständig sein, damit alle Pushouts existieren. Deshalb gehen die Autoren zur freien konservativen (schon existierende Kolimiten bleiben erhalten) Kovervollständigung der Kategorie der linearen Dokumente über. Diese Kovervollständigung kann man nach einem Folklore-Theorem explizit als volle Unterkategorie der Kategorie der Prägarben auf der Kategorie der linearen Dokumente beschreiben. Im Hauptteil des Papers leiten die Autoren eine viel konkretere, graphentheoretische (aber leider falsche) Beschreibung dieser Kategorie her.]</p>
 <p>Aufgrund der vortgeschrittenen Zeit wurde Profpatsch’s Vortrag verschoben.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das achtzehnte Treffen am 8. September 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-06-29-achtzehntes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-06-29-achtzehntes-treffen.html</id>
-    <published>2016-06-29T00:00:00Z</published>
-    <updated>2016-06-29T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das achtzehnte Treffen am 8. September 2016</h1>
-    <div class="info">
-      Gepostet am 29. Jun 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Marc wird über <em>Hygienische Makros: Praxis, Theorie und Implementierung am Beispiel von Scheme</em> sprechen.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/XS6P4aK6rWY" frameborder="0" allowfullscreen>
-</iframe>
-<p>Profpatsch stellt eine pragmatische Implementierung von Internationalisierung (i18n) in Haskell vor.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/zBEgbSuuLwU" frameborder="0" allowfullscreen>
-</iframe>
-<p>corny wird über <em>praktische Firewalltheorie</em> sprechen. Dabei verlassen wir kurzzeitig unseren Elfenbeinturm und schauen uns die wahre Schönheit von <em>iptables</em> an. Sobald wir diesen Realitätsschock überwunden haben, kommen wir aber wieder schnell in unsere heile Isabelle-Welt zurück. Oh nein, etwas stimmt nicht in unseren heilen Welt! Was kann das sein?</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Yrpp8ZKWcbY" frameborder="0" allowfullscreen>
-</iframe>
 </article>
 ]]></summary>
 </entry>
