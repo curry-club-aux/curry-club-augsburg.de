@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 23 Mar 2017 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Apr 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das sechsundzwanzigste Treffen am 18. Mai 2017</title>
+    <link>http://curry-club-augsburg.de/posts/2017-04-21-sechsundzwanzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das sechsundzwanzigste Treffen am 18. Mai 2017</h1>
+    <div class="info">
+      Gepostet am 21. Apr 17
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Für das sechsundzwazigste Treffen gibt es noch keine Ankündigungen!</p>
+</article>
+]]></description>
+    <pubDate>Fri, 21 Apr 2017 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2017-04-21-sechsundzwanzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das fünfundzwanzigste Treffen am 20. April 2017</title>
     <link>http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -24,8 +47,12 @@
     
   </header>
 
-  <p>Manuel hält einen Vortrag mit dem Titel <em>Kenn dein Limit</em>. Es geht darum, Grenzwerte von reellen Funktionen zu berechnen – und zwar (halb-)automatisch und verifiziert in Isabelle.</p>
-<p>Matthias hält einen Kurzvortrag zu 4d-Grafik mit Haskell, OpenGL und dem <a href="https://hackage.haskell.org/package/linear">linear</a>-Paket. Mit “4d-Grafik” ist dabei nicht “besonders gute 3d-Grafik” oder “3d-Grafik + Gerüche + dein Sitz bewegt sich” gemeint, sondern: (bewegte) Bilder von vierdimensionalen geometrischen Objekten.</p>
+  <p>Manuel hielt einen Vortrag mit dem Titel <em>Kenn dein Limit</em>. Es ging darum, Grenzwerte von reellen Funktionen zu berechnen – und zwar (halb-)automatisch und verifiziert in Isabelle.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/DCb3NT1GDo8?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
+</iframe>
+<p>Matthias hielt einen “Kurzvortrag” zu 4d-Grafik mit Haskell, OpenGL und dem <a href="https://hackage.haskell.org/package/linear">linear</a>-Paket. Mit “4d-Grafik” ist dabei nicht “besonders gute 3d-Grafik” oder “3d-Grafik + Gerüche + dein Sitz bewegt sich” gemeint, sondern: (bewegte) Bilder von vierdimensionalen geometrischen Objekten.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WzBhboEIkSE?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
+</iframe>
 </article>
 ]]></description>
     <pubDate>Thu, 23 Mar 2017 00:00:00 UT</pubDate>
@@ -315,37 +342,6 @@
 ]]></description>
     <pubDate>Tue, 06 Sep 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das siebzehnte Treffen am 11. August 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2016-06-29-siebzehntes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das siebzehnte Treffen am 11. August 2016</h1>
-    <div class="info">
-      Gepostet am 29. Jun 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>uwap stellte Idris als “general purpose”-Sprache vor, in der man abhängige Typen praktisch verwenden kann.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/DhznnY59Lu4" frameborder="0" allowfullscreen>
-</iframe>
-<p>Tim hielt spontan einen Vortrag über <a href="https://github.com/timjb/quantities">quantities</a>, eine von ihm geschriebene Idris-Bibliothek zum Rechnen mit physikalischen Einheiten.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/PrNVF2tWaVs" frameborder="0" allowfullscreen>
-</iframe>
-<p>Tim hielt einen Vortrag zu Versionskontrollsystemen und Patch-Theorie. Er stellte die unterschiedlichen Modelle von git und darcs vor. Eigentlich wollte er noch insbesondere auf das neue Versionskontrollsystem <a href="http://pijul.org/">Pijul</a> eingehen, welches aufgebaut ist auf (oder ist laut Webseite “inspiriert ist von”) einer kategorientheoretischen <a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram/docs/mimram_ctp.pdf">Theorie von</a> <a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram/docs/mimram_ctp_slides.pdf">Patches</a> von Samuel Mimram und Cinzia Di Giusto. Tim musste aber leider kurz vor dem Vortrag feststellen, dass das Paper fehlerhaft ist und die aktuelle Version von Pijul nicht funktioniert.</p>
-<p>[Kurze Werbepause: Das Idee des Papers ist richtig cool! Die Autoren gehen von der Kategorie der “normalen”, linearen Dokumente aus und wollen dann “mergen” als Pushout modellieren. Damit Patches immer gemergt werden können, sollte die Kategorie endlich kovollständig sein, damit alle Pushouts existieren. Deshalb gehen die Autoren zur freien konservativen (schon existierende Kolimiten bleiben erhalten) Kovervollständigung der Kategorie der linearen Dokumente über. Diese Kovervollständigung kann man nach einem Folklore-Theorem explizit als volle Unterkategorie der Kategorie der Prägarben auf der Kategorie der linearen Dokumente beschreiben. Im Hauptteil des Papers leiten die Autoren eine viel konkretere, graphentheoretische (aber leider falsche) Beschreibung dieser Kategorie her.]</p>
-<p>Aufgrund der vortgeschrittenen Zeit wurde Profpatsch’s Vortrag verschoben.</p>
-</article>
-]]></description>
-    <pubDate>Wed, 29 Jun 2016 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2016-06-29-siebzehntes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
