@@ -55,6 +55,8 @@
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/DCb3NT1GDo8?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
 </iframe>
 <p>Matthias hielt einen “Kurzvortrag” zu 4d-Grafik mit Haskell, OpenGL und dem <a href="https://hackage.haskell.org/package/linear">linear</a>-Paket. Mit “4d-Grafik” ist dabei nicht “besonders gute 3d-Grafik” oder “3d-Grafik + Gerüche + dein Sitz bewegt sich” gemeint, sondern: (bewegte) Bilder von vierdimensionalen geometrischen Objekten.</p>
+<p>Code: https://github.com/MatthiasHu/4d-labyrinth</p>
+<p>4d-Vortrag auf dem 33c3 (englisch): https://youtu.be/ct0_g1amEpw</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WzBhboEIkSE?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
 </iframe>
 </article>
