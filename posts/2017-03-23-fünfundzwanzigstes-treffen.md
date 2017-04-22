@@ -19,4 +19,8 @@ ist dabei nicht "besonders gute 3d-Grafik" oder "3d-Grafik + Gerüche + dein
 Sitz bewegt sich" gemeint, sondern: (bewegte) Bilder von vierdimensionalen
 geometrischen Objekten.
 
+Code: https://github.com/MatthiasHu/4d-labyrinth
+
+4d-Vortrag auf dem 33c3 (englisch): https://youtu.be/ct0_g1amEpw
+
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WzBhboEIkSE?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen></iframe>
