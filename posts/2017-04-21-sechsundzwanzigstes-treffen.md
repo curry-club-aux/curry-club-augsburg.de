@@ -6,7 +6,7 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die diverse
+Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die muit diversen
 Altlasten herkömmlicher Shells aufräumt.
 
 Tim beginnt eine voraussichtlich zweiteilige Reihe über *Theoreme für lau*
