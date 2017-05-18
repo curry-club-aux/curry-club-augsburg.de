@@ -14,6 +14,6 @@ Tim beginnt eine voraussichtlich zweiteilige Reihe über *Theoreme für lau*
 Grundlagen: Wieso terminiert eigentlich jedes Programm im einfach typisierten
 Lambda-Kalkül? Und was sind funktionale Relationen?
 
-Corny spricht zum Thema *Build your own Linux container in Rust from scratch in
-<200 LoC*. Es ist low-level, es wird dreckig, alles ist unsafe{}, nichts ist
-sicher und wir vergraben unsere Köpfe leicht im Linux-Kernel.
+Corny spricht über das Thema *Build your own Linux container in Rust from
+scratch in <200 LoC*. Es ist low-level, es wird dreckig, alles ist unsafe{},
+nichts ist sicher und wir vergraben unsere Köpfe leicht im Linux-Kernel.
