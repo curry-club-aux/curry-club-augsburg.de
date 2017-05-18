@@ -6,4 +6,14 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Für das sechsundzwazigste Treffen gibt es noch keine Ankündigungen!
+Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die diverse
+Altlasten herkömmlicher Shells aufräumt.
+
+Tim beginnt eine voraussichtlich zweiteilige Reihe über *Theoreme für lau*
+(*Theorems for free*). Es geht los mit einem Einführungsvortrag zu einigen
+Grundlagen: Wieso terminiert eigentlich jedes Programm im einfach typisierten
+Lambda-Kalkül? Und was sind funktionale Relationen?
+
+Corny spricht zum Thema *Build your own Linux container in Rust from scratch in
+<200 LoC*. Es ist low-level, es wird dreckig, alles ist unsafe{}, nichts ist
+sicher und wir vergraben unsere Köpfe leicht im Linux-Kernel.
