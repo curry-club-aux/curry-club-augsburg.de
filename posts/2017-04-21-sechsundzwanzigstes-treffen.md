@@ -6,14 +6,12 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die mit diversen
-Altlasten herkömmlicher Shells aufräumt.
+Tim stellte *Theoreme für lau* (*Theorems for free*) vor.
 
-Tim beginnt eine voraussichtlich zweiteilige Reihe über *Theoreme für lau*
-(*Theorems for free*). Es geht los mit einem Einführungsvortrag zu einigen
-Grundlagen: Wieso terminiert eigentlich jedes Programm im einfach typisierten
-Lambda-Kalkül? Und was sind funktionale Relationen?
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/2_6SdMgxI-s?list=PLwpepnYDFK9PHluFPG7fBWXycuf8eWHYX" frameborder="0" allowfullscreen></iframe>
 
-Corny *baut einen Linux Container in Rust in <200LoC*. 
-Es ist low-level, es wird dreckig, alles ist unsafe{},
-nichts ist sicher und wir vergraben unsere Köpfe im Linux-Kernel.
+Corny *baute einen Linux Container in Rust in <200LoC*. 
+Es war low-level, es war dreckig, alles war unsafe{},
+nichts war sicher und wir vergruben unsere Köpfe im Linux-Kernel.
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/nVIHgu7A_4A?list=PLwpepnYDFK9PHluFPG7fBWXycuf8eWHYX" frameborder="0" allowfullscreen></iframe>
