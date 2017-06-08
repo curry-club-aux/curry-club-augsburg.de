@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2017-04-21T00:00:00Z</updated>
+    <updated>2017-06-08T00:00:00Z</updated>
     <entry>
+    <title>Programm für das siebenundzwanzigste Treffen am 15. Juni 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2017-06-08-siebenundzwanzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2017-06-08-siebenundzwanzigstes-treffen.html</id>
+    <published>2017-06-08T00:00:00Z</published>
+    <updated>2017-06-08T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das siebenundzwanzigste Treffen am 15. Juni 2017</h1>
+    <div class="info">
+      Gepostet am  8. Jun 17
+      
+          von Tim Baumann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die mit diversen Altlasten herkömmlicher Shells aufräumt.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das sechsundzwanzigste Treffen am 18. Mai 2017</title>
     <link href="http://curry-club-augsburg.de/posts/2017-04-21-sechsundzwanzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2017-04-21-sechsundzwanzigstes-treffen.html</id>
@@ -28,9 +51,12 @@
     
   </header>
 
-  <p>Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die mit diversen Altlasten herkömmlicher Shells aufräumt.</p>
-<p>Tim beginnt eine voraussichtlich zweiteilige Reihe über <em>Theoreme für lau</em> (<em>Theorems for free</em>). Es geht los mit einem Einführungsvortrag zu einigen Grundlagen: Wieso terminiert eigentlich jedes Programm im einfach typisierten Lambda-Kalkül? Und was sind funktionale Relationen?</p>
-<p>Corny <em>baut einen Linux Container in Rust in &lt;200LoC</em>. Es ist low-level, es wird dreckig, alles ist unsafe{}, nichts ist sicher und wir vergraben unsere Köpfe im Linux-Kernel.</p>
+  <p>Tim stellte <em>Theoreme für lau</em> (<em>Theorems for free</em>) vor (<a href="http://timbaumann.info/presentations/cca-theoreme-fuer-lau/theoreme-fuer-lau.pdf">Folien</a>).</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/2_6SdMgxI-s?list=PLwpepnYDFK9PHluFPG7fBWXycuf8eWHYX" frameborder="0" allowfullscreen>
+</iframe>
+<p>Corny <em>baute einen Linux Container in Rust in &lt;200LoC</em>. Es war low-level, es war dreckig, alles war unsafe{}, nichts war sicher und wir vergruben unsere Köpfe im Linux-Kernel.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/nVIHgu7A_4A?list=PLwpepnYDFK9PHluFPG7fBWXycuf8eWHYX" frameborder="0" allowfullscreen>
+</iframe>
 </article>
 ]]></summary>
 </entry>
@@ -292,47 +318,6 @@
 </iframe>
 <p>Profpatsch gab, anlässlich des am folgenden Wochenende stattfindenden NixOS-Hackathons, einen kurzen Überblick über die funktionalen Grundlagen des Nix-Paketmanagers.</p>
 <hr />
-<p>Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
-<p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
-<p>Superturingmaschinen können aber trotzdem längst nicht “alles”. Es gibt Probleme, die auch Superturingmaschinen bewiesenermaßen nicht lösen können.</p>
-<p>Der Vortrag wird in die Theorie der Superturingmaschinen einführen, welche in mancherlei Hinsicht parallel zur klassischen Theorie verläuft, sich in manchen Punkten aber auch deutlich von ihr unterscheidet. Wir werden unter anderem folgende Facetten diskutieren:</p>
-<ul>
-<li><p>Wie geht man präzise mit mehr als unendlich vielen Zeitschritten um? Wie kann man sich Superturingmaschinen physikalisch vorstellen? (Kurzer Crashkurs in Ordinalzahlen.)</p></li>
-<li><p>Nach der kleinsten unendlich großen Ordinalzahl gibt es eine echte Klasse weiterer unendlich großer Ordinalzahlen. Gibt es zu jeder solchen Zahl eine Superturingmaschine, die nach genau so vielen Schritten hält?</p></li>
-<li><p>Man schreibt Superturingmaschinen keine Maximalzahl zu verwendender Zeitschritte vor. Erstaunlicherweise gibt es trotzdem einen gewissen transfiniten Zeitpunkt, ab dem sich eine Superturingmaschine in ihrem Verhalten endlos wiederholen wird.</p></li>
-<li><p>Wo liegen die Grenzen des Möglichen für Superturingmaschinen?</p></li>
-<li><p>Manchmal kann man zwar ein gewisses Lied erkennen, wenn man es hört, es aber nicht vorsingen. Bei Superturingmaschinen gibt es dieses <em>Lost-Melody-Phänomen</em> ebenfalls: Sie können entscheiden, ob auf dem Band ein gewisser vorgegebener Inhalt steht, sind aber nicht in der Lage, diesen Inhalt selbst zu produzieren. Wieso?</p></li>
-<li><p>Jedes Berechenbarkeitskonzept – wie etwa das von realen Computern in der realen Welt, das von idealisierten Turingmaschinen und das von Superturingmaschinen – zieht ein mathematisches Alternativuniversum mit jeweils eigenen Gesetzen der Logik mit sich, einen “effektiven Topos”. Insbesondere das Universum, welches zu Superturingmaschinen gehört, hat faszinierende Eigenschaften.</p></li>
-</ul>
-<p>Originalquellen zum Thema sind der wegweisende Artikel von Joel Hamkins und Andy Lewis <a href="http://arxiv.org/abs/math/9808093">Infinite Time Turing Machines</a> (Vorsicht Spoiler!) und zwei schöne Aufsätze von Andrej Bauer: <a href="http://math.andrej.com/wp-content/uploads/2014/03/real-world-realizability.pdf">Intuitionistic Mathematics and Realizability in the Physical World</a> und <a href="http://math.andrej.com/data/c2c.pdf">Realizability as the Connection between Computable and Constructive Mathematics</a>. Um den Vortrag genießen zu können, sollte man nur in seinem Leben irgendwann einmal gelernt haben, was eine Turingmaschine ist (das erste Drittel des Wikipedia-Eintrags genügt dazu völlig). Weitere Vorkenntnisse werden nicht vorausgesetzt.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das neunzehnte Treffen am 6. Oktober 2016</title>
-    <link href="http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2016-09-06-neunzehntes-treffen.html</id>
-    <published>2016-09-06T00:00:00Z</published>
-    <updated>2016-09-06T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das neunzehnte Treffen am 6. Oktober 2016</h1>
-    <div class="info">
-      Gepostet am  6. Sep 16
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Profpatsch setzte seine Vorstellung einer pragmatischen Implementierung von Internationalisierung (i18n) in Haskell fort.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/0N5fiDPMA7Q" frameborder="0" allowfullscreen>
-</iframe>
-<p>Ingo begann seine Einführung in Superturingmaschinen. Da er nicht fertig geworden ist, wird der Vortrag beim nächsten Treffen fortgesetzt.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/sUqwFbbwHQo" frameborder="0" allowfullscreen>
-</iframe>
 <p>Superturingmaschinen können anders als ihre bekannten Verwandten “länger als unendlich lange” laufen. Das drückt sich mathematisch dadurch aus, dass die Nummer des aktuellen Zeitschritts nicht mehr eine natürliche Zahl sein muss (Zeitschritt 0, Zeitschritt 1, …), sondern auch eine sog. unendliche Ordinalzahl sein kann (Zeitschritt ω, Zeitschritt ω+1, …).</p>
 <p>Viele Probleme, die für gewöhnliche Turingmaschinen unlösbar sind, erledigen Superturingmaschinen mit Links: Zum Beispiel können Superturingmaschinen leicht zahlentheoretische Vermutungen überprüfen (einfach alle Zahlen durchgehen und nach einem Gegenbeispiel suchen; wenn nach unendlich vielen Schritten keines gefunden wurde, stimmt die Vermutung) oder entscheiden, ob eine gewöhnliche Turingmaschine anhält oder nicht.</p>
 <p>Superturingmaschinen können aber trotzdem längst nicht “alles”. Es gibt Probleme, die auch Superturingmaschinen bewiesenermaßen nicht lösen können.</p>
