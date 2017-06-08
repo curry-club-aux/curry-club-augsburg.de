@@ -1,6 +1,6 @@
 flags: {}
 packages:
 - '.'
-resolver: lts-6.22
+resolver: lts-8.17
 extra-deps:
-- clay-0.11
+- clay-0.12.1
