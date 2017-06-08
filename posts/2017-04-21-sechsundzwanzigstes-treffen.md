@@ -6,7 +6,7 @@ meetup-time: 19:00
 author: Tim Baumann
 ---
 
-Tim stellte *Theoreme für lau* (*Theorems for free*) vor.
+Tim stellte *Theoreme für lau* (*Theorems for free*) vor ([Folien](http://timbaumann.info/presentations/cca-theoreme-fuer-lau/theoreme-fuer-lau.pdf)).
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/2_6SdMgxI-s?list=PLwpepnYDFK9PHluFPG7fBWXycuf8eWHYX" frameborder="0" allowfullscreen></iframe>
 
