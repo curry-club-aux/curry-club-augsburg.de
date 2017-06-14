@@ -18,7 +18,8 @@ import           System.Posix.Env (getEnv)
 
 data Meetup a =
   Meetup
-  { meetupDate :: UTCTime
+  { meetupDay :: UTCTime
+  , meetupTime :: TimeOfDay
   , meetupUpcoming :: Bool
   , meetupCounter :: Maybe Value
   , meetupPost :: a
@@ -57,7 +58,7 @@ main = do
         css <- compressCss <$> case backend of
           Cabal -> unixFilter "cabal" ["run", "-v0", "css"] ""
           -- TODO: stack should be invoked like cabal, so that it uses the .cabal css section
-          Stack -> unixFilter "stack" ["--resolver", "lts-6.20", "--install-ghc", "runghc"
+          Stack -> unixFilter "stack" ["--resolver", "lts-8.17", "--install-ghc", "runghc"
                            ,"--package", "clay", "--package", "text", fp] ""
         makeItem css
 
@@ -82,16 +83,17 @@ main = do
         allArticles <- chronological =<< loadAllSnapshots "posts/*" "html-post"
         (meetups, posts) <- fmap partitionEithers $ forM allArticles $ \post -> do
           maybe (Right post) Left <$> parseMeetup curryClubLocale currDay post
-        let sortedMeetups = sortBy (compare `on` meetupDate . itemBody) meetups
+        let sortedMeetups = sortBy (compare `on` meetupDay . itemBody) meetups
             (upcomingMeetups, _lastM) = bimap id lastMay $ partition (meetupUpcoming . itemBody) sortedMeetups
             isRegularMeetup = isJust . meetupCounter
             nextM = headMay $ filter (isRegularMeetup . itemBody) upcomingMeetups
-            meetupField item = do
-              let day = meetupDate $ itemBody item
-              pure $ constField "next-meetup-date" (formatTime curryClubLocale "%d.%m.%Y" day)
+            meetupField item =
+              let day = meetupDay $ itemBody item
+                  time = meetupTime $ itemBody item
+              in   constField "next-meetup-day" (formatTime curryClubLocale "%d.%m.%Y" day)
+                <> constField "next-meetup-time" (formatTime curryClubLocale "%H:%M" time)
                 <> constField "timezone" (timeZoneName currentTimeZone)
-
-        nextMField <- maybe (pure mempty) meetupField nextM
+            nextMField = maybe mempty meetupField nextM
         let indexCtx =
               listField "posts" postCtx (return $ reverse posts)
               <> listField "upcoming-meetups" meetupCtx (return upcomingMeetups)
@@ -156,19 +158,22 @@ parseMeetup
 parseMeetup locale currDay post = do
   meta <- getMetadata (itemIdentifier post)
   pure $ do
-    meetupTimeString <- parseMaybe (\o -> o .: "meetup-announcement") meta
-    meetupTime <- parseTimeM True locale "%Y-%m-%d" meetupTimeString
+    dayString <- parseMaybe (\o -> o .: "meetup-announcement") meta
+    day <- parseTimeM True locale "%Y-%m-%d" dayString
+    timeString <- parseMaybe (\o -> o .: "meetup-time") meta
+    time <- parseTimeM True locale "%H:%M" timeString
     counter <- parseMaybe (\o -> o .:? "meetup-counter") meta
     pure $ flip fmap post $ \contents ->
       Meetup
-      { meetupDate = meetupTime
-      , meetupUpcoming = isUpcoming meetupTime
+      { meetupDay = day
+      , meetupTime = time
+      , meetupUpcoming = isUpcoming day
       , meetupCounter = counter
       , meetupPost = contents
       }
   where
     isUpcoming time = utcToLocalDay time >= currDay
-    
+
 
 -- this should be part of Hakyll
 contramapContext :: (a -> b) -> Context b -> Context a
@@ -185,7 +190,7 @@ meetupCtx =
   contramapContext meetupPost postCtx
   <> boolField "meetup-upcoming" (meetupUpcoming . itemBody)
   <> field "meetup-date" (pure . formatTime curryClubLocale "%e. %b %y"
-                               . meetupDate . itemBody)
+                               . meetupDay . itemBody)
 
 feed :: FeedConfiguration
 feed = FeedConfiguration
