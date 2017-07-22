@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 04 Jul 2017 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Aug 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das neunundzwanzigste Treffen am 10. August 2017</title>
+    <link>http://curry-club-augsburg.de/posts/2017-08-10-neunundzwanzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das neunundzwanzigste Treffen am 10. August 2017</h1>
+    <div class="info">
+      Gepostet am 10. Aug 17
+      
+          von Profpatsch
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Noch sind keine Vorträge angesagt! Aktuelle Informationen bekommt man auf der <a href="https://lists.openlab-augsburg.de/listinfo/curry-talk">Mailingliste</a>.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 10 Aug 2017 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2017-08-10-neunundzwanzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das achtundzwanzigste Treffen am 13. Juli 2017</title>
     <link>http://curry-club-augsburg.de/posts/2017-07-04-achtundzwanzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -17,14 +40,14 @@
     <div class="info">
       Gepostet am  4. Jul 17
       
-          von Tim Baumann
+          von Tim Baumann, Profpatsch
       
     </div>
     
     
   </header>
 
-  <p>Für dieses Treffen gibt es noch keine Vortragsankündigungen!</p>
+  <p>Wir trafen uns diesmal recht unvorbereitet und sprachen ein bisschen über <code>recursion schemes</code>, wie <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html">Fix</a> verwendet werden kann, was denn ein <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html#v:hylo">Hylomorphismus</a> und ein <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html#v:ana">Anamorphismus</a> ist und wie Edward Kmett das in seinem <a href="https://hackage.haskell.org/package/recursion-schemes-5.0.1/docs/Data-Functor-Foldable.html"><code>recursion-schemes</code></a>-Paket auf die Spitze treibt.</p>
 </article>
 ]]></description>
     <pubDate>Tue, 04 Jul 2017 00:00:00 UT</pubDate>
@@ -280,37 +303,6 @@
 ]]></description>
     <pubDate>Tue, 06 Dec 2016 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2016-12-06-dritter-workshop.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das einundzwanzigste Treffen am 1. Dezember 2016</title>
-    <link>http://curry-club-augsburg.de/posts/2016-11-06-einundzwanzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das einundzwanzigste Treffen am 1. Dezember 2016</h1>
-    <div class="info">
-      Gepostet am  6. Nov 16
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Makarius gibt eine Einführung in die Grundlagen von klassischer Logik höherer Ordnung mit Hilberts Auswahloperator.</p>
-<ul>
-<li>History of Higher-Order Logic</li>
-<li>Implementations of HOL</li>
-<li>Quasi-programming in Isabelle/HOL</li>
-<li>Isabelle foundations: primitive inferences, object-logic rules, rule composition, structured proofs Foundations of Higher-Order Logic: actual Isabelle/HOL, Pure bootstrap of HOL</li>
-<li>Isabelle theory with some exercises (for Isabelle2016-1)</li>
-</ul>
-<p>Anschließend leitet Profpatsch eine gemeinsame Programmiersitzung an.</p>
-</article>
-]]></description>
-    <pubDate>Sun, 06 Nov 2016 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2016-11-06-einundzwanzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
