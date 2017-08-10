@@ -7,5 +7,6 @@ author: Profpatsch
 ---
 
 Noch sind keine Vorträge angesagt!
+Es findet statt und wird heiß.
 Aktuelle Informationen bekommt man auf
 der [Mailingliste](https://lists.openlab-augsburg.de/listinfo/curry-talk).
