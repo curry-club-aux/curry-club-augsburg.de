@@ -1,5 +1,6 @@
 ---
 title: Programm für das achtundzwanzigste Treffen am 13. Juli 2017
+subtitle: Rekursionsschemata
 meetup-announcement: 2017-07-13
 meetup-counter: "28"
 meetup-time: 19:00

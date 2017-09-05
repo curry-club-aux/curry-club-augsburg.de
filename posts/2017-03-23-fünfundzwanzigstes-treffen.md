@@ -1,6 +1,6 @@
 ---
 title: Programm für das fünfundzwanzigste Treffen am 20. April 2017
-subtitle: Limiten
+subtitle: Limiten und 4d-Grafik
 meetup-announcement: 2017-04-20
 meetup-counter: "25"
 meetup-time: 19:00

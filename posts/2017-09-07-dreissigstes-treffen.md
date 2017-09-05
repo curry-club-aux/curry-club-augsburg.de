@@ -15,7 +15,7 @@ Strict Evaluation* diskutiert werden.
 Ingo stellt *düstere Ecken der Logik* vor. Wir werden uns auf eine kurze Reise
 durch wundersame Phänomene der Logik begeben. Ausgangspunkt wird Gödels
 gefeierter Unvollständigkeitssatz sein, der aussagt: Es gibt Aussagen, die
-wahr, aber nicht beweisbar sind. Auf den ersten Blick klingt das Paradox – denn
+wahr, aber nicht beweisbar sind. Auf den ersten Blick klingt das paradox – denn
 wie können wir schon von einer Aussage zweifelsfrei wissen, dass sie wahr ist,
 wenn nicht durch einen Beweis? Der Vortrag wird mit einer verständlichen
 Auflösung dieses Scheinwiderspruchs beginnen.
