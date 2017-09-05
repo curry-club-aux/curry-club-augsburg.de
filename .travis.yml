@@ -1,5 +1,6 @@
-# Use new container infrastructure to enable caching
-sudo: false
+# Try these settings for increased RAM
+sudo: required
+dist: trusty
 
 # Choose a lightweight base image; we provide our own build tools.
 language: c
