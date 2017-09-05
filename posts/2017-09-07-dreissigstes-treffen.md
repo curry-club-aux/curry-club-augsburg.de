@@ -2,7 +2,7 @@
 title: Programm für das dreißigste Treffen am 7. September 2017
 meetup-announcement: 2017-09-07
 meetup-counter: "30"
-meetup-time: 19:00
+meetup-time: 18:00
 author: uwap
 subtitle: Call/CC und düstere Ecken der Logik
 ---
