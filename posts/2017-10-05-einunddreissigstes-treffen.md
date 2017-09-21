@@ -18,3 +18,24 @@ für JavaScript benutzen. Das Programm des Vortrags wird wohl so aussehen:
 * Vorstellung von https://github.com/flowtype/flow-typed
 * Kurzer Vergleich mit TypeScript
 * Tiefergehende Anwendung mit Flow
+
+Ingo wird mit uns die beim
+[letzten Treffen begonnene](2017-09-07-dreissigstes-treffen.html)
+Reise durch wundersame Phänomene der Logik fortsetzen.
+
+Wir widmen uns Beispielen und Anwendungen von Gödels Unvollständigkeitssatz in der theoretischen
+Informatik: Es gibt Computerprogramme (offiziell Turingmaschinen), deren
+Halteverhalten unentscheidbar ist – von denen also bewiesen wurde, dass weder
+ein Beweis, dass sie halten, noch ein Beweis, dass sie nicht halten, möglich
+ist. Ein [Resultat aus dem Jahr
+2016](https://www.scottaaronson.com/blog/?p=2725) zeigt, dass solche Programme
+schon sehr kurz sein können.
+
+Andere Programme verändern ihr Verhalten je nach dem, in welchem mathematischen
+Alternativuniversum sie ausgeführt werden. Was diese seltsam anmutende
+Behauptung bedeutet, und wie sich diese Programme in der realen Welt verhalten,
+wird im Vortrag klar werden.
+
+Wir schließen mit einem besonderen binären Baum von Kleene und einem Beispiel,
+das zeigt, dass es Situationen gibt, in denen man nur mit Verwendung von Zufall
+weiterkommt und keine deterministische Alternative existiert.
