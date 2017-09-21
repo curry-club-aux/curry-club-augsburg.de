@@ -35,6 +35,10 @@
 <li>Kurzer Vergleich mit TypeScript</li>
 <li>Tiefergehende Anwendung mit Flow</li>
 </ul>
+<p>Ingo wird mit uns die beim <a href="2017-09-07-dreissigstes-treffen.html">letzten Treffen begonnene</a> Reise durch wundersame Phänomene der Logik fortsetzen.</p>
+<p>Wir widmen uns Beispielen und Anwendungen von Gödels Unvollständigkeitssatz in der theoretischen Informatik: Es gibt Computerprogramme (offiziell Turingmaschinen), deren Halteverhalten unentscheidbar ist – von denen also bewiesen wurde, dass weder ein Beweis, dass sie halten, noch ein Beweis, dass sie nicht halten, möglich ist. Ein <a href="https://www.scottaaronson.com/blog/?p=2725">Resultat aus dem Jahr 2016</a> zeigt, dass solche Programme schon sehr kurz sein können.</p>
+<p>Andere Programme verändern ihr Verhalten je nach dem, in welchem mathematischen Alternativuniversum sie ausgeführt werden. Was diese seltsam anmutende Behauptung bedeutet, und wie sich diese Programme in der realen Welt verhalten, wird im Vortrag klar werden.</p>
+<p>Wir schließen mit einem besonderen binären Baum von Kleene und einem Beispiel, das zeigt, dass es Situationen gibt, in denen man nur mit Verwendung von Zufall weiterkommt und keine deterministische Alternative existiert.</p>
 </article>
 ]]></summary>
 </entry>
@@ -57,11 +61,13 @@
     
   </header>
 
-  <p>Marc trägt über <em>Tail Calls, Proper Tail Recursion, Continuations, CPS-Transformation, Call/CC und Continuation Marks</em> vor. Bei einem späteren Treffen könnte dann <em>Korrekte Implementierung von Lazy Evaluation in Programmiersprachen mit Strict Evaluation</em> diskutiert werden.</p>
-<p>Ingo stellt <em>düstere Ecken der Logik</em> vor. Wir werden uns auf eine kurze Reise durch wundersame Phänomene der Logik begeben. Ausgangspunkt wird Gödels gefeierter Unvollständigkeitssatz sein, der aussagt: Es gibt Aussagen, die wahr, aber nicht beweisbar sind. Auf den ersten Blick klingt das paradox – denn wie können wir schon von einer Aussage zweifelsfrei wissen, dass sie wahr ist, wenn nicht durch einen Beweis? Der Vortrag wird mit einer verständlichen Auflösung dieses Scheinwiderspruchs beginnen.</p>
-<p>Anschließend widmen wir uns Beispielen und Anwendungen in der theoretischen Informatik: Es gibt Computerprogramme (offiziell Turingmaschinen), deren Halteverhalten unentscheidbar ist – von denen also bewiesen wurde, dass weder ein Beweis, dass sie halten, noch ein Beweis, dass sie nicht halten, möglich ist. Ein <a href="https://www.scottaaronson.com/blog/?p=2725">Resultat aus dem Jahr 2016</a> zeigt, dass solche Programme schon sehr kurz sein können.</p>
-<p>Andere Programme verändern ihr Verhalten je nach dem, in welchem mathematischen Alternativuniversum sie ausgeführt werden. Was diese seltsam anmutende Behauptung bedeutet, und wie sich diese Programme in der realen Welt verhalten, wird im Vortrag klar werden.</p>
-<p>Wir schließen mit einem besonderen binären Baum von Kleene und einem Beispiel, das zeigt, dass es Situationen gibt, in denen man nur mit Verwendung von Zufall weiterkommt und keine deterministische Alternative existiert.</p>
+  <p>Marc trug über <em>Tail Calls, Proper Tail Recursion, Continuations, CPS-Transformation, Call/CC und Continuation Marks</em> vor. Bei einem späteren Treffen könnte noch die <em>Korrekte Implementierung von Lazy Evaluation in Programmiersprachen mit Strict Evaluation</em> diskutiert werden.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/iuaM9-PX1ls?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+<p>Ingo stellte uns eine <em>düstere Ecke der Logik</em> vor, Gödels gefeierten Unvollständigkeitssatz, der aussagt: Es gibt Aussagen, die wahr, aber nicht beweisbar sind. Auf den ersten Blick klingt das paradox – denn wie können wir schon von einer Aussage zweifelsfrei wissen, dass sie wahr ist, wenn nicht durch einen Beweis? Ingo präsentierte die Auflösung dieses Scheinwiderspruchs.</p>
+<p>Unsere kurze Reise durch wundersame Phänomene der Logik wird beim <a href="2017-10-05-einunddreissigstes-treffen.html">nächsten Treffen</a> fortgesetzt.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/gFioK87z8dE?rel=0" frameborder="0" allowfullscreen>
+</iframe>
 </article>
 ]]></summary>
 </entry>
