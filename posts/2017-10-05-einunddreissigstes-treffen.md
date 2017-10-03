@@ -4,7 +4,7 @@ meetup-announcement: 2017-10-05
 meetup-counter: "31"
 meetup-time: 19:00
 author: uwap
-subtitle: Richtiges™ Javascript
+subtitle: Richtiges™ Javascript und Logik
 ---
 
 marudor wird einen Vortrag zu typisiertem JavaScript halten und dabei Flow und
