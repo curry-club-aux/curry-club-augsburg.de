@@ -4,20 +4,11 @@ meetup-announcement: 2017-10-05
 meetup-counter: "31"
 meetup-time: 19:00
 author: uwap
-subtitle: Richtiges™ JavaScript und Logik
+subtitle: Logik, Buffer Overflows und SSA
 ---
 
-marudor wird einen Vortrag zu typisiertem JavaScript halten und dabei Flow und
-TypeScript vorstellen. Mittlerweile wird die JavaScript-Welt nämlich einerseits
-immer funktionaler, andererseits immer typisierter. Mittlerweile braucht man
-keine eigenen Sprachen wie TypeScript oder PureScript mehr um typisiert
-JavaScript schreiben zu können, sondern man kann auch Flow, einen Typchecker
-für JavaScript benutzen. Das Programm des Vortrags wird wohl so aussehen:
-
-* Einführung in Javascript mit Flow
-* Vorstellung von https://github.com/flowtype/flow-typed
-* Kurzer Vergleich mit TypeScript
-* Tiefergehende Anwendung mit Flow
+Der angekündigte Vortrag marudor zu typisiertem JavaScript muss leider
+krankheitsbedingt entfallen.
 
 Ingo wird mit uns die beim
 [letzten Treffen begonnene](2017-09-07-dreissigstes-treffen.html)
@@ -39,3 +30,8 @@ wird im Vortrag klar werden.
 Wir schließen mit einem besonderen binären Baum von Kleene und einem Beispiel,
 das zeigt, dass es Situationen gibt, in denen man nur mit Verwendung von Zufall
 weiterkommt und keine deterministische Alternative existiert.
+
+Richi spricht über Buffer Overflows, Arbitrary Code Execution und Format String
+Exploits.
+
+Marc erklärt SSA.
