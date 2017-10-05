@@ -34,4 +34,11 @@ weiterkommt und keine deterministische Alternative existiert.
 Richi spricht über Buffer Overflows, Arbitrary Code Execution und Format String
 Exploits.
 
-Marc erklärt SSA.
+Marc erklärt SSA: Die meisten modernen Compiler für konventionelle
+Programmiersprachen (GCC, Clang, SpiderMonkey, ...) schreiben das Programm für
+ihr Middle-End in "Singe-Static-Assignment-Form" um, in der es dann optimiert
+wird, bevor die SSA-Form im Back-End dann in Maschinensprache umgeschrieben
+wird. Jeder Compiler-Bauer muß also wissen, was SSA bedeutet. Wir geben kurz
+an, um was es sich bei der SSA-Form handelt, und was das Ganze mit funktionaler
+Programmierung zu tun hat (woraus sich im Übrigen auch der Grund für den
+Vorteil der SSA-Form ergibt.)
