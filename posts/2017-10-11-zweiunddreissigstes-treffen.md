@@ -7,7 +7,7 @@ author: uwap
 subtitle: Unser rundes Jubiläum feiern wir mit noch mehr Logik!
 ---
 
-Ingo wir mit uns die bei den
+Ingo wird mit uns die bei den
 [letzten](2017-09-07-dreissigstes-treffen.html)
 [beiden](2017-10-05-einunddreissigstes-treffen.md)
 Treffen begonnene Reise durch wundersame Phänomene der Logik fortsetzen.
