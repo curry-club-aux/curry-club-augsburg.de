@@ -8,8 +8,35 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2017-10-05T00:00:00Z</updated>
+    <updated>2017-10-11T00:00:00Z</updated>
     <entry>
+    <title>Programm für das zweiunddreißigste Treffen am 2. November 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2017-10-11-zweiunddreissigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2017-10-11-zweiunddreissigstes-treffen.html</id>
+    <published>2017-10-11T00:00:00Z</published>
+    <updated>2017-10-11T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das zweiunddreißigste Treffen am 2. November 2017</h1>
+    <div class="info">
+      Gepostet am 11. Okt 17
+      
+          von uwap
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Ingo wir mit uns die bei den <a href="2017-09-07-dreissigstes-treffen.html">letzten</a> <a href="2017-10-05-einunddreissigstes-treffen.md">beiden</a> Treffen begonnene Reise durch wundersame Phänomene der Logik fortsetzen.</p>
+<p>Wir werden uns Beispielen und Anwendungen von Gödels Unvollständigkeitssatz in der theoretischen Informatik widmen: Es gibt Computerprogramme (offiziell Turingmaschinen), deren Halteverhalten unentscheidbar ist – von denen also bewiesen wurde, dass weder ein Beweis, dass sie halten, noch ein Beweis, dass sie nicht halten, möglich ist. Ein <a href="https://www.scottaaronson.com/blog/?p=2725">Resultat aus dem Jahr 2016</a> zeigt, dass solche Programme schon sehr kurz sein können.</p>
+<p>Andere Programme verändern ihr Verhalten je nach dem, in welchem mathematischen Alternativuniversum sie ausgeführt werden. Was diese seltsam anmutende Behauptung bedeutet, und wie sich diese Programme in der realen Welt verhalten, wird im Vortrag klar werden.</p>
+<p>Wir schließen mit einem besonderen binären Baum von Kleene und einem Beispiel, das zeigt, dass es Situationen gibt, in denen man nur mit Verwendung von Zufall weiterkommt und keine deterministische Alternative existiert.</p>
+<p>Vielleicht holt außerdem marudor seinen schon zum letzten Treffen angekündigten Vortrag über typisiertes JavaScript nach.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das einunddreißigste Treffen am 5. Oktober 2017</title>
     <link href="http://curry-club-augsburg.de/posts/2017-10-05-einunddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2017-10-05-einunddreissigstes-treffen.html</id>
@@ -258,44 +285,6 @@
 <p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
 <p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
 </blockquote>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-01-01-dreiundzwanzigstes-treffen.html</id>
-    <published>2017-01-01T00:00:00Z</published>
-    <updated>2017-01-01T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das dreiundzwanzigste Treffen am 23. Februar 2017</h1>
-    <div class="info">
-      Gepostet am  1. Jan 17
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Tim stellte die experimentelle Programmiersprache Frank (<a href="https://arxiv.org/pdf/1611.09259.pdf">Paper</a>, <a href="https://github.com/cmcl/frankjnr">Implementierung</a>) vor. In Frank gibt es Werte und Berechnungen. Jede Berechnung ist dabei getaggt mit den Effekten, die sie ausführen möchte. Berechnungen können an Funktionen übergeben werden. Beim Aufruf einer Berechnung müssen entweder Handler für ihre benötigten Effekte angegeben werden oder diese Effekte werden im Typsystem weiter nach außen propagiert (damit müssen sie weiter außen gehandhabt werden).</p>
-<p>Vorteile von Frank sind:</p>
-<ul>
-<li>Es ist sehr einfach und natürlich, Code mit Nebeneffekten so abstrakt zu schreiben, dass man ihn in verschiedenen Kontexten verwenden kann und auch gut testen kann.</li>
-<li>Man kann rein funktionalen und effektbehafteten Code sehr gut kombinieren: In Haskell ruft man ja rein funktionalen Code aus IO-Actions auf, aber man kann nicht andersrum eine IO-Action in rein funktionalem Code verwenden. Dies führt dazu, dass viele Funktionen in einer rein funktionalen und in einer IO/monadischen Variante existieren, wie z.B. <code>map</code> und <code>mapM</code> (beide wenden eine Funktion auf jedes Element einer Liste an). In Frank hat man stattdessen eine Funktion <code>map : {X -&gt; Y} -&gt; List X -&gt; List Y</code>, die man sowohl auf effektfreie Funktionen, als auch auf effektbehaftete Berechnungen anwenden kann.</li>
-</ul>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/llrmAQ09EtQ?list=PLwpepnYDFK9MmWxIhryXFeMLyjAB9zFEP" frameborder="0" allowfullscreen>
-</iframe>
-<p>Ingo erzählte über Continuations.</p>
-<ul>
-<li><p>Tutorial zum Umgang mit Continuations: Was sind Continuations? Wie geht man mit ihnen um? Welche Vorteile haben Sprachen, die Continuations eingebaut haben (wie etwa Scheme) oder die in einer angenehmen Syntax mit Continuations nachgerüstet werden können (wie etwa Haskell mit der Continuation-Monade)? Was hat es mit der CPS-Transformation auf sich? Wie kann man dank Continuations OpenGL-Grafikprogrammierung so aussehen lassen, als ob man in QBASIC der 90er Jahre programmiert? Sind Continuations auch gefährlich? Wieso sagt alle Welt, dass die Continuation-Monade die Mutter aller Monaden sei?</p></li>
-<li><p>Konstruktive Mathematik ist nicht nur ein Teil von klassischer Mathematik (das ist klar: alles, was man konstruktiv beweisen kann, gilt auch klassisch), sondern umgekehrt ist vermöge der “Doppelnegationsübersetzung” auch klassische Mathematik ein Teil von konstruktiver Mathematik. Mit der richtigen Brille (der Curry–Howard-Brille) betrachtet, ist die Doppelnegationsübersetzung genau dasselbe wie die CPS-Transformation.</p></li>
-</ul>
-<p>Die Doppelnegationsübersetzung wurde in den 30ern entdeckt, die CPS-Transformation in den 70ern. In den 90ern wurde offenbar, dass es sich um dieselbe Entdeckung handelte.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLwpepnYDFK9MmWxIhryXFeMLyjAB9zFEP" frameborder="0" allowfullscreen>
-</iframe>
 </article>
 ]]></summary>
 </entry>
