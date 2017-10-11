@@ -10,7 +10,7 @@ subtitle: Unser rundes Jubiläum feiern wir mit noch mehr Logik!
 Ingo wird mit uns die bei den
 [letzten](2017-09-07-dreissigstes-treffen.html)
 [beiden](2017-10-05-einunddreissigstes-treffen.md)
-Treffen begonnene Reise durch wundersame Phänomene der Logik fortsetzen.
+Treffen begonnene Reise durch wundersame Phänomene der Logik abschließen.
 
 Wir werden uns Beispielen und Anwendungen von Gödels Unvollständigkeitssatz in der theoretischen
 Informatik widmen: Es gibt Computerprogramme (offiziell Turingmaschinen), deren
