@@ -24,5 +24,3 @@ seinen eigenen kleinen Theorembeweiser, angetrieben von dem Wunsch, die
 Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die
 Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung
 machte, vorstellen.
-
-Vielleicht holt außerdem marudor seinen schon zum letzten Treffen angekündigten Vortrag über typisiertes JavaScript nach.
