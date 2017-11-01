@@ -7,5 +7,5 @@ author: iblech
 subtitle: Typisiertes JavaScript
 ---
 
-Vielleicht marudor seinen schon zum letzten Treffen angekündigten Vortrag über
+Vielleicht holt marudor seinen schon zum letzten Treffen angekündigten Vortrag über
 typisiertes JavaScript nach.
