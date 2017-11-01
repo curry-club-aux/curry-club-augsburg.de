@@ -7,26 +7,22 @@ author: uwap
 subtitle: Unser rundes Jubiläum feiern wir mit noch mehr Logik!
 ---
 
-Ingo wird mit uns die bei den
+Ingo wird mit uns auf höchstens 30 Minuten die bei den
 [letzten](2017-09-07-dreissigstes-treffen.html)
 [beiden](2017-10-05-einunddreissigstes-treffen.md)
-Treffen begonnene Reise durch wundersame Phänomene der Logik abschließen.
+Treffen begonnene Reise durch wundersame Phänomene der Logik abschließen. Wir
+werden über Programme sprechen, die je nachdem, in welchem mathematischen
+Alternativuniversum sie ausgeführt werden, ein anderes Verhalten an den Tag
+legen, und einen Rosetta-Stein kennenlernen, der Berechenbarkeitstheorie mit
+Logik und Zahlentheorie verwebt. Abschließend werden wir noch ein verblüffendes
+Beispiel dafür sehen, dass Zufall als wertvolle Ressource gehandelt werden
+muss.
 
-Wir werden uns Beispielen und Anwendungen von Gödels Unvollständigkeitssatz in der theoretischen
-Informatik widmen: Es gibt Computerprogramme (offiziell Turingmaschinen), deren
-Halteverhalten unentscheidbar ist – von denen also bewiesen wurde, dass weder
-ein Beweis, dass sie halten, noch ein Beweis, dass sie nicht halten, möglich
-ist. Ein [Resultat aus dem Jahr
-2016](https://www.scottaaronson.com/blog/?p=2725) zeigt, dass solche Programme
-schon sehr kurz sein können.
-
-Andere Programme verändern ihr Verhalten je nach dem, in welchem mathematischen
-Alternativuniversum sie ausgeführt werden. Was diese seltsam anmutende
-Behauptung bedeutet, und wie sich diese Programme in der realen Welt verhalten,
-wird im Vortrag klar werden.
-
-Wir schließen mit einem besonderen binären Baum von Kleene und einem Beispiel,
-das zeigt, dass es Situationen gibt, in denen man nur mit Verwendung von Zufall
-weiterkommt und keine deterministische Alternative existiert.
+Tim begab sich die letzten Wochen auf die Spuren von Makarius und entwickelte
+seinen eigenen kleinen Theorembeweiser, angetrieben von dem Wunsch, die
+Übungsblätter der aktuell laufenden Kategorientheorievorlesung von Marc und
+Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die
+Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung
+machte, vorstellen.
 
 Vielleicht holt außerdem marudor seinen schon zum letzten Treffen angekündigten Vortrag über typisiertes JavaScript nach.
