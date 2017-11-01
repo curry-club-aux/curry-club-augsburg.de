@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 11 Oct 2017 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Nov 2017 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das dreiunddreißigste Treffen am 30. November 2017</title>
+    <link>http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das dreiunddreißigste Treffen am 30. November 2017</h1>
+    <div class="info">
+      Gepostet am  1. Nov 17
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Vielleicht marudor seinen schon zum letzten Treffen angekündigten Vortrag über typisiertes JavaScript nach.</p>
+</article>
+]]></description>
+    <pubDate>Wed, 01 Nov 2017 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das zweiunddreißigste Treffen am 2. November 2017</title>
     <link>http://curry-club-augsburg.de/posts/2017-10-11-zweiunddreissigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -26,7 +49,6 @@
 
   <p>Ingo wird mit uns auf höchstens 30 Minuten die bei den <a href="2017-09-07-dreissigstes-treffen.html">letzten</a> <a href="2017-10-05-einunddreissigstes-treffen.md">beiden</a> Treffen begonnene Reise durch wundersame Phänomene der Logik abschließen. Wir werden über Programme sprechen, die je nachdem, in welchem mathematischen Alternativuniversum sie ausgeführt werden, ein anderes Verhalten an den Tag legen, und einen Rosetta-Stein kennenlernen, der Berechenbarkeitstheorie mit Logik und Zahlentheorie verwebt. Abschließend werden wir noch ein verblüffendes Beispiel dafür sehen, dass Zufall als wertvolle Ressource gehandelt werden muss.</p>
 <p>Tim begab sich die letzten Wochen auf die Spuren von Makarius und entwickelte seinen eigenen kleinen Theorembeweiser, angetrieben von dem Wunsch, die Übungsblätter der aktuell laufenden Kategorientheorievorlesung von Marc und Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung machte, vorstellen.</p>
-<p>Vielleicht holt außerdem marudor seinen schon zum letzten Treffen angekündigten Vortrag über typisiertes JavaScript nach.</p>
 </article>
 ]]></description>
     <pubDate>Wed, 11 Oct 2017 00:00:00 UT</pubDate>
@@ -246,46 +268,6 @@
 ]]></description>
     <pubDate>Thu, 23 Feb 2017 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Vierter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Januar 2017</title>
-    <link>http://curry-club-augsburg.de/posts/2017-01-03-vierter-workshop.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Vierter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Januar 2017</h1>
-    <div class="info">
-      Gepostet am  3. Jan 17
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <div class="right">
-<p><a href="/files/haskellworkshop-plakat3.pdf"> <img width="300" src="/files/haskellworkshop-plakat3.png" /> </a></p>
-</div>
-<p>Liebe Freundinnen der Sonne!</p>
-<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu der Fortsetzung unseres <strong>Haskell-Workshops</strong> ein. Diese findet am <strong>21. Januar 2017</strong>, einem Samstag, von 9:00 Uhr bis 17:00 Uhr im <strong>OpenLab Augsburg</strong> statt. Wie bei den vorherigen Malen ist die Teilnahme kostenlos.</p>
-<p>Zielgruppe des Workshops sind alle Teilnehmerinnen der ersten drei Workshops. Etwas genauer: Man sollte in der Lage sein, ein Haskell-Programm zu schreiben, dass die Anzahl Blätter eines binären Baums zählt. Diese Aufgabe darf ruhig ein wenig dauern! Der Workshop richtet sich an alle, die keine Neulinge mehr sind; Expertin muss man aber noch lange nicht sein. Ganz besonders möchten wir die Teilnehmenden des dritten Workshops vom 17. Dezember 2016 ermuntern, an diesem Folgeworkshop teilzunehmen.</p>
-<p>Wichtigster Programmpunkt beim Folgeworkshop sind Monaden (griechisch für “putzige flauschige Dinge”). Damit könnt ihr Ein- und Ausgabe betreiben, den Programmfluss pervers verbiegen, veränderliche Variablen bedienen (wenn es unbedingt sein muss), Dateiformate parsen, Logikrätsel lösen und Spiele programmieren. Außerdem werden wir über QuickCheck sprechen, einer sehr beliebten Möglichkeit, um die paar Programmierfehler, die das Typsystem nicht findet, zu fangen.</p>
-<p>Damit wir unsere Kapazität überblicken können, ist zur Teilnahme eine verpflichtende aber unverbindliche <a href="https://ola.pads.ccc.de/haskell-workshop-2017a">vorherige Anmeldung</a> nötig.</p>
-<p>Wir freuen uns auf euch!</p>
-<p>Euer Team vom Curry Club</p>
-<!--more-->
-<blockquote>
-<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
-<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
-<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
-<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
-<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
-</blockquote>
-</article>
-]]></description>
-    <pubDate>Tue, 03 Jan 2017 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2017-01-03-vierter-workshop.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
