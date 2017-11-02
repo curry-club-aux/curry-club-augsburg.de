@@ -4,7 +4,9 @@ meetup-announcement: 2017-11-02
 meetup-counter: "32"
 meetup-time: 19:00
 author: uwap
-subtitle: Unser rundes Jubiläum feiern wir mit noch mehr Logik!
+subtitle: Unser rundes Jubiläum feiern wir mit noch mehr Logik! Und Church.
+image: /images/church-32-pow.png
+image-alt: 32
 ---
 
 Ingo wird mit uns auf höchstens 30 Minuten die bei den
@@ -24,3 +26,5 @@ seinen eigenen kleinen Theorembeweiser, angetrieben von dem Wunsch, die
 Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die
 Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung
 machte, vorstellen.
+
+Matthias erklärt oben Stehendes zur Nummer des heutigen Treffens passendes Bild.
