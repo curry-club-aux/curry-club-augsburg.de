@@ -27,4 +27,4 @@ Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die
 Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung
 machte, vorstellen.
 
-Matthias erklärt oben Stehendes zur Nummer des heutigen Treffens passendes Bild.
+Matthias erklärt [oben stehendes](/images/church-32-pow.png) zur Nummer des heutigen Treffens passendes Bild.
