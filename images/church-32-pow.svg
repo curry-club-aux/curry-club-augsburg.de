@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="church-32-pow.svg"
+   inkscape:export-filename="/home/mhutzler/church-32-pow.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3012"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3005"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3001"
+       is_visible="true" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64"
+     inkscape:cx="188.62161"
+     inkscape:cy="516.39586"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1535"
+     inkscape:window-height="1176"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:none"
+       d="m 109.07809,441.85127 c 0,0 29.76767,-127.01673 199.44479,-123.22771 C 478.2,322.41258 507.0023,512.59249 296.45725,656.48556 85.912203,800.37863 77.358067,780.25102 87.341211,878.73153 c 9.98314,98.48049 419.302819,22.40173 419.302819,22.40173"
+       id="path3021"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czzzc" />
+    <path
+       style="fill:none;stroke:none"
+       d="m 509.05991,353.34783 c 0,0 55.15363,47.35655 100.4582,25.44868 45.30458,-21.90789 50.5743,-86.59719 24.51809,-122.05595 -26.05622,-35.45877 -86.62923,-0.91923 -99.93492,-14.0385 -13.3057,-13.11926 -17.28937,-92.63896 -3.13169,-107.92352 14.15767,-15.28456 121.49348,-5.62995 121.49348,-5.62995"
+       id="path3047"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czzzzc" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;stroke-opacity:1"
+       id="text2995-7"
+       sodipodi:linespacing="125%"
+       x="457.04541"
+       y="0"><textPath
+         xlink:href="#path3021"
+         id="textPath3838"
+         style="font-size:32px;text-align:start;text-anchor:start;stroke:none;stroke-opacity:1">λf. λx. f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f (f x)))))))))))))))))))))))))))))</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text2995-3"
+       sodipodi:linespacing="125%"
+       x="117.02701"
+       y="0"
+       transform="translate(11.048543,26.516504)"><textPath
+         xlink:href="#path3047"
+         id="textPath3865"
+         style="font-size:32px;text-align:start;text-anchor:start;stroke:none">(λf. λx. f (f (f (f (f x))))) (λf. λx. f (f x))</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="282.12741"
+       y="521.2464"
+       id="text3901"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.90308679,-0.4294581,0.4294581,0.90308679,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3903"
+         x="282.12741"
+         y="521.2464">=</tspan></text>
+  </g>
+</svg>
