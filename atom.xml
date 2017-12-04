@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2017-11-01T00:00:00Z</updated>
+    <updated>2017-12-04T00:00:00Z</updated>
     <entry>
+    <title>Programm für das vierunddreißigste Treffen am 28. Dezember 2017</title>
+    <link href="http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html</id>
+    <published>2017-12-04T00:00:00Z</published>
+    <updated>2017-12-04T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das vierunddreißigste Treffen am 28. Dezember 2017</h1>
+    <div class="info">
+      Gepostet am  4. Dez 17
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Das 34. Treffen würde regulär am 28. Dezember 2017 stattfinden. Da viele zu der Zeit auf dem Kongress sind, fällt es möglicherweise aus (stattdessen werden wir den Kongress um Funktionales bereichern). Sobald die Entscheidung steht, wird sie hier bekanntgegeben.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das dreiunddreißigste Treffen am 30. November 2017</title>
     <link href="http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html</id>
@@ -249,30 +272,6 @@
 <p>4d-Vortrag auf dem 33c3 (englisch): https://youtu.be/ct0_g1amEpw</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WzBhboEIkSE?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
 </iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das vierundzwanzigste Treffen am 23. März 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-02-23-vierundzwanzigstes-treffen.html</id>
-    <published>2017-02-23T00:00:00Z</published>
-    <updated>2017-02-23T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierundzwanzigste Treffen am 23. März 2017</h1>
-    <div class="info">
-      Gepostet am 23. Feb 17
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Uwap wird eine Einführung in lineare Logik und lineare Typsysteme geben. Klassische und intuitionistische Logik verfolgt das Ziel schlussfolgerungen zu ermöglichen. Was aber nun, wenn ich nicht eine Wahrheit A und eine Wahrheit B habe, sondern eine Ressource A und eine Ressource B? Wir werden sehen, dass wir so an unendlich Bonbons kommen können und wie uns Lollis dabei helfen es besser zu machen.</p>
-<p>Daniel stellt Rust vor.</p>
 </article>
 ]]></summary>
 </entry>
