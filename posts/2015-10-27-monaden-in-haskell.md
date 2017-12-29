@@ -26,6 +26,10 @@ Dieser kurze Artikel soll als Nachtrag zum Haskell-Workshop kurz umreißen, wie
   Man muss nur Zustand per Hand durchfädeln – oder die praktische Abstraktion
   durch die State-Monade nutzen.
 
+We're very grateful for @hdgarrood for providing an [English
+translation](https://gist.github.com/hdgarrood/c8a3ed3591b75e93e420) of this
+article!
+
 
 Das Problem: Unverträglichkeit mit referenzieller Transparenz
 =============================================================
