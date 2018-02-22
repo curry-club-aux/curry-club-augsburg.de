@@ -1,10 +1,10 @@
 ---
-title: Programm für das fünfunddreißigste Treffen am 22. Januar 2018
+title: Programm für das fünfunddreißigste Treffen am 22. Februar 2018
 meetup-announcement: 2018-02-22
 meetup-counter: "35"
 meetup-time: 19:00
 author: iblech
-subtitle: 
+subtitle:
 ---
 
 Ingo macht ein Live-Coding zu einem klassischen Thema: Wieso hat die Verkettung
