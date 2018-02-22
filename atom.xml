@@ -8,8 +8,32 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2017-12-04T00:00:00Z</updated>
+    <updated>2018-02-22T00:00:00Z</updated>
     <entry>
+    <title>Programm für das fünfunddreißigste Treffen am 22. Januar 2018</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-02-22-fuenfunddreissigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-02-22-fuenfunddreissigstes-treffen.html</id>
+    <published>2018-02-22T00:00:00Z</published>
+    <updated>2018-02-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das fünfunddreißigste Treffen am 22. Januar 2018</h1>
+    <div class="info">
+      Gepostet am 22. Feb 18
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Ingo macht ein Live-Coding zu einem klassischen Thema: Wieso hat die Verkettung von Listen manchmal eine ganz traurige Laufzeit? Wie können sog. Differenzlisten das Problem umgehen? Und wie äußert sich das Problem und seine Lösung eine Stufe höher, bei freien Monaden?</p>
+<p>Matthias wird Bemerkungen zu Kan-Erweiterungen hereinrufen.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das vierunddreißigste Treffen am 25. Januar 2018</title>
     <link href="http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html</id>
@@ -241,36 +265,6 @@
 </iframe>
 <p>Corny <em>baute einen Linux-Container in Rust in &lt;200LoC</em>. Es war low-level, es war dreckig, alles war unsafe{}, nichts war sicher und wir vergruben unsere Köpfe im Linux-Kernel.</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/nVIHgu7A_4A?list=PLwpepnYDFK9PHluFPG7fBWXycuf8eWHYX" frameborder="0" allowfullscreen>
-</iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das fünfundzwanzigste Treffen am 20. April 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-03-23-f%C3%BCnfundzwanzigstes-treffen.html</id>
-    <published>2017-03-23T00:00:00Z</published>
-    <updated>2017-03-23T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das fünfundzwanzigste Treffen am 20. April 2017</h1>
-    <div class="info">
-      Gepostet am 23. Mär 17
-      
-          von Matthias Hutzler
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Manuel hielt einen Vortrag mit dem Titel <em>Kenn dein Limit</em>. Es ging darum, Grenzwerte von reellen Funktionen zu berechnen – und zwar (halb-)automatisch und verifiziert in Isabelle.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/DCb3NT1GDo8?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
-</iframe>
-<p>Matthias hielt einen “Kurzvortrag” zu 4d-Grafik mit Haskell, OpenGL und dem <a href="https://hackage.haskell.org/package/linear">linear</a>-Paket. Mit “4d-Grafik” ist dabei nicht “besonders gute 3d-Grafik” oder “3d-Grafik + Gerüche + dein Sitz bewegt sich” gemeint, sondern: (bewegte) Bilder von vierdimensionalen geometrischen Objekten.</p>
-<p>Code: https://github.com/MatthiasHu/4d-labyrinth</p>
-<p>4d-Vortrag auf dem 33c3 (englisch): https://youtu.be/ct0_g1amEpw</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WzBhboEIkSE?list=PLwpepnYDFK9Mj6zO-ug2DzM03TOSUqz22" frameborder="0" allowfullscreen>
 </iframe>
 </article>
 ]]></summary>
