@@ -11,7 +11,7 @@ Profpatsch hält ein Vortrag zur Typsystementwicklung: Ein Typsystem zu bauen
 klingt wie ein extrem schweres Problem, an das sich nur Expertinnen wagen
 sollten.
 
-Profpatsch wrdl zeigen, dases es gar nicht so schwer ist, ein (einfaches)
+Profpatsch wird zeigen, dass es gar nicht so schwer ist, ein (einfaches)
 Typsystem zu bauen, das auch komplexere Werte einer dynamischen
 (uni-typisierten) Sprache (nix) mit aussagekräftigen Typfehlern testen kann.
 
