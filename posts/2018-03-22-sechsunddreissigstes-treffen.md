@@ -4,11 +4,11 @@ meetup-announcement: 2018-03-22
 meetup-counter: "36"
 meetup-time: 19:00
 author: timjb
-subtitle:
+subtitle: Typsystementwicklung und Zipper
 ---
 
 Profpatsch hält ein Vortrag zur Typsystementwicklung: Ein Typsystem zu bauen
-klingt wie ein extrem schweres Problem, an das sich nur Expertinnenen wagen
+klingt wie ein extrem schweres Problem, an das sich nur Expertinnen wagen
 sollten.
 
 Profpatsch wrdl zeigen, dases es gar nicht so schwer ist, ein (einfaches)
