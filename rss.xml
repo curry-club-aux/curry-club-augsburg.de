@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 22 Mar 2018 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Apr 2018 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das siebenunddreißigste Treffen am 19. April 2018</title>
+    <link>http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das siebenunddreißigste Treffen am 19. April 2018</h1>
+    <div class="info">
+      Gepostet am 19. Apr 18
+      
+          von timjb
+      
+    </div>
+    
+    
+  </header>
+
+  <p>For unser 37. Treffen gibt es noch keine Vortragsankündigungen!</p>
+</article>
+]]></description>
+    <pubDate>Thu, 19 Apr 2018 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das sechsunddreißigste Treffen am 22. März 2018</title>
     <link>http://curry-club-augsburg.de/posts/2018-03-22-sechsunddreissigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -240,31 +263,6 @@
 ]]></description>
     <pubDate>Tue, 04 Jul 2017 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2017-07-04-achtundzwanzigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das siebenundzwanzigste Treffen am 15. Juni 2017</title>
-    <link>http://curry-club-augsburg.de/posts/2017-06-08-siebenundzwanzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das siebenundzwanzigste Treffen am 15. Juni 2017</h1>
-    <div class="info">
-      Gepostet am  8. Jun 17
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die mit diversen Altlasten herkömmlicher Shells aufräumt.</p>
-<p>Ingo improvisierte etwas zu folgender Problemstellung: Gegeben seien zwei unendliche Listen natürlicher Zahlen, <code>as</code> und <code>bs</code>. Dann gibt es immer ein Paar <code>(i,j)</code> von Indizes mit <code>i &lt; j</code>, sodass <code>as!!i &lt;= as!!j</code> und <code>bs!!i &lt;= bs!!j</code>.</p>
-<p>Das ist gar nicht klar! Wie findet man ein solches Paar? Ein eleganter klassischer Beweis der Existenz gibt dazu kaum Aufschluss, denn als Hilfsschritt bestimmt er das Minimum einer unendlichen Liste. Man kann nun auf clevere Art und Weise die Continuationmonade einsetzen, um diese eigentlich in der Praxis unlösbar scheinende Aufgaben lösbar erscheinen zu lassen.</p>
-</article>
-]]></description>
-    <pubDate>Thu, 08 Jun 2017 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2017-06-08-siebenundzwanzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 

@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-03-22T00:00:00Z</updated>
+    <updated>2018-04-19T00:00:00Z</updated>
     <entry>
+    <title>Programm für das siebenunddreißigste Treffen am 19. April 2018</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html</id>
+    <published>2018-04-19T00:00:00Z</published>
+    <updated>2018-04-19T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das siebenunddreißigste Treffen am 19. April 2018</h1>
+    <div class="info">
+      Gepostet am 19. Apr 18
+      
+          von timjb
+      
+    </div>
+    
+    
+  </header>
+
+  <p>For unser 37. Treffen gibt es noch keine Vortragsankündigungen!</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das sechsunddreißigste Treffen am 22. März 2018</title>
     <link href="http://curry-club-augsburg.de/posts/2018-03-22-sechsunddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-03-22-sechsunddreissigstes-treffen.html</id>
@@ -240,31 +263,6 @@
   </header>
 
   <p>Wir trafen uns diesmal recht unvorbereitet und sprachen ein bisschen über <code>recursion schemes</code>, wie <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html">Fix</a> verwendet werden kann, was denn ein <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html#v:hylo">Hylomorphismus</a> und ein <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html#v:ana">Anamorphismus</a> ist und wie Edward Kmett das in seinem <a href="https://hackage.haskell.org/package/recursion-schemes-5.0.1/docs/Data-Functor-Foldable.html"><code>recursion-schemes</code></a>-Paket auf die Spitze treibt.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das siebenundzwanzigste Treffen am 15. Juni 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-06-08-siebenundzwanzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-06-08-siebenundzwanzigstes-treffen.html</id>
-    <published>2017-06-08T00:00:00Z</published>
-    <updated>2017-06-08T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das siebenundzwanzigste Treffen am 15. Juni 2017</h1>
-    <div class="info">
-      Gepostet am  8. Jun 17
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Xaver stellt hfish vor, seine in Haskell geschriebene Shell, die mit diversen Altlasten herkömmlicher Shells aufräumt.</p>
-<p>Ingo improvisierte etwas zu folgender Problemstellung: Gegeben seien zwei unendliche Listen natürlicher Zahlen, <code>as</code> und <code>bs</code>. Dann gibt es immer ein Paar <code>(i,j)</code> von Indizes mit <code>i &lt; j</code>, sodass <code>as!!i &lt;= as!!j</code> und <code>bs!!i &lt;= bs!!j</code>.</p>
-<p>Das ist gar nicht klar! Wie findet man ein solches Paar? Ein eleganter klassischer Beweis der Existenz gibt dazu kaum Aufschluss, denn als Hilfsschritt bestimmt er das Minimum einer unendlichen Liste. Man kann nun auf clevere Art und Weise die Continuationmonade einsetzen, um diese eigentlich in der Praxis unlösbar scheinende Aufgaben lösbar erscheinen zu lassen.</p>
 </article>
 ]]></summary>
 </entry>
