@@ -4,7 +4,7 @@ meetup-announcement: 2018-04-19
 meetup-counter: "37"
 meetup-time: 19:00
 author: timjb
-subtitle: Typsystementwicklung und Zipper
+subtitle: 
 ---
 
 For unser 37. Treffen gibt es noch keine Vortragsankündigungen!
