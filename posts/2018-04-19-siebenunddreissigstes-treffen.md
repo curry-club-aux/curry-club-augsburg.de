@@ -8,3 +8,7 @@ subtitle:
 ---
 
 For unser 37. Treffen gibt es noch keine Vortragsankündigungen!
+
+**Achtung:** Das 37. Treffen findet **nicht** am 19. April statt. Es wird
+möglicherweise um eine Woche nach hinten verschoben, das wird gerade auf der
+Mailingliste diskutiert.
