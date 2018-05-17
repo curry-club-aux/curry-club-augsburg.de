@@ -24,7 +24,9 @@
     
   </header>
 
-  <p>Heute Abend hält Daniel einen Vortrag zum Thema “Faster DBScan and HDBScan” (DBScan = Density-Based Spatial Clustering of Applications with Noise). Eventuell werden wir erörtern, inwiefern dabei funtionale Programmierung hilfreich ist. :-)</p>
+  <p>Heute Abend hielt Daniel einen Vortrag zum Thema “Faster DBScan and HDBScan” (DBScan = Density-Based Spatial Clustering of Applications with Noise). Es wurden einige Fragen zu Paralellisierbarkeit gestellt und überlegt, ob es eine „alten Schule“ (Algorithmen auf einem unveränderlichen Datenset) und eine „neuen Schule“ (Algorithmen, die sich mit hinzukommenden Datenpunkten effizient updaten können) des Algorithmendesigns gibt.</p>
+<p>Desweiteren gibt es ein Pad zur weiteren Organisation des Curry Clubs: https://ola.pads.ccc.de/curry</p>
+<p>Vortragsvorschläge gesucht!</p>
 </article>
 ]]></description>
     <pubDate>Thu, 17 May 2018 00:00:00 UT</pubDate>
@@ -49,6 +51,8 @@
 
   <p>For unser 37. Treffen gibt es noch keine Vortragsankündigungen!</p>
 <p><strong>Achtung:</strong> Das 37. Treffen findet <strong>nicht</strong> am 19. April statt. Es wird möglicherweise um eine Woche nach hinten verschoben, das wird gerade auf der Mailingliste diskutiert.</p>
+<p>Update: Das 37. Treffen ist ausgefallen. /o<br />
+</p>
 </article>
 ]]></description>
     <pubDate>Thu, 19 Apr 2018 00:00:00 UT</pubDate>
@@ -75,7 +79,7 @@
 <p>Profpatsch wird zeigen, dass es gar nicht so schwer ist, ein (einfaches) Typsystem zu bauen, das auch komplexere Werte einer dynamischen (uni-typisierten) Sprache (nix) mit aussagekräftigen Typfehlern testen kann.</p>
 <p>Das Ergebnis unterstützt Skalare, Listen und Maps, Produkttypen, Summentypen und Unions (keine Lambdas).</p>
 <p>Für die rekursiven Typchecks führte die Anwendung eines Katamorphismus zu extrem sauberem und konzisem Code, was auch zeigt, dass die Ideen aus Haskell durchaus in ungetypten Programmiersprachen zur Anwendung kommen können.</p>
-<p>Ingo hält einen Vortrag zu Zippern. Die verwendet man, um funktional in Datenstrukturen wie etwa Bäumen zu navigieren. Kurioserweise haben sie etwas mit der Ableitung von Funktionen in Mathematik zu tun. Zum Abschluss wird ein kleines Schmankerl von Oleg vorgestellt.</p>
+<p><s>Ingo hält einen Vortrag zu Zippern. Die verwendet man, um funktional in Datenstrukturen wie etwa Bäumen zu navigieren. Kurioserweise haben sie etwas mit der Ableitung von Funktionen in Mathematik zu tun. Zum Abschluss wird ein kleines Schmankerl von Oleg vorgestellt.</s></p>
 </article>
 ]]></description>
     <pubDate>Thu, 22 Mar 2018 00:00:00 UT</pubDate>
