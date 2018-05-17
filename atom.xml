@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-04-19T00:00:00Z</updated>
+    <updated>2018-05-17T00:00:00Z</updated>
     <entry>
+    <title>Programm für das achtunddreißigste Treffen am 17. Mai 2018</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html</id>
+    <published>2018-05-17T00:00:00Z</published>
+    <updated>2018-05-17T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das achtunddreißigste Treffen am 17. Mai 2018</h1>
+    <div class="info">
+      Gepostet am 17. Mai 18
+      
+          von MatthiasHu
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Heute Abend hält Daniel einen Vortrag zum Thema “Faster DBScan and HDBScan” (DBScan = Density-Based Spatial Clustering of Applications with Noise). Eventuell werden wir erörtern, inwiefern dabei funtionale Programmierung hilfreich ist. :-)</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das siebenunddreißigste Treffen am 19. April 2018</title>
     <link href="http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html</id>
@@ -241,29 +264,6 @@
 
   <p>Makarius berichtet über sein <a href="https://marketplace.visualstudio.com/items?itemName=makarius.isabelle">laufendes Projekt</a>, Visual Studio Code als Isabelle/PIDE-Frontend zu verwenden.</p>
 <p>Profpatsch stellt <a href="https://hackage.haskell.org/package/turtle">Turtle</a> vor, eine Haskell-Bibliothek, mit der man Haskell als “bessere Bash” verwenden kann. Das fängt bei der Überwindung der Quotinghölle an und geht dann noch viel weiter.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das achtundzwanzigste Treffen am 13. Juli 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-07-04-achtundzwanzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-07-04-achtundzwanzigstes-treffen.html</id>
-    <published>2017-07-04T00:00:00Z</published>
-    <updated>2017-07-04T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das achtundzwanzigste Treffen am 13. Juli 2017</h1>
-    <div class="info">
-      Gepostet am  4. Jul 17
-      
-          von Tim Baumann, Profpatsch
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Wir trafen uns diesmal recht unvorbereitet und sprachen ein bisschen über <code>recursion schemes</code>, wie <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html">Fix</a> verwendet werden kann, was denn ein <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html#v:hylo">Hylomorphismus</a> und ein <a href="https://hackage.haskell.org/package/data-fix-0.0.4/docs/Data-Fix.html#v:ana">Anamorphismus</a> ist und wie Edward Kmett das in seinem <a href="https://hackage.haskell.org/package/recursion-schemes-5.0.1/docs/Data-Functor-Foldable.html"><code>recursion-schemes</code></a>-Paket auf die Spitze treibt.</p>
 </article>
 ]]></summary>
 </entry>
