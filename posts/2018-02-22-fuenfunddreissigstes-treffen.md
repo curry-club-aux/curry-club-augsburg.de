@@ -1,10 +1,10 @@
 ---
 title: Programm für das fünfunddreißigste Treffen am 22. Februar 2018
+subtitle: Differenzlisten & Freie Monaden
 meetup-announcement: 2018-02-22
 meetup-counter: "35"
 meetup-time: 19:00
 author: iblech
-subtitle:
 ---
 
 Ingo macht ein Live-Coding zu einem klassischen Thema: Wieso hat die Verkettung

@@ -1,10 +1,10 @@
 ---
 title: Programm für das dreiunddreißigste Treffen am 30. November 2017
+subtitle: Church-Kodierung, Potenzreihen und Dhall
 meetup-announcement: 2017-11-30
 meetup-counter: "33"
 meetup-time: 19:00
 author: iblech
-subtitle: Church-Kodierung, Potenzreihen und Dhall
 ---
 
 Matthias wird in einem Kurzvortrag (der eigentlich an unserem letzten runden
