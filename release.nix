@@ -7,7 +7,7 @@ with import <nixpkgs> {}; let
     ${pkgs.cabal2nix}/bin/cabal2nix $src > $out
   '';
 
-  haskellPackages = haskell.packages.lts-5_4;
+  haskellPackages = pkgs.haskellPackages;
 
   unpatchedSiteGen = haskellPackages.callPackage (import pkg) {};
 
@@ -17,7 +17,7 @@ in rec {
     postPatch = (drv.postPatch or "") + ''
       sed -i \
         -e "/unixFilter .*css.*/ s!css!$out/bin/css!" \
-        site.hs
+        curry-site.hs
     '';
   });
   hoogleEnv = haskellPackages.ghcWithHoogle (_: [ siteGen ]);
@@ -26,7 +26,7 @@ in rec {
     name = "curry-club-augsburg.de";
     inherit src;
     buildInputs = [ glibcLocales ];
-    buildPhase = "LANG=de_DE.UTF-8 ${siteGen}/bin/site build";
+    buildPhase = "LANG=de_DE.UTF-8 ${siteGen}/bin/curry-site build";
     installPhase = ''
       mv _site "$out"
       mkdir -p "$out/nix-support"
