@@ -25,13 +25,21 @@ data Meetup a =
   , meetupPost :: a
   } deriving Show
 
-data Backend = Stack | Cabal
+data Backend
+  = Stack
+  -- ^ use the stack tool to build haskell files
+  | Cabal
+  -- ^ use cabal to build haskell files
+  | InPath
+  -- ^ assume every executable is already in PATH
+
 readBackend :: IO (Maybe Backend)
 readBackend = do
   be <- getEnv "backend"
   pure $ be >>= \case
     "stack" -> Just Stack
     "cabal" -> Just Cabal
+    "inpath" -> Just InPath
     _       -> Nothing
 
 main :: IO ()
@@ -60,6 +68,7 @@ main = do
           -- TODO: stack should be invoked like cabal, so that it uses the .cabal css section
           Stack -> unixFilter "stack" ["--resolver", "lts-8.17", "--install-ghc", "runghc"
                            ,"--package", "clay", "--package", "text", fp] ""
+          InPath -> unixFilter "css" [] ""
         makeItem css
 
     match (fromList ["about.rst", "contact.markdown"]) $ do

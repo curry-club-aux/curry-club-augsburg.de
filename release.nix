@@ -25,8 +25,17 @@ in rec {
   site = with import <nixpkgs> {}; stdenv.mkDerivation {
     name = "curry-club-augsburg.de";
     inherit src;
-    buildInputs = [ glibcLocales ];
-    buildPhase = "LANG=de_DE.UTF-8 ${siteGen}/bin/curry-site build";
+    buildInputs = [
+      glibcLocales
+      (haskellPackages.ghcWithPackages (hp: [ hp.cabal-install ]))
+      siteGen
+    ];
+    buildPhase = ''
+      env LANG=de_DE.UTF-8 \
+          backend=inpath \
+          HOME=$(mktemp -d) \
+          curry-site build
+      '';
     installPhase = ''
       mv _site "$out"
       mkdir -p "$out/nix-support"

@@ -1,11 +1,11 @@
 let
   nixpkgs = import <nixpkgs> {};
-  hp = nixpkgs.haskell.packages.ghc7103.override {
+  hp = nixpkgs.haskellPackages.override {
     overrides = self: super: {
       site = super.callPackage ./site.nix {};
       siteEnv = with self;
         (nixpkgs.haskell.lib.addBuildTools self.site
-          [ ghcid cabal-install nixpkgs.stack ]).env;
+          [ ghcid cabal-install ]).env;
      };
   };
 in
