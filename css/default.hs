@@ -5,9 +5,9 @@ import           Data.Monoid
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
-import qualified Clay.Stylesheet
 
 reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
+lightRose, almostWhite, lightYellow :: Color
 reallyDarkPurple = other "#170b1a"
 darkerPurple     = other "#211024"
 darkPurple       = other "#2d1630"
@@ -128,7 +128,7 @@ postCss = do
     -- http://nicolasgallagher.com/micro-clearfix-hack/
     ":after" <> ":before" ? do
       content (stringContent " ")
-      display Clay.Display.table
+      display Clay.Display.displayTable
     ":after" ?
       clear both
 
@@ -202,7 +202,7 @@ contentCss = do
     fontSize (px 40)
     lineHeight (px 64)
   ul # ".post-list" ? do
-    display Clay.Display.table
+    display Clay.Display.displayTable
     borderSpacing2 nil (px 4)
     listStyleType none
     paddingLeft (px 0)
