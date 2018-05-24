@@ -1,6 +1,9 @@
 with import <nixpkgs> {}; let
 
-  srcFilter = path: type: baseNameOf path != ".git" && type != "symlink";
+  srcFilter = path: type:
+   let f = prefix: baseNameOf path != prefix;
+   in lib.foldl' lib.and true (map f [ ".git" "_site" "_cache" "dist" ])
+      && type != "symlink";
   src = builtins.filterSource srcFilter ./.;
 
   pkg = pkgs.runCommand "curry-club-default.nix" { src = ./.; } ''
@@ -15,6 +18,7 @@ in rec {
   siteGen = haskell.lib.overrideCabal unpatchedSiteGen (drv: {
     inherit src;
     postPatch = (drv.postPatch or "") + ''
+      find
       sed -i \
         -e "/unixFilter .*css.*/ s!css!$out/bin/css!" \
         curry-site.hs
