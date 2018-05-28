@@ -1,6 +1,6 @@
 ---
 title: Programm für das neununddreissigste Treffen am 14. Juni 2018
-subtitle: PIDE: Eine UI für Isabelle
+subtitle: "PIDE: Eine UI für Isabelle"
 subsubtitle: Wie baue ich ein modernes User Interface?
 meetup-announcement: 2018-05-28
 meetup-counter: "39"
