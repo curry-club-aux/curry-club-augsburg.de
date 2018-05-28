@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-05-17T00:00:00Z</updated>
+    <updated>2018-06-14T00:00:00Z</updated>
     <entry>
+    <title>Programm für das neununddreissigste Treffen am 14. Juni 2018</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-06-14-neununddreissigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-06-14-neununddreissigstes-treffen.html</id>
+    <published>2018-06-14T00:00:00Z</published>
+    <updated>2018-06-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das neununddreissigste Treffen am 14. Juni 2018</h1>
+    <div class="info">
+      Gepostet am 14. Jun 18
+      
+          von Profpatsch
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Basierend auf <a href="https://sketis.net/wp-content/uploads/2018/05/isabelle-jedit-fide2018.pdf">seinem letzten Bericht</a> wird Makarius uns die Implementierung der aktuellen IDE (basierend auf Scala/jEdit) und die Zukunft der UI (Typescript/VSCode) vorstellen.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das achtunddreißigste Treffen am 17. Mai 2018</title>
     <link href="http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html</id>
@@ -244,30 +267,6 @@
 <p>Unsere kurze Reise durch wundersame Phänomene der Logik wird beim <a href="2017-10-05-einunddreissigstes-treffen.html">nächsten Treffen</a> fortgesetzt.</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/gFioK87z8dE?rel=0" frameborder="0" allowfullscreen>
 </iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das neunundzwanzigste Treffen am 10. August 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-08-10-neunundzwanzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-08-10-neunundzwanzigstes-treffen.html</id>
-    <published>2017-08-10T00:00:00Z</published>
-    <updated>2017-08-10T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das neunundzwanzigste Treffen am 10. August 2017</h1>
-    <div class="info">
-      Gepostet am 10. Aug 17
-      
-          von Profpatsch
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Makarius berichtet über sein <a href="https://marketplace.visualstudio.com/items?itemName=makarius.isabelle">laufendes Projekt</a>, Visual Studio Code als Isabelle/PIDE-Frontend zu verwenden.</p>
-<p>Profpatsch stellt <a href="https://hackage.haskell.org/package/turtle">Turtle</a> vor, eine Haskell-Bibliothek, mit der man Haskell als “bessere Bash” verwenden kann. Das fängt bei der Überwindung der Quotinghölle an und geht dann noch viel weiter.</p>
 </article>
 ]]></summary>
 </entry>

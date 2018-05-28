@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 17 May 2018 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Jun 2018 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das neununddreissigste Treffen am 14. Juni 2018</title>
+    <link>http://curry-club-augsburg.de/posts/2018-06-14-neununddreissigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das neununddreissigste Treffen am 14. Juni 2018</h1>
+    <div class="info">
+      Gepostet am 14. Jun 18
+      
+          von Profpatsch
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Basierend auf <a href="https://sketis.net/wp-content/uploads/2018/05/isabelle-jedit-fide2018.pdf">seinem letzten Bericht</a> wird Makarius uns die Implementierung der aktuellen IDE (basierend auf Scala/jEdit) und die Zukunft der UI (Typescript/VSCode) vorstellen.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 14 Jun 2018 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2018-06-14-neununddreissigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das achtunddreißigste Treffen am 17. Mai 2018</title>
     <link>http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -244,30 +267,6 @@
 ]]></description>
     <pubDate>Thu, 07 Sep 2017 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2017-09-07-dreissigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das neunundzwanzigste Treffen am 10. August 2017</title>
-    <link>http://curry-club-augsburg.de/posts/2017-08-10-neunundzwanzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das neunundzwanzigste Treffen am 10. August 2017</h1>
-    <div class="info">
-      Gepostet am 10. Aug 17
-      
-          von Profpatsch
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Makarius berichtet über sein <a href="https://marketplace.visualstudio.com/items?itemName=makarius.isabelle">laufendes Projekt</a>, Visual Studio Code als Isabelle/PIDE-Frontend zu verwenden.</p>
-<p>Profpatsch stellt <a href="https://hackage.haskell.org/package/turtle">Turtle</a> vor, eine Haskell-Bibliothek, mit der man Haskell als “bessere Bash” verwenden kann. Das fängt bei der Überwindung der Quotinghölle an und geht dann noch viel weiter.</p>
-</article>
-]]></description>
-    <pubDate>Thu, 10 Aug 2017 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2017-08-10-neunundzwanzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
