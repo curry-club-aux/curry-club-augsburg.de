@@ -8,8 +8,54 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-05-28T00:00:00Z</updated>
+    <updated>2018-07-10T00:00:00Z</updated>
     <entry>
+    <title>Programm für das vierzigste Treffen am 12.7.2018</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html</id>
+    <published>2018-07-10T00:00:00Z</published>
+    <updated>2018-07-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das vierzigste Treffen am 12.7.2018</h1>
+    <div class="info">
+      Gepostet am 10. Jul 18
+      
+          von Profpatsch
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Profpatsch gibt eine Einführung über Purescript, eine Haskell-artige Sprache mit strikter Semantik, die direkt zu Javascript kompiliert.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Programm für das einundvierzigste Treffen am 9. August 2018</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-07-10-einundvierzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-07-10-einundvierzigstes-treffen.html</id>
+    <published>2018-07-10T00:00:00Z</published>
+    <updated>2018-07-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das einundvierzigste Treffen am 9. August 2018</h1>
+    <div class="info">
+      Gepostet am 10. Jul 18
+      
+          von Profpatsch
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Bis jetzt steht noch kein Thema fest.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das neununddreissigste Treffen am 14. Juni 2018</title>
     <link href="http://curry-club-augsburg.de/posts/2018-05-28-neununddreissigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-05-28-neununddreissigstes-treffen.html</id>
@@ -206,67 +252,6 @@
   <p>Ingo wird mit uns auf höchstens 30 Minuten die bei den <a href="2017-09-07-dreissigstes-treffen.html">letzten</a> <a href="2017-10-05-einunddreissigstes-treffen.md">beiden</a> Treffen begonnene Reise durch wundersame Phänomene der Logik abschließen. Wir werden über Programme sprechen, die je nachdem, in welchem mathematischen Alternativuniversum sie ausgeführt werden, ein anderes Verhalten an den Tag legen, und einen Rosetta-Stein kennenlernen, der Berechenbarkeitstheorie mit Logik und Zahlentheorie verwebt. Abschließend werden wir noch ein verblüffendes Beispiel dafür sehen, dass Zufall als wertvolle Ressource gehandelt werden muss.</p>
 <p>Tim begab sich die letzten Wochen auf die Spuren von Makarius und entwickelte seinen eigenen kleinen Theorembeweiser, angetrieben von dem Wunsch, die Übungsblätter der aktuell laufenden Kategorientheorievorlesung von Marc und Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung machte, vorstellen.</p>
 <p>Matthias erklärt <a href="/images/church-32-pow.png">oben stehendes</a> zur Nummer des heutigen Treffens passendes Bild.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das einunddreißigste Treffen am 5. Oktober 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-10-05-einunddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-10-05-einunddreissigstes-treffen.html</id>
-    <published>2017-10-05T00:00:00Z</published>
-    <updated>2017-10-05T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das einunddreißigste Treffen am 5. Oktober 2017</h1>
-    <div class="info">
-      Gepostet am  5. Okt 17
-      
-          von uwap
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Der angekündigte Vortrag marudor zu typisiertem JavaScript musste leider krankheitsbedingt entfallen.</p>
-<p>Ingo setzte mit uns die beim <a href="2017-09-07-dreissigstes-treffen.html">letzten Treffen begonnene</a> Reise durch wundersame Phänomene der Logik fort.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/S9x181N8k_U" frameborder="0" allowfullscreen>
-</iframe>
-<p>Richi sprach über Buffer Overflows, Arbitrary Code Execution und Format String Exploits.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/_moCOMcjkJs" frameborder="0" allowfullscreen>
-</iframe>
-<p>Marc erklärte SSA: Die meisten modernen Compiler für konventionelle Programmiersprachen (GCC, Clang, SpiderMonkey, …) schreiben das Programm für ihr Middle-End in “Singe-Static-Assignment-Form” um, in der es dann optimiert wird, bevor die SSA-Form im Back-End dann in Maschinensprache umgeschrieben wird. Jeder Compiler-Bauer muß also wissen, was SSA bedeutet. Wir geben kurz an, um was es sich bei der SSA-Form handelt, und was das Ganze mit funktionaler Programmierung zu tun hat (woraus sich im Übrigen auch der Grund für den Vorteil der SSA-Form ergibt.)</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/iSLIclOTPE4" frameborder="0" allowfullscreen>
-</iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das dreißigste Treffen am 7. September 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-09-07-dreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-09-07-dreissigstes-treffen.html</id>
-    <published>2017-09-07T00:00:00Z</published>
-    <updated>2017-09-07T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das dreißigste Treffen am 7. September 2017</h1>
-    <div class="info">
-      Gepostet am  7. Sep 17
-      
-          von uwap
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Marc trug über <em>Tail Calls, Proper Tail Recursion, Continuations, CPS-Transformation, Call/CC und Continuation Marks</em> vor. Bei einem späteren Treffen könnte noch die <em>Korrekte Implementierung von Lazy Evaluation in Programmiersprachen mit Strict Evaluation</em> diskutiert werden.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/iuaM9-PX1ls?rel=0" frameborder="0" allowfullscreen>
-</iframe>
-<p>Ingo stellte uns eine <em>düstere Ecke der Logik</em> vor, Gödels gefeierten Unvollständigkeitssatz, der aussagt: Es gibt Aussagen, die wahr, aber nicht beweisbar sind. Auf den ersten Blick klingt das paradox – denn wie können wir schon von einer Aussage zweifelsfrei wissen, dass sie wahr ist, wenn nicht durch einen Beweis? Ingo präsentierte die Auflösung dieses Scheinwiderspruchs.</p>
-<p>Unsere kurze Reise durch wundersame Phänomene der Logik wird beim <a href="2017-10-05-einunddreissigstes-treffen.html">nächsten Treffen</a> fortgesetzt.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/gFioK87z8dE?rel=0" frameborder="0" allowfullscreen>
-</iframe>
 </article>
 ]]></summary>
 </entry>
