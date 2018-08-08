@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-07-10T00:00:00Z</updated>
+    <updated>2018-08-08T00:00:00Z</updated>
     <entry>
+    <title>Programm für das zweiundvierzigste Treffen</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-Treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-Treffen.html</id>
+    <published>2018-08-08T00:00:00Z</published>
+    <updated>2018-08-08T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das zweiundvierzigste Treffen</h1>
+    <div class="info">
+      Gepostet am  8. Aug 18
+      
+          von MatthiasHu
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Es gibt noch kein Programm.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das vierzigste Treffen am 12.7.2018</title>
     <link href="http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html</id>
@@ -226,33 +249,6 @@
   <p>Matthias wird in einem Kurzvortrag (der eigentlich an unserem letzten runden Jubiläumstreffen hätte stattfinden sollen) auf Church-Encodings abnerden. Er erklärt auf anschauliche Art und Weise, was es mit dem gefeierten <a href="https://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl">λ-Kalkül</a> auf sich hat und wie man ihn als Grundlage für Berechenbarkeitstheorie verwenden kann. Im λ-Kalkül gibt es nur drei Primitiven: Funktionsanwendung, Variablen und λ-Abstraktion. Es gibt nicht: Zahlen, Listen, Bäume, Mengen, … Trotzdem kann man all diese Dinge nachbauen. Matthias erklärt, wie das geht.</p>
 <p>Simon stellt seine Haskell-Implementierung von formalen Potenzreihen vor. Potenzreihen sind Wäscheleinen für Zahlen und kamen schon im vorletzten Vortrag von Manuel kurz vor. sigfpe, der Urheber des <a href="http://blog.sigfpe.com/">berühmten Haskell-Blogs</a>, spricht auch oft über sie.</p>
 <p>Zum Abschluss stellt Profpatsch die mit Absicht nicht-turingvollständige Sprache <a href="https://hackage.haskell.org/package/dhall-1.8.0/docs/Dhall-Tutorial.html">Dhall</a> vor. Gabriel Gonzales hat diese Sprache erdacht und umgesetzt, und Profpatsch hat ein Cheatsheet geschrieben und versucht gerade, sie nach JavaScript zu kompilieren (mit GHCJS und nix).</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das zweiunddreißigste Treffen am 2. November 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-10-11-zweiunddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-10-11-zweiunddreissigstes-treffen.html</id>
-    <published>2017-10-11T00:00:00Z</published>
-    <updated>2017-10-11T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das zweiunddreißigste Treffen am 2. November 2017</h1>
-    <div class="info">
-      Gepostet am 11. Okt 17
-      
-          von uwap
-      
-    </div>
-    
-    <img src="/images/church-32-pow.png" alt="32" />
-    
-    
-  </header>
-
-  <p>Ingo wird mit uns auf höchstens 30 Minuten die bei den <a href="2017-09-07-dreissigstes-treffen.html">letzten</a> <a href="2017-10-05-einunddreissigstes-treffen.md">beiden</a> Treffen begonnene Reise durch wundersame Phänomene der Logik abschließen. Wir werden über Programme sprechen, die je nachdem, in welchem mathematischen Alternativuniversum sie ausgeführt werden, ein anderes Verhalten an den Tag legen, und einen Rosetta-Stein kennenlernen, der Berechenbarkeitstheorie mit Logik und Zahlentheorie verwebt. Abschließend werden wir noch ein verblüffendes Beispiel dafür sehen, dass Zufall als wertvolle Ressource gehandelt werden muss.</p>
-<p>Tim begab sich die letzten Wochen auf die Spuren von Makarius und entwickelte seinen eigenen kleinen Theorembeweiser, angetrieben von dem Wunsch, die Übungsblätter der aktuell laufenden Kategorientheorievorlesung von Marc und Matthias formalisiert abgeben zu können. Tim wird in seinem Vortrag die Architektur seines Systems und die Erfahrungen, die er bei der Entwicklung machte, vorstellen.</p>
-<p>Matthias erklärt <a href="/images/church-32-pow.png">oben stehendes</a> zur Nummer des heutigen Treffens passendes Bild.</p>
 </article>
 ]]></summary>
 </entry>
