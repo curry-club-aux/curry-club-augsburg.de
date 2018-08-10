@@ -5,7 +5,7 @@ subsubtitle:
 meetup-announcement: 2018-08-09
 meetup-counter: "41"
 meetup-time: 19:00
-author: Profpatsch
+author: Makarius
 ---
 
 Makarius hält einen Vortrag über Isabelle/VSCode, Language Server Protocol und TypeScript:
@@ -18,3 +18,5 @@ Erweiterung von JavaScript. VSCode ist letztlich eine IDE zur
 Entwicklung von VSCode in TypeScript, so ähnlich wie Isabelle eine IDE
 zur Entwicklung von Isabelle in ML (oder anderen domain-specific formal
 languages) ist.
+
+https://sketis.net/wp-content/uploads/2018/08/Curry-Club_Aug-2018.pdf
