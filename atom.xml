@@ -8,11 +8,34 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-08-08T00:00:00Z</updated>
+    <updated>2018-08-09T00:00:00Z</updated>
     <entry>
+    <title>Programm für das dreiundvierzigste Treffen</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</id>
+    <published>2018-08-09T00:00:00Z</published>
+    <updated>2018-08-09T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das dreiundvierzigste Treffen</h1>
+    <div class="info">
+      Gepostet am  9. Aug 18
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Richi liest Linux-Kernel-Code, mit einem Schwerpunkt auf dem TCP-Stack, also den Dateien unterhalb von <code>net/ipv4/tcp</code>.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das zweiundvierzigste Treffen</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-Treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-Treffen.html</id>
+    <link href="http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html</id>
     <published>2018-08-08T00:00:00Z</published>
     <updated>2018-08-08T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
@@ -230,31 +253,6 @@
   </header>
 
   <p>Das 34. Treffen würde regulär am 28. Dezember 2017 stattfinden. Da viele zu der Zeit auf dem Kongress sind, fällt es aus, sodass wir uns am 25. Januar 2018 wieder treffen.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das dreiunddreißigste Treffen am 30. November 2017</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html</id>
-    <published>2017-11-01T00:00:00Z</published>
-    <updated>2017-11-01T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das dreiunddreißigste Treffen am 30. November 2017</h1>
-    <div class="info">
-      Gepostet am  1. Nov 17
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Matthias wird in einem Kurzvortrag (der eigentlich an unserem letzten runden Jubiläumstreffen hätte stattfinden sollen) auf Church-Encodings abnerden. Er erklärt auf anschauliche Art und Weise, was es mit dem gefeierten <a href="https://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl">λ-Kalkül</a> auf sich hat und wie man ihn als Grundlage für Berechenbarkeitstheorie verwenden kann. Im λ-Kalkül gibt es nur drei Primitiven: Funktionsanwendung, Variablen und λ-Abstraktion. Es gibt nicht: Zahlen, Listen, Bäume, Mengen, … Trotzdem kann man all diese Dinge nachbauen. Matthias erklärt, wie das geht.</p>
-<p>Simon stellt seine Haskell-Implementierung von formalen Potenzreihen vor. Potenzreihen sind Wäscheleinen für Zahlen und kamen schon im vorletzten Vortrag von Manuel kurz vor. sigfpe, der Urheber des <a href="http://blog.sigfpe.com/">berühmten Haskell-Blogs</a>, spricht auch oft über sie.</p>
-<p>Zum Abschluss stellt Profpatsch die mit Absicht nicht-turingvollständige Sprache <a href="https://hackage.haskell.org/package/dhall-1.8.0/docs/Dhall-Tutorial.html">Dhall</a> vor. Gabriel Gonzales hat diese Sprache erdacht und umgesetzt, und Profpatsch hat ein Cheatsheet geschrieben und versucht gerade, sie nach JavaScript zu kompilieren (mit GHCJS und nix).</p>
 </article>
 ]]></summary>
 </entry>

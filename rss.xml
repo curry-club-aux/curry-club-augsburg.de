@@ -7,10 +7,33 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 08 Aug 2018 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Aug 2018 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das dreiundvierzigste Treffen</title>
+    <link>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das dreiundvierzigste Treffen</h1>
+    <div class="info">
+      Gepostet am  9. Aug 18
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Richi liest Linux-Kernel-Code, mit einem Schwerpunkt auf dem TCP-Stack, also den Dateien unterhalb von <code>net/ipv4/tcp</code>.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 09 Aug 2018 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das zweiundvierzigste Treffen</title>
-    <link>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-Treffen.html</link>
+    <link>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html</link>
     <description><![CDATA[<article>
   <header>
     <h1>Programm für das zweiundvierzigste Treffen</h1>
@@ -33,7 +56,7 @@
 </article>
 ]]></description>
     <pubDate>Wed, 08 Aug 2018 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-Treffen.html</guid>
+    <guid>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 <item>
@@ -230,31 +253,6 @@
 ]]></description>
     <pubDate>Mon, 04 Dec 2017 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das dreiunddreißigste Treffen am 30. November 2017</title>
-    <link>http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das dreiunddreißigste Treffen am 30. November 2017</h1>
-    <div class="info">
-      Gepostet am  1. Nov 17
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Matthias wird in einem Kurzvortrag (der eigentlich an unserem letzten runden Jubiläumstreffen hätte stattfinden sollen) auf Church-Encodings abnerden. Er erklärt auf anschauliche Art und Weise, was es mit dem gefeierten <a href="https://de.wikipedia.org/wiki/Lambda-Kalk%C3%BCl">λ-Kalkül</a> auf sich hat und wie man ihn als Grundlage für Berechenbarkeitstheorie verwenden kann. Im λ-Kalkül gibt es nur drei Primitiven: Funktionsanwendung, Variablen und λ-Abstraktion. Es gibt nicht: Zahlen, Listen, Bäume, Mengen, … Trotzdem kann man all diese Dinge nachbauen. Matthias erklärt, wie das geht.</p>
-<p>Simon stellt seine Haskell-Implementierung von formalen Potenzreihen vor. Potenzreihen sind Wäscheleinen für Zahlen und kamen schon im vorletzten Vortrag von Manuel kurz vor. sigfpe, der Urheber des <a href="http://blog.sigfpe.com/">berühmten Haskell-Blogs</a>, spricht auch oft über sie.</p>
-<p>Zum Abschluss stellt Profpatsch die mit Absicht nicht-turingvollständige Sprache <a href="https://hackage.haskell.org/package/dhall-1.8.0/docs/Dhall-Tutorial.html">Dhall</a> vor. Gabriel Gonzales hat diese Sprache erdacht und umgesetzt, und Profpatsch hat ein Cheatsheet geschrieben und versucht gerade, sie nach JavaScript zu kompilieren (mit GHCJS und nix).</p>
-</article>
-]]></description>
-    <pubDate>Wed, 01 Nov 2017 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2017-11-01-dreiunddreissigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
