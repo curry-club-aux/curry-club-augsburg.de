@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-08-09T00:00:00Z</updated>
+    <updated>2018-10-30T00:00:00Z</updated>
     <entry>
+    <title>Programm für das vierundvierzigste Treffen</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html</id>
+    <published>2018-10-30T00:00:00Z</published>
+    <updated>2018-10-30T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Programm für das vierundvierzigste Treffen</h1>
+    <div class="info">
+      Gepostet am 30. Okt 18
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Marc hält einen Vortrag über die korrekte Implementierung von Lazy Evaluation (wie in GHC/Haskell) in Umgebungen, die nativ nur Strict Evaluation unterstützen (wie alle Mainstreamsprachen). Wer schon weiß, dass das grundsätzlich mit Thunks/Closures geht, wird eine kleine Überraschung erleben.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Programm für das dreiundvierzigste Treffen</title>
     <link href="http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</id>
@@ -230,29 +253,6 @@
 
   <p>Ingo macht ein Live-Coding zu einem klassischen Thema: Wieso hat die Verkettung von Listen manchmal eine ganz traurige Laufzeit? Wie können sog. Differenzlisten das Problem umgehen? Und wie äußert sich das Problem und seine Lösung eine Stufe höher, bei freien Monaden?</p>
 <p>Matthias wird Bemerkungen zu Kan-Erweiterungen hereinrufen.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das vierunddreißigste Treffen am 25. Januar 2018</title>
-    <link href="http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html</id>
-    <published>2017-12-04T00:00:00Z</published>
-    <updated>2017-12-04T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierunddreißigste Treffen am 25. Januar 2018</h1>
-    <div class="info">
-      Gepostet am  4. Dez 17
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Das 34. Treffen würde regulär am 28. Dezember 2017 stattfinden. Da viele zu der Zeit auf dem Kongress sind, fällt es aus, sodass wir uns am 25. Januar 2018 wieder treffen.</p>
 </article>
 ]]></summary>
 </entry>

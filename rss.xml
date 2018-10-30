@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 09 Aug 2018 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Oct 2018 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Programm für das vierundvierzigste Treffen</title>
+    <link>http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Programm für das vierundvierzigste Treffen</h1>
+    <div class="info">
+      Gepostet am 30. Okt 18
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Marc hält einen Vortrag über die korrekte Implementierung von Lazy Evaluation (wie in GHC/Haskell) in Umgebungen, die nativ nur Strict Evaluation unterstützen (wie alle Mainstreamsprachen). Wer schon weiß, dass das grundsätzlich mit Thunks/Closures geht, wird eine kleine Überraschung erleben.</p>
+</article>
+]]></description>
+    <pubDate>Tue, 30 Oct 2018 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Programm für das dreiundvierzigste Treffen</title>
     <link>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -230,29 +253,6 @@
 ]]></description>
     <pubDate>Thu, 22 Feb 2018 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2018-02-22-fuenfunddreissigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das vierunddreißigste Treffen am 25. Januar 2018</title>
-    <link>http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierunddreißigste Treffen am 25. Januar 2018</h1>
-    <div class="info">
-      Gepostet am  4. Dez 17
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Das 34. Treffen würde regulär am 28. Dezember 2017 stattfinden. Da viele zu der Zeit auf dem Kongress sind, fällt es aus, sodass wir uns am 25. Januar 2018 wieder treffen.</p>
-</article>
-]]></description>
-    <pubDate>Mon, 04 Dec 2017 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2017-12-04-vierunddreissigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
