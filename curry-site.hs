@@ -143,7 +143,7 @@ _mez :: TimeZone
 _mez = TimeZone 60 True "MEZ"
 
 currentTimeZone :: TimeZone
-currentTimeZone = mez
+currentTimeZone = _mez
 
 curryClubLocale :: TimeLocale
 curryClubLocale =
