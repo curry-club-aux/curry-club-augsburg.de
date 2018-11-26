@@ -1,6 +1,6 @@
 ---
 title: Programm für das zweiundvierzigste Treffen
-subtitle: 
+subtitle: Transfinites Nim und Dagstuhl-Plaudersitzung
 subsubtitle: 
 meetup-announcement: 2018-09-06
 meetup-counter: "42"
