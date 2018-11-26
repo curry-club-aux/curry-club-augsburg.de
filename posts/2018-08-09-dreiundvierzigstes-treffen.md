@@ -1,6 +1,6 @@
 ---
-title: Programm für das dreiundvierzigste Treffen
-subtitle: Linux-Kernel-Code-Lesung
+title: Linux-Kernel-Code-Lesung
+subtitle:
 subsubtitle: 
 meetup-announcement: 2018-10-04
 meetup-counter: "43"

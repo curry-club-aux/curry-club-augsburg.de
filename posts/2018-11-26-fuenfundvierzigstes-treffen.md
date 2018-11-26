@@ -1,6 +1,6 @@
 ---
-title: Programm für das fünfundvierzigste Treffen
-subtitle: FizzBuzz
+title: FizzBuzz, Python und Isabelle
+subtitle:
 subsubtitle: 
 meetup-announcement: 2018-11-29
 meetup-counter: "45"

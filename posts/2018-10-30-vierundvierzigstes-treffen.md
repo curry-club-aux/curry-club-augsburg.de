@@ -1,6 +1,6 @@
 ---
-title: Programm für das vierundvierzigste Treffen
-subtitle: Lazy Evaluation
+title: Lazy Evaluation
+subtitle:
 subsubtitle: 
 meetup-announcement: 2018-11-01
 meetup-counter: "44"
