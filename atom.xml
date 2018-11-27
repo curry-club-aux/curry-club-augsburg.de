@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2018-11-26T00:00:00Z</updated>
+    <updated>2018-11-27T00:00:00Z</updated>
     <entry>
+    <title>Primzahlen und Laufzeitanalyse?</title>
+    <link href="http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html" />
+    <id>http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html</id>
+    <published>2018-11-27T00:00:00Z</published>
+    <updated>2018-11-27T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Primzahlen und Laufzeitanalyse?</h1>
+    <div class="info">
+      Gepostet am 27. Nov 18
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Das Programm steht noch nicht fest, aber möglicherweise hält Matthias einen Vortrag zu Primzahlfindungsalgorithmen und zur Frage, wie man in nicht-strikten Programmiersprachen wie Haskell überhaupt sinnvoll von Laufzeit und Laufzeitanalyse sprechen kann.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>FizzBuzz, Python und Isabelle</title>
     <link href="http://curry-club-augsburg.de/posts/2018-11-26-fuenfundvierzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-11-26-fuenfundvierzigstes-treffen.html</id>
@@ -226,33 +249,6 @@
 <p><strong>Achtung:</strong> Das 37. Treffen findet <strong>nicht</strong> am 19. April statt. Es wird möglicherweise um eine Woche nach hinten verschoben, das wird gerade auf der Mailingliste diskutiert.</p>
 <p>Update: Das 37. Treffen ist ausgefallen. /o<br />
 </p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das sechsunddreißigste Treffen am 22. März 2018</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-03-22-sechsunddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-03-22-sechsunddreissigstes-treffen.html</id>
-    <published>2018-03-22T00:00:00Z</published>
-    <updated>2018-03-22T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das sechsunddreißigste Treffen am 22. März 2018</h1>
-    <div class="info">
-      Gepostet am 22. Mär 18
-      
-          von timjb
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Profpatsch hält ein Vortrag zur Typsystementwicklung: Ein Typsystem zu bauen klingt wie ein extrem schweres Problem, an das sich nur Expertinnen wagen sollten.</p>
-<p>Profpatsch wird zeigen, dass es gar nicht so schwer ist, ein (einfaches) Typsystem zu bauen, das auch komplexere Werte einer dynamischen (uni-typisierten) Sprache (nix) mit aussagekräftigen Typfehlern testen kann.</p>
-<p>Das Ergebnis unterstützt Skalare, Listen und Maps, Produkttypen, Summentypen und Unions (keine Lambdas).</p>
-<p>Für die rekursiven Typchecks führte die Anwendung eines Katamorphismus zu extrem sauberem und konzisem Code, was auch zeigt, dass die Ideen aus Haskell durchaus in ungetypten Programmiersprachen zur Anwendung kommen können.</p>
-<p><s>Ingo hält einen Vortrag zu Zippern. Die verwendet man, um funktional in Datenstrukturen wie etwa Bäumen zu navigieren. Kurioserweise haben sie etwas mit der Ableitung von Funktionen in Mathematik zu tun. Zum Abschluss wird ein kleines Schmankerl von Oleg vorgestellt.</s></p>
 </article>
 ]]></summary>
 </entry>
