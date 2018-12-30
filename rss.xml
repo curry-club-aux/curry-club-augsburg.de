@@ -47,9 +47,13 @@
     
   </header>
 
-  <p>Das 45. Treffen beginnt nicht wie üblich um 19:00 Uhr, sondern etwas später um etwa 20:25 Uhr. Als inoffizielles Warmup hält ein <a href="https://www.math.uni-augsburg.de/termin/faszination-2018-11/">Vortrag in der Reihe Faszination Mathematik/Physik</a> her.</p>
-<p>Cornelius implementiert FizzBuzz in Python. “Ich möchte nicht spoilern, aber ich kann bereits verraten, dass das Ergebnis in Isabelle/HOL nicht einmal typcheckt.”</p>
-<p>Anschließend plaudert Makarius über das neue Isabelle/Haskell/PIDE mit Anwendung auf “Automatic Checking of Ordinary Mathematical Texts” (Prof. Peter Koepke, Uni. Bonn). “Das ist zwar erst halb fertig, aber zeigen kann man schon was – vor allem auch das ‘Tooling’ für Haskell: ‘Stack’ und VSCode mit Haskell Language Server. Das füllt locker viele GB RAM + HD, aber dafür muss man selber nichts herumbasteln.”</p>
+  <p>Das 45. Treffen begann nicht wie üblich um 19:00 Uhr, sondern etwas später um 20:25 Uhr. Als inoffizielles Warmup hielt ein <a href="https://www.math.uni-augsburg.de/termin/faszination-2018-11/">Vortrag in der Reihe Faszination Mathematik/Physik</a> her.</p>
+<p>Cornelius implementierte FizzBuzz in Python. “Ich möchte nicht spoilern, aber ich kann bereits verraten, dass das Ergebnis in Isabelle/HOL nicht einmal typcheckt.”</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/QswRKkqSoyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Anschließend plauderte Makarius über das neue Isabelle/Haskell/PIDE mit Anwendung auf “Automatic Checking of Ordinary Mathematical Texts” (Prof. Peter Koepke, Uni. Bonn). “Das ist zwar erst halb fertig, aber zeigen kann man schon was – vor allem auch das ‘Tooling’ für Haskell: ‘Stack’ und VSCode mit Haskell Language Server. Das füllt locker viele GB RAM + HD, aber dafür muss man selber nichts herumbasteln.”</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/U0KTMdqwmNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </article>
 ]]></description>
     <pubDate>Mon, 26 Nov 2018 00:00:00 UT</pubDate>
@@ -95,7 +99,9 @@
     
   </header>
 
-  <p>Richi liest Linux-Kernel-Code, mit einem Schwerpunkt auf dem TCP-Stack, also den Dateien unterhalb von <code>net/ipv4/tcp</code>.</p>
+  <p>Richi gab eine Einführung in die Organisation des Linux-Kernel-Code, mit einem Schwerpunkt auf dem TCP-Stack, also den Dateien unterhalb von <code>net/ipv4/tcp</code>.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/YuV6rxT0mpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 </article>
 ]]></description>
     <pubDate>Thu, 09 Aug 2018 00:00:00 UT</pubDate>
