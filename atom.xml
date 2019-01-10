@@ -10,14 +10,14 @@
     </author>
     <updated>2018-11-27T00:00:00Z</updated>
     <entry>
-    <title>Primzahlen und Laufzeitanalyse?</title>
+    <title>libgccjit und Primzahlen</title>
     <link href="http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html" />
     <id>http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html</id>
     <published>2018-11-27T00:00:00Z</published>
     <updated>2018-11-27T00:00:00Z</updated>
     <summary type="html"><![CDATA[<article>
   <header>
-    <h1>Primzahlen und Laufzeitanalyse?</h1>
+    <h1>libgccjit und Primzahlen</h1>
     <div class="info">
       Gepostet am 27. Nov 18
       
@@ -28,7 +28,13 @@
     
   </header>
 
-  <p>Das Programm steht noch nicht fest, aber möglicherweise hält Matthias einen Vortrag zu Primzahlfindungsalgorithmen und zur Frage, wie man in nicht-strikten Programmiersprachen wie Haskell überhaupt sinnvoll von Laufzeit und Laufzeitanalyse sprechen kann.</p>
+  <p>Marc trägt über libgccjit vor; zudem hält möglicherweise Matthias einen Vortrag zu Primzahlfindungsalgorithmen und zur Frage, wie man in nicht-strikten Programmiersprachen wie Haskell überhaupt sinnvoll von Laufzeit und Laufzeitanalyse sprechen kann.</p>
+<p>Was es mit libgccjit auf sich hat?</p>
+<p>Auch Implementiererinnen funktionaler Programmiersprachen stehen am Ende vor dem Problem, Programme in (effizienten) Maschinencode übersetzen zu müssen.</p>
+<p>Die GCC kann das schon (und zwar für ziemlich viele Architekturen), warum das Rad also zweimal erfinden und nicht auf den GCC aufsetzen?</p>
+<p>Dank der Bibliothek libgccjit von David Malcolm, die seit GCC 5.1 offizieller Bestandteil des GCC-Projektes ist, ist es einfach geworden, den GCC als AOT- oder JIT-Compiler-Backend in eigene Programme einzubinden.</p>
+<p>Im Vortrag stellt Marc die Bibliothek vor. Wir werden so etwas über die Erzeugung von Maschinencode lernen und einen Blick auf die GCC-Interna werfen.</p>
+<p>Daran anschließen könnte natürlich ein gemeinsames Projekt, einen rudimentären Compiler für eine rudimentäre (funktionale) Programmiersprache zu schreiben.</p>
 </article>
 ]]></summary>
 </entry>
