@@ -1,5 +1,5 @@
 ---
-title: libgccjit und Primzahlen
+title: libgccjit und libjit
 subtitle:
 subsubtitle: 
 meetup-announcement: 2019-01-24
@@ -8,10 +8,7 @@ meetup-time: 19:00
 author: iblech
 ---
 
-Marc trägt über libgccjit vor; zudem hält möglicherweise Matthias einen
-Vortrag zu Primzahlfindungsalgorithmen und zur Frage, wie man in nicht-strikten
-Programmiersprachen wie Haskell überhaupt sinnvoll von Laufzeit und
-Laufzeitanalyse sprechen kann.
+Marc trägt über libgccjit vor, Jakob nerdet auf libjit ab.
 
 Was es mit libgccjit auf sich hat?
 
@@ -34,3 +31,16 @@ GCC-Interna werfen.
 Daran anschließen könnte natürlich ein gemeinsames Projekt, einen
 rudimentären Compiler für eine rudimentäre (funktionale)
 Programmiersprache zu schreiben.
+
+Was es mit libjit auf sich hat? Das ist auch von GNU, aber wurde von Anfang an
+für JIT-Kompilierung geschrieben. Ursprünglich als JIT-Backend für dotGNU (die
+.NET-CLR von GNU) wird es inzwischen als eigenständige Bibliothek
+weiterentwickelt.
+
+Das Vorurteil gegenüber zu JIT umgebauten Offline-Compilern ist ja, dass sie zu
+viel Zeit zum Kompilieren verwenden (zum Beispiel mit schweren Optimierungen)
+-- selbst bei Code, der nur ein oder wenige Male ausgeführt wird. Ein hastig
+zusammengebastelter Brainfuck-JIT-Compiler mit dieser Bibliothek (in weniger
+als 100 Zeilen) produziert zugegebenermaßen nicht so guten Code wie libgccjit;
+dem Vorurteil gemäß könnte er, die Kompilierzeit addiert, dennoch schneller
+sein.
