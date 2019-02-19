@@ -7,8 +7,36 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 27 Nov 2018 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Feb 2019 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Spaß mit Agda</title>
+    <link>http://curry-club-augsburg.de/posts/2019-02-19-treffen-47.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Spaß mit Agda</h1>
+    <div class="info">
+      Gepostet am 19. Feb 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Matthias und Ingo veranstalten eine Agda-Sitzung, sicherlich gespickt mit zahlreichen hintergründigen Kommentaren und Ergänzungen von Makarius.</p>
+<p>Was ist Agda? Agda ist eine abhängig typisierte funktionale Programmiersprache und ein Beweisassistent.</p>
+<p>Was ist die Verbindung zu Isabelle? Isabelle ist viel, viel größer. Beweisautomatisierung ist in Agda extrem unterentwickelt. Isabelle kann noch viel, viel mehr als nur Beweise zu prüfen. In Isabelle schreibt man standardmäßig Beweistexte, während man in Agda direkt Beweisterme angibt. (Dieser Unterschied wird in der Agda-Sitzung erklärt werden.) Der theoretische Unterbau von Agda ist ein ganz anderer als der von Isabelle/HOL (ein Typensystem mit abhängigen Typen statt HOL). Die Community von Agda nerdet meist konstruktiv ab, während die Community von Isabelle sich meist klassische Logik gönnt. Mit Agda kann man auch Homotopietypentheorie (HoTT) betreiben, mit Isabelle/HOL nicht (wohl aber mit reinem Isabelle). Mit Agda kann man in die wundersame Welt prädikativer Mathematik eintauchen. In Agda gibt es den Begriff “universe polymorphism”, den Ingo persönlich sehr verlockend findet.</p>
+<p>Von wem ist Agda? Agda wurde von Catarina Coquand auf den Weg gebracht, der Ehefrau von Thierry Coquand, der wiederum die theoretische Basis zur weiteren Theorembeweiseralternative Coq entwickelte. Wir kennen kein weiteres Ehepaar, das von sich behaupten kann, zwei große Theorembeweiserschulen gegründet zu haben.</p>
+<p>Wer kann sich besonders auf die Agda-Sitzung freuen? Jede, die verstehen möchte, inwieweit Beweisen und Programmieren ein und dasselbe sind. Jede, die mehr Erfahrung mit abhängigen Typen sammeln möchte. Jede, die (wie etwa Richi vor einiger Zeit) mal aufschnappte, dass manche Ansammlungen in der Mathematik zu groß sind, um “Mengen” zu bilden und stattdessen nur “echte Klassen” sind, und gerne wüssen würde, was es damit auf sich hat. Jede, die sich über einen einfachen Einstieg in die Welt computergeprüfter Beweise freut.</p>
+<p>Welche Voraussetzungen setzt die Agda-Sitzung voraus? Keine außer etwas Vertrautheit mit Programmieren.</p>
+</article>
+]]></description>
+    <pubDate>Tue, 19 Feb 2019 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2019-02-19-treffen-47.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>libgccjit und libjit</title>
     <link>http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html</link>
     <description><![CDATA[<article>
@@ -238,32 +266,6 @@
 ]]></description>
     <pubDate>Thu, 17 May 2018 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das siebenunddreißigste Treffen am 19. April 2018</title>
-    <link>http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das siebenunddreißigste Treffen am 19. April 2018</h1>
-    <div class="info">
-      Gepostet am 19. Apr 18
-      
-          von timjb
-      
-    </div>
-    
-    
-  </header>
-
-  <p>For unser 37. Treffen gibt es noch keine Vortragsankündigungen!</p>
-<p><strong>Achtung:</strong> Das 37. Treffen findet <strong>nicht</strong> am 19. April statt. Es wird möglicherweise um eine Woche nach hinten verschoben, das wird gerade auf der Mailingliste diskutiert.</p>
-<p>Update: Das 37. Treffen ist ausgefallen. /o<br />
-</p>
-</article>
-]]></description>
-    <pubDate>Thu, 19 Apr 2018 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2018-04-19-siebenunddreissigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
