@@ -8,8 +8,34 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-02-19T00:00:00Z</updated>
+    <updated>2019-03-13T00:00:00Z</updated>
     <entry>
+    <title>dialogische Logik</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html</id>
+    <published>2019-03-13T00:00:00Z</published>
+    <updated>2019-03-13T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>dialogische Logik</h1>
+    <div class="info">
+      Gepostet am 13. Mär 19
+      
+          von MatthiasHu
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Dominik wird über dialogische Logik und Dialogspiele vortragen. Dabei handelt es sich um eine Präzisierung der Idee, dass man eine mathematische Aussage nur dann akzeptieren sollte, wenn man jeden noch so kritischen Gesprächspartner in einem fairen Streitgespräch von ihr überzeugen könnte.</p>
+<p>Dialogische Logik ist ein weiterer formaler Ansatz um die Bedeutung logischer Formeln zu charakterisieren. Sie hebt sich von anderen Methoden, wie zum Beispiel Modell-Semantiken und Ableitungssystemen, ab, da sie die interpersonellen Facetten mathematischer Wahrheit explizit macht und somit insbesondere für Intuitionisten attraktiv ist. Darüber hinaus hat sie sich auch als ein nützliches technisches Werkzeug entpuppt.</p>
+<p>Wir werden sehen, wie Dialoge für Prädikatenlogik erster Stufe aussesehen, warum Dialoge die Lieblingssemantik eines Konstruktivisten sein sollten und was Dominik bis dahin sonst noch spannendes einfällt.</p>
+<p>Wahrscheinlich wird Dominik auch über seine Formalisierung von intuitionistischen Dialogen in Coq berichten.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Spaß mit Agda</title>
     <link href="http://curry-club-augsburg.de/posts/2019-02-19-treffen-47.html" />
     <id>http://curry-club-augsburg.de/posts/2019-02-19-treffen-47.html</id>
@@ -241,31 +267,6 @@
   </header>
 
   <p>Basierend auf <a href="https://sketis.net/wp-content/uploads/2018/05/isabelle-jedit-fide2018.pdf">seinem letzten Bericht</a> wird Makarius uns die Implementierung der aktuellen IDE (basierend auf Scala/jEdit) und die Zukunft der UI (Typescript/VSCode) vorstellen.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das achtunddreißigste Treffen am 17. Mai 2018</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-05-17-achtunddreissigstes-treffen.html</id>
-    <published>2018-05-17T00:00:00Z</published>
-    <updated>2018-05-17T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das achtunddreißigste Treffen am 17. Mai 2018</h1>
-    <div class="info">
-      Gepostet am 17. Mai 18
-      
-          von MatthiasHu
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Heute Abend hielt Daniel einen Vortrag zum Thema “Faster DBScan and HDBScan” (DBScan = Density-Based Spatial Clustering of Applications with Noise). Es wurden einige Fragen zu Paralellisierbarkeit gestellt und überlegt, ob es eine „alten Schule“ (Algorithmen auf einem unveränderlichen Datenset) und eine „neuen Schule“ (Algorithmen, die sich mit hinzukommenden Datenpunkten effizient updaten können) des Algorithmendesigns gibt.</p>
-<p>Desweiteren gibt es ein Pad zur weiteren Organisation des Curry Clubs: https://ola.pads.ccc.de/curry</p>
-<p>Vortragsvorschläge gesucht!</p>
 </article>
 ]]></summary>
 </entry>
