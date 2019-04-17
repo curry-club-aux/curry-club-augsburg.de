@@ -8,8 +8,37 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-03-13T00:00:00Z</updated>
+    <updated>2019-04-17T00:00:00Z</updated>
     <entry>
+    <title>Wir bauen einen Typenerschließer</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html</id>
+    <published>2019-04-17T00:00:00Z</published>
+    <updated>2019-04-17T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Wir bauen einen Typenerschließer</h1>
+    <div class="info">
+      Gepostet am 17. Apr 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Wenn man in Haskell oder anderen Sprachen mit Typenerschließung programmiert, hat man doch, gerade als Anfänger*in, manchmal den Eindruck: Wow! Das ist doch Magie, wie der Compiler hier die ganzen von mir aus Faulheit nicht angegebenen Typen erschließt!</p>
+<p>Wir wir alle wissen, ist jede hinreichend fortgeschrittene Technologie ununterscheidbar von Magie, und die hier relevante Technologie ist der Typenerschließungsalgorithmus nach Hindley–Milner.</p>
+<p>Zum morgigen Curry Club planen Matthias und ich daher eine gemeinsame Programmiersitzung zum Thema:</p>
+<pre><code>Wir implementieren einen Typenerschließer</code></pre>
+<p>Von Null an bauen wir zunächst einen Interpreter fürs λ-Kalkül. Viele von uns im Curry Club haben das schon tausend Mal gemacht, für viele von uns ist das auch Neuland. Das ist jedenfalls ein schöner Einstieg in das Thema und trägt sicherlich ganz allgemein zum Verständnis von Interpretern, Compilern und Typen bei. Sollte man auf jeden Fall mal gemacht haben!</p>
+<p>Anschließend erweitern wir unsere Implementierung um Typenerschließung, indem wir den schon erwähnten Hindley–Milner-Algorithmus umsetzen. Zentral wird dabei das Konzept Unifikation sein.</p>
+<p>Wird alles in Ruhe erklärt, informal, formlos und hoffentlich erhellend. Haskell-Vorkenntnisse sind natürlich von Vorteil, aber wenn man Erfahrung mit anderen Sprachen hat und sich traut, Fragen zu stellen, werden wir euch auch so durch den Abend lotsen!</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Dialogische Logik</title>
     <link href="http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html" />
     <id>http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html</id>
@@ -244,29 +273,6 @@
   <p>Makarius hält einen Vortrag über Isabelle/VSCode, Language Server Protocol und TypeScript:</p>
 <p>Als Fortsetzung der Betrachtungen zur Isabelle Prover IDE geht es diesmal um VSCode und das Language Server Protocol für generische IDEs von MicroSoft. Dies ist eine Selbst-Anwendung von VSCode als Entwicklungsplattform für TypeScript — einer relativ neuen typisierten Erweiterung von JavaScript. VSCode ist letztlich eine IDE zur Entwicklung von VSCode in TypeScript, so ähnlich wie Isabelle eine IDE zur Entwicklung von Isabelle in ML (oder anderen domain-specific formal languages) ist.</p>
 <p>https://sketis.net/wp-content/uploads/2018/08/Curry-Club_Aug-2018.pdf</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das neununddreissigste Treffen am 14. Juni 2018</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-05-28-neununddreissigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-05-28-neununddreissigstes-treffen.html</id>
-    <published>2018-05-28T00:00:00Z</published>
-    <updated>2018-05-28T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das neununddreissigste Treffen am 14. Juni 2018</h1>
-    <div class="info">
-      Gepostet am 28. Mai 18
-      
-          von Profpatsch
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Basierend auf <a href="https://sketis.net/wp-content/uploads/2018/05/isabelle-jedit-fide2018.pdf">seinem letzten Bericht</a> wird Makarius uns die Implementierung der aktuellen IDE (basierend auf Scala/jEdit) und die Zukunft der UI (Typescript/VSCode) vorstellen.</p>
 </article>
 ]]></summary>
 </entry>
