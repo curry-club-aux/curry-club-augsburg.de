@@ -8,8 +8,39 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-04-17T00:00:00Z</updated>
+    <updated>2019-05-16T00:00:00Z</updated>
     <entry>
+    <title>Philosophie der Mathematik und Platonismus auf Steroiden</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html</id>
+    <published>2019-05-16T00:00:00Z</published>
+    <updated>2019-05-16T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Philosophie der Mathematik und Platonismus auf Steroiden</h1>
+    <div class="info">
+      Gepostet am 16. Mai 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Heute Abend gibt es leider keinen ausgearbeiteten Vortrag mit LaTeX-Beamer-Folien oder einer Demonstration innerhalb DES Systems (Isabelle), es sei denn, jemand hat noch unerwartet was in petto. Dann möge sie oder er aufrufen! :-)</p>
+<p>Als Ersatz gibt es aber eine geführte Plauderrunde zur Philosophie der Mathematik. Ingo wird einen Überblick über folgende und verwandte Fragen geben. Sofern die Plauderrunde interessant wird, dann deswegen, weil es zu einer lebhaften Diskussion kommt.</p>
+<ul>
+<li><p>Sind mathematische Theoreme objektiv wahr? Was bedeutet das?</p></li>
+<li><p>Was versteht man unter der Höhe und Breite eines mathematischen (Mengen-)Universums? Wie entfaltet sich aus der leeren Menge alles, was Mathematikerinnen so studieren?</p></li>
+<li><p>Gelebte Subjektivität in der Mathematik: über die Konstruktion von mathematischen Universen mit nahezu beliebigen Eigenschaften[*]. Du möchtest ein Universum, in dem deine Lieblingsvermutung gilt? Kein Problem! Du möchtest eins, in dem sie nicht gilt? Ebenfalls möglich! Ein Überblick über die vernetzte Struktur des mengentheoretischen Multiversums.</p></li>
+<li><p>Möglicherweise können Xave oder andere einen physikalischen Standpunkt ergänzen und über Multiversen in der Physik sprechen.</p></li>
+</ul>
+<p>Für die Plauderrunde ist keinerlei mathematisches Vorwissen nötig. Begriffe wie Formalismus, Platonismus, Intuitionismus, ZFC und Mengenuniversum werden fallen, aber anschaulich erklärt werden. Bei Interesse können wir auch in Richtung Eliezer Yudkowsky/Metarationalität/Rokos Basilisk abdriften.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Wir bauen einen Typenerschließer</title>
     <link href="http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html" />
     <id>http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html</id>
@@ -248,31 +279,6 @@
   </header>
 
   <p>Profpatsch gibt eine Einführung über Purescript, eine Haskell-artige Sprache mit strikter Semantik, die direkt zu Javascript kompiliert.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Isabelle/VSCode, Language Server Protocol und TypeScript</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-07-10-einundvierzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-07-10-einundvierzigstes-treffen.html</id>
-    <published>2018-07-10T00:00:00Z</published>
-    <updated>2018-07-10T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Isabelle/VSCode, Language Server Protocol und TypeScript</h1>
-    <div class="info">
-      Gepostet am 10. Jul 18
-      
-          von Makarius
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Makarius hält einen Vortrag über Isabelle/VSCode, Language Server Protocol und TypeScript:</p>
-<p>Als Fortsetzung der Betrachtungen zur Isabelle Prover IDE geht es diesmal um VSCode und das Language Server Protocol für generische IDEs von MicroSoft. Dies ist eine Selbst-Anwendung von VSCode als Entwicklungsplattform für TypeScript — einer relativ neuen typisierten Erweiterung von JavaScript. VSCode ist letztlich eine IDE zur Entwicklung von VSCode in TypeScript, so ähnlich wie Isabelle eine IDE zur Entwicklung von Isabelle in ML (oder anderen domain-specific formal languages) ist.</p>
-<p>https://sketis.net/wp-content/uploads/2018/08/Curry-Club_Aug-2018.pdf</p>
 </article>
 ]]></summary>
 </entry>
