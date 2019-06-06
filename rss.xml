@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 16 May 2019 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 06 Jun 2019 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Kants kategorischer Imperativ in Haskell</title>
+    <link>http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Kants kategorischer Imperativ in Haskell</h1>
+    <div class="info">
+      Gepostet am  6. Jun 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Corny versucht es an etwas ganz Experimentellem: Kants kategorischem Imperativ in Haskell. Die absolute Erleuchtung ist noch nicht eingetreten, das Debugging und Modellieren macht aber Spaß.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 06 Jun 2019 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Philosophie der Mathematik und Platonismus auf Steroiden</title>
     <link>http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html</link>
     <description><![CDATA[<article>
@@ -256,29 +279,6 @@
 ]]></description>
     <pubDate>Wed, 08 Aug 2018 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programm für das vierzigste Treffen am 12.7.2018</title>
-    <link>http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierzigste Treffen am 12.7.2018</h1>
-    <div class="info">
-      Gepostet am 10. Jul 18
-      
-          von Profpatsch
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Profpatsch gibt eine Einführung über Purescript, eine Haskell-artige Sprache mit strikter Semantik, die direkt zu Javascript kompiliert.</p>
-</article>
-]]></description>
-    <pubDate>Tue, 10 Jul 2018 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 

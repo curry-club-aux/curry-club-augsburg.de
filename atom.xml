@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-05-16T00:00:00Z</updated>
+    <updated>2019-06-06T00:00:00Z</updated>
     <entry>
+    <title>Kants kategorischer Imperativ in Haskell</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html</id>
+    <published>2019-06-06T00:00:00Z</published>
+    <updated>2019-06-06T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Kants kategorischer Imperativ in Haskell</h1>
+    <div class="info">
+      Gepostet am  6. Jun 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Corny versucht es an etwas ganz Experimentellem: Kants kategorischem Imperativ in Haskell. Die absolute Erleuchtung ist noch nicht eingetreten, das Debugging und Modellieren macht aber Spaß.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Philosophie der Mathematik und Platonismus auf Steroiden</title>
     <link href="http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html" />
     <id>http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html</id>
@@ -256,29 +279,6 @@
 <p>Es macht Spaß, diese transfinite Variante von Nim zu spielen und zu erkunden, wie man optimal spielt. Dazu darf man keine Furcht haben, über unendlich hinaus zu zählen.</p>
 <p>Optionales Bonuskapitel: Die Geschichte der epischen Schlacht zwischen Herkula und Hydra. Erzählt in vier Akten. Der letzte wird dich umhauen. (Da er eine kleine aber feine metamathematische Weisheit über die Grenzen des logischen Schließens enthält.)</p>
 <p>Makarius leitet eine Plaudersitzung dazu an, was in Dagstuhl bei der Veranstaltung <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18341">Formalization of Mathematics in Type Theory</a> so los war.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programm für das vierzigste Treffen am 12.7.2018</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-07-10-vierzigstes-treffen.html</id>
-    <published>2018-07-10T00:00:00Z</published>
-    <updated>2018-07-10T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programm für das vierzigste Treffen am 12.7.2018</h1>
-    <div class="info">
-      Gepostet am 10. Jul 18
-      
-          von Profpatsch
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Profpatsch gibt eine Einführung über Purescript, eine Haskell-artige Sprache mit strikter Semantik, die direkt zu Javascript kompiliert.</p>
 </article>
 ]]></summary>
 </entry>
