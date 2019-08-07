@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 06 Jun 2019 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Aug 2019 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Row Types in Purescript und Large Mathematics Libraries</title>
+    <link>http://curry-club-augsburg.de/posts/2019-08-08-treffen-52.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Row Types in Purescript und Large Mathematics Libraries</h1>
+    <div class="info">
+      Gepostet am  8. Aug 19
+      
+          von diekmann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Wir fangen an mit einem Vortrag von Profpatsch über Row Types in Purescript (30min–1h). Anschließend plaudern wir mit Makarius über “Large Mathematics Libraries” (gemeint ist natürlich “Formal Mathematics”).</p>
+</article>
+]]></description>
+    <pubDate>Thu, 08 Aug 2019 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2019-08-08-treffen-52.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Kants kategorischer Imperativ in Haskell</title>
     <link>http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html</link>
     <description><![CDATA[<article>
@@ -252,34 +275,6 @@
 ]]></description>
     <pubDate>Thu, 09 Aug 2018 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Transfinites Nim und Dagstuhl-Plaudersitzung</title>
-    <link>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Transfinites Nim und Dagstuhl-Plaudersitzung</h1>
-    <div class="info">
-      Gepostet am  8. Aug 18
-      
-          von MatthiasHu
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Ingo bietet Spiel und Spaß mit transfinitem Nim:</p>
-<p>Nim ist ein mathematisches Strategiespiel. Für Unerfahrene ist es nicht ganz unknifflig, für Eingeweihte völlig trivial. Es nimmt eine zentrale Rolle in der Theorie der sog. neutralen kombinatorischen Spiele ein, weil jede Position in einem solchen Spiel äquivalent zu einer Position in Nim ist.</p>
-<p>Jedenfalls wird klassisches Nim mit Haufen von Münzen gespielt. Joel David Hamkins, berühmter Mengentheoretiker und Person mit dem meisten Karma auf MathOverflow, dachte sich: Mit gewöhnlichen Haufen von Münzen kann man heutzutage niemanden mehr locken. Lass das Spiel auf unendlich viele Münzen ausweiten.</p>
-<p>Es macht Spaß, diese transfinite Variante von Nim zu spielen und zu erkunden, wie man optimal spielt. Dazu darf man keine Furcht haben, über unendlich hinaus zu zählen.</p>
-<p>Optionales Bonuskapitel: Die Geschichte der epischen Schlacht zwischen Herkula und Hydra. Erzählt in vier Akten. Der letzte wird dich umhauen. (Da er eine kleine aber feine metamathematische Weisheit über die Grenzen des logischen Schließens enthält.)</p>
-<p>Makarius leitet eine Plaudersitzung dazu an, was in Dagstuhl bei der Veranstaltung <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18341">Formalization of Mathematics in Type Theory</a> so los war.</p>
-</article>
-]]></description>
-    <pubDate>Wed, 08 Aug 2018 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2018-08-08-zweiundvierzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
