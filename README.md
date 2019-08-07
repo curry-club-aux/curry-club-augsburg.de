@@ -34,7 +34,7 @@ Der Post, dessen `meetup-announcement`-Datum am nähesten in der Zukunft liegt, 
 
 ## Änderungen am Inhalt
 
-Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vornehmen. Es vergehen ca. zwei Minuten, bis TravisCI die Seite neu gebaut hat.
+Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vornehmen. Es vergehen ca. zwanzig Minuten, bis TravisCI die Seite neu gebaut hat.
 
 
 ## Änderungen an `curry-site.hs`
