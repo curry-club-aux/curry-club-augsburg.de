@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-08-08T00:00:00Z</updated>
+    <updated>2019-09-05T00:00:00Z</updated>
     <entry>
+    <title>Gast aus Bonn</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-09-05-treffen-53.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-09-05-treffen-53.html</id>
+    <published>2019-09-05T00:00:00Z</published>
+    <updated>2019-09-05T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Gast aus Bonn</h1>
+    <div class="info">
+      Gepostet am  5. Sep 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Anton Lorenzen aus Bonn besucht uns. Details werden über die Mailingliste besprochen!</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Row Types in Purescript und Large Mathematics Libraries</title>
     <link href="http://curry-club-augsburg.de/posts/2019-08-08-treffen-52.html" />
     <id>http://curry-club-augsburg.de/posts/2019-08-08-treffen-52.html</id>
@@ -250,31 +273,6 @@
   </header>
 
   <p>Marc hält einen Vortrag über die korrekte Implementierung von Lazy Evaluation (wie in GHC/Haskell) in Umgebungen, die nativ nur Strict Evaluation unterstützen (wie alle Mainstreamsprachen). Wer schon weiß, dass das grundsätzlich mit Thunks/Closures geht, wird eine kleine Überraschung erleben.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Linux-Kernel-Code-Lesung</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-08-09-dreiundvierzigstes-treffen.html</id>
-    <published>2018-08-09T00:00:00Z</published>
-    <updated>2018-08-09T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Linux-Kernel-Code-Lesung</h1>
-    <div class="info">
-      Gepostet am  9. Aug 18
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Richi gab eine Einführung in die Organisation des Linux-Kernel-Code, mit einem Schwerpunkt auf dem TCP-Stack, also den Dateien unterhalb von <code>net/ipv4/tcp</code>.</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/YuV6rxT0mpw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
 </article>
 ]]></summary>
 </entry>
