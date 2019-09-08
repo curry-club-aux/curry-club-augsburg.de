@@ -1,19 +1,34 @@
+{ pkgs ? import ./nixpkgs.nix }:
 let
-  # 2019-09-08 (19.09 release branch)
-  rev = "0d79decdb3ba7da459aafb002745a10bb97141bb";
-  nixpkgs = import (fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
-    sha256 = "0rjwmy778mzp845lap10vfrshm3llhavri889qq7khn58wxvazq5";
-  }) {};
-  hp = nixpkgs.haskellPackages.override {
+  src = pkgs.nix-gitignore.gitignoreSource [".git/"] ./.;
+
+  generatedNix = pkgs.runCommand "curry-club-default.nix" {}
+    ''
+      # yeah, because cabal2nix is, like, the worst
+      cp -r ${src}/* .
+      cp -r ${builtins.path { path = ./.git; name = "dotgit"; }} .git
+
+      ${pkgs.cabal2nix}/bin/cabal2nix . > $out
+      sed -e 's|src = ./.|src = ${src}|' -i $out
+    '';
+
+  hp = pkgs.haskellPackages.override {
     overrides = self: super: {
-      clay = nixpkgs.haskell.lib.overrideCabal super.clay
+
+      clay = pkgs.haskell.lib.overrideCabal super.clay
         (drv: { broken = false; jailbreak = true; });
-      site = super.callPackage ./site.nix {};
+
+      site = super.callPackage generatedNix {};
+
       siteEnv = with self;
-        (nixpkgs.haskell.lib.addBuildTools self.site
+        (pkgs.haskell.lib.addBuildTools self.site
           [ ghcid cabal-install ]).env;
+
      };
   };
-in
-  hp
+in {
+    _a = abort "don’t build this, use `-A site`";
+    inherit src;
+    inherit (hp) site siteEnv;
+    haskellPackages = hp;
+}
