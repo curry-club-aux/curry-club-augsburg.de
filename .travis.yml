@@ -37,7 +37,7 @@ install:
       ./dist/build/curry-site/curry-site build
     echo
     echo "Linting site"
-    ./dist/build/curry-site/curry-site check
+    ./dist/build/curry-site/curry-site check --internal-links
   '
 
 before_script:

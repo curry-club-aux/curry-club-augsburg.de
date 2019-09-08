@@ -1,6 +1,6 @@
 { pkgs ? import ./nixpkgs.nix }:
 let
-  src = pkgs.nix-gitignore.gitignoreSource [".git/"] ./.;
+  src = pkgs.nix-gitignore.gitignoreSource [".git/" "*.nix"] ./.;
 
   generatedNix = pkgs.runCommand "curry-club-default.nix" {}
     ''

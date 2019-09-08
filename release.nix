@@ -40,6 +40,10 @@ in rec {
       echo "website website $out/index.html" \
         > "$out/nix-support/hydra-build-products"
     '';
+    doCheck = true;
+    checkPhase = ''
+      env LANG=de_DE.UTF-8 curry-site check --internal-links
+    '';
   };
 
 }
