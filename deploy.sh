@@ -5,7 +5,7 @@ TARGET_BRANCH=gh-pages
 if hash curry-site 2>/dev/null; then
   SITE=curry-site
 else
-  SITE=./curry-site
+  SITE=./dist/build/curry-site/curry-site
 fi
 
 cd $(dirname "$0")

@@ -1,22 +1,15 @@
-with import <nixpkgs> {}; let
+{ nixpkgs ? import ./nixpkgs.nix }:
 
-  srcFilter = path: type:
-   let f = prefix: baseNameOf path != prefix;
-   in lib.foldl' lib.and true (map f [ ".git" "_site" "_cache" "dist" ])
-      && type != "symlink";
-  src = builtins.filterSource srcFilter ./.;
+let
+  pkgs = nixpkgs;
 
-  pkg = pkgs.runCommand "curry-club-default.nix" { src = ./.; } ''
-    ${pkgs.cabal2nix}/bin/cabal2nix $src > $out
-  '';
+  default = import ./default.nix { pkgs = nixpkgs; };
 
-  haskellPackages = pkgs.haskellPackages;
-
-  unpatchedSiteGen = haskellPackages.callPackage (import pkg) {};
+  haskellPackages = default.haskellPackages;
 
 in rec {
-  siteGen = haskell.lib.overrideCabal unpatchedSiteGen (drv: {
-    inherit src;
+  siteGen = pkgs.haskell.lib.overrideCabal default.site (drv: {
+    inherit (default) src;
     postPatch = (drv.postPatch or "") + ''
       find
       sed -i \
@@ -24,13 +17,14 @@ in rec {
         curry-site.hs
     '';
   });
+
   hoogleEnv = haskellPackages.ghcWithHoogle (_: [ siteGen ]);
 
-  site = with import <nixpkgs> {}; stdenv.mkDerivation {
+  site = pkgs.stdenv.mkDerivation {
     name = "curry-club-augsburg.de";
-    inherit src;
+    inherit (default) src;
     buildInputs = [
-      glibcLocales
+      pkgs.glibcLocales
       (haskellPackages.ghcWithPackages (hp: [ hp.cabal-install ]))
       siteGen
     ];
@@ -45,6 +39,10 @@ in rec {
       mkdir -p "$out/nix-support"
       echo "website website $out/index.html" \
         > "$out/nix-support/hydra-build-products"
+    '';
+    doCheck = true;
+    checkPhase = ''
+      env LANG=de_DE.UTF-8 curry-site check --internal-links
     '';
   };
 

@@ -6,7 +6,7 @@ dist
 .cabal-sandbox
 cabal.sandbox.config
 # nix
-result
+result*
 /site.o
 .stack-work
 # LaTeX
@@ -17,7 +17,6 @@ result
 *.snm
 *.toc
 *.vrb
-/shell.nix
 # Build directories created by ./deploy.sh
 builddir-*
 /site.nix

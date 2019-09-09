@@ -2,8 +2,9 @@
 sudo: required
 dist: trusty
 
-# Choose a lightweight base image; we provide our own build tools.
-language: c
+# Choose the nix base image; we build the dependencies with nix
+language: nix
+nix: "2.2.1"
 
 # Caching so the next build will be fast too.
 cache:
@@ -12,83 +13,32 @@ cache:
   - $HOME/.cabal
   - $HOME/.stack
 
-branches:
-  only:
-    - master
-
 env:
   global:
   - REMOTE_REPO=git@github.com:curry-club-aux/curry-club-augsburg.de.git
   - GIT_EMAIL=tim@timbaumann.info
   - GIT_NAME=Travis
 
-# The different configurations we want to test. We have BUILD=cabal which uses
-# cabal-install, and BUILD=stack which uses Stack. More documentation on each
-# of those below.
-#
-# We set the compiler values here to tell Travis to use a different
-# cache file per set of arguments.
-#
-# If you need to have different apt packages for each combination in the
-# matrix, you can use a line such as:
-#     addons: {apt: {packages: [libfcgi-dev,libgmp-dev]}}
-matrix:
-  include:
-  # The Stack builds. We can pass in arbitrary Stack arguments via the ARGS
-  # variable, such as using --stack-yaml to point to a different file.
-  - env: BUILD=stack GHCVER=8.0.2 ARGS="--resolver lts-8"
-    compiler: ": #stack 8.0.2"
-    addons: {apt: {packages: [ghc-8.0.2], sources: [hvr-ghc]}}
-
-  exclude:
-  # We grab the appropriate GHC and cabal-install versions from hvr's PPA. See:
-  # https://github.com/hvr/multi-ghc-travis
-  - env: BUILD=cabal GHCVER=7.10.3 CABALVER=1.22
-    compiler: ": #GHC 7.10.3"
-    addons: {apt: {packages: [cabal-install-1.22,ghc-7.10.3], sources: [hvr-ghc]}}
-
-  # Build with the newest GHC and cabal-install. This is an accepted failure,
-  # see below.
-  - env: BUILD=cabal GHCVER=head  CABALVER=head
-    compiler: ": #GHC HEAD"
-    addons: {apt: {packages: [cabal-install-head,ghc-head], sources: [hvr-ghc]}}
-
-  # Nightly builds are allowed to fail
-  - env: BUILD=stack ARGS="--resolver nightly"
-    compiler: ": #stack nightly"
-    addons: {apt: {packages: [libgmp-dev]}}
-
-  allow_failures:
-  - env: BUILD=cabal GHCVER=head  CABALVER=head
-  - env: BUILD=stack ARGS="--resolver nightly"
-
 before_install:
-# Using compiler above sets CC to an invalid value, so unset it
-- unset CC
-
-# We want to always allow newer versions of packages when building on GHC HEAD
-- CABALARGS=""
-- if [ "x$GHCVER" = "xhead" ]; then CABALARGS=--allow-newer; fi
-
-# Download and unpack the stack executable
-- export PATH=/opt/ghc/$GHCVER/bin:/opt/cabal/$CABALVER/bin:$HOME/.local/bin:$PATH
-- mkdir -p ~/.local/bin
-- curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
+# install cachix
+- nix-env -iA cachix -f https://github.com/NixOS/nixpkgs/tarball/db557aab7b690f5e0e3348459f2e4dc8fd0d9298
+# setup cachix
+- cachix use curry-club-aux
 
 install:
-- echo "$(ghc --version) [$(ghc --print-project-git-commit-id 2> /dev/null || echo '?')]"
-- if [ -f configure.ac ]; then autoreconf -i; fi
 - |
-  case "$BUILD" in
-    stack)
-      stack --no-terminal --install-ghc $ARGS install
-      ;;
-    cabal)
-      cabal --version
-      travis_retry cabal update
-      cabal install --force-reinstalls --ghc-options=-O0 --reorder-goals --max-backjumps=-1 $CABALARGS
-      ;;
-  esac
+  nix-shell ./shell.nix --run '
+    cabal configure
+    cabal build
+    echo
+    echo "Building site"
+    # cabal is used to build the css files
+    env backend=cabal \
+      ./dist/build/curry-site/curry-site build
+    echo
+    echo "Linting site"
+    ./dist/build/curry-site/curry-site check --internal-links
+  '
 
 before_script:
   - git config --global user.email "$GIT_EMAIL"
@@ -100,4 +50,13 @@ before_script:
   - echo "|1|HWtB6v5G3xm6GVUAbUN/B7hphM8=|1Mpu47AyndKZ9YAsFMF2T26cSQo= ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> $HOME/.ssh/known_hosts
 
 script:
-- "./deploy.sh $REMOTE_REPO || ./deploy.sh $REMOTE_REPO --verbose"
+- >+
+    if [ "$TRAVIS_BRANCH" = "master" ]; then
+      echo "On branch master, deploying ..."
+      ./deploy.sh $REMOTE_REPO || ./deploy.sh $REMOTE_REPO --verbose
+    fi
+# the shell.nix is buildable, so we push it and all dependencies
+# to cachix (next time everything comes from cache this way).
+- >+
+    echo "Pushing to cachix"
+    cachix push curry-club-aux $(nix-build ./shell.nix)
