@@ -2,25 +2,16 @@
 
 # configuration
 TARGET_BRANCH=gh-pages
-if hash curry-site 2>/dev/null; then
-  SITE=curry-site
-else
-  SITE=./dist/build/curry-site/curry-site
-fi
 
 cd $(dirname "$0")
 CURR_REPO=$(git rev-parse --show-toplevel)
 CURR_ORIGIN=$(git config --get remote.origin.url)
 
 function usage() {
-  echo "Usage: ./deploy.sh [REMOTE-REPO-URL [BUILD-ARGS ...]]"
+  echo "Usage: ./deploy.sh [REMOTE-REPO-URL]"
   echo ""
   echo "By default, REMOTE-REPO-URL is '$CURR_ORIGIN',"
   echo "the 'origin' of the git repository at '$CURR_REPO'."
-  echo ""
-  echo "BUILD-ARGS are passed along as arguments to '$SITE build'."
-  echo "For example, './deploy.sh $CURR_ORIGIN --verbose' calls"
-  echo "'$SITE build --verbose'."
   exit 0
 }
 
@@ -37,10 +28,6 @@ fi
 BUILD_ARGS="$@"
 
 BUILD_DIR=$(mktemp -d builddir-XXXX)
-
-function cleanup_build_dir() {
-  rm -rf "$BUILD_DIR"
-}
 
 function onerr() {
   cleanup_build_dir
@@ -60,14 +47,8 @@ function clone_remote_repo_to_build_dir() {
   fi
 }
 
-function compile_static_site_in_build_dir() {
-  echo "\$ $SITE clean"
-  $SITE clean
-  echo "\$ $SITE build $@"
-  $SITE build $BUILD_ARGS
+function copy_files_to_build_dir() {
   cp -R ./_site/* "$BUILD_DIR"
-  echo "\$ $SITE clean"
-  $SITE clean
 }
 
 function commit_and_push_changes_to_remote_repo() {
@@ -80,9 +61,13 @@ function commit_and_push_changes_to_remote_repo() {
   fi
 }
 
+function cleanup_build_dir() {
+  rm -rf "$BUILD_DIR"
+}
+
 function main() {
   clone_remote_repo_to_build_dir
-  compile_static_site_in_build_dir
+  copy_files_to_build_dir
   commit_and_push_changes_to_remote_repo
   cleanup_build_dir
 }
