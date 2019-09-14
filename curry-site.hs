@@ -9,6 +9,7 @@ import           Data.Maybe (isJust)
 import           Data.Monoid ((<>))
 import           Data.Time
 import           Data.Yaml (parseMaybe, (.:), (.:?), Value)
+import           GHC.IO.Encoding (setLocaleEncoding, utf8)
 import           Hakyll
 import           Safe
 import           System.Posix.Env (getEnv)
@@ -44,6 +45,7 @@ readBackend = do
 
 main :: IO ()
 main = do
+  setLocaleEncoding utf8
   -- the default backend is stack; this is used for building the css
   backend <- maybe Stack id <$> readBackend
   currDay <- utcToLocalDay <$> getCurrentTime
