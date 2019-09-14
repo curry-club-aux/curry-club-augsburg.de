@@ -41,7 +41,6 @@ bodyCss = body ? do
 
 layoutCss :: Css
 layoutCss = do
-
   ".main" |> (header <> main_ <> (footer # ".footer")) ? do
     width (px 700)
     sym2 margin nil auto
@@ -126,11 +125,13 @@ postCss = do
     marginBottom (em 1)
     background reallyDarkPurple
     -- http://nicolasgallagher.com/micro-clearfix-hack/
-    ":after" <> ":before" ? do
-      content (stringContent " ")
-      display Clay.Display.displayTable
-    ":after" ?
-      clear both
+    article # before ? do
+        content (stringContent " ")
+        display Clay.Display.displayTable
+    article # after ? do
+        content (stringContent " ")
+        display Clay.Display.displayTable
+        clear both
 
 syntaxCss :: Css
 syntaxCss = do
