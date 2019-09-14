@@ -1,6 +1,7 @@
 flags: {}
 packages:
 - '.'
-resolver: lts-8.17
+resolver: lts-14.5
 extra-deps:
-- clay-0.12.1
+- hakyll-4.12.5.2
+- clay-0.13.1
