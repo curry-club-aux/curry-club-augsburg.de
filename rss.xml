@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 05 Sep 2019 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 03 Oct 2019 00:00:00 UT</lastBuildDate>
         <item>
+    <title>HOL4-Virtualisierung und TypeScript</title>
+    <link>http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>HOL4-Virtualisierung und TypeScript</h1>
+    <div class="info">
+      Gepostet am  3. Okt 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Makarius spricht ein paar Worte zu <a href="http://drops.dagstuhl.de/opus/volltexte/2019/11076/pdf/LIPIcs-ITP-2019-21.pdf">Virtualisierung von HOL4 in Isabelle</a>, und Tim stellt TypeScript vor.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 03 Oct 2019 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Agda-Exempel und HOL4-Virtualisierung</title>
     <link>http://curry-club-augsburg.de/posts/2019-09-05-treffen-53.html</link>
     <description><![CDATA[<article>
@@ -251,29 +274,6 @@
 ]]></description>
     <pubDate>Mon, 26 Nov 2018 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2018-11-26-fuenfundvierzigstes-treffen.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Lazy Evaluation</title>
-    <link>http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Lazy Evaluation</h1>
-    <div class="info">
-      Gepostet am 30. Okt 18
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Marc hält einen Vortrag über die korrekte Implementierung von Lazy Evaluation (wie in GHC/Haskell) in Umgebungen, die nativ nur Strict Evaluation unterstützen (wie alle Mainstreamsprachen). Wer schon weiß, dass das grundsätzlich mit Thunks/Closures geht, wird eine kleine Überraschung erleben.</p>
-</article>
-]]></description>
-    <pubDate>Tue, 30 Oct 2018 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 

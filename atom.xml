@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-09-05T00:00:00Z</updated>
+    <updated>2019-10-03T00:00:00Z</updated>
     <entry>
+    <title>HOL4-Virtualisierung und TypeScript</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html</id>
+    <published>2019-10-03T00:00:00Z</published>
+    <updated>2019-10-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>HOL4-Virtualisierung und TypeScript</h1>
+    <div class="info">
+      Gepostet am  3. Okt 19
+      
+          von iblech
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Makarius spricht ein paar Worte zu <a href="http://drops.dagstuhl.de/opus/volltexte/2019/11076/pdf/LIPIcs-ITP-2019-21.pdf">Virtualisierung von HOL4 in Isabelle</a>, und Tim stellt TypeScript vor.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Agda-Exempel und HOL4-Virtualisierung</title>
     <link href="http://curry-club-augsburg.de/posts/2019-09-05-treffen-53.html" />
     <id>http://curry-club-augsburg.de/posts/2019-09-05-treffen-53.html</id>
@@ -251,29 +274,6 @@
 <p>Anschließend plauderte Makarius über das neue Isabelle/Haskell/PIDE mit Anwendung auf “Automatic Checking of Ordinary Mathematical Texts” (Prof. Peter Koepke, Uni. Bonn). “Das ist zwar erst halb fertig, aber zeigen kann man schon was – vor allem auch das ‘Tooling’ für Haskell: ‘Stack’ und VSCode mit Haskell Language Server. Das füllt locker viele GB RAM + HD, aber dafür muss man selber nichts herumbasteln.”</p>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/U0KTMdqwmNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Lazy Evaluation</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-10-30-vierundvierzigstes-treffen.html</id>
-    <published>2018-10-30T00:00:00Z</published>
-    <updated>2018-10-30T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Lazy Evaluation</h1>
-    <div class="info">
-      Gepostet am 30. Okt 18
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Marc hält einen Vortrag über die korrekte Implementierung von Lazy Evaluation (wie in GHC/Haskell) in Umgebungen, die nativ nur Strict Evaluation unterstützen (wie alle Mainstreamsprachen). Wer schon weiß, dass das grundsätzlich mit Thunks/Closures geht, wird eine kleine Überraschung erleben.</p>
 </article>
 ]]></summary>
 </entry>
