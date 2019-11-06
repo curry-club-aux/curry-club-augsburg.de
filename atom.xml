@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-10-03T00:00:00Z</updated>
+    <updated>2019-11-28T00:00:00Z</updated>
     <entry>
+    <title>Steht noch nicht fest, aber es wird bestimmt gut</title>
+    <link href="http://curry-club-augsburg.de/posts/2019-11-28-treffen-55.html" />
+    <id>http://curry-club-augsburg.de/posts/2019-11-28-treffen-55.html</id>
+    <published>2019-11-28T00:00:00Z</published>
+    <updated>2019-11-28T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Steht noch nicht fest, aber es wird bestimmt gut</h1>
+    <div class="info">
+      Gepostet am 28. Nov 19
+      
+          von diekmann
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Vermutlich der letzte Curry Club vor dem Congress.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>HOL4-Virtualisierung und TypeScript</title>
     <link href="http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html" />
     <id>http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html</id>
@@ -245,35 +268,6 @@
 <p>Daran anschließen könnte natürlich ein gemeinsames Projekt, einen rudimentären Compiler für eine rudimentäre (funktionale) Programmiersprache zu schreiben.</p>
 <p>Was es mit libjit auf sich hat? Das ist auch von GNU, aber wurde von Anfang an für JIT-Kompilierung geschrieben. Ursprünglich als JIT-Backend für dotGNU (die .NET-CLR von GNU) wird es inzwischen als eigenständige Bibliothek weiterentwickelt.</p>
 <p>Das Vorurteil gegenüber zu JIT umgebauten Offline-Compilern ist ja, dass sie zu viel Zeit zum Kompilieren verwenden (zum Beispiel mit schweren Optimierungen) – selbst bei Code, der nur ein oder wenige Male ausgeführt wird. Ein hastig zusammengebastelter Brainfuck-JIT-Compiler mit dieser Bibliothek (in weniger als 100 Zeilen) produziert zugegebenermaßen nicht so guten Code wie libgccjit; dem Vorurteil gemäß könnte er, die Kompilierzeit addiert, dennoch schneller sein.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>FizzBuzz, Python und Isabelle</title>
-    <link href="http://curry-club-augsburg.de/posts/2018-11-26-fuenfundvierzigstes-treffen.html" />
-    <id>http://curry-club-augsburg.de/posts/2018-11-26-fuenfundvierzigstes-treffen.html</id>
-    <published>2018-11-26T00:00:00Z</published>
-    <updated>2018-11-26T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>FizzBuzz, Python und Isabelle</h1>
-    <div class="info">
-      Gepostet am 26. Nov 18
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Das 45. Treffen begann nicht wie üblich um 19:00 Uhr, sondern etwas später um 20:25 Uhr. Als inoffizielles Warmup hielt ein <a href="https://www.math.uni-augsburg.de/termin/faszination-2018-11/">Vortrag in der Reihe Faszination Mathematik/Physik</a> her.</p>
-<p>Cornelius implementierte FizzBuzz in Python. “Ich möchte nicht spoilern, aber ich kann bereits verraten, dass das Ergebnis in Isabelle/HOL nicht einmal typcheckt.”</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/QswRKkqSoyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>Anschließend plauderte Makarius über das neue Isabelle/Haskell/PIDE mit Anwendung auf “Automatic Checking of Ordinary Mathematical Texts” (Prof. Peter Koepke, Uni. Bonn). “Das ist zwar erst halb fertig, aber zeigen kann man schon was – vor allem auch das ‘Tooling’ für Haskell: ‘Stack’ und VSCode mit Haskell Language Server. Das füllt locker viele GB RAM + HD, aber dafür muss man selber nichts herumbasteln.”</p>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/U0KTMdqwmNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
 </article>
 ]]></summary>
 </entry>
