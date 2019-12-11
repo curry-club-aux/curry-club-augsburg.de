@@ -7,8 +7,48 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 28 Nov 2019 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Dec 2019 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Fünfter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Dezember 2019</title>
+    <link>http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Fünfter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Dezember 2019</h1>
+    <div class="info">
+      Gepostet am 11. Dez 19
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <div class="right">
+<p><a href="/files/haskellworkshop-plakat5.pdf"> <img width="300" src="/files/haskellworkshop-plakat5.png" /> </a></p>
+</div>
+<p>Liebe Freundinnen der Sonne!</p>
+<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu unserem fünften <strong>Haskell-Workshop für Neulinge</strong> ein. Dieser findet am <strong>21. Samstag 2019</strong>, einem Samstag, von 10:00 Uhr bis 18:00 Uhr statt, aller Voraussicht nach im <strong>OpenLab Augsburg</strong>. Wie bei den vorherigen Malen ist die Teilnahme kostenlos.</p>
+<p>Haskell ist eine wunderschöne Sprache, in der man nicht das “wie” spezifiziert, sondern das “was”. Ein Haskell-Programm besteht – anders als bei allen gewöhnlichen Programmiersprachen – nicht aus einer Folge von Anweisungen, welche von oben nach unten (und nur durch Kontrollstrukturen oder Subroutinen aufgelockert) abgearbeitet werden. Haskell-Code kann fast beliebig in seiner Reihenfolge permutiert werden, ohne die Bedeutung zu verändern. Ein ausführlicher Werbetext steht unten.</p>
+<p>Zielgruppe des Workshops sind völlige Haskell-Neulinge. Teilnahmevoraussetzung ist entweder Erfahrung mit einer beliebigen anderen Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken. Haskell-Profis sollten keinesfalls als Teilnehmende mitmachen, sondern lieber das Betreuendenteam verstärken.</p>
+<p>Damit wir unsere Kapazität überblicken können, ist zur Teilnahme eine <a href="https://etherpad.wikimedia.org/p/haskell-workshop-2019">unverbindliche vorherige Anmeldung</a> nötig. Laptop mitbringen und vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren – Details dazu gibt es per Mail nach erfolgter Anmeldung.</p>
+<p>Wir freuen uns auf euch!</p>
+<p>Euer Team vom Curry Club</p>
+<!--more-->
+<blockquote>
+<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
+<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
+<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
+<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
+<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
+</blockquote>
+</article>
+]]></description>
+    <pubDate>Wed, 11 Dec 2019 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Steht noch nicht fest, aber es wird bestimmt gut</title>
     <link>http://curry-club-augsburg.de/posts/2019-11-28-treffen-55.html</link>
     <description><![CDATA[<article>
@@ -237,37 +277,6 @@
 ]]></description>
     <pubDate>Tue, 19 Feb 2019 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2019-02-19-treffen-47.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>libgccjit und libjit</title>
-    <link>http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>libgccjit und libjit</h1>
-    <div class="info">
-      Gepostet am 27. Nov 18
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Marc trägt über libgccjit vor, Jakob nerdet auf libjit ab.</p>
-<p>Was es mit libgccjit auf sich hat?</p>
-<p>Auch Implementiererinnen funktionaler Programmiersprachen stehen am Ende vor dem Problem, Programme in (effizienten) Maschinencode übersetzen zu müssen.</p>
-<p>Die GCC kann das schon (und zwar für ziemlich viele Architekturen), warum das Rad also zweimal erfinden und nicht auf den GCC aufsetzen?</p>
-<p>Dank der Bibliothek libgccjit von David Malcolm, die seit GCC 5.1 offizieller Bestandteil des GCC-Projektes ist, ist es einfach geworden, den GCC als AOT- oder JIT-Compiler-Backend in eigene Programme einzubinden.</p>
-<p>Im Vortrag stellt Marc die Bibliothek vor. Wir werden so etwas über die Erzeugung von Maschinencode lernen und einen Blick auf die GCC-Interna werfen.</p>
-<p>Daran anschließen könnte natürlich ein gemeinsames Projekt, einen rudimentären Compiler für eine rudimentäre (funktionale) Programmiersprache zu schreiben.</p>
-<p>Was es mit libjit auf sich hat? Das ist auch von GNU, aber wurde von Anfang an für JIT-Kompilierung geschrieben. Ursprünglich als JIT-Backend für dotGNU (die .NET-CLR von GNU) wird es inzwischen als eigenständige Bibliothek weiterentwickelt.</p>
-<p>Das Vorurteil gegenüber zu JIT umgebauten Offline-Compilern ist ja, dass sie zu viel Zeit zum Kompilieren verwenden (zum Beispiel mit schweren Optimierungen) – selbst bei Code, der nur ein oder wenige Male ausgeführt wird. Ein hastig zusammengebastelter Brainfuck-JIT-Compiler mit dieser Bibliothek (in weniger als 100 Zeilen) produziert zugegebenermaßen nicht so guten Code wie libgccjit; dem Vorurteil gemäß könnte er, die Kompilierzeit addiert, dennoch schneller sein.</p>
-</article>
-]]></description>
-    <pubDate>Tue, 27 Nov 2018 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2018-11-27-sechsundvierzigstes-treffen.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
