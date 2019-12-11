@@ -15,7 +15,7 @@ author: Ingo Blechschmidt
 Liebe Freundinnen der Sonne!
 
 Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu unserem
-fünften **Haskell-Workshop für Neulinge** ein. Dieser findet am **21. Samstag 2019**,
+fünften **Haskell-Workshop für Neulinge** ein. Dieser findet am **21. Dezember 2019**,
 einem Samstag, von 10:00 Uhr bis 18:00 Uhr statt, aller Voraussicht nach im **OpenLab Augsburg**. Wie
 bei den vorherigen Malen ist die Teilnahme kostenlos.
 
