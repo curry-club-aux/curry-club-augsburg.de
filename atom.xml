@@ -29,15 +29,10 @@
   </header>
 
   <p>Michael Färber ist bei uns zu Gast und wird über <em>Beweisüberprüfung mittels des Lambda-Pi-Kalküls</em> vortragen:</p>
-<pre><code>Der Lambda-Pi-Kalkül modulo Termersetzung erlaubt es, auf elegante Art
-verschiedene logische Systeme zu formalisieren und Beweise aus diesen Systemen
-einheitlich zu überprüfen.
-
-Ich präsentiere zuerst den Lambda-Pi-Kalkül und zeige dann, wie man
-höherstufige Logik in diesem Kalkül formalisiert. Anschließend zeige ich ein
-Zwischenergebnis meiner Zusammenarbeit mit Makarius, nämlich einen Export von
-Isabelle in den Lambda-Pi-Kalkül. Abschließend präsentiere ich meine
-minimalistische Implementierung eines Typenprüfers für den Lambda-Pi-Kalkül.</code></pre>
+<blockquote>
+<p>Der Lambda-Pi-Kalkül modulo Termersetzung erlaubt es, auf elegante Art verschiedene logische Systeme zu formalisieren und Beweise aus diesen Systemen einheitlich zu überprüfen.</p>
+<p>Ich präsentiere zuerst den Lambda-Pi-Kalkül und zeige dann, wie man höherstufige Logik in diesem Kalkül formalisiert. Anschließend zeige ich ein Zwischenergebnis meiner Zusammenarbeit mit Makarius, nämlich einen Export von Isabelle in den Lambda-Pi-Kalkül. Abschließend präsentiere ich meine minimalistische Implementierung eines Typenprüfers für den Lambda-Pi-Kalkül.</p>
+</blockquote>
 <p>Zusätzlich wird es Fortsetzungen der Vorträge vom letzten Mal geben.</p>
 </article>
 ]]></summary>
