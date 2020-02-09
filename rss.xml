@@ -7,8 +7,41 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 11 Dec 2019 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 09 Feb 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>??? + Lambda-Pi-Kalkül</title>
+    <link>http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>??? + Lambda-Pi-Kalkül</h1>
+    <div class="info">
+      Gepostet am  9. Feb 20
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Michael Färber ist bei uns zu Gast und wird über <em>Beweisüberprüfung mittels des Lambda-Pi-Kalküls</em> vortragen:</p>
+<pre><code>Der Lambda-Pi-Kalkül modulo Termersetzung erlaubt es, auf elegante Art
+verschiedene logische Systeme zu formalisieren und Beweise aus diesen Systemen
+einheitlich zu überprüfen.
+
+Ich präsentiere zuerst den Lambda-Pi-Kalkül und zeige dann, wie man
+höherstufige Logik in diesem Kalkül formalisiert. Anschließend zeige ich ein
+Zwischenergebnis meiner Zusammenarbeit mit Makarius, nämlich einen Export von
+Isabelle in den Lambda-Pi-Kalkül. Abschließend präsentiere ich meine
+minimalistische Implementierung eines Typenprüfers für den Lambda-Pi-Kalkül.</code></pre>
+<p>Zusätzlich wird es Fortsetzungen der Vorträge vom letzten Mal geben.</p>
+</article>
+]]></description>
+    <pubDate>Sun, 09 Feb 2020 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Fünfter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Dezember 2019</title>
     <link>http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html</link>
     <description><![CDATA[<article>
@@ -253,32 +286,6 @@
 ]]></description>
     <pubDate>Wed, 17 Apr 2019 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Dialogische Logik</title>
-    <link>http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Dialogische Logik</h1>
-    <div class="info">
-      Gepostet am 13. Mär 19
-      
-          von MatthiasHu
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Dominik wird über dialogische Logik und Dialogspiele vortragen. Dabei handelt es sich um eine Präzisierung der Idee, dass man eine mathematische Aussage nur dann akzeptieren sollte, wenn man jeden noch so kritische Gesprächspartnerin in einem fairen Streitgespräch von ihr überzeugen könnte.</p>
-<p>Dialogische Logik ist ein weiterer formaler Ansatz um die Bedeutung logischer Formeln zu charakterisieren. Sie hebt sich von anderen Methoden, wie zum Beispiel Modell-Semantiken und Ableitungssystemen, ab, da sie die interpersonellen Facetten mathematischer Wahrheit explizit macht und somit insbesondere für Intuitionistinnen attraktiv ist. Darüber hinaus hat sie sich auch als ein nützliches technisches Werkzeug entpuppt.</p>
-<p>Wir werden sehen, wie Dialoge für Prädikatenlogik erster Stufe aussesehen, warum Dialoge die Lieblingssemantik einer Konstruktivistin sein sollten und was Dominik bis dahin sonst noch Spannendes einfällt.</p>
-<p>Wahrscheinlich wird Dominik auch über seine Formalisierung von intuitionistischen Dialogen in Coq berichten.</p>
-</article>
-]]></description>
-    <pubDate>Wed, 13 Mar 2019 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 

@@ -8,8 +8,41 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2019-12-11T00:00:00Z</updated>
+    <updated>2020-02-09T00:00:00Z</updated>
     <entry>
+    <title>??? + Lambda-Pi-Kalkül</title>
+    <link href="http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html" />
+    <id>http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html</id>
+    <published>2020-02-09T00:00:00Z</published>
+    <updated>2020-02-09T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>??? + Lambda-Pi-Kalkül</h1>
+    <div class="info">
+      Gepostet am  9. Feb 20
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Michael Färber ist bei uns zu Gast und wird über <em>Beweisüberprüfung mittels des Lambda-Pi-Kalküls</em> vortragen:</p>
+<pre><code>Der Lambda-Pi-Kalkül modulo Termersetzung erlaubt es, auf elegante Art
+verschiedene logische Systeme zu formalisieren und Beweise aus diesen Systemen
+einheitlich zu überprüfen.
+
+Ich präsentiere zuerst den Lambda-Pi-Kalkül und zeige dann, wie man
+höherstufige Logik in diesem Kalkül formalisiert. Anschließend zeige ich ein
+Zwischenergebnis meiner Zusammenarbeit mit Makarius, nämlich einen Export von
+Isabelle in den Lambda-Pi-Kalkül. Abschließend präsentiere ich meine
+minimalistische Implementierung eines Typenprüfers für den Lambda-Pi-Kalkül.</code></pre>
+<p>Zusätzlich wird es Fortsetzungen der Vorträge vom letzten Mal geben.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Fünfter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Dezember 2019</title>
     <link href="http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html" />
     <id>http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html</id>
@@ -253,32 +286,6 @@
 <p>Von Null an bauen wir zunächst einen Interpreter fürs λ-Kalkül. Viele von uns im Curry Club haben das schon tausend Mal gemacht, für viele von uns ist das auch Neuland. Das ist jedenfalls ein schöner Einstieg in das Thema und trägt sicherlich ganz allgemein zum Verständnis von Interpretern, Compilern und Typen bei. Sollte man auf jeden Fall mal gemacht haben!</p>
 <p>Anschließend erweitern wir unsere Implementierung um Typenerschließung, indem wir den schon erwähnten Hindley–Milner-Algorithmus umsetzen. Zentral wird dabei das Konzept Unifikation sein.</p>
 <p>Wird alles in Ruhe erklärt, informal, formlos und hoffentlich erhellend. Haskell-Vorkenntnisse sind natürlich von Vorteil, aber wenn man Erfahrung mit anderen Sprachen hat und sich traut, Fragen zu stellen, werden wir euch auch so durch den Abend lotsen!</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Dialogische Logik</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-03-13-treffen-48.html</id>
-    <published>2019-03-13T00:00:00Z</published>
-    <updated>2019-03-13T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Dialogische Logik</h1>
-    <div class="info">
-      Gepostet am 13. Mär 19
-      
-          von MatthiasHu
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Dominik wird über dialogische Logik und Dialogspiele vortragen. Dabei handelt es sich um eine Präzisierung der Idee, dass man eine mathematische Aussage nur dann akzeptieren sollte, wenn man jeden noch so kritische Gesprächspartnerin in einem fairen Streitgespräch von ihr überzeugen könnte.</p>
-<p>Dialogische Logik ist ein weiterer formaler Ansatz um die Bedeutung logischer Formeln zu charakterisieren. Sie hebt sich von anderen Methoden, wie zum Beispiel Modell-Semantiken und Ableitungssystemen, ab, da sie die interpersonellen Facetten mathematischer Wahrheit explizit macht und somit insbesondere für Intuitionistinnen attraktiv ist. Darüber hinaus hat sie sich auch als ein nützliches technisches Werkzeug entpuppt.</p>
-<p>Wir werden sehen, wie Dialoge für Prädikatenlogik erster Stufe aussesehen, warum Dialoge die Lieblingssemantik einer Konstruktivistin sein sollten und was Dominik bis dahin sonst noch Spannendes einfällt.</p>
-<p>Wahrscheinlich wird Dominik auch über seine Formalisierung von intuitionistischen Dialogen in Coq berichten.</p>
 </article>
 ]]></summary>
 </entry>
