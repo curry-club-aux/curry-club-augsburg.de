@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2020-02-09T00:00:00Z</updated>
+    <updated>2020-03-10T00:00:00Z</updated>
     <entry>
+    <title>Modallogik und Interpretationen</title>
+    <link href="http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html" />
+    <id>http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html</id>
+    <published>2020-03-10T00:00:00Z</published>
+    <updated>2020-03-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Modallogik und Interpretationen</h1>
+    <div class="info">
+      Gepostet am 10. Mär 20
+      
+          von Ingo Blechschmidt
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Simon schließt seine Vortragsreihe zu Modallogik ab: “Nachdem wir die formalen modallogischen Schlussregeln gesehen haben, stelle ich meine Versuche vor, Datenstrukturen in Haskell zu definieren, welche diesen genügen. Zur Auflockerung will ich ein paar philosophische Ansichten zu den Modalitäten durchgehen.”</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>??? + Lambda-Pi-Kalkül</title>
     <link href="http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html" />
     <id>http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html</id>
@@ -252,35 +275,6 @@
 <li><p>Möglicherweise können Xave oder andere einen physikalischen Standpunkt ergänzen und über Multiversen in der Physik sprechen.</p></li>
 </ul>
 <p>Für die Plauderrunde ist keinerlei mathematisches Vorwissen nötig. Begriffe wie Formalismus, Platonismus, Intuitionismus, ZFC und Mengenuniversum werden fallen, aber anschaulich erklärt werden. Bei Interesse können wir auch in Richtung Eliezer Yudkowsky/Metarationalität/Rokos Basilisk abdriften.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Wir bauen einen Typenerschließer</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-04-17-treffen-49.html</id>
-    <published>2019-04-17T00:00:00Z</published>
-    <updated>2019-04-17T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Wir bauen einen Typenerschließer</h1>
-    <div class="info">
-      Gepostet am 17. Apr 19
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Wenn man in Haskell oder anderen Sprachen mit Typenerschließung programmiert, hat man doch, gerade als Anfänger*in, manchmal den Eindruck: Wow! Das ist doch Magie, wie der Compiler hier die ganzen von mir aus Faulheit nicht angegebenen Typen erschließt!</p>
-<p>Wir wir alle wissen, ist jede hinreichend fortgeschrittene Technologie ununterscheidbar von Magie, und die hier relevante Technologie ist der Typenerschließungsalgorithmus nach Hindley–Milner.</p>
-<p>Zum morgigen Curry Club planen Matthias und Ingo daher eine gemeinsame Programmiersitzung zum Thema:</p>
-<pre><code>Wir implementieren einen Typenerschließer</code></pre>
-<p>Von Null an bauen wir zunächst einen Interpreter fürs λ-Kalkül. Viele von uns im Curry Club haben das schon tausend Mal gemacht, für viele von uns ist das auch Neuland. Das ist jedenfalls ein schöner Einstieg in das Thema und trägt sicherlich ganz allgemein zum Verständnis von Interpretern, Compilern und Typen bei. Sollte man auf jeden Fall mal gemacht haben!</p>
-<p>Anschließend erweitern wir unsere Implementierung um Typenerschließung, indem wir den schon erwähnten Hindley–Milner-Algorithmus umsetzen. Zentral wird dabei das Konzept Unifikation sein.</p>
-<p>Wird alles in Ruhe erklärt, informal, formlos und hoffentlich erhellend. Haskell-Vorkenntnisse sind natürlich von Vorteil, aber wenn man Erfahrung mit anderen Sprachen hat und sich traut, Fragen zu stellen, werden wir euch auch so durch den Abend lotsen!</p>
 </article>
 ]]></summary>
 </entry>
