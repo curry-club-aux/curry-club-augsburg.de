@@ -79,9 +79,6 @@ Wenn man den Anderen die Änderungen erst einmal zeigen möchte, kann man folgen
 [wiki]: https://github.com/curry-club-aux/curry-club-augsburg.de/wiki
 [issues]: https://github.com/curry-club-aux/curry-club-augsburg.de/issues
 [gh-pages]: https://pages.github.com/
-[circleci]: https://circleci.com/
-[circleci-img]: https://img.shields.io/circleci/project/curry-club-aux/curry-club-augsburg.de/master.svg
-[circleci-url]: https://circleci.com/gh/curry-club-aux/curry-club-augsburg.de/tree/master
 [travisci]: https://travis-ci.org/
 [travisci-img]: https://travis-ci.org/curry-club-aux/curry-club-augsburg.de.svg?branch=master
 [travisci-url]: https://travis-ci.org/curry-club-aux/curry-club-augsburg.de
