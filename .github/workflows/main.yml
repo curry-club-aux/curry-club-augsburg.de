@@ -1,0 +1,29 @@
+name: Build and deploy site
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    name: Build generator and compile site
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v2
+    - name: Install Nix ❄️
+      uses: cachix/install-nix-action@v9
+    - name: Install and setup Cachix 💽
+      uses: cachix/cachix-action@v6
+      with:
+        name: curry-club-aux
+        signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+    - name: Build Generator and Site 👷
+      run: nix-build -A site release.nix
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: result
