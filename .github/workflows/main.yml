@@ -20,10 +20,13 @@ jobs:
         name: curry-club-aux
         signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
     - name: Build Generator and Site 👷
-      run: nix-build -A site release.nix
+      run: |
+        nix-build -A site release.nix
+        cp -RL result result-with-changed-permissions
+        chmod -R +w result-with-changed-permissions/
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: result
+        FOLDER: result-with-changed-permissions
