@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2020-03-10T00:00:00Z</updated>
+    <updated>2020-07-07T00:00:00Z</updated>
     <entry>
+    <title>Wiederaufnahmetreffen</title>
+    <link href="http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html" />
+    <id>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</id>
+    <published>2020-07-07T00:00:00Z</published>
+    <updated>2020-07-07T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Wiederaufnahmetreffen</h1>
+    <div class="info">
+      Gepostet am  7. Jul 20
+      
+          von Simon Kapfer
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Erstes Treffen nach dem Lockdown. Das genaue Programm steht noch nicht fest, aber es gibt noch den einen oder anderen Vortag zu beendigen.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Modallogik und Interpretationen</title>
     <link href="http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html" />
     <id>http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html</id>
@@ -244,37 +267,6 @@
 
   <p>Corny versucht es an etwas ganz Experimentellem: Kants kategorischem Imperativ in Haskell. Die absolute Erleuchtung ist noch nicht eingetreten, das Debugging und Modellieren macht aber Spaß.</p>
 <p>Anschließend gibt Ingo eine kurze Einführung in die Multiversenphilosophie in der Mengenlehre.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Philosophie der Mathematik und Platonismus auf Steroiden</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html</id>
-    <published>2019-05-16T00:00:00Z</published>
-    <updated>2019-05-16T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Philosophie der Mathematik und Platonismus auf Steroiden</h1>
-    <div class="info">
-      Gepostet am 16. Mai 19
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Heute Abend gibt es leider keinen ausgearbeiteten Vortrag mit LaTeX-Beamer-Folien oder einer Demonstration innerhalb DES Systems (Isabelle), es sei denn, jemand hat noch unerwartet was in petto. Dann möge sie oder er aufrufen! :-)</p>
-<p>Als Ersatz gibt es aber eine geführte Plauderrunde zur Philosophie der Mathematik. Ingo wird einen Überblick über folgende und verwandte Fragen geben. Sofern die Plauderrunde interessant wird, dann deswegen, weil es zu einer lebhaften Diskussion kommt.</p>
-<ul>
-<li><p>Sind mathematische Theoreme objektiv wahr? Was bedeutet das?</p></li>
-<li><p>Was versteht man unter der Höhe und Breite eines mathematischen (Mengen-)Universums? Wie entfaltet sich aus der leeren Menge alles, was Mathematikerinnen so studieren?</p></li>
-<li><p>Gelebte Subjektivität in der Mathematik: über die Konstruktion von mathematischen Universen mit nahezu beliebigen Eigenschaften[*]. Du möchtest ein Universum, in dem deine Lieblingsvermutung gilt? Kein Problem! Du möchtest eins, in dem sie nicht gilt? Ebenfalls möglich! Ein Überblick über die vernetzte Struktur des mengentheoretischen Multiversums.</p></li>
-<li><p>Möglicherweise können Xave oder andere einen physikalischen Standpunkt ergänzen und über Multiversen in der Physik sprechen.</p></li>
-</ul>
-<p>Für die Plauderrunde ist keinerlei mathematisches Vorwissen nötig. Begriffe wie Formalismus, Platonismus, Intuitionismus, ZFC und Mengenuniversum werden fallen, aber anschaulich erklärt werden. Bei Interesse können wir auch in Richtung Eliezer Yudkowsky/Metarationalität/Rokos Basilisk abdriften.</p>
 </article>
 ]]></summary>
 </entry>

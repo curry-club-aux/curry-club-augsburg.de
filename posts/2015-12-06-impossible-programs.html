@@ -41,17 +41,17 @@
     
   </header>
 
-  <div class="sourceCode" id="cb1"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" title="1"><span class="ot">{-# LANGUAGE FlexibleInstances #-}</span></a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span></a>
-<a class="sourceLine" id="cb1-3" title="3"></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="kw">import</span> <span class="dt">Data.Maybe</span></a></code></pre></div>
+  <div class="sourceCode" id="cb1"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="ot">{-# LANGUAGE FlexibleInstances #-}</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">import</span> <span class="dt">Data.Maybe</span></span></code></pre></div>
 <p>Mit <code>[Bool]</code> meinen wir den Typ der unendlichen 0/1-Folgen.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb2-1" title="1">p1, p2,<span class="ot"> p3 ::</span> [<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
-<a class="sourceLine" id="cb2-2" title="2">p1 xs <span class="ot">=</span> xs<span class="op">!!</span><span class="dv">3</span></a>
-<a class="sourceLine" id="cb2-3" title="3">p2 xs <span class="ot">=</span> xs<span class="op">!!</span><span class="dv">4</span></a>
-<a class="sourceLine" id="cb2-4" title="4">p3 xs <span class="ot">=</span> xs<span class="op">!!</span>(<span class="dv">2</span><span class="op">+</span><span class="dv">1</span>) <span class="op">&amp;&amp;</span> (xs<span class="op">!!</span><span class="dv">8</span> <span class="op">||</span> <span class="fu">not</span> (xs<span class="op">!!</span><span class="dv">8</span>))</a></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb3-1" title="1">test1 <span class="ot">=</span> p1 <span class="op">==</span> p2</a>
-<a class="sourceLine" id="cb3-2" title="2">test2 <span class="ot">=</span> p1 <span class="op">==</span> p3</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a>p1, p2,<span class="ot"> p3 ::</span> [<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>p1 xs <span class="ot">=</span> xs<span class="op">!!</span><span class="dv">3</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>p2 xs <span class="ot">=</span> xs<span class="op">!!</span><span class="dv">4</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>p3 xs <span class="ot">=</span> xs<span class="op">!!</span>(<span class="dv">2</span><span class="op">+</span><span class="dv">1</span>) <span class="op">&amp;&amp;</span> (xs<span class="op">!!</span><span class="dv">8</span> <span class="op">||</span> <span class="fu">not</span> (xs<span class="op">!!</span><span class="dv">8</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb3-1"><a href="#cb3-1"></a>test1 <span class="ot">=</span> p1 <span class="op">==</span> p2</span>
+<span id="cb3-2"><a href="#cb3-2"></a>test2 <span class="ot">=</span> p1 <span class="op">==</span> p3</span></code></pre></div>
 <p>Das liefert einen Fehler über eine fehlende <code>Eq</code>-Instanz, oder? Weit gefehlt! Beide Programme terminieren. <code>test1</code> hat den Wert <code>False</code>, <code>test2</code> hat den Wert <code>True</code>.</p>
 <p>Das ist umso erstaunlicher, wenn man bedenkt, dass <code>[Bool]</code> <em>überabzahlbar unendlich groß ist</em>.</p>
 <p><strong>Hintergrund: Abzählbarkeit und Überabzählbarkeit</strong></p>
@@ -84,11 +84,11 @@
 <p>Sei <code>p :: [Bool] -&gt; Bool</code> ein beliebiges Prädikat.</p>
 <p>Falls <code>p</code> erfüllbar ist, d.h. falls es eine 0/1-Folge <code>xs</code> gibt, sodass <code>p xs</code>, dann soll <code>epsilon p</code> irgendeine 0/1-Folge sein, sodass <code>p (epsilon p)</code>.</p>
 <p>Falls <code>p</code> nicht erfüllbar ist, dann kann <code>epsilon p</code> sein, was es möchte.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb6-1" title="1"><span class="ot">epsilon ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [<span class="dt">Bool</span>]</a>
-<a class="sourceLine" id="cb6-2" title="2">epsilon p <span class="ot">=</span> <span class="kw">if</span> p (<span class="dt">False</span> <span class="op">:</span> xs)</a>
-<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">then</span> <span class="dt">False</span> <span class="op">:</span> xs</a>
-<a class="sourceLine" id="cb6-4" title="4">    <span class="kw">else</span> <span class="dt">True</span>  <span class="op">:</span> epsilon (p <span class="op">.</span> (<span class="dt">True</span><span class="op">:</span>))</a>
-<a class="sourceLine" id="cb6-5" title="5">    <span class="kw">where</span> xs <span class="ot">=</span> epsilon (p <span class="op">.</span> (<span class="dt">False</span><span class="op">:</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb6-1"><a href="#cb6-1"></a><span class="ot">epsilon ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> [<span class="dt">Bool</span>]</span>
+<span id="cb6-2"><a href="#cb6-2"></a>epsilon p <span class="ot">=</span> <span class="kw">if</span> p (<span class="dt">False</span> <span class="op">:</span> xs)</span>
+<span id="cb6-3"><a href="#cb6-3"></a>    <span class="kw">then</span> <span class="dt">False</span> <span class="op">:</span> xs</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="kw">else</span> <span class="dt">True</span>  <span class="op">:</span> epsilon (p <span class="op">.</span> (<span class="dt">True</span><span class="op">:</span>))</span>
+<span id="cb6-5"><a href="#cb6-5"></a>    <span class="kw">where</span> xs <span class="ot">=</span> epsilon (p <span class="op">.</span> (<span class="dt">False</span><span class="op">:</span>))</span></code></pre></div>
 <p>Etwas schneller geht es dank Laziness so:</p>
 <pre><code>epsilon :: ([Bool] -&gt; Bool) -&gt; [Bool]
 epsilon p = h : epsilon (p . (h:))
@@ -99,21 +99,21 @@ epsilon p = h : epsilon (p . (h:))
 <p>Sei <code>p :: [Bool] -&gt; Bool</code> ein beliebiges Prädikat.</p>
 <p>Falls <code>p</code> erfüllbar ist, dann soll <code>exists p</code> ein Zeuge dieser Erfüllbarkeit sein (in einem Maybe verpackt), also eine 0/1-Folge <code>xs</code>, sodass <code>p xs</code>.</p>
 <p>Falls <code>p</code> nicht erfüllbar ist, soll <code>exists p</code> <code>Nothing</code> sein.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb8-1" title="1"><span class="ot">exists ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Maybe</span> [<span class="dt">Bool</span>]</a>
-<a class="sourceLine" id="cb8-2" title="2">exists p <span class="ot">=</span> <span class="kw">if</span> p xs <span class="kw">then</span> <span class="dt">Just</span> xs <span class="kw">else</span> <span class="dt">Nothing</span></a>
-<a class="sourceLine" id="cb8-3" title="3">    <span class="kw">where</span> xs <span class="ot">=</span> epsilon p</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb8-1"><a href="#cb8-1"></a><span class="ot">exists ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Maybe</span> [<span class="dt">Bool</span>]</span>
+<span id="cb8-2"><a href="#cb8-2"></a>exists p <span class="ot">=</span> <span class="kw">if</span> p xs <span class="kw">then</span> <span class="dt">Just</span> xs <span class="kw">else</span> <span class="dt">Nothing</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="kw">where</span> xs <span class="ot">=</span> epsilon p</span></code></pre></div>
 <p><strong>forall</strong></p>
 <p>Sei <code>p :: [Bool] -&gt; Bool</code> ein beliebiges Prädikat.</p>
 <p><code>forall p</code> soll dann und nur dann True sein, falls `<code>p auf jeder 0/1-Folge konstant</code>True` ist.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">forall</span><span class="ot"> ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Bool</span></a>
-<a class="sourceLine" id="cb9-2" title="2"><span class="kw">forall</span> p <span class="ot">=</span> isNothing <span class="op">$</span> exists (<span class="fu">not</span> <span class="op">.</span> p)</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">forall</span><span class="ot"> ::</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="ot">-&gt;</span> <span class="dt">Bool</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="kw">forall</span> p <span class="ot">=</span> isNothing <span class="op">$</span> exists (<span class="fu">not</span> <span class="op">.</span> p)</span></code></pre></div>
 <p>Punktfrei geht es auch:</p>
 <p><code>forall = not . isJust . exists . (not .)</code></p>
 <p><strong>Eq-Instanz für Funktionen [Bool] -&gt; Bool</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">instance</span> <span class="dt">Eq</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="kw">where</span></a>
-<a class="sourceLine" id="cb10-2" title="2">    f <span class="op">==</span> g <span class="ot">=</span> <span class="kw">forall</span> <span class="op">$</span> \xs <span class="ot">-&gt;</span> f xs <span class="op">==</span> g xs</a>
-<a class="sourceLine" id="cb10-3" title="3">    <span class="co">-- &quot;zwei Prädikate sind genau dann gleich, wenn sie auf jedem Argument</span></a>
-<a class="sourceLine" id="cb10-4" title="4">    <span class="co">-- gleich sind&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode haskell literate"><code class="sourceCode haskell"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">instance</span> <span class="dt">Eq</span> ([<span class="dt">Bool</span>] <span class="ot">-&gt;</span> <span class="dt">Bool</span>) <span class="kw">where</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>    f <span class="op">==</span> g <span class="ot">=</span> <span class="kw">forall</span> <span class="op">$</span> \xs <span class="ot">-&gt;</span> f xs <span class="op">==</span> g xs</span>
+<span id="cb10-3"><a href="#cb10-3"></a>    <span class="co">-- &quot;zwei Prädikate sind genau dann gleich, wenn sie auf jedem Argument</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a>    <span class="co">-- gleich sind&quot;</span></span></code></pre></div>
 <p><strong>Exkurs: Beispiel für eine unstetige Funktion</strong></p>
 <p>Eine Funktion von R nach R ist genau dann stetig, wenn man ihren Graph zeichnen kann, ohne den Stift abzusetzen. Eine stetige Funktion darf also keine Sprungstellen besitzen.</p>
 <pre>

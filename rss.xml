@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Tue, 10 Mar 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Jul 2020 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Wiederaufnahmetreffen</title>
+    <link>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Wiederaufnahmetreffen</h1>
+    <div class="info">
+      Gepostet am  7. Jul 20
+      
+          von Simon Kapfer
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Erstes Treffen nach dem Lockdown. Das genaue Programm steht noch nicht fest, aber es gibt noch den einen oder anderen Vortag zu beendigen.</p>
+</article>
+]]></description>
+    <pubDate>Tue, 07 Jul 2020 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Modallogik und Interpretationen</title>
     <link>http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html</link>
     <description><![CDATA[<article>
@@ -244,37 +267,6 @@
 ]]></description>
     <pubDate>Thu, 06 Jun 2019 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Philosophie der Mathematik und Platonismus auf Steroiden</title>
-    <link>http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Philosophie der Mathematik und Platonismus auf Steroiden</h1>
-    <div class="info">
-      Gepostet am 16. Mai 19
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Heute Abend gibt es leider keinen ausgearbeiteten Vortrag mit LaTeX-Beamer-Folien oder einer Demonstration innerhalb DES Systems (Isabelle), es sei denn, jemand hat noch unerwartet was in petto. Dann möge sie oder er aufrufen! :-)</p>
-<p>Als Ersatz gibt es aber eine geführte Plauderrunde zur Philosophie der Mathematik. Ingo wird einen Überblick über folgende und verwandte Fragen geben. Sofern die Plauderrunde interessant wird, dann deswegen, weil es zu einer lebhaften Diskussion kommt.</p>
-<ul>
-<li><p>Sind mathematische Theoreme objektiv wahr? Was bedeutet das?</p></li>
-<li><p>Was versteht man unter der Höhe und Breite eines mathematischen (Mengen-)Universums? Wie entfaltet sich aus der leeren Menge alles, was Mathematikerinnen so studieren?</p></li>
-<li><p>Gelebte Subjektivität in der Mathematik: über die Konstruktion von mathematischen Universen mit nahezu beliebigen Eigenschaften[*]. Du möchtest ein Universum, in dem deine Lieblingsvermutung gilt? Kein Problem! Du möchtest eins, in dem sie nicht gilt? Ebenfalls möglich! Ein Überblick über die vernetzte Struktur des mengentheoretischen Multiversums.</p></li>
-<li><p>Möglicherweise können Xave oder andere einen physikalischen Standpunkt ergänzen und über Multiversen in der Physik sprechen.</p></li>
-</ul>
-<p>Für die Plauderrunde ist keinerlei mathematisches Vorwissen nötig. Begriffe wie Formalismus, Platonismus, Intuitionismus, ZFC und Mengenuniversum werden fallen, aber anschaulich erklärt werden. Bei Interesse können wir auch in Richtung Eliezer Yudkowsky/Metarationalität/Rokos Basilisk abdriften.</p>
-</article>
-]]></description>
-    <pubDate>Thu, 16 May 2019 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2019-05-16-treffen-50.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
