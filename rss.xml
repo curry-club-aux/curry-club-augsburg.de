@@ -7,15 +7,15 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 06 Aug 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jul 2020 00:00:00 UT</lastBuildDate>
         <item>
     <title>Kripke-Semantik</title>
-    <link>http://curry-club-augsburg.de/posts/2020-08-06-treffen-60.html</link>
+    <link>http://curry-club-augsburg.de/posts/2020-07-15-treffen-60.html</link>
     <description><![CDATA[<article>
   <header>
     <h1>Kripke-Semantik</h1>
     <div class="info">
-      Gepostet am  6. Aug 20
+      Gepostet am 15. Jul 20
       
           von Simon
       
@@ -28,8 +28,8 @@
 <p>In Simons Vortrag soll nach einer kurzen Rückschau zunächst eine kleine Einführung in Kripke-Semantik gegeben werden. Anschließend werden wir einen Aufschrieb des ganzen im Curry-Howard-Stil in Haskell sehen, inklusive Beweis der Korrespondenzen zwischen Axiomenschemata und Eigenschaften der Weltzugänglichkeitsrelation. Zum Ausklang diskutieren wir über mögliche Einsatzgebiete der Modallogik, wie zum Beispiel die Psychologie des Möglichen.</p>
 </article>
 ]]></description>
-    <pubDate>Thu, 06 Aug 2020 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2020-08-06-treffen-60.html</guid>
+    <pubDate>Wed, 15 Jul 2020 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2020-07-15-treffen-60.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 <item>
