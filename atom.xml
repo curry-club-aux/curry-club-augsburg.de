@@ -8,8 +8,32 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2020-07-07T00:00:00Z</updated>
+    <updated>2020-08-04T00:00:00Z</updated>
     <entry>
+    <title>Kripke-Semantik</title>
+    <link href="http://curry-club-augsburg.de/posts/2020-08-04-treffen-60.html" />
+    <id>http://curry-club-augsburg.de/posts/2020-08-04-treffen-60.html</id>
+    <published>2020-08-04T00:00:00Z</published>
+    <updated>2020-08-04T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Kripke-Semantik</h1>
+    <div class="info">
+      Gepostet am  4. Aug 20
+      
+          von Simon
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Kripke-Semantik verfolgt das Ziel, modale Logiken mithilfe einer Art Universum von möglichen Welten zu modellieren und kommt der entsprechenden intuitiven Vorstellung ziemlich nahe.</p>
+<p>In Simons Vortrag soll nach einer kurzen Rückschau zunächst eine kleine Einführung in Kripke-Semantik gegeben werden. Anschließend werden wir einen Aufschrieb des ganzen im Curry-Howard-Stil in Haskell sehen, inklusive Beweis der Korrespondenzen zwischen Axiomenschemata und Eigenschaften der Weltzugänglichkeitsrelation. Zum Ausklang diskutieren wir über mögliche Einsatzgebiete der Modallogik, wie zum Beispiel die Psychologie des Möglichen.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Wiederaufnahmetreffen</title>
     <link href="http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html" />
     <id>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</id>
@@ -245,30 +269,6 @@
   </header>
 
   <p>Wir fangen an mit einem Vortrag von Profpatsch über Row Types in Purescript (30min–1h). Anschließend plaudern wir mit Makarius über “Large Mathematics Libraries” (gemeint ist natürlich “Formal Mathematics”).</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Kants kategorischer Imperativ in Haskell</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-06-06-treffen-51.html</id>
-    <published>2019-06-06T00:00:00Z</published>
-    <updated>2019-06-06T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Kants kategorischer Imperativ in Haskell</h1>
-    <div class="info">
-      Gepostet am  6. Jun 19
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Corny versucht es an etwas ganz Experimentellem: Kants kategorischem Imperativ in Haskell. Die absolute Erleuchtung ist noch nicht eingetreten, das Debugging und Modellieren macht aber Spaß.</p>
-<p>Anschließend gibt Ingo eine kurze Einführung in die Multiversenphilosophie in der Mengenlehre.</p>
 </article>
 ]]></summary>
 </entry>
