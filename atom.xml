@@ -8,8 +8,32 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2020-08-06T00:00:00Z</updated>
+    <updated>2020-09-01T00:00:00Z</updated>
     <entry>
+    <title>Direkt ins Sangam</title>
+    <link href="http://curry-club-augsburg.de/posts/2020-09-01-treffen-61.html" />
+    <id>http://curry-club-augsburg.de/posts/2020-09-01-treffen-61.html</id>
+    <published>2020-09-01T00:00:00Z</published>
+    <updated>2020-09-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Direkt ins Sangam</h1>
+    <div class="info">
+      Gepostet am  1. Sep 20
+      
+          von Tim
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Da es dieses Mal keine Vortragseinreichungen gab, treffen wir uns direkt um 20:00 (!) Uhr im <a href="https://www.restaurant-sangam-augsburg.de/">Restaurant Sangam</a>.</p>
+<p>Jeder, der kommen möchte, wird gebeten, sich zwecks Reservierung bis 17:00 Uhr am Tag des Treffens auf der Mailingliste oder per Mail an <a href="mailto:tim@timbaumann.info">tim@timbaumann.info</a> anzumelden.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Kripke-Semantik</title>
     <link href="http://curry-club-augsburg.de/posts/2020-08-06-treffen-60.html" />
     <id>http://curry-club-augsburg.de/posts/2020-08-06-treffen-60.html</id>
@@ -419,29 +443,6 @@
 
   <p>Anton Lorenzen aus Bonn besucht uns. Er wird über seine Erfahrungen, ein <a href="https://github.com/algebraic-graphs/agda">nichttriviales Verifizierungsprojekt</a> in Agda durchzuführen, sprechen.</p>
 <p>Zudem wird Makarius ein paar Worte zu <a href="http://drops.dagstuhl.de/opus/volltexte/2019/11076/pdf/LIPIcs-ITP-2019-21.pdf">Virtualisierung von HOL4 in Isabelle</a> sagen.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Row Types in Purescript und Large Mathematics Libraries</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-08-08-treffen-52.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-08-08-treffen-52.html</id>
-    <published>2019-08-08T00:00:00Z</published>
-    <updated>2019-08-08T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Row Types in Purescript und Large Mathematics Libraries</h1>
-    <div class="info">
-      Gepostet am  8. Aug 19
-      
-          von diekmann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Wir fangen an mit einem Vortrag von Profpatsch über Row Types in Purescript (30min–1h). Anschließend plaudern wir mit Makarius über “Large Mathematics Libraries” (gemeint ist natürlich “Formal Mathematics”).</p>
 </article>
 ]]></summary>
 </entry>
