@@ -1,7 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import           Prelude hiding (div,(**))
-import           Data.Monoid
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display

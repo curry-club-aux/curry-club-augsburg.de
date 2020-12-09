@@ -6,7 +6,6 @@ import           Data.Either (partitionEithers)
 import           Data.Function (on)
 import           Data.List (partition, sortBy)
 import           Data.Maybe (isJust)
-import           Data.Monoid ((<>))
 import           Data.Time
 import           Data.Yaml (parseMaybe, (.:), (.:?), Value)
 import           GHC.IO.Encoding (setLocaleEncoding, utf8)
