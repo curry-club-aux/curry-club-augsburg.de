@@ -8,8 +8,32 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2020-09-30T00:00:00Z</updated>
+    <updated>2020-12-17T00:00:00Z</updated>
     <entry>
+    <title>Slate, ein webbasierter Beweisassistent</title>
+    <link href="http://curry-club-augsburg.de/posts/2020-12-17-treffen-64.html" />
+    <id>http://curry-club-augsburg.de/posts/2020-12-17-treffen-64.html</id>
+    <published>2020-12-17T00:00:00Z</published>
+    <updated>2020-12-17T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Slate, ein webbasierter Beweisassistent</h1>
+    <div class="info">
+      Gepostet am 17. Dez 20
+      
+          von Tim
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Sebastian Reichelt wird uns seinen interaktiven Beweisassistenten <a href="https://slate-prover.org/">Slate</a> vorstellen. Das besondere an diesem Beweisassistenten ist, dass man Theoreme und Beweise nicht in einem Texteditor schreibt, sondern in einer webbasierten Oberfläche konstruiert.</p>
+<p>Links zur Teilnahme am Online-Meeting werden rechtzeitig an dieser Stelle erscheinen und auf der Mailing-Liste herumgeschickt werden.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Direkt ins Sangam</title>
     <link href="http://curry-club-augsburg.de/posts/2020-09-30-treffen-62.html" />
     <id>http://curry-club-augsburg.de/posts/2020-09-30-treffen-62.html</id>
@@ -420,29 +444,6 @@
   </header>
 
   <p>Vermutlich der letzte Curry Club vor dem Congress.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>HOL4-Virtualisierung und TypeScript</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-10-03-treffen-54.html</id>
-    <published>2019-10-03T00:00:00Z</published>
-    <updated>2019-10-03T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>HOL4-Virtualisierung und TypeScript</h1>
-    <div class="info">
-      Gepostet am  3. Okt 19
-      
-          von iblech
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Makarius erklärte <a href="http://drops.dagstuhl.de/opus/volltexte/2019/11076/pdf/LIPIcs-ITP-2019-21.pdf">Virtualisierung von HOL4 in Isabelle</a>.</p>
 </article>
 ]]></summary>
 </entry>
