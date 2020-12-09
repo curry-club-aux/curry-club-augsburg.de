@@ -138,14 +138,14 @@ main = do
                kind feed feedCtx posts
 
 --------------------------------------------------------------------------------
-mesz :: TimeZone
-mesz = TimeZone 120 True "MESZ"
+_mesz :: TimeZone
+_mesz = TimeZone 120 True "MESZ"
 
-_mez :: TimeZone
-_mez = TimeZone 60 True "MEZ"
+mez :: TimeZone
+mez = TimeZone 60 True "MEZ"
 
 currentTimeZone :: TimeZone
-currentTimeZone = mesz
+currentTimeZone = mez
 
 curryClubLocale :: TimeLocale
 curryClubLocale =
