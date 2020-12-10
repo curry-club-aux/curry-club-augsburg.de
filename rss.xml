@@ -24,8 +24,8 @@
     
   </header>
 
-  <p>Sebastian Reichelt wird uns seinen interaktiven Beweisassistenten <a href="https://slate-prover.org/">Slate</a> vorstellen. Das besondere an diesem Beweisassistenten ist, dass man Theoreme und Beweise nicht in einem Texteditor schreibt, sondern in einer webbasierten Oberfläche konstruiert.</p>
-<p>Links zur Teilnahme am Online-Meeting werden rechtzeitig an dieser Stelle erscheinen und auf der Mailing-Liste herumgeschickt werden.</p>
+  <p>Sebastian Reichelt wird uns seinen in Entwicklung befindlichen interaktiven Beweisassistenten <a href="https://slate-prover.org/">Slate</a> vorstellen. Das besondere an diesem Beweisassistenten ist, dass man Theoreme und Beweise nicht in einem Texteditor schreibt, sondern in einer webbasierten Oberfläche konstruiert.</p>
+<p>Um am Treffen teilzunehmen reicht ein Klick auf den <a href="https://meeting.sketis.net/Iy1eeke2eS">Jitsi-Meeting-Link</a>. Es ist keine Installation von Zusatzsoftware nötig, ein moderner Webbrowser genügt.</p>
 </article>
 ]]></description>
     <pubDate>Wed, 09 Dec 2020 00:00:00 UT</pubDate>
@@ -49,7 +49,7 @@
   </header>
 
   <p>Matthias hat eine Art kleine (winzige) Bibliothek für String-Diagramme in Agda geschrieben. Das war nicht geplant, aber es hat so gut funktioniert, dass er gerne mit allen, die es interessiert, ein bisschen darüber reden würde.</p>
-<p>Was sind String-Diagramme? Für mich sind String-Diagramme eine angeneme Notation für natürliche Transformationen zwischen Funktoren. (Oder allgemeiner für 2-Zellen zwischen 1-Zellen einer beliebigen 2-Kategorie.) Man zeichnet dabei Funktoren als senkrechte Linien (Strings) und natürliche Transformationen als Verzweigungspunkte. Damit kann man zum Beispiel extrem angenehm beweisen, dass jede Adjunktion eine Monade induziert.</p>
+<p>Was sind String-Diagramme? Für mich sind String-Diagramme eine angenehme Notation für natürliche Transformationen zwischen Funktoren. (Oder allgemeiner für 2-Zellen zwischen 1-Zellen einer beliebigen 2-Kategorie.) Man zeichnet dabei Funktoren als senkrechte Linien (Strings) und natürliche Transformationen als Verzweigungspunkte. Damit kann man zum Beispiel extrem angenehm beweisen, dass jede Adjunktion eine Monade induziert.</p>
 </article>
 ]]></description>
     <pubDate>Thu, 03 Dec 2020 00:00:00 UT</pubDate>
