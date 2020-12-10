@@ -33,6 +33,30 @@
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 <item>
+    <title>String-Diagramme</title>
+    <link>http://curry-club-augsburg.de/posts/2020-12-03-treffen-63.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>String-Diagramme</h1>
+    <div class="info">
+      Gepostet am  3. Dez 20
+      
+          von Simon
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Matthias hat eine Art kleine (winzige) Bibliothek für String-Diagramme in Agda geschrieben. Das war nicht geplant, aber es hat so gut funktioniert, dass er gerne mit allen, die es interessiert, ein bisschen darüber reden würde.</p>
+<p>Was sind String-Diagramme? Für mich sind String-Diagramme eine angeneme Notation für natürliche Transformationen zwischen Funktoren. (Oder allgemeiner für 2-Zellen zwischen 1-Zellen einer beliebigen 2-Kategorie.) Man zeichnet dabei Funktoren als senkrechte Linien (Strings) und natürliche Transformationen als Verzweigungspunkte. Damit kann man zum Beispiel extrem angenehm beweisen, dass jede Adjunktion eine Monade induziert.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 03 Dec 2020 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2020-12-03-treffen-63.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Direkt ins Sangam</title>
     <link>http://curry-club-augsburg.de/posts/2020-09-30-treffen-62.html</link>
     <description><![CDATA[<article>
@@ -421,29 +445,6 @@
 ]]></description>
     <pubDate>Thu, 28 Nov 2019 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2019-11-28-treffen-56.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Steht noch nicht fest, aber es wird bestimmt gut</title>
-    <link>http://curry-club-augsburg.de/posts/2019-11-28-treffen-55.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Steht noch nicht fest, aber es wird bestimmt gut</h1>
-    <div class="info">
-      Gepostet am 28. Nov 19
-      
-          von diekmann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Vermutlich der letzte Curry Club vor dem Congress.</p>
-</article>
-]]></description>
-    <pubDate>Thu, 28 Nov 2019 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2019-11-28-treffen-55.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
