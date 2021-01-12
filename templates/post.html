@@ -7,12 +7,14 @@
           von $author$
       $endif$
     </div>
-    $if(image)$
-    <img src="$image$" alt="$image-alt$" />
-    $endif$
-    $if(image-attr)$
-    <div class="attribution"><p>$image-attr$</p></div>
-    $endif$
+    <figure>
+      $if(image)$
+      <img src="$image$" alt="$image-alt$" />
+      $endif$
+      $if(image-attr)$
+      <figcaption class="attribution">$image-attr$</figcaption>
+      $endif$
+    </figure>
   </header>
 
   $body$

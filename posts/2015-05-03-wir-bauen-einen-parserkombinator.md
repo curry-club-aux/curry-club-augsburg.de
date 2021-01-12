@@ -101,8 +101,10 @@ parseList = do
 - Wir geben keine guten Parse-Fehlermeldungen aus
 - Wir haben keine Kombinatoren zum Parsen von Termen mit Operatoren
 
+<figure>
 ![xkcd about regular expressions](/images/regular_expressions.png)
-<div class="attribution"><p><a href="https://xkcd.com/208/">xkcd</a></p></div>
+<figcaption class="attribution"><cite><a href="https://xkcd.com/208/">xkcd 208</a></cite></figcaption>
+</figure>
 
 Danke [Ingo Blechschmidt][ingo] für den tollen Vortrag! Das Ergebnis kann [hier][parserc] bestaunt werden.
 
