@@ -112,6 +112,7 @@ postCss = do
         maxWidth (px 400)
         display block
         sym2 margin auto auto
+    img ? maxWidth (pct 100)
     img |+ (div # ".attribution") ? do
       color ourPurple
       textAlign end
