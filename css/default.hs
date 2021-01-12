@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import           Prelude hiding (div,(**))
+import           Prelude hiding (div,(**),span)
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
@@ -62,14 +62,16 @@ layoutCss = do
     div # "#logo" ? do
       width (px 320)
       float floatLeft
-    blockquote ? do
+    figure ? do
       sym margin nil
       paddingRight (px 40)
       textAlign end
       width (px 150)
       float floatRight
-      p ? sym margin nil
-      footer ? do
+      blockquote ? do
+        sym margin nil
+        p ? sym margin nil
+      figcaption ? do
         color rose
         borderTopStyle none
         marginTop nil
@@ -226,7 +228,7 @@ contentCss = do
       color rose
     Clay.span # ".meetup-counter" ? do
       paddingRight (px 15)
-    div # ".meetup-counter-square" ? do
+    span # ".meetup-counter-square" ? do
       display inlineBlock
       fontSize (px 24)
       lineHeight (px 40)
@@ -237,7 +239,7 @@ contentCss = do
       marginBottom (px 4)
       verticalAlign textTop
       textAlign (alignSide sideCenter)
-    ".meetup-upcoming" ? div # ".meetup-counter-square" ?
+    ".meetup-upcoming" ? span # ".meetup-counter-square" ?
       background darkerPurple
     a # ".post-title" ? do
       color lightYellow
