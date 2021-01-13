@@ -8,8 +8,33 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2020-12-09T00:00:00Z</updated>
+    <updated>2021-01-21T00:00:00Z</updated>
     <entry>
+    <title>WebAssembly — Systemprogrammierung im Browser</title>
+    <link href="http://curry-club-augsburg.de/posts/2021-01-21-treffen-65.html" />
+    <id>http://curry-club-augsburg.de/posts/2021-01-21-treffen-65.html</id>
+    <published>2021-01-21T00:00:00Z</published>
+    <updated>2021-01-21T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>WebAssembly — Systemprogrammierung im Browser</h1>
+    <div class="info">
+      Gepostet am 21. Jan 21
+      
+          von Lukas
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Cornelius Diekmann wird uns in die Semantik der <a href="https://webassembly.org/">WebAssembly</a>-Stack-Maschine einführen und sie auch im Text-Format <code>wat</code> programmieren. Anschließend soll auch mit der Welt interagiert werden: Wir werden WebAssembly-IO im Browser sehen und, wenn noch Zeit bleibt, Rust nach WebAssembly kompilieren und auch mit dieser Sprache mit den Browser-APIs interagieren.</p>
+<p>In der Thematik der Web-Programmierung bleibend setzt Fabian Huchs Vortrag am anderen Ende des Spektrums an: Statt Systemprogrammierung im Browser, stellt er die Programmiersprache <a href="https://elm-lang.org/">Elm</a> vor.</p>
+<p>Um am Treffen teilzunehmen reicht ein Klick auf den <a href="https://meeting.augsburg.one/eobohpheraiveicaefoe">Jitsi-Meeting-Link</a>. Es ist keine Installation von Zusatzsoftware nötig, ein moderner Webbrowser genügt.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Slate, ein webbasierter Beweisassistent</title>
     <link href="http://curry-club-augsburg.de/posts/2020-12-09-treffen-64.html" />
     <id>http://curry-club-augsburg.de/posts/2020-12-09-treffen-64.html</id>
@@ -415,36 +440,6 @@
 <p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
 <p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
 </blockquote>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Programmieren auf Typebene in TypeScript</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-11-28-treffen-56.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-11-28-treffen-56.html</id>
-    <published>2019-11-28T00:00:00Z</published>
-    <updated>2019-11-28T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Programmieren auf Typebene in TypeScript</h1>
-    <div class="info">
-      Gepostet am 28. Nov 19
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Auf unserem erstes Treffen im Jahr 2020 wird Tim erklären, wie man in TypeScript auf Typ-Ebene programmiert. Es wird gezeigt werden,</p>
-<ul>
-<li>wie man einen Typ für eine Curry-Funktion schreibt, die Funktionen mit beliebiger Anzahl an Argumenten curryfizieren kann,</li>
-<li>wie man auf Typ-Ebene Arithmetik mit natürlichen Zahlen implementieren kann</li>
-<li>und wie man darauf aufbauend eine Library für typsicheres Rechnen mit physikalischen Größen implementieren kann.</li>
-</ul>
-<p>Und vielleicht wird sogar bewiesen, dass Programmieren auf Typ-Ebene turing-vollständig ist.</p>
-<p>Sollte noch Zeit bleiben (unwahrscheinlich?), wird Simon über Modallogik berichten.</p>
 </article>
 ]]></summary>
 </entry>

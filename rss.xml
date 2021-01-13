@@ -7,8 +7,33 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Wed, 09 Dec 2020 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Jan 2021 00:00:00 UT</lastBuildDate>
         <item>
+    <title>WebAssembly — Systemprogrammierung im Browser</title>
+    <link>http://curry-club-augsburg.de/posts/2021-01-21-treffen-65.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>WebAssembly — Systemprogrammierung im Browser</h1>
+    <div class="info">
+      Gepostet am 21. Jan 21
+      
+          von Lukas
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Cornelius Diekmann wird uns in die Semantik der <a href="https://webassembly.org/">WebAssembly</a>-Stack-Maschine einführen und sie auch im Text-Format <code>wat</code> programmieren. Anschließend soll auch mit der Welt interagiert werden: Wir werden WebAssembly-IO im Browser sehen und, wenn noch Zeit bleibt, Rust nach WebAssembly kompilieren und auch mit dieser Sprache mit den Browser-APIs interagieren.</p>
+<p>In der Thematik der Web-Programmierung bleibend setzt Fabian Huchs Vortrag am anderen Ende des Spektrums an: Statt Systemprogrammierung im Browser, stellt er die Programmiersprache <a href="https://elm-lang.org/">Elm</a> vor.</p>
+<p>Um am Treffen teilzunehmen reicht ein Klick auf den <a href="https://meeting.augsburg.one/eobohpheraiveicaefoe">Jitsi-Meeting-Link</a>. Es ist keine Installation von Zusatzsoftware nötig, ein moderner Webbrowser genügt.</p>
+</article>
+]]></description>
+    <pubDate>Thu, 21 Jan 2021 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2021-01-21-treffen-65.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Slate, ein webbasierter Beweisassistent</title>
     <link>http://curry-club-augsburg.de/posts/2020-12-09-treffen-64.html</link>
     <description><![CDATA[<article>
@@ -415,36 +440,6 @@
 ]]></description>
     <pubDate>Wed, 11 Dec 2019 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Programmieren auf Typebene in TypeScript</title>
-    <link>http://curry-club-augsburg.de/posts/2019-11-28-treffen-56.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Programmieren auf Typebene in TypeScript</h1>
-    <div class="info">
-      Gepostet am 28. Nov 19
-      
-          von Tim Baumann
-      
-    </div>
-    
-    
-  </header>
-
-  <p>Auf unserem erstes Treffen im Jahr 2020 wird Tim erklären, wie man in TypeScript auf Typ-Ebene programmiert. Es wird gezeigt werden,</p>
-<ul>
-<li>wie man einen Typ für eine Curry-Funktion schreibt, die Funktionen mit beliebiger Anzahl an Argumenten curryfizieren kann,</li>
-<li>wie man auf Typ-Ebene Arithmetik mit natürlichen Zahlen implementieren kann</li>
-<li>und wie man darauf aufbauend eine Library für typsicheres Rechnen mit physikalischen Größen implementieren kann.</li>
-</ul>
-<p>Und vielleicht wird sogar bewiesen, dass Programmieren auf Typ-Ebene turing-vollständig ist.</p>
-<p>Sollte noch Zeit bleiben (unwahrscheinlich?), wird Simon über Modallogik berichten.</p>
-</article>
-]]></description>
-    <pubDate>Thu, 28 Nov 2019 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2019-11-28-treffen-56.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
