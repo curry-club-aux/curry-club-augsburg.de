@@ -20,8 +20,10 @@
           von Lukas
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Nachdem es zuletzt um low-level Programmierung im Browser mit WebAssembly ging, steht für dieses Treffen das andere Ende des Spektrums auf dem Plan: Fabian Huch wird uns <a href="https://elm-lang.org/">Elm</a> vorstellen, eine statisch typisierte, funktionale Programmiersprache für Webentwicklung.</p>
@@ -43,8 +45,10 @@
           von Lukas
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Cornelius Diekmann wird uns in die Semantik der <a href="https://webassembly.org/">WebAssembly</a>-Stack-Maschine einführen und sie auch im Text-Format <code>wat</code> programmieren. Anschließend soll auch mit der Welt interagiert werden: Wir werden WebAssembly-IO im Browser sehen und, wenn noch Zeit bleibt, Rust nach WebAssembly kompilieren und auch mit dieser Sprache mit den Browser-APIs interagieren.</p>
@@ -67,8 +71,10 @@
           von Tim
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Sebastian Reichelt wird uns seinen in Entwicklung befindlichen interaktiven Beweisassistenten <a href="https://slate-prover.org/">Slate</a> vorstellen. Das besondere an diesem Beweisassistenten ist, dass man Theoreme und Beweise nicht in einem Texteditor schreibt, sondern in einer webbasierten Oberfläche konstruiert.</p>
@@ -91,8 +97,10 @@
           von Simon
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Matthias hat eine Art kleine (winzige) Bibliothek für String-Diagramme in Agda geschrieben. Das war nicht geplant, aber es hat so gut funktioniert, dass er gerne mit allen, die es interessiert, ein bisschen darüber reden würde.</p>
@@ -115,8 +123,10 @@
           von Tim
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Da es auch dieses Mal keine Vortragseinreichungen gab, treffen wir uns direkt um 21:00 (!) Uhr im <a href="https://www.restaurant-sangam-augsburg.de/">Restaurant Sangam</a>.</p>
@@ -139,8 +149,10 @@
           von Tim
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Da es dieses Mal keine Vortragseinreichungen gab, treffen wir uns direkt um 20:00 (!) Uhr im <a href="https://www.restaurant-sangam-augsburg.de/">Restaurant Sangam</a>.</p>
@@ -163,8 +175,10 @@
           von Simon
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Kripke-Semantik verfolgt das Ziel, modale Logiken mithilfe einer Art Universum von möglichen Welten zu modellieren und kommt der entsprechenden intuitiven Vorstellung ziemlich nahe.</p>
@@ -360,8 +374,10 @@
           von Simon Kapfer
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Erstes Treffen nach dem Lockdown. Das genaue Programm steht noch nicht fest, aber es gibt noch den einen oder anderen Vortrag fortzusetzen.</p>
@@ -385,8 +401,10 @@
           von Ingo Blechschmidt
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Simon schließt seine Vortragsreihe zu Modallogik ab: “Nachdem wir die formalen modallogischen Schlussregeln gesehen haben, stelle ich meine Versuche vor, Datenstrukturen in Haskell zu definieren, welche diesen genügen. Zur Auflockerung will ich ein paar philosophische Ansichten zu den Modalitäten durchgehen.”</p>
@@ -408,8 +426,10 @@
           von Ingo Blechschmidt
       
     </div>
-    
-    
+    <figure>
+      
+      
+    </figure>
   </header>
 
   <p>Michael Färber ist bei uns zu Gast und wird über <em>Beweisüberprüfung mittels des Lambda-Pi-Kalküls</em> vortragen:</p>
