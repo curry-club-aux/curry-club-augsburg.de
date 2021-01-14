@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2021-01-21T00:00:00Z</updated>
+    <updated>2021-01-28T00:00:00Z</updated>
     <entry>
+    <title>Elm</title>
+    <link href="http://curry-club-augsburg.de/posts/2021-01-28-treffen-66.html" />
+    <id>http://curry-club-augsburg.de/posts/2021-01-28-treffen-66.html</id>
+    <published>2021-01-28T00:00:00Z</published>
+    <updated>2021-01-28T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Elm</h1>
+    <div class="info">
+      Gepostet am 28. Jan 21
+      
+          von Lukas
+      
+    </div>
+    
+    
+  </header>
+
+  <p>Nachdem es zuletzt um low-level Programmierung im Browser mit WebAssembly ging, steht für dieses Treffen das andere Ende des Spektrums auf dem Plan: Fabian Huch wird uns <a href="https://elm-lang.org/">Elm</a> vorstellen, eine statisch typisierte, funktionale Programmiersprache für Webentwicklung.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>WebAssembly — Systemprogrammierung im Browser</title>
     <link href="http://curry-club-augsburg.de/posts/2021-01-21-treffen-65.html" />
     <id>http://curry-club-augsburg.de/posts/2021-01-21-treffen-65.html</id>
@@ -29,7 +52,6 @@
   </header>
 
   <p>Cornelius Diekmann wird uns in die Semantik der <a href="https://webassembly.org/">WebAssembly</a>-Stack-Maschine einführen und sie auch im Text-Format <code>wat</code> programmieren. Anschließend soll auch mit der Welt interagiert werden: Wir werden WebAssembly-IO im Browser sehen und, wenn noch Zeit bleibt, Rust nach WebAssembly kompilieren und auch mit dieser Sprache mit den Browser-APIs interagieren.</p>
-<p>In der Thematik der Web-Programmierung bleibend setzt Fabian Huchs Vortrag am anderen Ende des Spektrums an: Statt Systemprogrammierung im Browser, stellt er die Programmiersprache <a href="https://elm-lang.org/">Elm</a> vor.</p>
 <p>Um am Treffen teilzunehmen reicht ein Klick auf den <a href="https://meeting.augsburg.one/eobohpheraiveicaefoe">Jitsi-Meeting-Link</a>. Es ist keine Installation von Zusatzsoftware nötig, ein moderner Webbrowser genügt.</p>
 </article>
 ]]></summary>
@@ -400,46 +422,6 @@
 <p>Ich präsentiere zuerst den Lambda-Pi-Kalkül und zeige dann, wie man höherstufige Logik in diesem Kalkül formalisiert. Anschließend zeige ich ein Zwischenergebnis meiner Zusammenarbeit mit Makarius, nämlich einen Export von Isabelle in den Lambda-Pi-Kalkül. Abschließend präsentiere ich meine minimalistische Implementierung eines Typenprüfers für den Lambda-Pi-Kalkül.</p>
 </blockquote>
 <p>Zusätzlich wird es Fortsetzungen der Vorträge vom letzten Mal geben.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Fünfter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Dezember 2019</title>
-    <link href="http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html" />
-    <id>http://curry-club-augsburg.de/posts/2019-12-11-fuenfter-workshop.html</id>
-    <published>2019-12-11T00:00:00Z</published>
-    <updated>2019-12-11T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Fünfter großer Haskell-Workshop des Curry Clubs Augsburg am 21. Dezember 2019</h1>
-    <div class="info">
-      Gepostet am 11. Dez 19
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    
-    
-  </header>
-
-  <div class="right">
-<p><a href="/files/haskellworkshop-plakat3.pdf"> <img width="300" src="/files/haskellworkshop-plakat3.png" /> </a></p>
-</div>
-<p>Liebe Freundinnen der Sonne!</p>
-<p>Wir, der Curry Club Augsburg, laden alle Interessierten herzlich zu unserem fünften <strong>Haskell-Workshop für Neulinge</strong> ein. Dieser findet am <strong>21. Dezember 2019</strong>, einem Samstag, von 10:00 Uhr bis 18:00 Uhr statt, aller Voraussicht nach im <strong>OpenLab Augsburg</strong>. Wie bei den vorherigen Malen ist die Teilnahme kostenlos.</p>
-<p>Haskell ist eine wunderschöne Sprache, in der man nicht das “wie” spezifiziert, sondern das “was”. Ein Haskell-Programm besteht – anders als bei allen gewöhnlichen Programmiersprachen – nicht aus einer Folge von Anweisungen, welche von oben nach unten (und nur durch Kontrollstrukturen oder Subroutinen aufgelockert) abgearbeitet werden. Haskell-Code kann fast beliebig in seiner Reihenfolge permutiert werden, ohne die Bedeutung zu verändern. Ein ausführlicher Werbetext steht unten.</p>
-<p>Zielgruppe des Workshops sind völlige Haskell-Neulinge. Teilnahmevoraussetzung ist entweder Erfahrung mit einer beliebigen anderen Programmiersprache oder Vertrautheit mit mathematisch/abstraktem Denken. Haskell-Profis sollten keinesfalls als Teilnehmende mitmachen, sondern lieber das Betreuendenteam verstärken.</p>
-<p>Damit wir unsere Kapazität überblicken können, ist zur Teilnahme eine <a href="https://etherpad.wikimedia.org/p/haskell-workshop-2019">unverbindliche vorherige Anmeldung</a> nötig. Laptop mitbringen und vorab die <a href="https://www.haskell.org/platform/">Haskell Platform</a> installieren – Details dazu gibt es per Mail nach erfolgter Anmeldung.</p>
-<p>Wir freuen uns auf euch!</p>
-<p>Euer Team vom Curry Club</p>
-<!--more-->
-<blockquote>
-<p>Was ist schneller als C++, prägnanter als Perl, regelmäßiger als Python, flexibler als Ruby, typisierter als C#, robuster als Java und hat absolut nichts mit PHP gemeinsam? Es ist Haskell!</p>
-<p>Haskell ist eine moderne und innovative Programmiersprache, die sich von bekannten imperativen Sprachen in vielerlei Hinsicht deutlich unterscheidet: Ein Haskell-Programm besteht nicht etwa aus einer Abfolge von auszuführenden Anweisungen, sondern aus einer Ansammlung von Deklarationen, deren Reihenfolge keine Rolle spielt. Auch gibt es keine veränderlichen Variablen, und ausgewertet wird nur, was wirklich benötigt wird; unendliche Datenstrukturen sind möglich und sinnvoll.</p>
-<p>Dieses Denkparadigma mag anfangs sehr ungewohnt sein, zieht jedoch eine Reihe von Vorteilen mit sich: Da es keine Nebenwirkungen wie beispielsweise globale Variablen gibt, kann man Code rein lokal verstehen. Damit wird es einfacher, modular Komponenten zusammenzubauen, sich Datenflüsse klarzumachen und Code auf seine Korrektheit hin zu überprüfen. Insbesondere vereinfacht sich die Programmierung mit Threads enorm.</p>
-<p>Ferner ist Haskells starkes statisches Typsystem eine große Hilfe beim Programmieren und verhindert viel mehr Fehler schon während des Kompilierens, als man vielleicht aus anderen Sprachen gewohnt ist. Es gibt das Motto, dass, wenn Haskell-Code erst einmal erfolgreich durchkompiliere, er dann auch schon korrekt sei. Das ist sicherlich übertrieben, hat aber einen erstaunlich wahren Kern.</p>
-<p>Beim Erlernen von Haskell lernt man viele neue Herangehensweisen kennen, die auch in anderen Sprachen nützlich sind; das ist einer der Hauptvorteile an Haskell, der auch dann noch relevant ist, wenn man aus verschiedenen Gründen im täglichen Leben nicht in Haskell programmieren möchte.</p>
-</blockquote>
 </article>
 ]]></summary>
 </entry>
