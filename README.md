@@ -25,9 +25,12 @@ Teilüberschriften starten mit `#` und dann für jede Ebene ein `#` mehr.
 
 Bis eine bessere Lösung gefunden wird, kann eine Bildquelle im Text mit
 
-    <div class="attribution"><p><a href="https://xkcd.com/208/">xkcd</a></p></div>
+    <figure>
+    ![xkcd about regular expressions](/images/regular_expressions.png)
+    <figcaption class="attribution"><cite><a href="https://xkcd.com/208/">xkcd 208</a></cite></figcaption>
+    </figure>
 
-angegeben werden.
+angegeben werden. `cite` sollte der HTML-Spezifikation den vollen Titel der Quelle enthalten.
 
 Der Post, dessen `meetup-announcement`-Datum am nähesten in der Zukunft liegt, wird auf der Hauptseite angezeigt und gibt das Datum des nächsten Treffens an.
 

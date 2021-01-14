@@ -112,10 +112,11 @@ postCss = do
         maxWidth (px 400)
         display block
         sym2 margin auto auto
-    img |+ (div # ".attribution") ? do
+    img ? maxWidth (pct 100)
+    img |+ (figcaption # ".attribution") ? do
       color ourPurple
       textAlign end
-      p ? sym2 margin (em 0.5) nil
+      sym2 margin (em 0.5) nil
       ((a # link) <> (a # visited)) ?
         color ourPurple
     ".portrait" ** img ? do
