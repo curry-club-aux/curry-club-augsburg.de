@@ -8,8 +8,33 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2021-01-28T00:00:00Z</updated>
+    <updated>2021-02-25T00:00:00Z</updated>
     <entry>
+    <title>Erlang</title>
+    <link href="http://curry-club-augsburg.de/posts/2021-02-25-treffen-67.html" />
+    <id>http://curry-club-augsburg.de/posts/2021-02-25-treffen-67.html</id>
+    <published>2021-02-25T00:00:00Z</published>
+    <updated>2021-02-25T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Erlang</h1>
+    <div class="info">
+      Gepostet am 25. Feb 21
+      
+          von Simon
+      
+    </div>
+    <figure>
+      
+      
+    </figure>
+  </header>
+
+  <p>Erlang ist eine funktionale, schwach typisierte Programmiersprache, welche besonderes Augenmerk auf Nebenläufigkeit legt. Anreißer: - Erlangs Motto ist „let it crash!“. Trotzdem ist das System so konzipiert, dass es über Jahre hinweg ohne Downtimes laufen kann und Code Changes im laufenden Betrieb ermöglicht. - Das <a href="https://www.youtube.com/watch?v=uKfKtXYLG78">Werbevideo</a> von den Erfindern der Sprache - Philip Wadler und Simon Morlow haben ein Jahr lang versucht, Erlang ein stärkeres Typsytem zu verpassen und sind damit gescheitert.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Elm</title>
     <link href="http://curry-club-augsburg.de/posts/2021-01-28-treffen-66.html" />
     <id>http://curry-club-augsburg.de/posts/2021-01-28-treffen-66.html</id>
@@ -414,36 +439,6 @@
   </header>
 
   <p>Simon schließt seine Vortragsreihe zu Modallogik ab: “Nachdem wir die formalen modallogischen Schlussregeln gesehen haben, stelle ich meine Versuche vor, Datenstrukturen in Haskell zu definieren, welche diesen genügen. Zur Auflockerung will ich ein paar philosophische Ansichten zu den Modalitäten durchgehen.”</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>??? + Lambda-Pi-Kalkül</title>
-    <link href="http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html" />
-    <id>http://curry-club-augsburg.de/posts/2020-02-09-treffen-57.html</id>
-    <published>2020-02-09T00:00:00Z</published>
-    <updated>2020-02-09T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>??? + Lambda-Pi-Kalkül</h1>
-    <div class="info">
-      Gepostet am  9. Feb 20
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    <figure>
-      
-      
-    </figure>
-  </header>
-
-  <p>Michael Färber ist bei uns zu Gast und wird über <em>Beweisüberprüfung mittels des Lambda-Pi-Kalküls</em> vortragen:</p>
-<blockquote>
-<p>Der Lambda-Pi-Kalkül modulo Termersetzung erlaubt es, auf elegante Art verschiedene logische Systeme zu formalisieren und Beweise aus diesen Systemen einheitlich zu überprüfen.</p>
-<p>Ich präsentiere zuerst den Lambda-Pi-Kalkül und zeige dann, wie man höherstufige Logik in diesem Kalkül formalisiert. Anschließend zeige ich ein Zwischenergebnis meiner Zusammenarbeit mit Makarius, nämlich einen Export von Isabelle in den Lambda-Pi-Kalkül. Abschließend präsentiere ich meine minimalistische Implementierung eines Typenprüfers für den Lambda-Pi-Kalkül.</p>
-</blockquote>
-<p>Zusätzlich wird es Fortsetzungen der Vorträge vom letzten Mal geben.</p>
 </article>
 ]]></summary>
 </entry>
