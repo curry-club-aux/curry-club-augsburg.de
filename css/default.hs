@@ -4,6 +4,7 @@ import           Prelude hiding (div,(**),span)
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
+import           Data.Monoid
 
 reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 lightRose, almostWhite, lightYellow :: Color
