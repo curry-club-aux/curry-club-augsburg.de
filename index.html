@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <link rel="alternate" type="application/atom+xml" href="./atom.xml" />
     <link rel="alternate" type="application/rss+xml" href="./rss.xml" />
-    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin />
   </head>
   <body>
     <div class="wrap">
@@ -93,7 +93,8 @@ Simon stellt ein paar Ideen vor, was datenflussorientierte Programmierung sein k
 
     <div id="map"></div>
 
-    </div>
+    <div class="clear"></div>
+  </div>
 </article>
 
 <article>
@@ -2280,16 +2281,15 @@ function twoClkEml (n,c){
 }
 </script>
 
-<script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js" async></script>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin></script>
 <script>
   function initMap () {
-    L.mapbox.accessToken = 'pk.eyJ1IjoidGltamIiLCJhIjoiWG0taDVuRSJ9.5bxOxgAjrxAyaIcLzbV3ag';
-    var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/timjb.lh5m8dag/{z}/{x}/{y}.png?access_token=' + L.mapbox.accessToken, {
-        attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
-    });
-
-    var openLabCoords = [48.357684, 10.886725];
-    var map = L.map('map').setView(openLabCoords, 16).addLayer(mapboxTiles);
+    var openLabCoords = [48.3626428, 10.9025923];
+    var map = L.map('map').setView(openLabCoords, 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© <a href="https://www.openstreetmap.org">OpenStreetMap</a>'
+    }).addTo(map);
     var marker = L.marker(openLabCoords).addTo(map);
   }
 
