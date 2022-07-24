@@ -48,60 +48,60 @@
   </header>
 
   <p>Ein Parser ist eine Funktion von einem String zu einem eventuellen Tupel aus Resttext und geparsten Daten,</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>, a)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co">-- oder mit newtype Wrapper:</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="kw">newtype</span> <span class="dt">Parser</span> a <span class="ot">=</span> <span class="dt">MkParser</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>    {<span class="ot"> runParser ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>,a) }</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>, a)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">-- oder mit newtype Wrapper:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">newtype</span> <span class="dt">Parser</span> a <span class="ot">=</span> <span class="dt">MkParser</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    {<span class="ot"> runParser ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> (<span class="dt">String</span>,a) }</span></code></pre></div>
 <p>So kann man jetzt zum Beispiel einen Char parsen:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a><span class="ot">char ::</span> <span class="dt">Char</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">Char</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>char c <span class="ot">=</span> <span class="dt">MkParser</span> <span class="op">$</span> \s <span class="ot">-&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>    <span class="kw">case</span> s <span class="kw">of</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a>	(d<span class="op">:</span>cs) <span class="op">|</span> c <span class="op">==</span> d <span class="ot">-&gt;</span> <span class="dt">Just</span> (cs, c)</span>
-<span id="cb2-5"><a href="#cb2-5"></a>	<span class="fu">otherwise</span>       <span class="ot">-&gt;</span> <span class="dt">Nothing</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ot">char ::</span> <span class="dt">Char</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">Char</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>char c <span class="ot">=</span> <span class="dt">MkParser</span> <span class="op">$</span> \s <span class="ot">-&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">case</span> s <span class="kw">of</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>	(d<span class="op">:</span>cs) <span class="op">|</span> c <span class="op">==</span> d <span class="ot">-&gt;</span> <span class="dt">Just</span> (cs, c)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>	<span class="fu">otherwise</span>       <span class="ot">-&gt;</span> <span class="dt">Nothing</span></span></code></pre></div>
 <p>Diese Funktion nimmt einen Char und gibt einen Parser zurück, der wiederum zur Ausführung einen String nimmt und prüft, ob dessen Anfangschar gleich dem Char <code>c</code> ist. Wenn das nicht so ist (<code>otherwise</code>), schlägt der Parser fehl.</p>
 <p>Schnell definieren wir auch eine mysteriöse Funktion <code>bind</code>, die einen Parser nimmt, diesen ausführt, und das Ergebnis an eine zweite Funktion übergibt, die wiederum einen Parser zurückgibt.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb3-1"><a href="#cb3-1"></a><span class="ot">bind ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b) <span class="ot">-&gt;</span> <span class="dt">Parser</span> b</span>
-<span id="cb3-2"><a href="#cb3-2"></a>bind m f <span class="ot">=</span> <span class="dt">MkParser</span> <span class="op">$</span> \s <span class="ot">-&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a>    <span class="kw">case</span> runParser m s <span class="kw">of</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a>	<span class="dt">Just</span> (s', x) <span class="ot">-&gt;</span> runParser (f x) s'</span>
-<span id="cb3-5"><a href="#cb3-5"></a>	<span class="dt">Nothing</span>      <span class="ot">-&gt;</span> <span class="dt">Nothing</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ot">bind ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> (a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b) <span class="ot">-&gt;</span> <span class="dt">Parser</span> b</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>bind m f <span class="ot">=</span> <span class="dt">MkParser</span> <span class="op">$</span> \s <span class="ot">-&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">case</span> runParser m s <span class="kw">of</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>	<span class="dt">Just</span> (s', x) <span class="ot">-&gt;</span> runParser (f x) s'</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>	<span class="dt">Nothing</span>      <span class="ot">-&gt;</span> <span class="dt">Nothing</span></span></code></pre></div>
 <p>Also quasi eine Verkettung von Parsern mit durchfädeln der Ergebnisse; das mag dem einen oder anderen bekannt vorkommen und man kann das Prinzip tatsächlich auf viele andere Typen auch anwenden. Man kennt das – oh Schreck! – im Allgemeinen auch unter dem Begriff „Monade“. Das werden wir im nächsten Treffen aus verschiedenen Blickwinkeln beleuchten; dort sind dann alle eingeladen, die mit „Monoid aus der Kategorie der Endofunktoren“ nichts anfangen können.</p>
 <p>Natürlich darf dann auch der Kumpan von <code>bind/&gt;&gt;=</code>, <code>pure/return</code> nicht fehlen:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">pure</span><span class="ot"> ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">pure</span> x <span class="ot">=</span> <span class="dt">MkParser</span> <span class="op">$</span> \s <span class="ot">-&gt;</span> <span class="dt">Just</span> (s, x)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pure</span><span class="ot"> ::</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> a</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pure</span> x <span class="ot">=</span> <span class="dt">MkParser</span> <span class="op">$</span> \s <span class="ot">-&gt;</span> <span class="dt">Just</span> (s, x)</span></code></pre></div>
 <p>Das macht einfach einen beliebigen Wert zu einem Parser (damit man ihn auch mit anderen Parsern verketten kann).</p>
 <p>Diese Definitionen kombiniert man dann (Parser<em>kombinatoren</em>) zu höherleveligen Hilfsfunktionen, wie z.B.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb5-1"><a href="#cb5-1"></a><span class="ot">andThen ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b <span class="ot">-&gt;</span> <span class="dt">Parser</span> a</span>
-<span id="cb5-2"><a href="#cb5-2"></a>andThen m n <span class="ot">=</span> bind m (\x <span class="ot">-&gt;</span> bind n (\y <span class="ot">-&gt;</span> <span class="fu">pure</span> x))</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ot">andThen ::</span> <span class="dt">Parser</span> a <span class="ot">-&gt;</span> <span class="dt">Parser</span> b <span class="ot">-&gt;</span> <span class="dt">Parser</span> a</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>andThen m n <span class="ot">=</span> bind m (\x <span class="ot">-&gt;</span> bind n (\y <span class="ot">-&gt;</span> <span class="fu">pure</span> x))</span></code></pre></div>
 <p>was ein Stück Eingabe parst und dann wegschmeißt. Das wird dann von dem S-Expr-Parser wieder benutzt, um Tokens zu definieren:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb6-1"><a href="#cb6-1"></a><span class="ot">token ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">String</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a>token s <span class="ot">=</span> string s <span class="ot">`andThen`</span> spaces</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ot">token ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Parser</span> <span class="dt">String</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>token s <span class="ot">=</span> string s <span class="ot">`andThen`</span> spaces</span></code></pre></div>
 <p>Ein Token ist ein String, gefolgt von optionalen Spaces, die aber verworfen werden. So ist z.B. <code>foo</code> der gleiche Token wie <code>foo        </code>.</p>
 <h1 id="beispiel-parsen-von-s-expressions">Beispiel: Parsen von S-Expressions</h1>
 <p>Am Ende bleibt dann nur noch übrig, die Datenstruktur von S-Expressions hinzuschreiben und den Parser, der definiert, wie sie als Text dargestellt werden.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">data</span> <span class="dt">Exp</span> <span class="ot">=</span> <span class="dt">Atom</span> <span class="dt">String</span> <span class="op">|</span> <span class="dt">List</span> [<span class="dt">Exp</span>]</span>
-<span id="cb7-2"><a href="#cb7-2"></a>    <span class="kw">deriving</span> (<span class="dt">Show</span>,<span class="dt">Eq</span>)</span>
-<span id="cb7-3"><a href="#cb7-3"></a></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="co">-- Das sind Beispiele für S-Exprs:</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="co">-- hallo</span></span>
-<span id="cb7-6"><a href="#cb7-6"></a><span class="co">-- (foo bar baz (...))</span></span>
-<span id="cb7-7"><a href="#cb7-7"></a></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="ot">parseExp ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span></span>
-<span id="cb7-9"><a href="#cb7-9"></a>parseExp <span class="ot">=</span> choice [ parseAtom, parseList ]</span>
-<span id="cb7-10"><a href="#cb7-10"></a></span>
-<span id="cb7-11"><a href="#cb7-11"></a><span class="ot">parseAtom ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span></span>
-<span id="cb7-12"><a href="#cb7-12"></a>parseAtom <span class="ot">=</span> <span class="kw">do</span></span>
-<span id="cb7-13"><a href="#cb7-13"></a>    x <span class="ot">&lt;-</span> many1 alphaNum</span>
-<span id="cb7-14"><a href="#cb7-14"></a>    spaces</span>
-<span id="cb7-15"><a href="#cb7-15"></a>    <span class="fu">return</span> (<span class="dt">Atom</span> x)</span>
-<span id="cb7-16"><a href="#cb7-16"></a></span>
-<span id="cb7-17"><a href="#cb7-17"></a><span class="ot">parseList ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span></span>
-<span id="cb7-18"><a href="#cb7-18"></a>parseList <span class="ot">=</span> <span class="kw">do</span></span>
-<span id="cb7-19"><a href="#cb7-19"></a>    token <span class="st">&quot;(&quot;</span></span>
-<span id="cb7-20"><a href="#cb7-20"></a>    xs <span class="ot">&lt;-</span> many parseExp</span>
-<span id="cb7-21"><a href="#cb7-21"></a>    token <span class="st">&quot;)&quot;</span></span>
-<span id="cb7-22"><a href="#cb7-22"></a>    <span class="fu">return</span> <span class="op">$</span> <span class="dt">List</span> xs</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">data</span> <span class="dt">Exp</span> <span class="ot">=</span> <span class="dt">Atom</span> <span class="dt">String</span> <span class="op">|</span> <span class="dt">List</span> [<span class="dt">Exp</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">deriving</span> (<span class="dt">Show</span>,<span class="dt">Eq</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- Das sind Beispiele für S-Exprs:</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">-- hallo</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">-- (foo bar baz (...))</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="ot">parseExp ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>parseExp <span class="ot">=</span> choice [ parseAtom, parseList ]</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="ot">parseAtom ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>parseAtom <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    x <span class="ot">&lt;-</span> many1 alphaNum</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    spaces</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span> (<span class="dt">Atom</span> x)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="ot">parseList ::</span> <span class="dt">Parser</span> <span class="dt">Exp</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>parseList <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    token <span class="st">&quot;(&quot;</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    xs <span class="ot">&lt;-</span> many parseExp</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    token <span class="st">&quot;)&quot;</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span> <span class="op">$</span> <span class="dt">List</span> xs</span></code></pre></div>
 <h1 id="was-fehlt-noch">Was fehlt noch?</h1>
 <ul>
 <li>Unsere naive Bibliothek leckt Speicher</li>
@@ -109,7 +109,10 @@
 <li>Wir haben keine Kombinatoren zum Parsen von Termen mit Operatoren</li>
 </ul>
 <figure>
-<img src="../images/regular_expressions.png" title="fig:" alt="xkcd about regular expressions" />
+<figure>
+<img src="../images/regular_expressions.png" alt="xkcd about regular expressions" />
+<figcaption aria-hidden="true">xkcd about regular expressions</figcaption>
+</figure>
 <figcaption class="attribution">
 <cite><a href="https://xkcd.com/208/">xkcd 208</a></cite>
 </figcaption>

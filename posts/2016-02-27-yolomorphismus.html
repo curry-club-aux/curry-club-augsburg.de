@@ -58,18 +58,18 @@ partielle, nicht-injektive Funktion
 </dl>
 <p>Beispiele sind die allseits gefürchteten <code>head</code> und <code>tail</code>, sowie <code>(!!)</code>.</p>
 <p>Ingo ergänzte um Beispiele im weiteren Sinn (YOLO ernst genommen):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="ot">unsafePerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="ot">unsafeCoerce ::</span> a <span class="ot">-&gt;</span> b  <span class="co">-- mehr YOLO geht nicht</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ot">unsafePerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ot">unsafeCoerce ::</span> a <span class="ot">-&gt;</span> b  <span class="co">-- mehr YOLO geht nicht</span></span></code></pre></div>
 <p>Lukas merkte noch an, dass man das alles wunderbar in ein Language-Feature umwandeln kann:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">module</span> <span class="dt">Yolomorphism</span> <span class="kw">where</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="op">--|</span> <span class="dt">Yolomorphism</span> typeclass</span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="kw">class</span> <span class="dt">Yolomorphable</span> a <span class="kw">where</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>  <span class="op">--|</span> because <span class="dt">YOLO</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="ot">  yoloPerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a</span>
-<span id="cb2-7"><a href="#cb2-7"></a>  <span class="op">--|</span> because <span class="fu">even</span> more <span class="dt">YOLO</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="ot">  yoloCoerce    ::</span> a <span class="ot">-&gt;</span> b</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">module</span> <span class="dt">Yolomorphism</span> <span class="kw">where</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">--|</span> <span class="dt">Yolomorphism</span> typeclass</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> <span class="dt">Yolomorphable</span> a <span class="kw">where</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">--|</span> because <span class="dt">YOLO</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ot">  yoloPerformIO ::</span> <span class="dt">IO</span> a <span class="ot">-&gt;</span> a</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">--|</span> because <span class="fu">even</span> more <span class="dt">YOLO</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ot">  yoloCoerce    ::</span> a <span class="ot">-&gt;</span> b</span></code></pre></div>
 <p>Wir sollten das mal dem Haskell’-Team zur Einführung in die <code>base</code>-Library vorschlagen.</p>
 </article>
 
