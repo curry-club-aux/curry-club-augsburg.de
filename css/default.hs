@@ -4,7 +4,6 @@ import           Prelude hiding (div,(**),span)
 import qualified Data.Text.Lazy.IO as L
 import           Clay
 import qualified Clay.Display
-import           Data.Monoid
 
 reallyDarkPurple, darkerPurple, darkPurple, ourPurple, rose :: Color
 lightRose, almostWhite, lightYellow :: Color
@@ -86,7 +85,7 @@ layoutCss = do
     paddingBottom (px 50)
   html <> body ? height (other "100%")
   footer # ".footer" ? do
-    borderTop dashed (px 1) rose
+    borderTop (px 1) dashed rose
     color rose
     fontSize (px 12)
     position relative
@@ -143,7 +142,7 @@ syntaxCss = do
   div # ".sourceCode" ? do
     overflowX auto
   pre # ".sourceCode" ? do
-    borderLeft solid (px 2) ourPurple
+    borderLeft (px 2) solid ourPurple
     paddingLeft (px 18)
     color (other "#c5c8c6")
     ".kw" ? color (other "#de935f") -- KeyWordTok
@@ -198,7 +197,7 @@ contentCss = do
     float floatRight
     height (px 220)
     width (px 400)
-    border solid (px 5) ourPurple
+    border (px 5) solid ourPurple
     marginBottom (px 15)
     --sym2 margin (px 15) nil
   pre # ".error-404" ? do

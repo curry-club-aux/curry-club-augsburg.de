@@ -1,4 +1,9 @@
-{ pkgs ? import ./nixpkgs.nix {} }:
+let 
+  defaultSources = import ./nix/sources.nix;
+  defaultNixpkgs = import defaultSources.nixpkgs {};
+in
+
+{ pkgs ? defaultNixpkgs }:
 let
   src = pkgs.nix-gitignore.gitignoreSource [".git/" "*.nix"] ./.;
 

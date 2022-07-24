@@ -7,7 +7,7 @@ license:            OtherLicense
 executable curry-site
   main-is:          curry-site.hs
   build-depends:    base == 4.*
-                  , hakyll >= 4.8 && < 4.14
+                  , hakyll >= 4.8 && < 4.16
                   , yaml
                   , safe
                   , time >= 1.5.0.1

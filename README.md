@@ -34,11 +34,9 @@ angegeben werden. `cite` sollte gemäß der HTML-Spezifikation den vollen Titel 
 
 Der Post, dessen `meetup-announcement`-Datum am nähesten in der Zukunft liegt, wird auf der Hauptseite angezeigt und gibt das Datum des nächsten Treffens an.
 
-
 ## Änderungen am Inhalt
 
 Kleinere Änderungen kann man gut im [GitHub Webinterface][gh-webinterface] vornehmen. Es vergehen ca. vier Minuten, bis Github Actions die Seite neu gebaut hat.
-
 
 ## Änderungen an `curry-site.hs`
 
@@ -50,10 +48,9 @@ Mit Stack:
 $ stack install
 ```
 
-Oder mit Nix (bitte `default.nix` nicht einchecken):
+Oder mit Nix:
 
 ```bash
-$ cabal2nix . > site.nix
 $ nix-shell
 [nix-shell] $ cabal build
 ```
@@ -64,16 +61,15 @@ Das benutzt standardmäßig `stack` zum Generieren des CSS, wenn `cabal` bevorzu
 
 Sobald man mit dem Ergebnis zufrieden ist, macht man einen Commit und pusht zum `master`-Branch. Dann wartet man, bis Github Actions die Webseite neu generiert hat.
 
-
 ## Potentiell kontroverse Änderungen
 
 Wenn man den Anderen die Änderungen erst einmal zeigen möchte, kann man folgenden Workflow verwenden:
 
-* Forke dieses Repository.
-* Mache lokal deine Änderungen.
-* Rufe `./deploy.sh git@github.com:deingithubname/curry-club-augsburg.de.git` auf. (Das baut die Seite und pusht das Ergebnis in den `gh-pages`-Branch von deinem Fork.)
-* Committe deine Änderungen in einem speziellen Feature-Branch und push die Commits zu in deinen Fork.
-* Starte einen Pull-Request, in dem du auf `http://deingithubname.github.io/curry-club-augsburg.de/` verlinkst.
+- Forke dieses Repository.
+- Mache lokal deine Änderungen.
+- Rufe `./deploy.sh git@github.com:deingithubname/curry-club-augsburg.de.git` auf. (Das baut die Seite und pusht das Ergebnis in den `gh-pages`-Branch von deinem Fork.)
+- Committe deine Änderungen in einem speziellen Feature-Branch und push die Commits zu in deinen Fork.
+- Starte einen Pull-Request, in dem du auf `http://deingithubname.github.io/curry-club-augsburg.de/` verlinkst.
 
 [wiki]: https://github.com/curry-club-aux/curry-club-augsburg.de/wiki
 [issues]: https://github.com/curry-club-aux/curry-club-augsburg.de/issues

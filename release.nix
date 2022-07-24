@@ -1,9 +1,14 @@
-{ nixpkgs ? import ./nixpkgs.nix {} }:
+let 
+  defaultSources = import ./nix/sources.nix;
+  defaultNixpkgs = import defaultSources.nixpkgs {};
+in
+
+{ sources ? import ./nix/sources.nix }:
 
 let
-  pkgs = nixpkgs;
+  pkgs = import sources.nixpkgs {};
 
-  default = import ./default.nix { pkgs = nixpkgs; };
+  default = import ./default.nix { pkgs = pkgs; };
 
   haskellPackages = default.haskellPackages;
 
