@@ -8,8 +8,33 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2021-02-25T00:00:00Z</updated>
+    <updated>2022-07-31T00:00:00Z</updated>
     <entry>
+    <title>Datenfluss-Orientierung</title>
+    <link href="http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html" />
+    <id>http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html</id>
+    <published>2022-07-31T00:00:00Z</published>
+    <updated>2022-07-31T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Datenfluss-Orientierung</h1>
+    <div class="info">
+      Gepostet am 31. Jul 22
+      
+          von Simon
+      
+    </div>
+    <figure>
+      
+      
+    </figure>
+  </header>
+
+  <p>Wir feiern Wiederauferstehung. Simon stellt ein paar Ideen vor, was datenflussorientierte Programmierung sein könnte.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Erlang</title>
     <link href="http://curry-club-augsburg.de/posts/2021-02-25-treffen-67.html" />
     <id>http://curry-club-augsburg.de/posts/2021-02-25-treffen-67.html</id>
@@ -416,31 +441,6 @@
   <p>Erstes Treffen nach dem Lockdown. Das genaue Programm steht noch nicht fest, aber es gibt noch den einen oder anderen Vortrag fortzusetzen.</p>
 <p>Tim hat noch einen Rest “Programmieren auf Typebene in TypeScript” übrig.</p>
 <p>Simons Modallogik-Serie umfaßt noch einen dritten Teil über Kripke-Semantik, der (wie die anderen auch) in Haskell skizziert ist.</p>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Modallogik und Interpretationen</title>
-    <link href="http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html" />
-    <id>http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html</id>
-    <published>2020-03-10T00:00:00Z</published>
-    <updated>2020-03-10T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Modallogik und Interpretationen</h1>
-    <div class="info">
-      Gepostet am 10. Mär 20
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    <figure>
-      
-      
-    </figure>
-  </header>
-
-  <p>Simon schließt seine Vortragsreihe zu Modallogik ab: “Nachdem wir die formalen modallogischen Schlussregeln gesehen haben, stelle ich meine Versuche vor, Datenstrukturen in Haskell zu definieren, welche diesen genügen. Zur Auflockerung will ich ein paar philosophische Ansichten zu den Modalitäten durchgehen.”</p>
 </article>
 ]]></summary>
 </entry>

@@ -7,8 +7,33 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Thu, 25 Feb 2021 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Jul 2022 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Datenfluss-Orientierung</title>
+    <link>http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Datenfluss-Orientierung</h1>
+    <div class="info">
+      Gepostet am 31. Jul 22
+      
+          von Simon
+      
+    </div>
+    <figure>
+      
+      
+    </figure>
+  </header>
+
+  <p>Wir feiern Wiederauferstehung. Simon stellt ein paar Ideen vor, was datenflussorientierte Programmierung sein könnte.</p>
+</article>
+]]></description>
+    <pubDate>Sun, 31 Jul 2022 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Erlang</title>
     <link>http://curry-club-augsburg.de/posts/2021-02-25-treffen-67.html</link>
     <description><![CDATA[<article>
@@ -416,31 +441,6 @@
 ]]></description>
     <pubDate>Tue, 07 Jul 2020 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Modallogik und Interpretationen</title>
-    <link>http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Modallogik und Interpretationen</h1>
-    <div class="info">
-      Gepostet am 10. Mär 20
-      
-          von Ingo Blechschmidt
-      
-    </div>
-    <figure>
-      
-      
-    </figure>
-  </header>
-
-  <p>Simon schließt seine Vortragsreihe zu Modallogik ab: “Nachdem wir die formalen modallogischen Schlussregeln gesehen haben, stelle ich meine Versuche vor, Datenstrukturen in Haskell zu definieren, welche diesen genügen. Zur Auflockerung will ich ein paar philosophische Ansichten zu den Modalitäten durchgehen.”</p>
-</article>
-]]></description>
-    <pubDate>Tue, 10 Mar 2020 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2020-03-10-treffen-58.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 
