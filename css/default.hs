@@ -195,8 +195,8 @@ contentCss = do
     paddingBottom (px 15)
   div # "#map" ? do
     float floatRight
-    height (px 220)
-    width (px 400)
+    height (px 250)
+    width (px 450)
     border (px 5) solid ourPurple
     marginBottom (px 15)
     --sym2 margin (px 15) nil
