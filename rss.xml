@@ -7,8 +7,31 @@
         <description><![CDATA[Neuigkeiten vom Curry Club Augsburg]]></description>
         <atom:link href="http://curry-club-augsburg.de/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>Sun, 31 Jul 2022 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Aug 2022 00:00:00 UT</lastBuildDate>
         <item>
+    <title>Thema wird noch gesucht</title>
+    <link>http://curry-club-augsburg.de/posts/2022-08-28-treffen-69.html</link>
+    <description><![CDATA[<article>
+  <header>
+    <h1>Thema wird noch gesucht</h1>
+    <div class="info">
+      Gepostet am 28. Aug 22
+      
+    </div>
+    <figure>
+      
+      
+    </figure>
+  </header>
+
+  <p>Das Thema vom 28. August steht noch nicht fest.</p>
+</article>
+]]></description>
+    <pubDate>Sun, 28 Aug 2022 00:00:00 UT</pubDate>
+    <guid>http://curry-club-augsburg.de/posts/2022-08-28-treffen-69.html</guid>
+    <dc:creator>Curry Club Augsburg</dc:creator>
+</item>
+<item>
     <title>Datenfluss-Orientierung</title>
     <link>http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html</link>
     <description><![CDATA[<article>
@@ -26,8 +49,8 @@
     </figure>
   </header>
 
-  <p>Wir feiern Wiederauferstehung.
-Simon stellt ein paar Ideen vor, was datenflussorientierte Programmierung sein könnte.</p>
+  <p>Wir haben Wiederauferstehung gefeiert.
+Simon stellte ein paar Ideen vor, was datenflussorientierte Programmierung sein könnte. Wir haben über ADFL, kommutierende Monaden und Verfeinerungen von IO diskutiert.</p>
 </article>
 ]]></description>
     <pubDate>Sun, 31 Jul 2022 00:00:00 UT</pubDate>
@@ -440,35 +463,6 @@ Anschließend stellte er einen Aufschrieb des ganzen im Curry-Howard-Stil in Has
 ]]></description>
     <pubDate>Thu, 06 Aug 2020 00:00:00 UT</pubDate>
     <guid>http://curry-club-augsburg.de/posts/2020-08-06-treffen-60.html</guid>
-    <dc:creator>Curry Club Augsburg</dc:creator>
-</item>
-<item>
-    <title>Wiederaufnahmetreffen</title>
-    <link>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</link>
-    <description><![CDATA[<article>
-  <header>
-    <h1>Wiederaufnahmetreffen</h1>
-    <div class="info">
-      Gepostet am  7. Jul 20
-      
-          von Simon Kapfer
-      
-    </div>
-    <figure>
-      
-      
-    </figure>
-  </header>
-
-  <p>Erstes Treffen nach dem Lockdown.
-Das genaue Programm steht noch nicht fest, aber
-es gibt noch den einen oder anderen Vortrag fortzusetzen.</p>
-<p>Tim hat noch einen Rest “Programmieren auf Typebene in TypeScript” übrig.</p>
-<p>Simons Modallogik-Serie umfaßt noch einen dritten Teil über Kripke-Semantik, der (wie die anderen auch) in Haskell skizziert ist.</p>
-</article>
-]]></description>
-    <pubDate>Tue, 07 Jul 2020 00:00:00 UT</pubDate>
-    <guid>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</guid>
     <dc:creator>Curry Club Augsburg</dc:creator>
 </item>
 

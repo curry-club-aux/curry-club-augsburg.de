@@ -8,8 +8,31 @@
         <name>Curry Club Augsburg</name>
         <email>post@curry-club-augsburg.de</email>
     </author>
-    <updated>2022-07-31T00:00:00Z</updated>
+    <updated>2022-08-28T00:00:00Z</updated>
     <entry>
+    <title>Thema wird noch gesucht</title>
+    <link href="http://curry-club-augsburg.de/posts/2022-08-28-treffen-69.html" />
+    <id>http://curry-club-augsburg.de/posts/2022-08-28-treffen-69.html</id>
+    <published>2022-08-28T00:00:00Z</published>
+    <updated>2022-08-28T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+  <header>
+    <h1>Thema wird noch gesucht</h1>
+    <div class="info">
+      Gepostet am 28. Aug 22
+      
+    </div>
+    <figure>
+      
+      
+    </figure>
+  </header>
+
+  <p>Das Thema vom 28. August steht noch nicht fest.</p>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Datenfluss-Orientierung</title>
     <link href="http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html" />
     <id>http://curry-club-augsburg.de/posts/2022-07-31-treffen-68.html</id>
@@ -30,8 +53,8 @@
     </figure>
   </header>
 
-  <p>Wir feiern Wiederauferstehung.
-Simon stellt ein paar Ideen vor, was datenflussorientierte Programmierung sein könnte.</p>
+  <p>Wir haben Wiederauferstehung gefeiert.
+Simon stellte ein paar Ideen vor, was datenflussorientierte Programmierung sein könnte. Wir haben über ADFL, kommutierende Monaden und Verfeinerungen von IO diskutiert.</p>
 </article>
 ]]></summary>
 </entry>
@@ -440,35 +463,6 @@ Anschließend stellte er einen Aufschrieb des ganzen im Curry-Howard-Stil in Has
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>s5_is_euclidean s5 wRv wRz <span class="ot">=</span> <span class="kw">let</span></span>
 <span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Nec</span> f <span class="ot">=</span> s5 (<span class="dt">Pos</span> wRz <span class="fu">id</span>)</span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>    <span class="kw">in</span> conclusive_apply (f wRv)</span></code></pre></div>
-</article>
-]]></summary>
-</entry>
-<entry>
-    <title>Wiederaufnahmetreffen</title>
-    <link href="http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html" />
-    <id>http://curry-club-augsburg.de/posts/2020-07-07-treffen-59.html</id>
-    <published>2020-07-07T00:00:00Z</published>
-    <updated>2020-07-07T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<article>
-  <header>
-    <h1>Wiederaufnahmetreffen</h1>
-    <div class="info">
-      Gepostet am  7. Jul 20
-      
-          von Simon Kapfer
-      
-    </div>
-    <figure>
-      
-      
-    </figure>
-  </header>
-
-  <p>Erstes Treffen nach dem Lockdown.
-Das genaue Programm steht noch nicht fest, aber
-es gibt noch den einen oder anderen Vortrag fortzusetzen.</p>
-<p>Tim hat noch einen Rest “Programmieren auf Typebene in TypeScript” übrig.</p>
-<p>Simons Modallogik-Serie umfaßt noch einen dritten Teil über Kripke-Semantik, der (wie die anderen auch) in Haskell skizziert ist.</p>
 </article>
 ]]></summary>
 </entry>
